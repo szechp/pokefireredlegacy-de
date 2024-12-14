@@ -479,6 +479,7 @@ const u16 gEggMoves[] = {
               MOVE_FORESIGHT,
               MOVE_STEEL_WING,
               MOVE_DRAGON_BREATH,
+              MOVE_SKY_ATTACK,
               MOVE_CURSE),
 
     egg_moves(SNORLAX,
