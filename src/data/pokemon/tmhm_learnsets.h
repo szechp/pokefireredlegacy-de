@@ -7542,6 +7542,7 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM11_SUNNY_DAY)
+                                        | TMHM(TM30_SHADOW_BALL)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)),
 
