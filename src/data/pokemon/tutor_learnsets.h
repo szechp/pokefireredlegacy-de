@@ -39,7 +39,8 @@ static const u16 sTutorLearnsets[] =
                        | TUTOR(MOVE_BODY_SLAM)
                        | TUTOR(MOVE_DOUBLE_EDGE)
                        | TUTOR(MOVE_MIMIC)
-                       | TUTOR(MOVE_SUBSTITUTE),
+                       | TUTOR(MOVE_SUBSTITUTE)
+                       | TUTOR(MOVE_ROCK_SLIDE),
 
     [SPECIES_CHARMANDER] = TUTOR(MOVE_MEGA_PUNCH)
                          | TUTOR(MOVE_SWORDS_DANCE)
@@ -872,11 +873,13 @@ static const u16 sTutorLearnsets[] =
 
     [SPECIES_GOLDEEN] = TUTOR(MOVE_DOUBLE_EDGE)
                       | TUTOR(MOVE_MIMIC)
-                      | TUTOR(MOVE_SUBSTITUTE),
+                      | TUTOR(MOVE_SUBSTITUTE)
+                      | TUTOR(MOVE_SWORDS_DANCE),
 
     [SPECIES_SEAKING] = TUTOR(MOVE_DOUBLE_EDGE)
                       | TUTOR(MOVE_MIMIC)
-                      | TUTOR(MOVE_SUBSTITUTE),
+                      | TUTOR(MOVE_SUBSTITUTE)
+                      | TUTOR(MOVE_SWORDS_DANCE),
 
     [SPECIES_STARYU] = TUTOR(MOVE_DOUBLE_EDGE)
                      | TUTOR(MOVE_MIMIC)
