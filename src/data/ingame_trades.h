@@ -17,7 +17,7 @@ static const struct InGameTrade sInGameTrades[] = {
     }, 
     [INGAME_TRADE_JYNX] = 
     {
-        .nickname = _("ZYNX"),
+        .nickname = _("MOOCHUM"),
         .species = SPECIES_JYNX,
         .ivs = {18, 17, 18, 22, 25, 21},
         .abilityNum = 0,
@@ -34,7 +34,7 @@ static const struct InGameTrade sInGameTrades[] = {
     [INGAME_TRADE_NIDORAN] = 
     {
 #if defined(FIRERED)
-        .nickname = _("MS. NIDO"),
+        .nickname = _("GASSER"),
         .species = SPECIES_KOFFING,
         .ivs = {22, 18, 25, 19, 15, 22},
         .abilityNum = 0,
@@ -48,7 +48,7 @@ static const struct InGameTrade sInGameTrades[] = {
         .sheen = 10,
         .requestedSpecies = SPECIES_GROWLITHE
 #elif defined(LEAFGREEN)
-        .nickname = _("MS. NIDO"),
+        .nickname = _("GASSER"),
         .species = SPECIES_KOFFING,
         .ivs = {22, 18, 25, 19, 15, 22},
         .abilityNum = 0,
@@ -65,7 +65,7 @@ static const struct InGameTrade sInGameTrades[] = {
     }, 
     [INGAME_TRADE_FARFETCHD] = 
     {
-        .nickname = _("CH'DING"),
+        .nickname = _("DUX"),
         .species = SPECIES_FARFETCHD,
         .ivs = {20, 25, 21, 24, 15, 20},
         .abilityNum = 0,
@@ -82,7 +82,7 @@ static const struct InGameTrade sInGameTrades[] = {
     [INGAME_TRADE_NIDORINOA] = 
     {
 #if defined(FIRERED)
-        .nickname = _("NINA"),
+        .nickname = _("TOPPER"),
         .species = SPECIES_HITMONTOP,
         .ivs = {22, 25, 18, 19, 22, 15},
         .abilityNum = 0,
@@ -96,7 +96,7 @@ static const struct InGameTrade sInGameTrades[] = {
         .sheen = 10,
         .requestedSpecies = SPECIES_TANGELA
 #elif defined(LEAFGREEN)
-        .nickname = _("NINA"),
+        .nickname = _("TOPPER"),
         .species = SPECIES_HITMONTOP,
         .ivs = {22, 25, 18, 19, 22, 15},
         .abilityNum = 0,
@@ -133,8 +133,8 @@ static const struct InGameTrade sInGameTrades[] = {
     }, 
     [INGAME_TRADE_ELECTRODE] = 
     {
-        .nickname = _("ESPHERE"),
-        .species = SPECIES_ELECTRODE,
+        .nickname = _("CARNO"),
+        .species = SPECIES_TAUROS
         .ivs = {19, 16, 18, 25, 25, 19},
         .abilityNum = 1,
         .otId = 50298,
@@ -145,11 +145,11 @@ static const struct InGameTrade sInGameTrades[] = {
         .otName = _("CLIFTON"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_TAUROS
+        .requestedSpecies = SPECIES_ELECTRODE
     }, 
     [INGAME_TRADE_TANGELA] = 
     {
-        .nickname = _("TANGENY"),
+        .nickname = _("SLIMEGOO"),
         .species = SPECIES_DITTO,
         .ivs = {31, 31, 31, 31, 31, 31},
         .abilityNum = 0,
@@ -165,7 +165,7 @@ static const struct InGameTrade sInGameTrades[] = {
     },
     [INGAME_TRADE_SEEL] = 
     {
-        .nickname = _("SEELOR"),
+        .nickname = _("DRAGONA"),
         .species = SPECIES_DRATINI,
         .ivs = {24, 15, 22, 16, 23, 22},
         .abilityNum = 0,
@@ -186,7 +186,7 @@ static const u16 sInGameTradeMailMessages[][10] = {
         EC_WORD_THAT_S,
         EC_WORD_A,
         EC_WORD_HEALTHY,
-        EC_POKEMON(JYNX),
+        EC_POKEMON(SMOOCHUM),
         EC_WORD_EXCL,
         EC_WORD_BE,
         EC_WORD_KIND,
