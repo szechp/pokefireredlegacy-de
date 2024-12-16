@@ -134,8 +134,8 @@ static const struct InGameTrade sInGameTrades[] = {
     [INGAME_TRADE_ELECTRODE] = 
     {
         .nickname = _("CARNO"),
-        .species = SPECIES_TAUROS
-        .ivs = {19, 16, 18, 25, 25, 19},
+        .species = SPECIES_NIDOKING
+        .ivs = {24, 19, 21, 15, 23, 21},
         .abilityNum = 0,
         .otId = 50298,
         .conditions = {30, 5, 5, 5, 5},
