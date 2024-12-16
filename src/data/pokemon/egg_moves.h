@@ -179,9 +179,9 @@ const u16 gEggMoves[] = {
               MOVE_CRUNCH,
               MOVE_THRASH,
               MOVE_FIRE_SPIN,
+              MOVE_MORNING_SUN
               MOVE_HOWL,
-              MOVE_HEAT_WAVE
-              MOVE_MORNING_SUN),
+              MOVE_HEAT_WAVE),
 
     egg_moves(POLIWAG,
               MOVE_MIST,
