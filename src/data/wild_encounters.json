@@ -7624,7 +7624,7 @@
               {
                 "min_level": 48,
                 "max_level": 48,
-                "species": "SPECIES_FEAROW"
+                "species": "SPECIES_MILTANK"
               },
               {
                 "min_level": 15,
@@ -7639,7 +7639,7 @@
               {
                 "min_level": 48,
                 "max_level": 48,
-                "species": "SPECIES_GLOOM"
+                "species": "SPECIES_MILTANK"
               },
               {
                 "min_level": 41,
@@ -7788,7 +7788,7 @@
               {
                 "min_level": 43,
                 "max_level": 43,
-                "species": "SPECIES_MILTANK"
+                "species": "SPECIES_FEAROW"
               },
               {
                 "min_level": 25,
