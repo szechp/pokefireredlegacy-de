@@ -133,10 +133,10 @@ static const struct InGameTrade sInGameTrades[] = {
     }, 
     [INGAME_TRADE_ELECTRODE] = 
     {
-        .nickname = _("CARNO"),
-        .species = SPECIES_NIDOKING
-        .ivs = {24, 19, 21, 15, 23, 21},
-        .abilityNum = 0,
+        .nickname = _("ESPHERE"),
+        .species = SPECIES_ELECTRODE,
+        .ivs = {19, 16, 18, 25, 25, 19},
+        .abilityNum = 1,
         .otId = 50298,
         .conditions = {30, 5, 5, 5, 5},
         .personality = 0x06341016,
@@ -145,7 +145,7 @@ static const struct InGameTrade sInGameTrades[] = {
         .otName = _("CLIFTON"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_NIDOQUEEN
+        .requestedSpecies = SPECIES_RAICHU
     }, 
     [INGAME_TRADE_TANGELA] = 
     {
