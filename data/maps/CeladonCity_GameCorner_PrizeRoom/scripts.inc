@@ -116,7 +116,6 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeMon::
 	case SPECIES_DRATINI,  CeladonCity_GameCorner_PrizeRoom_EventScript_GiveDratini
 	case SPECIES_KANGASKHAN,  CeladonCity_GameCorner_PrizeRoom_EventScript_GiveKangaskhan
 	case SPECIES_PORYGON,  CeladonCity_GameCorner_PrizeRoom_EventScript_GivePorygon
-	case SPECIES_KANGASKHAN,   CeladonCity_GameCorner_PrizeRoom_EventScript_GiveKangaskhan
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_GiveAbra::
@@ -168,10 +167,6 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_GivePorygon::
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_CheckReceivedMon
 	end
 
-CeladonCity_GameCorner_PrizeRoom_EventScript_GiveKangaskhan::
-	givemon VAR_TEMP_1, 18
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_CheckReceivedMon
-	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_CheckReceivedMon::
 	goto_if_eq VAR_RESULT, 0, CeladonCity_GameCorner_PrizeRoom_EventScript_ReceivedMonParty
