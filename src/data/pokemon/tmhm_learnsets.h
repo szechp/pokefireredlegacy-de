@@ -6445,7 +6445,7 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)
-                                        | TMHM(TM07_WATERFALL)),
+                                        | TMHM(HM07_WATERFALL)),
 
     [SPECIES_WURMPLE]     = TMHM_LEARNSET(0),
 
