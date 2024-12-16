@@ -136,7 +136,7 @@ static const struct InGameTrade sInGameTrades[] = {
         .nickname = _("CARNO"),
         .species = SPECIES_TAUROS
         .ivs = {19, 16, 18, 25, 25, 19},
-        .abilityNum = 1,
+        .abilityNum = 0,
         .otId = 50298,
         .conditions = {30, 5, 5, 5, 5},
         .personality = 0x06341016,
@@ -145,7 +145,7 @@ static const struct InGameTrade sInGameTrades[] = {
         .otName = _("CLIFTON"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_ELECTRODE
+        .requestedSpecies = SPECIES_NIDOQUEEN
     }, 
     [INGAME_TRADE_TANGELA] = 
     {
