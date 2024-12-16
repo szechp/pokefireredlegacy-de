@@ -1,4 +1,5 @@
 #define LEVEL_UP_MOVE(lvl, move) ((lvl << 9) | move)
+#define LEVEL_UP_END 0xFFFF
 
 static const u16 sBulbasaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -6449,42 +6450,11 @@ static const u16 sJirachiLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+#if defined(FIRERED)
 static const u16 sDeoxysLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_WRAP),
-    LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
-    LEVEL_UP_MOVE(10, MOVE_TELEPORT),
-    LEVEL_UP_MOVE(15, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE(20, MOVE_PURSUIT),
-    LEVEL_UP_MOVE(25, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(30, MOVE_SNATCH),
-    LEVEL_UP_MOVE(35, MOVE_COSMIC_POWER),
-    LEVEL_UP_MOVE(40, MOVE_RECOVER),
-    LEVEL_UP_MOVE(45, MOVE_PSYCHO_BOOST),
-    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
-    LEVEL_UP_END
-};
-
-static const u16 sDeoxys_SpeedLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_WRAP),
-    LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
-    LEVEL_UP_MOVE(10, MOVE_DOUBLE_TEAM),
-    LEVEL_UP_MOVE(15, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE(20, MOVE_PURSUIT),
-    LEVEL_UP_MOVE(25, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(30, MOVE_SWIFT),
-    LEVEL_UP_MOVE(35, MOVE_AGILITY),
-    LEVEL_UP_MOVE(40, MOVE_RECOVER),
-    LEVEL_UP_MOVE(45, MOVE_PSYCHO_BOOST),
-    LEVEL_UP_MOVE(50, MOVE_EXTREME_SPEED),
-    LEVEL_UP_END
-};
-
-static const u16 sDeoxys_AttackLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_WRAP),
-    LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
+    LEVEL_UP_MOVE(1, MOVE_LEER),
+    LEVEL_UP_MOVE(1, MOVE_WRAP),
+    LEVEL_UP_MOVE(5, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE(10, MOVE_TELEPORT),
     LEVEL_UP_MOVE(15, MOVE_TAUNT),
     LEVEL_UP_MOVE(20, MOVE_PURSUIT),
@@ -6496,11 +6466,11 @@ static const u16 sDeoxys_AttackLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
-
-static const u16 sDeoxys_DefenseLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_WRAP),
-    LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
+#elif defined(LEAFGREEN)
+static const u16 sDeoxysLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_LEER),
+    LEVEL_UP_MOVE(1, MOVE_WRAP),
+    LEVEL_UP_MOVE(5, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE(10, MOVE_TELEPORT),
     LEVEL_UP_MOVE(15, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE(20, MOVE_SPIKES),
@@ -6514,6 +6484,7 @@ static const u16 sDeoxys_DefenseLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
     LEVEL_UP_END
 };
+#endif
 
 static const u16 sChimechoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
