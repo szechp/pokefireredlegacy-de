@@ -769,7 +769,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_BLIZZARD] =
     {
-        .effect = EFFECT_BLIZZARD,
+        .effect = EFFECT_FREEZE_HIT,
         .power = 120,
         .type = TYPE_ICE,
         .accuracy = 70,
@@ -4526,7 +4526,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_LEAF_BLADE] =
     {
-        .effect = EFFECT_LEAF_BLADE,
+        .effect = EFFECT_HIGH_CRITICAL,
         .power = 80,
         .type = TYPE_GRASS,
         .accuracy = 100,
