@@ -42,9 +42,9 @@ Route10_PokemonCenter_1F_EventScript_Aide::
 	call Route10_PokemonCenter_1F_EventScript_GetAideRequestInfo
 	goto_if_lt VAR_0x8006, REQUIRED_OWNED_MONS, Aide_EventScript_HaventCaughtEnough
 	msgbox Route10_PokemonCenter_1F_Text_GreatHereYouGo
-	checkitemspace HM06_ROCK_SMASH
+	checkitemspace ITEM_HM06
 	goto_if_eq VAR_RESULT, FALSE, Aide_EventScript_NoRoomForItem
-	giveitem_msg Route10_PokemonCenter_1F_Text_ReceivedEverstoneFromAide, HM06_ROCK_SMASH
+	giveitem_msg Route10_PokemonCenter_1F_Text_ReceivedEverstoneFromAide, ITEM_HM06
 	setflag FLAG_GOT_EVERSTONE_FROM_OAKS_AIDE
 	msgbox Route10_PokemonCenter_1F_Text_ExplainEverstone
 	release
@@ -57,5 +57,5 @@ Route10_PokemonCenter_1F_EventScript_AlreadyGotEverstone::
 
 Route10_PokemonCenter_1F_EventScript_GetAideRequestInfo::
 	buffernumberstring STR_VAR_1, REQUIRED_OWNED_MONS
-	bufferitemname STR_VAR_2, HM06_ROCK_SMASH
+	bufferitemname STR_VAR_2, ITEM_HM06
 	return
