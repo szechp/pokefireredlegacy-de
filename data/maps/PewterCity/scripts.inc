@@ -724,6 +724,8 @@ PewterCity_EventScript_AideGiveRunningShoes::
 	closemessage
 	removeobject LOCALID_AIDE
 	setflag FLAG_SYS_B_DASH
+	checkitemspace ITEM_EXP_SHARE
+	giveitem Item_EXP_SHARE
 	setvar VAR_MAP_SCENE_PEWTER_CITY, 2
 	return
 
