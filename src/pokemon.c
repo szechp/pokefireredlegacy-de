@@ -6026,8 +6026,6 @@ void SetWildMonHeldItem(void)
         u16 var1 = 45;
         u16 var2 = 95;
         bool8 isHighLeveledPikachu = FALSE;
-        if(species == SPECIES_PIKACHU && GetCurrentRegionMapSectionId() != MAPSEC_VIRIDIAN_FOREST)
-            isHighLeveledPikachu = TRUE;
 
         if (!GetMonData(&gPlayerParty[0], MON_DATA_IS_EGG, 0)
             && GetMonAbility(&gPlayerParty[0]) == ABILITY_COMPOUND_EYES)
@@ -6046,26 +6044,6 @@ void SetWildMonHeldItem(void)
             return;
         if (rnd < var2)
         {
-            if(isHighLeveledPikachu)
-            {   //Pikachu holds its RS items if not in Viridian Forest
-                u16 item = ITEM_ORAN_BERRY;
-                SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &item);
-            }
-            else
-                SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemCommon);
-        }
-        else
-        {
-            if(isHighLeveledPikachu)
-            {   //Pikachu holds its RS items if not in Viridian Forest 
-                u16 item = ITEM_LIGHT_BALL;
-                SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &item);
-            }
-            else
-            {
-                SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemRare);
-            }
-        }
     }
 }
 
