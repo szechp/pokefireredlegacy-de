@@ -434,6 +434,8 @@ u8 GetMostSuitableMonToSwitchInto(void)
     s32 i, j;
     u8 invalidMons;
     u16 move;
+    bool8 checkedAllMonForSEMoves = FALSE;  // We have checked all Pokemon in the party for if they have a super effective move
+
 
     if (*(gBattleStruct->monToSwitchIntoId + gActiveBattler) != PARTY_SIZE)
         return *(gBattleStruct->monToSwitchIntoId + gActiveBattler);
@@ -458,7 +460,8 @@ u8 GetMostSuitableMonToSwitchInto(void)
     invalidMons = 0;
     while (invalidMons != 0x3F) // All mons are invalid.
     {
-        bestDmg = 0;
+        bestDmg = 255;
+  
         bestMonId = 6;
         // Find the mon whose type is the most suitable offensively.
         for (i = 0; i < PARTY_SIZE; ++i)
@@ -477,7 +480,7 @@ u8 GetMostSuitableMonToSwitchInto(void)
                 u8 typeDmg = 10;
                 ModulateByTypeEffectiveness(gBattleMons[opposingBattler].type1, type1, type2, &typeDmg);
                 ModulateByTypeEffectiveness(gBattleMons[opposingBattler].type2, type1, type2, &typeDmg);
-                if (bestDmg < typeDmg)
+                if (bestDmg > typeDmg)
                 {
                     bestDmg = typeDmg;
                     bestMonId = i;
@@ -497,10 +500,15 @@ u8 GetMostSuitableMonToSwitchInto(void)
                 if (move != MOVE_NONE && TypeCalc(move, gActiveBattler, opposingBattler) & MOVE_RESULT_SUPER_EFFECTIVE)
                     break;
             }
-            if (i != MAX_MON_MOVES)
+            if (i != MAX_MON_MOVES || (checkedAllMonForSEMoves && bestDmg <= TYPE_MUL_NOT_EFFECTIVE))
                 return bestMonId; // Has both the typing and at least one super effective move.
 
             invalidMons |= gBitTable[bestMonId]; // Sorry buddy, we want something better.
+                if (invalidMons == 0x3F && !checkedAllMonForSEMoves)  // If we already checked all for a super effective move, then use the one with the best typing
+            {
+                invalidMons = 0;
+                checkedAllMonForSEMoves = TRUE;
+            }
         }
         else
         {

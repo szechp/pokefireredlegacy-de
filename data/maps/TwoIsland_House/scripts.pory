@@ -1,0 +1,72 @@
+raw `
+TwoIsland_House_MapScripts::
+	.byte 0
+
+TwoIsland_House_TMGUYScript::
+	goto_if_questlog EventScript_ReleaseEnd
+	lock
+	faceplayer
+	message TwoIsland_House_Text_TmGuy
+	waitmessage
+	pokemart TwoIsland_TMS
+	msgbox Text_PleaseComeAgain
+	release
+	end
+
+	.align 2
+TwoIsland_TMS::	
+	.2byte ITEM_TM03
+	.2byte ITEM_TM05
+	.2byte ITEM_TM03
+	.2byte ITEM_TM09
+	.2byte ITEM_TM12
+	.2byte ITEM_TM15
+	.2byte ITEM_TM16
+	.2byte ITEM_TM17
+	.2byte ITEM_TM20
+	.2byte ITEM_TM21
+	.2byte ITEM_TM27
+	.2byte ITEM_TM33
+	.2byte ITEM_TM34
+	.2byte ITEM_TM39
+	.2byte ITEM_TM40
+	.2byte ITEM_TM41
+	.2byte ITEM_TM42
+	.2byte ITEM_TM44
+	.2byte ITEM_TM47
+	.2byte ITEM_NONE
+	release
+	end
+
+
+TwoIsland_House_STONEGUYScript::
+	goto_if_questlog EventScript_ReleaseEnd
+	lock
+	faceplayer
+	message TwoIsland_House_Text_StoneGuy
+	waitmessage
+	pokemart TwoIsland_STONES
+	msgbox Text_PleaseComeAgain
+	release
+	end
+
+	.align 2
+TwoIsland_STONES::	
+	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_UP_GRADE
+	.2byte ITEM_DRAGON_SCALE
+	.2byte ITEM_METAL_COAT
+	.2byte ITEM_SOOTHE_BELL
+	.2byte ITEM_NONE
+	release
+	end
+
+
+
+
+
+
+
+
+`	
+

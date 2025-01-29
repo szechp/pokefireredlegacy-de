@@ -87,6 +87,11 @@ extern const u8 gText_PkmnFainted3[];
 extern const u8 gText_Coins[];
 extern const u8 gText_EggNickname[];
 extern const u8 gText_MenuPokemon[];
+extern const u8 gText_PkmnFriendlyBaseVar2Fell[];
+extern const u8 gText_PkmnFriendlyBaseVar2CantFall[];
+extern const u8 gText_PkmnAdoresBaseVar2Fell[];
+extern const u8 gText_ThrowInPremierBalls[];
+extern const u8 gText_ThrowInPremierBall[];
 
 extern const u8 gOtherText_Use[];
 extern const u8 gOtherText_Toss[];
@@ -121,6 +126,7 @@ extern const u8 gFameCheckerOakName[]; // "OAK$"
 extern const u8 gFameCheckerDaisyName[]; // "DAISY$"
 extern const u8 gFameCheckerBillName[]; // "BILL$"
 extern const u8 gFameCheckerMrFujiName[]; // "FUJI$"
+
 
 // teachy_tv
 extern const u8 gTeachyTvString_TeachBattle[];
@@ -170,6 +176,7 @@ extern const u8 gText_OakForbidsUseOfItemHere[];
 extern const u8 gText_CantDismountBike[];
 extern const u8 gText_CoinCase[];
 extern const u8 gText_PlayerUsedVar2[];
+extern const u8 gText_PlayerUsedRepel[];
 extern const u8 gText_RepelEffectsLingered[];
 extern const u8 gText_UsedVar2WildLured[];
 extern const u8 gText_UsedVar2WildRepelled[];
@@ -738,11 +745,11 @@ extern const u8 gText_BlueShard[];
 extern const u8 gText_GreenShard[];
 extern const u8 gText_Right[];
 extern const u8 gText_Left[];
-extern const u8 gText_Tm13_4000Coins[];
-extern const u8 gText_Tm23_3500Coins[];
-extern const u8 gText_Tm24_4000Coins[];
-extern const u8 gText_Tm30_4500Coins[];
-extern const u8 gText_Tm35_4000Coins[];
+extern const u8 gText_Tm13_2500Coins[];
+extern const u8 gText_Tm23_2000Coins[];
+extern const u8 gText_Tm24_2500Coins[];
+extern const u8 gText_Tm30_3000Coins[];
+extern const u8 gText_Tm35_2500Coins[];
 extern const u8 gText_1F_2[];
 extern const u8 gText_2F_2[];
 extern const u8 gText_3F_2[];
@@ -764,9 +771,9 @@ extern const u8 gText_Bicycle_Price[];
 extern const u8 gText_NoThanks[];
 extern const u8 gText_Abra_180Coins[];
 extern const u8 gText_Clefairy_500Coins[];
-extern const u8 gText_Dratini_2800Coins[];
-extern const u8 gText_Scyther_5500Coins[];
-extern const u8 gText_Porygon_9999Coins[];
+extern const u8 gText_Dratini_3000Coins[];
+extern const u8 gText_Kangaskan_2000Coins[];
+extern const u8 gText_Porygon_4000Coins[];
 extern const u8 gText_Abra_120Coins[];
 extern const u8 gText_Clefairy_750Coins[];
 extern const u8 gText_Pinsir_2500Coins[];
@@ -796,11 +803,11 @@ extern const u8 gText_1BigMushroom[];
 extern const u8 gText_SeviiIslands[];
 extern const u8 gText_NavelRock[];
 extern const u8 gText_BirthIsland[];
-extern const u8 gText_MiracleSeed_1000Coins[];
-extern const u8 gText_Charcoal_1000Coins[];
-extern const u8 gText_MysticWater_1000Coins[];
-extern const u8 gText_YellowFlute_1600Coins[];
-extern const u8 gText_SmokeBall_800Coins[];
+extern const u8 gText_MiracleSeed_500Coins[];
+extern const u8 gText_Charcoal_500Coins[];
+extern const u8 gText_MysticWater_500Coins[];
+extern const u8 gText_UpGrade_1500Coins[];
+extern const u8 gText_SmokeBall_250Coins[];
 extern const u8 gText_Multichoice_Empty1[];
 extern const u8 gText_Multichoice_Empty2[];
 extern const u8 gText_BecomeLeader[];
@@ -1544,5 +1551,6 @@ extern const u8 gText_PokeSum_EggOrigin_Trade[];
 extern const u8 gText_PokeSum_EggOrigin_NicePlace[];
 extern const u8 gText_PokeSum_EggOrigin_Spa[];
 extern const u8 gText_PokeSum_EggOrigin_Trade[];
+
 
 #endif //GUARD_STRINGS_H

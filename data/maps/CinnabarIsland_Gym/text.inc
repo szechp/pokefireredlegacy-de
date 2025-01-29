@@ -37,6 +37,29 @@ CinnabarIsland_Gym_Text_BlainePostBattle::
 CinnabarIsland_Gym_Text_MakeSpaceForThis::
     .string "Make space for this, child!$"
 
+CinnabarIsland_Gym_Text_RematchBlaine::
+    .string "Ah! The CHAMP!\p"
+    .string "I've stoked my flames hotter\n"
+    .string "than ever before!\p"
+    .string "Let's see if you can withstand\n"
+    .string "my inferno now!\p"
+    .string "Ready for a rematch, CHAMP?$"
+
+CinnabarIsland_Gym_Text_RematchBlaineDefeat::
+    .string "Guess you put me out!$"
+
+CinnabarIsland_Gym_Text_BlainePostRematchBattle::
+    .string "Incredible! Your strength exceeds\n"
+    .string "even the wildest flame!\p"
+    .string "Truly, you are a worthy Champion!$"
+
+CinnabarIsland_Gym_Text_BlaineNoRematchBattle::
+    .string "Not fired up Yet!$"
+
+CinnabarIsland_Gym_Text_RematchYesBlaine::
+    .string "Ha, Fired Up!\n"
+    .string "This battle will be scorching!$"
+
 CinnabarIsland_Gym_Text_ErikIntro::
     .string "Do you know how hot POKéMON fire\n"
     .string "breath can get?$"

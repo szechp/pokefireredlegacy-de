@@ -132,15 +132,15 @@
 #define FLAG_HIDE_TWO_ISLAND_GAME_CORNER_BIKER             0x074
 #define FLAG_HIDE_TWO_ISLAND_GAME_CORNER_LOSTELLE          0x075
 #define FLAG_HIDE_LOSTELLE_IN_HER_HOME                     0x076
-#define FLAG_0x077                                         0x077
-#define FLAG_0x078                                         0x078
+#define FLAG_HIDE_SEAFOAM_ISLANDS_B3F_TM13                 0x077
+#define FLAG_HIDE_TUNNEL_B2F_HARD_STONE                    0x078
 #define FLAG_HIDE_THREE_ISLAND_BIKERS                      0x079
 #define FLAG_HIDE_LOSTELLE_IN_BERRY_FOREST                 0x07A
 #define FLAG_HIDE_TWO_ISLAND_WOMAN                         0x07B
 #define FLAG_HIDE_TWO_ISLAND_BEAUTY                        0x07C
 #define FLAG_HIDE_TWO_ISLAND_SUPER_NERD                    0x07D
 #define FLAG_HIDE_THREE_ISLAND_ANTIBIKERS                  0x07E
-#define FLAG_0x07F                                         0x07F
+#define FLAG_HIDE_TUNNEL_B2F_IRON_TAIL                     0x07F
 #define FLAG_HIDE_ROUTE_16_SNORLAX                         0x080
 #define FLAG_HIDE_MEWTWO                                   0x081
 #define FLAG_HIDE_ARTICUNO                                 0x082
@@ -190,20 +190,20 @@
 #define FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS 0x0AE
 
 // Unused?
-#define FLAG_0x0AF               0x0AF
-#define FLAG_0x0B0               0x0B0
-#define FLAG_0x0B1               0x0B1
-#define FLAG_0x0B2               0x0B2
-#define FLAG_0x0B3               0x0B3
-#define FLAG_0x0B4               0x0B4
-#define FLAG_0x0B5               0x0B5
-#define FLAG_0x0B6               0x0B6
-#define FLAG_0x0B7               0x0B7
-#define FLAG_0x0B8               0x0B8
-#define FLAG_0x0B9               0x0B9
-#define FLAG_0x0BA               0x0BA
-#define FLAG_0x0BB               0x0BB
-#define FLAG_0x0BC               0x0BC
+#define FLAG_0x0AF            0x0AF
+#define FLAG_HIDE_JOHTO_LEADERS  0x0B0
+#define FLAG_CELEBI              0x0B1
+#define FLAG_SHOPCHAMP           0x0B2
+#define FLAG_SHOPJOHTO           0x0B3
+#define FLAG_HIDE_ADMIN2               0x0B4
+#define FLAG_HIDE_ADMIN            0x0B5
+#define FLAG_HIDE_POSTGAME_TRAINERS      0x0B6
+#define FLAG_HIDE_SEVIIGUYS      0x0B7
+#define FLAG_HIDE_OAK               0x0B8
+#define FLAG_HIDE_OAK2               0x0B9
+#define FLAG_HIDE_MEW               0x0BA
+#define FLAG_SPAWN_MEW              0x0BB
+#define FLAG_SPAWN_CELEBI              0x0BC
 #define FLAG_0x0BD               0x0BD
 #define FLAG_0x0BE               0x0BE
 #define FLAG_0x0BF               0x0BF
@@ -530,9 +530,9 @@
 #define FLAG_HIDE_SILPH_CO_4F_TM41                              0x1FE
 
 // Unused?
-#define FLAG_0x1FF               0x1FF
-#define FLAG_0x200               0x200
-#define FLAG_0x201               0x201
+#define FLAG_HIDE_CELADON_CITY_SUN_STONE               0x1FF
+#define FLAG_HIDE_ROUTE12_SILK             0x200
+#define FLAG_BIKE_GEAR           0x201
 #define FLAG_0x202               0x202
 #define FLAG_0x203               0x203
 #define FLAG_0x204               0x204
@@ -596,7 +596,7 @@
 #define FLAG_GOT_HM05                                    0x23B
 #define FLAG_RESCUED_MR_FUJI                             0x23C
 #define FLAG_GOT_POKE_FLUTE                              0x23D
-#define FLAG_0x23E                                       0x23E
+#define FLAG_GOT_HM08                                    0x23E
 #define FLAG_GOT_TM28_FROM_ROCKET                        0x23F
 #define FLAG_GOT_OLD_ROD                                 0x240
 #define FLAG_GOT_BIKE_VOUCHER                            0x241
@@ -767,11 +767,10 @@
 #define FLAG_FOUGHT_DEOXYS                               0x2E4
 #define FLAG_0x2E5                                       0x2E5
 #define FLAG_0x2E6                                       0x2E6
-#define FLAG_0x2E7                                       0x2E7
-#define FLAG_0x2E8                                       0x2E8
-#define FLAG_0x2E9                                       0x2E9
-#define FLAG_0x2EA                                       0x2EA
-#define FLAG_0x2EB                                       0x2EB
+#define FLAG_HIDE_AURORA_GUY                             0x2E7
+#define FLAG_CAUGHT_RAIKOU                               0x2E9
+#define FLAG_CAUGHT_ENTEI                                0x2EA
+#define FLAG_CAUGHT_SUICUNE                              0x2EB
 #define FLAG_REVIVED_DOME                                0x2EC
 #define FLAG_REVIVED_HELIX                               0x2ED
 #define FLAG_REVIVED_AMBER                               0x2EE
@@ -794,40 +793,40 @@
 #define FLAG_OAKS_RATING_IS_VIA_PC                       0x2FF
 
 // Unused?
-#define FLAG_0x300               0x300
-#define FLAG_0x301               0x301
-#define FLAG_0x302               0x302
-#define FLAG_0x303               0x303
-#define FLAG_0x304               0x304
-#define FLAG_0x305               0x305
-#define FLAG_0x306               0x306
-#define FLAG_0x307               0x307
-#define FLAG_0x308               0x308
-#define FLAG_0x309               0x309
-#define FLAG_0x30A               0x30A
-#define FLAG_0x30B               0x30B
-#define FLAG_0x30C               0x30C
-#define FLAG_0x30D               0x30D
-#define FLAG_0x30E               0x30E
-#define FLAG_0x30F               0x30F
-#define FLAG_0x310               0x310
-#define FLAG_0x311               0x311
-#define FLAG_0x312               0x312
-#define FLAG_0x313               0x313
-#define FLAG_0x314               0x314
-#define FLAG_0x315               0x315
-#define FLAG_0x316               0x316
-#define FLAG_0x317               0x317
-#define FLAG_0x318               0x318
-#define FLAG_0x319               0x319
-#define FLAG_0x31A               0x31A
-#define FLAG_0x31B               0x31B
-#define FLAG_0x31C               0x31C
-#define FLAG_0x31D               0x31D
-#define FLAG_0x31E               0x31E
-#define FLAG_0x31F               0x31F
-#define FLAG_0x320               0x320
-#define FLAG_0x321               0x321
+#define FLAG_NUZLOCKE            0x300
+#define FLAG_HARD                0x301
+#define FLAG_MAXCAP              0x302
+#define FLAG_DONE_POKECENTER_FIRST_USE              0x303
+#define FLAG_GOT_FOSSIL_FROM_FOSSIL_GUY                  0x304
+#define FLAG_TREE_ROUTE_9        0x305
+#define FLAG_ROCK_ROUTE_4        0x306
+#define FLAG_TREE_DIGLETT        0x307
+#define FLAG_TREE_ROUTE2_1       0x308
+#define FLAG_TREE_ROUTE2_2       0x309
+#define FLAG_TREE_CELADON        0x30A
+#define FLAG_TREE_ERIKA          0x30B
+#define FLAG_TREE_SURGE          0x30C
+#define FLAG_TREE_ROUTE2_3               0x30D
+#define FLAG_TREE_ERIKA2              0x30E
+#define FLAG_TREE_ERIKA3             0x30F
+#define FLAG_TREE_ROUTE5              0x310
+#define FLAG_TREE_ROUTE14               0x311
+#define FLAG_TREE_ROUTE14_1               0x312
+#define FLAG_TREE_ROUTE16               0x313
+#define FLAG_TREE_ROUTE15               0x314
+#define FLAG_TREE_ROUTE13               0x315
+#define FLAG_TREE_ROUTE12               0x316
+#define FLAG_TREE_ROUTE8              0x317
+#define FLAG_TREE_ROUTE8_2               0x318
+#define FLAG_ROCK_DIGLETT               0x319
+#define FLAG_ROCK_PALLET             0x31A
+#define FLAG_ROCK_MTMOON               0x31B
+#define FLAG_ROCK_MTMOON2              0x31C
+#define FLAG_ROCK_MTMOON3               0x31D
+#define FLAG_UNBLOCK_CERULEAN     0x31E
+#define FLAG_BEAT_SS_RIVAL               0x31F
+#define FLAG_GUARD_TEA               0x320
+#define FLAG_ROCK_TUNNEL              0x321
 #define FLAG_0x322               0x322
 #define FLAG_0x323               0x323
 #define FLAG_0x324               0x324
@@ -1222,10 +1221,10 @@
 #define FLAG_HIDDEN_ITEM_SSANNE_EXTERIOR_LAVA_COOKIE                       (FLAG_HIDDEN_ITEMS_START + 190)
 
 // Unused hidden item flags
-#define FLAG_UNUSED_0x4A7               0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8               0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9               0x4A9 // Unused Flag
-#define FLAG_UNUSED_0x4AA               0x4AA // Unused Flag
+#define FLAG_HIDDEN_ITEM_ROUTE10_LIGHTBALL                                 (FLAG_HIDDEN_ITEMS_START + 191)
+#define FLAG_HIDDEN_ITEM_THICK_CLUB                                        (FLAG_HIDDEN_ITEMS_START + 192) 
+#define FLAG_HIDE_SOUL_DEW                                                 (FLAG_HIDDEN_ITEMS_START + 193)
+#define FLAG_HIDE_CHOICE_BAND                                              (FLAG_HIDDEN_ITEMS_START + 194)
 #define FLAG_UNUSED_0x4AB               0x4AB // Unused Flag
 #define FLAG_UNUSED_0x4AC               0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD               0x4AD // Unused Flag
@@ -1249,46 +1248,46 @@
 
 // Unused?
 #define FLAG_0x4BD               0x4BD
-#define FLAG_0x4BE               0x4BE
-#define FLAG_0x4BF               0x4BF
-#define FLAG_0x4C0               0x4C0
-#define FLAG_0x4C1               0x4C1
-#define FLAG_0x4C2               0x4C2
-#define FLAG_0x4C3               0x4C3
-#define FLAG_0x4C4               0x4C4
-#define FLAG_0x4C5               0x4C5
-#define FLAG_0x4C6               0x4C6
-#define FLAG_0x4C7               0x4C7
-#define FLAG_0x4C8               0x4C8
-#define FLAG_0x4C9               0x4C9
-#define FLAG_0x4CA               0x4CA
-#define FLAG_0x4CB               0x4CB
-#define FLAG_0x4CC               0x4CC
-#define FLAG_0x4CD               0x4CD
-#define FLAG_0x4CE               0x4CE
-#define FLAG_0x4CF               0x4CF
-#define FLAG_0x4D0               0x4D0
-#define FLAG_0x4D1               0x4D1
-#define FLAG_0x4D2               0x4D2
-#define FLAG_0x4D3               0x4D3
-#define FLAG_0x4D4               0x4D4
-#define FLAG_0x4D5               0x4D5
-#define FLAG_0x4D6               0x4D6
-#define FLAG_0x4D7               0x4D7
-#define FLAG_0x4D8               0x4D8
-#define FLAG_0x4D9               0x4D9
-#define FLAG_0x4DA               0x4DA
-#define FLAG_0x4DB               0x4DB
-#define FLAG_0x4DC               0x4DC
-#define FLAG_0x4DD               0x4DD
-#define FLAG_0x4DE               0x4DE
-#define FLAG_0x4DF               0x4DF
-#define FLAG_0x4E0               0x4E0
-#define FLAG_0x4E1               0x4E1
-#define FLAG_0x4E2               0x4E2
-#define FLAG_0x4E3               0x4E3
-#define FLAG_0x4E4               0x4E4
-#define FLAG_0x4E5               0x4E5
+#define FLAG_GET_AURORA          0x4BE
+#define FLAG_SEVIIJOHTO          0x4BF
+#define FLAG_ARMSTRONG_DEFEATED  0x4C0
+#define FLAG_SEVIIMATCH          0x4C1
+#define FLAG_GOTFANG             (FLAG_HIDDEN_ITEMS_START + 195)
+#define FLAG_GOTYELLOW           (FLAG_HIDDEN_ITEMS_START + 196)
+#define FLAG_GOTBLUE             (FLAG_HIDDEN_ITEMS_START + 197)
+#define FLAG_GOTRED              (FLAG_HIDDEN_ITEMS_START + 198)
+#define FLAG_GOTPINK             (FLAG_HIDDEN_ITEMS_START + 199)
+#define FLAG_GOTGREEN            (FLAG_HIDDEN_ITEMS_START + 200)
+#define FLAG_DEFEATED_NURSE_JOY  0x4C8
+#define FLAG_FOUGHT_CELEBI       0x4C9
+#define FLAG_DEFEATED_DUDE       0x4CA
+#define FLAG_DEFEATED_KAREN      0x4CB
+#define FLAG_GET_MYSTIC          0x4CC
+#define FLAG_DEFEATED_WILL       0x4CD
+#define FLAG_BUGSY_DEFEATED      0x4CE
+#define FLAG_FALKNER_DEFEATED    0x4CF
+#define FLAG_WHITNEY_DEFEATED    0x4D0
+#define FLAG_MORTY_DEFEATED      0x4D1
+#define FLAG_CHUCK_DEFEATED      0x4D2
+#define FLAG_JASMINE_DEFEATED    0x4D3
+#define FLAG_PRYCE_DEFEATED      0x4D4
+#define FLAG_CLAIR_DEFEATED      0x4D5
+#define FLAG_SPIKE_DEFEATED      0x4D6
+#define FLAG_CASENO_DEFEATED     0x4D7
+#define FLAG_CRUELKING_DEFEATED  0x4D8
+#define FLAG_OMAN_DEFEATED       0x4D9
+#define FLAG_KSI_DEFEATED        0x4DA
+#define FLAG_SAMAL_DEFEATED      0x4DB
+#define FLAG_OAK_DEFEATED        0x4DC
+#define FLAG_OAK2_DEFEATED       0x4DD
+#define FLAG_FOUGHT_MEW          0x4DE
+#define FLAG_SPEEDY_DEFEATED     0x4DF
+#define FLAG_DEFEATED_FREDDY     0x4E0
+#define FLAG_CAUGHT_UNOWN_A      0x4E1
+#define FLAG_SHOW_HIDDEN_POWER   0x4E2
+#define FLAG_OWL_DEFEATED        0x4E3
+#define FLAG_HIDE_EASTER         0x4E4
+#define FLAG_HIDDEN_AURORA       (FLAG_HIDDEN_ITEMS_START + 201)
 #define FLAG_0x4E6               0x4E6
 #define FLAG_0x4E7               0x4E7
 #define FLAG_0x4E8               0x4E8
@@ -1392,9 +1391,9 @@
 #define FLAG_0x83A                                                  (SYS_FLAGS + 0x3A)
 #define FLAG_SYS_RIBBON_GET                                         (SYS_FLAGS + 0x3B)
 #define FLAG_SYS_SAW_HELP_SYSTEM_INTRO                              (SYS_FLAGS + 0x3C)
-#define FLAG_0x83D                                                  (SYS_FLAGS + 0x3D)
+#define FLAG_VS_SEEKER_UPGRADE                                      (SYS_FLAGS + 0x3D)
 #define FLAG_OPENED_START_MENU                                      (SYS_FLAGS + 0x3E)
-#define FLAG_0x83F                                                  (SYS_FLAGS + 0x3F)
+#define FLAG_IS_CHAMPION                                            (SYS_FLAGS + 0x3F)
 #define FLAG_SYS_NATIONAL_DEX                                       (SYS_FLAGS + 0x40)
 #define FLAG_SYS_PC_STORAGE_DISABLED                                (SYS_FLAGS + 0x41)
 #define FLAG_SYS_INFORMED_OF_LOCAL_WIRELESS_PLAYER                  (SYS_FLAGS + 0x42)

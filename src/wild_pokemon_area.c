@@ -243,7 +243,7 @@ static s32 GetRoamerPokedexAreaMarkers(u16 species, struct Subsprite * subsprite
     roamerIdx = GetRoamerIndex(species);
     if (roamerIdx < 0)
         return 0;
-    if (sRoamerPairs[roamerIdx].starter != GetStarterSpecies())
+    if (sRoamerPairs[roamerIdx].roamer != GetRoamerSpecies())
         return 0;
 
     mapSecId = GetRoamerLocationMapSectionId();
@@ -267,11 +267,7 @@ static bool32 IsSpeciesOnMap(const struct WildPokemonHeader * data, s32 species)
         return TRUE;
 // When searching the fishing encounters, this incorrectly uses the size of the land encounters.
 // As a result it's reading out of bounds of the fishing encounters tables.
-#ifdef BUGFIX
     if (IsSpeciesInEncounterTable(data->fishingMonsInfo, species, FISH_WILD_COUNT))
-#else
-    if (IsSpeciesInEncounterTable(data->fishingMonsInfo, species, LAND_WILD_COUNT))
-#endif
         return TRUE;
     if (IsSpeciesInEncounterTable(data->rockSmashMonsInfo, species, ROCK_WILD_COUNT))
         return TRUE;

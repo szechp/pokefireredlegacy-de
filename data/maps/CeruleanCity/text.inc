@@ -180,3 +180,9 @@ CeruleanCity_Text_GymSign::
     .string "LEADER: MISTY\l"
     .string "The Tomboyish Mermaid!$"
 
+CeruleanCity_Text_NoPokeballs::
+	.string "Wait a second… Do you have any POKé\n"
+	.string "BALLS on you?\p"
+	.string "You'll want some before you head any\n"
+	.string "further. Take a few of mine.$"
+

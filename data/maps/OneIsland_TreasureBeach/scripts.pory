@@ -1,0 +1,46 @@
+raw `
+OneIsland_TreasureBeach_MapScripts::
+	.byte 0
+
+OneIsland_TreasureBeach_EventScript_Boy::
+	msgbox OneIsland_TreasureBeach_Text_GoodThingsWashUpOnBeach, MSGBOX_NPC
+	end
+
+OneIsland_TreasureBeach_EventScript_Jasmine::
+	goto_if_set FLAG_GET_MYSTIC, OneIsland_TreasureBeach_EventScript_RematchJasmine
+	goto_if_set FLAG_JASMINE_DEFEATED, OneIsland_TreasureBeach_EventScript_CantRematchJasmine
+	msgbox OneIsland_TreasureBeach_Text_Jasmine, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, OneIsland_TreasureBeach_EventScript_NoJasmine
+	trainerbattle_single TRAINER_JASMINE, OneIsland_TreasureBeach_Text_YesJasmine, OneIsland_TreasureBeach_Text_JasmineDefeat, OneIsland_TreasureBeach_EventScript_PostJasmine, NO_MUSIC
+	release
+	end
+
+OneIsland_TreasureBeach_EventScript_PostJasmine::
+	msgbox OneIsland_TreasureBeach_Text_JasminePostBattle
+	setflag FLAG_JASMINE_DEFEATED
+	release
+	end
+
+OneIsland_TreasureBeach_EventScript_CantRematchJasmine::
+	msgbox OneIsland_TreasureBeach_Text_JasminePostBattle
+	release
+	end
+
+OneIsland_TreasureBeach_EventScript_NoJasmine::
+	msgbox OneIsland_TreasureBeach_Text_NoJasmine
+	release
+	end
+
+OneIsland_TreasureBeach_EventScript_RematchJasmine::
+	msgbox OneIsland_TreasureBeach_Text_RematchJasmine, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, OneIsland_TreasureBeach_EventScript_NoJasmine
+	trainerbattle_single TRAINER_JASMINE, OneIsland_TreasureBeach_Text_YesRematchJasmine, OneIsland_TreasureBeach_Text_RematchJasmineDefeat, OneIsland_TreasureBeach_EventScript_PostRematchJasmine, NO_MUSIC
+	release
+	end
+
+OneIsland_TreasureBeach_EventScript_PostRematchJasmine::
+	msgbox OneIsland_TreasureBeach_Text_RematchJasmineDefeat
+	cleartrainerflag TRAINER_JASMINE
+	release
+	end
+`

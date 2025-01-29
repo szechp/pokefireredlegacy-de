@@ -28,7 +28,7 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_AROMA_LADY",
       "x": 12,
       "y": 6,
       "elevation": 3,
@@ -42,7 +42,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNG_COUPLE_F",
       "x": 3,
       "y": 34,
       "elevation": 3,
@@ -56,7 +56,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNG_COUPLE_M",
       "x": 4,
       "y": 34,
       "elevation": 3,
@@ -70,7 +70,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNG_COUPLE_M",
       "x": 11,
       "y": 26,
       "elevation": 3,
@@ -84,7 +84,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNG_COUPLE_F",
       "x": 10,
       "y": 26,
       "elevation": 3,
@@ -98,7 +98,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ROCKER",
+      "graphics_id": "OBJ_EVENT_GFX_JUGGLER",
       "x": 11,
       "y": 17,
       "elevation": 5,
@@ -112,15 +112,19 @@
     },
     {
       "type": "clone",
-      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
+      "graphics_id": "OBJ_EVENT_GFX_JUGGLER",
       "x": 7,
       "y": -2,
       "target_local_id": 1,
       "target_map": "MAP_SEVEN_ISLAND"
     }
   ],
-  "warp_events": [],
-  "coord_events": [],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "hidden_item",

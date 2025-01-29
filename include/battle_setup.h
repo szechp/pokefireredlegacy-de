@@ -34,4 +34,6 @@ void PlayTrainerEncounterMusic(void);
 const u8 *GetTrainerALoseText(void);
 const u8 *GetTrainerWonSpeech(void);
 
+
+
 #endif // GUARD_BATTLE_SETUP_H

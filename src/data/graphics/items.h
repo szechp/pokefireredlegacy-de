@@ -529,6 +529,9 @@ const u32 gItemIconPalette_ThickClub[] = INCBIN_U32("graphics/items/icon_palette
 const u32 gItemIcon_Stick[] = INCBIN_U32("graphics/items/icons/stick.4bpp.lz");
 const u32 gItemIconPalette_Stick[] = INCBIN_U32("graphics/items/icon_palettes/stick.gbapal.lz");
 
+const u32 gItemIcon_BrickPiece[] = INCBIN_U32("graphics/items/icons/brick_piece.4bpp.lz");
+const u32 gItemIconPalette_BrickPiece[] = INCBIN_U32("graphics/items/icon_palettes/brick_piece.gbapal.lz");
+
 const u32 gItemIcon_Scarf[] = INCBIN_U32("graphics/items/icons/scarf.4bpp.lz");
 const u32 gItemIconPalette_RedScarf[] = INCBIN_U32("graphics/items/icon_palettes/red_scarf.gbapal.lz");
 const u32 gItemIconPalette_BlueScarf[] = INCBIN_U32("graphics/items/icon_palettes/blue_scarf.gbapal.lz");
@@ -635,6 +638,7 @@ const u32 gItemIconPalette_GroundTMHM[]   = INCBIN_U32("graphics/items/icon_pale
 const u32 gItemIconPalette_GhostTMHM[]    = INCBIN_U32("graphics/items/icon_palettes/ghost_tm_hm.gbapal.lz");
 const u32 gItemIconPalette_RockTMHM[]     = INCBIN_U32("graphics/items/icon_palettes/rock_tm_hm.gbapal.lz");
 const u32 gItemIconPalette_FlyingTMHM[]   = INCBIN_U32("graphics/items/icon_palettes/flying_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_BugTMHM[] = INCBIN_U32("graphics/items/icon_palettes/bug_tm_hm.gbapal.lz");
 
 // FireRed/LeafGreen key items
 

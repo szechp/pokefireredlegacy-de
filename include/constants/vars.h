@@ -158,7 +158,7 @@
 #define VAR_MAP_SCENE_CINNABAR_ISLAND_POKEMON_LAB_EXPERIMENT_ROOM_REVIVE_STATE 0x406A
 #define VAR_MAP_SCENE_ROUTE24                                                  0x406B
 #define VAR_MAP_SCENE_PEWTER_CITY                                              0x406C
-#define VAR_0x406D                                                             0x406D
+#define VAR_MAP_SCENE_PALLET_TOWN_PLAYERS_HOUSE_1F                             0x406D
 #define VAR_MAP_SCENE_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE                        0x406E
 #define VAR_CABLE_CLUB_STATE                                                   0x406F
 #define VAR_MAP_SCENE_PALLET_TOWN_SIGN_LADY                                    0x4070
@@ -302,10 +302,10 @@
 #define VAR_0x40F9                 0x40F9
 #define VAR_0x40FA                 0x40FA
 #define VAR_0x40FB                 0x40FB
-#define VAR_0x40FC                 0x40FC
+#define VAR_DIFFICULTY             0x40FC
 #define VAR_0x40FD                 0x40FD
 #define VAR_0x40FE                 0x40FE
-#define VAR_0x40FF                 0x40FF
+#define VAR_REPEL_LAST_USED        0x40FF
 
 #define VARS_END                   0x40FF
 #define VARS_COUNT                 (VARS_END - VARS_START + 1)

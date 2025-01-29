@@ -26,3 +26,18 @@ Route1_Text_RouteSign::
     .string "ROUTE 1\n"
     .string "PALLET TOWN - VIRIDIAN CITY$"
 
+Route1_Text_Oak::
+    .string "Oak Placeholder!$"
+
+Route1_Text_OakDefeat::
+    .string "Oak Placeholder!$"
+
+Route1_Text_OakPostBattle::
+    .string "Oak Placeholder!$"
+
+Route1_Text_NoOak::
+    .string "Oak Placeholder!$"
+
+Route1_Text_YesOak::
+    .string "Oak Placeholder!$"
+

@@ -37,7 +37,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_RUIN_MANIAC",
       "x": 32,
       "y": 11,
       "elevation": 5,
@@ -51,7 +51,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_RUIN_MANIAC",
       "x": 33,
       "y": 16,
       "elevation": 5,
@@ -65,7 +65,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_RUIN_MANIAC",
       "x": 31,
       "y": 24,
       "elevation": 5,
@@ -79,7 +79,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_RUIN_MANIAC",
       "x": 14,
       "y": 10,
       "elevation": 5,
@@ -93,7 +93,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
+      "graphics_id": "OBJ_EVENT_GFX_POKE_MANIAC",
       "x": 21,
       "y": 29,
       "elevation": 5,
@@ -269,7 +269,9 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

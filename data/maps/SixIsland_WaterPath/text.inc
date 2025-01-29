@@ -100,3 +100,12 @@ SixIsland_WaterPath_Text_RouteSign::
     .string "WATER PATH\n"
     .string "Leads to RUIN VALLEY$"
 
+SixIsland_WaterPath_Text_MayIHelpYou::
+    .string "Hahahahaaha\l"
+    .string "I've got the best TM's\n"
+    .string "Out there!\p"
+    .string "I have made a lot of money'\n"
+    .string "selling these Hit Singles!'\p"
+    .string "You may want these bad boy's\n"
+    .string "Themselves I guess!$"
+

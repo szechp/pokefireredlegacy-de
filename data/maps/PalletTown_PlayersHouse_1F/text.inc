@@ -36,3 +36,17 @@ PalletTown_PlayersHouse_1F_Text_MovieOnTVGirlOnBrickRoad::
 PalletTown_PlayersHouse_1F_Text_OopsWrongSide::
     .string "Oops, wrong side…$"
 
+PalletTown_PlayersHouse_1F_Text_MomShoes::
+    .string "MOM: …Right.\n"
+    .string "All boys leave home someday.\l"
+    .string "It said so on TV.\p"
+    .string "Oh, yes. PROF. OAK, next door, was\n"
+    .string "looking for you.$"
+
+PalletTown_PlayersHouse_1F_Text_ReceivedRunningShoesFromAide::
+    .string "{PLAYER} received the\n"
+    .string "RUNNING SHOES from the MOM.$"
+
+PalletTown_PlayersHouse_1F_Text_ReceivedRunningShoesFromAide2::
+    .string "{PLAYER} put on the\n"
+    .string "RUNNING SHOES.$"

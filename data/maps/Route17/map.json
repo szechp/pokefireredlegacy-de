@@ -42,7 +42,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "graphics_id": "OBJ_EVENT_GFX_CUE_BALL",
       "x": 11,
       "y": 15,
       "elevation": 3,
@@ -56,7 +56,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "graphics_id": "OBJ_EVENT_GFX_CUE_BALL",
       "x": 15,
       "y": 24,
       "elevation": 3,
@@ -98,7 +98,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "graphics_id": "OBJ_EVENT_GFX_CUE_BALL",
       "x": 2,
       "y": 61,
       "elevation": 3,
@@ -112,7 +112,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "graphics_id": "OBJ_EVENT_GFX_CUE_BALL",
       "x": 21,
       "y": 61,
       "elevation": 3,
@@ -126,7 +126,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "graphics_id": "OBJ_EVENT_GFX_CUE_BALL",
       "x": 18,
       "y": 94,
       "elevation": 3,
@@ -165,10 +165,28 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route17_EventScript_Jaxon",
       "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_CUE_BALL",
+      "x": 12,
+      "y": 138,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route17_EventScript_Paxton",
+      "flag": "FLAG_HIDE_SEVIIGUYS"
     }
   ],
-  "warp_events": [],
-  "coord_events": [],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

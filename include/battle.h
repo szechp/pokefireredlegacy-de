@@ -68,63 +68,46 @@ enum {
 // For the second argument of GetMoveTarget, when no target override is needed
 #define NO_TARGET_OVERRIDE 0
 
-struct TrainerMonNoItemDefaultMoves
-{
-    u16 iv;
-    u8 lvl;
-    u16 species;
-};
+struct TrainerMon
 
-struct TrainerMonItemDefaultMoves
 {
     u16 iv;
-    u8 lvl;
-    u16 species;
-    u16 heldItem;
-};
-
-struct TrainerMonNoItemCustomMoves
-{
-    u16 iv;
-    u8 lvl;
-    u16 species;
-    u16 moves[MAX_MON_MOVES];
-};
-
-struct TrainerMonItemCustomMoves
-{
-    u16 iv;
+    u8 nickname[POKEMON_NAME_LENGTH + 1];
+    u8 ivs[NUM_STATS];
+    u8 evs[NUM_STATS];
     u8 lvl;
     u16 species;
     u16 heldItem;
     u16 moves[MAX_MON_MOVES];
+    u8 ball;
+    u16 ability:2;
+    u16 friendship:2;
+    u16 gender:2;
+    u16 build:3;
+    u16 shiny:1;
+    u16 nature:5;
+    u16 unused:1;
 };
 
-#define NO_ITEM_DEFAULT_MOVES(party) { .NoItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = 0
-#define NO_ITEM_CUSTOM_MOVES(party) { .NoItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET
-#define ITEM_DEFAULT_MOVES(party) { .ItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_HELD_ITEM
-#define ITEM_CUSTOM_MOVES(party) { .ItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM
+#define TRAINER_MON(party) { .TrainerMon = party }, .partySize = ARRAY_COUNT(party)
 
 union TrainerMonPtr
 {
-    const struct TrainerMonNoItemDefaultMoves *NoItemDefaultMoves;
-    const struct TrainerMonNoItemCustomMoves *NoItemCustomMoves;
-    const struct TrainerMonItemDefaultMoves *ItemDefaultMoves;
-    const struct TrainerMonItemCustomMoves *ItemCustomMoves;
+    const struct TrainerMon *TrainerMon;
 };
 
 struct Trainer
 {
-    /*0x00*/ u8 partyFlags;
-    /*0x01*/ u8 trainerClass;
-    /*0x02*/ u8 encounterMusic_gender; // last bit is gender
-    /*0x03*/ u8 trainerPic;
-    /*0x04*/ u8 trainerName[12];
-    /*0x10*/ u16 items[MAX_TRAINER_ITEMS];
-    /*0x18*/ bool8 doubleBattle;
-    /*0x1C*/ u32 aiFlags;
-    /*0x20*/ u8 partySize;
-    /*0x24*/ const union TrainerMonPtr party;
+    u8 partyFlags; // Unread
+    u8 trainerClass;
+    u8 encounterMusic_gender; // last bit is gender
+    u8 trainerPic;
+    u8 trainerName[12];
+    u16 items[4];
+    bool8 doubleBattle;
+    u32 aiFlags;
+    u8 partySize;
+    union TrainerMonPtr party;
 };
 
 extern const struct Trainer gTrainers[];
@@ -472,8 +455,8 @@ extern struct BattleStruct *gBattleStruct;
         typeArg = gBattleMoves[move].type;                            \
 }
 
-#define IS_TYPE_PHYSICAL(moveType)(moveType < TYPE_MYSTERY)
-#define IS_TYPE_SPECIAL(moveType)(moveType > TYPE_MYSTERY)
+#define IS_TYPE_PHYSICAL(moveType)((moveType < TYPE_MYSTERY && moveType != TYPE_GHOST) || moveType == TYPE_DARK) // Doing dark/ghost switch this way to preserve IDs for pkhex/trade functionality
+#define IS_TYPE_SPECIAL(moveType)((moveType > TYPE_MYSTERY && moveType != TYPE_DARK) || moveType == TYPE_GHOST)
 
 #define TARGET_TURN_DAMAGED ((gSpecialStatuses[gBattlerTarget].physicalDmg != 0 || gSpecialStatuses[gBattlerTarget].specialDmg != 0))
 

@@ -35,6 +35,10 @@ SixIsland_WaterPath_House1_Text_ThisWontDo::
     .string "HERACROSS looks much more macho\n"
     .string "and cool, and has a lovely horn!$"
 
+SixIsland_WaterPath_House1_Text_TakeThisAlso::
+    .string "Take this Also!$"
+
+
 SixIsland_WaterPath_House1_Text_YourBagIsFull::
     .string "Your BAG is full.\n"
     .string "My reward won't fit.$"

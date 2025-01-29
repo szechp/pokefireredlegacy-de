@@ -57,3 +57,9 @@ FiveIsland_Meadow_Text_Rocket3PostBattle::
     .string "You won't be able to get in without\n"
     .string "the passwords anyway.$"
 
+FiveIsland_Meadow_Text_Beasts::
+    .string "If you get all 3 Beasts\n"
+    .string "I'll give you a ticket.$"
+
+FiveIsland_Meadow_Text_Beasts2::
+    .string "Mystic Ticket PLACEHOLDER!$"

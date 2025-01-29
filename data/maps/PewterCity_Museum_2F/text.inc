@@ -21,6 +21,23 @@ Text_SeismicTossTaught::
     .string "I hope you won't toss in the towel.\n"
     .string "Keep it up.$"
 
+Text_SeismicTossReteach::
+    .string "I see you still haven't tossed in\n"
+    .string "the towel when it comes to raising\l"
+    .string "your POKéMON.\p"
+    .string "The only thing you should toss is\n"
+    .string "another POKéMON with SEISMIC TOSS!\p"
+    .string "I can teach it to your POKéMON\n"
+    .string "again for ¥10000.$"
+Text_SeismicTossReteach2::
+    .string "Well, how about it?\n"
+    .string "Should I teach SEISMIC TOSS to\l"
+    .string "your POKéMON?$"
+Text_SeismicTossNotEnoughMoney::
+    .string "I'm afraid I have to toss in\n"
+    .string "the towel on teaching your POKéMON\l"
+    .string "if you don't have ¥10000…$"
+
 PewterCity_Museum_1F_Text_WhatsSpecialAboutMoonStone::
     .string "MOON STONE, huh?\p"
     .string "What's so special about it?\n"
@@ -52,3 +69,10 @@ PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon::
     .string "A meteorite that fell on MT. MOON.\n"
     .string "It is thought to be a MOON STONE.$"
 
+PewterCity_Museum_1F_Text_EliteTicket::
+    .string "If you beat the ELITE FOUR.\n"
+    .string "5 Times I'll give you Something!$"
+
+PewterCity_Museum_1F_Text_Ticket::
+    .string "Here's The Aurora Ticket!\p"
+    .string "PLACEHOLDER!$"

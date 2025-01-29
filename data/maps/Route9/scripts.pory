@@ -1,0 +1,12 @@
+raw `
+Route9_MapScripts::
+	.byte 0
+
+Route9_EventScript_RouteSign::
+	msgbox Route9_Text_RouteSign, MSGBOX_SIGN
+	end
+
+Route9_EventScript_Psyduck::
+	msgbox Route9_Text_Psyduck, MSGBOX_NPC
+	end
+`

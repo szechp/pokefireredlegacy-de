@@ -1,0 +1,10 @@
+raw `
+CeruleanCave_2F_MapScripts::
+	.byte 0
+
+CeruleanCave_2F_Ditto::
+	trainerbattle_single TRAINER_DITTO, CeruleanCave_2F_Text_DittoIntro, CeruleanCave_2F_Text_DittoDefeat
+	msgbox CeruleanCave_2F_Text_DittoPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+`

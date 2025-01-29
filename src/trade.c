@@ -2760,8 +2760,8 @@ static u32 CanTradeSelectedMon(struct Pokemon * playerParty, int partyCount, int
             return CANT_TRADE_EGG_YET;
     #endif
 
-        if (species2[monIdx] > KANTO_SPECIES_END)
-            return CANT_TRADE_NATIONAL;
+        /*if (species2[monIdx] > KANTO_SPECIES_END)
+            return CANT_TRADE_NATIONAL;*/
 
         // This is meant to be SPECIES_EGG. There are obviously no circumstances
         // where you're allowed to trade SPECIES_NONE, so it wouldn't make sense to
@@ -2783,8 +2783,8 @@ static u32 CanTradeSelectedMon(struct Pokemon * playerParty, int partyCount, int
             if (species2[monIdx] == SPECIES_EGG)
                 return CANT_TRADE_PARTNER_EGG_YET;
 
-            if (species2[monIdx] > KANTO_SPECIES_END)
-                return CANT_TRADE_INVALID_MON;
+            /*if (species2[monIdx] > KANTO_SPECIES_END)
+                return CANT_TRADE_INVALID_MON;*/
         }
     }
 

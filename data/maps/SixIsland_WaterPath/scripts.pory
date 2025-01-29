@@ -1,0 +1,44 @@
+raw `
+SixIsland_WaterPath_MapScripts::
+	.byte 0
+
+SixIsland_WaterPath_EventScript_HornWantedSign::
+	msgbox SixIsland_WaterPath_Text_WantedUltimateHorn, MSGBOX_SIGN
+	end
+
+SixIsland_WaterPath_EventScript_RouteSign::
+	msgbox SixIsland_WaterPath_Text_RouteSign, MSGBOX_SIGN
+	end
+
+SixIsland_WaterPath_EventScript_TMGUY::
+	goto_if_questlog EventScript_ReleaseEnd
+	lock
+	faceplayer
+	message SixIsland_WaterPath_Text_MayIHelpYou
+	waitmessage
+	pokemart SixIsland_WaterPath_TMGUY
+	msgbox Text_PleaseComeAgain
+	release
+	end
+
+	.align 2
+SixIsland_WaterPath_TMGUY::
+	.2byte ITEM_TM01
+	.2byte ITEM_TM02
+	.2byte ITEM_TM04
+	.2byte ITEM_TM06
+	.2byte ITEM_TM08
+	.2byte ITEM_TM14
+	.2byte ITEM_TM19
+	.2byte ITEM_TM22
+	.2byte ITEM_TM25
+	.2byte ITEM_TM26
+	.2byte ITEM_TM29
+	.2byte ITEM_TM32
+	.2byte ITEM_TM38
+	.2byte ITEM_TM50
+	.2byte ITEM_NONE
+	release
+	end
+
+`

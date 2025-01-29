@@ -39,6 +39,28 @@ VermilionCity_Gym_Text_LtSurgeDefeat::
     .string "You're the real deal, kid!\p"
     .string "Fine, then, take the THUNDERBADGE!$"
 
+VermilionCity_Gym_Text_RematchSurge::
+    .string "CHAMPION, huh? I've powered up!\p"
+    .string "This'll be a surge of power\n"
+    .string "you've never seen before!\p"
+    .string "Care for a jolt of reality, CHAMP?$"
+
+VermilionCity_Gym_Text_RematchSurgeDefeat::
+    .string "You really shocked me!$"
+
+VermilionCity_Gym_Text_SurgePostRematchBattle::
+    .string "Your team's electrifying strength...\p"
+    .string "You're the real deal!\p"
+    .string "You've proven yourself again, CHAMPION.\p"
+    .string "Until next time, stay charged!$"
+
+VermilionCity_Gym_Text_SurgeNoRematchBattle::
+    .string "Not Charged Yet?$"
+
+VermilionCity_Gym_Text_RematchYesSurge::
+    .string "That's the spirit!\p"
+    .string "No holding back!$"
+
 VermilionCity_Gym_Text_TuckerIntro::
     .string "When I was in the Army, LT. SURGE\n"
     .string "was my strict CO.\p"

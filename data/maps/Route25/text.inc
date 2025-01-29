@@ -117,3 +117,39 @@ Route25_Text_AreYouHereAlone::
     .string "If you're out at CERULEAN's cape…\n"
     .string "Well, it should be as a couple.$"
 
+Route25_Text_Will::
+    .string "Oh my, The CHAMPION?\p"
+    .string "I am just visiting this place.\p"
+    .string "The sea here is magnificent!\p"
+    .string "Good place for Training\p"
+    .string "Training to become a ELITE FOUR\n"
+    .string "Member under you guise!\p"
+    .string "Want to partake in a battle!\n"
+    .string "Good Sir?$"
+
+Route25_Text_WillDefeat::
+    .string "Seems Champion Level to me!$"
+
+Route25_Text_WillPostBattle::
+    .string "Incredible! Your strength is unmatched!\p"
+    .string "I can't wait to battle with you\n"
+    .string "as my CHAMPION.\p"
+    .string "I want you to have this gift!\p"
+    .string "A Flute that can repel Pokemon!$"
+
+Route25_Text_NoWill::
+    .string "Maybe some other time sir.$"
+
+Route25_Text_YesWill::
+    .string "Let's dance at the sea!$"
+
+Route25_Text_RematchWill::
+    .string "You want a Rematch?$"
+
+Route25_Text_RematchWillDefeat::
+    .string "Magnificent Performance Champion!$"
+
+Route25_Text_PostRematchWill::
+    .string "Incredible! Your strength is unmatched!\p"
+    .string "I can't wait to battle with you\n"
+    .string "as my CHAMPION.$"

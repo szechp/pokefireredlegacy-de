@@ -9,6 +9,7 @@
 #include "metatile_behavior.h"
 #include "overworld.h"
 #include "quest_log.h"
+#include "event_object_lock.h"
 #include "script.h"
 #include "task.h"
 #include "constants/field_tasks.h"
@@ -228,6 +229,7 @@ static void IcefallCaveIcePerStepCallback(u8 taskId)
             }
             break;
         case 3:
+            FreezeObjects_WaitForPlayer();
             if (tDelay != 0)
             {
                 tDelay--;

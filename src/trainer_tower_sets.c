@@ -29,8 +29,8 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_4 = {
 			.mons = {
 				{
 					.species = SPECIES_RATICATE,
-					.heldItem = ITEM_SITRUS_BERRY,
-					.moves = {MOVE_SHOCK_WAVE, MOVE_HYPER_FANG, MOVE_SCARY_FACE, MOVE_ENDEAVOR},
+					.heldItem = ITEM_FOCUS_BAND,
+					.moves = {MOVE_SUPER_FANG, MOVE_HYPER_FANG, MOVE_QUICK_ATTACK, MOVE_ENDEAVOR},
 					.hpEV = 110,
 					.attackEV = 0,
 					.defenseEV = 200,
@@ -52,7 +52,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_4 = {
 				{
 					.species = SPECIES_MAGMAR,
 					.heldItem = ITEM_SITRUS_BERRY,
-					.moves = {MOVE_FIRE_PUNCH, MOVE_SUNNY_DAY, MOVE_SMOG, MOVE_STRENGTH},
+					.moves = {MOVE_FIRE_PUNCH, MOVE_SUNNY_DAY, MOVE_THUNDER_PUNCH, MOVE_CROSS_CHOP},
 					.hpEV = 100,
 					.attackEV = 0,
 					.defenseEV = 0,
@@ -74,7 +74,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_4 = {
 				{
 					.species = SPECIES_MAGCARGO,
 					.heldItem = ITEM_SITRUS_BERRY,
-					.moves = {MOVE_FLAMETHROWER, MOVE_AMNESIA, MOVE_BODY_SLAM, MOVE_HARDEN},
+					.moves = {MOVE_FLAMETHROWER, MOVE_AMNESIA, MOVE_BODY_SLAM, MOVE_ROCK_SLIDE},
 					.hpEV = 110,
 					.attackEV = 200,
 					.defenseEV = 0,
@@ -88,7 +88,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_4 = {
 					.speedIV = 20,
 					.spAttackIV = 20,
 					.spDefenseIV = 20,
-					.abilityNum = 1,
+					.abilityNum = 0,
 					.personality = 0x02, // FEMALE BRAVE
 					.nickname = _("MAGCARGO"),
 					.friendship = 255
@@ -96,7 +96,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_4 = {
 				{
 					.species = SPECIES_PRIMEAPE,
 					.heldItem = ITEM_SITRUS_BERRY,
-					.moves = {MOVE_OVERHEAT, MOVE_SEISMIC_TOSS, MOVE_SWAGGER, MOVE_KARATE_CHOP},
+					.moves = {MOVE_OVERHEAT, MOVE_SEISMIC_TOSS, MOVE_SWAGGER, MOVE_CROSS_CHOP},
 					.hpEV = 100,
 					.attackEV = 0,
 					.defenseEV = 0,
@@ -116,7 +116,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_4 = {
 					.friendship = 255
 				},
 				{
-					.species = SPECIES_GOLBAT,
+					.species = SPECIES_CROBAT,
 					.heldItem = ITEM_SITRUS_BERRY,
 					.moves = {MOVE_GIGA_DRAIN, MOVE_CONFUSE_RAY, MOVE_SLUDGE_BOMB, MOVE_MEAN_LOOK},
 					.hpEV = 0,

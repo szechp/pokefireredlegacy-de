@@ -13,7 +13,7 @@
   "show_map_name": true,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "type": "object",
@@ -73,7 +73,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "graphics_id": "OBJ_EVENT_GFX_POKEMON_RANGER_M",
       "x": 15,
       "y": 28,
       "elevation": 3,
@@ -87,7 +87,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "graphics_id": "OBJ_EVENT_GFX_POKEMON_RANGER_F",
       "x": 14,
       "y": 42,
       "elevation": 3,
@@ -130,8 +130,8 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 22,
-      "y": 45,
+      "x": 0,
+      "y": 53,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -144,8 +144,8 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 17,
-      "y": 46,
+      "x": 0,
+      "y": 53,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -389,6 +389,16 @@
       "flag": "FLAG_HIDDEN_ITEM_MT_EMBER_EXTERIOR_ULTRA_BALL",
       "quantity": 1,
       "underfoot": false
+    },
+    {
+      "type": "hidden_item",
+      "x": 29,
+      "y": 15,
+      "elevation": 0,
+      "item": "ITEM_RED_SCARF",
+      "flag": "FLAG_GOTRED",
+      "quantity": 1,
+      "underfoot": true
     }
   ]
 }

@@ -87,3 +87,6 @@ Route12_FishingHouse_Text_BlankChartOfSomeSort::
     .string "It has spaces for writing in\n"
     .string "records of some kind.$"
 
+Route12_FishingHouse_Text_TakeThisAlso::
+    .string "Take This Also!$"
+

@@ -1,0 +1,69 @@
+raw `
+Route13_MapScripts::
+	.byte 0
+
+Route13_EventScript_TrainerTips1::
+	msgbox Route13_Text_LookToLeftOfThatPost, MSGBOX_SIGN
+	end
+
+Route13_EventScript_TrainerTips2::
+	msgbox Route13_Text_SelectToSwitchItems, MSGBOX_SIGN
+	end
+
+Route13_EventScript_RouteSign::
+	msgbox Route13_Text_RouteSign, MSGBOX_SIGN
+	end
+
+Route13_EventScript_FluteGuy::
+	goto_if_questlog EventScript_ReleaseEnd
+	lock
+	faceplayer
+	message Route13_Text_MayIHelpYou
+	waitmessage
+	pokemart Route13_Flute_Items
+	msgbox Route13_Text_PleaseComeAgain
+	release
+	end
+
+	.align 2
+Route13_Flute_Items::
+	.2byte ITEM_BLUE_FLUTE
+	.2byte ITEM_RED_FLUTE
+	.2byte ITEM_YELLOW_FLUTE
+	.2byte ITEM_NONE
+	release
+	end
+
+Route13_EventScript_Whitney::
+	goto_if_set FLAG_WHITNEY_DEFEATED, Route13_EventScript_RematchWhitney
+	msgbox Route13_Text_Whitney, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route13_EventScript_NoWhitney
+	trainerbattle_single TRAINER_WHITNEY, Route13_Text_YesWhitney, Route13_Text_WhitneyDefeat, Route13_EventScript_PostWhitney, NO_MUSIC
+	release
+	end
+
+Route13_EventScript_PostWhitney::
+	msgbox Route13_Text_WhitneyPostBattle
+	setflag FLAG_WHITNEY_DEFEATED
+	release
+	end
+
+Route13_EventScript_NoWhitney::
+	msgbox Route13_Text_NoWhitney
+	release
+	end
+
+Route13_EventScript_RematchWhitney::
+	msgbox Route13_Text_RematchWhitney, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route13_EventScript_NoWhitney
+	trainerbattle_single TRAINER_WHITNEY, Route13_Text_YesRematchWhitney, Route13_Text_RematchWhitneyDefeat, Route13_EventScript_PostRematchWhitney, NO_MUSIC
+	release
+	end
+
+Route13_EventScript_PostRematchWhitney::
+	msgbox Route13_Text_RematchWhitneyDefeat
+	cleartrainerflag TRAINER_WHITNEY
+	release
+	end
+
+`

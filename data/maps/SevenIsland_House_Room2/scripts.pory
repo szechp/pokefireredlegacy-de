@@ -1,0 +1,67 @@
+raw `
+SevenIsland_House_Room2_MapScripts::
+	.byte 0
+
+SevenIsland_House_Room2_Evvi::
+	faceplayer
+	msgbox SevenIsland_House_Room2_Text_Evvi, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_SPATK, SevenIsland_House_Room2_Text_EvviPostBattle
+	cleartrainerflag TRAINER_SPATK
+	special HealPlayerParty
+	end
+
+SevenIsland_House_Room2_Eva::
+	faceplayer
+	msgbox SevenIsland_House_Room2_Text_Eva, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_HP, SevenIsland_House_Room2_Text_EvaPostBattle
+	cleartrainerflag TRAINER_HP
+	special HealPlayerParty
+	end
+
+SevenIsland_House_Room2_Eve::
+	faceplayer
+	msgbox SevenIsland_House_Room2_Text_Eve, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_DEFENSE, SevenIsland_House_Room2_Text_EvePostBattle
+	cleartrainerflag TRAINER_DEFENSE
+	special HealPlayerParty
+	end
+
+SevenIsland_House_Room2_Evern::
+	faceplayer
+	msgbox SevenIsland_House_Room2_Text_Evern, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_SPDEF, SevenIsland_House_Room2_Text_EvernPostBattle
+	cleartrainerflag TRAINER_SPDEF
+	special HealPlayerParty
+	end
+
+SevenIsland_House_Room2_Evin::
+	faceplayer
+	msgbox SevenIsland_House_Room2_Text_Evin, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_ATTACK, SevenIsland_House_Room2_Text_EvinPostBattle
+	cleartrainerflag TRAINER_ATTACK
+	special HealPlayerParty
+	end
+
+SevenIsland_House_Room2_Evangelos::
+	faceplayer
+	msgbox SevenIsland_House_Room2_Text_Evangelos, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_SPEED, SevenIsland_House_Room2_Text_EvangelosPostBattle
+	cleartrainerflag TRAINER_SPEED
+	special HealPlayerParty
+	end
+
+SevenIsland_House_Room2_EventScript_IVCheck::
+	lock
+	faceplayer
+	call EventScript_IVChecker
+	release
+	end
+
+SevenIsland_House_Room2_EventScript_EVCheck::
+	lock
+	faceplayer
+	call EventScript_EVChecker
+	release
+	end
+
+`

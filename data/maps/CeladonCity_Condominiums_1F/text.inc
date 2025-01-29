@@ -13,7 +13,9 @@ CeladonCity_Condominiums_1F_Text_NothingBeatsThirstLikeTea::
 
 CeladonCity_Condominiums_1F_Text_MyDearMonsKeepMeCompany::
     .string "My dear POKéMON keep me company.\n"
-    .string "MEOWTH even brings money home!$"
+    .string "MEOWTH even brings money home!\p"
+    .string "I also make money selling Herbs!\l"
+    .string "Want some?$"
 
 CeladonCity_Condominiums_1F_Text_DaisyComesToBuyTea::
     .string "Oh, hello, dearie.\n"

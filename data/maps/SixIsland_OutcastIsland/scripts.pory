@@ -1,0 +1,60 @@
+raw `
+SixIsland_OutcastIsland_MapScripts::
+	.byte 0
+
+SixIsland_OutcastIsland_OnTransition:
+	call SixIsland_OutcastIsland_UpdateAlteringCaveMewtwo
+	end
+
+SixIsland_OutcastIsland_EventScript_Rocket::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_46, SixIsland_OutcastIsland_Text_RocketIntro, SixIsland_OutcastIsland_Text_RocketDefeat
+	msgbox SixIsland_OutcastIsland_Text_RocketPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+SixIsland_OutcastIsland_UpdateAlteringCaveMewtwo::
+	goto SixIsland_OutcastIsland_UpdateAlteringCave
+	return
+
+SixIsland_OutcastIsland_UpdateAlteringCave::
+	random 8
+	goto_if_eq VAR_RESULT, 0, SetAlteringCave0
+	goto_if_eq VAR_RESULT, 1, SetAlteringCave1
+	goto_if_eq VAR_RESULT, 2, SetAlteringCave2
+	goto_if_eq VAR_RESULT, 3, SetAlteringCave3
+	goto_if_eq VAR_RESULT, 4, SetAlteringCave4
+	goto_if_eq VAR_RESULT, 5, SetAlteringCave5
+	goto_if_eq VAR_RESULT, 6, SetAlteringCave6
+	goto_if_eq VAR_RESULT, 7, SetAlteringCave7
+	return
+SetAlteringCave0::
+	setvar VAR_ALTERING_CAVE_WILD_SET, 0
+	return
+SetAlteringCave1::
+	setvar VAR_ALTERING_CAVE_WILD_SET, 1
+	return
+SetAlteringCave2::
+	setvar VAR_ALTERING_CAVE_WILD_SET, 2
+	return
+SetAlteringCave3::
+	setvar VAR_ALTERING_CAVE_WILD_SET, 3
+	return
+SetAlteringCave4::
+	setvar VAR_ALTERING_CAVE_WILD_SET, 4
+	return
+SetAlteringCave5::
+	setvar VAR_ALTERING_CAVE_WILD_SET, 5
+	return
+SetAlteringCave6::
+	setvar VAR_ALTERING_CAVE_WILD_SET, 6
+	return
+SetAlteringCave7::
+	setvar VAR_ALTERING_CAVE_WILD_SET, 7
+SixIsland_OutcastIsland_AlteringCaveDefault::
+	setvar VAR_ALTERING_CAVE_WILD_SET, 0
+	return
+
+SixIsland_OutcastIsland_EventScript_AlteringCaveDefault::
+	setvar VAR_ALTERING_CAVE_WILD_SET, 0
+	return
+
+`

@@ -42,6 +42,28 @@ SaffronCity_Gym_Text_ExplainTM04::
 SaffronCity_Gym_Text_BagFullOfOtherItems::
     .string "Your BAG is full of other items.$"
 
+SaffronCity_Gym_Text_RematchSabrina::
+    .string "My psychic power feels your might.\n"
+    .string "Since our last battle,\l"
+    .string "I've grown Stronger!\p"
+    .string "Ready for a true challenge?\p"
+    .string "Rematch Me$"
+
+SaffronCity_Gym_Text_RematchSabrinaDefeat::
+    .string "You really are a strong one.$"
+
+SaffronCity_Gym_Text_SabrinaPostRematchBattle::
+    .string "Incredible! Your strength is\n" 
+    .string "the real deal!\p"
+    .string "This lost sharpens\n"
+    .string "my psychic senses!$"
+
+SaffronCity_Gym_Text_SabrinaNoRematchBattle::
+    .string "Hm, not strong enough huh?$"
+
+SaffronCity_Gym_Text_RematchYesSabrina::
+    .string "Let's see the power within!$"
+
 SaffronCity_Gym_Text_AmandaIntro::
     .string "SABRINA is far younger than I,\n"
     .string "but she has earned my respect.$"

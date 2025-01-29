@@ -46,18 +46,19 @@ gSpecials::
 	def_special CableClub_AskSaveTheGame
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial
-	def_special NullFieldSpecial
+	def_special RoamingBeasts
 	def_special SavePlayerParty
 	def_special LoadPlayerParty
 	def_special ChooseHalfPartyForBattle
 	def_special Script_ShowLinkTrainerCard
 	def_special NullFieldSpecial  @ Berry Tree specials
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
+	def_special GetHpIV
+	def_special GetAtkIV
+	def_special GetDefIV
+	def_special GetSpAtkIV
+	def_special GetSpDefIV
+	def_special GetSpeedIV
+	def_special FillPokedex
 	def_special IsEnigmaBerryValid
 	def_special GetTrainerBattleMode
 	def_special ShowTrainerIntroSpeech
@@ -71,14 +72,15 @@ gSpecials::
 	def_special ShowPokemonStorageSystemPC
 	def_special HasEnoughMonsForDoubleBattle
 	def_special NullFieldSpecial  @ Hoenn TV specials
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
+	def_special GetHpEV
+	def_special GetAtkEV
+	def_special GetDefEV
+	def_special GetSpAtkEV
+	def_special GetSpDefEV
+	def_special GetSpeedEV
 	def_special HasLeadMonBeenRenamed
 	def_special NullFieldSpecial  @ Contest specials
+	def_special MewStuff
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial
@@ -95,11 +97,10 @@ gSpecials::
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
-	def_special NullFieldSpecial
+	def_special GetDeoxys
+	def_special CheckGotAllItems
+	def_special CheckBeatJohto
+	def_special CheckBeatSeviiChamps
 	def_special TryContestLinkup
 	def_special Field_AskSaveTheGame
 	def_special DoWateringBerryTreeAnim

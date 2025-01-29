@@ -166,6 +166,14 @@
 #define TRAINER_PIC_RUIN_MANIAC           145
 #define TRAINER_PIC_LADY                  146
 #define TRAINER_PIC_PAINTER               147
+#define TRAINER_PIC_FALKNER               148
+#define TRAINER_PIC_BUGSY                 149
+#define TRAINER_PIC_WHITNEY               150
+#define TRAINER_PIC_MORTY                 151
+#define TRAINER_PIC_CHUCK                 152
+#define TRAINER_PIC_JASMINE               153
+#define TRAINER_PIC_PRYCE                 154
+#define TRAINER_PIC_CLAIR                 155
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_RED                    0
@@ -287,6 +295,8 @@
 #define TRAINER_CLASS_RUIN_MANIAC         104
 #define TRAINER_CLASS_LADY                105
 #define TRAINER_CLASS_PAINTER             106
+#define TRAINER_CLASS_SEVII_CHAMPION      107
+#define TRAINER_CLASS_JOHTO_LEADER        108
 
 #define FACILITY_CLASS_AQUA_LEADER_ARCHIE     0
 #define FACILITY_CLASS_AQUA_GRUNT_M           1
@@ -438,13 +448,29 @@
 #define FACILITY_CLASS_ELITE_FOUR_AGATHA      147
 #define FACILITY_CLASS_ELITE_FOUR_LANCE       148
 #define FACILITY_CLASS_CHAMPION_RIVAL_2       149
+#define FACILITY_CLASS_SEVII_CHAMPION         150
+#define FACILITY_CLASS_FALKNER                151
+#define FACILITY_CLASS_BUGSY                  152
+#define FACILITY_CLASS_WHITNEY                153
+#define FACILITY_CLASS_MORTY                  154
+#define FACILITY_CLASS_CHUCK                  155
+#define FACILITY_CLASS_JASMINE                156
+#define FACILITY_CLASS_PRYCE                  157
+#define FACILITY_CLASS_CLAIR                  158
+
 
 #define F_TRAINER_FEMALE (1 << 7)
 
-// All trainer parties specify the IV, level, and species for each Pokémon in the
-// party. Some trainer parties also specify held items and custom moves for each
-// Pokémon.
+// Set to buff up all trained pokemon that use .iv instead of .ivs
+#define TRAINER_IV_MODIFIER       0
+// Unused.
 #define F_TRAINER_PARTY_CUSTOM_MOVESET (1 << 0)
 #define F_TRAINER_PARTY_HELD_ITEM      (1 << 1)
+#define F_TRAINER_PARTY_CUSTOM_MON     (1 << 2)
+// Use for trainer parties.
+#define TRAINER_MON_FEMALE     1
+#define TRAINER_MON_MALE       2
+#define TRAINER_MON_FRIENDLY     1
+#define TRAINER_MON_UNFRIENDLY   2
 
 #endif  // GUARD_CONSTANTS_TRAINERS_H

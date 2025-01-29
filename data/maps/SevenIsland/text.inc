@@ -17,6 +17,23 @@ Text_SwordsDanceTaught::
     .string "If only we could keep getting\n"
     .string "stronger and stronger, eh?$"
 
+Text_SwordsDanceReteach::
+    .string "I'm still trying to get stronger\n"
+    .string "and stronger…\p"
+    .string "I've heard that vitamins strengthen\n"
+    .string "POKéMON, but they're so expensive!\p"
+    .string "So, I started charging ¥75000 to\n"
+    .string "teach other POKéMON SWORDS DANCE.$"
+Text_SwordsDanceReteach2::
+    .string "Would you like me to teach your\n"
+    .string "POKéMON the move SWORDS DANCE?$"
+Text_SwordsDanceNotEnoughMoney::
+    .string "You don't have ¥75000?\p"
+    .string "I'm sorry, but I need the money\n"
+    .string "to make my POKéMON strong.\p"
+    .string "I'll teach SWORDS DANCE to you\n"
+    .string "when you come back with enough.$"
+
 SevenIsland_Text_IslandSign::
     .string "SEVEN ISLAND\n"
     .string "Quest Island of Infinity$"

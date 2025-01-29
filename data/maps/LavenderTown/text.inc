@@ -38,3 +38,43 @@ LavenderTown_Text_PokemonTowerSign::
     .string "POKéMON TOWER\n"
     .string "Becalm the Spirits of POKéMON$"
 
+LavenderTown_Text_Karen::
+    .string "Strong Pokemon, Weak Pokemon\n"
+    .string "or your Favorites?\p"
+    .string "Which one did you used Champion?\p"
+    .string "I prefer the latter.\p"
+    .string "I'm training to become a\n"
+    .string "ELITE FOUR Member myself.\p"
+    .string "I hope a battle could show you\n"
+    .string "my strength!$"
+
+LavenderTown_Text_KarenDefeat::
+    .string "Seems Champion Level to me!$"
+
+LavenderTown_Text_KarenPostBattle::
+    .string "What a great battle!\p"
+    .string "Truly you feel for Pokemon!.\p"
+    .string "I want you to have this gift\n"
+    .string "that can help you meet more!\l"
+    .string "pokemon!$"
+
+LavenderTown_Text_NoKaren::
+    .string "Not Interested huh?$"
+
+LavenderTown_Text_YesKaren::
+    .string "Looks like i'm in for much!\p"
+    .string "Let's Battle!$"
+
+LavenderTown_Text_RematchKaren::
+    .string "I'm just visiting this town\n"
+    .string "as to understand more of\l"
+    .string "pokemon!\p"
+    .string "You want a rematch?$"
+
+LavenderTown_Text_RematchKarenDefeat::
+    .string "Seems like you set your style!$"
+
+LavenderTown_Text_PostRematchKaren::
+    .string "What a great battle!\p"
+    .string "Truly you feel for Pokemon!$"
+

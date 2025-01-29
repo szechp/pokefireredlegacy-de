@@ -167,20 +167,20 @@ static const struct MenuAction sMultichoiceList_CeladonVendingMachine[] = {
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerTMPrizes[] = {
-    { gText_Tm13_4000Coins },
-    { gText_Tm23_3500Coins },
-    { gText_Tm24_4000Coins },
-    { gText_Tm30_4500Coins },
-    { gText_Tm35_4000Coins },
+    { gText_Tm13_2500Coins },
+    { gText_Tm23_2000Coins },
+    { gText_Tm24_2500Coins },
+    { gText_Tm30_3000Coins },
+    { gText_Tm35_2500Coins },
     { gText_NoThanks_2 }
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerBattleItemPrizes[] = {
-    { gText_SmokeBall_800Coins },
-    { gText_MiracleSeed_1000Coins },
-    { gText_Charcoal_1000Coins },
-    { gText_MysticWater_1000Coins },
-    { gText_YellowFlute_1600Coins },
+    { gText_SmokeBall_250Coins },
+    { gText_MiracleSeed_500Coins },
+    { gText_Charcoal_500Coins },
+    { gText_MysticWater_500Coins },
+    { gText_UpGrade_1500Coins },
     { gText_NoThanks_2 }
 };
 
@@ -318,15 +318,15 @@ static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes[] = {
 #if defined(FIRERED)
     { gText_Abra_180Coins },
     { gText_Clefairy_500Coins },
-    { gText_Dratini_2800Coins },
-    { gText_Scyther_5500Coins },
-    { gText_Porygon_9999Coins },
+    { gText_Kangaskan_2000Coins },
+    { gText_Dratini_3000Coins },
+    { gText_Porygon_4000Coins },
 #elif defined(LEAFGREEN)
-    { gText_Abra_120Coins },
-    { gText_Clefairy_750Coins },
-    { gText_Pinsir_2500Coins },
-    { gText_Dratini_4600Coins },
-    { gText_Porygon_6500Coins },
+    { gText_Abra_180Coins },
+    { gText_Clefairy_500Coins },
+    { gText_Kangaskan_2000Coins },
+    { gText_Dratini_3000Coins },
+    { gText_Porygon_4000Coins },
 #endif
     { gText_NoThanks_2 }
 };

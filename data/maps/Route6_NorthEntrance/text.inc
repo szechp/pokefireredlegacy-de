@@ -24,3 +24,27 @@ Route6_NorthEntrance_Text_ThanksIllShareTeaWithGuards::
 Route6_NorthEntrance_Text_HiHowsItGoing::
     .string "Hi, how's it going?$"
 
+Route6_NorthEntrance_Text_FightGuard::
+    .string "I said the road is closed\n"
+    .string "Please stop comming.\p"
+    .string "But actually,\n"
+    .string "If you keep comming,\n"
+    .string "I might of well just fight you!\p"
+    .string "If you want to enter.$"
+
+
+Route6_NorthEntrance_Text_NoFightGuard::
+    .string "Good$"
+
+Route6_NorthEntrance_Text_RematchYesSurge::
+    .string "This isn't YOUR ROAD!$"
+
+Route6_NorthEntrance_Text_RematchSurgeDefeat::
+    .string "I thought you were weaker!$"
+
+Route6_NorthEntrance_Text_PostGuard::
+    .string "Alright Sorry.\p"
+    .string "I admit I was just,\n"
+    .string "Very Thirsty, and I should of\n"
+    .string "Let you guys in.\p"
+    .string "I'll tell the others to open.$"

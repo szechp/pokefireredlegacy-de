@@ -20,6 +20,22 @@ Text_DreamEaterTaught::
     .string "…ZZZ…\n"
     .string "I…can't eat…anymore…$"
 
+Text_DreamEaterReteach::
+    .string "Even after teaching you DREAM\n"
+    .string "EATER, I still can't forget how to\l"
+    .string "eat dreams!\p"
+    .string "I'll keep teaching your POKéMON\n"
+    .string "DREAM EATER for ¥5000.$"
+Text_DreamEaterReteach2::
+    .string "Do you want me to teach\n"
+    .string "a POKéMON DREAM EATER?$"
+Text_DreamEaterNotEnoughMoney::
+    .string "The only thing spookier than\n"
+    .string "DREAM EATER is not having the\l"
+    .string "¥5000 to learn it!\p"
+    .string "I'll be happy to teach it to a\n"
+    .string "POKéMON when you have enough money.$"
+
 PewterCity_Text_ClefairyCameFromMoon::
     .string "CLEFAIRY came from the moon.\n"
     .string "That's what the rumor is.\p"
@@ -128,15 +144,16 @@ PewterCity_Text_AskedToDeliverThis::
 
 PewterCity_Text_ReceivedRunningShoesFromAide::
     .string "{PLAYER} received the\n"
-    .string "RUNNING SHOES from the AIDE.$"
+    .string "EXP SHARE from the AIDE.$"
 
 PewterCity_Text_SwitchedShoesWithRunningShoes::
-    .string "{PLAYER} switched shoes with the\n"
-    .string "RUNNING SHOES.$"
+    .string "{PLAYER} put the EXP SHARE\n"
+    .string "In the bag.$"
 
 PewterCity_Text_ExplainRunningShoes::
-    .string "Press the B Button to run.\n"
-    .string "But only where there's room to run!$"
+    .string "Use it to Give EXP.\n"
+    .string "To a weaker Pokemon\p"
+    .string "from a stronger one!$"
 
 PewterCity_Text_MustBeGoingBackToLab::
     .string "Well, I must be going back to\n"
@@ -146,7 +163,7 @@ PewterCity_Text_MustBeGoingBackToLab::
 PewterCity_Text_RunningShoesLetterFromMom::
     .string "There's a letter attached…\p"
     .string "Dear {PLAYER},\p"
-    .string "Here is a pair of RUNNING SHOES\n"
+    .string "Here is an EXP SHARE for\n"
     .string "for my beloved challenger.\p"
     .string "Remember, I'll always cheer for\n"
     .string "you! Don't ever give up!\p"

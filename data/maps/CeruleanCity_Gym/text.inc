@@ -36,6 +36,27 @@ CeruleanCity_Gym_Text_MistyDefeat::
     .string "You can have the CASCADEBADGE to\n"
     .string "show you beat me.$"
 
+CeruleanCity_Gym_Text_RematchMisty::
+    .string "You've grown so much since our\n"
+    .string "last battle.\p"
+    .string "Ready for a rematch at full strength?\p"
+    .string "I won't hold back this time!\p"
+    .string "Ready to dive in, CHAMPION?$"
+
+CeruleanCity_Gym_Text_RematchMistyDefeat::
+    .string "What a splashing Performance!$"
+
+CeruleanCity_Gym_Text_MistyPostRematchBattle::
+    .string "You've bested me again!\p"
+    .string "Your strength is inspiring!\p"
+    .string "I'll train harder for our next battle!$"
+
+CeruleanCity_Gym_Text_MistyNoRematchBattle::
+    .string "Maybe some other time.$"
+
+CeruleanCity_Gym_Text_RematchYesMisty::
+    .string "Let's make a splash!$"
+
 CeruleanCity_Gym_Text_DianaIntro::
     .string "What? You?\n"
     .string "I'm more than good enough for you!\p"

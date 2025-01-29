@@ -1,9 +1,12 @@
 #include "global.h"
+#include "event_data.h"
 #include "random.h"
 #include "overworld.h"
 #include "field_specials.h"
+#include "constants/flags.h"
 #include "constants/maps.h"
 #include "constants/region_map_sections.h"
+#include "pokedex.h"
 
 // Despite having a variable to track it, the roamer is
 // hard-coded to only ever be in map group 3
@@ -79,22 +82,58 @@ void ClearRoamerData(void)
     }
 }
 
-#define GetRoamerSpecies() ({\
-    u16 a;\
-    switch (GetStarterSpecies())\
-    {\
-    default:\
-        a = SPECIES_RAIKOU;\
-        break;\
-    case SPECIES_BULBASAUR:\
-        a = SPECIES_ENTEI;\
-        break;\
-    case SPECIES_CHARMANDER:\
-        a = SPECIES_SUICUNE;\
-        break;\
-    }\
-    a;\
-})
+u16 GetRoamerSpecies(void)
+{
+    u16 species = SPECIES_NONE;
+    u16 starter = GetStarterSpecies();
+    switch(starter)
+    {
+        case SPECIES_SQUIRTLE:
+            if(!FlagGet(FLAG_CAUGHT_RAIKOU))
+            {
+                species = SPECIES_RAIKOU;
+            }
+            else if(!FlagGet(FLAG_CAUGHT_ENTEI))
+            {
+                species = SPECIES_ENTEI;
+            }
+            else
+            {
+                species = SPECIES_SUICUNE;
+            }
+            break;
+        case SPECIES_BULBASAUR:
+            if(!FlagGet(FLAG_CAUGHT_ENTEI))
+            {
+                species = SPECIES_ENTEI;
+            }
+            else if(!FlagGet(FLAG_CAUGHT_SUICUNE))
+            {
+                species = SPECIES_SUICUNE;
+            }
+            else
+            {
+                species = SPECIES_RAIKOU;
+            }
+            break;
+        case SPECIES_CHARMANDER:
+            if(!FlagGet(FLAG_CAUGHT_SUICUNE))
+            {
+                species = SPECIES_SUICUNE;
+            }
+            else if(!FlagGet(FLAG_CAUGHT_RAIKOU))
+            {
+                species = SPECIES_RAIKOU;
+            }
+            else
+            {
+                species = SPECIES_ENTEI;
+            }
+            break;
+    }
+    return species;
+}
+
 
 void CreateInitialRoamerMon(void)
 {
@@ -119,6 +158,10 @@ void CreateInitialRoamerMon(void)
 
 void InitRoamer(void)
 {
+    if (ROAMER->active)
+        return;
+    if(FlagGet(FLAG_CAUGHT_RAIKOU) && FlagGet(FLAG_CAUGHT_ENTEI) && FlagGet(FLAG_CAUGHT_SUICUNE))
+        return;
     ClearRoamerData();
     CreateInitialRoamerMon();
 }
@@ -156,7 +199,6 @@ void RoamerMoveToOtherLocationSet(void)
         }
     }
 }
-
 
 void RoamerMove(void)
 {
@@ -211,12 +253,9 @@ void CreateRoamerMonInstance(void)
     CreateMonWithIVsPersonality(mon, ROAMER->species, ROAMER->level, ROAMER->ivs, ROAMER->personality);
 // The roamer's status field is u8, but SetMonData expects status to be u32, so will set the roamer's status
 // using the status field and the following 3 bytes (cool, beauty, and cute).
-#ifdef BUGFIX
+
     status = ROAMER->status;
     SetMonData(mon, MON_DATA_STATUS, &status);
-#else
-    SetMonData(mon, MON_DATA_STATUS, &ROAMER->status);
-#endif
     SetMonData(mon, MON_DATA_HP, &ROAMER->hp);
     SetMonData(mon, MON_DATA_COOL, &ROAMER->cool);
     SetMonData(mon, MON_DATA_BEAUTY, &ROAMER->beauty);

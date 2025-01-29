@@ -1,0 +1,106 @@
+raw `
+FiveIsland_Meadow_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, FiveIsland_Meadow_OnLoad
+	.byte 0
+
+FiveIsland_Meadow_OnLoad::
+	call_if_set FLAG_UNLOCKED_ROCKET_WAREHOUSE, FiveIsland_Meadow_EventScript_SetWarehouseDoorUnlocked
+	special CheckBeatSeviiChamps
+	call_if_eq VAR_RESULT, TRUE, FiveIsland_Meadow_EventScript_ShowClerk
+	end
+
+FiveIsland_Meadow_EventScript_WarehouseDoor::
+	lockall
+	goto_if_set FLAG_UNLOCKED_ROCKET_WAREHOUSE, FiveIsland_Meadow_EventScript_WarehouseDoorAlreadyOpen
+	goto_if_set FLAG_LEARNED_YES_NAH_CHANSEY, FiveIsland_Meadow_EventScript_OpenWarehouseDoor
+	msgbox FiveIsland_Meadow_Text_EnteredPasswordAnotherNeeded
+	releaseall
+	end
+
+FiveIsland_Meadow_EventScript_OpenWarehouseDoor::
+	setflag FLAG_UNLOCKED_ROCKET_WAREHOUSE
+	message FiveIsland_Meadow_Text_EnteredPasswordDoorOpened
+	waitmessage
+	delay 60
+	call FiveIsland_Meadow_EventScript_SetWarehouseDoorUnlocked
+	special DrawWholeMapView
+	playse SE_PIN
+	waitse
+	releaseall
+	end
+
+FiveIsland_Meadow_EventScript_WarehouseDoorAlreadyOpen::
+	msgbox FiveIsland_Meadow_Text_WarehouseDoorAlreadyOpen
+	releaseall
+	end
+
+FiveIsland_Meadow_EventScript_SetWarehouseDoorUnlocked::
+	setmetatile 12, 21, METATILE_SeviiIslands45_RocketWarehouseDoor_Unlocked, 1
+	return
+
+FiveIsland_Meadow_EventScript_Rocket1::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_49, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+FiveIsland_Meadow_EventScript_Rocket2::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_50, FiveIsland_Meadow_Text_Rocket2Intro, FiveIsland_Meadow_Text_Rocket2Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket2PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+FiveIsland_Meadow_EventScript_Rocket3::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_51, FiveIsland_Meadow_Text_Rocket3Intro, FiveIsland_Meadow_Text_Rocket3Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket3PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+FiveIsland_Meadow_EventScript_ShowClerk::
+	clearflag FLAG_SHOPCHAMP
+	end
+
+FiveIsland_Meadow_EventScript_Clerk::
+	goto_if_questlog EventScript_ReleaseEnd
+	lock
+	faceplayer
+	message Text_MayIHelpYou
+	waitmessage
+	pokemart FiveIsland_Meadow_Items
+	msgbox Text_PleaseComeAgain
+	release
+	end
+
+	.align 2
+FiveIsland_Meadow_Items::
+	.2byte ITEM_MACHO_BRACE
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_FOCUS_BAND
+	.2byte ITEM_EVERSTONE
+	.2byte ITEM_BRIGHT_POWDER
+	.2byte ITEM_SHELL_BELL
+	.2byte ITEM_SCOPE_LENS
+	.2byte ITEM_QUICK_CLAW
+	.2byte ITEM_WHITE_HERB
+	.2byte ITEM_MENTAL_HERB
+	.2byte ITEM_LUCKY_PUNCH
+	.2byte ITEM_LIGHT_BALL
+	.2byte ITEM_THICK_CLUB
+	.2byte ITEM_PP_UP
+	.2byte ITEM_RARE_CANDY
+	.2byte ITEM_SAFARI_BALL
+	.2byte ITEM_NONE
+	release
+	end
+
+FiveIsland_Meadow_EventScript_Beast::
+	msgbox FiveIsland_Meadow_Text_Beasts, MSGBOX_NPC
+	special RoamingBeasts
+	call_if_eq VAR_RESULT, TRUE, FiveIsland_Meadow_EventScript_GiveTicket
+	release
+	end
+
+FiveIsland_Meadow_EventScript_GiveTicket::
+	msgbox FiveIsland_Meadow_Text_Beasts2, 
+	giveitem ITEM_MYSTIC_TICKET
+	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
+	releaseall
+	end
+`

@@ -41,6 +41,22 @@ Text_ExplosionTaughtJP::
     .string "かざんで　だいばくはつを‥\n"
     .string "す　すごい　スリル！$"
 
+Text_ExplosionReteach::
+    .string "This volcano is still active\n"
+    .string "but you came back?\p"
+    .string "So, you like the thrill of\n"
+    .string "risking a volcanic explosion too?$"
+Text_ExplosionReteach2::
+    .string "If you want more thrills, I can\n"
+    .string "teach you EXPLOSION for ¥20000.$"
+Text_ExplosionNotEnoughMoney::
+    .string "You don't have enough money!\p"
+    .string "You know, if this mountain explodes\n"
+    .string "with us on it, we wouldn't need\l"
+    .string "money anymore…\p"
+    .string "Until that happens, I won't teach\n"
+    .string "you EXPLOSION without ¥20000!$"
+
 MtEmber_Exterior_Text_WellTryDiggingHere::
     .string "Over here.\n"
     .string "We'll try digging here.\p"

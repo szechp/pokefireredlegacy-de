@@ -1860,8 +1860,7 @@ s32 MoveBattleBar(u8 battlerId, u8 healthboxSpriteId, u8 whichBar, u8 unused)
                                           gBattleSpritesDataPtr->battleBars[battlerId].oldValue,
                                           gBattleSpritesDataPtr->battleBars[battlerId].receivedValue,
                                           &gBattleSpritesDataPtr->battleBars[battlerId].currValue,
-                                          B_HEALTHBAR_NUM_TILES,
-                                          1);
+                                          B_HEALTHBAR_NUM_TILES, 1 + (u16) (gBattleMons[battlerId].maxHP / 80));
     }
     else // exp bar
     {
@@ -1908,9 +1907,9 @@ static void MoveBattleBarGraphically(u8 battlerId, u8 whichBar)
                                                 filledPixels,
                                                 B_HEALTHBAR_NUM_TILES);
 
-        if (totalFilledPixels > (B_HEALTHBAR_NUM_PIXELS * 50 / 100)) // more than 50 % hp
+        if (totalFilledPixels > (B_HEALTHBAR_NUM_PIXELS * 50 / max(gBattleSpritesDataPtr->battleBars[battlerId].maxValue / 32, 100))) // more than 50 % hp
             barElementId = B_INTERFACE_GFX_HP_BAR_GREEN;
-        else if (totalFilledPixels > (B_HEALTHBAR_NUM_PIXELS * 20 / 100)) // more than 20% hp
+        else if (totalFilledPixels > (B_HEALTHBAR_NUM_PIXELS * 20 / max(gBattleSpritesDataPtr->battleBars[battlerId].maxValue / 32, 100))) // more than 20% hp
             barElementId = B_INTERFACE_GFX_HP_BAR_YELLOW;
         else
             barElementId = B_INTERFACE_GFX_HP_BAR_RED; // 20 % or less

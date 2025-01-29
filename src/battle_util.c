@@ -1738,6 +1738,15 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                         effect++;
                     }
                     break;
+                case WEATHER_SNOW:
+                    if (!(gBattleWeather & B_WEATHER_HAIL))
+                    {
+                        gBattleWeather = B_WEATHER_HAIL;
+                        gBattleScripting.animArg1 = B_ANIM_HAIL_CONTINUES;
+                        gBattleScripting.battler = battler;
+                        effect++;
+                    }
+                    break;
                 }
                 if (effect != 0)
                 {
@@ -3151,22 +3160,19 @@ u8 IsMonDisobedient(void)
     if (GetBattlerSide(gBattlerAttacker) == B_SIDE_OPPONENT)
         return 0;
 
-    if (IsBattlerModernFatefulEncounter(gBattlerAttacker)) // only false if illegal Mew or Deoxys
-    {
-        if (!IsOtherTrainer(gBattleMons[gBattlerAttacker].otId, gBattleMons[gBattlerAttacker].otName))
-            return 0;
-        if (FlagGet(FLAG_BADGE08_GET))
-            return 0;
+    if (!IsOtherTrainer(gBattleMons[gBattlerAttacker].otId, gBattleMons[gBattlerAttacker].otName))
+        return 0;
+    if (FlagGet(FLAG_BADGE08_GET))
+        return 0;
 
-        obedienceLevel = 10;
+    obedienceLevel = 21;
 
-        if (FlagGet(FLAG_BADGE02_GET))
-            obedienceLevel = 30;
-        if (FlagGet(FLAG_BADGE04_GET))
-            obedienceLevel = 50;
-        if (FlagGet(FLAG_BADGE06_GET))
-            obedienceLevel = 70;
-    }
+    if (FlagGet(FLAG_BADGE02_GET))
+        obedienceLevel = 35;
+    if (FlagGet(FLAG_BADGE04_GET))
+        obedienceLevel = 50;
+    if (FlagGet(FLAG_BADGE06_GET))
+        obedienceLevel = 55;
 
     if (gBattleMons[gBattlerAttacker].level <= obedienceLevel)
         return 0;

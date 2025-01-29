@@ -68,7 +68,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_MEGA_PUNCH] =
     {
         .effect = EFFECT_HIT,
+<<<<<<< Updated upstream
         .power = 90,
+=======
+        .power = 85,
+>>>>>>> Stashed changes
         .type = TYPE_NORMAL,
         .accuracy = 95,
         .pp = 20,
@@ -432,7 +436,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TACKLE] =
     {
         .effect = EFFECT_HIT,
-        .power = 35,
+        .power = 40,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 35,
@@ -769,7 +773,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_BLIZZARD] =
     {
-        .effect = EFFECT_FREEZE_HIT,
+        .effect = EFFECT_BLIZZARD,
         .power = 120,
         .type = TYPE_ICE,
         .accuracy = 70,
@@ -1043,7 +1047,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_PETAL_DANCE] =
     {
         .effect = EFFECT_RAMPAGE,
+<<<<<<< Updated upstream
         .power = 100,
+=======
+        .power = 120,
+>>>>>>> Stashed changes
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 20,
@@ -1861,11 +1869,19 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_SKY_ATTACK] =
     {
+<<<<<<< Updated upstream
         .effect = EFFECT_HIT,
         .power = 120,
         .type = TYPE_FLYING,
         .accuracy = 85,
         .pp = 5,
+=======
+        .effect = EFFECT_SKY_ATTACK,
+        .power = 120,
+        .type = TYPE_FLYING,
+        .accuracy = 85,
+        .pp = 10,
+>>>>>>> Stashed changes
         .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -1881,7 +1897,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
+        .priority = 3,
         .flags = 0,
     },
 
@@ -2603,7 +2619,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_OUTRAGE] =
     {
         .effect = EFFECT_RAMPAGE,
+<<<<<<< Updated upstream
         .power = 110,
+=======
+        .power = 120,
+>>>>>>> Stashed changes
         .type = TYPE_DRAGON,
         .accuracy = 100,
         .pp = 15,
@@ -2746,7 +2766,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_STEEL_WING] =
     {
         .effect = EFFECT_DEFENSE_UP_HIT,
-        .power = 70,
+        .power = 80,
         .type = TYPE_STEEL,
         .accuracy = 95,
         .pp = 25,
@@ -4085,9 +4105,13 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_AIR_CUTTER] =
     {
         .effect = EFFECT_HIGH_CRITICAL,
+<<<<<<< Updated upstream
         .power = 65,
+=======
+        .power = 70,
+>>>>>>> Stashed changes
         .type = TYPE_FLYING,
-        .accuracy = 95,
+        .accuracy = 100,
         .pp = 25,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_BOTH,
@@ -4526,8 +4550,13 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_LEAF_BLADE] =
     {
+<<<<<<< Updated upstream
         .effect = EFFECT_HIGH_CRITICAL,
         .power = 80,
+=======
+        .effect = EFFECT_LEAF_BLADE,
+        .power = 85,
+>>>>>>> Stashed changes
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 15,
@@ -4566,7 +4595,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SHOCK_WAVE] =
     {
         .effect = EFFECT_ALWAYS_HIT,
-        .power = 60,
+        .power = 65,
         .type = TYPE_ELECTRIC,
         .accuracy = 0,
         .pp = 20,
@@ -4579,7 +4608,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_WATER_PULSE] =
     {
         .effect = EFFECT_CONFUSE_HIT,
-        .power = 60,
+        .power = 65,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 20,

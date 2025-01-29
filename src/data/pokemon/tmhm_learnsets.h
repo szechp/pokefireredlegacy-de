@@ -1017,6 +1017,7 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(TM21_FRUSTRATION)
                                         | TMHM(TM22_SOLAR_BEAM)
                                         | TMHM(TM27_RETURN)
+                                        | TMHM(TM29_PSYCHIC)
                                         | TMHM(TM32_DOUBLE_TEAM)
                                         | TMHM(TM36_SLUDGE_BOMB)
                                         | TMHM(TM42_FACADE)
@@ -1934,6 +1935,7 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(TM47_STEEL_WING)
                                         | TMHM(TM31_BRICK_BREAK)
                                         | TMHM(HM01_CUT)
+                                        | TMHM(HM06_ROCK_SMASH)
                                         | TMHM(HM02_FLY)),
 
     [SPECIES_DODUO]       = TMHM_LEARNSET(TMHM(TM06_TOXIC)
@@ -2446,6 +2448,7 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+                                        | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
@@ -3075,6 +3078,7 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(TM43_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+                                        | TMHM(HM02_FLY)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)
@@ -4382,6 +4386,7 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(TM21_FRUSTRATION)
                                         | TMHM(TM22_SOLAR_BEAM)
                                         | TMHM(TM27_RETURN)
+                                        | TMHM(TM29_PSYCHIC)
                                         | TMHM(TM32_DOUBLE_TEAM)
                                         | TMHM(TM36_SLUDGE_BOMB)
                                         | TMHM(TM42_FACADE)

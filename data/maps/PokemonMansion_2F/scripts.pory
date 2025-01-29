@@ -1,0 +1,63 @@
+raw `
+PokemonMansion_2F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, PokemonMansion_2F_OnLoad
+	map_script MAP_SCRIPT_ON_TRANSITION, PokemonMansion_2F_Transition
+	.byte 0
+
+PokemonMansion_2F_OnLoad::
+	call_if_set FLAG_POKEMON_MANSION_SWITCH_STATE, PokemonMansion_EventScript_PressSwitch_2F
+	end
+
+PokemonMansion_2F_Transition::
+	special MewStuff
+	call_if_eq VAR_RESULT, TRUE, PokemonMansion_2F_ShowOak
+	end
+
+PokemonMansion_2F_ShowOak::
+	clearflag FLAG_HIDE_OAK2
+	end
+
+PokemonMansion_2F_EventScript_Statue::
+	lockall
+	setvar VAR_0x8004, 1
+	call PokemonMansion_EventScript_SecretSwitch
+	playse SE_UNLOCK
+	special DrawWholeMapView
+	waitse
+	releaseall
+	end
+
+PokemonMansion_2F_EventScript_DiaryJuly5th::
+	msgbox PokemonMansion_1F_Text_NewMonDiscoveredInGuyanaJungle, MSGBOX_SIGN
+	end
+
+PokemonMansion_2F_EventScript_DiaryJuly10th::
+	msgbox PokemonMansion_1F_Text_ChristenedDiscoveredMonMew, MSGBOX_SIGN
+	end
+
+PokemonMansion_2F_EventScript_Arnie::
+	trainerbattle_single TRAINER_BURGLAR_ARNIE, PokemonMansion_1F_Text_ArnieIntro, PokemonMansion_1F_Text_ArnieDefeat
+	msgbox PokemonMansion_1F_Text_ArniePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+PokemonMansion_2F_EventScript_Oak::
+	msgbox PokemonMansion_1F_Text_Oak, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PokemonMansion_2F_EventScript_NoOak
+	trainerbattle_single TRAINER_OAK2, PokemonMansion_1F_Text_YesOak, PokemonMansion_1F_Text_OakDefeat, PokemonMansion_2F_EventScript_PostOak, NO_MUSIC
+	release
+	end
+
+PokemonMansion_2F_EventScript_PostOak::
+	msgbox PokemonMansion_1F_Text_OakPostBattle
+	setflag FLAG_OAK2_DEFEATED
+	clearflag FLAG_HIDE_MEW
+	clearflag FLAG_HIDE_EASTER
+	release
+	end
+
+PokemonMansion_2F_EventScript_NoOak::
+	msgbox PokemonMansion_1F_Text_NoOak
+	release
+	end
+
+`

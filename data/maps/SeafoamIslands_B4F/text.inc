@@ -19,6 +19,22 @@ Text_RockSlideTaught::
     .string "It might be scary to use it in this\n"
     .string "tunnel…$"
 
+Text_RockSlideReteach::
+    .string "You really aren't afraid of rockslides\n"
+    .string "if you're here spelunking again.\p"
+    .string "I can teach you ROCK SLIDE\n"
+    .string "once more if you can pay ¥50000.$"
+Text_RockSlideReteach2::
+    .string "Would you like me to teach\n"
+    .string "ROCK SLIDE?$"
+Text_RockSlideNotEnoughMoney::
+    .string "Supplies for exploring caves\n"
+    .string "don't come cheap.\p"
+    .string "If I don't charge for my services,\n"
+    .string "I can't afford to keep exploring!\p"
+    .string "If you want to learn ROCK SLIDE,\n"
+    .string "come back with ¥50000.$"
+
 SeafoamIslands_B4F_Text_BouldersMightChangeWaterFlow::
     .string "Hint: Boulders might change the\n"
     .string "flow of water.$"
@@ -27,3 +43,14 @@ SeafoamIslands_B4F_Text_DangerFastCurrent::
     .string "DANGER\n"
     .string "Fast current!$"
 
+SeafoamIslands_B4F_Text_WeebraIntro::
+    .string "Hey! You have POKéMON!\n"
+    .string "Come on!\l"
+    .string "Let's battle 'em!$"
+
+SeafoamIslands_B4F_Text_WeebraDefeat::
+    .string "No!\nCATERPIE can't hack it!$"
+
+SeafoamIslands_B4F_Text_WeebraPostBattle::
+    .string "Ssh! You'll scare the bugs away.\n"
+    .string "Another time, okay?$"

@@ -99,3 +99,44 @@ ThreeIsland_BondBridge_Text_BondBridgeSign::
     .string "Please be quiet when crossing.\p"
     .string "BERRY FOREST AHEAD$"
 
+ThreeIsland_BondBridge_Text_Morty::
+    .string "I love this island a lot\n"
+    .string "reminds me of a place\l"
+    .string "HO-OH would visit.\p"
+    .string "I am Morty, JOHTO's\n"
+    .string "Ghost Type leader!\p"
+    .string "And I want to battle you!$"
+    .string "I heard you were a\n"
+    .string "Worthy Opponent.\p"
+    .string "So it would be a pressure\n"
+    .string "to battle you!$"
+
+ThreeIsland_BondBridge_Text_MortyDefeat::
+    .string "What a great battle!$"
+
+ThreeIsland_BondBridge_Text_MortyPostBattle::
+    .string "Incredible! Your strength is special!\p"
+    .string "HO-OH would Bless you!.$"
+
+ThreeIsland_BondBridge_Text_NoMorty::
+    .string "Guess I'm not worthy.$"
+
+ThreeIsland_BondBridge_Text_YesMorty::
+    .string "Let's Battle!$"
+
+ThreeIsland_BondBridge_Text_RematchMorty::
+    .string "You want a rematch?\n"
+    .string "I haven't really grown\l"
+    .string "!that much, i'm on vacation!\p"
+    .string "But I could battle again!$"
+
+ThreeIsland_BondBridge_Text_RematchMortyDefeat::
+    .string "What a great battle!$"
+
+ThreeIsland_BondBridge_Text_YesRematchMorty::
+    .string "Let's Battle!$"
+
+
+ThreeIsland_BondBridge_Text_RematchMortyPostBattle::
+    .string "Incredible! Your strength is special!\p"
+    .string "HO-OH would Bless you!.$"

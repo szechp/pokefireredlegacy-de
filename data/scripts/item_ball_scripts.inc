@@ -71,7 +71,7 @@ SSAnne_2F_Room2_EventScript_ItemStardust::
 	end
 
 SSAnne_2F_Room4_EventScript_ItemXAttack::
-	finditem ITEM_X_ATTACK
+	finditem ITEM_SILVER_POWDER
 	end
 
 SSAnne_B1F_Room2_EventScript_ItemTM44::
@@ -94,6 +94,10 @@ Route9_EventScript_ItemTM40::
 	finditem ITEM_TM40
 	end
 
+CeladonCity_EventScript_ItemSunStone::
+	finditem ITEM_SUN_STONE
+	end
+
 RocketHideout_B1F_EventScript_ItemEscapeRope::
 	finditem ITEM_ESCAPE_ROPE
 	end
@@ -103,7 +107,7 @@ RocketHideout_B1F_EventScript_ItemHyperPotion::
 	end
 
 RocketHideout_B2F_EventScript_ItemXSpeed::
-	finditem ITEM_X_SPEED
+	finditem ITEM_POISON_BARB
 	end
 
 RocketHideout_B2F_EventScript_ItemMoonStone::
@@ -163,7 +167,7 @@ PokemonTower_6F_EventScript_ItemRareCandy::
 	end
 
 PokemonTower_6F_EventScript_ItemXAccuracy::
-	finditem ITEM_X_ACCURACY
+	finditem ITEM_TM42
 	end
 
 Route12_EventScript_ItemTM48::
@@ -172,6 +176,10 @@ Route12_EventScript_ItemTM48::
 
 Route12_EventScript_ItemIron::
 	finditem ITEM_IRON
+	end
+
+Route12_EventScript_ItemSilkScarf::
+	finditem ITEM_SILK_SCARF
 	end
 
 Route15_EventScript_ItemTM18::
@@ -195,7 +203,7 @@ SafariZone_East_EventScript_ItemTM11::
 	end
 
 SafariZone_East_EventScript_ItemLeafStone::
-	finditem ITEM_LEAF_STONE
+	finditem ITEM_KINGS_ROCK
 	end
 
 SafariZone_North_EventScript_ItemProtein::
@@ -223,7 +231,7 @@ SafariZone_West_EventScript_ItemMaxRevive::
 	end
 
 SilphCo_3F_EventScript_ItemHyperPotion::
-	finditem ITEM_HYPER_POTION
+	finditem ITEM_TM36
 	end
 
 SilphCo_4F_EventScript_ItemMaxRevive::
@@ -231,7 +239,7 @@ SilphCo_4F_EventScript_ItemMaxRevive::
 	end
 
 SilphCo_4F_EventScript_ItemEscapeRope::
-	finditem ITEM_ESCAPE_ROPE
+	finditem ITEM_METAL_COAT
 	end
 
 SilphCo_4F_EventScript_ItemFullHeal::
@@ -255,7 +263,7 @@ SilphCo_6F_EventScript_ItemHPUp::
 	end
 
 SilphCo_6F_EventScript_ItemXSpecial::
-	finditem ITEM_X_SPECIAL
+	finditem ITEM_UP_GRADE
 	end
 
 SilphCo_7F_EventScript_ItemCalcium::
@@ -279,7 +287,7 @@ SilphCo_10F_EventScript_ItemRareCandy::
 	end
 
 PowerPlant_EventScript_ItemMaxPotion::
-	finditem ITEM_MAX_POTION
+	finditem ITEM_ELIXIR
 	end
 
 PowerPlant_EventScript_ItemTM17::
@@ -295,7 +303,7 @@ PowerPlant_EventScript_ItemThunderStone::
 	end
 
 PowerPlant_EventScript_ItemElixir::
-	finditem ITEM_ELIXIR
+	finditem ITEM_TM24
 	end
 
 PokemonMansion_1F_EventScript_ItemCarbos::
@@ -343,7 +351,7 @@ VictoryRoad_1F_EventScript_ItemTM02::
 	end
 
 VictoryRoad_2F_EventScript_ItemGuardSpec::
-	finditem ITEM_GUARD_SPEC
+	finditem ITEM_DRAGON_FANG
 	end
 
 VictoryRoad_2F_EventScript_ItemTM07::
@@ -431,7 +439,7 @@ Route9_EventScript_ItemBurnHeal::
 	end
 
 RockTunnel_1F_EventScript_ItemRepel::
-	finditem ITEM_REPEL
+	finditem ITEM_EVERSTONE
 	end
 
 RockTunnel_1F_EventScript_ItemPearl::
@@ -443,11 +451,19 @@ RockTunnel_1F_EventScript_ItemEscapeRope::
 	end
 
 RockTunnel_B1F_EventScript_ItemRevive::
-	finditem ITEM_REVIVE
+	finditem ITEM_TM37
 	end
 
 RockTunnel_B1F_EventScript_ItemMaxEther::
 	finditem ITEM_MAX_ETHER
+	end
+
+RockTunnel_B2F_EventScript_ItemHardStone::
+	finditem ITEM_HARD_STONE
+	end
+
+RockTunnel_B2F_EventScript_ItemIronTail::
+	finditem ITEM_TM23
 	end
 
 SilphCo_8F_EventScript_ItemIron::
@@ -507,15 +523,19 @@ SeafoamIslands_B1F_EventScript_ItemWaterStone::
 	end
 
 SeafoamIslands_B1F_EventScript_ItemRevive::
-	finditem ITEM_REVIVE
+	finditem ITEM_TM07
 	end
 
 SeafoamIslands_B2F_EventScript_ItemBigPearl::
 	finditem ITEM_BIG_PEARL
 	end
 
+SeafoamIslands_B3F_EventScript_ItemTM13::
+	finditem ITEM_TM13
+	end
+
 SeafoamIslands_B4F_EventScript_ItemUltraBall::
-	finditem ITEM_ULTRA_BALL
+	finditem ITEM_DRAGON_SCALE
 	end
 
 FourIsland_EventScript_ItemStarPiece::
@@ -527,7 +547,7 @@ FourIsland_EventScript_ItemStardust::
 	end
 
 OneIsland_KindleRoad_EventScript_ItemEther::
-	finditem ITEM_ETHER
+	finditem ITEM_BLACK_BELT
 	end
 
 OneIsland_KindleRoad_EventScript_ItemMaxRepel::
@@ -559,11 +579,11 @@ SixIsland_WaterPath_EventScript_ItemElixir::
 	end
 
 SixIsland_WaterPath_EventScript_ItemDragonScale::
-	finditem ITEM_DRAGON_SCALE
+	finditem ITEM_RARE_CANDY
 	end
 
 SixIsland_RuinValley_EventScript_ItemFullRestore::
-	finditem ITEM_FULL_RESTORE
+	finditem ITEM_PP_UP
 	end
 
 SixIsland_RuinValley_EventScript_ItemHPUp::
@@ -571,11 +591,11 @@ SixIsland_RuinValley_EventScript_ItemHPUp::
 	end
 
 SixIsland_RuinValley_EventScript_ItemSunStone::
-	finditem ITEM_SUN_STONE
+	finditem ITEM_PP_MAX
 	end
 
 SevenIsland_SevaultCanyon_EventScript_ItemKingsRock::
-	finditem ITEM_KINGS_ROCK
+	finditem ITEM_PP_MAX
 	end
 
 SevenIsland_SevaultCanyon_EventScript_ItemMaxElixir::
@@ -591,11 +611,11 @@ ThreeIsland_BerryForest_EventScript_ItemMaxEther::
 	end
 
 ThreeIsland_BerryForest_EventScript_ItemFullHeal::
-	finditem ITEM_FULL_HEAL
+	finditem ITEM_TM29
 	end
 
 ThreeIsland_BerryForest_EventScript_ItemMaxElixir::
-	finditem ITEM_MAX_ELIXIR
+	finditem ITEM_PP_MAX
 	end
 
 MtEmber_Exterior_EventScript_ItemUltraBall::
@@ -603,11 +623,11 @@ MtEmber_Exterior_EventScript_ItemUltraBall::
 	end
 
 MtEmber_Exterior_EventScript_ItemFireStone::
-	finditem ITEM_FIRE_STONE
+	finditem ITEM_TM30
 	end
 
 MtEmber_Exterior_EventScript_ItemDireHit::
-	finditem ITEM_DIRE_HIT
+	finditem ITEM_TM35
 	end
 
 FourIsland_IcefallCave_1F_EventScript_ItemUltraBall::
@@ -631,7 +651,7 @@ FiveIsland_RocketWarehouse_EventScript_ItemBigPearl::
 	end
 
 FiveIsland_RocketWarehouse_EventScript_ItemTM36::
-	finditem ITEM_TM36
+	finditem ITEM_FOCUS_BAND
 	end
 
 FiveIsland_RocketWarehouse_EventScript_ItemPearl::
@@ -639,11 +659,11 @@ FiveIsland_RocketWarehouse_EventScript_ItemPearl::
 	end
 
 FiveIsland_RocketWarehouse_EventScript_ItemUpGrade::
-	finditem ITEM_UP_GRADE
+	finditem ITEM_SCOPE_LENS
 	end
 
 FiveIsland_LostCave_Room10_EventScript_ItemSilkScarf::
-	finditem ITEM_SILK_SCARF
+	finditem ITEM_AMULET_COIN
 	end
 
 FiveIsland_LostCave_Room11_EventScript_ItemLaxIncense::

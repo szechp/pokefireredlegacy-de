@@ -19,6 +19,19 @@ Text_MetronomeTaught::
     .string "It tweaks your POKéMON's brain into\n"
     .string "using moves it doesn't even know.$"
 
+Text_MetronomeReteach::
+    .string "Tch-tch-tch!\n"
+    .string "The METRONOME ticks eternally!\p"
+    .string "I'll teach you METRONOME again\n"
+    .string "in exchange for ¥1000.$"
+Text_MetronomeReteach2::
+    .string "Tch-tch-tch!\n"
+    .string "Let me teach METRONOME?$"
+Text_MetronomeNotEnoughMoney::
+    .string "Tch-tch-tch!\p"
+    .string "Time is money, and you don't\n"
+    .string "have enough!$"
+
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_HaveYouAFossilForMe::
     .string "Hiya!\p"
     .string "I am important doctor.\n"

@@ -31,3 +31,17 @@ PokemonMansion_1F_Text_ChristenedDiscoveredMonMew::
     .string "We christened the newly discovered\l"
     .string "POKéMON, MEW.$"
 
+PokemonMansion_1F_Text_Oak::
+    .string "Oak Placeholder!$"
+
+PokemonMansion_1F_Text_OakDefeat::
+    .string "Oak Placeholder!$"
+
+PokemonMansion_1F_Text_OakPostBattle::
+    .string "Mew Spawned!$"
+
+PokemonMansion_1F_Text_NoOak::
+    .string "Maybe some other time.$"
+
+PokemonMansion_1F_Text_YesOak::
+    .string "Oak Placeholder!$"

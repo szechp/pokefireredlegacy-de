@@ -24,3 +24,20 @@ Route5_SouthEntrance_Text_ThanksIllShareTeaWithGuards::
 Route5_SouthEntrance_Text_HiHowsItGoing::
     .string "Hi, how's it going?$"
 
+Route5_SouthEntrance_Text_ThanksIllShareFightTeaWithGuards::
+    .string "Huh? I can have this drink?\n"
+    .string "Gee, thanks!\l"
+    .string "… …\l"
+    .string "Glug, glug…\l"
+    .string "… …\l"
+    .string "Gulp…\l"
+    .string "If you want to go to SAFFRON\l"
+    .string "CITY…\l"
+    .string "… …\l"
+    .string "You can go on through.\p"
+    .string "I'll share this TEA with the other\n"
+    .string "guards!$"
+
+Route5_SouthEntrance_Text_ThatFightTeaLooksTasty::
+    .string "Oh, that TEA…\n"
+    .string "It looks awfully tasty…$"

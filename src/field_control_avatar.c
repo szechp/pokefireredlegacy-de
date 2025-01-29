@@ -30,6 +30,7 @@
 #include "constants/event_objects.h"
 #include "constants/maps.h"
 #include "constants/metatile_behaviors.h"
+#include "constants/region_map_sections.h"
 
 #define SIGNPOST_POKECENTER 0
 #define SIGNPOST_POKEMART 1
@@ -70,6 +71,7 @@ static s8 GetWarpEventAtMapPosition(struct MapHeader * mapHeader, struct MapPosi
 static bool8 TryDoorWarp(struct MapPosition * position, u16 metatileBehavior, u8 playerDirection);
 static s8 GetWarpEventAtPosition(struct MapHeader * mapHeader, u16 x, u16 y, u8 z);
 static const u8 *GetCoordEventScriptAtPosition(struct MapHeader * mapHeader, u16 x, u16 y, u8 z);
+static bool8 SwitchBikeGears(void);
 
 COMMON_DATA struct FieldInput gFieldInputRecord = {0};
 
@@ -294,6 +296,9 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
         gFieldInputRecord.pressedSelectButton = TRUE;
         return TRUE;
     }
+
+    if (input->pressedBButton && (gPlayerAvatar.flags & (PLAYER_AVATAR_FLAG_MACH_BIKE | PLAYER_AVATAR_FLAG_ACRO_BIKE)) && GetCurrentRegionMapSectionId() != MAPSEC_ROUTE_17 && SwitchBikeGears())
+        return TRUE;
 
     return FALSE;
 }
@@ -1179,4 +1184,21 @@ int SetCableClubWarp(void)
     MapGridGetMetatileBehaviorAt(position.x, position.y);  // unnecessary
     SetupWarp(&gMapHeader, GetWarpEventAtMapPosition(&gMapHeader, &position), &position);
     return 0;
+}
+
+static bool8 SwitchBikeGears(void)
+{
+    if(!FlagGet(FLAG_BIKE_GEAR))
+    {
+        FlagSet(FLAG_BIKE_GEAR);
+        PlaySE(SE_BIKE_BELL);
+        return FALSE;
+    }
+    else
+    {
+        FlagClear(FLAG_BIKE_GEAR);
+        PlaySE(SE_BIKE_BELL);
+        return FALSE;
+    }
+    return TRUE;
 }

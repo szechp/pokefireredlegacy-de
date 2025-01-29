@@ -10,7 +10,7 @@ PokemonLeague_LoreleisRoom_Text_Intro::
     .string "Are you ready?{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_LoreleisRoom_Text_RematchIntro::
-    .string "Welcome to the POKéMON LEAGUE.\p"
+    .string "Welcome back CHAMPION.\p"
     .string "I, LORELEI of the ELITE FOUR,\n"
     .string "have returned!\p"
     .string "You know how it goes.\n"

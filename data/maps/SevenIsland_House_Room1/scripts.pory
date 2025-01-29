@@ -1,0 +1,15 @@
+raw `
+.equ LOCALID_OLD_WOMAN, 1
+
+SevenIsland_House_Room1_MapScripts::
+	.byte 0
+
+SevenIsland_House_Room1_EventScript_OldWoman::
+	lock
+	faceplayer
+	msgbox SevenIsland_House_Room1_Text_OnlyEnjoymentWatchingBattles
+	release
+	end
+
+
+`

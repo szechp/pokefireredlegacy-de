@@ -17,8 +17,13 @@ static const struct InGameTrade sInGameTrades[] = {
     }, 
     [INGAME_TRADE_JYNX] = 
     {
+<<<<<<< Updated upstream
         .nickname = _("MOOCHUM"),
         .species = SPECIES_JYNX,
+=======
+        .nickname = _("ZMOOCHUM"),
+        .species = SPECIES_SMOOCHUM,
+>>>>>>> Stashed changes
         .ivs = {18, 17, 18, 22, 25, 21},
         .abilityNum = 0,
         .otId = 36728,
@@ -34,18 +39,25 @@ static const struct InGameTrade sInGameTrades[] = {
     [INGAME_TRADE_NIDORAN] = 
     {
 #if defined(FIRERED)
+<<<<<<< Updated upstream
         .nickname = _("GASSER"),
         .species = SPECIES_KOFFING,
         .ivs = {22, 18, 25, 19, 15, 22},
+=======
+        .nickname = _("HORSEY"),
+        .species = SPECIES_PONYTA,
+        .ivs = {22, 25, 25, 19, 15, 22},
+>>>>>>> Stashed changes
         .abilityNum = 0,
         .otId = 63184,
         .conditions = {5, 5, 5, 5, 30},
-        .personality = 0x4c970b89,
+        .personality = 0x151943d7,
         .heldItem = ITEM_TINY_MUSHROOM,
         .mailNum = 255,
         .otName = _("SAIGE"),
         .otGender = FEMALE,
         .sheen = 10,
+<<<<<<< Updated upstream
         .requestedSpecies = SPECIES_GROWLITHE
 #elif defined(LEAFGREEN)
         .nickname = _("GASSER"),
@@ -55,12 +67,27 @@ static const struct InGameTrade sInGameTrades[] = {
         .otId = 63184,
         .conditions = {5, 5, 5, 5, 30},
         .personality = 0x4c970b89,
+=======
+        .requestedSpecies = SPECIES_SLOWPOKE
+#elif defined(LEAFGREEN)
+        .nickname = _("HORSEY"),
+        .species = SPECIES_PONYTA,
+        .ivs = {19, 25, 18, 22, 22, 15},
+        .abilityNum = 0,
+        .otId = 63184,
+        .conditions = {30, 5, 5, 5, 5},
+        .personality = 0x151943d7,
+>>>>>>> Stashed changes
         .heldItem = ITEM_TINY_MUSHROOM,
         .mailNum = 255,
         .otName = _("SAIGE"),
         .otGender = FEMALE,
         .sheen = 10,
+<<<<<<< Updated upstream
         .requestedSpecies = SPECIES_GROWLITHE
+=======
+        .requestedSpecies = SPECIES_SLOWPOKE
+>>>>>>> Stashed changes
 #endif
     }, 
     [INGAME_TRADE_FARFETCHD] = 
@@ -98,7 +125,11 @@ static const struct InGameTrade sInGameTrades[] = {
 #elif defined(LEAFGREEN)
         .nickname = _("TOPPER"),
         .species = SPECIES_HITMONTOP,
+<<<<<<< Updated upstream
         .ivs = {22, 25, 18, 19, 22, 15},
+=======
+        .ivs = {19, 18, 25, 22, 15, 22},
+>>>>>>> Stashed changes
         .abilityNum = 0,
         .otId = 13637,
         .conditions = {5, 5, 30, 5, 5},
@@ -128,13 +159,17 @@ static const struct InGameTrade sInGameTrades[] = {
 #if defined(FIRERED)
         .requestedSpecies = SPECIES_NIDOKING
 #elif defined(LEAFGREEN)
+<<<<<<< Updated upstream
         .requestedSpecies = SPECIES_NIDOKING
+=======
+        .requestedSpecies = SPECIES_NIDOQUEEN
+>>>>>>> Stashed changes
 #endif
     }, 
     [INGAME_TRADE_ELECTRODE] = 
     {
-        .nickname = _("ESPHERE"),
-        .species = SPECIES_ELECTRODE,
+        .nickname = _("MR.DON"),
+        .species = SPECIES_RHYDON,
         .ivs = {19, 16, 18, 25, 25, 19},
         .abilityNum = 1,
         .otId = 50298,
@@ -145,13 +180,19 @@ static const struct InGameTrade sInGameTrades[] = {
         .otName = _("CLIFTON"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_RAICHU
+        .requestedSpecies = SPECIES_KOFFING
     }, 
     [INGAME_TRADE_TANGELA] = 
     {
+<<<<<<< Updated upstream
         .nickname = _("SLIMEGOO"),
         .species = SPECIES_DITTO,
         .ivs = {31, 31, 31, 31, 31, 31},
+=======
+        .nickname = _("TANGENY"),
+        .species = SPECIES_DRATINI,
+        .ivs = {22, 17, 25, 16, 23, 20},
+>>>>>>> Stashed changes
         .abilityNum = 0,
         .otId = 60042,
         .conditions = {5, 5, 30, 5, 5},
@@ -161,12 +202,21 @@ static const struct InGameTrade sInGameTrades[] = {
         .otName = _("NORMA"),
         .otGender = FEMALE,
         .sheen = 10,
+<<<<<<< Updated upstream
         .requestedSpecies = SPECIES_TANGELA
     },
     [INGAME_TRADE_SEEL] = 
     {
         .nickname = _("DRAGONA"),
         .species = SPECIES_DRATINI,
+=======
+        .requestedSpecies = SPECIES_GRIMER
+    },
+    [INGAME_TRADE_SEEL] = 
+    {
+        .nickname = _("TED"),
+        .species = SPECIES_TAUROS,
+>>>>>>> Stashed changes
         .ivs = {24, 15, 22, 16, 23, 22},
         .abilityNum = 0,
         .otId = 9853,
@@ -177,7 +227,11 @@ static const struct InGameTrade sInGameTrades[] = {
         .otName = _("GARETT"),
         .otGender = MALE,
         .sheen = 10,
+<<<<<<< Updated upstream
         .requestedSpecies = SPECIES_GRIMER
+=======
+        .requestedSpecies = SPECIES_HOUNDOUR
+>>>>>>> Stashed changes
     }
 };
 

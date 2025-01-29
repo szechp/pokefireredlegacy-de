@@ -56,7 +56,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
+      "graphics_id": "OBJ_EVENT_GFX_POKE_MANIAC",
       "x": 15,
       "y": 70,
       "elevation": 3,
@@ -84,7 +84,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
+      "graphics_id": "OBJ_EVENT_GFX_POKE_MANIAC",
       "x": 13,
       "y": 44,
       "elevation": 3,
@@ -204,7 +204,9 @@
       "dest_warp_id": "3"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
@@ -279,6 +281,16 @@
       "flag": "FLAG_HIDDEN_ITEM_ROUTE10_NANAB_BERRY",
       "quantity": 1,
       "underfoot": false
+    },
+    {
+      "type": "hidden_item",
+      "x": 4,
+      "y": 4,
+      "elevation": 0,
+      "item": "ITEM_LIGHT_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE10_LIGHTBALL",
+      "quantity": 1,
+      "underfoot": true
     }
   ]
 }

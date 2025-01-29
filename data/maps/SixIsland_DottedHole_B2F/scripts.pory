@@ -1,0 +1,42 @@
+raw `
+SixIsland_DottedHole_B2F_MapScripts::
+	.byte 0
+
+SixIsland_DottedHole_B2F_EventScript_Speedy::
+	goto_if_set FLAG_GET_AURORA, SixIsland_DottedHole_B2F_EventScript_RematchSpeedy
+	goto_if_set FLAG_SPEEDY_DEFEATED, SixIsland_DottedHole_B2F_EventScript_CantRematchSpeedy
+	msgbox SixIsland_DottedHole_B2F_Text_Speedy, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SixIsland_DottedHole_B2F_EventScript_NoSpeedy
+	trainerbattle_single TRAINER_SPEEDY, SixIsland_DottedHole_B2F_Text_YesSpeedy, SixIsland_DottedHole_B2F_Text_SpeedyDefeat, SixIsland_DottedHole_B2F_EventScript_PostSpeedy, NO_MUSIC
+	release
+	end
+
+SixIsland_DottedHole_B2F_EventScript_PostSpeedy::
+	msgbox SixIsland_DottedHole_B2F_Text_SpeedyPostBattle
+	setflag FLAG_SPEEDY_DEFEATED
+	release
+	end
+
+SixIsland_DottedHole_B2F_EventScript_CantRematchSpeedy::
+	msgbox SixIsland_DottedHole_B2F_Text_SpeedyPostBattle
+	release
+	end
+
+SixIsland_DottedHole_B2F_EventScript_NoSpeedy::
+	msgbox SixIsland_DottedHole_B2F_Text_NoSpeedy
+	release
+	end
+
+SixIsland_DottedHole_B2F_EventScript_RematchSpeedy::
+	msgbox SixIsland_DottedHole_B2F_Text_RematchSpeedy, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SixIsland_DottedHole_B2F_EventScript_NoSpeedy
+	trainerbattle_single TRAINER_SPEEDY, SixIsland_DottedHole_B2F_Text_YesRematchSpeedy, SixIsland_DottedHole_B2F_Text_RematchSpeedyDefeat, SixIsland_DottedHole_B2F_EventScript_PostRematchSpeedy, NO_MUSIC
+	release
+	end
+
+SixIsland_DottedHole_B2F_EventScript_PostRematchSpeedy::
+	msgbox SixIsland_DottedHole_B2F_Text_RematchSpeedyDefeat
+	cleartrainerflag TRAINER_SPEEDY
+	release
+	end
+`

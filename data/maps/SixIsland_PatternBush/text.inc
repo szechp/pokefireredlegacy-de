@@ -154,3 +154,31 @@ SixIsland_PatternBush_Text_LaytonPostBattle::
     .string "What could be the cause of such\n"
     .string "a phenomenon?$"
 
+SixIsland_PatternBush_Text_Bugsy::
+    .string "New Leader Bugsy Placeholder!$"
+
+
+SixIsland_PatternBush_Text_BugsyDefeat::
+    .string "New Leader Bugsy Placeholder!$"
+
+SixIsland_PatternBush_Text_BugsyPostBattle::
+    .string "New Leader Bugsy Placeholder!$"
+
+SixIsland_PatternBush_Text_NoBugsy::
+    .string "New Leader Bugsy Placeholder!$"
+
+SixIsland_PatternBush_Text_YesBugsy::
+    .string "New Leader Bugsy Placeholder!$"
+
+SixIsland_PatternBush_Text_RematchBugsy::
+    .string "New Leader Bugsy Placeholder!$"
+
+SixIsland_PatternBush_Text_RematchBugsyDefeat::
+    .string "New Leader Bugsy Placeholder!$"
+
+SixIsland_PatternBush_Text_YesRematchBugsy::
+    .string "New Leader Bugsy Placeholder!$"
+
+SixIsland_PatternBush_Text_RematchBugsyPostBattle::
+    .string "New Leader Bugsy Placeholder!$"
+

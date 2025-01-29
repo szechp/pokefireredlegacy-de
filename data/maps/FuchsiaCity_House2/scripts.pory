@@ -1,0 +1,102 @@
+raw `
+FuchsiaCity_House2_MapScripts::
+	.byte 0
+
+FuchsiaCity_House2_FossilGuy::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_FOSSIL_FROM_FOSSIL_GUY, FuchsiaCity_House2_AlreadyGotFossil
+	msgbox FuchsiaCity_House2_Text_HaveMonForSavingUs
+	goto_if_set FLAG_GOT_DOME_FOSSIL, FuchsiaCity_House2_FossilOmanyte
+	goto_if_set FLAG_GOT_HELIX_FOSSIL, FuchsiaCity_House2_FossilKabuto
+
+FuchsiaCity_House2_FossilKabuto::
+	setvar VAR_TEMP_1, SPECIES_KABUTO
+	givemon SPECIES_KABUTO, 20
+	goto_if_eq VAR_RESULT, 0, FuchsiaCity_House2_ReceiveFossilPartyKabuto
+	goto_if_eq VAR_RESULT, 1, FuchsiaCity_House2_ReceiveFossilPCKabuto
+	goto_if_eq VAR_RESULT, 2, EventScript_NoMoreRoomForPokemon
+	release
+	end
+
+FuchsiaCity_House2_FossilOmanyte::
+	setvar VAR_TEMP_1, SPECIES_OMANYTE
+	givemon SPECIES_OMANYTE, 20
+	goto_if_eq VAR_RESULT, 0, FuchsiaCity_House2_ReceiveFossilPartyOmanyte
+	goto_if_eq VAR_RESULT, 1, FuchsiaCity_House2_ReceiveFossilPCOmanyte
+	goto_if_eq VAR_RESULT, 2, EventScript_NoMoreRoomForPokemon
+	release
+	end
+
+FuchsiaCity_House2_ReceiveFossilPartyKabuto::
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	playfanfare MUS_LEVEL_UP
+	message FuchsiaCity_House2_Text_ObtainedKabutoFromEmployee
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_KABUTO
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, FuchsiaCity_House2_EndReceiveFossil
+	call EventScript_GetGiftMonPartySlot
+	call EventScript_ChangePokemonNickname
+	goto FuchsiaCity_House2_EndReceiveFossil
+	end
+
+FuchsiaCity_House2_ReceiveFossilPartyOmanyte::
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	playfanfare MUS_LEVEL_UP
+	message FuchsiaCity_House2_Text_ObtainedOmanyteFromEmployee
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_OMANYTE
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, FuchsiaCity_House2_EndReceiveFossil
+	call EventScript_GetGiftMonPartySlot
+	call EventScript_ChangePokemonNickname
+	goto FuchsiaCity_House2_EndReceiveFossil
+	end
+
+FuchsiaCity_House2_ReceiveFossilPCKabuto::
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	playfanfare MUS_LEVEL_UP
+	message FuchsiaCity_House2_Text_ObtainedKabutoFromEmployee
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_KABUTO
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, FuchsiaCity_House2_FossilTransferredToPC
+	call EventScript_NameReceivedBoxMon
+	goto FuchsiaCity_House2_FossilTransferredToPC
+	end
+
+FuchsiaCity_House2_ReceiveFossilPCOmanyte::
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	playfanfare MUS_LEVEL_UP
+	message FuchsiaCity_House2_Text_ObtainedOmanyteFromEmployee
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_OMANYTE
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, FuchsiaCity_House2_FossilTransferredToPC
+	call EventScript_NameReceivedBoxMon
+	goto FuchsiaCity_House2_FossilTransferredToPC
+	end
+
+FuchsiaCity_House2_FossilTransferredToPC::
+	call EventScript_TransferredToPC
+	goto FuchsiaCity_House2_EndReceiveFossil
+	end
+
+FuchsiaCity_House2_EndReceiveFossil::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox FuchsiaCity_House2_Text_ExplainFossil
+	setflag FLAG_GOT_FOSSIL_FROM_FOSSIL_GUY
+	release
+	end
+
+FuchsiaCity_House2_AlreadyGotFossil::
+	msgbox FuchsiaCity_House2_RocketBossWentToBoardroom
+	release
+	end
+
+`

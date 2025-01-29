@@ -73,3 +73,24 @@ CinnabarIsland_Text_IfYouHaveTriPassYouCanGoAgain::
     .string "VERMILION PORT.\p"
     .string "All right, thanks for your company!$"
 
+CinnabarIsland_Text_Fishing::
+    .string "This Island is the best\n"
+    .string "For Fishing!$"
+
+CinnabarIsland_Text_NoFishingRod:
+	.string "Hold on there, you don't even have a\n"
+	.string "FISHING ROD? How did you even make it\l"
+	.string "all the way here?\p"
+	.string "Here, take one of mine.$"
+
+CinnabarIsland_Text_NoPokeballs:
+	.string "Wait a second… Do you have any POKé\n"
+	.string "BALLS on you?\p"
+	.string "You'll want some before you head any\n"
+	.string "further. Take a few of mine.$"
+
+CinnabarIsland_Text_ScientistVolcano::
+	.string "The Volcano near CINNABAR is\n"
+	.string "Picking up Activity\p"
+	.string "I still invesgating this Matter\n"
+	.string "but CINNABAR might be affected$"

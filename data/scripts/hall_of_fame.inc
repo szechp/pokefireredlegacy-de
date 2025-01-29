@@ -1,5 +1,6 @@
 EventScript_SetDefeatedEliteFourFlagsVars::
 	clearflag FLAG_HIDE_POSTGAME_GOSSIPERS
+	clearflag FLAG_HIDE_POSTGAME_TRAINERS
 	call EventScript_ResetEliteFour
 	special Script_UpdateTrainerFanClubGameClear
 	specialvar VAR_RESULT, IsNationalPokedexEnabled
@@ -15,6 +16,7 @@ EventScript_ResetLegendaries::
 	clearflag FLAG_LUGIA_FLEW_AWAY
 	clearflag FLAG_HO_OH_FLEW_AWAY
 	clearflag FLAG_DEOXYS_FLEW_AWAY
+	special InitRoamer
 	return
 
 EventScript_ResetEliteFourEnd::

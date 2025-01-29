@@ -126,3 +126,51 @@ Route13_Text_RouteSign::
     .string "ROUTE 13\n"
     .string "North to SILENCE BRIDGE$"
 
+Route13_Text_MayIHelpYou::
+    .string "Birds sing to the tune\n"
+    .string "of Flutes.\p"
+    .string "Some of which can heal them.\p"
+    .string "Want to buy some flutes?$"
+
+
+
+Route13_Text_PleaseComeAgain::
+    .string "Feel Free to come back\n"
+    .string "If you want$"
+
+Route13_Text_Whitney::
+    .string "PreLeader Whitney,\n"
+    .string "Placeholder!$"
+
+
+Route13_Text_WhitneyDefeat::
+    .string "PreLeader Whitney,\n"
+    .string "Placeholder!$"
+
+Route13_Text_WhitneyPostBattle::
+    .string "PreLeader Whitney,\n"
+    .string "Placeholder!$"
+
+Route13_Text_NoWhitney::
+    .string "PreLeader Whitney,\n"
+    .string "Placeholder!$"
+
+Route13_Text_YesWhitney::
+    .string "PreLeader Whitney,\n"
+    .string "Placeholder!$"
+
+Route13_Text_RematchWhitney::
+    .string "PreLeader Whitney,\n"
+    .string "Rematch Placeholder!$"
+
+Route13_Text_RematchWhitneyDefeat::
+    .string "PreLeader Whitney,\n"
+    .string "Rematch Placeholder!$"
+
+Route13_Text_YesRematchWhitney::
+    .string "PreLeader Whitney,\n"
+    .string "Rematch Placeholder!$"
+
+Route13_Text_RematchWhitneyPostBattle::
+    .string "PreLeader Whitney,\n"
+    .string "Rematch Placeholder!$"

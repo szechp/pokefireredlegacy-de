@@ -48,6 +48,28 @@ CeladonCity_Gym_Text_ExplainTM19::
 CeladonCity_Gym_Text_ShouldMakeRoomForThis::
     .string "You should make room for this.$"
 
+CeladonCity_Gym_Text_RematchErika::
+    .string "You've grown much stronger.\p"
+    .string "It's inspiring!\p"
+    .string "How about a rematch for old times'sake?$"
+
+CeladonCity_Gym_Text_RematchErikaDefeat::
+    .string "Your POKEMON Blooms like no other!$"
+
+CeladonCity_Gym_Text_ErikaPostRematchBattle::
+    .string "Incredible! Your strength\n"
+    .string "surpasses even the beauty of\l"
+    .string "full bloom\p"
+    .string "Your victory is well earned.\p"
+    .string "Well done!$" 
+
+CeladonCity_Gym_Text_ErikaNoRematchBattle::
+    .string "Need some more sunlight?$"
+
+CeladonCity_Gym_Text_RematchYesErika::
+    .string "Prepare yourself!\p"
+    .string "My POKEMON have reached full bloom!$"
+
 CeladonCity_Gym_Text_KayIntro::
     .string "I should tell you about this GYM.\p"
     .string "Only real ladies are allowed in\n"

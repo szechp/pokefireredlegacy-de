@@ -1,0 +1,50 @@
+raw `
+ThreeIsland_BondBridge_MapScripts::
+	.byte 0
+
+ThreeIsland_BondBridge_EventScript_BerryForestSign::
+	msgbox ThreeIsland_BondBridge_Text_BerryForestAhead, MSGBOX_SIGN
+	end
+
+ThreeIsland_BondBridge_EventScript_BondBridgeSign::
+	msgbox ThreeIsland_BondBridge_Text_BondBridgeSign, MSGBOX_SIGN
+	end
+
+ThreeIsland_BondBridge_EventScript_Morty::
+	goto_if_set FLAG_GET_MYSTIC, ThreeIsland_BondBridge_EventScript_RematchMorty
+	goto_if_set FLAG_MORTY_DEFEATED, ThreeIsland_BondBridge_EventScript_CantRematchMorty
+	msgbox ThreeIsland_BondBridge_Text_Morty, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, ThreeIsland_BondBridge_EventScript_NoMorty
+	trainerbattle_single TRAINER_MORTY, ThreeIsland_BondBridge_Text_YesMorty, ThreeIsland_BondBridge_Text_MortyDefeat, ThreeIsland_BondBridge_EventScript_PostMorty, NO_MUSIC
+	release
+	end
+
+ThreeIsland_BondBridge_EventScript_PostMorty::
+	msgbox ThreeIsland_BondBridge_Text_MortyPostBattle
+	setflag FLAG_MORTY_DEFEATED
+	release
+	end
+
+ThreeIsland_BondBridge_EventScript_CantRematchMorty::
+	msgbox ThreeIsland_BondBridge_Text_MortyPostBattle
+	release
+	end
+
+ThreeIsland_BondBridge_EventScript_NoMorty::
+	msgbox ThreeIsland_BondBridge_Text_NoMorty
+	release
+	end
+
+ThreeIsland_BondBridge_EventScript_RematchMorty::
+	msgbox ThreeIsland_BondBridge_Text_RematchMorty, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, ThreeIsland_BondBridge_EventScript_NoMorty
+	trainerbattle_single TRAINER_MORTY, ThreeIsland_BondBridge_Text_YesRematchMorty, ThreeIsland_BondBridge_Text_RematchMortyDefeat, ThreeIsland_BondBridge_EventScript_PostRematchMorty, NO_MUSIC
+	release
+	end
+
+ThreeIsland_BondBridge_EventScript_PostRematchMorty::
+	msgbox ThreeIsland_BondBridge_Text_RematchMortyDefeat
+	cleartrainerflag TRAINER_MORTY
+	release
+	end
+`

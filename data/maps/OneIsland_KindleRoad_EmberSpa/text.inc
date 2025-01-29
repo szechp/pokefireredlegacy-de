@@ -52,3 +52,45 @@ OneIsland_KindleRoad_EmberSpa_Text_ExplainHM06::
     .string "That shatters boulders as if they\n"
     .string "were made of crackers.$"
 
+OneIsland_KindleRoad_EmberSpa_Text_Samal::
+    .string "Hello there!\p"
+    .string "I am a LEGENDARY SLUGMA CHAMPION!\p"
+    .string "It's THE GREAT MON of MT EMBER.\p"
+    .string "One that also holds the Unoffical!\n"
+    .string "Title you hold offically.\p"
+    .string "Well than, Let's battle!$"
+
+OneIsland_KindleRoad_EmberSpa_Text_SamalDefeat::
+    .string "Gosh Darn!\p"
+    .string "You are the True SLUGMA CHAMPION!$"
+
+OneIsland_KindleRoad_EmberSpa_Text_SamalPostBattle::
+    .string "Incredible! Lord SLUGMA would\n"
+    .string "made you the SLUGMA CHAMPION.\p"
+    .string "Continue to be a CHAMPION\n"
+    .string "that is Very Strong!$"
+
+OneIsland_KindleRoad_EmberSpa_Text_NoSamal::
+    .string "Not SLUGMA Enough?$"
+
+OneIsland_KindleRoad_EmberSpa_Text_YesSamal::
+    .string "Let's get fired up!\p"
+    .string "See who's the strongest!$"
+
+OneIsland_KindleRoad_EmberSpa_Text_RematchSamal::
+    .string "I've only became more\n"
+    .string "SLUGMA ever since the battle!\p"
+    .string "Ready for the rematch of a lifetime!$"
+
+OneIsland_KindleRoad_EmberSpa_Text_RematchSamalDefeat::
+    .string "Seems Champion Level to me!$"
+
+OneIsland_KindleRoad_EmberSpa_Text_YesRematchSamal::
+    .string "Gosh Darn!\p"
+    .string "You are the True SLUGMA CHAMPION!$"
+
+OneIsland_KindleRoad_EmberSpa_Text_RematchSamalPostBattle::
+    .string "Incredible! Lord SLUGMA would\n"
+    .string "made you the SLUGMA CHAMPION.\p"
+    .string "Continue to be a CHAMPION\n"
+    .string "that is Very Strong!$"

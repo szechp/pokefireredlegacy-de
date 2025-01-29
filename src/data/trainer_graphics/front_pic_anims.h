@@ -738,6 +738,46 @@ static const union AnimCmd *const sAnims_Painter[] =
     sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_Falkner[] =
+{
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Bugsy[] =
+{
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Whitney[] =
+{
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Morty[] =
+{
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Chuck[] =
+{
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Jasmine[] =
+{
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Pryce[] =
+{
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Clair[] =
+{
+    sAnim_GeneralFrame0,
+};
+
 const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
 {
     [TRAINER_PIC_AQUA_LEADER_ARCHIE]    = sAnims_AquaLeaderArchie,
@@ -888,4 +928,12 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_RUIN_MANIAC]           = sAnims_RuinManiac,
     [TRAINER_PIC_LADY]                  = sAnims_Lady,
     [TRAINER_PIC_PAINTER]               = sAnims_Painter,
+    [TRAINER_PIC_FALKNER]               = sAnims_TuberF,
+    [TRAINER_PIC_BUGSY]                 = sAnims_Falkner,
+    [TRAINER_PIC_WHITNEY]               = sAnims_Whitney,
+    [TRAINER_PIC_MORTY]                 = sAnims_Morty,
+    [TRAINER_PIC_CHUCK]                 = sAnims_Chuck,
+    [TRAINER_PIC_JASMINE]               = sAnims_Jasmine,
+    [TRAINER_PIC_PRYCE]                 = sAnims_Pryce,
+    [TRAINER_PIC_CLAIR]                 = sAnims_Clair,
 };

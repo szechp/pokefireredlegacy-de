@@ -36,8 +36,10 @@ OneIsland_PokemonCenter_1F_Text_BillBringMeUpToSpeed::
 OneIsland_PokemonCenter_1F_Text_CelioPCsCantLinkWithYours::
     .string "CELIO: It's running fine, but we're\n"
     .string "too remote out here.\p"
-    .string "The PCs on this island just can't\n"
-    .string "link with your PC, BILL.$"
+    .string "These islands really need someway\n"
+    .string "to power the islands and connect it to.\n"
+    .string "the mainland.$"
+
 
 OneIsland_PokemonCenter_1F_Text_BillLetMeHelpYou::
     .string "BILL: Oh, yeah?\n"
@@ -156,8 +158,8 @@ OneIsland_PokemonCenter_1F_Text_CelioImModifyingMyNetworkMachine::
     .string "Well, I'm modifying my Network\n"
     .string "Machine.\p"
     .string "When I get done with the machine,\n"
-    .string "I hope you'll be first to use it,\l"
-    .string "{PLAYER}.$"
+    .string "I hope it gonna get this region into\l"
+    .string "high places {PLAYER}.$"
 
 OneIsland_PokemonCenter_1F_Text_CelioCaughtMoreMonMaybeICanBeUseful::
     .string "CELIO: {PLAYER}, how have things\n"
@@ -170,15 +172,15 @@ OneIsland_PokemonCenter_1F_Text_CelioCaughtMoreMonMaybeICanBeUseful::
 OneIsland_PokemonCenter_1F_Text_YoullBeTradingFromTrainersFarAway::
     .string "I'm modifying the Network Machine\n"
     .string "right now.\p"
-    .string "I'm changing it so it can handle\n"
-    .string "trades over long distances.\p"
-    .string "When I get finished, you'll be\n"
-    .string "trading for exotic POKéMON from\l"
-    .string "TRAINERS far away.$"
+    .string "I'm Working on it to power\n"
+    .string "The SEVII islands into a New Age\p"
+    .string "When I get finished, The SEVII Islands\n"
+    .string "will rise to a new age of\l"
+    .string "Greatest!$"
 
 OneIsland_PokemonCenter_1F_Text_NeedsSpecialGemstone::
     .string "But, there is a slight catch.\p"
-    .string "For the link to work, the Machine\n"
+    .string "For the machine to work, the Machine\n"
     .string "needs a special gemstone.\p"
     .string "It's supposed to be on ONE ISLAND,\n"
     .string "but I haven't found one yet.\p"
@@ -238,7 +240,9 @@ OneIsland_PokemonCenter_1F_Text_PassLetYouGetToAllIslands::
     .string "It will let you get to all the\n"
     .string "SEVII ISLANDS.\p"
     .string "{PLAYER}, please, I can't do\n"
-    .string "it without your help.$"
+    .string "it without your help.\p"
+    .string "I think it might be on\n"
+    .string "Four or Six Island\p"
 
 OneIsland_PokemonCenter_1F_Text_HandedSapphireToCelio::
     .string "{PLAYER} handed the SAPPHIRE\n"
@@ -260,13 +264,13 @@ OneIsland_PokemonCenter_1F_Text_OkayThisIsGood::
 
 OneIsland_PokemonCenter_1F_Text_LinkedUpWithLanette::
     .string "I did it!\n"
-    .string "I linked up with LANETTE!$"
+    .string "I Powered the Machine!$"
 
 OneIsland_PokemonCenter_1F_Text_ManagedToLinkWithHoennThankYou::
     .string "{PLAYER}…\n"
     .string "{PLAYER}, I did it!\p"
-    .string "I've managed to link up with\n"
-    .string "TRAINERS in the HOENN region!\p"
+    .string "I've managed to power the source\n"
+    .string "To Power the SEVII ISLANDS!\p"
     .string "Finally, the Network Machine is\n"
     .string "fully operational!\p"
     .string "{PLAYER}, I owe it all to you!\p"

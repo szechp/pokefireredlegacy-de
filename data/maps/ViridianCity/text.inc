@@ -53,10 +53,18 @@ ViridianCity_Text_ShowYouHowToCatchMons::
     .string "Whenever you catch a POKéMON,\n"
     .string "the POKéDEX automatically updates\l"
     .string "its data.\p"
+    .string "Do you know how to catch pokemon?$"
+
+ViridianCity_Text_DontKnow::
     .string "…You don't know how to catch\n"
     .string "a POKéMON?\p"
     .string "I suppose I had better show you\n"
     .string "then!$"
+
+ViridianCity_Text_DoKnow::
+    .string "Seems like you do know how to\n"
+    .string "catch a POKéMON?\p"
+    .string "But I think you should still have this!$"
 
 ViridianCity_Text_ThatWasEducationalTakeThis::
     .string "There! Now tell me, that was\n"
@@ -122,4 +130,54 @@ ViridianCity_Text_GymSign::
 
 ViridianCity_Text_GymDoorsAreLocked::
     .string "VIRIDIAN GYM's doors are locked…$"
+
+ViridianCity_Text_Pokedude::
+    .string "Yo What's Up Champion!\p"
+    .string "I'm just visiting my hometown\n"
+    .string "after what happened earlier.\p"
+    .string "Very Unfortunate that it happened.\p"
+    .string "But that's in the past!\p"
+    .string "We will found a new leader someday!\p"
+    .string "I also heard you talked with my\n"
+    .string "Grandpa also, he really helped you\l"
+    .string "into the Champion you are Today!\p"
+    .string "Anyways since we are here,\n"
+    .string "I was wondering if we could\l"
+    .string "have a battle$"
+
+ViridianCity_Text_PokedudeDefeat::
+    .string "Wow, you really are the Champion!$"
+
+ViridianCity_Text_PokedudePostBattle::
+    .string "That some good Champion Level\n"
+    .string "Strength I see!\p"
+    .string "I also wonder if the TEACHY TV\n"
+    .string "helped you in this Journey!\p"
+    .string "I would also like to give you this.\p"
+    .string "It helped strengthen my pokemon to\n"
+    .string "NEW LEVELS!$"
+
+ViridianCity_Text_PokedudePostGift::
+    .string "Continue to Grow Further!$"
+
+ViridianCity_Text_NoPokedude::
+    .string "Maybe some other time.$"
+
+ViridianCity_Text_YesPokedude::
+    .string "Ok, my Pokemon are Ready!\p"
+    .string "Get ready Champion!\p"
+    .string "Let's Battle!$"
+
+ViridianCity_Text_RematchPokedude::
+    .string "Want to rematch?$"
+
+ViridianCity_Text_RematchPokedudeDefeat::
+    .string "Wow, you really are the Champion!$"
+
+ViridianCity_Text_PostRematchPokedude::
+    .string "That some good Champion Level\n"
+    .string "Strength I see!\p"
+    .string "I also wonder if the TEACHY TV\n"
+    .string "helped you in this Journey!\p"
+    .string "Continue to Grow Further!$"
 

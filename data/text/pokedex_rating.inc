@@ -79,6 +79,18 @@ PokedexRating_Text_LessThan140::
 	.string "You've become a real pro at this!$"
 
 PokedexRating_Text_LessThan150::
+	.string "Outstanding!\n"
+	.string "You've become a real pro at this!$"
+
+PokedexRating_Text_LessThan160::
+	.string "Outstanding!\n"
+	.string "You've become a real pro at this!$"
+
+PokedexRating_Text_LessThan170::
+	.string "Outstanding!\n"
+	.string "You've become a real pro at this!$"
+
+PokedexRating_Text_LessThan180::
 	.string "I have nothing left to say!\n"
 	.string "You're the POKéMON PROFESSOR now!$"
 

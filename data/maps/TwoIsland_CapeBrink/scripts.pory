@@ -1,0 +1,80 @@
+raw `
+TwoIsland_CapeBrink_MapScripts::
+	.byte 0
+
+TwoIsland_CapeBrink_EventScript_Clair::
+	goto_if_set FLAG_GET_MYSTIC, TwoIsland_CapeBrink_EventScript_RematchClair
+	goto_if_set FLAG_CLAIR_DEFEATED, TwoIsland_CapeBrink_EventScript_CantRematchClair
+	msgbox TwoIsland_CapeBrink_Text_Clair, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, TwoIsland_CapeBrink_EventScript_NoClair
+	trainerbattle_single TRAINER_CLAIR, TwoIsland_CapeBrink_Text_YesClair, TwoIsland_CapeBrink_Text_ClairDefeat, TwoIsland_CapeBrink_EventScript_PostClair, NO_MUSIC
+	release
+	end
+
+TwoIsland_CapeBrink_EventScript_PostClair::
+	msgbox TwoIsland_CapeBrink_Text_ClairPostBattle
+	setflag FLAG_CLAIR_DEFEATED
+	release
+	end
+
+TwoIsland_CapeBrink_EventScript_CantRematchClair::
+	msgbox TwoIsland_CapeBrink_Text_ClairPostBattle
+	release
+	end
+
+TwoIsland_CapeBrink_EventScript_NoClair::
+	msgbox TwoIsland_CapeBrink_Text_NoClair
+	release
+	end
+
+TwoIsland_CapeBrink_EventScript_RematchClair::
+	msgbox TwoIsland_CapeBrink_Text_RematchClair, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, TwoIsland_CapeBrink_EventScript_NoClair
+	trainerbattle_single TRAINER_CLAIR, TwoIsland_CapeBrink_Text_YesRematchClair, TwoIsland_CapeBrink_Text_RematchClairDefeat, TwoIsland_CapeBrink_EventScript_PostRematchClair, NO_MUSIC
+	release
+	end
+
+TwoIsland_CapeBrink_EventScript_PostRematchClair::
+	msgbox TwoIsland_CapeBrink_Text_RematchClairDefeat
+	cleartrainerflag TRAINER_CLAIR
+	release
+	end
+
+TwoIsland_CapeBrink_EventScript_Caseno::
+	goto_if_set FLAG_GET_AURORA, TwoIsland_CapeBrink_EventScript_RematchCaseno
+	goto_if_set FLAG_CASENO_DEFEATED, TwoIsland_CapeBrink_EventScript_CantRematchCaseno
+	msgbox TwoIsland_CapeBrink_Text_Caseno, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, TwoIsland_CapeBrink_EventScript_NoCaseno
+	trainerbattle_single TRAINER_CASENO, TwoIsland_CapeBrink_Text_YesCaseno, TwoIsland_CapeBrink_Text_CasenoDefeat, TwoIsland_CapeBrink_EventScript_PostCaseno, NO_MUSIC
+	release
+	end
+
+TwoIsland_CapeBrink_EventScript_PostCaseno::
+	msgbox TwoIsland_CapeBrink_Text_CasenoPostBattle
+	setflag FLAG_CASENO_DEFEATED
+	release
+	end
+
+TwoIsland_CapeBrink_EventScript_CantRematchCaseno::
+	msgbox TwoIsland_CapeBrink_Text_CasenoPostBattle
+	release
+	end
+
+TwoIsland_CapeBrink_EventScript_NoCaseno::
+	msgbox TwoIsland_CapeBrink_Text_NoCaseno
+	release
+	end
+
+TwoIsland_CapeBrink_EventScript_RematchCaseno::
+	msgbox TwoIsland_CapeBrink_Text_RematchCaseno, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, TwoIsland_CapeBrink_EventScript_NoCaseno
+	trainerbattle_single TRAINER_CASENO, TwoIsland_CapeBrink_Text_YesRematchCaseno, TwoIsland_CapeBrink_Text_RematchCasenoDefeat, TwoIsland_CapeBrink_EventScript_PostRematchCaseno, NO_MUSIC
+	release
+	end
+
+TwoIsland_CapeBrink_EventScript_PostRematchCaseno::
+	msgbox TwoIsland_CapeBrink_Text_RematchCasenoDefeat
+	cleartrainerflag TRAINER_CASENO
+	release
+	end
+`

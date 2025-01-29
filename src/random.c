@@ -5,6 +5,8 @@
 // of rand and srand in the ISO C standard.
 
 COMMON_DATA u32 gRngValue = 0;
+COMMON_DATA u32 gRng2Value = 0;
+
 
 u16 Random(void)
 {
@@ -15,4 +17,15 @@ u16 Random(void)
 void SeedRng(u16 seed)
 {
     gRngValue = seed;
+}
+
+void SeedRng2(u16 seed)
+{
+    gRng2Value = seed;
+}
+
+u16 Random2(void)
+{
+    gRng2Value = ISO_RANDOMIZE1(gRng2Value);
+    return gRng2Value >> 16;
 }

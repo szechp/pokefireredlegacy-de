@@ -142,3 +142,7 @@ Route12_Text_GiaNotEnoughMons::
     .string "GIA: I can't bear to battle\n"
     .string "without my JES!\p"
     .string "Don't you have one more POKéMON?$"
+
+Route12_Text_Hiker::
+    .string "I'm trying to hop this fence!\p"
+    .string "I want to go to the SAFARI ZONE!$"

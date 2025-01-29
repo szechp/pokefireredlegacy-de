@@ -65,6 +65,30 @@ PewterCity_Gym_Text_BrockPostBattle::
 PewterCity_Gym_Text_DontHaveRoomForThis::
     .string "You don't have room for this.$"
 
+PewterCity_Gym_Text_RematchBrock::
+    .string "Since our last battle, my\n"
+    .string "POKEMON grown!\p"
+    .string "ROCK-hard will meets peak skill today!\p"
+    .string "Ready for the rematch of a lifetime!$"
+
+PewterCity_Gym_Text_RematchBrockDefeat::
+    .string "Seems Champion Level to me!$"
+
+PewterCity_Gym_Text_BrockPostRematchBattle::
+    .string "Incredible! Your strength is unmatched!\p"
+    .string "True to your title, CHAMPION.\p"
+    .string "Continue to lead POKEMON with honor\n"
+    .string "and courage!\p"
+    .string "New challenges await.$"
+
+PewterCity_Gym_Text_BrockNoRematchBattle::
+    .string "Maybe some other time.$"
+
+PewterCity_Gym_Text_RematchYesBrock::
+    .string "Stones Sharpen!\p"
+    .string "Let's Battle!$"
+
+
 PewterCity_Gym_Text_LiamIntro::
     .string "Stop right there, kid!\p"
     .string "You're ten thousand light-years \n"

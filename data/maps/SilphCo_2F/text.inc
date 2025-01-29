@@ -68,6 +68,25 @@ Text_ThunderWaveTaught::
     .string "It's an ELECTRIC-type move, so it\n"
     .string "won't work on some POKéMON.$"
 
+Text_ThunderWaveReteach::
+    .string "Eeek!\n"
+    .string "No! Stop! Help!\p"
+    .string "…Oh, it's you again.\n"
+    .string "Sorry, I'm still a little jumpy.\p"
+    .string "I can teach you the THUNDER WAVE\n"
+    .string "technique again if you'd like,\l"
+    .string "but I'd have to charge you ¥15000.$"
+Text_ThunderWaveReteach2::
+    .string "Would you like me to teach you\n"
+    .string "the THUNDER WAVE technique?$"
+Text_ThunderWaveNotEnoughMoney::
+    .string "I'm sorry, it's company policy\n"
+    .string "to charge to teach this move.\p"
+    .string "If I taught it to you for free\n"
+    .string "again, I could get in trouble.\p"
+    .string "Come back when you have ¥15000\n"
+    .string "and I'll teach you THUNDER WAVE.$"
+
 SilphCo_2F_Text_FloorSign::
     .string "SILPH CO. HEAD OFFICE\n"
     .string "2F$"

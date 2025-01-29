@@ -552,6 +552,7 @@ void FieldUseFunc_Repel(u8 taskId)
     if (VarGet(VAR_REPEL_STEP_COUNT) == 0)
     {
         PlaySE(SE_REPEL);
+        VarSet(VAR_REPEL_LAST_USED, gSpecialVar_ItemId);
         gTasks[taskId].func = Task_UseRepel;
     }
     else
@@ -922,4 +923,10 @@ void ItemUse_SetQuestLogEvent(u8 eventId, struct Pokemon *pokemon, u16 itemId, u
         data->species = 0xFFFF;
     SetQuestLogEvent(eventId, (void *)data);
     Free(data);
+}
+
+void ItemUseOutOfBattle_ReduceEV(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_ReduceEV;
+    DoSetUpItemUseCallback(taskId);
 }

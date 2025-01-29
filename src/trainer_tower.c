@@ -166,6 +166,7 @@ static const struct SinglesTrainerInfo sSingleBattleTrainerInfo[] = {
     {OBJ_EVENT_GFX_BEAUTY,         FACILITY_CLASS_BEAUTY,            FEMALE},
     {OBJ_EVENT_GFX_SWIMMER_F_LAND, FACILITY_CLASS_SWIMMER_F,         FEMALE},
     {OBJ_EVENT_GFX_BOY,            FACILITY_CLASS_PSYCHIC_M,           MALE},
+    {OBJ_EVENT_GFX_ROCKER_2,       FACILITY_CLASS_ROCKER,              MALE},
     {OBJ_EVENT_GFX_ROCKER,         FACILITY_CLASS_ROCKER,              MALE},
     {OBJ_EVENT_GFX_ROCKER,         FACILITY_CLASS_JUGGLER,             MALE},
     {OBJ_EVENT_GFX_MAN,            FACILITY_CLASS_TAMER,               MALE},
@@ -185,7 +186,15 @@ static const struct SinglesTrainerInfo sSingleBattleTrainerInfo[] = {
     {OBJ_EVENT_GFX_WOMAN_2,        FACILITY_CLASS_AROMA_LADY,        FEMALE},
     {OBJ_EVENT_GFX_HIKER,          FACILITY_CLASS_RUIN_MANIAC,         MALE},
     {OBJ_EVENT_GFX_WOMAN_2,        FACILITY_CLASS_LADY,              FEMALE},
-    {OBJ_EVENT_GFX_LASS,           FACILITY_CLASS_PAINTER,           FEMALE}
+    {OBJ_EVENT_GFX_LASS,           FACILITY_CLASS_PAINTER,           FEMALE},
+    {OBJ_EVENT_GFX_FALKNER,        FACILITY_CLASS_FALKNER,             MALE},
+    {OBJ_EVENT_GFX_BUGSY,          FACILITY_CLASS_BUGSY,               MALE},
+    {OBJ_EVENT_GFX_WHITNEY,        FACILITY_CLASS_WHITNEY,           FEMALE},
+    {OBJ_EVENT_GFX_CHUCK,          FACILITY_CLASS_CHUCK,               MALE},
+    {OBJ_EVENT_GFX_JASMINE,        FACILITY_CLASS_JASMINE,           FEMALE},
+    {OBJ_EVENT_GFX_PRYCE,          FACILITY_CLASS_PRYCE,               MALE},
+    {OBJ_EVENT_GFX_CLAIR,          FACILITY_CLASS_CLAIR,             FEMALE},
+    {OBJ_EVENT_GFX_MORTY,          FACILITY_CLASS_MORTY,               MALE}
 };
 
 static const struct DoublesTrainerInfo sDoubleBattleTrainerInfo[] = {
@@ -372,11 +381,11 @@ static const u16 sPrizeList[] = {
     ITEM_WHITE_HERB,
     ITEM_MENTAL_HERB,
     ITEM_CHOICE_BAND,
-    ITEM_KINGS_ROCK,
+    ITEM_CHOICE_BAND,
     ITEM_SCOPE_LENS,
-    ITEM_METAL_COAT,
-    ITEM_DRAGON_SCALE,
-    ITEM_UP_GRADE
+    ITEM_MASTER_BALL,
+    ITEM_SACRED_ASH,
+    ITEM_LEFTOVERS
 };
 
 static const u16 sTrainerTowerEncounterMusic[] = {

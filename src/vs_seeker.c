@@ -593,6 +593,14 @@ static const u8 sFaceDirectionMovementTypeByFacingDirection[] = {
 
 // text
 
+static u8 GetVsSeekerRequiredSteps(void)
+{
+    if (FlagGet(FLAG_VS_SEEKER_UPGRADE) == TRUE)
+        return 5; // 5 steps for Champion
+    return 100; // Default 100 steps for others
+}
+
+
 void VsSeekerFreezeObjectsAfterChargeComplete(void)
 {
     CreateTask(Task_ResetObjectsRematchWantedState, 80);
@@ -662,21 +670,22 @@ void VsSeekerResetObjectMovementAfterChargeComplete(void)
 bool8 UpdateVsSeekerStepCounter(void)
 {
     u8 x = 0;
+    u8 requiredSteps = GetVsSeekerRequiredSteps();
 
     if (CheckBagHasItem(ITEM_VS_SEEKER, 1) == TRUE)
     {
-        if ((gSaveBlock1Ptr->trainerRematchStepCounter & 0xFF) < 100)
+        if ((gSaveBlock1Ptr->trainerRematchStepCounter & 0xFF) < requiredSteps)
             gSaveBlock1Ptr->trainerRematchStepCounter++;
     }
 
     if (FlagGet(FLAG_SYS_VS_SEEKER_CHARGING) == TRUE)
     {
-        if (((gSaveBlock1Ptr->trainerRematchStepCounter >> 8) & 0xFF) < 100)
+        if (((gSaveBlock1Ptr->trainerRematchStepCounter >> 8) & 0xFF) < requiredSteps)
         {
             x = (((gSaveBlock1Ptr->trainerRematchStepCounter >> 8) & 0xFF) + 1);
             gSaveBlock1Ptr->trainerRematchStepCounter = (gSaveBlock1Ptr->trainerRematchStepCounter & 0xFF) | (x << 8);
         }
-        if (((gSaveBlock1Ptr->trainerRematchStepCounter >> 8) & 0xFF) == 100)
+        if (((gSaveBlock1Ptr->trainerRematchStepCounter >> 8) & 0xFF) == requiredSteps)
         {
             FlagClear(FLAG_SYS_VS_SEEKER_CHARGING);
             VsSeekerResetChargingStepCounter();
@@ -725,8 +734,9 @@ static void VsSeekerResetInBagStepCounter(void)
 
 static void VsSeekerSetStepCounterInBagFull(void)
 {
+    u8 requiredSteps = GetVsSeekerRequiredSteps();
     gSaveBlock1Ptr->trainerRematchStepCounter &= 0xFF00;
-    gSaveBlock1Ptr->trainerRematchStepCounter |= 100;
+    gSaveBlock1Ptr->trainerRematchStepCounter |= requiredSteps;
 }
 
 static void VsSeekerResetChargingStepCounter(void)
@@ -736,8 +746,9 @@ static void VsSeekerResetChargingStepCounter(void)
 
 static void VsSeekerSetStepCounterFullyCharged(void)
 {
+    u8 requiredSteps = GetVsSeekerRequiredSteps();
     gSaveBlock1Ptr->trainerRematchStepCounter &= 0x00FF;
-    gSaveBlock1Ptr->trainerRematchStepCounter |= (100 << 8);
+    gSaveBlock1Ptr->trainerRematchStepCounter |= (requiredSteps << 8);
 }
 
 void Task_VsSeeker_0(u8 taskId)
@@ -849,8 +860,11 @@ static void Task_VsSeeker_3(u8 taskId)
 
 static u8 CanUseVsSeeker(void)
 {
-    u8 vsSeekerChargeSteps = gSaveBlock1Ptr->trainerRematchStepCounter;
-    if (vsSeekerChargeSteps == 100)
+    u8 requiredSteps = GetVsSeekerRequiredSteps();
+    u8 currentSteps = gSaveBlock1Ptr->trainerRematchStepCounter & 0xFF;
+
+    // Check if the required steps have been reached
+    if (currentSteps >= requiredSteps)
     {
         if (GetRematchableTrainerLocalId() == 0xFF)
             return VSSEEKER_NO_ONE_IN_RANGE;
@@ -859,7 +873,9 @@ static u8 CanUseVsSeeker(void)
     }
     else
     {
-        TV_PrintIntToStringVar(0, 100 - vsSeekerChargeSteps);
+        // Calculate and display the remaining steps correctly
+        u8 remainingSteps = requiredSteps - currentSteps;
+        TV_PrintIntToStringVar(0, remainingSteps); // Display the correct remaining steps
         return VSSEEKER_NOT_CHARGED;
     }
 }
@@ -895,7 +911,7 @@ static u8 GetVsSeekerResponseInArea(const struct RematchData * vsSeekerData)
             {
                 rval = Random() % 100; // Even if it's overwritten below, it progresses the RNG.
                 response = GetCurVsSeekerResponse(vsSeekerIdx, trainerIdx);
-                if (response == VSSEEKER_SINGLE_RESP_YES)
+                if (response == VSSEEKER_SINGLE_RESP_YES || FlagGet(FLAG_VS_SEEKER_UPGRADE) == TRUE)
                     rval = 100; // Definitely yes
                 else if (response == VSSEEKER_SINGLE_RESP_NO)
                     rval = 0; // Definitely no

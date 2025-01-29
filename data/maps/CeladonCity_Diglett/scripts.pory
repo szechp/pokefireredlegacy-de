@@ -1,0 +1,20 @@
+raw `
+CeladonCity_Diglett_MapScripts::
+	.byte 0
+
+
+CeladonCity_Diglett_EventScript_Hiker::
+	lock
+	faceplayer
+	msgbox CeladonCity_Diglett_Text_Hiker, MSGBOX_NPC
+	return
+	end
+
+CeladonCity_Diglett_EventScript_GuardHater::
+	lock
+	faceplayer
+	msgbox CeladonCity_Diglett_Text_GuardHater, MSGBOX_NPC
+	return
+	end
+
+`

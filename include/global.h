@@ -86,6 +86,8 @@
 #define SAFE_DIV(a, b) ((a) / (b))
 #endif
 
+
+
 // Extracts the upper 16 bits of a 32-bit number
 #define HIHALF(n) (((n) & 0xFFFF0000) >> 16)
 
@@ -538,7 +540,7 @@ struct DaycareMon
 struct DayCare
 {
     struct DaycareMon mons[DAYCARE_MON_COUNT];
-    u16 offspringPersonality;
+    u32 offspringPersonality;
     u8 stepCounter;
 };
 
@@ -787,7 +789,7 @@ struct SaveBlock1
     /*0x2CD0*/ struct Mail mail[MAIL_COUNT];
     /*0x2F10*/ u8 additionalPhrases[NUM_ADDITIONAL_PHRASE_BYTES];
     /*0x2F18*/ OldMan oldMan; // unused
-    /*0x2F54*/ struct DewfordTrend dewfordTrends[5]; // unused
+    /*0x2F54*/ u8 filler_EasyChatPairs[36]; // unused
     /*0x2F80*/ struct DayCare daycare;
     /*0x309C*/ u8 giftRibbons[GIFT_RIBBONS_COUNT];
     /*0x30A7*/ struct ExternalEventData externalEventData;
@@ -795,7 +797,7 @@ struct SaveBlock1
     /*0x30D0*/ struct Roamer roamer;
     /*0x30EC*/ struct EnigmaBerry enigmaBerry;
     /*0x3120*/ struct MysteryGiftSave mysteryGift;
-    /*0x348C*/ u8 unused_348C[400];
+    /*0x348C*/ u8 unused_348C[0x18];
     /*0x361C*/ struct RamScript ramScript;
     /*0x3A08*/ struct RecordMixingGift recordMixingGift; // unused
     /*0x3A18*/ u8 seen2[DEX_FLAGS_NO];

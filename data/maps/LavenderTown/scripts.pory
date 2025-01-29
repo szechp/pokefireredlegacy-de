@@ -1,0 +1,85 @@
+raw `
+LavenderTown_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, LavenderTown_OnTransition
+	.byte 0
+
+LavenderTown_OnTransition::
+	setworldmapflag FLAG_WORLD_MAP_LAVENDER_TOWN
+	setvar VAR_MAP_SCENE_S_S_ANNE_2F_CORRIDOR, 1
+	setflag FLAG_HIDE_SS_ANNE_RIVAL
+	end
+
+LavenderTown_EventScript_LittleGirl::
+	lock
+	faceplayer
+	msgbox LavenderTown_Text_DoYouBelieveInGhosts, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, LavenderTown_EventScript_LittleGirlBelieve
+	msgbox LavenderTown_Text_JustImaginingWhiteHand
+	release
+	end
+
+LavenderTown_EventScript_LittleGirlBelieve::
+	msgbox LavenderTown_Text_SoThereAreBelievers
+	release
+	end
+
+LavenderTown_EventScript_WorkerM::
+	msgbox LavenderTown_Text_TownKnownAsMonGraveSite, MSGBOX_NPC
+	end
+
+LavenderTown_EventScript_Boy::
+	msgbox LavenderTown_Text_GhostsAppearedInTower, MSGBOX_NPC
+	end
+
+LavenderTown_EventScript_TownSign::
+	msgbox LavenderTown_Text_TownSign, MSGBOX_SIGN
+	end
+
+LavenderTown_EventScript_SilphScopeNotice::
+	msgbox LavenderTown_Text_SilphScopeNotice, MSGBOX_SIGN
+	end
+
+LavenderTown_EventScript_VolunteerHouseSign::
+	msgbox LavenderTown_Text_VolunteerPokemonHouse, MSGBOX_SIGN
+	end
+
+LavenderTown_EventScript_PokemonTowerSign::
+	msgbox LavenderTown_Text_PokemonTowerSign, MSGBOX_SIGN
+	end
+
+LavenderTown_EventScript_Karen::
+	goto_if_set FLAG_DEFEATED_KAREN, LavenderTown_EventScript_RematchKaren
+	msgbox LavenderTown_Text_Karen, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LavenderTown_EventScript_NoKaren
+	trainerbattle_single TRAINER_KAREN, LavenderTown_Text_YesKaren, LavenderTown_Text_KarenDefeat, LavenderTown_EventScript_PostKaren, NO_MUSIC
+	release
+	end
+
+LavenderTown_EventScript_PostKaren::
+	msgbox LavenderTown_Text_KarenPostBattle
+	setflag FLAG_DEFEATED_KAREN
+	cleartrainerflag TRAINER_KAREN
+	giveitem ITEM_WHITE_FLUTE
+	release
+	end
+
+LavenderTown_EventScript_NoKaren::
+	msgbox LavenderTown_Text_NoKaren
+	release
+	end
+
+LavenderTown_EventScript_RematchKaren::
+	msgbox LavenderTown_Text_RematchKaren, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LavenderTown_EventScript_NoKaren
+	trainerbattle_single TRAINER_KAREN, LavenderTown_Text_YesKaren, LavenderTown_Text_RematchKarenDefeat, LavenderTown_EventScript_PostRematchKaren, NO_MUSIC
+	release
+	end
+
+LavenderTown_EventScript_PostRematchKaren::
+	msgbox LavenderTown_Text_PostRematchKaren
+	cleartrainerflag TRAINER_KAREN
+	release
+	end
+
+
+`

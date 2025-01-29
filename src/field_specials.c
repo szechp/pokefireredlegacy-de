@@ -650,13 +650,24 @@ void SetVermilionTrashCans(void)
 }
 
 static const u16 sResortGorgeousDeluxeRewards[] = {
-    ITEM_BIG_PEARL,
-    ITEM_PEARL,
-    ITEM_STARDUST,
-    ITEM_STAR_PIECE,
-    ITEM_NUGGET,
-    ITEM_RARE_CANDY
+    ITEM_PP_MAX,
+    ITEM_LUCKY_EGG,
+    ITEM_ENIGMA_BERRY,
+    ITEM_EXP_SHARE,
+    ITEM_MASTER_BALL,
+    ITEM_AMULET_COIN
 };
+
+void FillPokedex(void)
+{
+    u16 i;
+
+    for (i = SPECIES_BULBASAUR; i <= SPECIES_DEOXYS; i++)
+    {
+        GetSetPokedexFlag(i, FLAG_SET_SEEN);
+        GetSetPokedexFlag(i, FLAG_SET_CAUGHT);
+    }
+}
 
 void IncrementResortGorgeousStepCounter(void)
 {
@@ -711,7 +722,7 @@ static u16 SampleResortGorgeousMon(void)
 static u16 SampleResortGorgeousReward(void)
 {
     if ((Random() % 100) >= 30)
-        return ITEM_LUXURY_BALL;
+        return ITEM_NUGGET;
     else
         return sResortGorgeousDeluxeRewards[Random() % NELEMS(sResortGorgeousDeluxeRewards)];
 }
@@ -2236,28 +2247,22 @@ bool8 CapeBrinkGetMoveToTeachLeadPokemon(void)
             break;
         }
     }
-    if (i == NELEMS(sCapeBrinkCompatibleSpecies) || GetMonData(&gPlayerParty[leadMonSlot], MON_DATA_FRIENDSHIP) != 255)
+    if (i == NELEMS(sCapeBrinkCompatibleSpecies))
         return FALSE;
     if (tutorMonId == 0)
     {
         StringCopy(gStringVar2, gMoveNames[MOVE_FRENZY_PLANT]);
         gSpecialVar_0x8005 = MOVETUTOR_FRENZY_PLANT;
-        if (FlagGet(FLAG_TUTOR_FRENZY_PLANT) == TRUE)
-            return FALSE;
     }
     else if (tutorMonId == 1)
     {
         StringCopy(gStringVar2, gMoveNames[MOVE_BLAST_BURN]);
         gSpecialVar_0x8005 = MOVETUTOR_BLAST_BURN;
-        if (FlagGet(FLAG_TUTOR_BLAST_BURN) == TRUE)
-            return FALSE;
     }
     else
     {
         StringCopy(gStringVar2, gMoveNames[MOVE_HYDRO_CANNON]);
         gSpecialVar_0x8005 = MOVETUTOR_HYDRO_CANNON;
-        if (FlagGet(FLAG_TUTOR_HYDRO_CANNON) == TRUE)
-            return FALSE;
     }
     if (GetMonData(&gPlayerParty[leadMonSlot], MON_DATA_MOVE1) != MOVE_NONE)
         numMovesKnown++;
@@ -2552,4 +2557,100 @@ static void Task_WingFlapSound(u8 taskId)
     }
     if (data[0] == gSpecialVar_0x8004 - 1)
         DestroyTask(taskId);
+}
+
+
+void CheckGotAllItems(void)
+{
+    if (FlagGet(FLAG_GOTYELLOW) &&
+        FlagGet(FLAG_GOTRED) &&
+        FlagGet(FLAG_GOTPINK) &&
+        FlagGet(FLAG_GOTGREEN) &&
+        FlagGet(FLAG_GOTBLUE) &&
+        FlagGet(FLAG_GOT_TM42_AT_MEMORIAL_PILLAR) &&
+        FlagGet(FLAG_GOTFANG))
+    {
+        gSpecialVar_Result = TRUE;
+        return;
+    }
+    else
+    {
+        gSpecialVar_Result = FALSE;
+    }
+}
+
+void CheckBeatSeviiChamps(void)
+{
+    if (FlagGet(FLAG_ARMSTRONG_DEFEATED) &&
+        FlagGet(FLAG_OMAN_DEFEATED) &&
+        FlagGet(FLAG_KSI_DEFEATED) &&
+        FlagGet(FLAG_SAMAL_DEFEATED) &&
+        FlagGet(FLAG_CASENO_DEFEATED) &&
+        FlagGet(FLAG_CRUELKING_DEFEATED) &&
+        FlagGet(FLAG_SPEEDY_DEFEATED))
+    {
+        gSpecialVar_Result = TRUE;
+        return;
+    }
+    else
+    {
+        gSpecialVar_Result = FALSE;
+    }
+}
+
+void CheckBeatJohto(void)
+{
+    if (FlagGet(FLAG_FALKNER_DEFEATED) &&
+        FlagGet(FLAG_BUGSY_DEFEATED) &&
+        FlagGet(FLAG_MORTY_DEFEATED) &&
+        FlagGet(FLAG_CHUCK_DEFEATED) &&
+        FlagGet(FLAG_JASMINE_DEFEATED) &&
+        FlagGet(FLAG_PRYCE_DEFEATED) &&
+        FlagGet(FLAG_CLAIR_DEFEATED))
+    {
+        gSpecialVar_Result = TRUE;
+        return;
+    }
+    else
+    {
+        gSpecialVar_Result = FALSE;
+    }
+}
+
+void MewStuff(void)
+{
+    if (FlagGet(FLAG_OAK_DEFEATED) &&
+        FlagGet(FLAG_OAK_SAW_DEX_COMPLETION))
+    {
+        gSpecialVar_Result = TRUE;
+        return;
+    }
+    else
+    {
+        gSpecialVar_Result = FALSE;
+    }
+}
+
+void RoamingBeasts(void)
+{
+    if (FlagGet(FLAG_CAUGHT_ENTEI) &&
+        FlagGet(FLAG_CAUGHT_SUICUNE) &&
+        FlagGet(FLAG_CAUGHT_RAIKOU))
+    {
+        gSpecialVar_Result = TRUE;
+        return;
+    }
+    else
+    {
+        gSpecialVar_Result = FALSE;
+    }
+}
+
+void GetDeoxys(void)
+{
+    u32 numHofClears = GetGameStat(GAME_STAT_ENTERED_HOF);
+    if (numHofClears >= 5)
+    {
+        FlagClear(FLAG_HIDE_AURORA_GUY);
+    }
 }

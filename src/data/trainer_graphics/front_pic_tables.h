@@ -300,6 +300,14 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
     TRAINER_SPRITE(RUIN_MANIAC, gTrainerFrontPic_RuinManiac, 0x800),
     TRAINER_SPRITE(LADY, gTrainerFrontPic_Lady, 0x800),
     TRAINER_SPRITE(PAINTER, gTrainerFrontPic_Painter, 0x800),
+    TRAINER_SPRITE(FALKNER, gTrainerFrontPic_Falkner, 0x1000),
+    TRAINER_SPRITE(BUGSY, gTrainerFrontPic_Bugsy, 0x1000),
+    TRAINER_SPRITE(WHITNEY, gTrainerFrontPic_Whitney, 0x1000),
+    TRAINER_SPRITE(MORTY, gTrainerFrontPic_Morty, 0x1000),
+    TRAINER_SPRITE(CHUCK, gTrainerFrontPic_Chuck, 0x1000),
+    TRAINER_SPRITE(JASMINE, gTrainerFrontPic_Jasmine, 0x1000),
+    TRAINER_SPRITE(PRYCE, gTrainerFrontPic_Pryce, 0x1000),
+    TRAINER_SPRITE(CLAIR, gTrainerFrontPic_Clair, 0x1000),
 };
 
 const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
@@ -452,4 +460,12 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(RUIN_MANIAC, gTrainerPalette_RuinManiac),
     TRAINER_PAL(LADY, gTrainerPalette_Lady),
     TRAINER_PAL(PAINTER, gTrainerPalette_Painter),
+    TRAINER_PAL(FALKNER, gTrainerPalette_Falkner),
+    TRAINER_PAL(BUGSY, gTrainerPalette_Bugsy),
+    TRAINER_PAL(WHITNEY, gTrainerPalette_Whitney),
+    TRAINER_PAL(MORTY, gTrainerPalette_Morty),
+    TRAINER_PAL(CHUCK, gTrainerPalette_Chuck),
+    TRAINER_PAL(JASMINE, gTrainerPalette_Jasmine),
+    TRAINER_PAL(PRYCE, gTrainerPalette_Pryce),
+    TRAINER_PAL(CLAIR, gTrainerPalette_Clair),
 };

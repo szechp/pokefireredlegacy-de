@@ -1,0 +1,105 @@
+raw `
+FiveIsland_WaterLabyrinth_MapScripts::
+	.byte 0
+
+FiveIsland_WaterLabyrinth_EventScript_EggGentleman::
+	goto_if_questlog EventScript_ReleaseEnd
+	special QuestLog_CutRecording
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_TOGEPI_EGG, FiveIsland_WaterLabyrinth_EventScript_PostEggComment
+	goto_if_set FLAG_NO_ROOM_FOR_TOGEPI_EGG, FiveIsland_WaterLabyrinth_EventScript_ReturnForEgg
+	msgbox FiveIsland_WaterLabyrinth_Text_LetMeTakeLookAtMons
+	specialvar VAR_RESULT, GetLeadMonFriendship
+	goto_if_eq VAR_RESULT, 6, FiveIsland_WaterLabyrinth_EventScript_LeadMonMaxFriendship
+	msgbox FiveIsland_WaterLabyrinth_Text_HmmISeeIsee
+	release
+	end
+
+FiveIsland_WaterLabyrinth_EventScript_MonDaisyComment::
+	famechecker FAMECHECKER_DAISY, 2
+	msgbox FiveIsland_WaterLabyrinth_Text_CuteMonRemindsMeOfDaisy
+	release
+	end
+
+FiveIsland_WaterLabyrinth_EventScript_LeadMonMaxFriendship::
+	msgbox FiveIsland_WaterLabyrinth_Text_TreatMonRightHaveThis
+	goto FiveIsland_WaterLabyrinth_EventScript_TryGiveEgg
+	end
+
+FiveIsland_WaterLabyrinth_EventScript_TryGiveEgg::
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, FiveIsland_WaterLabyrinth_EventScript_NoRoomForEgg
+	setflag FLAG_GOT_TOGEPI_EGG
+	giveegg SPECIES_TOGEPI
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	playfanfare MUS_LEVEL_UP
+	message FiveIsland_WaterLabyrinth_Text_ReceivedEggFromMan
+	waitfanfare
+	waitmessage
+	call EventScript_RestorePrevTextColor
+	goto FiveIsland_WaterLabyrinth_EventScript_PostEggComment
+	end
+
+@ If the player has a Togepi/Togetic from this game (assumed to be the one the man gave you) then comment on it
+@ Otherwise make normal comment
+FiveIsland_WaterLabyrinth_EventScript_PostEggComment::
+	bufferspeciesname STR_VAR_2, SPECIES_TOGEPI
+	setvar VAR_0x8004, SPECIES_TOGEPI
+	specialvar VAR_RESULT, PlayerPartyContainsSpeciesWithPlayerID
+	goto_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_MonDaisyComment
+	bufferspeciesname STR_VAR_2, SPECIES_TOGETIC
+	setvar VAR_0x8004, SPECIES_TOGETIC
+	specialvar VAR_RESULT, PlayerPartyContainsSpeciesWithPlayerID
+	goto_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_MonDaisyComment
+	msgbox FiveIsland_WaterLabyrinth_Text_GladIMetSomeoneLikeYou
+	release
+	end
+
+FiveIsland_WaterLabyrinth_EventScript_NoRoomForEgg::
+	setflag FLAG_NO_ROOM_FOR_TOGEPI_EGG
+	msgbox FiveIsland_WaterLabyrinth_Text_DontHaveSpaceInYourParty
+	release
+	end
+
+FiveIsland_WaterLabyrinth_EventScript_ReturnForEgg::
+	goto FiveIsland_WaterLabyrinth_EventScript_TryGiveEgg
+	end
+
+FiveIsland_WaterLabyrinth_EventScript_Falkner::
+	goto_if_set FLAG_FALKNER_DEFEATED, FiveIsland_WaterLabyrinth_EventScript_RematchFalkner
+	msgbox FiveIsland_WaterLabyrinth_Text_Falkner, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_NoFalkner
+	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesFalkner, FiveIsland_WaterLabyrinth_Text_FalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostFalkner, NO_MUSIC
+	release
+	end
+
+FiveIsland_WaterLabyrinth_EventScript_PostFalkner::
+	msgbox FiveIsland_WaterLabyrinth_Text_FalknerPostBattle
+	setflag FLAG_FALKNER_DEFEATED
+	release
+	end
+
+FiveIsland_WaterLabyrinth_EventScript_CantRematchFalkner::
+	msgbox FiveIsland_WaterLabyrinth_Text_FalknerPostBattle
+	release
+	end
+
+FiveIsland_WaterLabyrinth_EventScript_NoFalkner::
+	msgbox FiveIsland_WaterLabyrinth_Text_NoFalkner
+	release
+	end
+
+FiveIsland_WaterLabyrinth_EventScript_RematchFalkner::
+	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalkner, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_NoFalkner
+	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesRematchFalkner, FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner, NO_MUSIC
+	release
+	end
+
+FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner::
+	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat
+	cleartrainerflag TRAINER_FALKNER
+	release
+	end
+`

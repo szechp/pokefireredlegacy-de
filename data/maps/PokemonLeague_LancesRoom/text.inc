@@ -17,7 +17,7 @@ PokemonLeague_LancesRoom_Text_Intro::
 PokemonLeague_LancesRoom_Text_RematchIntro::
     .string "Ah!\n"
     .string "So, you've returned, {PLAYER}!\p"
-    .string "I lead the ELITE FOUR.\p"
+    .string "I lead the ELITE FOUR CHAMPION.\p"
     .string "You can call me LANCE the dragon\n"
     .string "TRAINER.\p"
     .string "You know that dragons are\n"
@@ -26,8 +26,8 @@ PokemonLeague_LancesRoom_Text_RematchIntro::
     .string "but their powers are superior.\p"
     .string "They're virtually indestructible.\n"
     .string "There's no being clever with them.\p"
-    .string "Well, are you ready to lose?\p"
-    .string "Your LEAGUE challenge ends with\n"
+    .string "Well, are you ready to lose again?\p"
+    .string "Your TITLE Defense ends with\n"
     .string "me, {PLAYER}!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_LancesRoom_Text_Defeat::

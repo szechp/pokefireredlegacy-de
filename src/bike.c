@@ -2,12 +2,14 @@
 #include "bike.h"
 #include "field_player_avatar.h"
 #include "metatile_behavior.h"
+#include "event_data.h"
 #include "event_object_movement.h"
 #include "fieldmap.h"
 #include "field_camera.h"
 #include "overworld.h"
 #include "constants/map_types.h"
 #include "constants/songs.h"
+#include "constants/flags.h"
 
 static u8 GetBikeTransitionId(u8 *, u16, u16);
 static void Bike_SetBikeStill(void);
@@ -185,13 +187,24 @@ static void BikeTransition_MoveDirection(u8 direction)
         }
         else
         {
-            
-            if (collision == COLLISION_COUNT)
-                PlayerWalkFast(direction);
-            else if (PlayerIsMovingOnRockStairs(direction))
-                PlayerWalkFast(direction);
+            if(!FlagGet(FLAG_BIKE_GEAR)) //if not set, FRLG speed
+            {
+                if (collision == COLLISION_COUNT)
+                    PlayerWalkFast(direction);
+                else if (PlayerIsMovingOnRockStairs(direction))
+                    PlayerWalkFast(direction);
+                else
+                    PlayerRideWaterCurrent(direction);
+            }
             else
-                PlayerRideWaterCurrent(direction);
+            {
+                if (collision == COLLISION_COUNT)
+                    PlayerRideWaterCurrent(direction);
+                else if (PlayerIsMovingOnRockStairs(direction))
+                    PlayerRideWaterCurrent(direction);
+                else
+                    PlayerWalkFaster(direction);
+            }
         }
     }
 }
@@ -252,8 +265,6 @@ bool8 RS_IsRunningDisallowed(u8 r0)
 
 bool32 IsRunningDisallowed(u8 metatileBehavior)
 {
-    if (!gMapHeader.allowRunning)
-        return TRUE;
     if (MetatileBehaviorForbidsBiking(metatileBehavior) != TRUE)
         return FALSE;
     else
@@ -416,3 +427,5 @@ static const struct BikeHistoryInputInfo sAcroBikeTricksList[] =
     {DIR_WEST, B_BUTTON, 0xF, 0xF, sAcroBikeJumpTimerList, sAcroBikeJumpTimerList, DIR_WEST},
     {DIR_EAST, B_BUTTON, 0xF, 0xF, sAcroBikeJumpTimerList, sAcroBikeJumpTimerList, DIR_EAST},
 };
+
+

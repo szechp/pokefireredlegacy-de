@@ -129,3 +129,11 @@ Route17_Text_CyclingRoadSign::
     .string "CYCLING ROAD\n"
     .string "Slope ends here!$"
 
+Route17_Text_Paxton::
+    .string "GRAH, Champion Now?\p"
+    .string "Seems like you really,\n"
+    .string "do like protecting\n"
+    .string "those Islands!\p"
+    .string "I'm not sorry for what I did\n"
+    .string "on those Islands!\p"
+    .string "But I'll stand no chance!$"

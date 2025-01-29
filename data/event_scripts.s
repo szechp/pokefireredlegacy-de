@@ -516,6 +516,7 @@ gStdScriptsEnd::
 	.include "data/maps/ViridianForest/text.inc"
 	.include "data/maps/MtMoon_1F/text.inc"
 	.include "data/maps/MtMoon_B2F/text.inc"
+	.include "data/maps/DiglettsCave_B1F/text.inc"
 	.include "data/maps/SSAnne_1F_Corridor/text.inc"
 	.include "data/maps/SSAnne_2F_Corridor/text.inc"
 	.include "data/maps/SSAnne_3F_Corridor/text.inc"
@@ -540,6 +541,7 @@ gStdScriptsEnd::
 	.include "data/maps/SSAnne_B1F_Room4/text.inc"
 	.include "data/maps/SSAnne_B1F_Room5/text.inc"
 	.include "data/maps/SSAnne_1F_Room6/text.inc"
+	.include "data/maps/PowerPlant/text.inc"
 	.include "data/maps/UndergroundPath_SouthEntrance/text.inc"
 	.include "data/maps/UndergroundPath_WestEntrance/text.inc"
 	.include "data/maps/UndergroundPath_EastEntrance/text.inc"
@@ -577,6 +579,7 @@ gStdScriptsEnd::
 	.include "data/maps/SafariZone_North_RestHouse/text.inc"
 	.include "data/maps/SafariZone_West_RestHouse/text.inc"
 	.include "data/maps/SafariZone_SecretHouse/text.inc"
+	.include "data/maps/CeruleanCave_2F/text.inc"
 	.include "data/maps/CeruleanCave_B1F/text.inc"
 	.include "data/maps/PokemonLeague_LoreleisRoom/text.inc"
 	.include "data/maps/PokemonLeague_BrunosRoom/text.inc"
@@ -597,14 +600,18 @@ gStdScriptsEnd::
 	.include "data/maps/MtEmber_Exterior/text.inc"
 	.include "data/maps/MtEmber_RubyPath_B3F/text.inc"
 	.include "data/maps/ThreeIsland_BerryForest/text.inc"
+	.include "data/maps/FourIsland_IcefallCave_B1F/text.inc"
 	.include "data/maps/FourIsland_IcefallCave_Back/text.inc"
 	.include "data/maps/FiveIsland_RocketWarehouse/text.inc"
+	.include "data/maps/SixIsland_DottedHole_B2F/text.inc"
 	.include "data/maps/SixIsland_DottedHole_SapphireRoom/text.inc"
 	.include "data/maps/SixIsland_PatternBush/text.inc"
+	.include "data/maps/SixIsland_AlteringCave/text.inc"
 	.include "data/maps/TrainerTower_Lobby/text.inc"
 	.include "data/maps/FiveIsland_LostCave_Room1/text.inc"
 	.include "data/maps/FiveIsland_LostCave_Room4/text.inc"
 	.include "data/maps/FiveIsland_LostCave_Room10/text.inc"
+	.include "data/maps/FiveIsland_LostCave_Room12/text.inc"
 	.include "data/maps/ThreeIsland_DunsparceTunnel/text.inc"
 	.include "data/maps/SevenIsland_SevaultCanyon_TanobyKey/text.inc"
 	.include "data/maps/OneIsland_KindleRoad_EmberSpa/text.inc"
@@ -620,6 +627,7 @@ gStdScriptsEnd::
 	.include "data/maps/SaffronCity/text.inc"
 	.include "data/maps/OneIsland/text.inc"
 	.include "data/maps/TwoIsland/text.inc"
+	.include "data/maps/TwoIsland_CapeBrink/text.inc"
 	.include "data/maps/ThreeIsland/text.inc"
 	.include "data/maps/FourIsland/text.inc"
 	.include "data/maps/FiveIsland/text.inc"
@@ -773,6 +781,7 @@ gStdScriptsEnd::
 	.include "data/maps/Route18_EastEntrance_2F/text.inc"
 	.include "data/maps/Route25_SeaCottage/text.inc"
 	.include "data/maps/SevenIsland_House_Room1/text.inc"
+	.include "data/maps/SevenIsland_House_Room2/text.inc"
 	.include "data/maps/SevenIsland_Mart/text.inc"
 	.include "data/maps/SevenIsland_PokemonCenter_1F/text.inc"
 	.include "data/maps/OneIsland_PokemonCenter_1F/text.inc"
@@ -803,6 +812,8 @@ gStdScriptsEnd::
 	.include "data/maps/SixIsland_WaterPath_House1/text.inc"
 	.include "data/maps/SixIsland_WaterPath_House2/text.inc"
 	.include "data/maps/SevenIsland_SevaultCanyon_House/text.inc"
+	.include "data/maps/SevenIsland_TanobyRuins_MoneanChamber/text.inc"
+
 
 	.include "data/scripts/std_msgbox.inc"
 	.include "data/scripts/trainer_battle.inc"
@@ -1007,8 +1018,8 @@ Text_Gyaoo::
 	.string "Gyaoo!$"
 
 Text_MoveCanOnlyBeLearnedOnce::
-	.string "This move can be learned only\n"
-	.string "once. Is that okay?$"
+	.string "This move can only be learned\n"
+	.string "once for free. Is that okay?$"
 
 EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_OAK_IN_HIS_LAB
@@ -1060,11 +1071,26 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_FAME_CHECKER_KOGA_JOURNAL
 	setflag FLAG_HIDE_FAME_CHECKER_LT_SURGE_JOURNAL
 	setflag FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS
+	setflag FLAG_HIDE_JOHTO_LEADERS  
+	setflag FLAG_CELEBI              
+	setflag FLAG_SHOPCHAMP           
+	setflag FLAG_SHOPJOHTO           
+	setflag FLAG_HIDE_POSTGAME_TRAINERS      
+	setflag FLAG_HIDE_SEVIIGUYS      
+	setflag FLAG_HIDE_OAK               
+	setflag FLAG_HIDE_OAK2               
+	setflag FLAG_HIDE_MEW 
+	setflag FLAG_HIDE_ADMIN
+	setflag FLAG_HIDE_ADMIN2
+	setflag FLAG_HIDE_EASTER
+	setflag FLAG_HIDE_VICTORY_ROAD_2F_BOULDER
+	setflag FLAG_HIDE_AURORA_GUY
 	setvar VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 500
 	end
 
 	.include "data/scripts/hall_of_fame.inc"
 	.include "data/scripts/pkmn_center_nurse.inc"
+	.include "data/scripts/IvEvCheck.inc"
 	.include "data/scripts/obtain_item.inc"
 	.include "data/scripts/pc.inc"
 
@@ -1247,6 +1273,8 @@ Common_EventScript_DirectCornerAttendant::
 VermilionCity_PokemonCenter_1F_EventScript_VSSeekerWoman::
 	lock
 	faceplayer
+	goto_if_set FLAG_VS_SEEKER_UPGRADE, VermilionCity_PokemonCenter_1F_EventScript_ExplainVSSeeker
+	goto_if_set FLAG_IS_CHAMPION, VermilionCity_PokemonCenter_1F_EventScript_UpgradeVSSeeker
 	goto_if_set FLAG_GOT_VS_SEEKER, VermilionCity_PokemonCenter_1F_EventScript_ExplainVSSeeker
 	msgbox VermilionCity_PokemonCenter_1F_Text_UrgeToBattleSomeoneAgain
 	setflag FLAG_GOT_VS_SEEKER
@@ -1263,6 +1291,20 @@ VermilionCity_PokemonCenter_1F_EventScript_ExplainVSSeeker::
 
 	.include "data/scripts/itemfinder.inc"
 	.include "data/scripts/white_out.inc"
+
+VermilionCity_PokemonCenter_1F_EventScript_UpgradeVSSeeker::
+	lock
+	faceplayer
+	msgbox VermilionCity_PokemonCenter_1F_Text_Upgrade
+	setflag FLAG_VS_SEEKER_UPGRADE
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message VermilionCity_PokemonCenter_1F_Text_SeekerUpgrade
+	waitmessage
+	waitfanfare
+	msgbox VermilionCity_PokemonCenter_1F_Text_ExplainUpgrade
+	release
+	end
+
 
 Std_PutItemAway::
 	bufferitemnameplural STR_VAR_2, VAR_0x8000, VAR_0x8001
@@ -1360,3 +1402,12 @@ Text_TestMsg::
 	.include "data/text/save.inc"
 	.include "data/text/new_game_intro.inc"
 	.include "data/text/pokedude.inc"
+
+	.include "data/maps/CeladonCity_Diglett/scripts.inc"
+	.include "data/maps/CeladonCity_Diglett/text.inc"
+
+	.include "data/maps/MtMoonConnect/scripts.inc"
+	.include "data/maps/MtMoonConnect/text.inc"
+
+	.include "data/maps/RockTunnel_B2F/scripts.inc"
+	.include "data/maps/RockTunnel_B2F/text.inc"

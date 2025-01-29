@@ -1,0 +1,92 @@
+raw `
+OneIsland_KindleRoad_EmberSpa_MapScripts::
+	.byte 0
+
+OneIsland_KindleRoad_EmberSpa_EventScript_OldMan::
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_WaterWarmsMeToCore, MSGBOX_NPC
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_BaldingMan1::
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_EnjoyBowlOfChowder, MSGBOX_NPC
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_BaldingMan2::
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_HotSpringIsTherapeutic, MSGBOX_NPC
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_OldWoman::
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_SeeHowSmoothMySkinIs, MSGBOX_NPC
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_BlackBelt::
+	lock
+	faceplayer
+	famechecker FAMECHECKER_BRUNO, 3
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_BrunoVisitsSpaOnOccasion
+	release
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_RockSmashMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_HM06, OneIsland_KindleRoad_EmberSpa_EventScript_AlreadyGotHM06
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_UsedThisToMakeEmberSpa
+	giveitem ITEM_FOCUS_BAND
+	setflag FLAG_GOT_HM06
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_ExplainHM06
+	release
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_AlreadyGotHM06::
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_ExplainHM06
+	release
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_SpaHeal::
+	lockall
+	fadescreen FADE_TO_WHITE
+	special HealPlayerParty
+	fadescreen FADE_FROM_WHITE
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_WaterExquisiteFullyRefreshed
+	setvar VAR_TEMP_1, 1
+	releaseall
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_Samal::
+	goto_if_set FLAG_GET_AURORA, OneIsland_KindleRoad_EmberSpa_EventScript_RematchSamal
+	goto_if_set FLAG_SAMAL_DEFEATED, OneIsland_KindleRoad_EmberSpa_EventScript_CantRematchSamal
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_Samal, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, OneIsland_KindleRoad_EmberSpa_EventScript_NoSamal
+	trainerbattle_single TRAINER_SAMAL, OneIsland_KindleRoad_EmberSpa_Text_YesSamal, OneIsland_KindleRoad_EmberSpa_Text_SamalDefeat, OneIsland_KindleRoad_EmberSpa_EventScript_PostSamal, NO_MUSIC
+	release
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_PostSamal::
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_SamalPostBattle
+	setflag FLAG_SAMAL_DEFEATED
+	release
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_CantRematchSamal::
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_SamalPostBattle
+	release
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_NoSamal::
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_NoSamal
+	release
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_RematchSamal::
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_RematchSamal, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, OneIsland_KindleRoad_EmberSpa_EventScript_NoSamal
+	trainerbattle_single TRAINER_SAMAL, OneIsland_KindleRoad_EmberSpa_Text_YesRematchSamal, OneIsland_KindleRoad_EmberSpa_Text_RematchSamalDefeat, OneIsland_KindleRoad_EmberSpa_EventScript_PostRematchSamal, NO_MUSIC
+	release
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_PostRematchSamal::
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_RematchSamalDefeat
+	cleartrainerflag TRAINER_SAMAL
+	release
+	end
+`

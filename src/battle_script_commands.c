@@ -36,6 +36,7 @@
 #include "constants/abilities.h"
 #include "constants/pokemon.h"
 #include "constants/maps.h"
+#include "constants/battle_setup.h"
 
 extern const u8 *const gBattleScriptsForMoveEffects[];
 
@@ -308,6 +309,9 @@ static void Cmd_subattackerhpbydmg(void);
 static void Cmd_removeattackerstatus1(void);
 static void Cmd_finishaction(void);
 static void Cmd_finishturn(void);
+static void Cmd_leafbladesetfocusenergy(void);
+
+
 
 void (* const gBattleScriptingCommandsTable[])(void) =
 {
@@ -559,6 +563,7 @@ void (* const gBattleScriptingCommandsTable[])(void) =
     Cmd_removeattackerstatus1,                   //0xF5
     Cmd_finishaction,                            //0xF6
     Cmd_finishturn,                              //0xF7
+    Cmd_leafbladesetfocusenergy,                 //0xF8
 };
 
 struct StatFractions
@@ -771,22 +776,22 @@ struct PickupItem
 
 static const struct PickupItem sPickupItems[] =
 {
-    { ITEM_ORAN_BERRY, 15 },
-    { ITEM_CHERI_BERRY, 25 },
-    { ITEM_CHESTO_BERRY, 35 },
-    { ITEM_PECHA_BERRY, 45 },
-    { ITEM_RAWST_BERRY, 55 },
-    { ITEM_ASPEAR_BERRY, 65 },
-    { ITEM_PERSIM_BERRY, 75 },
-    { ITEM_TM10, 80 },
-    { ITEM_PP_UP, 85 },
+    { ITEM_POTION, 15 },
+    { ITEM_SUPER_POTION, 25 },
+    { ITEM_SUPER_POTION, 35 },
+    { ITEM_GREAT_BALL, 45 },
+    { ITEM_SUPER_REPEL, 55 },
+    { ITEM_ETHER, 65 },
+    { ITEM_FULL_HEAL, 75 },
+    { ITEM_ULTRA_BALL, 80 },
+    { ITEM_HYPER_POTION, 85 },
     { ITEM_RARE_CANDY, 90 },
     { ITEM_NUGGET, 95 },
-    { ITEM_SPELON_BERRY, 96 },
-    { ITEM_PAMTRE_BERRY, 97 },
-    { ITEM_WATMEL_BERRY, 98 },
-    { ITEM_DURIN_BERRY, 99 },
-    { ITEM_BELUE_BERRY, 1 },
+    { ITEM_PP_UP, 96 },
+    { ITEM_PROTEIN, 97 },
+    { ITEM_CARBOS, 98 },
+    { ITEM_MAX_REVIVE, 99 },
+    { ITEM_MAX_ELIXIR, 1 },
 
 };
 
@@ -810,7 +815,7 @@ static const u8 sBallCatchBonuses[] =
     [ITEM_ULTRA_BALL - ITEM_ULTRA_BALL]  = 20,
     [ITEM_GREAT_BALL - ITEM_ULTRA_BALL]  = 15,
     [ITEM_POKE_BALL - ITEM_ULTRA_BALL]   = 10,
-    [ITEM_SAFARI_BALL - ITEM_ULTRA_BALL] = 15
+    [ITEM_SAFARI_BALL - ITEM_ULTRA_BALL] = 25
 };
 
 // unused
@@ -991,6 +996,7 @@ static bool8 AccuracyCalcHelper(u16 move)
     gHitMarker &= ~HITMARKER_IGNORE_UNDERWATER;
 
     if ((WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_RAIN) && gBattleMoves[move].effect == EFFECT_THUNDER)
+     || (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_HAIL) && gBattleMoves[move].effect == EFFECT_BLIZZARD)
      || (gBattleMoves[move].effect == EFFECT_ALWAYS_HIT || gBattleMoves[move].effect == EFFECT_VITAL_THROW))
     {
         JumpIfMoveFailed(7, move);
@@ -1042,7 +1048,8 @@ static void Cmd_accuracycheck(void)
         if (AccuracyCalcHelper(move))
             return;
 
-        if (gBattleMons[gBattlerTarget].status2 & STATUS2_FORESIGHT)
+        if ((gBattleMons[gBattlerTarget].status2 & STATUS2_FORESIGHT) || (gBattleMons[gBattlerAttacker].ability == ABILITY_ILLUMINATE) )
+    
         {
             u8 acc = gBattleMons[gBattlerAttacker].statStages[STAT_ACC];
             buff = acc;
@@ -1086,7 +1093,7 @@ static void Cmd_accuracycheck(void)
 
         gPotentialItemEffectBattler = gBattlerTarget;
 
-        if (holdEffect == HOLD_EFFECT_EVASION_UP)
+        if (holdEffect == HOLD_EFFECT_EVASION_UP || gBattleMons[gBattlerTarget].ability == ABILITY_STENCH)
             calc = (calc * (100 - param)) / 100;
 
         // final calculation
@@ -1184,6 +1191,7 @@ static void Cmd_critcalc(void)
     critChance  = 2 * ((gBattleMons[gBattlerAttacker].status2 & STATUS2_FOCUS_ENERGY) != 0)
                 + (gBattleMoves[gCurrentMove].effect == EFFECT_HIGH_CRITICAL)
                 + (gBattleMoves[gCurrentMove].effect == EFFECT_SKY_ATTACK)
+                + (gBattleMoves[gCurrentMove].effect == EFFECT_LEAF_BLADE)
                 + (gBattleMoves[gCurrentMove].effect == EFFECT_BLAZE_KICK)
                 + (gBattleMoves[gCurrentMove].effect == EFFECT_POISON_TAIL)
                 + (holdEffect == HOLD_EFFECT_SCOPE_LENS)
@@ -2049,7 +2057,7 @@ static void Cmd_waitmessage(void)
         else
         {
             u16 toWait = T2_READ_16(gBattlescriptCurrInstr + 1);
-            if (++gPauseCounterBattle >= toWait)
+            if (++gPauseCounterBattle >= toWait || (JOY_NEW(A_BUTTON | B_BUTTON)))
             {
                 gPauseCounterBattle = 0;
                 gBattlescriptCurrInstr += 3;
@@ -3337,11 +3345,7 @@ static void Cmd_getexp(void)
                     gBattleMons[2].defense = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_DEF);
                     gBattleMons[2].speed = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPEED);
                     // Speed is duplicated again, but Special Defense is missing.
-#ifdef BUGFIX
                     gBattleMons[2].spDefense = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPDEF);
-#else
-                    gBattleMons[2].speed = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPEED);
-#endif
                     gBattleMons[2].spAttack = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPATK);
                 }
                 gBattleScripting.getexpState = 5;
@@ -3764,7 +3768,7 @@ static void Cmd_pause(void)
     if (gBattleControllerExecFlags == 0)
     {
         u16 value = T2_READ_16(gBattlescriptCurrInstr + 1);
-        if (++gPauseCounterBattle >= value)
+        if (++gPauseCounterBattle >= value || (JOY_NEW(A_BUTTON | B_BUTTON)))
         {
             gPauseCounterBattle = 0;
             gBattlescriptCurrInstr += 3;
@@ -3988,6 +3992,7 @@ static void Cmd_playstatchangeanimation(void)
                         && gBattleMons[gActiveBattler].ability != ABILITY_CLEAR_BODY
                         && gBattleMons[gActiveBattler].ability != ABILITY_WHITE_SMOKE
                         && !(gBattleMons[gActiveBattler].ability == ABILITY_KEEN_EYE && currStat == STAT_ACC)
+                        && !(gBattleMons[gActiveBattler].ability == ABILITY_ILLUMINATE && currStat == STAT_ACC)
                         && !(gBattleMons[gActiveBattler].ability == ABILITY_HYPER_CUTTER && currStat == STAT_ATK))
                 {
                     if (gBattleMons[gActiveBattler].statStages[currStat] > MIN_STAT_STAGE)
@@ -5207,13 +5212,7 @@ static void Cmd_yesnoboxlearnmove(void)
             {
                 u16 moveId = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_MOVE1 + movePosition);
                 
-                if (IsHMMove2(moveId))
-                {
-                    PrepareStringBattle(STRINGID_HMMOVESCANTBEFORGOTTEN, gActiveBattler);
-                    gBattleScripting.learnMoveState = 5;
-                }
-                else
-                {
+
                     gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
 
                     PREPARE_MOVE_BUFFER(gBattleTextBuff2, moveId)
@@ -5233,7 +5232,7 @@ static void Cmd_yesnoboxlearnmove(void)
                         RemoveBattleMonPPBonus(&gBattleMons[2], movePosition);
                         SetBattleMonMoveSlot(&gBattleMons[2], gMoveToLearn, movePosition);
                     }
-                }
+                
             }
         }
         break;
@@ -5320,57 +5319,32 @@ static void Cmd_hitanimation(void)
 static void Cmd_getmoneyreward(void)
 {
     u32 i = 0;
-    u32 moneyReward;
+    u32 moneyReward = 0;
     u8 lastMonLevel = 0;
-
-    const struct TrainerMonItemCustomMoves *party4; //This needs to be out here
+    const struct TrainerMon *party4; // This needs to be out here
 
     if (gBattleOutcome == B_OUTCOME_WON)
     {
         if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)
         {
-            moneyReward = gBattleResources->secretBase->party.levels[0] * 20 * gBattleStruct->moneyMultiplier;
+            lastMonLevel = gBattleResources->secretBase->party.levels[0];
+            moneyReward = lastMonLevel * 20 * gBattleStruct->moneyMultiplier;
         }
         else
         {
-            switch (gTrainers[gTrainerBattleOpponent_A].partyFlags)
-            {
-            case 0:
-                {
-                    const struct TrainerMonNoItemDefaultMoves *party1 = gTrainers[gTrainerBattleOpponent_A].party.NoItemDefaultMoves;
-                    
-                    lastMonLevel = party1[gTrainers[gTrainerBattleOpponent_A].partySize - 1].lvl;
-                }
-                break;
-            case F_TRAINER_PARTY_CUSTOM_MOVESET:
-                {
-                    const struct TrainerMonNoItemCustomMoves *party2 = gTrainers[gTrainerBattleOpponent_A].party.NoItemCustomMoves;
-                    
-                    lastMonLevel = party2[gTrainers[gTrainerBattleOpponent_A].partySize - 1].lvl;
-                }
-                break;
-            case F_TRAINER_PARTY_HELD_ITEM:
-                {
-                    const struct TrainerMonItemDefaultMoves *party3 = gTrainers[gTrainerBattleOpponent_A].party.ItemDefaultMoves;
-                    
-                    lastMonLevel = party3[gTrainers[gTrainerBattleOpponent_A].partySize - 1].lvl;
-                }
-                break;
-            case (F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM):
-                {
-                    party4 = gTrainers[gTrainerBattleOpponent_A].party.ItemCustomMoves;
-                    
-                    lastMonLevel = party4[gTrainers[gTrainerBattleOpponent_A].partySize - 1].lvl;
-                }
-                break;
-            }
+            // Get the lastMonLevel from the opponent's party
+            party4 = gTrainers[gTrainerBattleOpponent_A].party.TrainerMon;
+            lastMonLevel = party4[gTrainers[gTrainerBattleOpponent_A].partySize - 1].lvl;
+
+            // Find the appropriate money reward based on the trainer class
             for (; gTrainerMoneyTable[i].classId != 0xFF; i++)
             {
                 if (gTrainerMoneyTable[i].classId == gTrainers[gTrainerBattleOpponent_A].trainerClass)
+                {
+                    moneyReward = lastMonLevel * 4 * gBattleStruct->moneyMultiplier * (gBattleTypeFlags & BATTLE_TYPE_DOUBLE ? 2 : 1) * gTrainerMoneyTable[i].value;
                     break;
+                }
             }
-            party4 = gTrainers[gTrainerBattleOpponent_A].party.ItemCustomMoves; // Needed to Match. Has no effect.
-            moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * (gBattleTypeFlags & BATTLE_TYPE_DOUBLE ? 2 : 1) * gTrainerMoneyTable[i].value;
         }
         AddMoney(&gSaveBlock1Ptr->money, moneyReward);
     }
@@ -5378,7 +5352,9 @@ static void Cmd_getmoneyreward(void)
     {
         moneyReward = ComputeWhiteOutMoneyLoss();
     }
+
     PREPARE_WORD_NUMBER_BUFFER(gBattleTextBuff1, 5, moneyReward);
+
     if (moneyReward)
         gBattlescriptCurrInstr += 5;
     else
@@ -6407,7 +6383,7 @@ static void Cmd_setrain(void)
     {
         gBattleWeather = B_WEATHER_RAIN_TEMPORARY;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_RAIN;
-        gWishFutureKnock.weatherDuration = 5;
+        gWishFutureKnock.weatherDuration = 6;
     }
     gBattlescriptCurrInstr++;
 }
@@ -6724,8 +6700,10 @@ static u8 ChangeStatBuffs(s8 statValue, u8 statId, u8 flags, const u8 *BS_ptr)
             }
             return STAT_CHANGE_DIDNT_WORK;
         }
-        else if (gBattleMons[gActiveBattler].ability == ABILITY_KEEN_EYE
+        else if ((gBattleMons[gActiveBattler].ability == ABILITY_KEEN_EYE
+                 || gBattleMons[gActiveBattler].ability == ABILITY_ILLUMINATE)
                  && !certain && statId == STAT_ACC)
+
         {
             if (flags == STAT_CHANGE_ALLOW_PTR)
             {
@@ -7208,7 +7186,7 @@ static void Cmd_setsandstorm(void)
     {
         gBattleWeather = B_WEATHER_SANDSTORM_TEMPORARY;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_SANDSTORM;
-        gWishFutureKnock.weatherDuration = 5;
+        gWishFutureKnock.weatherDuration = 6;
     }
     gBattlescriptCurrInstr++;
 }
@@ -7391,6 +7369,19 @@ static void Cmd_setfocusenergy(void)
     {
         gBattleMons[gBattlerAttacker].status2 |= STATUS2_FOCUS_ENERGY;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_GETTING_PUMPED;
+    }
+    gBattlescriptCurrInstr++;
+}
+
+static void Cmd_leafbladesetfocusenergy(void)
+{
+    if (Random() % 2 == 1) // 50% chance
+    {
+        if (!gBattleMons[gBattlerAttacker].status2)
+        {
+            gBattleMons[gBattlerAttacker].status2 |= STATUS2_FOCUS_ENERGY;
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_GETTING_PUMPED;
+        }
     }
     gBattlescriptCurrInstr++;
 }
@@ -8389,7 +8380,7 @@ static void Cmd_setsunny(void)
     {
         gBattleWeather = B_WEATHER_SUN_TEMPORARY;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_SUNLIGHT;
-        gWishFutureKnock.weatherDuration = 5;
+        gWishFutureKnock.weatherDuration = 6;
     }
 
     gBattlescriptCurrInstr++;
@@ -8672,7 +8663,7 @@ static void Cmd_sethail(void)
     {
         gBattleWeather = B_WEATHER_HAIL_TEMPORARY;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_HAIL;
-        gWishFutureKnock.weatherDuration = 5;
+        gWishFutureKnock.weatherDuration = 6;
     }
 
     gBattlescriptCurrInstr++;
@@ -9393,7 +9384,7 @@ static void Cmd_settypetoterrain(void)
         SET_BATTLER_TYPE(gBattlerAttacker, sTerrainToType[gBattleTerrain]);
         PREPARE_TYPE_BUFFER(gBattleTextBuff1, sTerrainToType[gBattleTerrain]);
 
-        gBattlescriptCurrInstr += 5;
+        gBattlescriptCurrInstr += 6;
     }
     else
     {

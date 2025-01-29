@@ -1,0 +1,46 @@
+raw `
+SevenIsland_SevaultCanyon_MapScripts::
+	.byte 0
+
+SevenIsland_SevaultCanyon_EventScript_RouteSign::
+	msgbox SevenIsland_SevaultCanyon_Text_RouteSign, MSGBOX_SIGN
+	end
+
+SevenIsland_SevaultCanyon_EventScript_Chuck::
+	goto_if_set FLAG_GET_MYSTIC, SevenIsland_SevaultCanyon_EventScript_RematchChuck
+	goto_if_set FLAG_CHUCK_DEFEATED, SevenIsland_SevaultCanyon_EventScript_CantRematchChuck
+	msgbox SevenIsland_SevaultCanyon_Text_Chuck, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SevenIsland_SevaultCanyon_EventScript_NoChuck
+	trainerbattle_single TRAINER_CHUCK, SevenIsland_SevaultCanyon_Text_YesChuck, SevenIsland_SevaultCanyon_Text_ChuckDefeat, SevenIsland_SevaultCanyon_EventScript_PostChuck, NO_MUSIC
+	release
+	end
+
+SevenIsland_SevaultCanyon_EventScript_PostChuck::
+	msgbox SevenIsland_SevaultCanyon_Text_ChuckPostBattle
+	setflag FLAG_CHUCK_DEFEATED
+	release
+	end
+
+SevenIsland_SevaultCanyon_EventScript_CantRematchChuck::
+	msgbox SevenIsland_SevaultCanyon_Text_ChuckPostBattle
+	release
+	end
+
+SevenIsland_SevaultCanyon_EventScript_NoChuck::
+	msgbox SevenIsland_SevaultCanyon_Text_NoChuck
+	release
+	end
+
+SevenIsland_SevaultCanyon_EventScript_RematchChuck::
+	msgbox SevenIsland_SevaultCanyon_Text_RematchChuck, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SevenIsland_SevaultCanyon_EventScript_NoChuck
+	trainerbattle_single TRAINER_CHUCK, SevenIsland_SevaultCanyon_Text_YesRematchChuck, SevenIsland_SevaultCanyon_Text_RematchChuckDefeat, SevenIsland_SevaultCanyon_EventScript_PostRematchChuck, NO_MUSIC
+	release
+	end
+
+SevenIsland_SevaultCanyon_EventScript_PostRematchChuck::
+	msgbox SevenIsland_SevaultCanyon_Text_RematchChuckDefeat
+	cleartrainerflag TRAINER_CHUCK
+	release
+	end
+`

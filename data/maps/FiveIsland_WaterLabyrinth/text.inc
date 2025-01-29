@@ -59,3 +59,33 @@ FiveIsland_WaterLabyrinth_Text_AlizeDefeat::
 FiveIsland_WaterLabyrinth_Text_AlizePostBattle::
     .string "You know, I think you have the\n"
     .string "talent to be a good BREEDER.$"
+
+FiveIsland_WaterLabyrinth_Text_Falkner::
+    .string "Falkner Dad Placeholder!$"
+
+FiveIsland_WaterLabyrinth_Text_FalknerDefeat::
+    .string "Falkner Dad Placeholder!$"
+
+FiveIsland_WaterLabyrinth_Text_FalknerPostBattle::
+    .string "Falkner Dad Placeholder!$"
+
+
+FiveIsland_WaterLabyrinth_Text_NoFalkner::
+    .string "Falkner Dad Placeholder!$"
+
+FiveIsland_WaterLabyrinth_Text_YesFalkner::
+    .string "Falkner Dad Placeholder!$"
+
+FiveIsland_WaterLabyrinth_Text_RematchFalkner::
+    .string "Falkner Dad Rematch Placeholder!$"
+
+FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat::
+    .string "Falkner Dad Rematch Placeholder!$"
+
+FiveIsland_WaterLabyrinth_Text_YesRematchFalkner::
+    .string "Falkner Dad Rematch Placeholder!$"
+
+
+FiveIsland_WaterLabyrinth_Text_RematchFalknerPostBattle::
+    .string "Falkner Dad Rematch Placeholder!$"
+

@@ -128,3 +128,31 @@ SevenIsland_SevaultCanyon_Text_BrunoTrainedWithBrawly::
     .string "Even BRUNO…\n"
     .string "He trained with a fellow by the\l"
     .string "name of BRAWLY before.$"
+
+SevenIsland_SevaultCanyon_Text_Chuck::
+    .string "Chuck Placeholder!$"
+
+SevenIsland_SevaultCanyon_Text_ChuckDefeat::
+    .string "Chuck Placeholder!$"
+
+SevenIsland_SevaultCanyon_Text_ChuckPostBattle::
+    .string "Chuck Placeholder!$"
+
+SevenIsland_SevaultCanyon_Text_NoChuck::
+    .string "Chuck Placeholder!$"
+
+SevenIsland_SevaultCanyon_Text_YesChuck::
+    .string "Chuck Placeholder!$"
+
+SevenIsland_SevaultCanyon_Text_RematchChuck::
+    .string "Chuck Rematch Placeholder!$"
+
+SevenIsland_SevaultCanyon_Text_RematchChuckDefeat::
+    .string "Chuck Rematch Placeholder!$"
+
+SevenIsland_SevaultCanyon_Text_YesRematchChuck::
+    .string "Chuck Rematch Placeholder!$"
+
+SevenIsland_SevaultCanyon_Text_RematchChuckPostBattle::
+    .string "Chuck Rematch Placeholder!$"
+

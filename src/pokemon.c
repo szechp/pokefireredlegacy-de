@@ -67,7 +67,7 @@ static union PokemonSubstruct *GetSubstruct(struct BoxPokemon *boxMon, u32 perso
 static u16 GetDeoxysStat(struct Pokemon *mon, s32 statId);
 static bool8 IsShinyOtIdPersonality(u32 otId, u32 personality);
 static u16 ModifyStatByNature(u8 nature, u16 n, u8 statIndex);
-static u8 GetNatureFromPersonality(u32 personality);
+u8 GetNatureFromPersonality(u32 personality);
 static bool8 PartyMonHasStatus(struct Pokemon *mon, u32 unused, u32 healMask, u8 battleId);
 static bool8 HealStatusConditions(struct Pokemon *mon, u32 unused, u32 healMask, u8 battleId);
 static bool8 IsPokemonStorageFull(void);
@@ -1617,13 +1617,13 @@ static const u8 sStatsToRaise[] =
 // 0-99, 100-199, 200+
 static const s8 sFriendshipEventDeltas[][3] = 
 {
-    [FRIENDSHIP_EVENT_GROW_LEVEL]           = { 5,  3,  2 },
-    [FRIENDSHIP_EVENT_VITAMIN]              = { 5,  3,  2 },
-    [FRIENDSHIP_EVENT_BATTLE_ITEM]          = { 1,  1,  0 },
-    [FRIENDSHIP_EVENT_LEAGUE_BATTLE]        = { 3,  2,  1 },
-    [FRIENDSHIP_EVENT_LEARN_TMHM]           = { 1,  1,  0 },
-    [FRIENDSHIP_EVENT_WALKING]              = { 1,  1,  1 },
-    [FRIENDSHIP_EVENT_MASSAGE]              = { 3,  3,  3 },
+    [FRIENDSHIP_EVENT_GROW_LEVEL]           = {10,  6,  6 },
+    [FRIENDSHIP_EVENT_VITAMIN]              = {10,  6,  6 },
+    [FRIENDSHIP_EVENT_BATTLE_ITEM]          = { 2,  2,  0 },
+    [FRIENDSHIP_EVENT_LEAGUE_BATTLE]        = { 6,  4,  2 },
+    [FRIENDSHIP_EVENT_LEARN_TMHM]           = { 2,  2,  0 },
+    [FRIENDSHIP_EVENT_WALKING]              = { 2,  2,  2 },
+    [FRIENDSHIP_EVENT_MASSAGE]              = { 6,  6,  6 },
     [FRIENDSHIP_EVENT_FAINT_SMALL]          = {-1, -1, -1 },
     [FRIENDSHIP_EVENT_FAINT_OUTSIDE_BATTLE] = {-5, -5, -10 },
     [FRIENDSHIP_EVENT_FAINT_LARGE]          = {-5, -5, -10 },
@@ -1780,25 +1780,48 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
 
     //Determine original trainer ID
-    if (otIdType == OT_ID_RANDOM_NO_SHINY) //Pokemon cannot be shiny
+    switch (otIdType)
     {
-        u32 shinyValue;
-        do
+        case OT_ID_SHINY:
         {
-            value = Random32();
-            shinyValue = GET_SHINY_VALUE(value, personality);
-        } while (shinyValue < SHINY_ODDS);
-    }
-    else if (otIdType == OT_ID_PRESET) //Pokemon has a preset OT ID
-    {
-        value = fixedOtId;
-    }
-    else //Player is the OT
-    {
-        value = gSaveBlock2Ptr->playerTrainerId[0]
-              | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
-              | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
-              | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
+            value = HIHALF(personality) ^ LOHALF(personality);
+        }
+        break;
+        case OT_ID_RANDOM_NO_SHINY:
+        {
+            u32 shinyValue = 0;
+            do
+            {
+                value = Random32();
+                shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
+            } while (shinyValue < SHINY_ODDS);
+        }
+        break;
+        case OT_ID_PRESET:
+        {
+            value = fixedOtId;
+        }
+        break;
+        default:
+        {
+            value = gSaveBlock2Ptr->playerTrainerId[0]
+                 | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
+                 | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
+                 | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
+#ifdef ITEM_SHINY_CHARM
+            if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
+            {
+                u32 shinyValue;
+                u32 rolls = 0;
+                do
+                {
+                    personality = Random32();
+                    shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
+                    rolls++;
+                } while (shinyValue >= SHINY_ODDS && rolls < I_SHINY_CHARM_REROLLS);
+            }
+#endif
+        }
     }
 
     SetBoxMonData(boxMon, MON_DATA_OT_ID, &value);
@@ -1874,9 +1897,14 @@ void CreateMonWithNature(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV,
     CreateMon(mon, species, level, fixedIV, TRUE, personality, OT_ID_PLAYER_ID, 0);
 }
 
-void CreateMonWithGenderNatureLetter(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 gender, u8 nature, u8 unownLetter)
+void CreateMonWithGenderNatureLetter(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 gender, u8 nature, u8 unownLetter, u8 otIdType)
 {
     u32 personality;
+    u8 genderRatio;
+    genderRatio = gSpeciesInfo[species].genderRatio;
+// Infinite loop protection
+    if ((genderRatio == MON_MALE) || (genderRatio == MON_FEMALE) || (genderRatio == MON_GENDERLESS))
+       gender = genderRatio;
 
     if ((u8)(unownLetter - 1) < NUM_UNOWN_FORMS)
     {
@@ -1901,7 +1929,7 @@ void CreateMonWithGenderNatureLetter(struct Pokemon *mon, u16 species, u8 level,
             || gender != GetGenderFromSpeciesAndPersonality(species, personality));
     }
 
-    CreateMon(mon, species, level, fixedIV, TRUE, personality, OT_ID_PLAYER_ID, 0);
+    CreateMon(mon, species, level, fixedIV, TRUE, personality, otIdType, 0);
 }
 
 // Used to create the Old Man's Weedle?
@@ -2156,7 +2184,13 @@ void CalculateMonStats(struct Pokemon *mon)
             currentHP = newMaxHP;
         else if (currentHP != 0) {
             // BUG: currentHP is unintentionally able to become <= 0 after the instruction below.
+        {
             currentHP += newMaxHP - oldMaxHP;
+            if(currentHP <= 0)
+                currentHP = 1;
+            if(currentHP > newMaxHP)
+                currentHP = newMaxHP;
+        }
             #ifdef BUGFIX
             if (currentHP <= 0)
                 currentHP = 1;
@@ -2471,14 +2505,33 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         spAttack *= 2;
     if (defenderHoldEffect == HOLD_EFFECT_DEEP_SEA_SCALE && defender->species == SPECIES_CLAMPERL)
         spDefense *= 2;
-    if (attackerHoldEffect == HOLD_EFFECT_LIGHT_BALL && attacker->species == SPECIES_PIKACHU)
+    if (attackerHoldEffect == HOLD_EFFECT_LIGHT_BALL && attacker->species == SPECIES_PIKACHU) {
         spAttack *= 2;
+        attack *= 2;
+    }
     if (defenderHoldEffect == HOLD_EFFECT_METAL_POWDER && defender->species == SPECIES_DITTO)
         defense *= 2;
     if (attackerHoldEffect == HOLD_EFFECT_THICK_CLUB && (attacker->species == SPECIES_CUBONE || attacker->species == SPECIES_MAROWAK))
         attack *= 2;
+    // Are effects of weather negated with cloud nine or air lock
+    if (WEATHER_HAS_EFFECT2)
+    {
+        // Boost Defense for Ice-types in Hail
+        if ((gBattleWeather & B_WEATHER_HAIL) && (defender->type1 == TYPE_ICE || defender->type2 == TYPE_ICE))
+        {
+            defense = (150 * defense) / 100;
+        }
+
+        // Boost Special Defense for Rock-types in sand
+        if ((gBattleWeather & B_WEATHER_SANDSTORM) && (defender->type1 == TYPE_ROCK || defender->type2 == TYPE_ROCK ||  defender->ability == ABILITY_SAND_VEIL))
+        {
+            spDefense = (150 * spDefense) / 100;
+        }
+    }
     if (defender->ability == ABILITY_THICK_FAT && (type == TYPE_FIRE || type == TYPE_ICE))
         spAttack /= 2;
+    if (defender->ability == ABILITY_MAGMA_ARMOR && type == TYPE_WATER)
+        spAttack /= 8;
     if (attacker->ability == ABILITY_HUSTLE)
         attack = (150 * attack) / 100;
     if (attacker->ability == ABILITY_PLUS && ABILITY_ON_FIELD2(ABILITY_MINUS))
@@ -3642,11 +3695,7 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         break;
     case MON_DATA_IVS:
     {
-#ifdef BUGFIX
         u32 ivs = data[0] | (data[1] << 8) | (data[2] << 16) | (data[3] << 24);
-#else
-        u32 ivs = *data; // Bug: Only the HP IV and the lower 3 bits of the Attack IV are read. The rest become 0.
-#endif
         substruct3->hpIV = ivs & MAX_IV_MASK;
         substruct3->attackIV = (ivs >> 5) & MAX_IV_MASK;
         substruct3->defenseIV = (ivs >> 10) & MAX_IV_MASK;
@@ -3983,12 +4032,15 @@ bool8 ExecuteTableBasedItemEffect(struct Pokemon *mon, u16 item, u8 partyIndex, 
         if (friendship > MAX_FRIENDSHIP)                                                                \
             friendship = MAX_FRIENDSHIP;                                                                \
         SetMonData(mon, MON_DATA_FRIENDSHIP, &friendship);                                              \
+        retVal = FALSE;                                                                                 \
+                                                                                                        \
     }                                                                                                   \
 }
 
 bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 moveIndex, bool8 usedByAI)
 {
     u32 data;
+    s32 dataSigned;
     s32 friendship;
     s32 cmdIndex;
     bool8 retVal = TRUE;
@@ -4001,6 +4053,8 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
     u16 heldItem;
     u8 val;
     u32 evDelta;
+    u32 var_28 = 0;
+
 
     // Get item hold effect
     heldItem = GetMonData(mon, MON_DATA_HELD_ITEM, NULL);
@@ -4220,26 +4274,42 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         evCount = GetMonEVCount(mon);
 
                         // Has EV increase limit already been reached?
-                        if (evCount >= MAX_TOTAL_EVS)
-                            return TRUE;
-                        data = GetMonData(mon, sGetMonDataEVConstants[i], NULL);
-                        if (data < EV_ITEM_RAISE_LIMIT)
+                        dataSigned = GetMonData(mon, sGetMonDataEVConstants[i], NULL);
+                        if(itemEffect[idx] != 201)
                         {
                             // Limit the increase
-                            if (data + itemEffect[idx] > EV_ITEM_RAISE_LIMIT)
-                                evDelta = EV_ITEM_RAISE_LIMIT - (data + itemEffect[idx]) + itemEffect[idx];
-                            else
-                                evDelta = itemEffect[idx];
-                            if (evCount + evDelta > MAX_TOTAL_EVS)
-                                evDelta += MAX_TOTAL_EVS - (evCount + evDelta);
-
-                            // Update EVs and stats
-                            data += evDelta;
-                            SetMonData(mon, sGetMonDataEVConstants[i], &data);
-                            CalculateMonStats(mon);
-                            idx++;
-                            retVal = FALSE;
+                            if (evCount >= 510)
+                                return TRUE;
+                            if (dataSigned < 100)
+                            {
+                                if (dataSigned + itemEffect[idx] > 100)
+                                    evDelta = 100 - (dataSigned + itemEffect[idx]) + itemEffect[idx];
+                                else
+                                    evDelta = itemEffect[idx];
+                                if (evCount + evDelta > 510)
+                                    evDelta += 510 - (evCount + evDelta);
+                                dataSigned += evDelta;
+                            }
                         }
+                        else
+                        {
+                            if (dataSigned == 0)
+                            {
+                                var_28 = 1; //What is this var in FR? Signifies don't raise friendship if failed?
+                                idx++;
+                                break;
+                                //do something with vars and break, EV is 0 already
+                            }
+                            dataSigned -= 10;
+                            if(dataSigned < 0)
+                            {
+                                dataSigned = 0;
+                            }
+                        }
+                        SetMonData(mon, sGetMonDataEVConstants[i], &dataSigned);
+                        CalculateMonStats(mon);
+                        idx++;
+                        retVal = FALSE;
                         break;
                     case 2: // ITEM4_HEAL_HP
                         // If Revive, update number of times revive has been used
@@ -4427,26 +4497,41 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         evCount = GetMonEVCount(mon);
                         
                         // Has EV increase limit already been reached?
-                        if (evCount >= MAX_TOTAL_EVS)
-                            return TRUE;
-                        data = GetMonData(mon, sGetMonDataEVConstants[i + 2], NULL);
-                        if (data < EV_ITEM_RAISE_LIMIT)
+                        dataSigned = GetMonData(mon, sGetMonDataEVConstants[i + 2], NULL);
+                        if(itemEffect[idx] != 201)
                         {
-                            // Limit the increase
-                            if (data + itemEffect[idx] > EV_ITEM_RAISE_LIMIT)
-                                evDelta = EV_ITEM_RAISE_LIMIT - (data + itemEffect[idx]) + itemEffect[idx];
-                            else
-                                evDelta = itemEffect[idx];
-                            if (evCount + evDelta > MAX_TOTAL_EVS)
-                                evDelta += MAX_TOTAL_EVS - (evCount + evDelta);
-                            
-                            // Update EVs and stats
-                            data += evDelta;
-                            SetMonData(mon, sGetMonDataEVConstants[i + 2], &data);
-                            CalculateMonStats(mon);
-                            retVal = FALSE;
-                            idx++;
+                            if (evCount >= 510)
+                                return TRUE;
+                            if (dataSigned < 100)
+                            {
+                                if (dataSigned + itemEffect[idx] > 100)
+                                    evDelta = 100 - (dataSigned + itemEffect[idx]) + itemEffect[idx];
+                                else
+                                    evDelta = itemEffect[idx];
+                                if (evCount + evDelta > 510)
+                                    evDelta += 510 - (evCount + evDelta);
+                                dataSigned += evDelta;
+                            }
                         }
+                        else
+                        {
+                            if (dataSigned == 0)
+                            {
+                                var_28 = 1; //What is this var in FR? Signifies don't raise friendship if failed?
+                                idx++;
+                                break;
+                                //do something with vars and break, EV is 0 already
+                            }
+                            dataSigned -= 10;
+                            if(dataSigned < 0)
+                            {
+                                dataSigned = 0;
+                            }
+                        }
+                        SetMonData(mon, sGetMonDataEVConstants[i + 2], &dataSigned);
+                        CalculateMonStats(mon);
+                        retVal = FALSE;
+                        idx++;
                         break;
                     case 4: // ITEM5_PP_MAX
                         data = (GetMonData(mon, MON_DATA_PP_BONUSES, NULL) & gPPUpGetMask[moveIndex]) >> (moveIndex * 2);
@@ -4471,17 +4556,17 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         // how much friendship the Pokémon already has.
                         // In general, Pokémon with lower friendship receive more,
                         // and Pokémon with higher friendship receive less.
-                        if (GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) < 100)
+                        if (GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) < 100 && (retVal == 0 || var_28 != 0)  && idx == 0)
                             UPDATE_FRIENDSHIP_FROM_ITEM();
                         idx++;
                         break;
                     case 6: // ITEM5_FRIENDSHIP_MID
-                        if (GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) >= 100 && GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) < 200)
+                        if (GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) >= 100 && GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) < 200 && (retVal == 0 || var_28 != 0) && idx == 0)
                             UPDATE_FRIENDSHIP_FROM_ITEM();
                         idx++;
                         break;
                     case 7: // ITEM5_FRIENDSHIP_HIGH
-                        if (GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) >= 200)
+                        if (GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) >= 200 && (retVal == 0 || var_28 != 0) && idx == 0)
                             UPDATE_FRIENDSHIP_FROM_ITEM();
                         idx++;
                         break;
@@ -5005,7 +5090,7 @@ u8 GetNature(struct Pokemon *mon)
     return GetMonData(mon, MON_DATA_PERSONALITY, NULL) % NUM_NATURES;
 }
 
-static u8 GetNatureFromPersonality(u32 personality)
+u8 GetNatureFromPersonality(u32 personality)
 {
     return personality % NUM_NATURES;
 }
@@ -5111,14 +5196,6 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
                 if (gEvolutionTable[species][i].param == heldItem)
                 {
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
-                    
-                    // Prevent cross-generational evolutions like Scizor and Steelix until the National Pokedex is obtained
-                    if (IsNationalPokedexEnabled() || targetSpecies <= KANTO_SPECIES_END)
-                    {
-                        heldItem = ITEM_NONE;
-                        SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
-                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
-                    }
                 }
                 break;
             }
@@ -5848,9 +5925,12 @@ static u16 GetBattleBGM(void)
         switch (gTrainers[gTrainerBattleOpponent_A].trainerClass)
         {
         case TRAINER_CLASS_CHAMPION:
+        case TRAINER_CLASS_PKMN_PROF:
             return MUS_VS_CHAMPION;
         case TRAINER_CLASS_LEADER:
         case TRAINER_CLASS_ELITE_FOUR:
+        case TRAINER_CLASS_JOHTO_LEADER:
+        case TRAINER_CLASS_SEVII_CHAMPION:
             return MUS_VS_GYM_LEADER;
         case TRAINER_CLASS_BOSS:
         case TRAINER_CLASS_TEAM_ROCKET:
@@ -6022,6 +6102,7 @@ void SetWildMonHeldItem(void)
     if (!(gBattleTypeFlags & (BATTLE_TYPE_POKEDUDE | BATTLE_TYPE_LEGENDARY | BATTLE_TYPE_TRAINER)))
     {
         u16 rnd = Random() % 100;
+<<<<<<< Updated upstream
         u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL);
         u16 var1 = 45;
         u16 var2 = 95;
@@ -6034,16 +6115,54 @@ void SetWildMonHeldItem(void)
             var2 = 80;
         }
         if (gSpeciesInfo[species].itemCommon == gSpeciesInfo[species].itemRare && !isHighLeveledPikachu)
+=======
+        u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, 0);
+        u16 chanceNoItem = 45;
+        u16 chanceNotRare = 95;
+        if (!GetMonData(&gPlayerParty[0], MON_DATA_IS_EGG, 0)
+            && GetMonAbility(&gPlayerParty[0]) == ABILITY_COMPOUND_EYES)
         {
-            // Both held items are the same, 100% chance to hold item   
+            chanceNoItem = 20;
+            chanceNotRare = 80;
+        }
+        if (gSpeciesInfo[species].itemCommon == gSpeciesInfo[species].itemRare)
+>>>>>>> Stashed changes
+        {
             SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemCommon);
             return;
         }
+<<<<<<< Updated upstream
 
         if (rnd < var1)
             return;
         if (rnd < var2)
         {
+=======
+        
+        // In inactive Altering Cave, use normal items
+        if (rnd < chanceNoItem)
+            return;
+        if (rnd < chanceNotRare)
+            SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemCommon);
+        else
+            SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemRare);
+        
+        if (gSpeciesInfo[species].itemCommon == gSpeciesInfo[species].itemRare && gSpeciesInfo[species].itemCommon != ITEM_NONE)
+        {
+            // Both held items are the same, 100% chance to hold item
+            SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemCommon);
+        }
+        else
+        {
+            if (rnd < chanceNoItem)
+                return;
+            if (rnd < chanceNotRare)
+                SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemCommon);
+            else
+                SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemRare);
+        }
+
+>>>>>>> Stashed changes
     }
 }
 
@@ -6446,3 +6565,53 @@ u8 *MonSpritesGfxManager_GetSpritePtr(u8 spriteNum)
         return sMonSpritesGfxManager->spritePointers[spriteNum];
     }
 }
+
+u16 GetHpIV(void)
+{
+	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_HP_IV, NULL);
+}
+u16 GetAtkIV(void)
+{
+	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_ATK_IV, NULL);
+}
+u16 GetDefIV(void)
+{
+	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_DEF_IV, NULL);
+}
+u16 GetSpAtkIV(void)
+{
+	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPATK_IV, NULL);
+}
+u16 GetSpDefIV(void)
+{
+	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPDEF_IV, NULL);
+}
+u16 GetSpeedIV(void)
+{
+	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPEED_IV, NULL);
+}
+u16 GetHpEV(void)
+{
+	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_HP_EV, NULL);
+}
+u16 GetAtkEV(void)
+{
+	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_ATK_EV, NULL);
+}
+u16 GetDefEV(void)
+{
+	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_DEF_EV, NULL);
+}
+u16 GetSpAtkEV(void)
+{
+	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPATK_EV, NULL);
+}
+u16 GetSpDefEV(void)
+{
+	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPDEF_EV, NULL);
+}
+u16 GetSpeedEV(void)
+{
+	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPEED_EV, NULL);
+}
+
