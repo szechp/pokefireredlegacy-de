@@ -267,7 +267,7 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_ChooseMonToTutor::
 # 134 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
 	msgbox CinnabarIsland_PokemonLab_Lounge_Text_TutorWhichMon
 # 135 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
-	special SelectMoveTutorMon
+	special ChooseMonForMoveRelearner
 # 136 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
 	waitstate
 # 137 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
@@ -289,7 +289,7 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_ChooseMoveToTeach::
 # 145 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
 	msgbox CinnabarIsland_PokemonLab_Lounge_Text_TeachWhichMove
 # 146 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
-	special DisplayMoveTutorMenu
+	special TeachMoveRelearnerMove
 # 147 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
 	waitstate
 # 148 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"

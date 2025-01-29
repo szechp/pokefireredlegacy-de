@@ -132,7 +132,7 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_AskTutorMon::
 
 CinnabarIsland_PokemonLab_Lounge_EventScript_ChooseMonToTutor::
 	msgbox CinnabarIsland_PokemonLab_Lounge_Text_TutorWhichMon
-	special SelectMoveTutorMon
+	special ChooseMonForMoveRelearner
 	waitstate
 	goto_if_ge VAR_0x8004, PARTY_SIZE, CinnabarIsland_PokemonLab_Lounge_EventScript_EndTutorMove
 	special IsSelectedMonEgg
@@ -143,7 +143,7 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_ChooseMonToTutor::
 
 CinnabarIsland_PokemonLab_Lounge_EventScript_ChooseMoveToTeach::
 	msgbox CinnabarIsland_PokemonLab_Lounge_Text_TeachWhichMove
-	special DisplayMoveTutorMenu
+	special TeachMoveRelearnerMove
 	waitstate
 	goto_if_eq VAR_0x8004, 0, CinnabarIsland_PokemonLab_Lounge_EventScript_ChooseMonToTutor
 	goto_if_set HAS_BOTH_MUSHROOMS, CinnabarIsland_PokemonLab_Lounge_EventScript_ChooseMushroom
