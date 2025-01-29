@@ -6102,20 +6102,6 @@ void SetWildMonHeldItem(void)
     if (!(gBattleTypeFlags & (BATTLE_TYPE_POKEDUDE | BATTLE_TYPE_LEGENDARY | BATTLE_TYPE_TRAINER)))
     {
         u16 rnd = Random() % 100;
-<<<<<<< Updated upstream
-        u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL);
-        u16 var1 = 45;
-        u16 var2 = 95;
-        bool8 isHighLeveledPikachu = FALSE;
-
-        if (!GetMonData(&gPlayerParty[0], MON_DATA_IS_EGG, 0)
-            && GetMonAbility(&gPlayerParty[0]) == ABILITY_COMPOUND_EYES)
-        {
-            var1 = 20;
-            var2 = 80;
-        }
-        if (gSpeciesInfo[species].itemCommon == gSpeciesInfo[species].itemRare && !isHighLeveledPikachu)
-=======
         u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, 0);
         u16 chanceNoItem = 45;
         u16 chanceNotRare = 95;
@@ -6126,18 +6112,10 @@ void SetWildMonHeldItem(void)
             chanceNotRare = 80;
         }
         if (gSpeciesInfo[species].itemCommon == gSpeciesInfo[species].itemRare)
->>>>>>> Stashed changes
         {
             SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemCommon);
             return;
         }
-<<<<<<< Updated upstream
-
-        if (rnd < var1)
-            return;
-        if (rnd < var2)
-        {
-=======
         
         // In inactive Altering Cave, use normal items
         if (rnd < chanceNoItem)
@@ -6162,7 +6140,6 @@ void SetWildMonHeldItem(void)
                 SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemRare);
         }
 
->>>>>>> Stashed changes
     }
 }
 
