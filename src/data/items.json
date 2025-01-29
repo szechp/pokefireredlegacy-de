@@ -1347,11 +1347,7 @@
     {
       "english": "MAX REPEL",
       "itemId": "ITEM_MAX_REPEL",
-<<<<<<< Updated upstream
-      "price": 200,
-=======
       "price": 150,
->>>>>>> Stashed changes
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 250,
       "description_english": "Prevents weak wild POKéMON from\\nappearing for 250 steps.",

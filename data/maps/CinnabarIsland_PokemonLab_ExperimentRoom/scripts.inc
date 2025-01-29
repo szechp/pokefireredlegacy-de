@@ -400,13 +400,9 @@ CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_GiveOmanyte::
 	bufferspeciesname STR_VAR_1, SPECIES_OMANYTE
 # 201 "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.pory"
 	msgbox CinnabarIsland_PokemonLab_ExperimentRoom_Text_FossilMonBackToLife
-<<<<<<< Updated upstream
-	givemon SPECIES_OMANYTE, 40
-=======
 # 202 "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.pory"
 	givemon SPECIES_OMANYTE, 40
 # 203 "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.pory"
->>>>>>> Stashed changes
 	goto_if_eq VAR_RESULT, 2, EventScript_NoMoreRoomForPokemon
 # 204 "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.pory"
 	setflag FLAG_REVIVED_HELIX
@@ -426,13 +422,9 @@ CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_GiveKabuto::
 	bufferspeciesname STR_VAR_1, SPECIES_KABUTO
 # 212 "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.pory"
 	msgbox CinnabarIsland_PokemonLab_ExperimentRoom_Text_FossilMonBackToLife
-<<<<<<< Updated upstream
-	givemon SPECIES_KABUTO, 40
-=======
 # 213 "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.pory"
 	givemon SPECIES_KABUTO, 40
 # 214 "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.pory"
->>>>>>> Stashed changes
 	goto_if_eq VAR_RESULT, 2, EventScript_NoMoreRoomForPokemon
 # 215 "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.pory"
 	setflag FLAG_REVIVED_DOME
@@ -452,13 +444,9 @@ CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_GiveAerodactyl::
 	bufferspeciesname STR_VAR_1, SPECIES_AERODACTYL
 # 223 "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.pory"
 	msgbox CinnabarIsland_PokemonLab_ExperimentRoom_Text_FossilMonBackToLife
-<<<<<<< Updated upstream
-	givemon SPECIES_AERODACTYL, 40
-=======
 # 224 "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.pory"
 	givemon SPECIES_AERODACTYL, 40
 # 225 "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.pory"
->>>>>>> Stashed changes
 	goto_if_eq VAR_RESULT, 2, EventScript_NoMoreRoomForPokemon
 # 226 "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.pory"
 	setflag FLAG_REVIVED_AMBER

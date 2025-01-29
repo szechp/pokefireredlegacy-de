@@ -246,13 +246,9 @@ SilphCo_7F_EventScript_LaprasGuy::
 	msgbox SilphCo_7F_Text_HaveMonForSavingUs
 # 124 "data/maps/SilphCo_7F/scripts.pory"
 	setvar VAR_TEMP_1, SPECIES_LAPRAS
-<<<<<<< Updated upstream
-	givemon SPECIES_LAPRAS, 35
-=======
 # 125 "data/maps/SilphCo_7F/scripts.pory"
 	givemon SPECIES_LAPRAS, 35
 # 126 "data/maps/SilphCo_7F/scripts.pory"
->>>>>>> Stashed changes
 	goto_if_eq VAR_RESULT, 0, SilphCo_7F_EventScript_ReceiveLaprasParty
 # 127 "data/maps/SilphCo_7F/scripts.pory"
 	goto_if_eq VAR_RESULT, 1, SilphCo_7F_EventScript_ReceiveLaprasPC

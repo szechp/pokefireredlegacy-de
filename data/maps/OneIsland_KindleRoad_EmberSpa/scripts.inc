@@ -64,13 +64,9 @@ OneIsland_KindleRoad_EmberSpa_EventScript_RockSmashMan::
 	goto_if_set FLAG_GOT_HM06, OneIsland_KindleRoad_EmberSpa_EventScript_AlreadyGotHM06
 # 33 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	msgbox OneIsland_KindleRoad_EmberSpa_Text_UsedThisToMakeEmberSpa
-<<<<<<< Updated upstream
-	giveitem ITEM_TM35
-=======
 # 34 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	giveitem ITEM_FOCUS_BAND
 # 35 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
->>>>>>> Stashed changes
 	setflag FLAG_GOT_HM06
 # 36 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	msgbox OneIsland_KindleRoad_EmberSpa_Text_ExplainHM06

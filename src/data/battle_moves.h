@@ -68,11 +68,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_MEGA_PUNCH] =
     {
         .effect = EFFECT_HIT,
-<<<<<<< Updated upstream
-        .power = 90,
-=======
         .power = 85,
->>>>>>> Stashed changes
         .type = TYPE_NORMAL,
         .accuracy = 95,
         .pp = 20,
@@ -1047,11 +1043,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_PETAL_DANCE] =
     {
         .effect = EFFECT_RAMPAGE,
-<<<<<<< Updated upstream
-        .power = 100,
-=======
         .power = 120,
->>>>>>> Stashed changes
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 20,
@@ -1869,19 +1861,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_SKY_ATTACK] =
     {
-<<<<<<< Updated upstream
-        .effect = EFFECT_HIT,
-        .power = 120,
-        .type = TYPE_FLYING,
-        .accuracy = 85,
-        .pp = 5,
-=======
         .effect = EFFECT_SKY_ATTACK,
         .power = 120,
         .type = TYPE_FLYING,
         .accuracy = 85,
         .pp = 10,
->>>>>>> Stashed changes
         .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -2619,11 +2603,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_OUTRAGE] =
     {
         .effect = EFFECT_RAMPAGE,
-<<<<<<< Updated upstream
-        .power = 110,
-=======
         .power = 120,
->>>>>>> Stashed changes
         .type = TYPE_DRAGON,
         .accuracy = 100,
         .pp = 15,
@@ -4105,11 +4085,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_AIR_CUTTER] =
     {
         .effect = EFFECT_HIGH_CRITICAL,
-<<<<<<< Updated upstream
-        .power = 65,
-=======
         .power = 70,
->>>>>>> Stashed changes
         .type = TYPE_FLYING,
         .accuracy = 100,
         .pp = 25,
@@ -4550,13 +4526,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_LEAF_BLADE] =
     {
-<<<<<<< Updated upstream
-        .effect = EFFECT_HIGH_CRITICAL,
-        .power = 80,
-=======
         .effect = EFFECT_LEAF_BLADE,
         .power = 85,
->>>>>>> Stashed changes
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 15,

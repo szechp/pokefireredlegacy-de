@@ -1452,14 +1452,9 @@ PewterCity_EventScript_AideGiveRunningShoes::
 	removeobject LOCALID_AIDE
 # 727 "data/maps/PewterCity/scripts.pory"
 	setflag FLAG_SYS_B_DASH
-<<<<<<< Updated upstream
-	checkitemspace ITEM_EXP_SHARE
-	giveitem Item_EXP_SHARE
-=======
 # 728 "data/maps/PewterCity/scripts.pory"
 	giveitem ITEM_EXP_SHARE
 # 729 "data/maps/PewterCity/scripts.pory"
->>>>>>> Stashed changes
 	setvar VAR_MAP_SCENE_PEWTER_CITY, 2
 # 730 "data/maps/PewterCity/scripts.pory"
 	return

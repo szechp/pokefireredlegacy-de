@@ -82,13 +82,9 @@ PalletTown_ProfessorOaksLab_EventScript_ReadyOakForStarterScene::
 	setobjectmovementtype LOCALID_PROF_OAK, MOVEMENT_TYPE_FACE_UP
 # 42 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
 	savebgm MUS_OAK
-<<<<<<< Updated upstream
-	setflag FLAG_SYS_B_DASH
-=======
 # 43 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
 	setflag FLAG_SYS_B_DASH
 # 44 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
->>>>>>> Stashed changes
 	return
 # 45 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
 

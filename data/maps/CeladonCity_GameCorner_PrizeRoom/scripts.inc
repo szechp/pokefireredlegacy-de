@@ -56,16 +56,11 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeMon::
 	case 0, CeladonCity_GameCorner_PrizeRoom_EventScript_Abra
 # 29 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	case 1, CeladonCity_GameCorner_PrizeRoom_EventScript_Clefairy
-<<<<<<< Updated upstream
-	case 2, CeladonCity_GameCorner_PrizeRoom_EventScript_Kangaskhan
-	case 3, CeladonCity_GameCorner_PrizeRoom_EventScript_Dratini
-=======
 # 30 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	case 2, CeladonCity_GameCorner_PrizeRoom_EventScript_Kangaskhan
 # 31 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	case 3, CeladonCity_GameCorner_PrizeRoom_EventScript_Dratini
 # 32 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	case 4, CeladonCity_GameCorner_PrizeRoom_EventScript_Porygon
 # 33 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	case 5, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
@@ -99,13 +94,9 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_Abra::
 	.ifdef LEAFGREEN
 # 48 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_1, SPECIES_ABRA
-<<<<<<< Updated upstream
-	setvar VAR_TEMP_2, 180
-=======
 # 49 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_2, 180
 # 50 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	.endif
 # 51 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	.endif
@@ -129,13 +120,9 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_Clefairy::
 	.ifdef LEAFGREEN
 # 61 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_1, SPECIES_CLEFAIRY
-<<<<<<< Updated upstream
-	setvar VAR_TEMP_2, 500
-=======
 # 62 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_2, 500
 # 63 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	.endif
 # 64 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	.endif
@@ -145,12 +132,6 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_Clefairy::
 	end
 # 67 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 
-<<<<<<< Updated upstream
-CeladonCity_GameCorner_PrizeRoom_EventScript_Kangaskhan::
-	.ifdef FIRERED
-	setvar VAR_TEMP_1, SPECIES_KANGASKHAN
-	setvar VAR_TEMP_2, 1500
-=======
 # 68 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 CeladonCity_GameCorner_PrizeRoom_EventScript_Kangaskhan::
 # 69 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
@@ -160,20 +141,14 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_Kangaskhan::
 # 71 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_2, 2000
 # 72 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	.else
 # 73 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	.ifdef LEAFGREEN
-<<<<<<< Updated upstream
-	setvar VAR_TEMP_1, SPECIES_KANGASKHAN
-	setvar VAR_TEMP_2, 1500
-=======
 # 74 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_1, SPECIES_KANGASKHAN
 # 75 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_2, 2000
 # 76 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	.endif
 # 77 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	.endif
@@ -183,16 +158,6 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_Kangaskhan::
 	end
 # 80 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 
-<<<<<<< Updated upstream
-CeladonCity_GameCorner_PrizeRoom_EventScript_Dratini::
-	.ifdef FIRERED
-	setvar VAR_TEMP_1, SPECIES_DRATINI
-	setvar VAR_TEMP_2, 3000
-	.else
-	.ifdef LEAFGREEN
-	setvar VAR_TEMP_1, SPECIES_DRATINI
-	setvar VAR_TEMP_2, 3000
-=======
 # 81 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 CeladonCity_GameCorner_PrizeRoom_EventScript_Dratini::
 # 82 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
@@ -210,7 +175,6 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_Dratini::
 # 88 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_2, 3000
 # 89 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	.endif
 # 90 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	.endif
@@ -226,197 +190,6 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_Porygon::
 	.ifdef FIRERED
 # 96 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_1, SPECIES_PORYGON
-<<<<<<< Updated upstream
-	setvar VAR_TEMP_2, 4500
-	.else
-	.ifdef LEAFGREEN
-	setvar VAR_TEMP_1, SPECIES_PORYGON
-	setvar VAR_TEMP_2, 4500
-	.endif
-	.endif
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeMon
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeMon::
-	bufferspeciesname STR_VAR_1, VAR_TEMP_1
-	msgbox CeladonCity_GameCorner_PrizeRoom_Text_YouWantPrize, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	checkcoins VAR_RESULT
-	goto_if_lt VAR_RESULT, VAR_TEMP_2, CeladonCity_GameCorner_PrizeRoom_EventScript_NotEnoughCoins
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-	switch VAR_TEMP_1
-	case SPECIES_ABRA,     CeladonCity_GameCorner_PrizeRoom_EventScript_GiveAbra
-	case SPECIES_CLEFAIRY, CeladonCity_GameCorner_PrizeRoom_EventScript_GiveClefairy
-	case SPECIES_DRATINI,  CeladonCity_GameCorner_PrizeRoom_EventScript_GiveDratini
-	case SPECIES_KANGASKHAN,  CeladonCity_GameCorner_PrizeRoom_EventScript_GiveKangaskhan
-	case SPECIES_PORYGON,  CeladonCity_GameCorner_PrizeRoom_EventScript_GivePorygon
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_GiveAbra::
-	.ifdef FIRERED
-	givemon VAR_TEMP_1, 9
-	.else
-	.ifdef LEAFGREEN
-	givemon VAR_TEMP_1, 7
-	.endif
-	.endif
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_CheckReceivedMon
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_GiveClefairy::
-	.ifdef FIRERED
-	givemon VAR_TEMP_1, 8
-	.else
-	.ifdef LEAFGREEN
-	givemon VAR_TEMP_1, 12
-	.endif
-	.endif
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_CheckReceivedMon
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_GiveDratini::
-	.ifdef FIRERED
-	givemon VAR_TEMP_1, 18
-	.else
-	.ifdef LEAFGREEN
-	givemon VAR_TEMP_1, 24
-	.endif
-	.endif
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_CheckReceivedMon
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_GiveKangaskhan::
-	givemon VAR_TEMP_1, 25
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_CheckReceivedMon
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_GivePorygon::
-	.ifdef FIRERED
-	givemon VAR_TEMP_1, 26
-	.else
-	.ifdef LEAFGREEN
-	givemon VAR_TEMP_1, 18
-	.endif
-	.endif
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_CheckReceivedMon
-	end
-
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_CheckReceivedMon::
-	goto_if_eq VAR_RESULT, 0, CeladonCity_GameCorner_PrizeRoom_EventScript_ReceivedMonParty
-	goto_if_eq VAR_RESULT, 1, CeladonCity_GameCorner_PrizeRoom_EventScript_ReceivedMonPC
-	goto_if_eq VAR_RESULT, 2, CeladonCity_GameCorner_PrizeRoom_EventScript_PartyFull
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_PartyFull::
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-	msgbox Text_NoMoreRoomForPokemon
-	hidecoinsbox 0, 0
-	release
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_NicknamePartyMon::
-	getpartysize
-	subvar VAR_RESULT, 1
-	copyvar VAR_0x8004, VAR_RESULT
-	call EventScript_ChangePokemonNickname
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_NeedCoinCase::
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-	msgbox CeladonCity_GameCorner_PrizeRoom_Text_CoinCaseRequired
-	release
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_NotEnoughCoins::
-	msgbox CeladonCity_GameCorner_PrizeRoom_Text_NeedMoreCoins
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_ReceivedMonParty::
-	removecoins VAR_TEMP_2
-	updatecoinsbox 0, 5
-	bufferspeciesname STR_VAR_1, VAR_TEMP_1
-	playfanfare MUS_LEVEL_UP
-	message Text_PlayerObtainedTheMon
-	waitmessage
-	waitfanfare
-	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, CeladonCity_GameCorner_PrizeRoom_EventScript_NicknamePartyMon
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_ReceivedMonPC::
-	removecoins VAR_TEMP_2
-	updatecoinsbox 0, 5
-	bufferspeciesname STR_VAR_1, VAR_TEMP_1
-	playfanfare MUS_LEVEL_UP
-	message Text_PlayerObtainedTheMon
-	waitmessage
-	waitfanfare
-	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_PrizeRoom_EventScript_TransferredToPC
-	call EventScript_NameReceivedBoxMon
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_TransferredToPC
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_TransferredToPC::
-	call EventScript_TransferredToPC
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkTMs::
-	lock
-	faceplayer
-	goto_if_unset FLAG_GOT_COIN_CASE, CeladonCity_GameCorner_PrizeRoom_EventScript_NeedCoinCase
-	goto_if_questlog EventScript_ReleaseEnd
-	showcoinsbox 0, 0
-	msgbox CeladonCity_GameCorner_PrizeRoom_Text_WeExchangeCoinsForPrizes
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeTM
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeTM::
-	message CeladonCity_GameCorner_PrizeRoom_Text_WhichPrize
-	waitmessage
-	multichoice 11, 0, MULTICHOICE_GAME_CORNER_TMPRIZES, FALSE
-	switch VAR_RESULT
-	case 0, CeladonCity_GameCorner_PrizeRoom_EventScript_TM13
-	case 1, CeladonCity_GameCorner_PrizeRoom_EventScript_TM23
-	case 2, CeladonCity_GameCorner_PrizeRoom_EventScript_TM24
-	case 3, CeladonCity_GameCorner_PrizeRoom_EventScript_TM30
-	case 4, CeladonCity_GameCorner_PrizeRoom_EventScript_TM35
-	case 5, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	case 127, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_TM13::
-	setvar VAR_TEMP_1, ITEM_TM13
-	setvar VAR_TEMP_2, 2500
-	buffermovename STR_VAR_2, MOVE_ICE_BEAM
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_TM23::
-	setvar VAR_TEMP_1, ITEM_TM23
-	setvar VAR_TEMP_2, 2000
-	buffermovename STR_VAR_2, MOVE_IRON_TAIL
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_TM24::
-	setvar VAR_TEMP_1, ITEM_TM24
-	setvar VAR_TEMP_2, 2500
-	buffermovename STR_VAR_2, MOVE_THUNDERBOLT
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_TM30::
-	setvar VAR_TEMP_1, ITEM_TM30
-	setvar VAR_TEMP_2, 3000
-	buffermovename STR_VAR_2, MOVE_SHADOW_BALL
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM
-=======
 # 97 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_2, 4500
 # 98 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
@@ -434,33 +207,14 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TM30::
 # 104 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeMon
 # 105 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	end
 # 106 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 
-<<<<<<< Updated upstream
-CeladonCity_GameCorner_PrizeRoom_EventScript_TM35::
-	setvar VAR_TEMP_1, ITEM_TM35
-	setvar VAR_TEMP_2, 2500
-	buffermovename STR_VAR_2, MOVE_FLAMETHROWER
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM::
-	msgbox CeladonCity_GameCorner_PrizeRoom_Text_YouWantTM, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	goto CeladonCity_GameCorner_PrizeRoom_EventScript_TryGivePrize
-	end
-
-CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem::
-	bufferitemname STR_VAR_1, VAR_TEMP_1
-=======
 # 107 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeMon::
 # 108 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	bufferspeciesname STR_VAR_1, VAR_TEMP_1
 # 109 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	msgbox CeladonCity_GameCorner_PrizeRoom_Text_YouWantPrize, MSGBOX_YESNO
 # 110 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
@@ -948,13 +702,9 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeItem::
 CeladonCity_GameCorner_PrizeRoom_EventScript_SmokeBall::
 # 352 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_1, ITEM_SMOKE_BALL
-<<<<<<< Updated upstream
-	setvar VAR_TEMP_2, 250
-=======
 # 353 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_2, 200
 # 354 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 # 355 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	end
@@ -964,13 +714,9 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_SmokeBall::
 CeladonCity_GameCorner_PrizeRoom_EventScript_MiracleSeed::
 # 358 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_1, ITEM_MIRACLE_SEED
-<<<<<<< Updated upstream
-	setvar VAR_TEMP_2, 500
-=======
 # 359 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_2, 500
 # 360 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 # 361 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	end
@@ -980,13 +726,9 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_MiracleSeed::
 CeladonCity_GameCorner_PrizeRoom_EventScript_Charcoal::
 # 364 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_1, ITEM_CHARCOAL
-<<<<<<< Updated upstream
-	setvar VAR_TEMP_2, 500
-=======
 # 365 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_2, 500
 # 366 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 # 367 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	end
@@ -996,13 +738,9 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_Charcoal::
 CeladonCity_GameCorner_PrizeRoom_EventScript_MysticWater::
 # 370 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_1, ITEM_MYSTIC_WATER
-<<<<<<< Updated upstream
-	setvar VAR_TEMP_2, 500
-=======
 # 371 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_2, 500
 # 372 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 # 373 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	end
@@ -1010,16 +748,11 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_MysticWater::
 
 # 375 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 CeladonCity_GameCorner_PrizeRoom_EventScript_YellowFlute::
-<<<<<<< Updated upstream
-	setvar VAR_TEMP_1, ITEM_YELLOW_FLUTE
-	setvar VAR_TEMP_2, 1000
-=======
 # 376 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_1, ITEM_UP_GRADE
 # 377 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_2, 1500
 # 378 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
->>>>>>> Stashed changes
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 # 379 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	end

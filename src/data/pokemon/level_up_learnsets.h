@@ -29,10 +29,7 @@ static const u16 sIvysaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_SLEEP_POWDER),
     LEVEL_UP_MOVE(20, MOVE_RAZOR_LEAF),
     LEVEL_UP_MOVE(25, MOVE_SWEET_SCENT),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(28, MOVE_SLUDGE),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(32, MOVE_GROWTH),
     LEVEL_UP_MOVE(39, MOVE_SYNTHESIS),
     LEVEL_UP_MOVE(46, MOVE_SOLAR_BEAM),
@@ -50,15 +47,6 @@ static const u16 sVenusaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(10, MOVE_ACID),
     LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE(15, MOVE_SLEEP_POWDER),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(20, MOVE_RAZOR_LEAF),
-    LEVEL_UP_MOVE(25, MOVE_SWEET_SCENT),
-    LEVEL_UP_MOVE(32, MOVE_GROWTH),
-    LEVEL_UP_MOVE(39, MOVE_SYNTHESIS),
-    LEVEL_UP_MOVE(45, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(46, MOVE_SOLAR_BEAM),
-    LEVEL_UP_MOVE(55, MOVE_FRENZY_PLANT),
-=======
     LEVEL_UP_MOVE(20, MOVE_RAZOR_LEAF),    
     LEVEL_UP_MOVE(25, MOVE_SWEET_SCENT),
     LEVEL_UP_MOVE(28, MOVE_SLUDGE),
@@ -68,7 +56,6 @@ static const u16 sVenusaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE(45, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(46, MOVE_SOLAR_BEAM),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -76,10 +63,7 @@ static const u16 sCharmanderLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 7, MOVE_EMBER),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(10, MOVE_METAL_CLAW),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(13, MOVE_SMOKESCREEN),
     LEVEL_UP_MOVE(19, MOVE_RAGE),
     LEVEL_UP_MOVE(22, MOVE_FIRE_PUNCH),
@@ -96,15 +80,10 @@ static const u16 sCharmeleonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 7, MOVE_EMBER),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(13, MOVE_SMOKESCREEN),
-    LEVEL_UP_MOVE(19, MOVE_RAGE),
-=======
     LEVEL_UP_MOVE(10, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE(13, MOVE_SMOKESCREEN),
     LEVEL_UP_MOVE(19, MOVE_RAGE),
     LEVEL_UP_MOVE(22, MOVE_FIRE_PUNCH),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(25, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(31, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(37, MOVE_SLASH),
@@ -114,15 +93,6 @@ static const u16 sCharmeleonLevelUpLearnset[] = {
 };
 
 static const u16 sCharizardLevelUpLearnset[] = {
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
-    LEVEL_UP_MOVE( 1, MOVE_EMBER),
-    LEVEL_UP_MOVE( 1, MOVE_SMOKESCREEN),
-    LEVEL_UP_MOVE( 7, MOVE_EMBER),
-    LEVEL_UP_MOVE(13, MOVE_SMOKESCREEN),
-    LEVEL_UP_MOVE(19, MOVE_RAGE),
-=======
     LEVEL_UP_MOVE( 1, MOVE_AIR_CUTTER),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
@@ -134,22 +104,14 @@ static const u16 sCharizardLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_SMOKESCREEN),
     LEVEL_UP_MOVE(19, MOVE_RAGE),
     LEVEL_UP_MOVE(22, MOVE_FIRE_PUNCH),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(25, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(31, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(36, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE(37, MOVE_SLASH),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(43, MOVE_DRAGON_RAGE),
-    LEVEL_UP_MOVE(45, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(49, MOVE_FIRE_SPIN),
-    LEVEL_UP_MOVE(55, MOVE_BLAST_BURN),
-=======
     LEVEL_UP_MOVE(43, MOVE_DRAGON_CLAW),
     LEVEL_UP_MOVE(45, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(49, MOVE_FIRE_SPIN),
     LEVEL_UP_MOVE(52, MOVE_OUTRAGE),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -161,28 +123,6 @@ static const u16 sSquirtleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(14, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(18, MOVE_BITE),
     LEVEL_UP_MOVE(21, MOVE_BUBBLE_BEAM),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(23, MOVE_RAPID_SPIN),
-    LEVEL_UP_MOVE(28, MOVE_PROTECT),
-    LEVEL_UP_MOVE(33, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE(40, MOVE_SKULL_BASH),
-    LEVEL_UP_MOVE(47, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(55, MOVE_HYDRO_CANNON),
-    LEVEL_UP_END
-};
-
-static const u16 sWartortleLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
-    LEVEL_UP_MOVE( 4, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE( 7, MOVE_BUBBLE),
-    LEVEL_UP_MOVE(10, MOVE_WITHDRAW),
-    LEVEL_UP_MOVE(13, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE(18, MOVE_BITE),
-    LEVEL_UP_MOVE(21, MOVE_BUBBLE_BEAM),
-=======
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(23, MOVE_RAPID_SPIN),
     LEVEL_UP_MOVE(28, MOVE_PROTECT),
     LEVEL_UP_MOVE(33, MOVE_RAIN_DANCE),
@@ -191,10 +131,6 @@ static const u16 sWartortleLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-<<<<<<< Updated upstream
-static const u16 sBlastoiseLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-=======
 static const u16 sWartortleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
@@ -219,7 +155,6 @@ static const u16 sBlastoiseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_MIRROR_COAT),
     LEVEL_UP_MOVE( 1, MOVE_COUNTER),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
     LEVEL_UP_MOVE( 1, MOVE_WITHDRAW),
@@ -227,25 +162,16 @@ static const u16 sBlastoiseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_BUBBLE),
     LEVEL_UP_MOVE(10, MOVE_WITHDRAW),
     LEVEL_UP_MOVE(13, MOVE_WATER_GUN),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(16, MOVE_HEADBUTT),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(18, MOVE_BITE),
     LEVEL_UP_MOVE(21, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(23, MOVE_RAPID_SPIN),
     LEVEL_UP_MOVE(28, MOVE_PROTECT),
     LEVEL_UP_MOVE(33, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(40, MOVE_SKULL_BASH),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(45, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(47, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(50, MOVE_ICE_BEAM),
-=======
     LEVEL_UP_MOVE(42, MOVE_ICE_BEAM),
     LEVEL_UP_MOVE(45, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(47, MOVE_HYDRO_PUMP),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -272,18 +198,10 @@ static const u16 sButterfreeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(18, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE(21, MOVE_WHIRLWIND),
     LEVEL_UP_MOVE(25, MOVE_SILVER_WIND),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(28, MOVE_GUST),
-    LEVEL_UP_MOVE(31, MOVE_PSYBEAM),
-    LEVEL_UP_MOVE(37, MOVE_SIGNAL_BEAM),
-    LEVEL_UP_MOVE(40, MOVE_SAFEGUARD),
-    LEVEL_UP_MOVE(47, MOVE_PSYCHIC),
-=======
     LEVEL_UP_MOVE(28, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(37, MOVE_SIGNAL_BEAM),
     LEVEL_UP_MOVE(41, MOVE_PSYCHIC),
     LEVEL_UP_MOVE(43, MOVE_SAFEGUARD),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -307,14 +225,9 @@ static const u16 sBeedrillLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_RAGE),
     LEVEL_UP_MOVE(20, MOVE_TWINEEDLE),
     LEVEL_UP_MOVE(25, MOVE_SLUDGE),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(30, MOVE_PURSUIT),
-    LEVEL_UP_MOVE(35, MOVE_SWORDS_DANCE),
-=======
     LEVEL_UP_MOVE(30, MOVE_PURSUIT),   
     LEVEL_UP_MOVE(35, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(38, MOVE_SLUDGE_BOMB),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(40, MOVE_AGILITY),
     LEVEL_UP_MOVE(45, MOVE_ENDEAVOR),
     LEVEL_UP_END
@@ -324,15 +237,9 @@ static const u16 sPidgeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 5, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 9, MOVE_GUST),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(13, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE(20, MOVE_WHIRLWIND),
-    LEVEL_UP_MOVE(22, MOVE_WING_ATTACK),
-=======
     LEVEL_UP_MOVE(12, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(15, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE(20, MOVE_WHIRLWIND),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(27, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE(34, MOVE_FEATHER_DANCE),
     LEVEL_UP_MOVE(43, MOVE_AGILITY),
@@ -346,15 +253,9 @@ static const u16 sPidgeottoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 5, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 9, MOVE_GUST),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(13, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE(20, MOVE_WHIRLWIND),
-    LEVEL_UP_MOVE(22, MOVE_WING_ATTACK),
-=======
     LEVEL_UP_MOVE(12, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(15, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE(20, MOVE_WHIRLWIND),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(27, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE(34, MOVE_FEATHER_DANCE),
     LEVEL_UP_MOVE(43, MOVE_AGILITY),
@@ -375,14 +276,9 @@ static const u16 sPidgeotLevelUpLearnset[] = {
     LEVEL_UP_MOVE(27, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE(34, MOVE_FEATHER_DANCE),
     LEVEL_UP_MOVE(36, MOVE_EXTREME_SPEED),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(43, MOVE_AGILITY),
-    LEVEL_UP_MOVE(47, MOVE_SKY_ATTACK),
-=======
     LEVEL_UP_MOVE(40, MOVE_MEGA_KICK),
     LEVEL_UP_MOVE(42, MOVE_AGILITY),
     LEVEL_UP_MOVE(45, MOVE_SKY_ATTACK),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(52, MOVE_MIRROR_MOVE),
     LEVEL_UP_END
 };
@@ -410,10 +306,7 @@ static const u16 sRaticateLevelUpLearnset[] = {
     LEVEL_UP_MOVE(23, MOVE_DIG),
     LEVEL_UP_MOVE(27, MOVE_PURSUIT),
     LEVEL_UP_MOVE(34, MOVE_SUPER_FANG),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(38, MOVE_FACADE),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(41, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(45, MOVE_CRUNCH),
     LEVEL_UP_END
@@ -426,11 +319,7 @@ static const u16 sSpearowLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE(13, MOVE_FURY_ATTACK),
     LEVEL_UP_MOVE(19, MOVE_PURSUIT),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(25, MOVE_AERIAL_ACE),
-=======
     LEVEL_UP_MOVE(23, MOVE_AERIAL_ACE),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(29, MOVE_SHARPEN),
     LEVEL_UP_MOVE(31, MOVE_MIRROR_MOVE),
     LEVEL_UP_MOVE(33, MOVE_DRILL_PECK),
@@ -445,17 +334,10 @@ static const u16 sFearowLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE(13, MOVE_FURY_ATTACK),
     LEVEL_UP_MOVE(19, MOVE_PURSUIT),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(25, MOVE_AERIAL_ACE),
-    LEVEL_UP_MOVE(29, MOVE_SHARPEN),
-    LEVEL_UP_MOVE(31, MOVE_MIRROR_MOVE),
-    LEVEL_UP_MOVE(37, MOVE_DRILL_PECK),
-=======
     LEVEL_UP_MOVE(23, MOVE_AERIAL_ACE),
     LEVEL_UP_MOVE(29, MOVE_SHARPEN),
     LEVEL_UP_MOVE(31, MOVE_MIRROR_MOVE),
     LEVEL_UP_MOVE(33, MOVE_DRILL_PECK),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(43, MOVE_AGILITY),
     LEVEL_UP_END
 };
@@ -465,14 +347,9 @@ static const u16 sEkansLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 8, MOVE_POISON_STING),
     LEVEL_UP_MOVE(13, MOVE_BITE),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(17, MOVE_ACID),
-    LEVEL_UP_MOVE(22, MOVE_SUBSTITUTE),
-=======
     LEVEL_UP_MOVE(15, MOVE_ACID),
     LEVEL_UP_MOVE(21, MOVE_SUBSTITUTE),
     LEVEL_UP_MOVE(23, MOVE_SLUDGE),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(25, MOVE_GLARE),
     LEVEL_UP_MOVE(29, MOVE_SCREECH),
     LEVEL_UP_MOVE(32, MOVE_POISON_FANG),
@@ -489,14 +366,9 @@ static const u16 sArbokLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 8, MOVE_POISON_STING),
     LEVEL_UP_MOVE(13, MOVE_BITE),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(17, MOVE_ACID),
-    LEVEL_UP_MOVE(22, MOVE_SUBSTITUTE),
-=======
     LEVEL_UP_MOVE(15, MOVE_ACID),
     LEVEL_UP_MOVE(21, MOVE_SUBSTITUTE),
     LEVEL_UP_MOVE(23, MOVE_SLUDGE),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(25, MOVE_GLARE),
     LEVEL_UP_MOVE(29, MOVE_SCREECH),
     LEVEL_UP_MOVE(32, MOVE_POISON_FANG),
@@ -505,10 +377,7 @@ static const u16 sArbokLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_SPIT_UP),
     LEVEL_UP_MOVE(40, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE(44, MOVE_HAZE),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(49, MOVE_CRUNCH),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -536,19 +405,13 @@ static const u16 sRaichuLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_THUNDER_WAVE),
     LEVEL_UP_MOVE(11, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(15, MOVE_DOUBLE_TEAM),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(18, MOVE_SPARK),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(20, MOVE_SLAM),
     LEVEL_UP_MOVE(26, MOVE_THUNDERBOLT),
     LEVEL_UP_MOVE(33, MOVE_AGILITY),
     LEVEL_UP_MOVE(41, MOVE_THUNDER),
     LEVEL_UP_MOVE(45, MOVE_LIGHT_SCREEN),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(50, MOVE_VOLT_TACKLE),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -591,27 +454,16 @@ static const u16 sSandslashLevelUpLearnset[] = {
 
 static const u16 sNidoranFLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
-    LEVEL_UP_MOVE( 8, MOVE_TAIL_WHIP),
-    LEVEL_UP_MOVE(12, MOVE_DOUBLE_KICK),
-    LEVEL_UP_MOVE(17, MOVE_POISON_STING),
-=======
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 5, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 8, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE(12, MOVE_POISON_STING),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(20, MOVE_BITE),
     LEVEL_UP_MOVE(22, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(24, MOVE_DIG),
     LEVEL_UP_MOVE(30, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE(32, MOVE_SLUDGE_BOMB),
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(38, MOVE_FLATTER),
     LEVEL_UP_MOVE(47, MOVE_CRUNCH),
     LEVEL_UP_END
@@ -624,12 +476,8 @@ static const u16 sNidorinaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE(17, MOVE_POISON_STING),
     LEVEL_UP_MOVE(20, MOVE_BITE),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(23, MOVE_HELPING_HAND),
-=======
     LEVEL_UP_MOVE(22, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(24, MOVE_DIG),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(30, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE(32, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE(38, MOVE_FLATTER),
@@ -658,18 +506,11 @@ static const u16 sNidoqueenLevelUpLearnset[] = {
 
 static const u16 sNidoranMLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE( 1, MOVE_PECK),
-    LEVEL_UP_MOVE( 8, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE(12, MOVE_DOUBLE_KICK),
-    LEVEL_UP_MOVE(17, MOVE_POISON_STING),
-=======
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 5, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 8, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE(13, MOVE_POISON_STING),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(20, MOVE_HORN_ATTACK),
     LEVEL_UP_MOVE(22, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(24, MOVE_DIG),
@@ -708,10 +549,7 @@ static const u16 sNidokingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(27, MOVE_MAGNITUDE),
     LEVEL_UP_MOVE(30, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(36, MOVE_EARTHQUAKE),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(40, MOVE_SLUDGE_BOMB),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(43, MOVE_FLATTER),
     LEVEL_UP_MOVE(47, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(52, MOVE_MEGAHORN),
@@ -840,13 +678,8 @@ static const u16 sZubatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(10, MOVE_ASTONISH),
     LEVEL_UP_MOVE(13, MOVE_BITE),
     LEVEL_UP_MOVE(19, MOVE_CONFUSE_RAY),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(22, MOVE_WING_ATTACK),
-    LEVEL_UP_MOVE(27, MOVE_SLUDGE),
-=======
     LEVEL_UP_MOVE(21, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE(25, MOVE_SLUDGE),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(32, MOVE_AIR_CUTTER),
     LEVEL_UP_MOVE(37, MOVE_POISON_FANG),
     LEVEL_UP_MOVE(42, MOVE_MEAN_LOOK),
@@ -864,13 +697,8 @@ static const u16 sGolbatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(10, MOVE_ASTONISH),
     LEVEL_UP_MOVE(13, MOVE_BITE),
     LEVEL_UP_MOVE(19, MOVE_CONFUSE_RAY),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(22, MOVE_WING_ATTACK),
-    LEVEL_UP_MOVE(27, MOVE_SLUDGE),
-=======
     LEVEL_UP_MOVE(21, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE(25, MOVE_SLUDGE),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(32, MOVE_AIR_CUTTER),
     LEVEL_UP_MOVE(37, MOVE_POISON_FANG),
     LEVEL_UP_MOVE(42, MOVE_MEAN_LOOK),
@@ -882,11 +710,7 @@ static const u16 sOddishLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 5, MOVE_SWEET_SCENT),
     LEVEL_UP_MOVE( 7, MOVE_POISON_POWDER),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(13, MOVE_MEGA_DRAIN),
-=======
     LEVEL_UP_MOVE(14, MOVE_MEGA_DRAIN),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(16, MOVE_STUN_SPORE),
     LEVEL_UP_MOVE(18, MOVE_SLEEP_POWDER),
     LEVEL_UP_MOVE(23, MOVE_ACID),
@@ -926,11 +750,7 @@ static const u16 sVileplumeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(18, MOVE_SLEEP_POWDER),
     LEVEL_UP_MOVE(23, MOVE_ACID),
     LEVEL_UP_MOVE(28, MOVE_MOONLIGHT),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(32, MOVE_GIGA_DRAIN),
-=======
     LEVEL_UP_MOVE(36, MOVE_GIGA_DRAIN),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(36, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE(40, MOVE_PETAL_DANCE),
     LEVEL_UP_END
@@ -940,24 +760,15 @@ static const u16 sParasLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 5, MOVE_ABSORB),
     LEVEL_UP_MOVE( 7, MOVE_STUN_SPORE),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(13, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE(19, MOVE_LEECH_LIFE),
-=======
     LEVEL_UP_MOVE(11, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE(15, MOVE_LEECH_LIFE),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(22, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(25, MOVE_SPORE),
     LEVEL_UP_MOVE(28, MOVE_SLASH),
     LEVEL_UP_MOVE(32, MOVE_TWINEEDLE),
     LEVEL_UP_MOVE(37, MOVE_GROWTH),
     LEVEL_UP_MOVE(37, MOVE_SWORDS_DANCE),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(43, MOVE_GIGA_DRAIN),
-=======
     LEVEL_UP_MOVE(40, MOVE_GIGA_DRAIN),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(49, MOVE_AROMATHERAPY),
     LEVEL_UP_END
 };
@@ -974,11 +785,7 @@ static const u16 sParasectLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_TWINEEDLE),
     LEVEL_UP_MOVE(37, MOVE_GROWTH),
     LEVEL_UP_MOVE(37, MOVE_SWORDS_DANCE),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(43, MOVE_GIGA_DRAIN),
-=======
     LEVEL_UP_MOVE(40, MOVE_GIGA_DRAIN),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(49, MOVE_AROMATHERAPY),
     LEVEL_UP_END
 };
@@ -987,18 +794,6 @@ static const u16 sVenonatLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DISABLE),
     LEVEL_UP_MOVE( 1, MOVE_FORESIGHT),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE( 9, MOVE_SUPERSONIC),
-    LEVEL_UP_MOVE(13, MOVE_LEECH_LIFE),
-    LEVEL_UP_MOVE(17, MOVE_POISON_POWDER),
-    LEVEL_UP_MOVE(20, MOVE_LEECH_LIFE),
-    LEVEL_UP_MOVE(23, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE(27, MOVE_PSYBEAM),
-    LEVEL_UP_MOVE(33, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE(39, MOVE_SIGNAL_BEAM),
-    LEVEL_UP_MOVE(43, MOVE_SLUDGE_BOMB),
-    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
-=======
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 9, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE(13, MOVE_LEECH_LIFE),
@@ -1009,7 +804,6 @@ static const u16 sVenonatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_PSYCHIC),
     LEVEL_UP_MOVE(39, MOVE_SIGNAL_BEAM),
     LEVEL_UP_MOVE(43, MOVE_SLUDGE_BOMB),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -1025,17 +819,10 @@ static const u16 sVenomothLevelUpLearnset[] = {
     LEVEL_UP_MOVE(27, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(31, MOVE_GUST),
     LEVEL_UP_MOVE(31, MOVE_SILVER_WIND),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(36, MOVE_SLEEP_POWDER),
-    LEVEL_UP_MOVE(39, MOVE_SIGNAL_BEAM),
-    LEVEL_UP_MOVE(43, MOVE_SLUDGE_BOMB),
-    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
-=======
     LEVEL_UP_MOVE(36, MOVE_PSYCHIC),
     LEVEL_UP_MOVE(36, MOVE_SLEEP_POWDER),
     LEVEL_UP_MOVE(39, MOVE_SIGNAL_BEAM),
     LEVEL_UP_MOVE(43, MOVE_SLUDGE_BOMB),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -1063,11 +850,7 @@ static const u16 sDugtrioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE(26, MOVE_SAND_TOMB),
     LEVEL_UP_MOVE(38, MOVE_SLASH),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(51, MOVE_EARTHQUAKE),
-=======
     LEVEL_UP_MOVE(41, MOVE_EARTHQUAKE),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(58, MOVE_FISSURE),
     LEVEL_UP_END
 };
@@ -1123,11 +906,7 @@ static const u16 sGolduckLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_DISABLE),
-<<<<<<< Updated upstream
-     LEVEL_UP_MOVE( 5, MOVE_TAIL_WHIP),
-=======
     LEVEL_UP_MOVE( 5, MOVE_TAIL_WHIP),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE( 7, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(10, MOVE_DISABLE),
     LEVEL_UP_MOVE(14, MOVE_CONFUSION),
@@ -1147,12 +926,8 @@ static const u16 sMankeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_LOW_KICK),
     LEVEL_UP_MOVE(15, MOVE_KARATE_CHOP),
     LEVEL_UP_MOVE(21, MOVE_FURY_SWIPES),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(27, MOVE_FOCUS_ENERGY),
-=======
     LEVEL_UP_MOVE(24, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE(27, MOVE_BRICK_BREAK), 
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(33, MOVE_SEISMIC_TOSS),
     LEVEL_UP_MOVE(39, MOVE_CROSS_CHOP),
     LEVEL_UP_MOVE(45, MOVE_SCREECH),
@@ -1168,12 +943,8 @@ static const u16 sPrimeapeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_LOW_KICK),
     LEVEL_UP_MOVE(15, MOVE_KARATE_CHOP),
     LEVEL_UP_MOVE(21, MOVE_FURY_SWIPES),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(27, MOVE_FOCUS_ENERGY),
-=======
     LEVEL_UP_MOVE(24, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE(27, MOVE_BRICK_BREAK), 
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(28, MOVE_RAGE),
     LEVEL_UP_MOVE(33, MOVE_SEISMIC_TOSS),
     LEVEL_UP_MOVE(39, MOVE_CROSS_CHOP),
@@ -1188,17 +959,10 @@ static const u16 sGrowlitheLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_EMBER),
     LEVEL_UP_MOVE(13, MOVE_LEER),
     LEVEL_UP_MOVE(19, MOVE_ODOR_SLEUTH),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(24, MOVE_FLAME_WHEEL),
-    LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(31, MOVE_HELPING_HAND),
-    LEVEL_UP_MOVE(35, MOVE_FLAMETHROWER),
-=======
     LEVEL_UP_MOVE(23, MOVE_FLAME_WHEEL),
     LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(31, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(34, MOVE_FLAMETHROWER),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(43, MOVE_AGILITY),
     LEVEL_UP_MOVE(49, MOVE_EXTREME_SPEED),
     LEVEL_UP_END
@@ -1210,33 +974,16 @@ static const u16 sArcanineLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_EMBER),
     LEVEL_UP_MOVE(13, MOVE_LEER),
     LEVEL_UP_MOVE(19, MOVE_ODOR_SLEUTH),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(24, MOVE_FLAME_WHEEL),
-    LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(31, MOVE_HELPING_HAND),
-    LEVEL_UP_MOVE(35, MOVE_FLAMETHROWER),
-=======
     LEVEL_UP_MOVE(23, MOVE_FLAME_WHEEL),
     LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(31, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(43, MOVE_AGILITY),
     LEVEL_UP_MOVE(49, MOVE_EXTREME_SPEED),
     LEVEL_UP_END
 };
 
 static const u16 sPoliwagLevelUpLearnset[] = {
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE( 1, MOVE_MIND_READER),
-    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
-    LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
-    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE( 7, MOVE_HYPNOSIS),
-    LEVEL_UP_MOVE( 10, MOVE_MIST),
-    LEVEL_UP_MOVE(13, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE(16, MOVE_DOUBLE_SLAP),
-=======
     LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
     LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
     LEVEL_UP_MOVE( 7, MOVE_HYPNOSIS),
@@ -1244,7 +991,6 @@ static const u16 sPoliwagLevelUpLearnset[] = {
     LEVEL_UP_MOVE(14, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(16, MOVE_DOUBLE_SLAP),
     LEVEL_UP_MOVE(18, MOVE_MIND_READER),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(20, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(29, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(43, MOVE_BELLY_DRUM),
@@ -1264,10 +1010,7 @@ static const u16 sPoliwhirlLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(25, MOVE_KARATE_CHOP),
     LEVEL_UP_MOVE(29, MOVE_RAIN_DANCE),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(32, MOVE_ICE_PUNCH),   
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(35, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(43, MOVE_BELLY_DRUM),
     LEVEL_UP_MOVE(51, MOVE_HYDRO_PUMP),
@@ -1362,10 +1105,7 @@ static const u16 sMachokeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_CROSS_CHOP),
     LEVEL_UP_MOVE(43, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(49, MOVE_DYNAMIC_PUNCH),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(57, MOVE_SUPERPOWER),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -1383,10 +1123,7 @@ static const u16 sMachampLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_CROSS_CHOP),
     LEVEL_UP_MOVE(43, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(49, MOVE_DYNAMIC_PUNCH),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(57, MOVE_SUPERPOWER),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -1398,12 +1135,8 @@ static const u16 sBellsproutLevelUpLearnset[] = {
     LEVEL_UP_MOVE(14, MOVE_SLEEP_POWDER),
     LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE(16, MOVE_STUN_SPORE),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(20, MOVE_ACID),
-=======
     LEVEL_UP_MOVE(18, MOVE_ACID),
     LEVEL_UP_MOVE(25, MOVE_SLUDGE),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(25, MOVE_RAZOR_LEAF),
     LEVEL_UP_MOVE(32, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE(40, MOVE_LEAF_BLADE),
@@ -1421,12 +1154,8 @@ static const u16 sWeepinbellLevelUpLearnset[] = {
     LEVEL_UP_MOVE(14, MOVE_SLEEP_POWDER),
     LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE(16, MOVE_STUN_SPORE),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(20, MOVE_ACID),
-=======
     LEVEL_UP_MOVE(18, MOVE_ACID),
     LEVEL_UP_MOVE(25, MOVE_SLUDGE),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(25, MOVE_RAZOR_LEAF),
     LEVEL_UP_MOVE(32, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE(40, MOVE_LEAF_BLADE),
@@ -1444,16 +1173,10 @@ static const u16 sVictreebelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(14, MOVE_SLEEP_POWDER),
     LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE(16, MOVE_STUN_SPORE),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(20, MOVE_ACID),
-    LEVEL_UP_MOVE(25, MOVE_RAZOR_LEAF),
-    LEVEL_UP_MOVE(32, MOVE_SLUDGE_BOMB),
-=======
     LEVEL_UP_MOVE(18, MOVE_ACID),
     LEVEL_UP_MOVE(25, MOVE_SLUDGE),
     LEVEL_UP_MOVE(25, MOVE_RAZOR_LEAF),
     LEVEL_UP_MOVE(36, MOVE_SLUDGE_BOMB),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(40, MOVE_LEAF_BLADE),
     LEVEL_UP_MOVE(54, MOVE_SLAM),
     LEVEL_UP_END
@@ -1561,10 +1284,7 @@ static const u16 sPonytaLevelUpLearnset[] = {
 static const u16 sRapidashLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_SPIN),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE( 1, MOVE_MEGAHORN),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
@@ -1590,12 +1310,8 @@ static const u16 sSlowpokeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_GROWL),
     LEVEL_UP_MOVE(13, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(17, MOVE_CONFUSION),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(22, MOVE_HEADBUTT),
-=======
     LEVEL_UP_MOVE(20, MOVE_HEADBUTT),
     LEVEL_UP_MOVE(23, MOVE_BUBBLE_BEAM),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(25, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(29, MOVE_DISABLE),
     LEVEL_UP_MOVE(34, MOVE_YAWN),
@@ -1611,21 +1327,13 @@ static const u16 sSlowbroLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_GROWL),
     LEVEL_UP_MOVE(13, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(17, MOVE_CONFUSION),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(22, MOVE_HEADBUTT),
-=======
     LEVEL_UP_MOVE(20, MOVE_HEADBUTT),
     LEVEL_UP_MOVE(23, MOVE_BUBBLE_BEAM),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(25, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(29, MOVE_DISABLE),
     LEVEL_UP_MOVE(36, MOVE_WITHDRAW),
     LEVEL_UP_MOVE(40, MOVE_AMNESIA),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(45, MOVE_PSYCHIC),
-=======
     LEVEL_UP_MOVE(44, MOVE_PSYCHIC),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -1670,16 +1378,6 @@ static const u16 sFarfetchdLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(11, MOVE_LEER),
     LEVEL_UP_MOVE(16, MOVE_FURY_ATTACK),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(21, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE(24, MOVE_AIR_CUTTER),
-    LEVEL_UP_MOVE(26, MOVE_FURY_CUTTER),
-    LEVEL_UP_MOVE(30, MOVE_SWORDS_DANCE),
-    LEVEL_UP_MOVE(36, MOVE_SLASH),
-    LEVEL_UP_MOVE(40, MOVE_BATON_PASS),
-    LEVEL_UP_MOVE(46, MOVE_AGILITY),
-    LEVEL_UP_MOVE(51, MOVE_FALSE_SWIPE),
-=======
     LEVEL_UP_MOVE(19, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE(21, MOVE_CUT),
     LEVEL_UP_MOVE(24, MOVE_AIR_CUTTER),
@@ -1692,7 +1390,6 @@ static const u16 sFarfetchdLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_AGILITY),
     LEVEL_UP_MOVE(51, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE(55, MOVE_SKY_ATTACK),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -1733,10 +1430,7 @@ static const u16 sDodrioLevelUpLearnset[] = {
 static const u16 sSeelLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HEADBUTT),
     LEVEL_UP_MOVE( 9, MOVE_GROWL),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(13, MOVE_WATER_GUN),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(17, MOVE_ICY_WIND),
     LEVEL_UP_MOVE(21, MOVE_AURORA_BEAM),
     LEVEL_UP_MOVE(24, MOVE_BUBBLE_BEAM),
@@ -1752,10 +1446,7 @@ static const u16 sDewgongLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 1, MOVE_AURORA_BEAM),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE( 9, MOVE_GROWL),
     LEVEL_UP_MOVE(17, MOVE_ICY_WIND),
     LEVEL_UP_MOVE(21, MOVE_AURORA_BEAM),
@@ -1810,14 +1501,9 @@ static const u16 sShellderLevelUpLearnset[] = {
     LEVEL_UP_MOVE(22, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(25, MOVE_PROTECT),
     LEVEL_UP_MOVE(33, MOVE_LEER),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(41, MOVE_CLAMP),
-    LEVEL_UP_MOVE(49, MOVE_ICE_BEAM),
-=======
     LEVEL_UP_MOVE(37, MOVE_ICICLE_SPEAR),
     LEVEL_UP_MOVE(41, MOVE_CLAMP),
     LEVEL_UP_MOVE(45, MOVE_ICE_BEAM),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(55, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
@@ -1831,14 +1517,9 @@ static const u16 sCloysterLevelUpLearnset[] = {
     LEVEL_UP_MOVE(22, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(25, MOVE_PROTECT),
     LEVEL_UP_MOVE(33, MOVE_SPIKES),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(41, MOVE_SPIKE_CANNON),
-    LEVEL_UP_MOVE(49, MOVE_ICE_BEAM),
-=======
     LEVEL_UP_MOVE(37, MOVE_ICICLE_SPEAR),
     LEVEL_UP_MOVE(41, MOVE_SPIKE_CANNON),
     LEVEL_UP_MOVE(45, MOVE_ICE_BEAM),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(55, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
@@ -1850,10 +1531,7 @@ static const u16 sGastlyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_SPITE),
     LEVEL_UP_MOVE(13, MOVE_MEAN_LOOK),
     LEVEL_UP_MOVE(16, MOVE_CURSE),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(18, MOVE_HYPNOSIS),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(21, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE(31, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE(39, MOVE_DREAM_EATER),
@@ -2031,11 +1709,7 @@ static const u16 sExeggcuteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE(37, MOVE_SLEEP_POWDER),
     LEVEL_UP_MOVE(43, MOVE_SOLAR_BEAM),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(48, MOVE_PSYCHIC),
-=======
     LEVEL_UP_MOVE(46, MOVE_PSYCHIC),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -2242,15 +1916,10 @@ static const u16 sTangelaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_GROWTH),
     LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE(22, MOVE_MEGA_DRAIN),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(28, MOVE_TICKLE),
-    LEVEL_UP_MOVE(31, MOVE_GIGA_DRAIN),
-=======
     LEVEL_UP_MOVE(25, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE(28, MOVE_TICKLE),
     LEVEL_UP_MOVE(31, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE(34, MOVE_ANCIENT_POWER),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(37, MOVE_STUN_SPORE),
     LEVEL_UP_MOVE(40, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(46, MOVE_BIND),
@@ -2394,14 +2063,6 @@ static const u16 sMrMimeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(17, MOVE_DOUBLE_SLAP),
     LEVEL_UP_MOVE(21, MOVE_LIGHT_SCREEN),
     LEVEL_UP_MOVE(21, MOVE_REFLECT),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(25, MOVE_ENCORE),
-    LEVEL_UP_MOVE(29, MOVE_PSYBEAM),
-    LEVEL_UP_MOVE(33, MOVE_RECYCLE),
-    LEVEL_UP_MOVE(37, MOVE_TRICK),
-    LEVEL_UP_MOVE(41, MOVE_ROLE_PLAY),
-    LEVEL_UP_MOVE(45, MOVE_PSYCHIC),
-=======
     LEVEL_UP_MOVE(23, MOVE_MAGICAL_LEAF),
     LEVEL_UP_MOVE(25, MOVE_ENCORE),
     LEVEL_UP_MOVE(27, MOVE_PSYBEAM),
@@ -2409,7 +2070,6 @@ static const u16 sMrMimeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_TRICK),
     LEVEL_UP_MOVE(41, MOVE_ROLE_PLAY),
     LEVEL_UP_MOVE(44, MOVE_PSYCHIC),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(49, MOVE_BATON_PASS),
     LEVEL_UP_MOVE(53, MOVE_SAFEGUARD),
     LEVEL_UP_END
@@ -2423,19 +2083,12 @@ static const u16 sScytherLevelUpLearnset[] = {
     LEVEL_UP_MOVE(11, MOVE_PURSUIT),
     LEVEL_UP_MOVE(16, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE(18, MOVE_CUT),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(21, MOVE_AGILITY),
-=======
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(26, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE(31, MOVE_SLASH),
     LEVEL_UP_MOVE(36, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(42, MOVE_TWINEEDLE),
     LEVEL_UP_MOVE(46, MOVE_DOUBLE_TEAM),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(48, MOVE_AGILITY),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -2448,17 +2101,11 @@ static const u16 sJynxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_ICY_WIND),
     LEVEL_UP_MOVE(21, MOVE_DOUBLE_SLAP),
     LEVEL_UP_MOVE(25, MOVE_ICE_PUNCH),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(32, MOVE_MEAN_LOOK),
-    LEVEL_UP_MOVE(37, MOVE_FAKE_TEARS),
-    LEVEL_UP_MOVE(42, MOVE_PSYCHIC),
-=======
     LEVEL_UP_MOVE(28, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(32, MOVE_MEAN_LOOK),
     LEVEL_UP_MOVE(37, MOVE_FAKE_TEARS),
     LEVEL_UP_MOVE(42, MOVE_PSYCHIC),
     LEVEL_UP_MOVE(45, MOVE_ICE_BEAM),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(48, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(51, MOVE_PERISH_SONG),
     LEVEL_UP_MOVE(55, MOVE_BLIZZARD),
@@ -2466,18 +2113,6 @@ static const u16 sJynxLevelUpLearnset[] = {
 };
 
 static const u16 sElectabuzzLevelUpLearnset[] = {
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_THUNDER_PUNCH),
-    LEVEL_UP_MOVE( 9, MOVE_THUNDER_PUNCH),
-    LEVEL_UP_MOVE(17, MOVE_LIGHT_SCREEN),
-    LEVEL_UP_MOVE(20, MOVE_THUNDER_WAVE),
-    LEVEL_UP_MOVE(25, MOVE_SWIFT),
-    LEVEL_UP_MOVE(36, MOVE_SCREECH),
-    LEVEL_UP_MOVE(47, MOVE_THUNDERBOLT),
-    LEVEL_UP_MOVE(58, MOVE_THUNDER),
-=======
     LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),   
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
@@ -2491,7 +2126,6 @@ static const u16 sElectabuzzLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_SCREECH),
     LEVEL_UP_MOVE(38, MOVE_THUNDERBOLT),
     LEVEL_UP_MOVE(48, MOVE_THUNDER),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -2499,10 +2133,7 @@ static const u16 sMagmarLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_SMOG),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_PUNCH),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
     LEVEL_UP_MOVE( 7, MOVE_LEER),
     LEVEL_UP_MOVE(13, MOVE_SMOG),
@@ -2542,12 +2173,8 @@ static const u16 sTaurosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(26, MOVE_HEADBUTT),
     LEVEL_UP_MOVE(30, MOVE_REST),
     LEVEL_UP_MOVE(36, MOVE_TAKE_DOWN),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(43, MOVE_THRASH),
-=======
     LEVEL_UP_MOVE(40, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(45, MOVE_THRASH),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
     LEVEL_UP_END
 };
@@ -2581,12 +2208,8 @@ static const u16 sLaprasLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_SING),
     LEVEL_UP_MOVE( 7, MOVE_MIST),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(11, MOVE_ICY_WIND),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(13, MOVE_BODY_SLAM),
-    LEVEL_UP_MOVE(15, MOVE_ICY_WIND),
     LEVEL_UP_MOVE(19, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE(25, MOVE_PERISH_SONG),
     LEVEL_UP_MOVE(31, MOVE_ICE_BEAM),
@@ -2623,11 +2246,7 @@ static const u16 sVaporeonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(16, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(23, MOVE_QUICK_ATTACK),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(30, MOVE_BUBBLE_BEAM),
-=======
     LEVEL_UP_MOVE(26, MOVE_BUBBLE_BEAM),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(36, MOVE_AURORA_BEAM),
     LEVEL_UP_MOVE(39, MOVE_DIVE),
     LEVEL_UP_MOVE(42, MOVE_HAZE),
@@ -2643,11 +2262,7 @@ static const u16 sJolteonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(16, MOVE_THUNDER_SHOCK),
     LEVEL_UP_MOVE(23, MOVE_QUICK_ATTACK),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(30, MOVE_SPARK),
-=======
     LEVEL_UP_MOVE(26, MOVE_SPARK),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(36, MOVE_PIN_MISSILE),
     LEVEL_UP_MOVE(39, MOVE_THUNDERBOLT),
     LEVEL_UP_MOVE(42, MOVE_THUNDER_WAVE),
@@ -2658,23 +2273,13 @@ static const u16 sJolteonLevelUpLearnset[] = {
 
 static const u16 sFlareonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_SMOG),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 8, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(16, MOVE_EMBER),
     LEVEL_UP_MOVE(23, MOVE_QUICK_ATTACK),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(30, MOVE_FLAME_WHEEL),
-    LEVEL_UP_MOVE(36, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(42, MOVE_SMOG),
-    LEVEL_UP_MOVE(46, MOVE_LEER),
-    LEVEL_UP_MOVE(49, MOVE_FLAMETHROWER),
-=======
     LEVEL_UP_MOVE(26, MOVE_FLAME_WHEEL),
     LEVEL_UP_MOVE(36, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(39, MOVE_FLAMETHROWER),
@@ -2682,7 +2287,6 @@ static const u16 sFlareonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_AGILITY),
     LEVEL_UP_MOVE(49, MOVE_FIRE_BLAST),
     LEVEL_UP_MOVE(49, MOVE_SUPERPOWER),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -2714,10 +2318,7 @@ static const u16 sOmanyteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(31, MOVE_ANCIENT_POWER),
     LEVEL_UP_MOVE(37, MOVE_PROTECT),
     LEVEL_UP_MOVE(40, MOVE_SPIKE_CANNON),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(43, MOVE_ROCK_BLAST),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(46, MOVE_TICKLE),
     LEVEL_UP_MOVE(51, MOVE_SPIKES),
     LEVEL_UP_MOVE(56, MOVE_HYDRO_PUMP),
@@ -2902,17 +2503,10 @@ static const u16 sDragoniteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_DRAGON_BREATH),
     LEVEL_UP_MOVE(38, MOVE_AGILITY),
     LEVEL_UP_MOVE(47, MOVE_SAFEGUARD),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(55, MOVE_WING_ATTACK),
-    LEVEL_UP_MOVE(61, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(75, MOVE_HYPER_BEAM),
-    LEVEL_UP_MOVE(81, MOVE_EXTREME_SPEED),
-=======
     LEVEL_UP_MOVE(50, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE(56, MOVE_OUTRAGE),
     LEVEL_UP_MOVE(70, MOVE_HYPER_BEAM),
     LEVEL_UP_MOVE(76, MOVE_EXTREME_SPEED),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -2933,10 +2527,7 @@ static const u16 sMewtwoLevelUpLearnset[] = {
 
 static const u16 sMewLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE( 1, MOVE_METRONOME),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(10, MOVE_TRANSFORM),
     LEVEL_UP_MOVE(20, MOVE_MEGA_PUNCH),
     LEVEL_UP_MOVE(30, MOVE_METRONOME),
@@ -3436,10 +3027,7 @@ static const u16 sBellossomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_SUNNY_DAY),
     LEVEL_UP_MOVE(40, MOVE_PETAL_DANCE),
     LEVEL_UP_MOVE(45, MOVE_SOLAR_BEAM),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(50, MOVE_LEAF_BLADE),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -3693,10 +3281,7 @@ static const u16 sMurkrowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(31, MOVE_FAINT_ATTACK),
     LEVEL_UP_MOVE(36, MOVE_DRILL_PECK),
     LEVEL_UP_MOVE(41, MOVE_MEAN_LOOK),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(55, MOVE_SKY_ATTACK),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -3707,12 +3292,8 @@ static const u16 sSlowkingLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_GROWL),
     LEVEL_UP_MOVE(13, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(17, MOVE_CONFUSION),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(22, MOVE_HEADBUTT),
-=======
     LEVEL_UP_MOVE(20, MOVE_HEADBUTT),
     LEVEL_UP_MOVE(23, MOVE_BUBBLE_BEAM),    
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(25, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(29, MOVE_DISABLE),
     LEVEL_UP_MOVE(36, MOVE_SWAGGER),
@@ -3749,10 +3330,7 @@ static const u16 sWobbuffetLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MIRROR_COAT),
     LEVEL_UP_MOVE( 1, MOVE_SAFEGUARD),
     LEVEL_UP_MOVE( 1, MOVE_DESTINY_BOND),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(65, MOVE_ENCORE),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -3839,15 +3417,9 @@ static const u16 sSteelixLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_RAGE),
     LEVEL_UP_MOVE(33, MOVE_SANDSTORM),
     LEVEL_UP_MOVE(37, MOVE_SLAM),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(45, MOVE_IRON_TAIL),
-    LEVEL_UP_MOVE(49, MOVE_CRUNCH),
-    LEVEL_UP_MOVE(53, MOVE_EARTHQUAKE),
-=======
     LEVEL_UP_MOVE(41, MOVE_IRON_TAIL),
     LEVEL_UP_MOVE(45, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(48, MOVE_CRUNCH),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(57, MOVE_DOUBLE_EDGE),
     LEVEL_UP_END
 };
@@ -3910,17 +3482,11 @@ static const u16 sScizorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_AGILITY),
     LEVEL_UP_MOVE(26, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE(31, MOVE_SLASH),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(36, MOVE_SWORDS_DANCE),
-    LEVEL_UP_MOVE(42, MOVE_TWINEEDLE),
-    LEVEL_UP_MOVE(46, MOVE_DOUBLE_TEAM),
-=======
     LEVEL_UP_MOVE(36, MOVE_DOUBLE_TEAM),
     LEVEL_UP_MOVE(42, MOVE_TWINEEDLE),
     LEVEL_UP_MOVE(46, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(50, MOVE_METEOR_MASH),
     LEVEL_UP_MOVE(54, MOVE_AGILITY),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -4010,10 +3576,7 @@ static const u16 sUrsaringLevelUpLearnset[] = {
 
 static const u16 sSlugmaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SMOG),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE( 1, MOVE_POUND),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE( 9, MOVE_EMBER),
     LEVEL_UP_MOVE(13, MOVE_ROCK_THROW),
     LEVEL_UP_MOVE(16, MOVE_HARDEN),
@@ -4075,10 +3638,7 @@ static const u16 sPiloswineLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(34, MOVE_MIST),
     LEVEL_UP_MOVE(39, MOVE_EARTHQUAKE),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(42, MOVE_ICE_BEAM),   
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(45, MOVE_AMNESIA),
     LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
     LEVEL_UP_END
@@ -4125,8 +3685,6 @@ static const u16 sOctilleryLevelUpLearnset[] = {
 
 static const u16 sDelibirdLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PRESENT),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE(10, MOVE_ICY_WIND),
     LEVEL_UP_MOVE(20, MOVE_DRILL_PECK),
@@ -4134,7 +3692,6 @@ static const u16 sDelibirdLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_ICE_BEAM),
     LEVEL_UP_MOVE(40, MOVE_SKY_ATTACK),
     LEVEL_UP_MOVE(50, MOVE_BELLY_DRUM),
->>>>>>> Stashed changes
     LEVEL_UP_END
 };
 
@@ -4177,10 +3734,7 @@ static const u16 sHoundourLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_SMOG),
     LEVEL_UP_MOVE(22, MOVE_FLAME_WHEEL),
     LEVEL_UP_MOVE(26, MOVE_ODOR_SLEUTH),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(28, MOVE_HOWL), 
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(30, MOVE_FAINT_ATTACK),
     LEVEL_UP_MOVE(39, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(43, MOVE_TORMENT),
@@ -4198,10 +3752,7 @@ static const u16 sHoundoomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_SMOG),
     LEVEL_UP_MOVE(22, MOVE_FLAME_WHEEL),
     LEVEL_UP_MOVE(26, MOVE_ODOR_SLEUTH),
-<<<<<<< Updated upstream
-=======
     LEVEL_UP_MOVE(28, MOVE_HOWL), 
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(30, MOVE_FAINT_ATTACK),
     LEVEL_UP_MOVE(39, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(43, MOVE_TORMENT),
@@ -4352,11 +3903,7 @@ static const u16 sSmoochumLevelUpLearnset[] = {
 static const u16 sElekidLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE( 9, MOVE_THUNDER_PUNCH),
-=======
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(17, MOVE_LIGHT_SCREEN),
     LEVEL_UP_MOVE(23, MOVE_THUNDER_PUNCH),
     LEVEL_UP_MOVE(25, MOVE_SWIFT),
@@ -4413,12 +3960,8 @@ static const u16 sRaikouLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
-<<<<<<< Updated upstream
-    LEVEL_UP_MOVE(11, MOVE_ROAR),
-=======
     LEVEL_UP_MOVE( 1, MOVE_ROAR),
     LEVEL_UP_MOVE(11, MOVE_SHADOW_BALL),
->>>>>>> Stashed changes
     LEVEL_UP_MOVE(21, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(31, MOVE_SPARK),
     LEVEL_UP_MOVE(41, MOVE_THUNDERBOLT),

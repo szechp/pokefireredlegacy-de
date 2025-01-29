@@ -27,11 +27,7 @@
         .growthRate = GROWTH_MEDIUM_FAST,                                               \
         .eggGroups = {EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},                  \
         .abilities = {ABILITY_NONE, ABILITY_NONE},                                      \
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,                                                        \
-=======
         .safariZoneFleeRate = 50,                                                        \
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_BLACK,                                                  \
         .noFlip = FALSE,                                                                \
    }
@@ -102,13 +98,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_VENUSAUR] =
     {
-<<<<<<< Updated upstream
-        .baseHP        = 85,
-        .baseAttack    = 87,
-=======
         .baseHP        = 82,
         .baseAttack    = 90,
->>>>>>> Stashed changes
         .baseDefense   = 83,
         .baseSpeed     = 80,
         .baseSpAttack  = 100,
@@ -197,15 +188,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_CHARIZARD] =
     {
-<<<<<<< Updated upstream
-        .baseHP        = 78,
-        .baseAttack    = 84,
-        .baseDefense   = 78,
-=======
         .baseHP        = 75,
         .baseAttack    = 90,
         .baseDefense   = 75,
->>>>>>> Stashed changes
         .baseSpeed     = 101,
         .baseSpAttack  = 109,
         .baseSpDefense = 85,
@@ -384,17 +369,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_BUTTERFREE] =
     {
         .baseHP        = 60,
-<<<<<<< Updated upstream
-        .baseAttack    = 45,
-        .baseDefense   = 50,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 80,
-=======
         .baseAttack    = 55,
         .baseDefense   = 50,
         .baseSpeed     = 70,
         .baseSpAttack  = 85,
->>>>>>> Stashed changes
         .baseSpDefense = 80,
         .types = {TYPE_BUG, TYPE_FLYING},
         .catchRate = 45,
@@ -481,13 +459,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_BEEDRILL] =
     {
         .baseHP        = 65,
-<<<<<<< Updated upstream
-        .baseAttack    = 80,
-        .baseDefense   = 40,
-=======
         .baseAttack    = 90,
         .baseDefense   = 45,
->>>>>>> Stashed changes
         .baseSpeed     = 75,
         .baseSpAttack  = 45,
         .baseSpDefense = 80,
@@ -576,15 +549,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_PIDGEOT] =
     {
         .baseHP        = 83,
-<<<<<<< Updated upstream
-        .baseAttack    = 80,
-        .baseDefense   = 75,
-        .baseSpeed     = 91,
-=======
         .baseAttack    = 86,
         .baseDefense   = 75,
         .baseSpeed     = 96,
->>>>>>> Stashed changes
         .baseSpAttack  = 70,
         .baseSpDefense = 70,
         .types = {TYPE_NORMAL, TYPE_FLYING},
@@ -791,11 +758,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_PIKACHU] =
     {
-<<<<<<< Updated upstream
-        .baseHP        = 35,
-=======
         .baseHP        = 50,
->>>>>>> Stashed changes
         .baseAttack    = 55,
         .baseDefense   = 40,
         .baseSpeed     = 90,
@@ -827,13 +790,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
     {
         .baseHP        = 60,
         .baseAttack    = 90,
-<<<<<<< Updated upstream
-        .baseDefense   = 55,
-        .baseSpeed     = 100,
-=======
         .baseDefense   = 65,
         .baseSpeed     = 110,
->>>>>>> Stashed changes
         .baseSpAttack  = 90,
         .baseSpDefense = 80,
         .types = {TYPE_ELECTRIC, TYPE_ELECTRIC},
@@ -943,7 +901,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = {EGG_GROUP_MONSTER, EGG_GROUP_FIELD},
         .abilities = {ABILITY_POISON_POINT, ABILITY_NONE},
-        .safariZoneFleeRate = 0,
+        .safariZoneFleeRate = 50,
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },           
@@ -973,11 +931,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = {EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},
         .abilities = {ABILITY_POISON_POINT, ABILITY_NONE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },           
@@ -1037,7 +991,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = {EGG_GROUP_MONSTER, EGG_GROUP_FIELD},
         .abilities = {ABILITY_POISON_POINT, ABILITY_NONE},
-        .safariZoneFleeRate = 0,
+        .safariZoneFleeRate = 50,
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
     },           
@@ -1067,11 +1021,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = {EGG_GROUP_MONSTER, EGG_GROUP_FIELD},
         .abilities = {ABILITY_POISON_POINT, ABILITY_NONE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
     },           
@@ -1289,17 +1239,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_ZUBAT] =
     {
         .baseHP        = 40,
-<<<<<<< Updated upstream
-        .baseAttack    = 45,
-        .baseDefense   = 35,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 30,
-=======
         .baseAttack    = 55,
         .baseDefense   = 35,
         .baseSpeed     = 55,
         .baseSpAttack  = 40,
->>>>>>> Stashed changes
         .baseSpDefense = 40,
         .types = {TYPE_POISON, TYPE_FLYING},
         .catchRate = 255,
@@ -1419,11 +1362,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseAttack    = 80,
         .baseDefense   = 95,
         .baseSpeed     = 50,
-<<<<<<< Updated upstream
-        .baseSpAttack  = 100,
-=======
         .baseSpAttack  = 110,
->>>>>>> Stashed changes
         .baseSpDefense = 90,
         .types = {TYPE_GRASS, TYPE_POISON},
         .catchRate = 45,
@@ -1472,7 +1411,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_BUG, EGG_GROUP_GRASS},
         .abilities = {ABILITY_EFFECT_SPORE, ABILITY_NONE},
-        .safariZoneFleeRate = 0,
+        .safariZoneFleeRate = 50,
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },           
@@ -1483,11 +1422,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseAttack    = 95,
         .baseDefense   = 80,
         .baseSpeed     = 30,
-<<<<<<< Updated upstream
-        .baseSpAttack  = 60,
-=======
         .baseSpAttack  = 80,
->>>>>>> Stashed changes
         .baseSpDefense = 80,
         .types = {TYPE_BUG, TYPE_GRASS},
         .catchRate = 75,
@@ -1506,11 +1441,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_BUG, EGG_GROUP_GRASS},
         .abilities = {ABILITY_EFFECT_SPORE, ABILITY_NONE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },           
@@ -1540,7 +1471,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_BUG, EGG_GROUP_BUG},
         .abilities = {ABILITY_COMPOUND_EYES, ABILITY_NONE},
-        .safariZoneFleeRate = 0,
+        .safariZoneFleeRate = 50,
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
     },           
@@ -1570,11 +1501,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_BUG, EGG_GROUP_BUG},
         .abilities = {ABILITY_SHIELD_DUST, ABILITY_NONE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
     },           
@@ -1664,11 +1591,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_FIELD, EGG_GROUP_FIELD},
         .abilities = {ABILITY_PICKUP, ABILITY_HUSTLE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
     },           
@@ -1698,11 +1621,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_FIELD, EGG_GROUP_FIELD},
         .abilities = {ABILITY_LIMBER, ABILITY_HUSTLE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
     },           
@@ -1728,8 +1647,6 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .itemRare   = ITEM_NONE,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 15,
-<<<<<<< Updated upstream
-=======
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_WATER_1, EGG_GROUP_FIELD},
@@ -1760,46 +1677,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .itemRare   = ITEM_NONE,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 15,
->>>>>>> Stashed changes
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_WATER_1, EGG_GROUP_FIELD},
         .abilities = {ABILITY_DAMP, ABILITY_CLOUD_NINE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 6,
-        .bodyColor = BODY_COLOR_YELLOW,
-        .noFlip = FALSE,
-    },           
-
-    [SPECIES_GOLDUCK] =
-    {
-        .baseHP        = 80,
-        .baseAttack    = 82,
-        .baseDefense   = 78,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 80,
-        .types = {TYPE_WATER, TYPE_WATER},
-        .catchRate = 75,
-        .expYield = 174,
-        .evYield_HP        = 0,
-        .evYield_Attack    = 0,
-        .evYield_Defense   = 0,
-        .evYield_Speed     = 0,
-        .evYield_SpAttack  = 2,
-        .evYield_SpDefense = 0,
-        .itemCommon = ITEM_NONE,
-        .itemRare   = ITEM_NONE,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 15,
-        .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = {EGG_GROUP_WATER_1, EGG_GROUP_FIELD},
-        .abilities = {ABILITY_DAMP, ABILITY_CLOUD_NINE},
-        .safariZoneFleeRate = 8,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },           
@@ -1949,7 +1831,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = {EGG_GROUP_WATER_1, EGG_GROUP_WATER_1},
         .abilities = {ABILITY_WATER_ABSORB, ABILITY_DAMP},
-        .safariZoneFleeRate = 0,
+        .safariZoneFleeRate = 50,
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
     },           
@@ -2519,7 +2401,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_MONSTER, EGG_GROUP_WATER_1},
         .abilities = {ABILITY_OBLIVIOUS, ABILITY_OWN_TEMPO},
-        .safariZoneFleeRate = 0,
+        .safariZoneFleeRate = 50,
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = FALSE,
     },           
@@ -2616,21 +2498,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_FARFETCHD] =
     {
-<<<<<<< Updated upstream
-        .baseHP        = 52,
-        .baseAttack    = 65,
-        .baseDefense   = 55,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 58,
-        .baseSpDefense = 62,
-=======
         .baseHP        = 62,
         .baseAttack    = 76,
         .baseDefense   = 62,
         .baseSpeed     = 65,
         .baseSpAttack  = 68,
         .baseSpDefense = 67,
->>>>>>> Stashed changes
         .types = {TYPE_NORMAL, TYPE_FLYING},
         .catchRate = 45,
         .expYield = 94,
@@ -2678,7 +2551,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_FLYING, EGG_GROUP_FLYING},
         .abilities = {ABILITY_RUN_AWAY, ABILITY_EARLY_BIRD},
-        .safariZoneFleeRate = 8,
+        .safariZoneFleeRate = 50,
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },           
@@ -2715,19 +2588,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_SEEL] =
     {
-<<<<<<< Updated upstream
-        .baseHP        = 65,
-        .baseAttack    = 45,
-        .baseDefense   = 55,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 45,
-=======
         .baseHP        = 75,
         .baseAttack    = 45,
         .baseDefense   = 55,
         .baseSpeed     = 45,
         .baseSpAttack  = 55,
->>>>>>> Stashed changes
         .baseSpDefense = 70,
         .types = {TYPE_WATER, TYPE_WATER},
         .catchRate = 190,
@@ -2753,15 +2618,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_DEWGONG] =
     {
-<<<<<<< Updated upstream
-        .baseHP        = 90,
-        .baseAttack    = 70,
-        .baseDefense   = 80,
-=======
         .baseHP        = 95,
         .baseAttack    = 70,
         .baseDefense   = 85,
->>>>>>> Stashed changes
         .baseSpeed     = 70,
         .baseSpAttack  = 80,
         .baseSpDefense = 95,
@@ -2999,21 +2858,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_ONIX] =
     {
-<<<<<<< Updated upstream
-        .baseHP        = 35,
-        .baseAttack    = 45,
-        .baseDefense   = 160,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 45,
-=======
         .baseHP        = 60,
         .baseAttack    = 70,
         .baseDefense   = 160,
         .baseSpeed     = 75,
         .baseSpAttack  = 30,
         .baseSpDefense = 60,
->>>>>>> Stashed changes
         .types = {TYPE_ROCK, TYPE_GROUND},
         .catchRate = 45,
         .expYield = 108,
@@ -3072,11 +2922,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseAttack    = 73,
         .baseDefense   = 70,
         .baseSpeed     = 67,
-<<<<<<< Updated upstream
-        .baseSpAttack  = 73,
-=======
         .baseSpAttack  = 83,
->>>>>>> Stashed changes
         .baseSpDefense = 115,
         .types = {TYPE_PSYCHIC, TYPE_PSYCHIC},
         .catchRate = 75,
@@ -3106,11 +2952,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseAttack    = 105,
         .baseDefense   = 90,
         .baseSpeed     = 50,
-<<<<<<< Updated upstream
-        .baseSpAttack  = 25,
-=======
         .baseSpAttack  = 50,
->>>>>>> Stashed changes
         .baseSpDefense = 25,
         .types = {TYPE_WATER, TYPE_WATER},
         .catchRate = 225,
@@ -3140,11 +2982,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseAttack    = 130,
         .baseDefense   = 115,
         .baseSpeed     = 75,
-<<<<<<< Updated upstream
-        .baseSpAttack  = 50,
-=======
         .baseSpAttack  = 75,
->>>>>>> Stashed changes
         .baseSpDefense = 50,
         .types = {TYPE_WATER, TYPE_WATER},
         .catchRate = 60,
@@ -3253,11 +3091,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = {EGG_GROUP_GRASS, EGG_GROUP_GRASS},
         .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = FALSE,
     },           
@@ -3385,17 +3219,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_HITMONCHAN] =
     {
         .baseHP        = 50,
-<<<<<<< Updated upstream
-        .baseAttack    = 105,
-        .baseDefense   = 79,
-        .baseSpeed     = 81,
-        .baseSpAttack  = 35,
-=======
         .baseAttack    = 40,
         .baseDefense   = 79,
         .baseSpeed     = 81,
         .baseSpAttack  = 100,
->>>>>>> Stashed changes
         .baseSpDefense = 110,
         .types = {TYPE_FIGHTING, TYPE_FIGHTING},
         .catchRate = 45,
@@ -3594,11 +3421,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_FAST,
         .eggGroups = {EGG_GROUP_FAIRY, EGG_GROUP_FAIRY},
         .abilities = {ABILITY_NATURAL_CURE, ABILITY_SERENE_GRACE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 90,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = FALSE,
     },           
@@ -3606,11 +3429,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_TANGELA] =
     {
         .baseHP        = 65,
-<<<<<<< Updated upstream
-        .baseAttack    = 55,
-=======
         .baseAttack    = 85,
->>>>>>> Stashed changes
         .baseDefense   = 115,
         .baseSpeed     = 60,
         .baseSpAttack  = 100,
@@ -3662,11 +3481,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_MONSTER, EGG_GROUP_MONSTER},
         .abilities = {ABILITY_EARLY_BIRD, ABILITY_NONE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 70,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },           
@@ -3906,11 +3721,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_BUG, EGG_GROUP_BUG},
         .abilities = {ABILITY_SWARM, ABILITY_NONE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 45,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },           
@@ -3948,17 +3759,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_ELECTABUZZ] =
     {
         .baseHP        = 65,
-<<<<<<< Updated upstream
-        .baseAttack    = 83,
-        .baseDefense   = 57,
-        .baseSpeed     = 105,
-        .baseSpAttack  = 95,
-=======
         .baseAttack    = 88,
         .baseDefense   = 62,
         .baseSpeed     = 105,
         .baseSpAttack  = 100,
->>>>>>> Stashed changes
         .baseSpDefense = 85,
         .types = {TYPE_ELECTRIC, TYPE_ELECTRIC},
         .catchRate = 45,
@@ -4037,11 +3841,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = {EGG_GROUP_BUG, EGG_GROUP_BUG},
         .abilities = {ABILITY_HYPER_CUTTER, ABILITY_NONE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 8,
-=======
         .safariZoneFleeRate = 65,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },           
@@ -4071,11 +3871,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = {EGG_GROUP_FIELD, EGG_GROUP_FIELD},
         .abilities = {ABILITY_INTIMIDATE, ABILITY_NONE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 80,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },           
@@ -4383,11 +4179,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_OMASTAR] =
     {
         .baseHP        = 70,
-<<<<<<< Updated upstream
-        .baseAttack    = 60,
-=======
         .baseAttack    = 80,
->>>>>>> Stashed changes
         .baseDefense   = 125,
         .baseSpeed     = 55,
         .baseSpAttack  = 115,
@@ -4450,11 +4242,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseAttack    = 115,
         .baseDefense   = 105,
         .baseSpeed     = 80,
-<<<<<<< Updated upstream
-        .baseSpAttack  = 65,
-=======
         .baseSpAttack  = 85,
->>>>>>> Stashed changes
         .baseSpDefense = 70,
         .types = {TYPE_ROCK, TYPE_WATER},
         .catchRate = 45,
@@ -4525,11 +4313,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evYield_Speed     = 0,
         .evYield_SpAttack  = 0,
         .evYield_SpDefense = 0,
-<<<<<<< Updated upstream
-        .itemCommon = ITEM_LEFTOVERS,
-=======
         .itemCommon = ITEM_NONE,
->>>>>>> Stashed changes
         .itemRare   = ITEM_LEFTOVERS,
         .genderRatio = PERCENT_FEMALE(12.5),
         .eggCycles = 30,
@@ -4657,32 +4441,19 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = {EGG_GROUP_WATER_1, EGG_GROUP_DRAGON},
         .abilities = {ABILITY_SHED_SKIN, ABILITY_NONE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },           
 
     [SPECIES_DRAGONAIR] =
     {
-<<<<<<< Updated upstream
-        .baseHP        = 61,
-        .baseAttack    = 84,
-        .baseDefense   = 65,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 70,
-=======
         .baseHP        = 71,
         .baseAttack    = 70,
         .baseDefense   = 70,
         .baseSpeed     = 75,
         .baseSpAttack  = 89,
         .baseSpDefense = 75,
->>>>>>> Stashed changes
         .types = {TYPE_DRAGON, TYPE_DRAGON},
         .catchRate = 45,
         .expYield = 144,
@@ -4700,11 +4471,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = {EGG_GROUP_WATER_1, EGG_GROUP_DRAGON},
         .abilities = {ABILITY_SHED_SKIN, ABILITY_NONE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },           
@@ -4712,17 +4479,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_DRAGONITE] =
     {
         .baseHP        = 91,
-<<<<<<< Updated upstream
-        .baseAttack    = 134,
-        .baseDefense   = 95,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 100,
-=======
         .baseAttack    = 124,
         .baseDefense   = 95,
         .baseSpeed     = 80,
         .baseSpAttack  = 110,
->>>>>>> Stashed changes
         .baseSpDefense = 100,
         .types = {TYPE_DRAGON, TYPE_FLYING},
         .catchRate = 45,
@@ -4868,11 +4628,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_MEGANIUM] =
     {
-<<<<<<< Updated upstream
-        .baseHP        = 80,
-=======
         .baseHP        = 90,
->>>>>>> Stashed changes
         .baseAttack    = 82,
         .baseDefense   = 100,
         .baseSpeed     = 80,
@@ -4962,19 +4718,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_TYPHLOSION] =
     {
-<<<<<<< Updated upstream
-        .baseHP        = 78,
-        .baseAttack    = 84,
-        .baseDefense   = 78,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 109,
-=======
         .baseHP        = 75,
         .baseAttack    = 84,
         .baseDefense   = 75,
         .baseSpeed     = 101,
         .baseSpAttack  = 115,
->>>>>>> Stashed changes
         .baseSpDefense = 85,
         .types = {TYPE_FIRE, TYPE_FIRE},
         .catchRate = 45,
@@ -5064,11 +4812,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseAttack    = 105,
         .baseDefense   = 100,
         .baseSpeed     = 78,
-<<<<<<< Updated upstream
-        .baseSpAttack  = 79,
-=======
         .baseSpAttack  = 84,
->>>>>>> Stashed changes
         .baseSpDefense = 83,
         .types = {TYPE_WATER, TYPE_WATER},
         .catchRate = 45,
@@ -6505,19 +6249,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_STEELIX] =
     {
         .baseHP        = 75,
-<<<<<<< Updated upstream
-        .baseAttack    = 85,
-        .baseDefense   = 200,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 65,
-=======
         .baseAttack    = 90,
         .baseDefense   = 200,
         .baseSpeed     = 30,
         .baseSpAttack  = 40,
         .baseSpDefense = 75,
->>>>>>> Stashed changes
         .types = {TYPE_STEEL, TYPE_GROUND},
         .catchRate = 25,
         .expYield = 196,
@@ -6726,11 +6462,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseAttack    = 95,
         .baseDefense   = 55,
         .baseSpeed     = 115,
-<<<<<<< Updated upstream
-        .baseSpAttack  = 70,
-=======
         .baseSpAttack  = 80,
->>>>>>> Stashed changes
         .baseSpDefense = 75,
         .types = {TYPE_DARK, TYPE_ICE},
         .catchRate = 60,
@@ -9019,11 +8751,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_FLUCTUATING,
         .eggGroups = {EGG_GROUP_FIELD, EGG_GROUP_WATER_2},
         .abilities = {ABILITY_WATER_VEIL, ABILITY_RAIN_DISH},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },           
@@ -9803,11 +9531,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_FIELD, EGG_GROUP_FIELD},
         .abilities = {ABILITY_FLAME_BODY, ABILITY_NONE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },           
@@ -9987,11 +9711,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_FAIRY, EGG_GROUP_MINERAL},
         .abilities = {ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = FALSE,
     },           
@@ -10021,11 +9741,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_FAIRY, EGG_GROUP_MINERAL},
         .abilities = {ABILITY_LEVITATE, ABILITY_INTIMIDATE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = FALSE,
     },           
@@ -10109,11 +9825,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evYield_SpDefense = 0,
         .itemCommon = ITEM_NONE,
         .itemRare   = ITEM_NONE,
-<<<<<<< Updated upstream
-        .genderRatio = PERCENT_FEMALE(75),
-=======
         .genderRatio = PERCENT_FEMALE(50),
->>>>>>> Stashed changes
         .eggCycles = 8,
         .friendship = 70,
         .growthRate = GROWTH_FAST,
@@ -10689,11 +10401,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = {EGG_GROUP_MONSTER, EGG_GROUP_GRASS},
         .abilities = {ABILITY_THICK_FAT, ABILITY_CHLOROPHYLL},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },           
@@ -10993,11 +10701,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_FLUCTUATING,
         .eggGroups = {EGG_GROUP_FIELD, EGG_GROUP_DRAGON},
         .abilities = {ABILITY_SHED_SKIN, ABILITY_HUSTLE},
-<<<<<<< Updated upstream
-        .safariZoneFleeRate = 0,
-=======
         .safariZoneFleeRate = 50,
->>>>>>> Stashed changes
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
     },           
