@@ -2442,14 +2442,14 @@ static const struct TrainerMon sParty_BugCatcherDoug[] = {
     {
         .iv = 0,
         .lvl = 7,
-        .species = SPECIES_WEEDLE,
+        .species = SPECIES_VENONAT,
     },
 };
 
 static const struct TrainerMon sParty_BugCatcherSammy[] = {
     {
         .iv = 0,
-        .lvl = 9,
+        .lvl = 10,
         .species = SPECIES_BEEDRILL,
     },
 };
@@ -7834,22 +7834,22 @@ static const struct TrainerMon sParty_EliteFourLance[] = {
 
 static const struct TrainerMon sParty_LeaderBrock[] = {
     {
-        .iv = 100,
-        .lvl = 12,
-        .species = SPECIES_SLUGMA,
+        .iv = 255,
+        .lvl = 13,
+        .species = SPECIES_SANDSHREW,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_SMOG, MOVE_ROCK_TOMB, MOVE_POUND, MOVE_NONE},
+        .moves = {MOVE_SANDSTORM, MOVE_SCRATCH, MOVE_ROCK_TOMB, MOVE_NONE},
     },
     {
-        .iv = 150,
-        .lvl = 12,
+        .iv = 255,
+        .lvl = 13,
         .species = SPECIES_GEODUDE,
         .heldItem = ITEM_NONE,
         .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_TOMB, MOVE_ROCK_THROW},
     },
     {
         .iv = 100,
-        .lvl = 13,
+        .lvl = 14,
         .species = SPECIES_ONIX,
         .heldItem = ITEM_ORAN_BERRY,
         .moves = {MOVE_SCREECH, MOVE_BIND, MOVE_ROCK_TOMB, MOVE_CONSTRICT},
@@ -7859,7 +7859,7 @@ static const struct TrainerMon sParty_LeaderBrock[] = {
 static const struct TrainerMon sParty_LeaderMisty[] = {
     {
         .iv = 100,
-        .lvl = 18,
+        .lvl = 19,
         .species = SPECIES_POLIWHIRL,
         .moves = {MOVE_WATER_PULSE, MOVE_DOUBLE_SLAP, MOVE_HYPNOSIS, MOVE_MIND_READER},
     },
@@ -7870,10 +7870,10 @@ static const struct TrainerMon sParty_LeaderMisty[] = {
         .moves = {MOVE_HORN_ATTACK, MOVE_SUPERSONIC, MOVE_PECK, MOVE_WATERFALL},
     },
     {
-        .iv = 30,
+        .iv = 100,
         .lvl = 21,
         .species = SPECIES_STARMIE,
-        .moves = {MOVE_SWIFT, MOVE_CONFUSION, MOVE_WATER_PULSE, MOVE_NONE},
+        .moves = {MOVE_SWIFT, MOVE_ICY_WIND, MOVE_WATER_PULSE, MOVE_NONE},
     },
 };
 
@@ -9724,7 +9724,7 @@ static const struct TrainerMon sParty_BugCatcherCharlie[] = {
     {
         .iv = 0,
         .lvl = 7,
-        .species = SPECIES_METAPOD,
+        .species = SPECIES_WEEDLE,
     },
 };
 

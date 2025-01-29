@@ -2139,9 +2139,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_VICTREEBEL] =
     {
         .baseHP        = 80,
-        .baseAttack    = 105,
+        .baseAttack    = 110,
         .baseDefense   = 65,
-        .baseSpeed     = 70,
+        .baseSpeed     = 75,
         .baseSpAttack  = 100,
         .baseSpDefense = 60,
         .types = {TYPE_GRASS, TYPE_POISON},

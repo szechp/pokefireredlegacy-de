@@ -182,6 +182,8 @@ static const u16 sCaterpieLevelUpLearnset[] = {
 };
 
 static const u16 sMetapodLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 7, MOVE_HARDEN),
     LEVEL_UP_END
@@ -212,6 +214,8 @@ static const u16 sWeedleLevelUpLearnset[] = {
 };
 
 static const u16 sKakunaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
+    LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 7, MOVE_HARDEN),
     LEVEL_UP_END
@@ -794,8 +798,8 @@ static const u16 sVenonatLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DISABLE),
     LEVEL_UP_MOVE( 1, MOVE_FORESIGHT),
-    LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
-    LEVEL_UP_MOVE( 9, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE( 9, MOVE_CONFUSION),
+    LEVEL_UP_MOVE(11, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE(13, MOVE_LEECH_LIFE),
     LEVEL_UP_MOVE(17, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE(20, MOVE_STUN_SPORE),
