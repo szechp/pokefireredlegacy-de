@@ -7838,7 +7838,7 @@ static const struct TrainerMon sParty_LeaderBrock[] = {
         .lvl = 13,
         .species = SPECIES_SANDSHREW,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_SANDSTORM, MOVE_SCRATCH, MOVE_ROCK_TOMB, MOVE_NONE},
+        .moves = {MOVE_SANDSTORM, MOVE_SCRATCH, MOVE_ROCK_TOMB, MOVE_SAND_ATTACK},
     },
     {
         .iv = 255,
