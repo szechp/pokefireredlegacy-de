@@ -271,4 +271,8 @@ VermilionCity_EventScript_GymSign::
 VermilionCity_EventScript_HarborSign::
 	msgbox VermilionCity_Text_VermilionHarbor, MSGBOX_SIGN
 	end
+
+VermilionCity_EventScript_HarborSign::
+	msgbox Route9_Text_Psyduck, MSGBOX_NPC
+	end
 `

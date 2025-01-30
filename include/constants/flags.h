@@ -204,7 +204,7 @@
 #define FLAG_HIDE_MEW               0x0BA
 #define FLAG_SPAWN_MEW              0x0BB
 #define FLAG_SPAWN_CELEBI              0x0BC
-#define FLAG_0x0BD               0x0BD
+#define FLAG_HIDE_PSYDUCK             0x0BD
 #define FLAG_0x0BE               0x0BE
 #define FLAG_0x0BF               0x0BF
 #define FLAG_0x0C0               0x0C0
