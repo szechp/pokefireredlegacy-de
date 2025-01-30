@@ -544,3 +544,11 @@ VermilionCity_EventScript_HarborSign::
 	msgbox VermilionCity_Text_VermilionHarbor, MSGBOX_SIGN
 # 273 "data/maps/VermilionCity/scripts.pory"
 	end
+# 274 "data/maps/VermilionCity/scripts.pory"
+
+# 275 "data/maps/VermilionCity/scripts.pory"
+VermilionCity_EventScript_Psyduck::
+# 276 "data/maps/VermilionCity/scripts.pory"
+	msgbox Route9_Text_Psyduck, MSGBOX_NPC
+# 277 "data/maps/VermilionCity/scripts.pory"
+	end

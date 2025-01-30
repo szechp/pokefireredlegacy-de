@@ -105,103 +105,103 @@ SSAnne_2F_Corridor_EventScript_RivalTrigger::
 # 53 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	setvar VAR_MAP_SCENE_S_S_ANNE_2F_CORRIDOR, 1
 # 54 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	releaseall
+	clearflag FLAG_HIDE_PSYDUCK
 # 55 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	end
+	releaseall
 # 56 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
+	end
 # 57 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_EventScript_RivalApproachLeft::
+
 # 58 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	applymovement LOCALID_RIVAL, SSAnne_2F_Corridor_Movement_RivalApproachLeft
+SSAnne_2F_Corridor_EventScript_RivalApproachLeft::
 # 59 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_RIVAL, SSAnne_2F_Corridor_Movement_RivalApproachLeft
 # 60 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	return
+	waitmovement 0
 # 61 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
+	return
 # 62 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_EventScript_RivalApproachMid::
+
 # 63 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	applymovement LOCALID_RIVAL, SSAnne_2F_Corridor_Movement_RivalApproachMid
+SSAnne_2F_Corridor_EventScript_RivalApproachMid::
 # 64 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SSAnne_2F_Corridor_Movement_PlayerFaceRivalMid
+	applymovement LOCALID_RIVAL, SSAnne_2F_Corridor_Movement_RivalApproachMid
 # 65 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, SSAnne_2F_Corridor_Movement_PlayerFaceRivalMid
 # 66 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	return
+	waitmovement 0
 # 67 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
+	return
 # 68 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_EventScript_RivalApproachRight::
+
 # 69 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SSAnne_2F_Corridor_Movement_PlayerFaceRivalRight
+SSAnne_2F_Corridor_EventScript_RivalApproachRight::
 # 70 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	applymovement LOCALID_RIVAL, SSAnne_2F_Corridor_Movement_RivalApproachRight
+	applymovement OBJ_EVENT_ID_PLAYER, SSAnne_2F_Corridor_Movement_PlayerFaceRivalRight
 # 71 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_RIVAL, SSAnne_2F_Corridor_Movement_RivalApproachRight
 # 72 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	return
+	waitmovement 0
 # 73 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
+	return
 # 74 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_EventScript_RivalSquirtle::
+
 # 75 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_SQUIRTLE, SSAnne_2F_Corridor_Text_RivalDefeat
+SSAnne_2F_Corridor_EventScript_RivalSquirtle::
 # 76 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	return
+	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_SQUIRTLE, SSAnne_2F_Corridor_Text_RivalDefeat
 # 77 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
+	return
 # 78 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_EventScript_RivalBulbasaur::
+
 # 79 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_BULBASAUR, SSAnne_2F_Corridor_Text_RivalDefeat
+SSAnne_2F_Corridor_EventScript_RivalBulbasaur::
 # 80 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	return
+	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_BULBASAUR, SSAnne_2F_Corridor_Text_RivalDefeat
 # 81 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
+	return
 # 82 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_EventScript_RivalCharmander::
+
 # 83 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_CHARMANDER, SSAnne_2F_Corridor_Text_RivalDefeat
+SSAnne_2F_Corridor_EventScript_RivalCharmander::
 # 84 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	return
+	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_CHARMANDER, SSAnne_2F_Corridor_Text_RivalDefeat
 # 85 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
+	return
 # 86 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_EventScript_RivalExitLeft::
+
 # 87 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	applymovement LOCALID_RIVAL, SSAnne_2F_Corridor_Movement_RivalExitLeft
+SSAnne_2F_Corridor_EventScript_RivalExitLeft::
 # 88 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_RIVAL, SSAnne_2F_Corridor_Movement_RivalExitLeft
 # 89 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	return
+	waitmovement 0
 # 90 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
+	return
 # 91 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_EventScript_RivalExitMid::
+
 # 92 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	applymovement LOCALID_RIVAL, SSAnne_2F_Corridor_Movement_RivalExitMid
+SSAnne_2F_Corridor_EventScript_RivalExitMid::
 # 93 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_RIVAL, SSAnne_2F_Corridor_Movement_RivalExitMid
 # 94 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	return
-# 95 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
-# 96 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_EventScript_RivalExitRight::
-# 97 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	applymovement LOCALID_RIVAL, SSAnne_2F_Corridor_Movement_RivalExitRight
-# 98 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	waitmovement 0
-# 99 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+# 95 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	return
-# 100 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+# 96 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 
+# 97 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+SSAnne_2F_Corridor_EventScript_RivalExitRight::
+# 98 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	applymovement LOCALID_RIVAL, SSAnne_2F_Corridor_Movement_RivalExitRight
+# 99 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	waitmovement 0
+# 100 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	return
 # 101 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_Movement_PlayerFaceRivalRight::
+
 # 102 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	delay_16
+SSAnne_2F_Corridor_Movement_PlayerFaceRivalRight::
 # 103 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	delay_16
 # 104 "data/maps/SSAnne_2F_Corridor/scripts.pory"
@@ -209,15 +209,15 @@ SSAnne_2F_Corridor_Movement_PlayerFaceRivalRight::
 # 105 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	delay_16
 # 106 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	walk_in_place_faster_left
-# 107 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	step_end
-# 108 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
-# 109 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_Movement_PlayerFaceRivalMid::
-# 110 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	delay_16
+# 107 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	walk_in_place_faster_left
+# 108 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	step_end
+# 109 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+
+# 110 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+SSAnne_2F_Corridor_Movement_PlayerFaceRivalMid::
 # 111 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	delay_16
 # 112 "data/maps/SSAnne_2F_Corridor/scripts.pory"
@@ -225,27 +225,27 @@ SSAnne_2F_Corridor_Movement_PlayerFaceRivalMid::
 # 113 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	delay_16
 # 114 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	walk_in_place_faster_left
+	delay_16
 # 115 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	step_end
+	walk_in_place_faster_left
 # 116 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
+	step_end
 # 117 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_Movement_RivalApproachLeft::
+
 # 118 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	walk_down
+SSAnne_2F_Corridor_Movement_RivalApproachLeft::
 # 119 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
 # 120 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
 # 121 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	step_end
-# 122 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
-# 123 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_Movement_RivalApproachMid::
-# 124 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
+# 122 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	step_end
+# 123 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+
+# 124 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+SSAnne_2F_Corridor_Movement_RivalApproachMid::
 # 125 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
 # 126 "data/maps/SSAnne_2F_Corridor/scripts.pory"
@@ -253,15 +253,15 @@ SSAnne_2F_Corridor_Movement_RivalApproachMid::
 # 127 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
 # 128 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	walk_in_place_faster_right
-# 129 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	step_end
-# 130 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
-# 131 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_Movement_RivalApproachRight::
-# 132 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
+# 129 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	walk_in_place_faster_right
+# 130 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	step_end
+# 131 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+
+# 132 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+SSAnne_2F_Corridor_Movement_RivalApproachRight::
 # 133 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
 # 134 "data/maps/SSAnne_2F_Corridor/scripts.pory"
@@ -269,19 +269,19 @@ SSAnne_2F_Corridor_Movement_RivalApproachRight::
 # 135 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
 # 136 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	walk_right
-# 137 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	delay_4
-# 138 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	step_end
-# 139 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
-# 140 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_Movement_RivalExitLeft::
-# 141 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	walk_right
-# 142 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
+# 137 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	walk_right
+# 138 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	delay_4
+# 139 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	step_end
+# 140 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+
+# 141 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+SSAnne_2F_Corridor_Movement_RivalExitLeft::
+# 142 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	walk_right
 # 143 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
 # 144 "data/maps/SSAnne_2F_Corridor/scripts.pory"
@@ -295,13 +295,13 @@ SSAnne_2F_Corridor_Movement_RivalExitLeft::
 # 148 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
 # 149 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	step_end
-# 150 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
-# 151 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_Movement_RivalExitMid::
-# 152 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
+# 150 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	step_end
+# 151 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+
+# 152 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+SSAnne_2F_Corridor_Movement_RivalExitMid::
 # 153 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
 # 154 "data/maps/SSAnne_2F_Corridor/scripts.pory"
@@ -315,13 +315,13 @@ SSAnne_2F_Corridor_Movement_RivalExitMid::
 # 158 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
 # 159 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	step_end
-# 160 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
-# 161 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_Movement_RivalExitRight::
-# 162 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
+# 160 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	step_end
+# 161 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+
+# 162 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+SSAnne_2F_Corridor_Movement_RivalExitRight::
 # 163 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
 # 164 "data/maps/SSAnne_2F_Corridor/scripts.pory"
@@ -335,12 +335,14 @@ SSAnne_2F_Corridor_Movement_RivalExitRight::
 # 168 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	walk_down
 # 169 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	step_end
+	walk_down
 # 170 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-
+	step_end
 # 171 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-SSAnne_2F_Corridor_EventScript_Sailor::
+
 # 172 "data/maps/SSAnne_2F_Corridor/scripts.pory"
-	msgbox SSAnne_2F_Corridor_Text_ThisShipIsLuxuryLiner, MSGBOX_NPC
+SSAnne_2F_Corridor_EventScript_Sailor::
 # 173 "data/maps/SSAnne_2F_Corridor/scripts.pory"
+	msgbox SSAnne_2F_Corridor_Text_ThisShipIsLuxuryLiner, MSGBOX_NPC
+# 174 "data/maps/SSAnne_2F_Corridor/scripts.pory"
 	end
