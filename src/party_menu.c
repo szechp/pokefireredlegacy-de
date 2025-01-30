@@ -5056,7 +5056,7 @@ static void ItemUseCB_RareCandyStep(u8 taskId, TaskFunc func)
     GetMonLevelUpWindowStats(mon, &ptr->data[NUM_STATS]);
     gPartyMenuUseExitCallback = TRUE;
     ItemUse_SetQuestLogEvent(QL_EVENT_USED_ITEM, mon, gSpecialVar_ItemId, 0xFFFF);
-    PlayFanfareByFanfareNum(FANFARE_LEVEL_UP);
+    PlayFanfare(MUS_LEVEL_UP);
     UpdateMonDisplayInfoAfterRareCandy(gPartyMenu.slotId, mon);
     RemoveBagItem(gSpecialVar_ItemId, 1);
     GetMonNickname(mon, gStringVar1);
@@ -5065,13 +5065,12 @@ static void ItemUseCB_RareCandyStep(u8 taskId, TaskFunc func)
     ScheduleBgCopyTilemapToVram(2);
     StringExpandPlaceholders(gStringVar4, gText_PkmnElevatedToLvVar2);
     DisplayPartyMenuMessage(gStringVar4, TRUE);
-    Task_TryLearnNewMoves(taskId);
     gTasks[taskId].func = Task_WaitRareCandyMessage; 
 }
+
 static void Task_WaitRareCandyMessage(u8 taskId)
 {
     if (WaitFanfare(FALSE) && IsPartyMenuTextPrinterActive() != TRUE && (JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON)))
-
     {
         PlaySE(SE_SELECT);
         gTasks[taskId].func = Task_TryLearnNewMoves;
@@ -5152,24 +5151,24 @@ static void Task_TryLearnNewMoves(u8 taskId)
         break;
     }
 }
+
 static void Task_TryLearningNextMove(u8 taskId)
 {
     u16 result = MonTryLearningNewMove(&gPlayerParty[gPartyMenu.slotId], FALSE);
-    DebugPrintf("Task_TryLearningNextMove");
-    if (JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON))    
+
+    if(result == MON_ALREADY_KNOWS_MOVE)
+        Task_TryLearningNextMove(taskId);
+    else
     {
         switch (result)
         {
         case MOVE_NONE: // No moves to learn
             PartyMenuTryEvolution(taskId);
             break;
-        case MON_HAS_MAX_MOVES:
+        case MON_HAS_MAX_MOVES: // replace move
             DisplayMonNeedsToReplaceMove(taskId);
             break;
-        case MON_ALREADY_KNOWS_MOVE:
-            return;
-
-        default:
+        default: // auto learned move to empty slot
             DisplayMonLearnedMove(taskId, result);
             break;
         }
@@ -5183,6 +5182,7 @@ static void PartyMenuTryEvolution(u8 taskId)
 
     if (targetSpecies != SPECIES_NONE)
     {
+        FreePartyPointers();
         if (gSpecialVar_ItemId == ITEM_RARE_CANDY && gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(gSpecialVar_ItemId, 1))
             gCB2_AfterEvolution = CB2_ReturnToPartyMenuUsingRareCandy;
         else
@@ -5198,10 +5198,12 @@ static void PartyMenuTryEvolution(u8 taskId)
             gTasks[taskId].func = Task_ClosePartyMenuAfterText;
     }
 }
+
 static void CB2_ReturnToPartyMenuUsingRareCandy(void)
 {
     gItemUseCB = ItemUseCB_RareCandy;
-    SetMainCallback2(CB2_ShowPartyMenuForItemUse);}
+    SetMainCallback2(CB2_ShowPartyMenuForItemUse);
+}
 
 static void DisplayMonNeedsToReplaceMove(u8 taskId)
 {
