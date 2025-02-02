@@ -1,7 +1,7 @@
 # 1 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 
 # 2 "data/maps/Route15_WestEntrance_2F/scripts.pory"
-.equ REQUIRED_CAUGHT_MONS, 30
+.equ REQUIRED_CAUGHT_MONS, 50
 # 3 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 
 # 4 "data/maps/Route15_WestEntrance_2F/scripts.pory"
@@ -71,7 +71,7 @@ Route15_WestEntrance_2F_EventScript_Aide::
 # 36 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 	setvar VAR_TEMP_1, SPECIES_SKARMORY
 # 37 "data/maps/Route15_WestEntrance_2F/scripts.pory"
-	givemon SPECIES_SKARMORY, 35
+	givemon SPECIES_SKARMORY, 40
 # 38 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, Route15_WestEntrance_2F_ReceiveAideSkarmory
 # 39 "data/maps/Route15_WestEntrance_2F/scripts.pory"

@@ -167,6 +167,10 @@ PokemonTower_6F_EventScript_ItemRareCandy::
 	end
 
 PokemonTower_6F_EventScript_ItemXAccuracy::
+	finditem ITEM_MAX_REVIVE
+	end
+
+PokemonTower_6F_EventScript_ItemShadowBall::
 	finditem ITEM_TM42
 	end
 
@@ -203,7 +207,7 @@ SafariZone_East_EventScript_ItemTM11::
 	end
 
 SafariZone_East_EventScript_ItemLeafStone::
-	finditem ITEM_KINGS_ROCK
+	finditem ITEM_PP_UP
 	end
 
 SafariZone_North_EventScript_ItemProtein::
@@ -239,7 +243,7 @@ SilphCo_4F_EventScript_ItemMaxRevive::
 	end
 
 SilphCo_4F_EventScript_ItemEscapeRope::
-	finditem ITEM_METAL_COAT
+	finditem ITEM_PROTEIN
 	end
 
 SilphCo_4F_EventScript_ItemFullHeal::
@@ -263,7 +267,7 @@ SilphCo_6F_EventScript_ItemHPUp::
 	end
 
 SilphCo_6F_EventScript_ItemXSpecial::
-	finditem ITEM_UP_GRADE
+	finditem ITEM_CARBOS
 	end
 
 SilphCo_7F_EventScript_ItemCalcium::

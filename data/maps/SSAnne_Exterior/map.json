@@ -85,7 +85,7 @@
       "type": "hidden_item",
       "x": 56,
       "y": 3,
-      "elevation": 0,
+      "elevation": 3,
       "item": "ITEM_CHOICE_BAND",
       "flag": "FLAG_HIDE_CHOICE_BAND",
       "quantity": 1,

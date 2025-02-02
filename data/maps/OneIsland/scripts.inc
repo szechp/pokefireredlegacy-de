@@ -216,3 +216,11 @@ OneIsland_EventScript_PokemonNetCenterSign::
 	msgbox OneIsland_Text_PokemonNetCenterSign, MSGBOX_SIGN
 # 109 "data/maps/OneIsland/scripts.pory"
 	end
+# 110 "data/maps/OneIsland/scripts.pory"
+
+# 111 "data/maps/OneIsland/scripts.pory"
+OneIsland_EventScript_Giovanni::
+# 112 "data/maps/OneIsland/scripts.pory"
+	msgbox OneIsland_Text_Brock, MSGBOX_NPC
+# 113 "data/maps/OneIsland/scripts.pory"
+	end

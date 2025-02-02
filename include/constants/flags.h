@@ -439,7 +439,7 @@
 #define FLAG_HIDE_POKEMON_MANSION_3F_IRON                       0x1A3
 #define FLAG_HIDE_POKEMON_MANSION_B1F_TM14                      0x1A4
 #define FLAG_HIDE_POKEMON_MANSION_B1F_FULL_RESTORE              0x1A5
-#define FLAG_0x1A6                                              0x1A6
+#define FLAG_HIDE_POKEMON_TOWER_6F_TM30                         0x1A6
 #define FLAG_HIDE_POKEMON_MANSION_B1F_TM22                      0x1A7
 #define FLAG_HIDE_POKEMON_MANSION_B1F_SECRET_KEY                0x1A8
 #define FLAG_HIDE_VICTORY_ROAD_1F_RARE_CANDY                    0x1A9
@@ -1225,7 +1225,7 @@
 #define FLAG_HIDDEN_ITEM_THICK_CLUB                                        (FLAG_HIDDEN_ITEMS_START + 192) 
 #define FLAG_HIDE_SOUL_DEW                                                 (FLAG_HIDDEN_ITEMS_START + 193)
 #define FLAG_HIDE_CHOICE_BAND                                              (FLAG_HIDDEN_ITEMS_START + 194)
-#define FLAG_UNUSED_0x4AB               0x4AB // Unused Flag
+#define FLAG_HIDDEN_MOON_STONE_RESPAWN                                     (FLAG_HIDDEN_ITEMS_START + 195)
 #define FLAG_UNUSED_0x4AC               0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD               0x4AD // Unused Flag
 #define FLAG_UNUSED_0x4AE               0x4AE // Unused Flag
@@ -1252,12 +1252,12 @@
 #define FLAG_SEVIIJOHTO          0x4BF
 #define FLAG_ARMSTRONG_DEFEATED  0x4C0
 #define FLAG_SEVIIMATCH          0x4C1
-#define FLAG_GOTFANG             (FLAG_HIDDEN_ITEMS_START + 195)
-#define FLAG_GOTYELLOW           (FLAG_HIDDEN_ITEMS_START + 196)
-#define FLAG_GOTBLUE             (FLAG_HIDDEN_ITEMS_START + 197)
-#define FLAG_GOTRED              (FLAG_HIDDEN_ITEMS_START + 198)
-#define FLAG_GOTPINK             (FLAG_HIDDEN_ITEMS_START + 199)
-#define FLAG_GOTGREEN            (FLAG_HIDDEN_ITEMS_START + 200)
+#define FLAG_GOTFANG             (FLAG_HIDDEN_ITEMS_START + 196)
+#define FLAG_GOTYELLOW           (FLAG_HIDDEN_ITEMS_START + 197)
+#define FLAG_GOTBLUE             (FLAG_HIDDEN_ITEMS_START + 198)
+#define FLAG_GOTRED              (FLAG_HIDDEN_ITEMS_START + 199)
+#define FLAG_GOTPINK             (FLAG_HIDDEN_ITEMS_START + 200)
+#define FLAG_GOTGREEN            (FLAG_HIDDEN_ITEMS_START + 201)
 #define FLAG_DEFEATED_NURSE_JOY  0x4C8
 #define FLAG_FOUGHT_CELEBI       0x4C9
 #define FLAG_DEFEATED_DUDE       0x4CA

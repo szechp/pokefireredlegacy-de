@@ -1,0 +1,8 @@
+raw `
+
+MtMoonSquare_MapScripts::
+	.byte 0
+
+MtMoonSquare_EventScript_Clefairy::
+	msgbox MtMoonSquare_Text_Clefairy, MSGBOX_NPC
+	end

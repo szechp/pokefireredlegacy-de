@@ -226,6 +226,40 @@ static const struct RenewableHiddenItemData sRenewableHiddenItems[] = {
         }
     },
     {
+        .mapGroup = MAP_GROUP(MT_MOON_SQUARE),
+        .mapNum = MAP_NUM(MT_MOON_SQUARE),
+        .rare = {
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM
+        },
+        .uncommon = {
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM
+        },
+        .common = {
+            HIDDEN_ID(FLAG_HIDDEN_MOON_STONE_RESPAWN),
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM,
+            NO_ITEM
+        }
+    },
+    {
         .mapGroup = MAP_GROUP(THREE_ISLAND_BERRY_FOREST),
         .mapNum = MAP_NUM(THREE_ISLAND_BERRY_FOREST),
         .rare = {

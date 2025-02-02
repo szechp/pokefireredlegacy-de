@@ -575,545 +575,545 @@ OneIsland_PokemonCenter_1F_EventScript_GiveCelioSapphire::
 # 288 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_HIDE_LORELEI_IN_HER_HOUSE
 # 289 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setvar VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 6
+	clearflag FLAG_HIDE_GIOVANNI_ONE
 # 290 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	special InitRoamer
+	setvar VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 6
 # 291 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	release
+	special InitRoamer
 # 292 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
+	release
 # 293 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	end
 # 294 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_ExplainRainbowPass::
+
 # 295 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_PassLetYouGetToAllIslands
+OneIsland_PokemonCenter_1F_EventScript_ExplainRainbowPass::
 # 296 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	release
+	msgbox OneIsland_PokemonCenter_1F_Text_PassLetYouGetToAllIslands
 # 297 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
+	release
 # 298 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	end
 # 299 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_GiveCelioRuby::
+
 # 300 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_OhThats
+OneIsland_PokemonCenter_1F_EventScript_GiveCelioRuby::
 # 301 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	textcolor NPC_TEXT_COLOR_NEUTRAL
+	msgbox OneIsland_PokemonCenter_1F_Text_OhThats
 # 302 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	playfanfare MUS_OBTAIN_TMHM
-# 303 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	message OneIsland_PokemonCenter_1F_Text_HandedRubyToCelio
-# 304 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmessage
-# 305 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitfanfare
-# 306 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	call EventScript_RestorePrevTextColor
-# 307 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	closemessage
-# 308 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement LOCALID_CELIO, OneIsland_PokemonCenter_1F_Movement_CelioPutGemInMachine
-# 309 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
-# 310 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	playse SE_CLICK
-# 311 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	call OneIsland_PokemonCenter_1F_EventScript_SetRubyMetatile
-# 312 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	special DrawWholeMapView
-# 313 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	delay 30
-# 314 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement LOCALID_CELIO, Common_Movement_FacePlayer
-# 315 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
-# 316 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_MayIAskOneMoreFavor, MSGBOX_YESNO
-# 317 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, OneIsland_PokemonCenter_1F_EventScript_DeclineHelpCelio
-# 318 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	goto OneIsland_PokemonCenter_1F_EventScript_GiveRainbowPass
-# 319 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
-# 320 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 321 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_DeclineHelpCelio::
-# 322 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_PleaseINeedYourHelp, MSGBOX_YESNO
-# 323 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, OneIsland_PokemonCenter_1F_EventScript_DeclineHelpCelio
-# 324 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	goto OneIsland_PokemonCenter_1F_EventScript_GiveRainbowPass
-# 325 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
-# 326 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 327 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_GiveRainbowPass::
-# 328 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_AnotherGemstoneInSeviiIslands
-# 329 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	removeitem ITEM_RUBY
-# 330 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	removeitem ITEM_TRI_PASS
-# 331 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setvar VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 5
-# 332 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	additem ITEM_RAINBOW_PASS
-# 333 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setflag FLAG_SYS_SEVII_MAP_4567
-# 334 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	textcolor NPC_TEXT_COLOR_NEUTRAL
-# 335 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	playfanfare MUS_OBTAIN_KEY_ITEM
-# 336 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	message OneIsland_PokemonCenter_1F_Text_ReturnedTriPassForRainbowPass
-# 337 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 303 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	playfanfare MUS_OBTAIN_TMHM
+# 304 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	message OneIsland_PokemonCenter_1F_Text_HandedRubyToCelio
+# 305 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	waitmessage
-# 338 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 306 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	waitfanfare
-# 339 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	playfanfare MUS_OBTAIN_KEY_ITEM
-# 340 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	message OneIsland_PokemonCenter_1F_Text_ObtainedExtraMapPage
-# 341 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmessage
-# 342 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitfanfare
-# 343 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 307 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	call EventScript_RestorePrevTextColor
-# 344 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	goto OneIsland_PokemonCenter_1F_EventScript_ExplainRainbowPass
-# 345 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
-# 346 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 347 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_CelioWaitingForRuby::
-# 348 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_TryingToFindGem
-# 349 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	release
-# 350 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
-# 351 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 352 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_CelioRequestRuby::
-# 353 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_CelioCaughtMoreMonMaybeICanBeUseful
-# 354 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement LOCALID_CELIO, Common_Movement_WalkInPlaceFasterUp
-# 355 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 308 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	closemessage
+# 309 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement LOCALID_CELIO, OneIsland_PokemonCenter_1F_Movement_CelioPutGemInMachine
+# 310 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	waitmovement 0
-# 356 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_YoullBeTradingFromTrainersFarAway
-# 357 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 311 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	playse SE_CLICK
+# 312 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	call OneIsland_PokemonCenter_1F_EventScript_SetRubyMetatile
+# 313 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	special DrawWholeMapView
+# 314 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	delay 30
+# 315 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	applymovement LOCALID_CELIO, Common_Movement_FacePlayer
-# 358 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 316 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	waitmovement 0
+# 317 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_MayIAskOneMoreFavor, MSGBOX_YESNO
+# 318 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, OneIsland_PokemonCenter_1F_EventScript_DeclineHelpCelio
+# 319 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	goto OneIsland_PokemonCenter_1F_EventScript_GiveRainbowPass
+# 320 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	end
+# 321 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+
+# 322 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_EventScript_DeclineHelpCelio::
+# 323 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_PleaseINeedYourHelp, MSGBOX_YESNO
+# 324 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, OneIsland_PokemonCenter_1F_EventScript_DeclineHelpCelio
+# 325 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	goto OneIsland_PokemonCenter_1F_EventScript_GiveRainbowPass
+# 326 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	end
+# 327 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+
+# 328 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_EventScript_GiveRainbowPass::
+# 329 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_AnotherGemstoneInSeviiIslands
+# 330 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	removeitem ITEM_RUBY
+# 331 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	removeitem ITEM_TRI_PASS
+# 332 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	setvar VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 5
+# 333 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	additem ITEM_RAINBOW_PASS
+# 334 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	setflag FLAG_SYS_SEVII_MAP_4567
+# 335 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+# 336 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	playfanfare MUS_OBTAIN_KEY_ITEM
+# 337 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	message OneIsland_PokemonCenter_1F_Text_ReturnedTriPassForRainbowPass
+# 338 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmessage
+# 339 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitfanfare
+# 340 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	playfanfare MUS_OBTAIN_KEY_ITEM
+# 341 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	message OneIsland_PokemonCenter_1F_Text_ObtainedExtraMapPage
+# 342 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmessage
+# 343 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitfanfare
+# 344 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	call EventScript_RestorePrevTextColor
+# 345 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	goto OneIsland_PokemonCenter_1F_EventScript_ExplainRainbowPass
+# 346 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	end
+# 347 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+
+# 348 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_EventScript_CelioWaitingForRuby::
+# 349 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_TryingToFindGem
+# 350 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	release
+# 351 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	end
+# 352 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+
+# 353 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_EventScript_CelioRequestRuby::
+# 354 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_CelioCaughtMoreMonMaybeICanBeUseful
+# 355 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement LOCALID_CELIO, Common_Movement_WalkInPlaceFasterUp
+# 356 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmovement 0
+# 357 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_YoullBeTradingFromTrainersFarAway
+# 358 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement LOCALID_CELIO, Common_Movement_FacePlayer
 # 359 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_NeedsSpecialGemstone
+	waitmovement 0
 # 360 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setvar VAR_MAP_SCENE_MT_EMBER_EXTERIOR, 1
+	msgbox OneIsland_PokemonCenter_1F_Text_NeedsSpecialGemstone
 # 361 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setvar VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 4
+	setvar VAR_MAP_SCENE_MT_EMBER_EXTERIOR, 1
 # 362 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	release
+	setvar VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 4
 # 363 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
-# 364 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 365 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_CelioPlayerMissingNationalDex::
-# 366 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_CelioImModifyingMyNetworkMachine
-# 367 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	release
-# 368 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 364 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	end
+# 365 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+
+# 366 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_EventScript_CelioPlayerMissingNationalDex::
+# 367 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_CelioImModifyingMyNetworkMachine
+# 368 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	release
 # 369 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	end
 # 370 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_Movement_CelioCheckMachine::
-# 371 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_in_place_up
-# 372 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	delay_8
-# 373 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_in_place_up
-# 374 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	step_end
-# 375 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 
+# 371 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_Movement_CelioCheckMachine::
+# 372 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	walk_in_place_up
+# 373 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	delay_8
+# 374 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	walk_in_place_up
+# 375 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	step_end
 # 376 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_Movement_CelioPutGemInMachine::
+
 # 377 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_in_place_faster_up
+OneIsland_PokemonCenter_1F_Movement_CelioPutGemInMachine::
 # 378 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_in_place_up
+	walk_in_place_faster_up
 # 379 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	delay_16
-# 380 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	walk_in_place_up
+# 380 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	delay_16
 # 381 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	walk_in_place_up
 # 382 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	step_end
+	walk_in_place_up
 # 383 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	step_end
 # 384 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_LittleBoy::
+
 # 385 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_CameFromPalletDontKnowIt, MSGBOX_NPC
+OneIsland_PokemonCenter_1F_EventScript_LittleBoy::
 # 386 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
+	msgbox OneIsland_PokemonCenter_1F_Text_CameFromPalletDontKnowIt, MSGBOX_NPC
 # 387 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	end
 # 388 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_Hiker::
+
 # 389 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_EnormousVolcanoOnIsland, MSGBOX_NPC
+OneIsland_PokemonCenter_1F_EventScript_Hiker::
 # 390 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
+	msgbox OneIsland_PokemonCenter_1F_Text_EnormousVolcanoOnIsland, MSGBOX_NPC
 # 391 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	end
 # 392 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_BattleGirl::
+
 # 393 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	lock
+OneIsland_PokemonCenter_1F_EventScript_BattleGirl::
 # 394 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	faceplayer
+	lock
 # 395 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, OneIsland_PokemonCenter_1F_EventScript_BattleGirlHoennLinked
+	faceplayer
 # 396 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_WishICouldTradeWithBoyfriend
+	goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, OneIsland_PokemonCenter_1F_EventScript_BattleGirlHoennLinked
 # 397 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	release
+	msgbox OneIsland_PokemonCenter_1F_Text_WishICouldTradeWithBoyfriend
 # 398 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
-# 399 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 400 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_BattleGirlHoennLinked::
-# 401 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_TradedWithFarAwayBoyfriend
-# 402 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	release
+# 399 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	end
+# 400 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+
+# 401 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_EventScript_BattleGirlHoennLinked::
+# 402 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_TradedWithFarAwayBoyfriend
 # 403 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
+	release
 # 404 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	end
 # 405 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_NetworkMachine::
+
 # 406 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	lockall
+OneIsland_PokemonCenter_1F_EventScript_NetworkMachine::
 # 407 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, OneIsland_PokemonCenter_1F_EventScript_NetworkMachineLinkedWithHoenn
+	lockall
 # 408 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	goto_if_set FLAG_SEVII_DETOUR_FINISHED, OneIsland_PokemonCenter_1F_EventScript_NetworkMachineLinkedWithKanto
+	goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, OneIsland_PokemonCenter_1F_EventScript_NetworkMachineLinkedWithHoenn
 # 409 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_MachineUnderAdjustment
+	goto_if_set FLAG_SEVII_DETOUR_FINISHED, OneIsland_PokemonCenter_1F_EventScript_NetworkMachineLinkedWithKanto
 # 410 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	releaseall
+	msgbox OneIsland_PokemonCenter_1F_Text_MachineUnderAdjustment
 # 411 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
+	releaseall
 # 412 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	end
 # 413 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_NetworkMachineLinkedWithKanto::
+
 # 414 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_MachineLinkedWithKanto
+OneIsland_PokemonCenter_1F_EventScript_NetworkMachineLinkedWithKanto::
 # 415 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	releaseall
+	msgbox OneIsland_PokemonCenter_1F_Text_MachineLinkedWithKanto
 # 416 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
-# 417 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 418 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_NetworkMachineLinkedWithHoenn::
-# 419 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_MachineLinkedWithKantoAndHoenn
-# 420 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	releaseall
+# 417 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	end
+# 418 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+
+# 419 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_EventScript_NetworkMachineLinkedWithHoenn::
+# 420 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_MachineLinkedWithKantoAndHoenn
 # 421 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
+	releaseall
 # 422 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	end
 # 423 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandTriggerTop::
+
 # 424 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	lockall
+OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandTriggerTop::
 # 425 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setvar VAR_TEMP_1, 1
+	lockall
 # 426 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	goto OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandScene
+	setvar VAR_TEMP_1, 1
 # 427 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
+	goto OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandScene
 # 428 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	end
 # 429 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandTriggerMidTop::
+
 # 430 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	lockall
+OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandTriggerMidTop::
 # 431 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setvar VAR_TEMP_1, 2
+	lockall
 # 432 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	goto OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandScene
+	setvar VAR_TEMP_1, 2
 # 433 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
+	goto OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandScene
 # 434 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	end
 # 435 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandTriggerMidBottom::
+
 # 436 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	lockall
+OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandTriggerMidBottom::
 # 437 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setvar VAR_TEMP_1, 3
-# 438 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	goto OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandScene
-# 439 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
-# 440 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 441 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandTriggerBottom::
-# 442 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	lockall
-# 443 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setvar VAR_TEMP_1, 4
-# 444 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 438 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	setvar VAR_TEMP_1, 3
+# 439 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	goto OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandScene
+# 440 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	end
+# 441 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+
+# 442 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandTriggerBottom::
+# 443 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	lockall
+# 444 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	setvar VAR_TEMP_1, 4
 # 445 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	end
+	goto OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandScene
 # 446 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 447 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandScene::
-# 448 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	textcolor NPC_TEXT_COLOR_MALE
-# 449 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	playse SE_PIN
-# 450 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement LOCALID_BILL, Common_Movement_ExclamationMark
-# 451 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
-# 452 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_BillOhHeyPlayer
-# 453 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	closemessage
-# 454 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	call_if_eq VAR_TEMP_1, 1, OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillTop
-# 455 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	call_if_eq VAR_TEMP_1, 2, OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillMidTop
-# 456 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	call_if_eq VAR_TEMP_1, 3, OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillMidBottom
-# 457 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	call_if_eq VAR_TEMP_1, 4, OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillBottom
-# 458 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	delay 10
-# 459 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_BillWeGotItDone
-# 460 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-# 461 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
-# 462 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_CelioJobWentQuick
-# 463 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement LOCALID_BILL, Common_Movement_WalkInPlaceFasterDown
-# 464 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
-# 465 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement LOCALID_CELIO, Common_Movement_WalkInPlaceFasterUp
-# 466 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
-# 467 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_BillYouveLearnedALot
-# 468 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_CelioOhReallyEhehe
-# 469 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	closemessage
-# 470 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement LOCALID_BILL, Common_Movement_WalkInPlaceFasterLeft
-# 471 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
-# 472 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	delay 10
-# 473 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
-# 474 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
-# 475 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	delay 15
-# 476 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_BillWeShouldHeadBackToKanto
-# 477 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	closemessage
-# 478 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement LOCALID_BILL, Common_Movement_WalkInPlaceFasterDown
-# 479 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
-# 480 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	delay 15
-# 481 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement LOCALID_CELIO, Common_Movement_WalkInPlaceFasterLeft
-# 482 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
-# 483 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-# 484 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
-# 485 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	msgbox OneIsland_PokemonCenter_1F_Text_CelioPromiseIllShowYouAroundSometime
-# 486 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	closemessage
-# 487 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	delay 25
-# 488 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, OneIsland_PokemonCenter_1F_Movement_PlayerExit
-# 489 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement LOCALID_BILL, OneIsland_PokemonCenter_1F_Movement_BillExit
-# 490 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
-# 491 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	playse SE_EXIT
-# 492 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setflag FLAG_HIDE_ONE_ISLAND_POKECENTER_BILL
-# 493 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setvar VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 3
-# 494 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	clearflag FLAG_HIDE_CINNABAR_BILL
-# 495 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setvar VAR_MAP_SCENE_CINNABAR_ISLAND, 3
-# 496 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setvar VAR_0x8004, SEAGALLOP_ONE_ISLAND
-# 497 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	setvar VAR_0x8006, SEAGALLOP_CINNABAR_ISLAND
-# 498 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	goto EventScript_SetSail
-# 499 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	end
+# 447 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+
+# 448 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandScene::
+# 449 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	textcolor NPC_TEXT_COLOR_MALE
+# 450 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	playse SE_PIN
+# 451 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement LOCALID_BILL, Common_Movement_ExclamationMark
+# 452 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmovement 0
+# 453 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_BillOhHeyPlayer
+# 454 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	closemessage
+# 455 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	call_if_eq VAR_TEMP_1, 1, OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillTop
+# 456 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	call_if_eq VAR_TEMP_1, 2, OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillMidTop
+# 457 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	call_if_eq VAR_TEMP_1, 3, OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillMidBottom
+# 458 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	call_if_eq VAR_TEMP_1, 4, OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillBottom
+# 459 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	delay 10
+# 460 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_BillWeGotItDone
+# 461 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+# 462 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmovement 0
+# 463 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_CelioJobWentQuick
+# 464 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement LOCALID_BILL, Common_Movement_WalkInPlaceFasterDown
+# 465 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmovement 0
+# 466 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement LOCALID_CELIO, Common_Movement_WalkInPlaceFasterUp
+# 467 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmovement 0
+# 468 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_BillYouveLearnedALot
+# 469 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_CelioOhReallyEhehe
+# 470 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	closemessage
+# 471 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement LOCALID_BILL, Common_Movement_WalkInPlaceFasterLeft
+# 472 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmovement 0
+# 473 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	delay 10
+# 474 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+# 475 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmovement 0
+# 476 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	delay 15
+# 477 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_BillWeShouldHeadBackToKanto
+# 478 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	closemessage
+# 479 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement LOCALID_BILL, Common_Movement_WalkInPlaceFasterDown
+# 480 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmovement 0
+# 481 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	delay 15
+# 482 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement LOCALID_CELIO, Common_Movement_WalkInPlaceFasterLeft
+# 483 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmovement 0
+# 484 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+# 485 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmovement 0
+# 486 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	msgbox OneIsland_PokemonCenter_1F_Text_CelioPromiseIllShowYouAroundSometime
+# 487 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	closemessage
+# 488 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	delay 25
+# 489 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, OneIsland_PokemonCenter_1F_Movement_PlayerExit
+# 490 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement LOCALID_BILL, OneIsland_PokemonCenter_1F_Movement_BillExit
+# 491 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmovement 0
+# 492 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	playse SE_EXIT
+# 493 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	setflag FLAG_HIDE_ONE_ISLAND_POKECENTER_BILL
+# 494 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	setvar VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 3
+# 495 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	clearflag FLAG_HIDE_CINNABAR_BILL
+# 496 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	setvar VAR_MAP_SCENE_CINNABAR_ISLAND, 3
+# 497 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	setvar VAR_0x8004, SEAGALLOP_ONE_ISLAND
+# 498 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	setvar VAR_0x8006, SEAGALLOP_CINNABAR_ISLAND
+# 499 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	goto EventScript_SetSail
 # 500 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	end
 # 501 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillTop::
+
 # 502 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillTop
+OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillTop::
 # 503 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillTop
 # 504 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	return
+	waitmovement 0
 # 505 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	return
 # 506 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillMidTop::
+
 # 507 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillMidTop
+OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillMidTop::
 # 508 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillMidTop
 # 509 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	return
+	waitmovement 0
 # 510 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	return
 # 511 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillMidBottom::
+
 # 512 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillMidBottom
+OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillMidBottom::
 # 513 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillMidBottom
 # 514 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	return
-# 515 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 516 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillBottom::
-# 517 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillBottom
-# 518 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	waitmovement 0
-# 519 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 515 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	return
+# 516 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+
+# 517 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillBottom::
+# 518 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillBottom
+# 519 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	waitmovement 0
 # 520 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	return
 # 521 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillTop::
+
 # 522 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_right
+OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillTop::
 # 523 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_down
+	walk_right
 # 524 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_in_place_faster_right
+	walk_down
 # 525 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	step_end
-# 526 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 527 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillMidTop::
-# 528 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_right
-# 529 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	step_end
-# 530 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 531 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillMidBottom::
-# 532 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_right
-# 533 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_up
-# 534 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	walk_in_place_faster_right
-# 535 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 526 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	step_end
-# 536 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 527 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 
-# 537 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillBottom::
-# 538 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 528 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillMidTop::
+# 529 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	walk_right
-# 539 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 530 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	step_end
+# 531 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+
+# 532 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillMidBottom::
+# 533 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	walk_right
+# 534 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	walk_up
+# 535 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	walk_in_place_faster_right
+# 536 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	step_end
+# 537 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+
+# 538 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_Movement_PlayerWalkToBillBottom::
+# 539 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	walk_right
 # 540 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	walk_up
 # 541 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_in_place_faster_right
+	walk_up
 # 542 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	step_end
+	walk_in_place_faster_right
 # 543 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	step_end
 # 544 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-@ Unused
+
 # 545 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_Movement_DelayWalkInPlaceLeft::
+@ Unused
 # 546 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	delay_16
+OneIsland_PokemonCenter_1F_Movement_DelayWalkInPlaceLeft::
 # 547 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	delay_16
 # 548 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	delay_4
+	delay_16
 # 549 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_in_place_faster_left
+	delay_4
 # 550 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	step_end
+	walk_in_place_faster_left
 # 551 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
-# 552 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-@ Unused
-# 553 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_Movement_WalkInPlaceDown::
-# 554 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_in_place_fast_down
-# 555 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	step_end
-# 556 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+# 552 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 
+# 553 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+@ Unused
+# 554 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+OneIsland_PokemonCenter_1F_Movement_WalkInPlaceDown::
+# 555 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	walk_in_place_fast_down
+# 556 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	step_end
 # 557 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_Movement_PlayerExit::
+
 # 558 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_left
+OneIsland_PokemonCenter_1F_Movement_PlayerExit::
 # 559 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	walk_left
 # 560 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
@@ -1121,17 +1121,17 @@ OneIsland_PokemonCenter_1F_Movement_PlayerExit::
 # 561 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	walk_left
 # 562 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_down
+	walk_left
 # 563 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	walk_down
 # 564 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	step_end
+	walk_down
 # 565 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-
+	step_end
 # 566 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-OneIsland_PokemonCenter_1F_Movement_BillExit::
+
 # 567 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_left
+OneIsland_PokemonCenter_1F_Movement_BillExit::
 # 568 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	walk_left
 # 569 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
@@ -1141,6 +1141,8 @@ OneIsland_PokemonCenter_1F_Movement_BillExit::
 # 571 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	walk_left
 # 572 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
-	walk_down
+	walk_left
 # 573 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
+	walk_down
+# 574 "data/maps/OneIsland_PokemonCenter_1F/scripts.pory"
 	step_end

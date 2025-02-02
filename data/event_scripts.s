@@ -1412,3 +1412,6 @@ Text_TestMsg::
 
 	.include "data/maps/RockTunnel_B2F/scripts.inc"
 	.include "data/maps/RockTunnel_B2F/text.inc"
+
+	.include "data/maps/MtMoonSquare/scripts.inc"
+	.include "data/maps/MtMoonSquare/text.inc"

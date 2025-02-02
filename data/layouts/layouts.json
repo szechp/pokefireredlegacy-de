@@ -4416,6 +4416,18 @@
       "secondary_tileset": "gTileset_RockTunnel",
       "border_filepath": "data/layouts/RockTunnel_B2F/border.bin",
       "blockdata_filepath": "data/layouts/RockTunnel_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_MOON_SQUARE",
+      "name": "MtMoonSquare_Layout",
+      "width": 24,
+      "height": 12,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_IslandHarbor",
+      "border_filepath": "data/layouts/MtMoonSquare/border.bin",
+      "blockdata_filepath": "data/layouts/MtMoonSquare/map.bin"
     }
   ]
 }

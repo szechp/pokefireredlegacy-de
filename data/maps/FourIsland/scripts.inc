@@ -3,7 +3,7 @@
 # 2 "data/maps/FourIsland/scripts.pory"
 .equ LOCALID_DAYCARE_MAN, 1
 # 3 "data/maps/FourIsland/scripts.pory"
-.equ LOCALID_RIVAL, 10
+.equ LOCALID_RIVAL, 9
 # 4 "data/maps/FourIsland/scripts.pory"
 
 # 5 "data/maps/FourIsland/scripts.pory"
