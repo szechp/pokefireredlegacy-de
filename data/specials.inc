@@ -35,7 +35,7 @@ gSpecials::
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial
-	def_special NullFieldSpecial
+	def_special GiveTicketFame
 	def_special TryBattleLinkup
 	def_special TryTradeLinkup
 	def_special TryRecordMixLinkup
