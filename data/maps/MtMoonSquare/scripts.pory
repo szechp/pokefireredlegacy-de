@@ -4,5 +4,53 @@ MtMoonSquare_MapScripts::
 	.byte 0
 
 MtMoonSquare_EventScript_Clefairy::
-	msgbox MtMoonSquare_Text_Clefairy, MSGBOX_NPC
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
+	msgbox CeladonCity_Condominiums_1F_Text_Clefairy
+	waitmoncry
+	release
+    end
+
+MtMoonSquare_EventScript_Jiggypuff::
+	lock
+	faceplayer
+	fadeoutbgm 0
+	playbgm MUS_JIGGLYPUFF, 0
+	message PewterCity_PokemonCenter_1F_Text_Jigglypuff
+	waitmessage
+	delay 455
+	playbgm MUS_POKE_CENTER, 1
+	release
 	end
+
+MtMoonSquare_EventScript_NidoranF::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_NIDORAN_F, CRY_MODE_NORMAL
+	msgbox CeladonCity_Condominiums_1F_Text_Nidoran
+	waitmoncry
+	release
+	end
+
+MtMoonSquare_EventScript_NidoranM::
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	waitse
+	playmoncry SPECIES_NIDORAN_M, CRY_MODE_NORMAL
+	msgbox PewterCity_House1_Text_Nidoran
+	waitmoncry
+	call EventScript_RestorePrevTextColor
+    return
+
+MtMoonSquare_EventScript_Nidorino::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_NIDORINO, CRY_MODE_NORMAL
+	msgbox LavenderTown_VolunteerPokemonHouse_Text_Nidorino
+	waitmoncry
+	release
+	end
+`

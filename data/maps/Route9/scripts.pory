@@ -7,6 +7,12 @@ Route9_EventScript_RouteSign::
 	end
 
 Route9_EventScript_Psyduck::
-	msgbox Route9_Text_Psyduck, MSGBOX_NPC
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PSYDUCK, CRY_MODE_NORMAL
+	msgbox LavenderTown_VolunteerPokemonHouse_Text_Psyduck
+	waitmoncry
+	release
 	end
 `
