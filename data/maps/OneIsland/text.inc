@@ -60,3 +60,6 @@ OneIsland_Text_IsntWarmClimateHereGreat::
     .string "Hi, sight-seeing, are you?\n"
     .string "Isn't the warm climate here great?$"
 
+OneIsland_Text_Brock::
+    .string "Hi, sight-seeing, are you?\n"
+    .string "Isn't the warm climate here great?$"

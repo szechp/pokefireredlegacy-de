@@ -107,4 +107,10 @@ OneIsland_EventScript_IslandSign::
 OneIsland_EventScript_PokemonNetCenterSign::
 	msgbox OneIsland_Text_PokemonNetCenterSign, MSGBOX_SIGN
 	end
+
+OneIsland_EventScript_Giovanni::
+	msgbox OneIsland_Text_Brock, MSGBOX_NPC
+	end
+
+
 `
