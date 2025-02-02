@@ -549,6 +549,18 @@ VermilionCity_EventScript_HarborSign::
 # 275 "data/maps/VermilionCity/scripts.pory"
 VermilionCity_EventScript_Psyduck::
 # 276 "data/maps/VermilionCity/scripts.pory"
-	msgbox Route9_Text_Psyduck, MSGBOX_NPC
+	lock
 # 277 "data/maps/VermilionCity/scripts.pory"
+	faceplayer
+# 278 "data/maps/VermilionCity/scripts.pory"
+	waitse
+# 279 "data/maps/VermilionCity/scripts.pory"
+	playmoncry SPECIES_PSYDUCK, CRY_MODE_NORMAL
+# 280 "data/maps/VermilionCity/scripts.pory"
+	msgbox LavenderTown_VolunteerPokemonHouse_Text_Psyduck
+# 281 "data/maps/VermilionCity/scripts.pory"
+	waitmoncry
+# 282 "data/maps/VermilionCity/scripts.pory"
+	release
+# 283 "data/maps/VermilionCity/scripts.pory"
 	end
