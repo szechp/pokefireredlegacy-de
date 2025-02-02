@@ -33,12 +33,39 @@ Route15_WestEntrance_2F_EventScript_Aide::
 	call Route15_WestEntrance_2F_EventScript_GetAideRequestInfo
 	goto_if_lt VAR_0x8006, REQUIRED_CAUGHT_MONS, Aide_EventScript_HaventCaughtEnough
 	msgbox Route15_WestEntrance_2F_Text_GreatHereYouGo
-	checkitemspace ITEM_EXP_SHARE
-	goto_if_eq VAR_RESULT, FALSE, Aide_EventScript_NoRoomForItem
-	giveitem_msg Route15_WestEntrance_2F_Text_ReceivedItemFromAide, ITEM_EXP_SHARE
-	setflag FLAG_GOT_EXP_SHARE_FROM_OAKS_AIDE
-	msgbox Route15_WestEntrance_2F_Text_ExplainExpShare
+	setvar VAR_TEMP_1, SPECIES_SKARMORY
+	givemon SPECIES_SKARMORY, 40
+	goto_if_eq VAR_RESULT, 0, Route15_WestEntrance_2F_ReceiveAideSkarmory
+	goto_if_eq VAR_RESULT, 1, Route15_WestEntrance_2F_ReceiveAideSkarmoryPC
+	goto_if_eq VAR_RESULT, 2, EventScript_NoMoreRoomForPokemon
 	release
+	end
+	
+Route15_WestEntrance_2F_ReceiveAideSkarmory::
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	playfanfare MUS_LEVEL_UP
+	message Route15_WestEntrance_2F_Text_ReceivedItemFromAide
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_SKARMORY
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route15_WestEntrance_2F_EndReceiveFossil
+	call EventScript_GetGiftMonPartySlot
+	call EventScript_ChangePokemonNickname
+	goto Route15_WestEntrance_2F_EndReceiveFossil
+	end
+
+Route15_WestEntrance_2F_ReceiveAideSkarmoryPC::
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	playfanfare MUS_LEVEL_UP
+	message Route15_WestEntrance_2F_Text_ReceivedItemFromAide
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_SKARMORY
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route15_WestEntrance_2F_FossilTransferredToPC
+	call EventScript_NameReceivedBoxMon
+	goto Route15_WestEntrance_2F_FossilTransferredToPC
 	end
 
 Route15_WestEntrance_2F_EventScript_AlreadyGotExpShare::
@@ -50,4 +77,22 @@ Route15_WestEntrance_2F_EventScript_GetAideRequestInfo::
 	buffernumberstring STR_VAR_1, REQUIRED_CAUGHT_MONS
 	bufferitemname STR_VAR_2, ITEM_EXP_SHARE
 	return
+
+Route15_WestEntrance_2F_FossilTransferredToPC::
+	call EventScript_TransferredToPC
+	goto Route15_WestEntrance_2F_EndReceiveFossil
+	end
+
+Route15_WestEntrance_2F_EndReceiveFossil::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox Route15_WestEntrance_2F_Text_ExplainExpShare
+	setflag FLAG_GOT_EXP_SHARE_FROM_OAKS_AIDE
+	release
+	end
+
+Route15_WestEntrance_2F_AlreadyGotFossil::
+	msgbox Route15_WestEntrance_2F_Text_ExplainExpShare
+	release
+	end
+
 `

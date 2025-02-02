@@ -7838,33 +7838,35 @@ static const struct TrainerMon sParty_LeaderBrock[] = {
         .lvl = 13,
         .species = SPECIES_SANDSHREW,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_SANDSTORM, MOVE_SCRATCH, MOVE_ROCK_TOMB, MOVE_SAND_ATTACK},
+        .moves = {MOVE_SANDSTORM, MOVE_NONE, MOVE_ROCK_TOMB, MOVE_SAND_ATTACK},
+        .evs = {0, 0, 0, 0, 0, 48},
     },
     {
         .iv = 255,
         .lvl = 13,
         .species = SPECIES_GEODUDE,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_TOMB, MOVE_ROCK_THROW},
+        .moves = {MOVE_MUD_SLAP, MOVE_DEFENSE_CURL, MOVE_ROCK_TOMB, MOVE_TACKLE},
+        .evs = {0, 0, 0, 128, 0, 128},
     },
     {
         .iv = 100,
         .lvl = 14,
         .species = SPECIES_ONIX,
         .heldItem = ITEM_ORAN_BERRY,
-        .moves = {MOVE_SCREECH, MOVE_BIND, MOVE_ROCK_TOMB, MOVE_CONSTRICT},
+        .moves = {MOVE_SCREECH, MOVE_BIND, MOVE_ROCK_TOMB, MOVE_TACKLE},
     },
-};
+}; //I hate Brock
 
 static const struct TrainerMon sParty_LeaderMisty[] = {
     {
-        .iv = 100,
+        .iv = 150,
         .lvl = 19,
         .species = SPECIES_POLIWHIRL,
         .moves = {MOVE_WATER_PULSE, MOVE_DOUBLE_SLAP, MOVE_HYPNOSIS, MOVE_MIND_READER},
     },
     {
-        .iv = 150,
+        .iv = 200,
         .lvl = 20,
         .species = SPECIES_GOLDEEN,
         .moves = {MOVE_HORN_ATTACK, MOVE_SUPERSONIC, MOVE_PECK, MOVE_WATERFALL},
@@ -7888,7 +7890,7 @@ static const struct TrainerMon sParty_LeaderLtSurge[] = {
         .iv = 150,
         .lvl = 24,
         .species = SPECIES_ELECTRODE,
-        .moves = {MOVE_THUNDER_SHOCK, MOVE_THUNDER_WAVE, MOVE_SELF_DESTRUCT, MOVE_SELF_DESTRUCT},
+        .moves = {MOVE_THUNDER_SHOCK, MOVE_THUNDER_WAVE, MOVE_SELF_DESTRUCT, MOVE_SWIFT},
     },
     {
         .iv = 200,
@@ -7897,7 +7899,7 @@ static const struct TrainerMon sParty_LeaderLtSurge[] = {
         .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM, MOVE_METAL_SOUND},
     },
     {
-        .iv = 100,
+        .iv = 150,
         .lvl = 26,
         .species = SPECIES_RAICHU,
         .moves = {MOVE_BODY_SLAM, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_SHOCK_WAVE},
