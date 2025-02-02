@@ -1,6 +1,6 @@
 raw `
 .equ LOCALID_DAYCARE_MAN, 1
-.equ LOCALID_RIVAL, 10
+.equ LOCALID_RIVAL, 9
 
 FourIsland_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, FourIsland_OnTransition
