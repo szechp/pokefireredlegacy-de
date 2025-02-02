@@ -1617,8 +1617,8 @@ static const u8 sStatsToRaise[] =
 // 0-99, 100-199, 200+
 static const s8 sFriendshipEventDeltas[][3] = 
 {
-    [FRIENDSHIP_EVENT_GROW_LEVEL]           = {10,  6,  6 },
-    [FRIENDSHIP_EVENT_VITAMIN]              = {10,  6,  6 },
+    [FRIENDSHIP_EVENT_GROW_LEVEL]           = {8,   5,  5 },
+    [FRIENDSHIP_EVENT_VITAMIN]              = {8,   5,  5 },
     [FRIENDSHIP_EVENT_BATTLE_ITEM]          = { 2,  2,  0 },
     [FRIENDSHIP_EVENT_LEAGUE_BATTLE]        = { 6,  4,  2 },
     [FRIENDSHIP_EVENT_LEARN_TMHM]           = { 2,  2,  0 },
