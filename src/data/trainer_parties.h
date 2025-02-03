@@ -3357,7 +3357,7 @@ static const struct TrainerMon sParty_PokemaniacCooper[] = {
     {
         .iv = 30,
         .lvl = 23,
-        .species = SPECIES_SLOWPOKE,
+        .species = SPECIES_WYNAUT,
     },
 };
 

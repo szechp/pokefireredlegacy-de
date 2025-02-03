@@ -1641,34 +1641,34 @@
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 15,
+                "min_level": 15,
+                "max_level": 18,
                 "species": "SPECIES_HORSEA"
               },
               {
-                "min_level": 5,
-                "max_level": 15,
-                "species": "SPECIES_MAGIKARP"
+                "min_level": 15,
+                "max_level": 18,
+                "species": "SPECIES_TENTACOOL"
               },
               {
-                "min_level": 5,
-                "max_level": 15,
+                "min_level": 15,
+                "max_level": 18,
                 "species": "SPECIES_KRABBY"
               },
               {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_HORSEA"
+                "min_level": 25,
+                "max_level": 35,
+                "species": "SPECIES_STARYU"
               },
               {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_SHELLDER"
+                "min_level": 25,
+                "max_level": 35,
+                "species": "SPECIES_CHINCHOU"
               },
               {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_GYARADOS"
+                "min_level": 25,
+                "max_level": 35,
+                "species": "SPECIES_MARILL"
               },
               {
                 "min_level": 25,
@@ -13742,7 +13742,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_SMEARGLE"
+                "species": "SPECIES_DUNSPARCE"
               },
               {
                 "min_level": 5,
@@ -13752,7 +13752,7 @@
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_SMEARGLE"
+                "species": "SPECIES_DUNSPARCE"
               }
             ]
           }
@@ -18464,29 +18464,29 @@
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 15,
+                "min_level": 15,
+                "max_level": 18,
                 "species": "SPECIES_HORSEA"
               },
               {
-                "min_level": 5,
-                "max_level": 15,
-                "species": "SPECIES_MAGIKARP"
+                "min_level": 15,
+                "max_level": 18,
+                "species": "SPECIES_TENTACOOL"
               },
               {
-                "min_level": 5,
-                "max_level": 15,
+                "min_level": 15,
+                "max_level": 18,
                 "species": "SPECIES_KRABBY"
               },
               {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_HORSEA"
+                "min_level": 25,
+                "max_level": 35,
+                "species": "SPECIES_SHELLDER"
               },
               {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_HORSEA"
+                "min_level": 25,
+                "max_level": 35,
+                "species": "SPECIES_STARYU"
               },
               {
                 "min_level": 15,

@@ -21,7 +21,7 @@ MtMoonSquare_EventScript_Jiggypuff::
 	message PewterCity_PokemonCenter_1F_Text_Jigglypuff
 	waitmessage
 	delay 455
-	playbgm MUS_POKE_CENTER, 1
+	playbgm MUS_SCHOOL, 1
 	release
 	end
 
@@ -36,13 +36,15 @@ MtMoonSquare_EventScript_NidoranF::
 	end
 
 MtMoonSquare_EventScript_NidoranM::
+	lock
+	faceplayer
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	waitse
 	playmoncry SPECIES_NIDORAN_M, CRY_MODE_NORMAL
 	msgbox PewterCity_House1_Text_Nidoran
 	waitmoncry
 	call EventScript_RestorePrevTextColor
-    return
+    end
 
 MtMoonSquare_EventScript_Nidorino::
 	lock

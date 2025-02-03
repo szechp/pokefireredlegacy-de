@@ -86,7 +86,7 @@
       "x": 13,
       "y": 27,
       "elevation": 3,
-      "item": "ITEM_STARDUST",
+      "item": "ITEM_STAR_PIECE",
       "flag": "FLAG_HIDDEN_ITEM_ONE_ISLAND_TREASURE_BEACH_STARDUST_2",
       "quantity": 1,
       "underfoot": false
@@ -96,7 +96,7 @@
       "x": 11,
       "y": 31,
       "elevation": 3,
-      "item": "ITEM_PEARL",
+      "item": "ITEM_NUGGET",
       "flag": "FLAG_HIDDEN_ITEM_ONE_ISLAND_TREASURE_BEACH_PEARL",
       "quantity": 1,
       "underfoot": false
@@ -106,7 +106,7 @@
       "x": 9,
       "y": 34,
       "elevation": 3,
-      "item": "ITEM_PEARL",
+      "item": "ITEM_STAR_PIECE",
       "flag": "FLAG_HIDDEN_ITEM_ONE_ISLAND_TREASURE_BEACH_PEARL_2",
       "quantity": 1,
       "underfoot": false

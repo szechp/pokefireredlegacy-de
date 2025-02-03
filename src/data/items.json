@@ -2547,7 +2547,7 @@
     {
       "english": "CORNN BERRY",
       "itemId": "ITEM_CORNN_BERRY",
-      "price": 20,
+      "price": 10000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2563,7 +2563,7 @@
     {
       "english": "MAGOST BERRY",
       "itemId": "ITEM_MAGOST_BERRY",
-      "price": 20,
+      "price": 10000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2579,7 +2579,7 @@
     {
       "english": "RABUTA BERRY",
       "itemId": "ITEM_RABUTA_BERRY",
-      "price": 20,
+      "price": 10000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2595,7 +2595,7 @@
     {
       "english": "NOMEL BERRY",
       "itemId": "ITEM_NOMEL_BERRY",
-      "price": 20,
+      "price": 10000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2611,7 +2611,7 @@
     {
       "english": "SPELON BERRY",
       "itemId": "ITEM_SPELON_BERRY",
-      "price": 20,
+      "price": 10000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2627,7 +2627,7 @@
     {
       "english": "PAMTRE BERRY",
       "itemId": "ITEM_PAMTRE_BERRY",
-      "price": 20,
+      "price": 10000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2643,7 +2643,7 @@
     {
       "english": "WATMEL BERRY",
       "itemId": "ITEM_WATMEL_BERRY",
-      "price": 20,
+      "price": 10000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2659,7 +2659,7 @@
     {
       "english": "DURIN BERRY",
       "itemId": "ITEM_DURIN_BERRY",
-      "price": 20,
+      "price": 10000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2675,7 +2675,7 @@
     {
       "english": "BELUE BERRY",
       "itemId": "ITEM_BELUE_BERRY",
-      "price": 20,
+      "price": 10000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2803,7 +2803,7 @@
     {
       "english": "ENIGMA BERRY",
       "itemId": "ITEM_ENIGMA_BERRY",
-      "price": 20,
+      "price": 100000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
