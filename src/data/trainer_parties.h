@@ -4695,7 +4695,7 @@ static const struct TrainerMon sParty_SwimmerMaleRoland[] = {
     },
     {
         .iv = 0,
-        .lvl = 32,
+        .lvl = 42,
         .species = SPECIES_SEADRA,
     },
 };
