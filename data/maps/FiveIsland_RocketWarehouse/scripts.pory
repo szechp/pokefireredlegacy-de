@@ -221,4 +221,10 @@ FiveIsland_RocketWarehouse_JohtoShop::
 	.2byte ITEM_NONE
 	release
 	end
+
+
+FiveIsland_RocketWarehouse_EventScript_ShowClerk::
+	msgbox FiveIsland_RocketWarehouse_Text_CelebiQuest MSGBOX_NPC
+	end
+
 `

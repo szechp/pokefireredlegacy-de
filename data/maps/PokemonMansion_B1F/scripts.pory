@@ -59,7 +59,7 @@ PokemonMansion_B1F_EventScript_Mew::
 
 PokemonMansion_B1F_EventScript_DefeatedMew::
 	setflag FLAG_FOUGHT_MEW
-	setflag FLAG_SPAWN_MEW
+	clearflag FLAG_SPAWN_MEW
 	goto EventScript_RemoveStaticMon
 	end
 

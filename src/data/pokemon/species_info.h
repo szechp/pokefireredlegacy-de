@@ -3039,7 +3039,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_ELECTRODE] =
     {
         .baseHP        = 60,
-        .baseAttack    = 50,
+        .baseAttack    = 60,
         .baseDefense   = 70,
         .baseSpeed     = 140,
         .baseSpAttack  = 80,

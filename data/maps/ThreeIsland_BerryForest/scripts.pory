@@ -1,5 +1,6 @@
 raw `
 .set LOCALID_LOSTELLE, 1
+.set LOCALID_CELEBI, 14
 
 ThreeIsland_BerryForest_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, ThreeIsland_BerryForest_OnTransition
@@ -60,6 +61,7 @@ ThreeIsland_BerryForest_EventScript_Celebi::
 
 ThreeIsland_BerryForest_EventScript_DefeatedCelebi::
 	setflag FLAG_FOUGHT_CELEBI
+	clearflag FLAG_SPAWN_CELEBI
 	goto EventScript_RemoveStaticMon
 	end
 

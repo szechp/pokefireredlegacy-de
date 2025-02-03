@@ -239,6 +239,7 @@ PalletTown_ProfessorOaksLab_ChooseStarterScene::
 	signmsg
 	closemessage
 	setflag FLAG_SYS_B_DASH
+	msgbox PalletTown_PlayersHouse_1F_Text_PressB
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2
 	releaseall
 	end
