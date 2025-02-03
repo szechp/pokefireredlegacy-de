@@ -624,7 +624,7 @@ static void Overworld_SetWhiteoutRespawnPoint(void)
     SetWhiteoutRespawnWarpAndHealerNpc(&sWarpDestination);
 }
 
-void SetLastHealLocationWarp(u8 healLocationId)
+void SetLastHealLocationWarp(u32 healLocationId)
 {
     const struct HealLocation *healLocation = GetHealLocation(healLocationId);
     if (healLocation)
@@ -1109,7 +1109,7 @@ void TryFadeOutOldMapMusic(void)
     u16 warpMusic = GetWarpDestinationMusic();
     if (FlagGet(FLAG_DONT_TRANSITION_MUSIC) != TRUE && warpMusic != GetCurrentMapMusic())
     {
-        FadeOutMapMusic(GetMapMusicFadeoutSpeed());
+        FadeOutMapMusic(1);
     }
 }
 

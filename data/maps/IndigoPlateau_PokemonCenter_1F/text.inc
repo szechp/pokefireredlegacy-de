@@ -48,3 +48,10 @@ IndigoPlateau_PokemonCenter_1F_Text_TmGuy::
     .string "would help to have good moves!\p"
     .string "Good thing I've got them!\p"
     .string "What do you need?$"
+
+IndigoPlateau_PokemonCenter_1F_Text_Fishing::
+    .string "Hello Challenger!\p"
+    .string "These Four are rough so it\n"
+    .string "would help to have good moves!\p"
+    .string "Good thing I've got them!\p"
+    .string "What do you need?$"
