@@ -151,7 +151,7 @@ VictoryRoad_3F_EventScript_Shannon::
 # 76 "data/maps/VictoryRoad_3F/scripts.pory"
 VictoryRoad_3F_EventScript_Austina::
 # 77 "data/maps/VictoryRoad_3F/scripts.pory"
-	trainerbattle_double TRAINER_COOLTRAINER_AUSTINA, VictoryRoad_3F_Text_RayIntro, VictoryRoad_3F_Text_RayDefeat, VictoryRoad_3F_Text_RayNotEnoughMons
+	trainerbattle_single TRAINER_COOLTRAINER_AUSTINA, VictoryRoad_3F_Text_AlexaIntro, VictoryRoad_3F_Text_AlexaDefeat
 # 78 "data/maps/VictoryRoad_3F/scripts.pory"
 	msgbox VictoryRoad_3F_Text_RayPostBattle, MSGBOX_AUTOCLOSE
 # 79 "data/maps/VictoryRoad_3F/scripts.pory"

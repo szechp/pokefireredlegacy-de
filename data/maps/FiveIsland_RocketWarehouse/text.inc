@@ -167,7 +167,7 @@ FiveIsland_RocketWarehouse_Text_GiovannisKidHasRedHair::
 FiveIsland_RocketWarehouse_Text_CelebiQuest::
     .string "There was once an Onix, and his\n"  
     .string "six Pokémon friends:\l"  
-    .string "Charmander, Delibird, Psyduck,\;"  
+    .string "Charmander, Delibird, Psyduck,\l"  
     .string "Meowth, Larvitar, and Natu.\p"  
     .string "They all used to play in the\n"  
     .string "Forest of Berries, having fun\l"  

@@ -223,8 +223,8 @@ FiveIsland_RocketWarehouse_JohtoShop::
 	end
 
 
-FiveIsland_RocketWarehouse_EventScript_ShowClerk::
-	msgbox FiveIsland_RocketWarehouse_Text_CelebiQuest MSGBOX_NPC
+FiveIsland_RocketWarehouse_EventScript_CelebiQuest::
+	msgbox FiveIsland_RocketWarehouse_Text_CelebiQuest, MSGBOX_NPC
 	end
 
 `

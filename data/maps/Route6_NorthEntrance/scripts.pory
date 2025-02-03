@@ -4,6 +4,21 @@ Route6_NorthEntrance_MapScripts::
 
 Route6_NorthEntrance_EventScript_Guard::
 	msgbox Route6_NorthEntrance_Text_HiHowsItGoing, MSGBOX_NPC
+	goto_if_set FLAG_GUARD_TEA, Route6_NorthEntrance_EventScript_GiveTeaFight
+	end
+
+Route6_NorthEntrance_EventScript_GiveTeaFight::
+	removeitem ITEM_TEA
+	goto Route6_NorthEntrance_EventScript_GuardDrinkFightTea
+	end
+
+Route6_NorthEntrance_EventScript_GuardDrinkFightTea::
+	msgbox Route5_SouthEntrance_Text_ThatFightTeaLooksTasty
+	closemessage
+	msgbox Route5_SouthEntrance_Text_ThanksIllShareFightTeaWithGuards
+	giveitem ITEM_NUGGET
+	clearflag FLAG_GUARD_TEA
+	releaseall
 	end
 
 Route6_NorthEntrance_EventScript_GuardTriggerLeft::

@@ -1411,49 +1411,49 @@ PewterCity_EventScript_AideGiveRunningShoes::
 # 706 "data/maps/PewterCity/scripts.pory"
 	playfanfare MUS_OBTAIN_KEY_ITEM
 # 707 "data/maps/PewterCity/scripts.pory"
-	message PewterCity_Text_ReceivedRunningShoesFromAide
-# 708 "data/maps/PewterCity/scripts.pory"
-	waitmessage
-# 709 "data/maps/PewterCity/scripts.pory"
-	waitfanfare
-# 710 "data/maps/PewterCity/scripts.pory"
-	msgbox PewterCity_Text_SwitchedShoesWithRunningShoes
-# 711 "data/maps/PewterCity/scripts.pory"
-	special DisableMsgBoxWalkaway
-# 712 "data/maps/PewterCity/scripts.pory"
-	signmsg
-# 713 "data/maps/PewterCity/scripts.pory"
-	msgbox PewterCity_Text_ExplainRunningShoes
-# 714 "data/maps/PewterCity/scripts.pory"
-	normalmsg
-# 715 "data/maps/PewterCity/scripts.pory"
-	call EventScript_RestorePrevTextColor
-# 716 "data/maps/PewterCity/scripts.pory"
-	msgbox PewterCity_Text_MustBeGoingBackToLab
-# 717 "data/maps/PewterCity/scripts.pory"
-	closemessage
-# 718 "data/maps/PewterCity/scripts.pory"
-	call_if_eq VAR_TEMP_1, 0, PewterCity_EventScript_AideExit0
-# 719 "data/maps/PewterCity/scripts.pory"
-	call_if_eq VAR_TEMP_1, 1, PewterCity_EventScript_AideExit1
-# 720 "data/maps/PewterCity/scripts.pory"
-	call_if_eq VAR_TEMP_1, 2, PewterCity_EventScript_AideExit2
-# 721 "data/maps/PewterCity/scripts.pory"
-	call_if_eq VAR_TEMP_1, 3, PewterCity_EventScript_AideExit3
-# 722 "data/maps/PewterCity/scripts.pory"
-	delay 30
-# 723 "data/maps/PewterCity/scripts.pory"
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-# 724 "data/maps/PewterCity/scripts.pory"
-	msgbox PewterCity_Text_RunningShoesLetterFromMom
-# 725 "data/maps/PewterCity/scripts.pory"
-	closemessage
-# 726 "data/maps/PewterCity/scripts.pory"
-	removeobject LOCALID_AIDE
-# 727 "data/maps/PewterCity/scripts.pory"
-	setflag FLAG_SYS_B_DASH
-# 728 "data/maps/PewterCity/scripts.pory"
 	giveitem ITEM_EXP_SHARE
+# 708 "data/maps/PewterCity/scripts.pory"
+	message PewterCity_Text_ReceivedRunningShoesFromAide
+# 709 "data/maps/PewterCity/scripts.pory"
+	waitmessage
+# 710 "data/maps/PewterCity/scripts.pory"
+	waitfanfare
+# 711 "data/maps/PewterCity/scripts.pory"
+	msgbox PewterCity_Text_SwitchedShoesWithRunningShoes
+# 712 "data/maps/PewterCity/scripts.pory"
+	special DisableMsgBoxWalkaway
+# 713 "data/maps/PewterCity/scripts.pory"
+	signmsg
+# 714 "data/maps/PewterCity/scripts.pory"
+	msgbox PewterCity_Text_ExplainRunningShoes
+# 715 "data/maps/PewterCity/scripts.pory"
+	normalmsg
+# 716 "data/maps/PewterCity/scripts.pory"
+	call EventScript_RestorePrevTextColor
+# 717 "data/maps/PewterCity/scripts.pory"
+	msgbox PewterCity_Text_MustBeGoingBackToLab
+# 718 "data/maps/PewterCity/scripts.pory"
+	closemessage
+# 719 "data/maps/PewterCity/scripts.pory"
+	call_if_eq VAR_TEMP_1, 0, PewterCity_EventScript_AideExit0
+# 720 "data/maps/PewterCity/scripts.pory"
+	call_if_eq VAR_TEMP_1, 1, PewterCity_EventScript_AideExit1
+# 721 "data/maps/PewterCity/scripts.pory"
+	call_if_eq VAR_TEMP_1, 2, PewterCity_EventScript_AideExit2
+# 722 "data/maps/PewterCity/scripts.pory"
+	call_if_eq VAR_TEMP_1, 3, PewterCity_EventScript_AideExit3
+# 723 "data/maps/PewterCity/scripts.pory"
+	delay 30
+# 724 "data/maps/PewterCity/scripts.pory"
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+# 725 "data/maps/PewterCity/scripts.pory"
+	msgbox PewterCity_Text_RunningShoesLetterFromMom
+# 726 "data/maps/PewterCity/scripts.pory"
+	closemessage
+# 727 "data/maps/PewterCity/scripts.pory"
+	removeobject LOCALID_AIDE
+# 728 "data/maps/PewterCity/scripts.pory"
+	setflag FLAG_SYS_B_DASH
 # 729 "data/maps/PewterCity/scripts.pory"
 	setvar VAR_MAP_SCENE_PEWTER_CITY, 2
 # 730 "data/maps/PewterCity/scripts.pory"

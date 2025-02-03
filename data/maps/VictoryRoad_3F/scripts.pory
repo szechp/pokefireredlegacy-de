@@ -74,7 +74,7 @@ VictoryRoad_3F_EventScript_Shannon::
 	end
 
 VictoryRoad_3F_EventScript_Austina::
-	trainerbattle_double TRAINER_COOLTRAINER_AUSTINA, VictoryRoad_3F_Text_RayIntro, VictoryRoad_3F_Text_RayDefeat, VictoryRoad_3F_Text_RayNotEnoughMons
+	trainerbattle_single TRAINER_COOLTRAINER_AUSTINA, VictoryRoad_3F_Text_AlexaIntro, VictoryRoad_3F_Text_AlexaDefeat
 	msgbox VictoryRoad_3F_Text_RayPostBattle, MSGBOX_AUTOCLOSE
 	end
 

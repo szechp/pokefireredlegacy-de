@@ -121,7 +121,7 @@ PokemonMansion_B1F_EventScript_DefeatedMew::
 # 61 "data/maps/PokemonMansion_B1F/scripts.pory"
 	setflag FLAG_FOUGHT_MEW
 # 62 "data/maps/PokemonMansion_B1F/scripts.pory"
-	setflag FLAG_SPAWN_MEW
+	clearflag FLAG_SPAWN_MEW
 # 63 "data/maps/PokemonMansion_B1F/scripts.pory"
 	goto EventScript_RemoveStaticMon
 # 64 "data/maps/PokemonMansion_B1F/scripts.pory"

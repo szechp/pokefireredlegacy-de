@@ -444,3 +444,13 @@ FiveIsland_RocketWarehouse_JohtoShop::
 	release
 # 223 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	end
+# 224 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+
+# 225 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+
+# 226 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+FiveIsland_RocketWarehouse_EventScript_CelebiQuest::
+# 227 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	msgbox FiveIsland_RocketWarehouse_Text_CelebiQuest, MSGBOX_NPC
+# 228 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	end

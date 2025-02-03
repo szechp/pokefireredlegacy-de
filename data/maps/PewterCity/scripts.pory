@@ -704,6 +704,7 @@ PewterCity_EventScript_AideGiveRunningShoes::
 	msgbox PewterCity_Text_AskedToDeliverThis
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	playfanfare MUS_OBTAIN_KEY_ITEM
+	giveitem ITEM_EXP_SHARE
 	message PewterCity_Text_ReceivedRunningShoesFromAide
 	waitmessage
 	waitfanfare
@@ -725,7 +726,6 @@ PewterCity_EventScript_AideGiveRunningShoes::
 	closemessage
 	removeobject LOCALID_AIDE
 	setflag FLAG_SYS_B_DASH
-	giveitem ITEM_EXP_SHARE
 	setvar VAR_MAP_SCENE_PEWTER_CITY, 2
 	return
 

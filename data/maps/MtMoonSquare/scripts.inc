@@ -45,7 +45,7 @@ MtMoonSquare_EventScript_Jiggypuff::
 # 23 "data/maps/MtMoonSquare/scripts.pory"
 	delay 455
 # 24 "data/maps/MtMoonSquare/scripts.pory"
-	playbgm MUS_POKE_CENTER, 1
+	playbgm MUS_SCHOOL, 1
 # 25 "data/maps/MtMoonSquare/scripts.pory"
 	release
 # 26 "data/maps/MtMoonSquare/scripts.pory"
@@ -75,36 +75,40 @@ MtMoonSquare_EventScript_NidoranF::
 # 38 "data/maps/MtMoonSquare/scripts.pory"
 MtMoonSquare_EventScript_NidoranM::
 # 39 "data/maps/MtMoonSquare/scripts.pory"
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-# 40 "data/maps/MtMoonSquare/scripts.pory"
-	waitse
-# 41 "data/maps/MtMoonSquare/scripts.pory"
-	playmoncry SPECIES_NIDORAN_M, CRY_MODE_NORMAL
-# 42 "data/maps/MtMoonSquare/scripts.pory"
-	msgbox PewterCity_House1_Text_Nidoran
-# 43 "data/maps/MtMoonSquare/scripts.pory"
-	waitmoncry
-# 44 "data/maps/MtMoonSquare/scripts.pory"
-	call EventScript_RestorePrevTextColor
-# 45 "data/maps/MtMoonSquare/scripts.pory"
-    return
-# 46 "data/maps/MtMoonSquare/scripts.pory"
-
-# 47 "data/maps/MtMoonSquare/scripts.pory"
-MtMoonSquare_EventScript_Nidorino::
-# 48 "data/maps/MtMoonSquare/scripts.pory"
 	lock
-# 49 "data/maps/MtMoonSquare/scripts.pory"
+# 40 "data/maps/MtMoonSquare/scripts.pory"
 	faceplayer
-# 50 "data/maps/MtMoonSquare/scripts.pory"
+# 41 "data/maps/MtMoonSquare/scripts.pory"
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+# 42 "data/maps/MtMoonSquare/scripts.pory"
 	waitse
-# 51 "data/maps/MtMoonSquare/scripts.pory"
-	playmoncry SPECIES_NIDORINO, CRY_MODE_NORMAL
-# 52 "data/maps/MtMoonSquare/scripts.pory"
-	msgbox LavenderTown_VolunteerPokemonHouse_Text_Nidorino
-# 53 "data/maps/MtMoonSquare/scripts.pory"
+# 43 "data/maps/MtMoonSquare/scripts.pory"
+	playmoncry SPECIES_NIDORAN_M, CRY_MODE_NORMAL
+# 44 "data/maps/MtMoonSquare/scripts.pory"
+	msgbox PewterCity_House1_Text_Nidoran
+# 45 "data/maps/MtMoonSquare/scripts.pory"
 	waitmoncry
-# 54 "data/maps/MtMoonSquare/scripts.pory"
+# 46 "data/maps/MtMoonSquare/scripts.pory"
 	release
+# 47 "data/maps/MtMoonSquare/scripts.pory"
+    end
+# 48 "data/maps/MtMoonSquare/scripts.pory"
+
+# 49 "data/maps/MtMoonSquare/scripts.pory"
+MtMoonSquare_EventScript_Nidorino::
+# 50 "data/maps/MtMoonSquare/scripts.pory"
+	lock
+# 51 "data/maps/MtMoonSquare/scripts.pory"
+	faceplayer
+# 52 "data/maps/MtMoonSquare/scripts.pory"
+	waitse
+# 53 "data/maps/MtMoonSquare/scripts.pory"
+	playmoncry SPECIES_NIDORINO, CRY_MODE_NORMAL
+# 54 "data/maps/MtMoonSquare/scripts.pory"
+	msgbox LavenderTown_VolunteerPokemonHouse_Text_Nidorino
 # 55 "data/maps/MtMoonSquare/scripts.pory"
+	waitmoncry
+# 56 "data/maps/MtMoonSquare/scripts.pory"
+	release
+# 57 "data/maps/MtMoonSquare/scripts.pory"
 	end

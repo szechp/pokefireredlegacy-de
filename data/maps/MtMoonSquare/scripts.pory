@@ -43,7 +43,7 @@ MtMoonSquare_EventScript_NidoranM::
 	playmoncry SPECIES_NIDORAN_M, CRY_MODE_NORMAL
 	msgbox PewterCity_House1_Text_Nidoran
 	waitmoncry
-	call EventScript_RestorePrevTextColor
+	release
     end
 
 MtMoonSquare_EventScript_Nidorino::
