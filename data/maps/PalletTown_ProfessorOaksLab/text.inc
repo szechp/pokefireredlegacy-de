@@ -87,7 +87,9 @@ PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne::
 
 PalletTown_ProfessorOaksLab_Text_OakBePatientRival::
     .string "OAK: Be patient, {RIVAL}.\n"
-    .string "You can have one, too!$"
+    .string "You can have one, too!\p"
+    .string "Also, your mom Wanted me\n"
+    .string "To give you this!$"
 
 PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose::
     .string "OAK: Now, {PLAYER}.\p"
@@ -355,3 +357,6 @@ PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex::
     .string "ONE ISLAND first…\p"
     .string "Anyways, I'm outta here!$"
 
+PalletTown_PlayersHouse_1F_Text_PressB::
+    .string "With the Running Shoes,\n"
+    .string "If you press B, you can run!$"
