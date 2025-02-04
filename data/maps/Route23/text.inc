@@ -11,5 +11,5 @@ Route23_Text_Clerk::
     .string "I've got a permit to\n"
     .string "sell PokeMart Stuff Here!\p"
     .string "You can also go right\n"
-    .string "To rest at Me and My Wife's\n"
+    .string "To rest at Me and My Wife's\l"
     .string "Rest House!$"

@@ -22,7 +22,7 @@ EventScript_PkmnCenterNurse_HealPkmn::
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
 	special SetUsedPkmnCenterQuestLogEvent
 	setflag FLAG_DONE_POKECENTER_FIRST_USE
-	goto EventScript_PkmnCenterNurse_CheckTrainerTowerAndUnionRoom
+	goto EventScript_PkmnCenterNurse_ReturnPkmn
 	end
 
 EventScript_PkmnCenterNurse_TakeAndHealPkmn::

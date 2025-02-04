@@ -18,9 +18,9 @@ CinnabarIsland_OnTransition::
 CinnabarIsland_EventScript_ReadyObjectsSailToOneIslandFromPokeCenter::
 	savebgm MUS_FOLLOW_ME
 	setflag FLAG_TEMP_2
-	setobjectxyperm LOCALID_BILL, 15, 12
+	setobjectxyperm LOCALID_BILL, 20, 12
 	setobjectmovementtype LOCALID_BILL, MOVEMENT_TYPE_FACE_LEFT
-	setobjectxyperm LOCALID_SEAGALLOP, 30, 12
+	setobjectxyperm LOCALID_SEAGALLOP, 34, 12
 	return
 
 CinnabarIsland_EventScript_ReadyObjectsSailToOneIsland::
@@ -29,15 +29,15 @@ CinnabarIsland_EventScript_ReadyObjectsSailToOneIsland::
 	setflag FLAG_TEMP_2
 	setobjectxyperm LOCALID_BILL, 18, 12
 	setobjectmovementtype LOCALID_BILL, MOVEMENT_TYPE_FACE_UP
-	setobjectxyperm LOCALID_SEAGALLOP, 34, 7
+	setobjectxyperm LOCALID_SEAGALLOP, 34, 8
 	return
 
 CinnabarIsland_EventScript_MoveSeagallopDown::
-	setobjectxyperm LOCALID_SEAGALLOP, 34, 7
+	setobjectxyperm LOCALID_SEAGALLOP, 34, 8
 	return
 
 CinnabarIsland_EventScript_ReadyObjectsReturnFromSeviiIslands::
-	setobjectxyperm LOCALID_BILL, 25, 7
+	setobjectxyperm LOCALID_BILL, 25, 6
 	setobjectmovementtype LOCALID_BILL, MOVEMENT_TYPE_FACE_UP
 	return
 
@@ -82,6 +82,7 @@ CinnabarIsland_EventScript_ReturnFromSeviiIslands::
 
 CinnabarIsland_Movement_BillExit::
 	walk_down
+	walk_right
 	walk_down
 	walk_down
 	walk_down
@@ -166,11 +167,11 @@ CinnabarIsland_EventScript_BillReturnToPokeCenter::
 	applymovement OBJ_EVENT_ID_PLAYER, CinnabarIsland_Movement_PlayerWatchBillExit
 	applymovement LOCALID_BILL, CinnabarIsland_Movement_BillApproachDoor
 	waitmovement 0
-	opendoor 14, 11
+	opendoor 19, 12
 	waitdooranim
 	applymovement LOCALID_BILL, CinnabarIsland_Movement_BillReEnterPokeCenter
 	waitmovement 0
-	closedoor 14, 11
+	closedoor 19, 12
 	waitdooranim
 	return
 

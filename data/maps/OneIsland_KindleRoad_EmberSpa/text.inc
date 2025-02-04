@@ -45,12 +45,12 @@ OneIsland_KindleRoad_EmberSpa_Text_UsedThisToMakeEmberSpa::
     .string "I made it years ago.\p"
     .string "I hewed the pool right out of a\n"
     .string "gigantic boulder by hand.\p"
-    .string "I was using this at the time.\n"
+    .string "I got this thing during that time.\n"
     .string "I suppose I can part with it.$"
 
 OneIsland_KindleRoad_EmberSpa_Text_ExplainHM06::
-    .string "That shatters boulders as if they\n"
-    .string "were made of crackers.$"
+    .string "That can apparent Evolve an\n"
+    .string "TYROUGE to a HITMONTOP.$"
 
 OneIsland_KindleRoad_EmberSpa_Text_Samal::
     .string "Hello there!\p"

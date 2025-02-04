@@ -8385,7 +8385,7 @@ static const struct TrainerMon sParty_RivalRoute22LateBulbasaur[] = {
     {
         .iv = 150,
         .lvl = 52,
-        .species = SPECIES_RHYHORN,
+        .species = SPECIES_RHYDON,
         .moves = {MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_DOUBLE_EDGE, MOVE_MEGAHORN},
     },
     {

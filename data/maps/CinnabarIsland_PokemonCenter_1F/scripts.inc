@@ -95,7 +95,7 @@ CinnabarIsland_PokemonCenter_1F_EventScript_Bill::
 # 48 "data/maps/CinnabarIsland_PokemonCenter_1F/scripts.pory"
 	clearflag FLAG_HIDE_CINNABAR_BILL
 # 49 "data/maps/CinnabarIsland_PokemonCenter_1F/scripts.pory"
-	warp MAP_CINNABAR_ISLAND, 14, 11
+	warp MAP_CINNABAR_ISLAND, 19, 12
 # 50 "data/maps/CinnabarIsland_PokemonCenter_1F/scripts.pory"
 	waitstate
 # 51 "data/maps/CinnabarIsland_PokemonCenter_1F/scripts.pory"
