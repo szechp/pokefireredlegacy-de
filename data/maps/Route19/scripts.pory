@@ -6,27 +6,4 @@ Route19_EventScript_RouteSign::
 	msgbox Route19_Text_RouteSign, MSGBOX_SIGN
 	end
 
-Route19_EventScript_DiveGuy::
-	lock
-	faceplayer
-	goto_if_set FLAG_GOT_HM08, Route19_EventScript_EventScript_ExplainDive
-	msgbox Route19_Text_CongratsYouveWon
-	checkitemspace ITEM_HM08
-	goto_if_eq VAR_RESULT, FALSE, Route19_EventScript_EventScript_NoRoomForHM08
-	giveitem_msg Route19_Text_ReceivedHM08FromDiveGuy, ITEM_HM08
-	msgbox Route19_Text_ExplainDive
-	setflag FLAG_GOT_HM08
-	release
-	end
-
-Route19_EventScript_EventScript_NoRoomForHM08::
-	msgbox Route19_Text_DontHaveRoomForPrize
-	release
-	end
-
-Route19_EventScript_EventScript_ExplainDive::
-	msgbox Route19_Text_ExplainDive
-	release
-	end
-
 `

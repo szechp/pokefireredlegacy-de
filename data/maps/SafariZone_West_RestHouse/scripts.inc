@@ -28,3 +28,49 @@ SafariZone_West_RestHouse_EventScript_CooltrainerF::
 	msgbox SafariZone_West_Text_HikedLotsDidntSeeMonIWanted, MSGBOX_NPC
 # 15 "data/maps/SafariZone_West_RestHouse/scripts.pory"
 	end
+# 16 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+
+# 17 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+SafariZone_West_RestHouse_EventScript_DiveGuy::
+# 18 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	lock
+# 19 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	faceplayer
+# 20 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	goto_if_set FLAG_GOT_HM08, SafariZone_West_RestHouse_EventScript_ExplainDive
+# 21 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	msgbox Route19_Text_CongratsYouveWon
+# 22 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	checkitemspace ITEM_HM08
+# 23 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, SafariZone_West_RestHouse_EventScript_NoRoomForHM08
+# 24 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	giveitem_msg Route19_Text_ReceivedHM08FromDiveGuy, ITEM_HM08
+# 25 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	msgbox Route19_Text_ExplainDive
+# 26 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	setflag FLAG_GOT_HM08
+# 27 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	release
+# 28 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	end
+# 29 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+
+# 30 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+SafariZone_West_RestHouse_EventScript_NoRoomForHM08::
+# 31 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	msgbox Route19_Text_DontHaveRoomForPrize
+# 32 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	release
+# 33 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	end
+# 34 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+
+# 35 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+SafariZone_West_RestHouse_EventScript_ExplainDive::
+# 36 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	msgbox Route19_Text_ExplainDive
+# 37 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	release
+# 38 "data/maps/SafariZone_West_RestHouse/scripts.pory"
+	end

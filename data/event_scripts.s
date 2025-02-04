@@ -779,6 +779,7 @@ gStdScriptsEnd::
 	.include "data/maps/Route16_NorthEntrance_2F/text.inc"
 	.include "data/maps/Route18_EastEntrance_1F/text.inc"
 	.include "data/maps/Route18_EastEntrance_2F/text.inc"
+	.include "data/maps/Route23_UnusedHouse/text.inc"
 	.include "data/maps/Route25_SeaCottage/text.inc"
 	.include "data/maps/SevenIsland_House_Room1/text.inc"
 	.include "data/maps/SevenIsland_House_Room2/text.inc"

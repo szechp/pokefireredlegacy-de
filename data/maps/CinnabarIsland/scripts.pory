@@ -29,15 +29,15 @@ CinnabarIsland_EventScript_ReadyObjectsSailToOneIsland::
 	setflag FLAG_TEMP_2
 	setobjectxyperm LOCALID_BILL, 18, 12
 	setobjectmovementtype LOCALID_BILL, MOVEMENT_TYPE_FACE_UP
-	setobjectxyperm LOCALID_SEAGALLOP, 24, 8
+	setobjectxyperm LOCALID_SEAGALLOP, 34, 7
 	return
 
 CinnabarIsland_EventScript_MoveSeagallopDown::
-	setobjectxyperm LOCALID_SEAGALLOP, 30, 8
+	setobjectxyperm LOCALID_SEAGALLOP, 34, 7
 	return
 
 CinnabarIsland_EventScript_ReadyObjectsReturnFromSeviiIslands::
-	setobjectxyperm LOCALID_BILL, 21, 8
+	setobjectxyperm LOCALID_BILL, 25, 7
 	setobjectmovementtype LOCALID_BILL, MOVEMENT_TYPE_FACE_UP
 	return
 

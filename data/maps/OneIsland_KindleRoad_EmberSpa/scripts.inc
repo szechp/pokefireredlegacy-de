@@ -65,7 +65,7 @@ OneIsland_KindleRoad_EmberSpa_EventScript_RockSmashMan::
 # 33 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	msgbox OneIsland_KindleRoad_EmberSpa_Text_UsedThisToMakeEmberSpa
 # 34 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	giveitem ITEM_FOCUS_BAND
+	giveitem ITEM_BRICK_PIECE
 # 35 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	setflag FLAG_GOT_HM06
 # 36 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"

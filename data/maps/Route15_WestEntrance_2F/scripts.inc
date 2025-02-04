@@ -153,7 +153,7 @@ Route15_WestEntrance_2F_EventScript_GetAideRequestInfo::
 # 77 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 	buffernumberstring STR_VAR_1, REQUIRED_CAUGHT_MONS
 # 78 "data/maps/Route15_WestEntrance_2F/scripts.pory"
-	bufferitemname STR_VAR_2, ITEM_EXP_SHARE
+	bufferitemname STR_VAR_2, SPECIES_SKARMORY
 # 79 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 	return
 # 80 "data/maps/Route15_WestEntrance_2F/scripts.pory"

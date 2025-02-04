@@ -61,7 +61,7 @@ CinnabarIsland_EventScript_ReadyObjectsSailToOneIsland::
 # 31 "data/maps/CinnabarIsland/scripts.pory"
 	setobjectmovementtype LOCALID_BILL, MOVEMENT_TYPE_FACE_UP
 # 32 "data/maps/CinnabarIsland/scripts.pory"
-	setobjectxyperm LOCALID_SEAGALLOP, 24, 8
+	setobjectxyperm LOCALID_SEAGALLOP, 34, 7
 # 33 "data/maps/CinnabarIsland/scripts.pory"
 	return
 # 34 "data/maps/CinnabarIsland/scripts.pory"
@@ -69,7 +69,7 @@ CinnabarIsland_EventScript_ReadyObjectsSailToOneIsland::
 # 35 "data/maps/CinnabarIsland/scripts.pory"
 CinnabarIsland_EventScript_MoveSeagallopDown::
 # 36 "data/maps/CinnabarIsland/scripts.pory"
-	setobjectxyperm LOCALID_SEAGALLOP, 30, 8
+	setobjectxyperm LOCALID_SEAGALLOP, 34, 7
 # 37 "data/maps/CinnabarIsland/scripts.pory"
 	return
 # 38 "data/maps/CinnabarIsland/scripts.pory"
@@ -77,7 +77,7 @@ CinnabarIsland_EventScript_MoveSeagallopDown::
 # 39 "data/maps/CinnabarIsland/scripts.pory"
 CinnabarIsland_EventScript_ReadyObjectsReturnFromSeviiIslands::
 # 40 "data/maps/CinnabarIsland/scripts.pory"
-	setobjectxyperm LOCALID_BILL, 21, 8
+	setobjectxyperm LOCALID_BILL, 25, 7
 # 41 "data/maps/CinnabarIsland/scripts.pory"
 	setobjectmovementtype LOCALID_BILL, MOVEMENT_TYPE_FACE_UP
 # 42 "data/maps/CinnabarIsland/scripts.pory"

@@ -1,4 +1,14 @@
 raw `
 Route23_UnusedHouse_MapScripts::
 	.byte 0
+
+Route23_UnusedHouse_EventScript_Medic::
+	lock
+	faceplayer
+	msgbox Route23_UnusedHouse_Text_Medic
+	closemessage
+	call EventScript_OutOfCenterPartyHeal
+	msgbox Route23_UnusedHouse_Text_Medic2
+	release
+	end
 `

@@ -255,30 +255,68 @@ Route23_EventScript_EarthBadgeGuardTrigger::
 # 128 "data/maps/Route23/scripts.pory"
 
 # 129 "data/maps/Route23/scripts.pory"
-
-# 130 "data/maps/Route23/scripts.pory"
-Route23_EventScript_Medic::
-# 131 "data/maps/Route23/scripts.pory"
-	lock
-# 132 "data/maps/Route23/scripts.pory"
-	faceplayer
-# 133 "data/maps/Route23/scripts.pory"
-	msgbox SilphCo_9F_Text_YouShouldTakeQuickNap
-# 134 "data/maps/Route23/scripts.pory"
-	closemessage
-# 135 "data/maps/Route23/scripts.pory"
-	call EventScript_OutOfCenterPartyHeal
-# 136 "data/maps/Route23/scripts.pory"
-	msgbox SilphCo_9F_Text_DontGiveUp
-# 137 "data/maps/Route23/scripts.pory"
-	release
-# 138 "data/maps/Route23/scripts.pory"
-	end
-# 139 "data/maps/Route23/scripts.pory"
-
-# 140 "data/maps/Route23/scripts.pory"
 Route23_EventScript_VictoryRoadGateSign::
-# 141 "data/maps/Route23/scripts.pory"
+# 130 "data/maps/Route23/scripts.pory"
 	msgbox Route23_Text_VictoryRoadGateSign, MSGBOX_SIGN
+# 131 "data/maps/Route23/scripts.pory"
+	end
+# 132 "data/maps/Route23/scripts.pory"
+
+# 133 "data/maps/Route23/scripts.pory"
+Route23_EventScript_RestSign::
+# 134 "data/maps/Route23/scripts.pory"
+	msgbox Route23_Text_RestHouse, MSGBOX_SIGN
+# 135 "data/maps/Route23/scripts.pory"
+	end
+# 136 "data/maps/Route23/scripts.pory"
+
+# 137 "data/maps/Route23/scripts.pory"
+Route23_EventScript_Clerk::
+# 138 "data/maps/Route23/scripts.pory"
+	goto_if_questlog EventScript_ReleaseEnd
+# 139 "data/maps/Route23/scripts.pory"
+	lock
+# 140 "data/maps/Route23/scripts.pory"
+	faceplayer
+# 141 "data/maps/Route23/scripts.pory"
+	message Route23_Text_Clerk
 # 142 "data/maps/Route23/scripts.pory"
+	waitmessage
+# 143 "data/maps/Route23/scripts.pory"
+	pokemart Route23_Items
+# 144 "data/maps/Route23/scripts.pory"
+	msgbox Text_PleaseComeAgain
+# 145 "data/maps/Route23/scripts.pory"
+	release
+# 146 "data/maps/Route23/scripts.pory"
+	end
+# 147 "data/maps/Route23/scripts.pory"
+
+# 148 "data/maps/Route23/scripts.pory"
+	.align 2
+# 149 "data/maps/Route23/scripts.pory"
+Route23_Items::
+# 150 "data/maps/Route23/scripts.pory"
+	.2byte ITEM_POKE_BALL
+# 151 "data/maps/Route23/scripts.pory"
+	.2byte ITEM_GREAT_BALL
+# 152 "data/maps/Route23/scripts.pory"
+	.2byte ITEM_ULTRA_BALL
+# 153 "data/maps/Route23/scripts.pory"
+	.2byte ITEM_HYPER_POTION
+# 154 "data/maps/Route23/scripts.pory"
+	.2byte ITEM_MAX_POTION
+# 155 "data/maps/Route23/scripts.pory"
+	.2byte ITEM_REVIVE
+# 156 "data/maps/Route23/scripts.pory"
+	.2byte ITEM_FULL_HEAL
+# 157 "data/maps/Route23/scripts.pory"
+	.2byte ITEM_ESCAPE_ROPE
+# 158 "data/maps/Route23/scripts.pory"
+	.2byte ITEM_MAX_REPEL
+# 159 "data/maps/Route23/scripts.pory"
+	.2byte ITEM_NONE
+# 160 "data/maps/Route23/scripts.pory"
+	release
+# 161 "data/maps/Route23/scripts.pory"
 	end

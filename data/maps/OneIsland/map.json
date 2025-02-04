@@ -80,7 +80,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "OneIsland_EventScript_Giovanni",
-      "flag": "FLAG_HIDE_GIOVANNI_ONE"
+      "flag": "FLAG_HIDE_SEVIIGUYS"
     }
   ],
   "warp_events": [
