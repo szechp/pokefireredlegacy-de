@@ -77,69 +77,69 @@ CinnabarIsland_EventScript_MoveSeagallopDown::
 # 39 "data/maps/CinnabarIsland/scripts.pory"
 CinnabarIsland_EventScript_ReadyObjectsReturnFromSeviiIslands::
 # 40 "data/maps/CinnabarIsland/scripts.pory"
-	setobjectxyperm LOCALID_BILL, 25, 6
+	setobjectxyperm OBJ_EVENT_ID_PLAYER, 25, 5
 # 41 "data/maps/CinnabarIsland/scripts.pory"
-	setobjectmovementtype LOCALID_BILL, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_BILL, MOVEMENT_TYPE_FACE_DOWN
 # 42 "data/maps/CinnabarIsland/scripts.pory"
-	return
+	setobjectxyperm LOCALID_BILL, 25, 6
 # 43 "data/maps/CinnabarIsland/scripts.pory"
-
+	setobjectmovementtype LOCALID_BILL, MOVEMENT_TYPE_FACE_UP
 # 44 "data/maps/CinnabarIsland/scripts.pory"
-CinnabarIsland_EventScript_CheckUnlockGym::
+	return
 # 45 "data/maps/CinnabarIsland/scripts.pory"
-	goto_if_set FLAG_HIDE_POKEMON_MANSION_B1F_SECRET_KEY, CinnabarIsland_EventScript_UnlockGym
+
 # 46 "data/maps/CinnabarIsland/scripts.pory"
-	return
+CinnabarIsland_EventScript_CheckUnlockGym::
 # 47 "data/maps/CinnabarIsland/scripts.pory"
-
+	goto_if_set FLAG_HIDE_POKEMON_MANSION_B1F_SECRET_KEY, CinnabarIsland_EventScript_UnlockGym
 # 48 "data/maps/CinnabarIsland/scripts.pory"
-CinnabarIsland_EventScript_UnlockGym::
-# 49 "data/maps/CinnabarIsland/scripts.pory"
-	setvar VAR_TEMP_1, 1
-# 50 "data/maps/CinnabarIsland/scripts.pory"
 	return
+# 49 "data/maps/CinnabarIsland/scripts.pory"
+
+# 50 "data/maps/CinnabarIsland/scripts.pory"
+CinnabarIsland_EventScript_UnlockGym::
 # 51 "data/maps/CinnabarIsland/scripts.pory"
-
+	setvar VAR_TEMP_1, 1
 # 52 "data/maps/CinnabarIsland/scripts.pory"
-CinnabarIsland_OnFrame::
+	return
 # 53 "data/maps/CinnabarIsland/scripts.pory"
-	map_script_2 VAR_MAP_SCENE_CINNABAR_ISLAND_2, 1, CinnabarIsland_EventScript_ExitPokeCenterForOneIsland
+
 # 54 "data/maps/CinnabarIsland/scripts.pory"
-	map_script_2 VAR_MAP_SCENE_CINNABAR_ISLAND, 1, CinnabarIsland_EventScript_BillScene
+CinnabarIsland_OnFrame::
 # 55 "data/maps/CinnabarIsland/scripts.pory"
-	map_script_2 VAR_MAP_SCENE_CINNABAR_ISLAND, 3, CinnabarIsland_EventScript_ReturnFromSeviiIslands
+	map_script_2 VAR_MAP_SCENE_CINNABAR_ISLAND_2, 1, CinnabarIsland_EventScript_ExitPokeCenterForOneIsland
 # 56 "data/maps/CinnabarIsland/scripts.pory"
-	.2byte 0
+	map_script_2 VAR_MAP_SCENE_CINNABAR_ISLAND, 1, CinnabarIsland_EventScript_BillScene
 # 57 "data/maps/CinnabarIsland/scripts.pory"
-
+	map_script_2 VAR_MAP_SCENE_CINNABAR_ISLAND, 3, CinnabarIsland_EventScript_ReturnFromSeviiIslands
 # 58 "data/maps/CinnabarIsland/scripts.pory"
-CinnabarIsland_EventScript_ExitPokeCenterForOneIsland::
+	.2byte 0
 # 59 "data/maps/CinnabarIsland/scripts.pory"
-	lockall
-# 60 "data/maps/CinnabarIsland/scripts.pory"
-	clearflag FLAG_DONT_TRANSITION_MUSIC
-# 61 "data/maps/CinnabarIsland/scripts.pory"
-	savebgm MUS_DUMMY
-# 62 "data/maps/CinnabarIsland/scripts.pory"
-	textcolor NPC_TEXT_COLOR_MALE
-# 63 "data/maps/CinnabarIsland/scripts.pory"
-	setvar VAR_MAP_SCENE_CINNABAR_ISLAND_2, 2
-# 64 "data/maps/CinnabarIsland/scripts.pory"
-	delay 20
-# 65 "data/maps/CinnabarIsland/scripts.pory"
-	call CinnabarIsland_EventScript_SailToOneIsland
-# 66 "data/maps/CinnabarIsland/scripts.pory"
-	releaseall
-# 67 "data/maps/CinnabarIsland/scripts.pory"
-	end
-# 68 "data/maps/CinnabarIsland/scripts.pory"
 
+# 60 "data/maps/CinnabarIsland/scripts.pory"
+CinnabarIsland_EventScript_ExitPokeCenterForOneIsland::
+# 61 "data/maps/CinnabarIsland/scripts.pory"
+	lockall
+# 62 "data/maps/CinnabarIsland/scripts.pory"
+	clearflag FLAG_DONT_TRANSITION_MUSIC
+# 63 "data/maps/CinnabarIsland/scripts.pory"
+	savebgm MUS_DUMMY
+# 64 "data/maps/CinnabarIsland/scripts.pory"
+	textcolor NPC_TEXT_COLOR_MALE
+# 65 "data/maps/CinnabarIsland/scripts.pory"
+	setvar VAR_MAP_SCENE_CINNABAR_ISLAND_2, 2
+# 66 "data/maps/CinnabarIsland/scripts.pory"
+	delay 20
+# 67 "data/maps/CinnabarIsland/scripts.pory"
+	call CinnabarIsland_EventScript_SailToOneIsland
+# 68 "data/maps/CinnabarIsland/scripts.pory"
+	releaseall
 # 69 "data/maps/CinnabarIsland/scripts.pory"
-CinnabarIsland_EventScript_ReturnFromSeviiIslands::
+	end
 # 70 "data/maps/CinnabarIsland/scripts.pory"
-	setobjectxyperm OBJ_EVENT_ID_PLAYER, 25, 5 
+
 # 71 "data/maps/CinnabarIsland/scripts.pory"
-	setobjectmovementtype OBJ_EVENT_ID_PLAYER, MOVEMENT_TYPE_FACE_DOWN
+CinnabarIsland_EventScript_ReturnFromSeviiIslands::
 # 72 "data/maps/CinnabarIsland/scripts.pory"
 	lockall
 # 73 "data/maps/CinnabarIsland/scripts.pory"
