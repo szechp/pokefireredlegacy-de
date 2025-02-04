@@ -60,7 +60,7 @@ static const struct InGameTrade sInGameTrades[] = {
         .otName = _("SAIGE"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_SLOWPOKE
+        .requestedSpecies = SPECIES_RATICATE
 #endif
     }, 
     [INGAME_TRADE_FARFETCHD] = 
