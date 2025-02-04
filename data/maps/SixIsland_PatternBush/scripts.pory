@@ -79,8 +79,7 @@ SixIsland_PatternBush_EventScript_Layton::
 	end
 
 SixIsland_PatternBush_EventScript_Bugsy::
-	goto_if_set FLAG_GET_MYSTIC, SixIsland_PatternBush_EventScript_RematchBugsy
-	goto_if_set FLAG_BUGSY_DEFEATED, SixIsland_PatternBush_EventScript_CantRematchBugsy
+	goto_if_set FLAG_BUGSY_DEFEATED, SixIsland_PatternBush_EventScript_RematchBugsy
 	msgbox SixIsland_PatternBush_Text_Bugsy, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, SixIsland_PatternBush_EventScript_NoBugsy
 	trainerbattle_single TRAINER_BUGSY, SixIsland_PatternBush_Text_YesBugsy, SixIsland_PatternBush_Text_BugsyDefeat, SixIsland_PatternBush_EventScript_PostBugsy, NO_MUSIC

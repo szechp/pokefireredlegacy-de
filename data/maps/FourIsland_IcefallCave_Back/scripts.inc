@@ -397,74 +397,72 @@ FourIsland_IcefallCave_Back_EventScript_Lorelei::
 # 199 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 FourIsland_IcefallCave_Back_EventScript_Pryce::
 # 200 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	goto_if_set FLAG_GET_MYSTIC, FourIsland_IcefallCave_Back_EventScript_RematchPryce
+	goto_if_set FLAG_PRYCE_DEFEATED, FourIsland_IcefallCave_Back_EventScript_RematchPryce
 # 201 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	goto_if_set FLAG_PRYCE_DEFEATED, FourIsland_IcefallCave_Back_EventScript_CantRematchPryce
-# 202 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	msgbox FourIsland_IcefallCave_Back_Text_Pryce, MSGBOX_YESNO
+# 202 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, FourIsland_IcefallCave_Back_EventScript_NoPryce
 # 203 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, FourIsland_IcefallCave_Back_EventScript_NoPryce
-# 204 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	trainerbattle_single TRAINER_PRYCE, FourIsland_IcefallCave_Back_Text_YesPryce, FourIsland_IcefallCave_Back_Text_PryceDefeat, FourIsland_IcefallCave_Back_EventScript_PostPryce, NO_MUSIC
+# 204 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+	release
 # 205 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	release
+	end
 # 206 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	end
+
 # 207 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-
-# 208 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 FourIsland_IcefallCave_Back_EventScript_PostPryce::
+# 208 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+	msgbox FourIsland_IcefallCave_Back_Text_PrycePostBattle
 # 209 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	msgbox FourIsland_IcefallCave_Back_Text_PrycePostBattle
-# 210 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	setflag FLAG_PRYCE_DEFEATED
+# 210 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+	release
 # 211 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	release
+	end
 # 212 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	end
+
 # 213 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-
-# 214 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 FourIsland_IcefallCave_Back_EventScript_CantRematchPryce::
-# 215 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+# 214 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	msgbox FourIsland_IcefallCave_Back_Text_PrycePostBattle
+# 215 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+	release
 # 216 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	release
+	end
 # 217 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	end
+
 # 218 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-
-# 219 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 FourIsland_IcefallCave_Back_EventScript_NoPryce::
-# 220 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+# 219 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	msgbox FourIsland_IcefallCave_Back_Text_NoPryce
+# 220 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+	release
 # 221 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	release
+	end
 # 222 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	end
+
 # 223 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-
-# 224 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 FourIsland_IcefallCave_Back_EventScript_RematchPryce::
-# 225 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+# 224 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	msgbox FourIsland_IcefallCave_Back_Text_RematchPryce, MSGBOX_YESNO
-# 226 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+# 225 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, FourIsland_IcefallCave_Back_EventScript_NoPryce
-# 227 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+# 226 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	trainerbattle_single TRAINER_PRYCE, FourIsland_IcefallCave_Back_Text_YesRematchPryce, FourIsland_IcefallCave_Back_Text_RematchPryceDefeat, FourIsland_IcefallCave_Back_EventScript_PostRematchPryce, NO_MUSIC
+# 227 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+	release
 # 228 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
-	release
-# 229 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	end
-# 230 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+# 229 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 
-# 231 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+# 230 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 FourIsland_IcefallCave_Back_EventScript_PostRematchPryce::
-# 232 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+# 231 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	msgbox FourIsland_IcefallCave_Back_Text_RematchPryceDefeat
-# 233 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+# 232 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	cleartrainerflag TRAINER_PRYCE
-# 234 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+# 233 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	release
-# 235 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
+# 234 "data/maps/FourIsland_IcefallCave_Back/scripts.pory"
 	end

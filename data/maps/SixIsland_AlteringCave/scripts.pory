@@ -9,8 +9,7 @@ SixIsland_AlteringCave_OnTransition::
 	end
 
 SixIsland_AlteringCave_EventScript_Spike::
-	goto_if_set FLAG_GET_AURORA, SixIsland_AlteringCave_EventScript_RematchSpike
-	goto_if_set FLAG_SPIKE_DEFEATED, SixIsland_AlteringCave_EventScript_CantRematchSpike
+	goto_if_set FLAG_SPIKE_DEFEATED, SixIsland_AlteringCave_EventScript_RematchSpike
 	msgbox SixIsland_AlteringCave_Text_Spike, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, SixIsland_AlteringCave_EventScript_NoSpike
 	trainerbattle_single TRAINER_SPIKE, SixIsland_AlteringCave_Text_YesSpike, SixIsland_AlteringCave_Text_SpikeDefeat, SixIsland_AlteringCave_EventScript_PostSpike, NO_MUSIC

@@ -11,8 +11,7 @@ ThreeIsland_BondBridge_EventScript_BondBridgeSign::
 	end
 
 ThreeIsland_BondBridge_EventScript_Morty::
-	goto_if_set FLAG_GET_MYSTIC, ThreeIsland_BondBridge_EventScript_RematchMorty
-	goto_if_set FLAG_MORTY_DEFEATED, ThreeIsland_BondBridge_EventScript_CantRematchMorty
+	goto_if_set FLAG_MORTY_DEFEATED, ThreeIsland_BondBridge_EventScript_RematchMorty
 	msgbox ThreeIsland_BondBridge_Text_Morty, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, ThreeIsland_BondBridge_EventScript_NoMorty
 	trainerbattle_single TRAINER_MORTY, ThreeIsland_BondBridge_Text_YesMorty, ThreeIsland_BondBridge_Text_MortyDefeat, ThreeIsland_BondBridge_EventScript_PostMorty, NO_MUSIC

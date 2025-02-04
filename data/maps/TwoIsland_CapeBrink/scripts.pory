@@ -3,8 +3,7 @@ TwoIsland_CapeBrink_MapScripts::
 	.byte 0
 
 TwoIsland_CapeBrink_EventScript_Clair::
-	goto_if_set FLAG_GET_MYSTIC, TwoIsland_CapeBrink_EventScript_RematchClair
-	goto_if_set FLAG_CLAIR_DEFEATED, TwoIsland_CapeBrink_EventScript_CantRematchClair
+	goto_if_set FLAG_CLAIR_DEFEATED, TwoIsland_CapeBrink_EventScript_RematchClair
 	msgbox TwoIsland_CapeBrink_Text_Clair, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, TwoIsland_CapeBrink_EventScript_NoClair
 	trainerbattle_single TRAINER_CLAIR, TwoIsland_CapeBrink_Text_YesClair, TwoIsland_CapeBrink_Text_ClairDefeat, TwoIsland_CapeBrink_EventScript_PostClair, NO_MUSIC
@@ -41,8 +40,7 @@ TwoIsland_CapeBrink_EventScript_PostRematchClair::
 	end
 
 TwoIsland_CapeBrink_EventScript_Caseno::
-	goto_if_set FLAG_GET_AURORA, TwoIsland_CapeBrink_EventScript_RematchCaseno
-	goto_if_set FLAG_CASENO_DEFEATED, TwoIsland_CapeBrink_EventScript_CantRematchCaseno
+	goto_if_set FLAG_CASENO_DEFEATED, TwoIsland_CapeBrink_EventScript_RematchCaseno
 	msgbox TwoIsland_CapeBrink_Text_Caseno, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, TwoIsland_CapeBrink_EventScript_NoCaseno
 	trainerbattle_single TRAINER_CASENO, TwoIsland_CapeBrink_Text_YesCaseno, TwoIsland_CapeBrink_Text_CasenoDefeat, TwoIsland_CapeBrink_EventScript_PostCaseno, NO_MUSIC
