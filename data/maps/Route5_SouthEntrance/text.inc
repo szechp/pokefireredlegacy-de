@@ -31,13 +31,15 @@ Route5_SouthEntrance_Text_ThanksIllShareFightTeaWithGuards::
     .string "Glug, glug…\l"
     .string "… …\l"
     .string "Gulp…\l"
-    .string "If you want to go to SAFFRON\l"
-    .string "CITY…\l"
+    .string "I guess for my Thanks...\l"
+    .string "Gulp…\l"
     .string "… …\l"
-    .string "You can go on through.\p"
-    .string "I'll share this TEA with the other\n"
-    .string "guards!$"
+    .string "I can give you this Item!$"
 
 Route5_SouthEntrance_Text_ThatFightTeaLooksTasty::
-    .string "Oh, that TEA…\n"
-    .string "It looks awfully tasty…$"
+    .string "Hey, Sorry about what Happened\n"
+    .string "Earlier.\p"
+    .string "Wait, is that TEA?\p"
+    .string "It looks juicy...\p"
+
+

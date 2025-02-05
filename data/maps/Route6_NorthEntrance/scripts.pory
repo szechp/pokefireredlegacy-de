@@ -62,6 +62,7 @@ Route6_NorthEntrance_EventScript_BattleGuard::
 Route6_NorthEntrance_EventScript_PostGuard::
 	msgbox Route6_NorthEntrance_Text_PostGuard 
 	setvar VAR_MAP_SCENE_ROUTE5_ROUTE6_ROUTE7_ROUTE8_GATES, 1
+	setflag FLAG_GUARD_TEA
 	release
 	end
 

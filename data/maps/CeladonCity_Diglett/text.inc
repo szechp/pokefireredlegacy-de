@@ -17,3 +17,14 @@ CeladonCity_Diglett_Text_GuardHater::
     .string "Those guards will go.\n"
     .string "Down!$"
 
+CeladonCity_Diglett_Text_GuardHaterThanks::
+    .string "You Opened The Gates?\n"
+    .string "Thank You! Now I don't\l"
+    .string "have to fight the Guards!\l"
+    .string "You can have this as a thanks!\p"
+
+CeladonCity_Diglett_Text_GuardHaterThanks2::
+    .string "We got that while digging\n"
+    .string "The Tunnel.\p"
+    .string "A Big Rock also fall and Blocked\n"
+    .string "So Good thing the gates opened!$"

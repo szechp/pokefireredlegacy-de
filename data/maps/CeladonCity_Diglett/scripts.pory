@@ -11,10 +11,22 @@ CeladonCity_Diglett_EventScript_Hiker::
 	end
 
 CeladonCity_Diglett_EventScript_GuardHater::
-	lock
-	faceplayer
+	goto_if_set FLAG_GOT_DIG_NUGGET, CeladonCity_Diglett_EventScript_GuardHaterThanksPost
+	goto_if_eq VAR_MAP_SCENE_ROUTE5_ROUTE6_ROUTE7_ROUTE8_GATES, 1, CeladonCity_Diglett_EventScript_GuardHaterThanks
 	msgbox CeladonCity_Diglett_Text_GuardHater, MSGBOX_NPC
 	return
 	end
 
+CeladonCity_Diglett_EventScript_GuardHaterThanks::
+	msgbox CeladonCity_Diglett_Text_GuardHaterThanks, MSGBOX_NPC
+	checkitem ITEM_NUGGET
+	giveitem ITEM_NUGGET
+	setflag FLAG_GOT_DIG_NUGGET
+	goto CeladonCity_Diglett_EventScript_GuardHaterThanksPost
+	release
+	end
+
+CeladonCity_Diglett_EventScript_GuardHaterThanksPost::
+	msgbox CeladonCity_Diglett_Text_GuardHaterThanks2, MSGBOX_NPC
+	end
 `
