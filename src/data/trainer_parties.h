@@ -970,7 +970,7 @@ static const struct TrainerMon sParty_Weebra[] = {
     {
         .nickname = _("CINDERELLA"),
         .ivs = BEST_IV_SPREAD,
-        .lvl = 70,
+        .lvl = 55,
         .species = SPECIES_HITMONTOP,
         .heldItem = ITEM_KINGS_ROCK,
         .ability = ABILITY_SLOT_1,
