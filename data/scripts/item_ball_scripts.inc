@@ -18,6 +18,10 @@ ViridianForest_EventScript_ItemPotion::
 	finditem ITEM_POTION
 	end
 
+ViridianGym_EventScript_ItemMaxRevive::
+	finditem ITEM_MAX_REVIVE
+	end
+
 MtMoon_1F_EventScript_ItemParalyzeHeal::
 	finditem ITEM_PARALYZE_HEAL
 	end

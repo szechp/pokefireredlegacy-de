@@ -33,3 +33,6 @@ SSAnne_Deck_Text_TrevorPostBattle::
     .string "My pa said there are 100 kinds of\n"
     .string "POKéMON. I think there are more.$"
 
+SSAnne_Deck_Text_ItsApartGame::
+    .string "It's Apart of the Game!$"
+

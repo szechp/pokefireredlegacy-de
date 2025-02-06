@@ -206,9 +206,9 @@
 #define FLAG_SPAWN_CELEBI              0x0BC
 #define FLAG_HIDE_PSYDUCK             0x0BD
 #define FLAG_GOT_DIG_NUGGET         0x0BE
-#define FLAG_0x0BF               0x0BF
-#define FLAG_0x0C0               0x0C0
-#define FLAG_0x0C1               0x0C1
+#define FLAG_MAX_REVIVE_GYM      0x0BF
+#define FLAG_APART_GAME               0x0C0
+#define FLAG_MOVE_SLOWBRO2             0x0C1
 #define FLAG_0x0C2               0x0C2
 #define FLAG_0x0C3               0x0C3
 #define FLAG_0x0C4               0x0C4

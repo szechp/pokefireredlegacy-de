@@ -54,3 +54,6 @@ SeafoamIslands_B4F_Text_WeebraDefeat::
 SeafoamIslands_B4F_Text_WeebraPostBattle::
     .string "Ssh! You'll scare the bugs away.\n"
     .string "Another time, okay?$"
+
+SeafoamIslands_B4F_Text_Slowpoke::
+    .string "SLOWPOKE!$"

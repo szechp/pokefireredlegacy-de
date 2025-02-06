@@ -14,6 +14,18 @@ SSAnne_Deck_EventScript_Sailor::
 	msgbox SSAnne_Deck_Text_ScrubbingDecksHardWork, MSGBOX_NPC
 	end
 
+SSAnne_Deck_EventScript_Donator::
+	goto_if_set FLAG_APART_GAME, SSAnne_Deck_EventScript_Donator2
+	msgbox SSAnne_Deck_Text_ItsApartGame, MSGBOX_NPC
+	checkitem ITEM_TINY_MUSHROOM
+	giveitem ITEM_TINY_MUSHROOM
+	setflag FLAG_APART_GAME
+	end
+
+SSAnne_Deck_EventScript_Donator2::
+	msgbox SSAnne_Deck_Text_ItsApartGame, MSGBOX_NPC
+	end
+
 SSAnne_Deck_EventScript_Edmond::
 	trainerbattle_single TRAINER_SAILOR_EDMOND, SSAnne_Deck_Text_EdmondIntro, SSAnne_Deck_Text_EdmondDefeat
 	msgbox SSAnne_Deck_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE

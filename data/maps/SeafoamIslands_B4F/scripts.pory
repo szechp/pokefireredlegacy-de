@@ -60,6 +60,16 @@ SeafoamIslands_B4F_OnWarp::
 	map_script_2 VAR_MAP_SCENE_SEAFOAM_ISLANDS_B4F, 1, SeafoamIslands_B4F_EventScript_WarpInOnCurrent
 	.2byte 0
 
+SeafoamIslands_B4F_Slowpoke::
+	goto_if_set FLAG_MOVE_SLOWBRO2, SeafoamIslands_B4F_Slowpoke2
+	msgbox SeafoamIslands_B4F_Text_Slowpoke, MSGBOX_NPC
+	setflag FLAG_MOVE_SLOWBRO2
+	end
+
+SeafoamIslands_B4F_Slowpoke2::
+	msgbox SeafoamIslands_B4F_Text_Slowpoke, MSGBOX_NPC
+	end
+	
 SeafoamIslands_B4F_EventScript_WarpInOnCurrent::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	special ForcePlayerToStartSurfing

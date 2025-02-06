@@ -118,3 +118,7 @@ Route20_Text_MistyTrainsHere::
     .string "are common sights in these parts.\p"
     .string "They say that MISTY of the\n"
     .string "CERULEAN GYM trains here.$"
+
+Route20_Text_Slowbro::
+    .string "Snooze............$"
+
