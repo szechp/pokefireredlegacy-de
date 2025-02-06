@@ -64,3 +64,11 @@ Route20_EventScript_SeafoamIslandsSign::
 	msgbox Route20_Text_SeafoamIslands, MSGBOX_SIGN
 # 33 "data/maps/Route20/scripts.pory"
 	end
+# 34 "data/maps/Route20/scripts.pory"
+
+# 35 "data/maps/Route20/scripts.pory"
+Route20_EventScript_Slowbro::
+# 36 "data/maps/Route20/scripts.pory"
+	msgbox Route20_Text_Slowbro, MSGBOX_SIGN
+# 37 "data/maps/Route20/scripts.pory"
+	end

@@ -31,20 +31,44 @@ SSAnne_Deck_EventScript_Sailor::
 # 16 "data/maps/SSAnne_Deck/scripts.pory"
 
 # 17 "data/maps/SSAnne_Deck/scripts.pory"
-SSAnne_Deck_EventScript_Edmond::
+SSAnne_Deck_EventScript_Donator::
 # 18 "data/maps/SSAnne_Deck/scripts.pory"
-	trainerbattle_single TRAINER_SAILOR_EDMOND, SSAnne_Deck_Text_EdmondIntro, SSAnne_Deck_Text_EdmondDefeat
+	goto_if_set FLAG_APART_GAME, SSAnne_Deck_EventScript_Donator2
 # 19 "data/maps/SSAnne_Deck/scripts.pory"
-	msgbox SSAnne_Deck_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE
+	msgbox SSAnne_Deck_Text_ItsApartGame, MSGBOX_NPC
 # 20 "data/maps/SSAnne_Deck/scripts.pory"
-	end
+	checkitem ITEM_TINY_MUSHROOM
 # 21 "data/maps/SSAnne_Deck/scripts.pory"
-
+	giveitem ITEM_TINY_MUSHROOM
 # 22 "data/maps/SSAnne_Deck/scripts.pory"
-SSAnne_Deck_EventScript_Trevor::
+	setflag FLAG_APART_GAME
 # 23 "data/maps/SSAnne_Deck/scripts.pory"
-	trainerbattle_single TRAINER_SAILOR_TREVOR, SSAnne_Deck_Text_TrevorIntro, SSAnne_Deck_Text_TrevorDefeat
+	end
 # 24 "data/maps/SSAnne_Deck/scripts.pory"
-	msgbox SSAnne_Deck_Text_TrevorPostBattle, MSGBOX_AUTOCLOSE
+
 # 25 "data/maps/SSAnne_Deck/scripts.pory"
+SSAnne_Deck_EventScript_Donator2::
+# 26 "data/maps/SSAnne_Deck/scripts.pory"
+	msgbox SSAnne_Deck_Text_ItsApartGame, MSGBOX_NPC
+# 27 "data/maps/SSAnne_Deck/scripts.pory"
+	end
+# 28 "data/maps/SSAnne_Deck/scripts.pory"
+
+# 29 "data/maps/SSAnne_Deck/scripts.pory"
+SSAnne_Deck_EventScript_Edmond::
+# 30 "data/maps/SSAnne_Deck/scripts.pory"
+	trainerbattle_single TRAINER_SAILOR_EDMOND, SSAnne_Deck_Text_EdmondIntro, SSAnne_Deck_Text_EdmondDefeat
+# 31 "data/maps/SSAnne_Deck/scripts.pory"
+	msgbox SSAnne_Deck_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE
+# 32 "data/maps/SSAnne_Deck/scripts.pory"
+	end
+# 33 "data/maps/SSAnne_Deck/scripts.pory"
+
+# 34 "data/maps/SSAnne_Deck/scripts.pory"
+SSAnne_Deck_EventScript_Trevor::
+# 35 "data/maps/SSAnne_Deck/scripts.pory"
+	trainerbattle_single TRAINER_SAILOR_TREVOR, SSAnne_Deck_Text_TrevorIntro, SSAnne_Deck_Text_TrevorDefeat
+# 36 "data/maps/SSAnne_Deck/scripts.pory"
+	msgbox SSAnne_Deck_Text_TrevorPostBattle, MSGBOX_AUTOCLOSE
+# 37 "data/maps/SSAnne_Deck/scripts.pory"
 	end
