@@ -78,31 +78,44 @@ static const struct TrainerMon sParty_FatGuy[] = {
     {
         .iv = 255,
         .lvl = 36,
-        .species = SPECIES_WIGGLYTUFF,
-        .moves = {MOVE_PSYCHIC, MOVE_HYPER_VOICE, MOVE_LOVELY_KISS, MOVE_WATER_PULSE},
-
-    },
-    {
-        .iv = 255,
-        .lvl = 36,
-        .species = SPECIES_GOLDUCK,
+        .species = SPECIES_NIDOKING,
         .moves = {MOVE_EXTRASENSORY, MOVE_WATER_PULSE, MOVE_NONE, MOVE_ICE_PUNCH},
 
     },
     {
         .iv = 255,
         .lvl = 37,
-        .species = SPECIES_CHANSEY,
+        .species = SPECIES_NIDOQUEEN,
         .moves = {MOVE_SOFT_BOILED, MOVE_REFLECT, MOVE_EGG_BOMB, MOVE_NONE},
     },
     {
         .iv = 255,
+        .lvl = 36,
+        .species = SPECIES_PORYGON2,
+        .moves = {MOVE_PSYCHIC, MOVE_HYPER_VOICE, MOVE_LOVELY_KISS, MOVE_WATER_PULSE},
+    },
+    {
+        .iv = 255,
         .lvl = 38,
-        .species = SPECIES_HYPNO,
+        .species = SPECIES_GYARADOS,
         .moves = {MOVE_HYPNOSIS, MOVE_PSYCHIC, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH},
 
     },
-}; //UNUSED
+    {
+        .iv = 255,
+        .lvl = 38,
+        .species = SPECIES_RHYDON,
+        .moves = {MOVE_HYPNOSIS, MOVE_PSYCHIC, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH},
+
+    },
+    {
+        .iv = 255,
+        .lvl = 38,
+        .species = SPECIES_KANGASKHAN,
+        .moves = {MOVE_HYPNOSIS, MOVE_PSYCHIC, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH},
+
+    },
+}; //GIOVANNI 4
 
 
 static const struct TrainerMon sParty_Owl[] = {
@@ -159,7 +172,7 @@ static const struct TrainerMon sParty_Owl[] = {
         .evs = {252, 0, 0, 0, 252, 0},
 
     },
-};
+}; //EASTER EGG
 
 
 static const struct TrainerMon sParty_Freddy[] = {
@@ -210,7 +223,7 @@ static const struct TrainerMon sParty_Freddy[] = {
         .moves = {MOVE_CRUNCH, MOVE_FACADE, MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE},
         .evs = {85, 85, 85, 85, 85, 85},
     },  
-}; //Freddy
+}; //Freddy Easter Egg
 
 static const struct TrainerMon sParty_Speedy[] = {    
     {
