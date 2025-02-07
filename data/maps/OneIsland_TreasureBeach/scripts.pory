@@ -7,6 +7,8 @@ OneIsland_TreasureBeach_EventScript_Boy::
 	end
 
 OneIsland_TreasureBeach_EventScript_Jasmine::
+	lock
+	faceplayer
 	goto_if_set FLAG_JASMINE_DEFEATED, OneIsland_TreasureBeach_EventScript_RematchJasmine
 	msgbox OneIsland_TreasureBeach_Text_Jasmine, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, OneIsland_TreasureBeach_EventScript_NoJasmine

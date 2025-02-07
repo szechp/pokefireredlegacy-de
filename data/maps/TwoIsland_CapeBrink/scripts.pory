@@ -3,6 +3,8 @@ TwoIsland_CapeBrink_MapScripts::
 	.byte 0
 
 TwoIsland_CapeBrink_EventScript_Clair::
+	lock
+	faceplayer
 	goto_if_set FLAG_CLAIR_DEFEATED, TwoIsland_CapeBrink_EventScript_RematchClair
 	msgbox TwoIsland_CapeBrink_Text_Clair, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, TwoIsland_CapeBrink_EventScript_NoClair
@@ -40,6 +42,8 @@ TwoIsland_CapeBrink_EventScript_PostRematchClair::
 	end
 
 TwoIsland_CapeBrink_EventScript_Caseno::
+	lock
+	faceplayer
 	goto_if_set FLAG_CASENO_DEFEATED, TwoIsland_CapeBrink_EventScript_RematchCaseno
 	msgbox TwoIsland_CapeBrink_Text_Caseno, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, TwoIsland_CapeBrink_EventScript_NoCaseno

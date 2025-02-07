@@ -35,6 +35,8 @@ Route13_Flute_Items::
 	end
 
 Route13_EventScript_Whitney::
+	lock
+	faceplayer
 	goto_if_set FLAG_WHITNEY_DEFEATED, Route13_EventScript_RematchWhitney
 	msgbox Route13_Text_Whitney, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route13_EventScript_NoWhitney

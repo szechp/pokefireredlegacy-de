@@ -91,6 +91,8 @@ FiveIsland_WaterLabyrinth_EventScript_NoFalkner::
 	end
 
 FiveIsland_WaterLabyrinth_EventScript_RematchFalkner::
+	lock
+	faceplayer
 	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalkner, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_NoFalkner
 	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesRematchFalkner, FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner, NO_MUSIC

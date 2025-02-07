@@ -820,6 +820,11 @@ PalletTown_ProfessorOaksLab_EventScript_DexCompleted::
 	delay 70
 	msgbox PokedexRating_Text_ThankYouMadeDreamReality
 	setflag SHOWED_OAK_COMPLETE_DEX
+	msgbox PokemonMansion_1F_Text_OakPostBattle
+	setflag FLAG_HIDE_OAK_IN_HIS_LAB
+	removeobject 4
+	fadescreen FADE_TO_BLACK
+	fadescreen FADE_FROM_BLACK
 	release
 	end
 

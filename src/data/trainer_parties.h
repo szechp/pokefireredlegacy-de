@@ -254,8 +254,6 @@ static const struct TrainerMon sParty_Speedy[] = {
         .species = SPECIES_DUGTRIO,
         .moves = {MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_SLUDGE_BOMB, MOVE_DOUBLE_EDGE},
         .evs = {0, 252, 0, 252, 0, 0},
-        .ability = 1
-
     },
     {
         .iv = 255,
@@ -1764,7 +1762,6 @@ static const struct TrainerMon sParty_Spike[] = {
         .heldItem = ITEM_QUICK_CLAW,
         .moves = {MOVE_DOUBLE_EDGE, MOVE_SUPERPOWER, MOVE_HYDRO_PUMP, MOVE_BRICK_BREAK},
         .evs = {252, 252, 0, 0, 0, 0},
-        .ability = 1
     },
     {
         .iv = 255,
@@ -2117,8 +2114,6 @@ static const struct TrainerMon sParty_Caseno[] = {
         .heldItem = ITEM_LEFTOVERS,
         .moves = {MOVE_BULK_UP, MOVE_BRICK_BREAK, MOVE_EARTHQUAKE, MOVE_BODY_SLAM},
         .evs = {252, 0, 0, 0, 0, 252},
-        .ability = 1
-
     },
     {
         .iv = 255,
@@ -2137,8 +2132,6 @@ static const struct TrainerMon sParty_Caseno[] = {
         .heldItem = ITEM_LEFTOVERS,
         .moves = {MOVE_BODY_SLAM, MOVE_CURSE, MOVE_EARTHQUAKE, MOVE_REFRESH},
         .evs = {252, 252, 0, 0, 0, 0},
-        .ability = 1
-
     },   
 };
 
@@ -2150,8 +2143,6 @@ static const struct TrainerMon sParty_Armstrong[] = {
         .heldItem = ITEM_LEFTOVERS,
         .moves = {MOVE_ICE_BEAM, MOVE_THUNDER_WAVE, MOVE_SURF, MOVE_PSYCHIC},
         .evs = {0, 0, 0, 252, 252, 0},
-        .ability = 1
-
     },
     {
         .iv = 255,
@@ -2160,7 +2151,6 @@ static const struct TrainerMon sParty_Armstrong[] = {
         .heldItem = ITEM_LEFTOVERS,
         .moves = {MOVE_METEOR_MASH, MOVE_TWINEEDLE, MOVE_AGILITY, MOVE_BRICK_BREAK},
         .evs = {252, 252, 0, 0, 0, 0},
-
     },
     {
         .iv = 255,
@@ -2169,7 +2159,6 @@ static const struct TrainerMon sParty_Armstrong[] = {
         .heldItem = ITEM_FOCUS_BAND,
         .moves = {MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_ICE_PUNCH, MOVE_FIRE_PUNCH},
         .evs = {0, 0, 0, 252, 252, 0},
-
     },
     {
         .iv = 255,
@@ -6324,21 +6313,26 @@ static const struct TrainerMon sParty_BossGiovanni[] = {
         .iv = 250,
         .lvl = 29,
         .species = SPECIES_ONIX,
+        .moves = {MOVE_DIG, MOVE_ROCK_TOMB, MOVE_SCREECH, MOVE_ROCK_SMASH},
     },
     {
         .iv = 250,
         .lvl = 31,
         .species = SPECIES_PERSIAN,
+        .moves = {MOVE_SLASH, MOVE_CUT, MOVE_WATER_PULSE, MOVE_THUNDERBOLT},
     },
     {
         .iv = 250,
         .lvl = 30,
         .species = SPECIES_MAROWAK,
+        .moves = {MOVE_BONEMERANG, MOVE_CUT, MOVE_ROCK_SMASH, MOVE_FRUSTRATION},
+        .friendship = TRAINER_MON_UNFRIENDLY
     },
     {
         .iv = 250,
         .lvl = 31,
         .species = SPECIES_KANGASKHAN,
+        .moves = {MOVE_FAKE_OUT, MOVE_BITE, MOVE_ROCK_SMASH, MOVE_MEGA_PUNCH},
     },
 };
 
@@ -10545,13 +10539,11 @@ static const struct TrainerMon sParty_SwimmerFemaleNicole[] = {
         .iv = 0,
         .lvl = 65,
         .species = SPECIES_AZUMARILL,
-        .ability = 1
     },
     {
         .iv = 0,
         .lvl = 65,
         .species = SPECIES_LANTURN,
-        .ability = 1
     },
     {
         .iv = 0,
@@ -12981,13 +12973,11 @@ static const struct TrainerMon sParty_SwimmerFemaleNicole2[] = {
         .iv = 0,
         .lvl = 65,
         .species = SPECIES_AZUMARILL,
-        .ability = 1
     },
     {
         .iv = 0,
         .lvl = 65,
         .species = SPECIES_LANTURN,
-        .ability = 1
     },
     {
         .iv = 0,
@@ -13346,8 +13336,6 @@ static const struct TrainerMon sParty_DragonTamer[] = {
         .heldItem = ITEM_LEFTOVERS,
         .moves = {MOVE_ICE_BEAM, MOVE_THUNDER_WAVE, MOVE_SURF, MOVE_PSYCHIC},
         .evs = {0, 0, 0, 252, 252, 0},
-        .ability = 1
-
     },
     {
         .iv = 255,

@@ -1092,9 +1092,13 @@ static void Cmd_accuracycheck(void)
         }
 
         gPotentialItemEffectBattler = gBattlerTarget;
-
-        if (holdEffect == HOLD_EFFECT_EVASION_UP || gBattleMons[gBattlerTarget].ability == ABILITY_STENCH)
+        
+        if (holdEffect == HOLD_EFFECT_EVASION_UP)
             calc = (calc * (100 - param)) / 100;
+    
+        if (gBattleMons[gBattlerTarget].ability == ABILITY_STENCH)
+            calc = (calc * (100 - param)) / 100;
+    
 
         // final calculation
         if ((Random() % 100 + 1) > calc)

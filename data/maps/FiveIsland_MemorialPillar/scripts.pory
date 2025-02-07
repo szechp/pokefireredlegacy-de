@@ -87,6 +87,8 @@ FiveIsland_MemorialPillar_EventScript_MemorialLemonadeAlreadyPlaced::
 	end
 
 FiveIsland_MemorialPillar_EventScript_Oman::
+	lock
+	faceplayer
 	goto_if_set FLAG_OMAN_DEFEATED, FiveIsland_MemorialPillar_EventScript_RematchOman
 	msgbox FiveIsland_MemorialPillar_Text_Oman, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, FiveIsland_MemorialPillar_EventScript_NoOman

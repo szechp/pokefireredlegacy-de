@@ -24,6 +24,7 @@ SSAnne_Deck_EventScript_Donator::
 
 SSAnne_Deck_EventScript_Donator2::
 	msgbox SSAnne_Deck_Text_ItsApartGame, MSGBOX_NPC
+	release
 	end
 
 SSAnne_Deck_EventScript_Edmond::

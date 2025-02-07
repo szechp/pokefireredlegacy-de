@@ -52,6 +52,11 @@ PokemonMansion_2F_EventScript_PostOak::
 	setflag FLAG_OAK2_DEFEATED
 	clearflag FLAG_HIDE_MEW
 	clearflag FLAG_HIDE_EASTER
+	setflag FLAG_HIDE_OAK2
+	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
+	removeobject 5
+	fadescreen FADE_TO_BLACK
+	fadescreen FADE_FROM_BLACK
 	release
 	end
 
