@@ -21,72 +21,76 @@ SixIsland_AlteringCave_OnTransition::
 # 11 "data/maps/SixIsland_AlteringCave/scripts.pory"
 SixIsland_AlteringCave_EventScript_Spike::
 # 12 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	goto_if_set FLAG_SPIKE_DEFEATED, SixIsland_AlteringCave_EventScript_RematchSpike
+	lock
 # 13 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	msgbox SixIsland_AlteringCave_Text_Spike, MSGBOX_YESNO
+	faceplayer
 # 14 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, SixIsland_AlteringCave_EventScript_NoSpike
+	goto_if_set FLAG_SPIKE_DEFEATED, SixIsland_AlteringCave_EventScript_RematchSpike
 # 15 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	trainerbattle_single TRAINER_SPIKE, SixIsland_AlteringCave_Text_YesSpike, SixIsland_AlteringCave_Text_SpikeDefeat, SixIsland_AlteringCave_EventScript_PostSpike, NO_MUSIC
+	msgbox SixIsland_AlteringCave_Text_Spike, MSGBOX_YESNO
 # 16 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	release
-# 17 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	end
-# 18 "data/maps/SixIsland_AlteringCave/scripts.pory"
-
-# 19 "data/maps/SixIsland_AlteringCave/scripts.pory"
-SixIsland_AlteringCave_EventScript_PostSpike::
-# 20 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	msgbox SixIsland_AlteringCave_Text_SpikePostBattle
-# 21 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	setflag FLAG_SPIKE_DEFEATED
-# 22 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	release
-# 23 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	end
-# 24 "data/maps/SixIsland_AlteringCave/scripts.pory"
-
-# 25 "data/maps/SixIsland_AlteringCave/scripts.pory"
-SixIsland_AlteringCave_EventScript_CantRematchSpike::
-# 26 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	msgbox SixIsland_AlteringCave_Text_SpikePostBattle
-# 27 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	release
-# 28 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	end
-# 29 "data/maps/SixIsland_AlteringCave/scripts.pory"
-
-# 30 "data/maps/SixIsland_AlteringCave/scripts.pory"
-SixIsland_AlteringCave_EventScript_NoSpike::
-# 31 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	msgbox SixIsland_AlteringCave_Text_NoSpike
-# 32 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	release
-# 33 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	end
-# 34 "data/maps/SixIsland_AlteringCave/scripts.pory"
-
-# 35 "data/maps/SixIsland_AlteringCave/scripts.pory"
-SixIsland_AlteringCave_EventScript_RematchSpike::
-# 36 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	msgbox SixIsland_AlteringCave_Text_RematchSpike, MSGBOX_YESNO
-# 37 "data/maps/SixIsland_AlteringCave/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, SixIsland_AlteringCave_EventScript_NoSpike
-# 38 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	trainerbattle_single TRAINER_SPIKE, SixIsland_AlteringCave_Text_YesRematchSpike, SixIsland_AlteringCave_Text_RematchSpikeDefeat, SixIsland_AlteringCave_EventScript_PostRematchSpike, NO_MUSIC
-# 39 "data/maps/SixIsland_AlteringCave/scripts.pory"
+# 17 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	trainerbattle_single TRAINER_SPIKE, SixIsland_AlteringCave_Text_YesSpike, SixIsland_AlteringCave_Text_SpikeDefeat, SixIsland_AlteringCave_EventScript_PostSpike, NO_MUSIC
+# 18 "data/maps/SixIsland_AlteringCave/scripts.pory"
 	release
-# 40 "data/maps/SixIsland_AlteringCave/scripts.pory"
+# 19 "data/maps/SixIsland_AlteringCave/scripts.pory"
 	end
-# 41 "data/maps/SixIsland_AlteringCave/scripts.pory"
+# 20 "data/maps/SixIsland_AlteringCave/scripts.pory"
 
-# 42 "data/maps/SixIsland_AlteringCave/scripts.pory"
-SixIsland_AlteringCave_EventScript_PostRematchSpike::
-# 43 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	msgbox SixIsland_AlteringCave_Text_RematchSpikeDefeat
-# 44 "data/maps/SixIsland_AlteringCave/scripts.pory"
-	cleartrainerflag TRAINER_SPIKE
-# 45 "data/maps/SixIsland_AlteringCave/scripts.pory"
+# 21 "data/maps/SixIsland_AlteringCave/scripts.pory"
+SixIsland_AlteringCave_EventScript_PostSpike::
+# 22 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	msgbox SixIsland_AlteringCave_Text_SpikePostBattle
+# 23 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	setflag FLAG_SPIKE_DEFEATED
+# 24 "data/maps/SixIsland_AlteringCave/scripts.pory"
 	release
+# 25 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	end
+# 26 "data/maps/SixIsland_AlteringCave/scripts.pory"
+
+# 27 "data/maps/SixIsland_AlteringCave/scripts.pory"
+SixIsland_AlteringCave_EventScript_CantRematchSpike::
+# 28 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	msgbox SixIsland_AlteringCave_Text_SpikePostBattle
+# 29 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	release
+# 30 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	end
+# 31 "data/maps/SixIsland_AlteringCave/scripts.pory"
+
+# 32 "data/maps/SixIsland_AlteringCave/scripts.pory"
+SixIsland_AlteringCave_EventScript_NoSpike::
+# 33 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	msgbox SixIsland_AlteringCave_Text_NoSpike
+# 34 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	release
+# 35 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	end
+# 36 "data/maps/SixIsland_AlteringCave/scripts.pory"
+
+# 37 "data/maps/SixIsland_AlteringCave/scripts.pory"
+SixIsland_AlteringCave_EventScript_RematchSpike::
+# 38 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	msgbox SixIsland_AlteringCave_Text_RematchSpike, MSGBOX_YESNO
+# 39 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, SixIsland_AlteringCave_EventScript_NoSpike
+# 40 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	trainerbattle_single TRAINER_SPIKE, SixIsland_AlteringCave_Text_YesRematchSpike, SixIsland_AlteringCave_Text_RematchSpikeDefeat, SixIsland_AlteringCave_EventScript_PostRematchSpike, NO_MUSIC
+# 41 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	release
+# 42 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	end
+# 43 "data/maps/SixIsland_AlteringCave/scripts.pory"
+
+# 44 "data/maps/SixIsland_AlteringCave/scripts.pory"
+SixIsland_AlteringCave_EventScript_PostRematchSpike::
+# 45 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	msgbox SixIsland_AlteringCave_Text_RematchSpikeDefeat
 # 46 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	cleartrainerflag TRAINER_SPIKE
+# 47 "data/maps/SixIsland_AlteringCave/scripts.pory"
+	release
+# 48 "data/maps/SixIsland_AlteringCave/scripts.pory"
 	end

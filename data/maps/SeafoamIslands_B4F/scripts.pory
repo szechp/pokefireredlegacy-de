@@ -61,17 +61,12 @@ SeafoamIslands_B4F_OnWarp::
 	.2byte 0
 
 SeafoamIslands_B4F_Slowpoke::
-	goto_if_set FLAG_MOVE_SLOWBRO2, SeafoamIslands_B4F_Slowpoke2
-	msgbox SeafoamIslands_B4F_Text_Slowpoke, MSGBOX_NPC
-	setflag FLAG_MOVE_SLOWBRO2
-	end
-
-SeafoamIslands_B4F_Slowpoke2::
 	msgbox SeafoamIslands_B4F_Text_Slowpoke, MSGBOX_NPC
 	setflag FLAG_MOVE_SLOWBRO2
 	removeobject 6
 	fadescreen FADE_TO_BLACK
 	fadescreen FADE_FROM_BLACK
+	release
 	end
 	
 SeafoamIslands_B4F_EventScript_WarpInOnCurrent::

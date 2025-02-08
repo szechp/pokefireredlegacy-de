@@ -51,24 +51,26 @@ SSAnne_Deck_EventScript_Donator2::
 # 26 "data/maps/SSAnne_Deck/scripts.pory"
 	msgbox SSAnne_Deck_Text_ItsApartGame, MSGBOX_NPC
 # 27 "data/maps/SSAnne_Deck/scripts.pory"
-	end
+	release
 # 28 "data/maps/SSAnne_Deck/scripts.pory"
-
-# 29 "data/maps/SSAnne_Deck/scripts.pory"
-SSAnne_Deck_EventScript_Edmond::
-# 30 "data/maps/SSAnne_Deck/scripts.pory"
-	trainerbattle_single TRAINER_SAILOR_EDMOND, SSAnne_Deck_Text_EdmondIntro, SSAnne_Deck_Text_EdmondDefeat
-# 31 "data/maps/SSAnne_Deck/scripts.pory"
-	msgbox SSAnne_Deck_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE
-# 32 "data/maps/SSAnne_Deck/scripts.pory"
 	end
-# 33 "data/maps/SSAnne_Deck/scripts.pory"
+# 29 "data/maps/SSAnne_Deck/scripts.pory"
 
+# 30 "data/maps/SSAnne_Deck/scripts.pory"
+SSAnne_Deck_EventScript_Edmond::
+# 31 "data/maps/SSAnne_Deck/scripts.pory"
+	trainerbattle_single TRAINER_SAILOR_EDMOND, SSAnne_Deck_Text_EdmondIntro, SSAnne_Deck_Text_EdmondDefeat
+# 32 "data/maps/SSAnne_Deck/scripts.pory"
+	msgbox SSAnne_Deck_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE
+# 33 "data/maps/SSAnne_Deck/scripts.pory"
+	end
 # 34 "data/maps/SSAnne_Deck/scripts.pory"
-SSAnne_Deck_EventScript_Trevor::
+
 # 35 "data/maps/SSAnne_Deck/scripts.pory"
-	trainerbattle_single TRAINER_SAILOR_TREVOR, SSAnne_Deck_Text_TrevorIntro, SSAnne_Deck_Text_TrevorDefeat
+SSAnne_Deck_EventScript_Trevor::
 # 36 "data/maps/SSAnne_Deck/scripts.pory"
-	msgbox SSAnne_Deck_Text_TrevorPostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_SAILOR_TREVOR, SSAnne_Deck_Text_TrevorIntro, SSAnne_Deck_Text_TrevorDefeat
 # 37 "data/maps/SSAnne_Deck/scripts.pory"
+	msgbox SSAnne_Deck_Text_TrevorPostBattle, MSGBOX_AUTOCLOSE
+# 38 "data/maps/SSAnne_Deck/scripts.pory"
 	end

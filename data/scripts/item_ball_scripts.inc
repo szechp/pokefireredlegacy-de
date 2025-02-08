@@ -539,11 +539,11 @@ SeafoamIslands_B2F_EventScript_ItemBigPearl::
 	end
 
 SeafoamIslands_B3F_EventScript_ItemTM13::
-	finditem ITEM_TM13
+	finditem ITEM_DRAGON_SCALE
 	end
 
 SeafoamIslands_B4F_EventScript_ItemUltraBall::
-	finditem ITEM_DRAGON_SCALE
+	finditem ITEM_TM13
 	end
 
 FourIsland_EventScript_ItemStarPiece::

@@ -229,7 +229,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_7 = {
 				{
 					.species = SPECIES_PORYGON2,
 					.heldItem = ITEM_PETAYA_BERRY,
-					.moves = {MOVE_ICE_BEAM, MOVE_RECYCLE, MOVE_PSYCHIC MOVE_RECOVER},
+					.moves = {MOVE_ICE_BEAM, MOVE_RECYCLE, MOVE_PSYCHIC, MOVE_RECOVER},
 					.hpEV = 100,
 					.attackEV = 0,
 					.defenseEV = 210,

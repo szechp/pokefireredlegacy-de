@@ -73,62 +73,66 @@ Route13_Flute_Items::
 # 37 "data/maps/Route13/scripts.pory"
 Route13_EventScript_Whitney::
 # 38 "data/maps/Route13/scripts.pory"
-	goto_if_set FLAG_WHITNEY_DEFEATED, Route13_EventScript_RematchWhitney
+	lock
 # 39 "data/maps/Route13/scripts.pory"
-	msgbox Route13_Text_Whitney, MSGBOX_YESNO
+	faceplayer
 # 40 "data/maps/Route13/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, Route13_EventScript_NoWhitney
+	goto_if_set FLAG_WHITNEY_DEFEATED, Route13_EventScript_RematchWhitney
 # 41 "data/maps/Route13/scripts.pory"
-	trainerbattle_single TRAINER_WHITNEY, Route13_Text_YesWhitney, Route13_Text_WhitneyDefeat, Route13_EventScript_PostWhitney, NO_MUSIC
+	msgbox Route13_Text_Whitney, MSGBOX_YESNO
 # 42 "data/maps/Route13/scripts.pory"
-	release
-# 43 "data/maps/Route13/scripts.pory"
-	end
-# 44 "data/maps/Route13/scripts.pory"
-
-# 45 "data/maps/Route13/scripts.pory"
-Route13_EventScript_PostWhitney::
-# 46 "data/maps/Route13/scripts.pory"
-	msgbox Route13_Text_WhitneyPostBattle
-# 47 "data/maps/Route13/scripts.pory"
-	setflag FLAG_WHITNEY_DEFEATED
-# 48 "data/maps/Route13/scripts.pory"
-	release
-# 49 "data/maps/Route13/scripts.pory"
-	end
-# 50 "data/maps/Route13/scripts.pory"
-
-# 51 "data/maps/Route13/scripts.pory"
-Route13_EventScript_NoWhitney::
-# 52 "data/maps/Route13/scripts.pory"
-	msgbox Route13_Text_NoWhitney
-# 53 "data/maps/Route13/scripts.pory"
-	release
-# 54 "data/maps/Route13/scripts.pory"
-	end
-# 55 "data/maps/Route13/scripts.pory"
-
-# 56 "data/maps/Route13/scripts.pory"
-Route13_EventScript_RematchWhitney::
-# 57 "data/maps/Route13/scripts.pory"
-	msgbox Route13_Text_RematchWhitney, MSGBOX_YESNO
-# 58 "data/maps/Route13/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, Route13_EventScript_NoWhitney
-# 59 "data/maps/Route13/scripts.pory"
-	trainerbattle_single TRAINER_WHITNEY, Route13_Text_YesRematchWhitney, Route13_Text_RematchWhitneyDefeat, Route13_EventScript_PostRematchWhitney, NO_MUSIC
-# 60 "data/maps/Route13/scripts.pory"
+# 43 "data/maps/Route13/scripts.pory"
+	trainerbattle_single TRAINER_WHITNEY, Route13_Text_YesWhitney, Route13_Text_WhitneyDefeat, Route13_EventScript_PostWhitney, NO_MUSIC
+# 44 "data/maps/Route13/scripts.pory"
 	release
-# 61 "data/maps/Route13/scripts.pory"
+# 45 "data/maps/Route13/scripts.pory"
 	end
-# 62 "data/maps/Route13/scripts.pory"
+# 46 "data/maps/Route13/scripts.pory"
 
-# 63 "data/maps/Route13/scripts.pory"
-Route13_EventScript_PostRematchWhitney::
-# 64 "data/maps/Route13/scripts.pory"
-	msgbox Route13_Text_RematchWhitneyDefeat
-# 65 "data/maps/Route13/scripts.pory"
-	cleartrainerflag TRAINER_WHITNEY
-# 66 "data/maps/Route13/scripts.pory"
+# 47 "data/maps/Route13/scripts.pory"
+Route13_EventScript_PostWhitney::
+# 48 "data/maps/Route13/scripts.pory"
+	msgbox Route13_Text_WhitneyPostBattle
+# 49 "data/maps/Route13/scripts.pory"
+	setflag FLAG_WHITNEY_DEFEATED
+# 50 "data/maps/Route13/scripts.pory"
 	release
+# 51 "data/maps/Route13/scripts.pory"
+	end
+# 52 "data/maps/Route13/scripts.pory"
+
+# 53 "data/maps/Route13/scripts.pory"
+Route13_EventScript_NoWhitney::
+# 54 "data/maps/Route13/scripts.pory"
+	msgbox Route13_Text_NoWhitney
+# 55 "data/maps/Route13/scripts.pory"
+	release
+# 56 "data/maps/Route13/scripts.pory"
+	end
+# 57 "data/maps/Route13/scripts.pory"
+
+# 58 "data/maps/Route13/scripts.pory"
+Route13_EventScript_RematchWhitney::
+# 59 "data/maps/Route13/scripts.pory"
+	msgbox Route13_Text_RematchWhitney, MSGBOX_YESNO
+# 60 "data/maps/Route13/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, Route13_EventScript_NoWhitney
+# 61 "data/maps/Route13/scripts.pory"
+	trainerbattle_single TRAINER_WHITNEY, Route13_Text_YesRematchWhitney, Route13_Text_RematchWhitneyDefeat, Route13_EventScript_PostRematchWhitney, NO_MUSIC
+# 62 "data/maps/Route13/scripts.pory"
+	release
+# 63 "data/maps/Route13/scripts.pory"
+	end
+# 64 "data/maps/Route13/scripts.pory"
+
+# 65 "data/maps/Route13/scripts.pory"
+Route13_EventScript_PostRematchWhitney::
+# 66 "data/maps/Route13/scripts.pory"
+	msgbox Route13_Text_RematchWhitneyDefeat
 # 67 "data/maps/Route13/scripts.pory"
+	cleartrainerflag TRAINER_WHITNEY
+# 68 "data/maps/Route13/scripts.pory"
+	release
+# 69 "data/maps/Route13/scripts.pory"
 	end

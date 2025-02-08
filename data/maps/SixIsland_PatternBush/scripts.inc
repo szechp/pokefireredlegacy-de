@@ -161,72 +161,76 @@ SixIsland_PatternBush_EventScript_Layton::
 # 81 "data/maps/SixIsland_PatternBush/scripts.pory"
 SixIsland_PatternBush_EventScript_Bugsy::
 # 82 "data/maps/SixIsland_PatternBush/scripts.pory"
-	goto_if_set FLAG_BUGSY_DEFEATED, SixIsland_PatternBush_EventScript_RematchBugsy
+	lock
 # 83 "data/maps/SixIsland_PatternBush/scripts.pory"
-	msgbox SixIsland_PatternBush_Text_Bugsy, MSGBOX_YESNO
+	faceplayer
 # 84 "data/maps/SixIsland_PatternBush/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, SixIsland_PatternBush_EventScript_NoBugsy
+	goto_if_set FLAG_BUGSY_DEFEATED, SixIsland_PatternBush_EventScript_RematchBugsy
 # 85 "data/maps/SixIsland_PatternBush/scripts.pory"
-	trainerbattle_single TRAINER_BUGSY, SixIsland_PatternBush_Text_YesBugsy, SixIsland_PatternBush_Text_BugsyDefeat, SixIsland_PatternBush_EventScript_PostBugsy, NO_MUSIC
+	msgbox SixIsland_PatternBush_Text_Bugsy, MSGBOX_YESNO
 # 86 "data/maps/SixIsland_PatternBush/scripts.pory"
-	release
-# 87 "data/maps/SixIsland_PatternBush/scripts.pory"
-	end
-# 88 "data/maps/SixIsland_PatternBush/scripts.pory"
-
-# 89 "data/maps/SixIsland_PatternBush/scripts.pory"
-SixIsland_PatternBush_EventScript_PostBugsy::
-# 90 "data/maps/SixIsland_PatternBush/scripts.pory"
-	msgbox SixIsland_PatternBush_Text_BugsyPostBattle
-# 91 "data/maps/SixIsland_PatternBush/scripts.pory"
-	setflag FLAG_BUGSY_DEFEATED
-# 92 "data/maps/SixIsland_PatternBush/scripts.pory"
-	release
-# 93 "data/maps/SixIsland_PatternBush/scripts.pory"
-	end
-# 94 "data/maps/SixIsland_PatternBush/scripts.pory"
-
-# 95 "data/maps/SixIsland_PatternBush/scripts.pory"
-SixIsland_PatternBush_EventScript_CantRematchBugsy::
-# 96 "data/maps/SixIsland_PatternBush/scripts.pory"
-	msgbox SixIsland_PatternBush_Text_BugsyPostBattle
-# 97 "data/maps/SixIsland_PatternBush/scripts.pory"
-	release
-# 98 "data/maps/SixIsland_PatternBush/scripts.pory"
-	end
-# 99 "data/maps/SixIsland_PatternBush/scripts.pory"
-
-# 100 "data/maps/SixIsland_PatternBush/scripts.pory"
-SixIsland_PatternBush_EventScript_NoBugsy::
-# 101 "data/maps/SixIsland_PatternBush/scripts.pory"
-	msgbox SixIsland_PatternBush_Text_NoBugsy
-# 102 "data/maps/SixIsland_PatternBush/scripts.pory"
-	release
-# 103 "data/maps/SixIsland_PatternBush/scripts.pory"
-	end
-# 104 "data/maps/SixIsland_PatternBush/scripts.pory"
-
-# 105 "data/maps/SixIsland_PatternBush/scripts.pory"
-SixIsland_PatternBush_EventScript_RematchBugsy::
-# 106 "data/maps/SixIsland_PatternBush/scripts.pory"
-	msgbox SixIsland_PatternBush_Text_RematchBugsy, MSGBOX_YESNO
-# 107 "data/maps/SixIsland_PatternBush/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, SixIsland_PatternBush_EventScript_NoBugsy
-# 108 "data/maps/SixIsland_PatternBush/scripts.pory"
-	trainerbattle_single TRAINER_BUGSY, SixIsland_PatternBush_Text_YesRematchBugsy, SixIsland_PatternBush_Text_RematchBugsyDefeat, SixIsland_PatternBush_EventScript_PostRematchBugsy, NO_MUSIC
-# 109 "data/maps/SixIsland_PatternBush/scripts.pory"
+# 87 "data/maps/SixIsland_PatternBush/scripts.pory"
+	trainerbattle_single TRAINER_BUGSY, SixIsland_PatternBush_Text_YesBugsy, SixIsland_PatternBush_Text_BugsyDefeat, SixIsland_PatternBush_EventScript_PostBugsy, NO_MUSIC
+# 88 "data/maps/SixIsland_PatternBush/scripts.pory"
 	release
-# 110 "data/maps/SixIsland_PatternBush/scripts.pory"
+# 89 "data/maps/SixIsland_PatternBush/scripts.pory"
 	end
-# 111 "data/maps/SixIsland_PatternBush/scripts.pory"
+# 90 "data/maps/SixIsland_PatternBush/scripts.pory"
 
-# 112 "data/maps/SixIsland_PatternBush/scripts.pory"
-SixIsland_PatternBush_EventScript_PostRematchBugsy::
-# 113 "data/maps/SixIsland_PatternBush/scripts.pory"
-	msgbox SixIsland_PatternBush_Text_RematchBugsyDefeat
-# 114 "data/maps/SixIsland_PatternBush/scripts.pory"
-	cleartrainerflag TRAINER_BUGSY
-# 115 "data/maps/SixIsland_PatternBush/scripts.pory"
+# 91 "data/maps/SixIsland_PatternBush/scripts.pory"
+SixIsland_PatternBush_EventScript_PostBugsy::
+# 92 "data/maps/SixIsland_PatternBush/scripts.pory"
+	msgbox SixIsland_PatternBush_Text_BugsyPostBattle
+# 93 "data/maps/SixIsland_PatternBush/scripts.pory"
+	setflag FLAG_BUGSY_DEFEATED
+# 94 "data/maps/SixIsland_PatternBush/scripts.pory"
 	release
+# 95 "data/maps/SixIsland_PatternBush/scripts.pory"
+	end
+# 96 "data/maps/SixIsland_PatternBush/scripts.pory"
+
+# 97 "data/maps/SixIsland_PatternBush/scripts.pory"
+SixIsland_PatternBush_EventScript_CantRematchBugsy::
+# 98 "data/maps/SixIsland_PatternBush/scripts.pory"
+	msgbox SixIsland_PatternBush_Text_BugsyPostBattle
+# 99 "data/maps/SixIsland_PatternBush/scripts.pory"
+	release
+# 100 "data/maps/SixIsland_PatternBush/scripts.pory"
+	end
+# 101 "data/maps/SixIsland_PatternBush/scripts.pory"
+
+# 102 "data/maps/SixIsland_PatternBush/scripts.pory"
+SixIsland_PatternBush_EventScript_NoBugsy::
+# 103 "data/maps/SixIsland_PatternBush/scripts.pory"
+	msgbox SixIsland_PatternBush_Text_NoBugsy
+# 104 "data/maps/SixIsland_PatternBush/scripts.pory"
+	release
+# 105 "data/maps/SixIsland_PatternBush/scripts.pory"
+	end
+# 106 "data/maps/SixIsland_PatternBush/scripts.pory"
+
+# 107 "data/maps/SixIsland_PatternBush/scripts.pory"
+SixIsland_PatternBush_EventScript_RematchBugsy::
+# 108 "data/maps/SixIsland_PatternBush/scripts.pory"
+	msgbox SixIsland_PatternBush_Text_RematchBugsy, MSGBOX_YESNO
+# 109 "data/maps/SixIsland_PatternBush/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, SixIsland_PatternBush_EventScript_NoBugsy
+# 110 "data/maps/SixIsland_PatternBush/scripts.pory"
+	trainerbattle_single TRAINER_BUGSY, SixIsland_PatternBush_Text_YesRematchBugsy, SixIsland_PatternBush_Text_RematchBugsyDefeat, SixIsland_PatternBush_EventScript_PostRematchBugsy, NO_MUSIC
+# 111 "data/maps/SixIsland_PatternBush/scripts.pory"
+	release
+# 112 "data/maps/SixIsland_PatternBush/scripts.pory"
+	end
+# 113 "data/maps/SixIsland_PatternBush/scripts.pory"
+
+# 114 "data/maps/SixIsland_PatternBush/scripts.pory"
+SixIsland_PatternBush_EventScript_PostRematchBugsy::
+# 115 "data/maps/SixIsland_PatternBush/scripts.pory"
+	msgbox SixIsland_PatternBush_Text_RematchBugsyDefeat
 # 116 "data/maps/SixIsland_PatternBush/scripts.pory"
+	cleartrainerflag TRAINER_BUGSY
+# 117 "data/maps/SixIsland_PatternBush/scripts.pory"
+	release
+# 118 "data/maps/SixIsland_PatternBush/scripts.pory"
 	end

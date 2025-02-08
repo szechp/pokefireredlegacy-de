@@ -25,72 +25,76 @@ ThreeIsland_BondBridge_EventScript_BondBridgeSign::
 # 13 "data/maps/ThreeIsland_BondBridge/scripts.pory"
 ThreeIsland_BondBridge_EventScript_Morty::
 # 14 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	goto_if_set FLAG_MORTY_DEFEATED, ThreeIsland_BondBridge_EventScript_RematchMorty
+	lock
 # 15 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	msgbox ThreeIsland_BondBridge_Text_Morty, MSGBOX_YESNO
+	faceplayer
 # 16 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, ThreeIsland_BondBridge_EventScript_NoMorty
+	goto_if_set FLAG_MORTY_DEFEATED, ThreeIsland_BondBridge_EventScript_RematchMorty
 # 17 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	trainerbattle_single TRAINER_MORTY, ThreeIsland_BondBridge_Text_YesMorty, ThreeIsland_BondBridge_Text_MortyDefeat, ThreeIsland_BondBridge_EventScript_PostMorty, NO_MUSIC
+	msgbox ThreeIsland_BondBridge_Text_Morty, MSGBOX_YESNO
 # 18 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	release
-# 19 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	end
-# 20 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-
-# 21 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-ThreeIsland_BondBridge_EventScript_PostMorty::
-# 22 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	msgbox ThreeIsland_BondBridge_Text_MortyPostBattle
-# 23 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	setflag FLAG_MORTY_DEFEATED
-# 24 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	release
-# 25 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	end
-# 26 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-
-# 27 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-ThreeIsland_BondBridge_EventScript_CantRematchMorty::
-# 28 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	msgbox ThreeIsland_BondBridge_Text_MortyPostBattle
-# 29 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	release
-# 30 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	end
-# 31 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-
-# 32 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-ThreeIsland_BondBridge_EventScript_NoMorty::
-# 33 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	msgbox ThreeIsland_BondBridge_Text_NoMorty
-# 34 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	release
-# 35 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	end
-# 36 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-
-# 37 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-ThreeIsland_BondBridge_EventScript_RematchMorty::
-# 38 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	msgbox ThreeIsland_BondBridge_Text_RematchMorty, MSGBOX_YESNO
-# 39 "data/maps/ThreeIsland_BondBridge/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, ThreeIsland_BondBridge_EventScript_NoMorty
-# 40 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	trainerbattle_single TRAINER_MORTY, ThreeIsland_BondBridge_Text_YesRematchMorty, ThreeIsland_BondBridge_Text_RematchMortyDefeat, ThreeIsland_BondBridge_EventScript_PostRematchMorty, NO_MUSIC
-# 41 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+# 19 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	trainerbattle_single TRAINER_MORTY, ThreeIsland_BondBridge_Text_YesMorty, ThreeIsland_BondBridge_Text_MortyDefeat, ThreeIsland_BondBridge_EventScript_PostMorty, NO_MUSIC
+# 20 "data/maps/ThreeIsland_BondBridge/scripts.pory"
 	release
-# 42 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+# 21 "data/maps/ThreeIsland_BondBridge/scripts.pory"
 	end
-# 43 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+# 22 "data/maps/ThreeIsland_BondBridge/scripts.pory"
 
-# 44 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-ThreeIsland_BondBridge_EventScript_PostRematchMorty::
-# 45 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	msgbox ThreeIsland_BondBridge_Text_RematchMortyDefeat
-# 46 "data/maps/ThreeIsland_BondBridge/scripts.pory"
-	cleartrainerflag TRAINER_MORTY
-# 47 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+# 23 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+ThreeIsland_BondBridge_EventScript_PostMorty::
+# 24 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	msgbox ThreeIsland_BondBridge_Text_MortyPostBattle
+# 25 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	setflag FLAG_MORTY_DEFEATED
+# 26 "data/maps/ThreeIsland_BondBridge/scripts.pory"
 	release
+# 27 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	end
+# 28 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+
+# 29 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+ThreeIsland_BondBridge_EventScript_CantRematchMorty::
+# 30 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	msgbox ThreeIsland_BondBridge_Text_MortyPostBattle
+# 31 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	release
+# 32 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	end
+# 33 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+
+# 34 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+ThreeIsland_BondBridge_EventScript_NoMorty::
+# 35 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	msgbox ThreeIsland_BondBridge_Text_NoMorty
+# 36 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	release
+# 37 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	end
+# 38 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+
+# 39 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+ThreeIsland_BondBridge_EventScript_RematchMorty::
+# 40 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	msgbox ThreeIsland_BondBridge_Text_RematchMorty, MSGBOX_YESNO
+# 41 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, ThreeIsland_BondBridge_EventScript_NoMorty
+# 42 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	trainerbattle_single TRAINER_MORTY, ThreeIsland_BondBridge_Text_YesRematchMorty, ThreeIsland_BondBridge_Text_RematchMortyDefeat, ThreeIsland_BondBridge_EventScript_PostRematchMorty, NO_MUSIC
+# 43 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	release
+# 44 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	end
+# 45 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+
+# 46 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+ThreeIsland_BondBridge_EventScript_PostRematchMorty::
+# 47 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	msgbox ThreeIsland_BondBridge_Text_RematchMortyDefeat
 # 48 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	cleartrainerflag TRAINER_MORTY
+# 49 "data/maps/ThreeIsland_BondBridge/scripts.pory"
+	release
+# 50 "data/maps/ThreeIsland_BondBridge/scripts.pory"
 	end

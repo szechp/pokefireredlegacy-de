@@ -89,7 +89,7 @@ static const struct TrainerMon sParty_FatGuy[] = {
         .lvl = 68,
         .species = SPECIES_ARCANINE,
         .heldItem = ITEM_LEFTOVERS,
-        .moves = {MOVE_FIRE_BLAST MOVE_EXTREME_SPEED, MOVE_CRUNCH, MOVE_TOXIC},
+        .moves = {MOVE_FIRE_BLAST, MOVE_EXTREME_SPEED, MOVE_CRUNCH, MOVE_TOXIC},
         .evs = {85, 85, 85, 85, 85, 85},
     },
     {

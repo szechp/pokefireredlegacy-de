@@ -185,24 +185,28 @@ FiveIsland_WaterLabyrinth_EventScript_NoFalkner::
 # 93 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 FiveIsland_WaterLabyrinth_EventScript_RematchFalkner::
 # 94 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalkner, MSGBOX_YESNO
+	lock
 # 95 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_NoFalkner
+	faceplayer
 # 96 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesRematchFalkner, FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner, NO_MUSIC
+	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalkner, MSGBOX_YESNO
 # 97 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	release
+	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_NoFalkner
 # 98 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
+	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesRematchFalkner, FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner, NO_MUSIC
 # 99 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 100 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner::
-# 101 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat
-# 102 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	cleartrainerflag TRAINER_FALKNER
-# 103 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	release
+# 100 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 101 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 102 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner::
+# 103 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat
 # 104 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	cleartrainerflag TRAINER_FALKNER
+# 105 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	release
+# 106 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	end

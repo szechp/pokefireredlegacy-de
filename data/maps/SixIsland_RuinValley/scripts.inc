@@ -90,3 +90,49 @@ SixIsland_RuinValley_EventScript_IgnoreDottedHoleDoor::
 	releaseall
 # 46 "data/maps/SixIsland_RuinValley/scripts.pory"
 	end
+# 47 "data/maps/SixIsland_RuinValley/scripts.pory"
+
+# 48 "data/maps/SixIsland_RuinValley/scripts.pory"
+SixIsland_RuinValley_EventScript_Giovanni::
+# 49 "data/maps/SixIsland_RuinValley/scripts.pory"
+	lock
+# 50 "data/maps/SixIsland_RuinValley/scripts.pory"
+	faceplayer
+# 51 "data/maps/SixIsland_RuinValley/scripts.pory"
+	msgbox SixIsland_PatternBush_Text_Bugsy, MSGBOX_YESNO
+# 52 "data/maps/SixIsland_RuinValley/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, SixIsland_PatternBush_Text_Giovanni
+# 53 "data/maps/SixIsland_RuinValley/scripts.pory"
+	trainerbattle_single TRAINER_JACKO, SixIsland_PatternBush_Text_GiovanniYes, SixIsland_PatternBush_Text_GiovanniDefeat, SixIsland_RuinValley_EventScript_PostGiovanni, NO_MUSIC
+# 54 "data/maps/SixIsland_RuinValley/scripts.pory"
+	release
+# 55 "data/maps/SixIsland_RuinValley/scripts.pory"
+	end
+# 56 "data/maps/SixIsland_RuinValley/scripts.pory"
+
+# 57 "data/maps/SixIsland_RuinValley/scripts.pory"
+SixIsland_RuinValley_EventScript_PostGiovanni::
+# 58 "data/maps/SixIsland_RuinValley/scripts.pory"
+	msgbox SixIsland_PatternBush_Text_GiovanniPost
+# 59 "data/maps/SixIsland_RuinValley/scripts.pory"
+	setflag FLAG_GIOVANNI4
+# 60 "data/maps/SixIsland_RuinValley/scripts.pory"
+	removeobject 18
+# 61 "data/maps/SixIsland_RuinValley/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 62 "data/maps/SixIsland_RuinValley/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 63 "data/maps/SixIsland_RuinValley/scripts.pory"
+	release
+# 64 "data/maps/SixIsland_RuinValley/scripts.pory"
+	end
+# 65 "data/maps/SixIsland_RuinValley/scripts.pory"
+
+# 66 "data/maps/SixIsland_RuinValley/scripts.pory"
+SixIsland_RuinValley_EventScript_GiovanniNo::
+# 67 "data/maps/SixIsland_RuinValley/scripts.pory"
+	msgbox SixIsland_PatternBush_Text_GiovanniNo
+# 68 "data/maps/SixIsland_RuinValley/scripts.pory"
+	release
+# 69 "data/maps/SixIsland_RuinValley/scripts.pory"
+	end
