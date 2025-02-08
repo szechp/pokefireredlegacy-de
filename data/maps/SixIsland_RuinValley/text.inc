@@ -85,3 +85,19 @@ SixIsland_RuinValley_Text_HectorPostBattle::
     .string "engraved on the outside.\p"
     .string "I don't know what they mean,\n"
     .string "though.$"
+
+SixIsland_PatternBush_Text_Giovanni::
+    .string "GIOVANNI PLACEHOLDER.$"
+
+SixIsland_PatternBush_Text_GiovanniNo::
+    .string "GIOVANNI PLACEHOLDER.$"
+
+SixIsland_PatternBush_Text_GiovanniPost::
+    .string "GIOVANNI PLACEHOLDER.$"
+
+SixIsland_PatternBush_Text_GiovanniDefeat::
+    .string "GIOVANNI PLACEHOLDER.$"
+
+SixIsland_PatternBush_Text_GiovanniYes::
+    .string "GIOVANNI PLACEHOLDER.$"
+
