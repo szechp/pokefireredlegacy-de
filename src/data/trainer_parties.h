@@ -6774,7 +6774,7 @@ static const struct TrainerMon sParty_TeamRocketGrunt21[] = {
     },
     {
         .iv = 0,
-        .lvl = 32,
+        .lvl = 34,
         .species = SPECIES_RATICATE,
     },
     {
