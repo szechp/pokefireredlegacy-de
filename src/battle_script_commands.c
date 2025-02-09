@@ -7379,13 +7379,11 @@ static void Cmd_setfocusenergy(void)
 
 static void Cmd_leafbladesetfocusenergy(void)
 {
-    if (Random() % 2 == 1) // 50% chance
+
+    if (!gBattleMons[gBattlerAttacker].status2)
     {
-        if (!gBattleMons[gBattlerAttacker].status2)
-        {
-            gBattleMons[gBattlerAttacker].status2 |= STATUS2_FOCUS_ENERGY;
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_GETTING_PUMPED;
-        }
+        gBattleMons[gBattlerAttacker].status2 |= STATUS2_FOCUS_ENERGY;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_GETTING_PUMPED;
     }
     gBattlescriptCurrInstr++;
 }

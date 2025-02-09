@@ -2161,7 +2161,7 @@ static const struct TrainerMon sParty_Caseno[] = {
 static const struct TrainerMon sParty_Armstrong[] = {
     {
         .iv = 255,
-        .lvl = 68,
+        .lvl = 70,
         .species = SPECIES_STARMIE,
         .heldItem = ITEM_LEFTOVERS,
         .moves = {MOVE_ICE_BEAM, MOVE_THUNDER_WAVE, MOVE_SURF, MOVE_PSYCHIC},
@@ -2169,7 +2169,7 @@ static const struct TrainerMon sParty_Armstrong[] = {
     },
     {
         .iv = 255,
-        .lvl = 68,
+        .lvl = 70,
         .species = SPECIES_SCIZOR,
         .heldItem = ITEM_LEFTOVERS,
         .moves = {MOVE_METEOR_MASH, MOVE_TWINEEDLE, MOVE_AGILITY, MOVE_BRICK_BREAK},
@@ -2177,7 +2177,7 @@ static const struct TrainerMon sParty_Armstrong[] = {
     },
     {
         .iv = 255,
-        .lvl = 68,
+        .lvl = 70,
         .species = SPECIES_ELECTABUZZ,
         .heldItem = ITEM_FOCUS_BAND,
         .moves = {MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_ICE_PUNCH, MOVE_FIRE_PUNCH},
@@ -2185,16 +2185,16 @@ static const struct TrainerMon sParty_Armstrong[] = {
     },
     {
         .iv = 255,
-        .lvl = 68,
-        .species = SPECIES_MACHAMP,
-        .heldItem = ITEM_QUICK_CLAW,
-        .moves = {MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_CROSS_CHOP, MOVE_BULK_UP},
-        .evs = {252, 252, 0, 0, 0, 0},
+        .lvl = 70,
+        .species = SPECIES_HERACROSS,
+        .heldItem = ITEM_AGUAV_BERRY,
+        .moves = {MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_CROSS_CHOP, MOVE_MEGAHORN},
+        .evs = {0, 252, 0, 252, 0, 0},
 
     },
     {
         .iv = 255,
-        .lvl = 68,
+        .lvl = 70,
         .species = SPECIES_AERODACTYL,
         .heldItem = ITEM_CHOICE_BAND,
         .moves = {MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_SKY_ATTACK, MOVE_DOUBLE_EDGE},
@@ -2203,7 +2203,7 @@ static const struct TrainerMon sParty_Armstrong[] = {
     },
     {
         .iv = 255,
-        .lvl = 69,
+        .lvl = 71,
         .species = SPECIES_METAGROSS,
         .heldItem = ITEM_LUM_BERRY,
         .moves = {MOVE_METEOR_MASH, MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_AGILITY},

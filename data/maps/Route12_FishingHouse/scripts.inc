@@ -155,7 +155,7 @@ Route12_FishingHouse_EventScript_NewRecordMagikarp::
 # 78 "data/maps/Route12_FishingHouse/scripts.pory"
 	msgbox Route12_FishingHouse_Text_WhoaXInchesTakeThis
 # 79 "data/maps/Route12_FishingHouse/scripts.pory"
-	giveitem ITEM_QUICK_CLAW
+	giveitem ITEM_NEST_BALL
 # 80 "data/maps/Route12_FishingHouse/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route12_FishingHouse_EventScript_NoRoomForNetBall
 # 81 "data/maps/Route12_FishingHouse/scripts.pory"

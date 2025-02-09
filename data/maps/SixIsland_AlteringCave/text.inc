@@ -1,26 +1,29 @@
 SixIsland_AlteringCave_Text_Spike::
-    .string "Spike Placeholder!$"
+    .string "What are you doing in here!$"
 
 SixIsland_AlteringCave_Text_SpikeDefeat::
-    .string "Spike Placeholder!$"
+    .string "I guess that's strength!$"
 
 SixIsland_AlteringCave_Text_SpikePostBattle::
-    .string "Spike Placeholder!$"
+    .string "Since I lost, I ought to tell.\p"
+    .string "This place switches encounters\n"
+    .string "Quite Often.$"
 
 SixIsland_AlteringCave_Text_NoSpike::
-    .string "Spike Placeholder!$"
+    .string "Go Away!$"
 
 SixIsland_AlteringCave_Text_YesSpike::
-    .string "Spike Placeholder!$"
+    .string "Oh I guess you want a Fight?$"
 
 SixIsland_AlteringCave_Text_RematchSpike::
-    .string "Spike Rematch Placeholder!$"
+    .string "Not again...$"
 
 SixIsland_AlteringCave_Text_RematchSpikeDefeat::
-    .string "Spike Rematch Placeholder!$"
+    .string "I guess that's strength!$"
 
 SixIsland_AlteringCave_Text_YesRematchSpike::
-    .string "Spike Rematch Placeholder!$"
+    .string "Alright, Let's Fight!$"
 
 SixIsland_AlteringCave_Text_RematchSpikePostBattle::
-    .string "Spike Rematch Placeholder!$"
+    .string "Please Go Away,\n"
+    .string "I don't want to write more text!$"

@@ -61,31 +61,51 @@ FiveIsland_WaterLabyrinth_Text_AlizePostBattle::
     .string "talent to be a good BREEDER.$"
 
 FiveIsland_WaterLabyrinth_Text_Falkner::
-    .string "Falkner Dad Placeholder!$"
+    .string "Oh hello there, Trainer.\p"  
+    .string "Have you seen the soaring\n"  
+    .string "skies today?\p"  
+    .string "Soaring above the endless\n"  
+    .string "waters of the ocean.\p"  
+    .string "Oh, wait, you're the\n"  
+    .string "KANTO Champion?\p"  
+    .string "Well, I guess my birds\n"  
+    .string "would want a fight then,\l"  
+    .string "see if you are as you\l"  
+    .string "are presented!$"  
 
 FiveIsland_WaterLabyrinth_Text_FalknerDefeat::
-    .string "Falkner Dad Placeholder!$"
+    .string "Not in the Sky Let?$"
 
 FiveIsland_WaterLabyrinth_Text_FalknerPostBattle::
-    .string "Falkner Dad Placeholder!$"
-
+    .string "Ah, as I should have expected.\p"  
+    .string "You are a soaring Trainer!\p"  
+    .string "I'm not gonna be a Gym Leader\n"  
+    .string "for long though, as I'll have\l"  
+    .string "my son take over for me.\p"  
+    .string "May he rise to the same\n"  
+    .string "levels as me, or even you!$"  
 
 FiveIsland_WaterLabyrinth_Text_NoFalkner::
-    .string "Falkner Dad Placeholder!$"
+    .string "Not in the Sky Let?$"
 
 FiveIsland_WaterLabyrinth_Text_YesFalkner::
-    .string "Falkner Dad Placeholder!$"
+    .string "Let's get Soaring!$"
 
 FiveIsland_WaterLabyrinth_Text_RematchFalkner::
-    .string "Falkner Dad Rematch Placeholder!$"
+    .string "Oh you want to Soar Again?\p"
+    .string "I'll be ready to fight anytime!$"
 
 FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat::
-    .string "Falkner Dad Rematch Placeholder!$"
+    .string "Not in the Sky Let?$"
 
 FiveIsland_WaterLabyrinth_Text_YesRematchFalkner::
-    .string "Falkner Dad Rematch Placeholder!$"
-
+    .string "Let's get Soaring!$"
 
 FiveIsland_WaterLabyrinth_Text_RematchFalknerPostBattle::
-    .string "Falkner Dad Rematch Placeholder!$"
-
+    .string "Ah, as I should have expected.\p"  
+    .string "Still a soaring Trainer!\p"  
+    .string "I'm not gonna be a Gym Leader\n"  
+    .string "for long though, as I'll have\l"  
+    .string "my son take over for me.\p"  
+    .string "May he rise to the same\n"  
+    .string "levels as me, or even you!$"  

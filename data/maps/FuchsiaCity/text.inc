@@ -122,8 +122,10 @@ Text_SubstituteNotEnoughMoney::
     .string "for less than ¥15000 anymore!$"
 
 FuchsiaCity_Text_MyFatherIsGymLeader::
-    .string "My father is the GYM LEADER of\n"
-    .string "this town.\p"
     .string "I'm training to use POISON POKéMON\n"
-    .string "as well as my father.$"
+    .string "as well as my father,\l"
+    .string "CHAMPION {PLAYER}.\p"
+    .string "He's also training to become\n"
+    .string "A ELITE FOUR Member!$"
+
 

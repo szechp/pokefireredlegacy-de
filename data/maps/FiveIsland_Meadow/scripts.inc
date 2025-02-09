@@ -155,56 +155,54 @@ FiveIsland_Meadow_Items::
 # 78 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.2byte ITEM_SHELL_BELL
 # 79 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.2byte ITEM_SCOPE_LENS
-# 80 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.2byte ITEM_QUICK_CLAW
-# 81 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 80 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.2byte ITEM_WHITE_HERB
-# 82 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 81 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.2byte ITEM_MENTAL_HERB
-# 83 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 82 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.2byte ITEM_LUCKY_PUNCH
-# 84 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 83 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.2byte ITEM_LIGHT_BALL
-# 85 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 84 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.2byte ITEM_THICK_CLUB
-# 86 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 85 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.2byte ITEM_PP_UP
-# 87 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 86 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.2byte ITEM_RARE_CANDY
-# 88 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 87 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.2byte ITEM_SAFARI_BALL
-# 89 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 88 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.2byte ITEM_NONE
+# 89 "data/maps/FiveIsland_Meadow/scripts.pory"
+	release
 # 90 "data/maps/FiveIsland_Meadow/scripts.pory"
-	release
+	end
 # 91 "data/maps/FiveIsland_Meadow/scripts.pory"
-	end
+
 # 92 "data/maps/FiveIsland_Meadow/scripts.pory"
-
-# 93 "data/maps/FiveIsland_Meadow/scripts.pory"
 FiveIsland_Meadow_EventScript_Beast::
-# 94 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 93 "data/maps/FiveIsland_Meadow/scripts.pory"
 	msgbox FiveIsland_Meadow_Text_Beasts, MSGBOX_NPC
-# 95 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 94 "data/maps/FiveIsland_Meadow/scripts.pory"
 	special RoamingBeasts
-# 96 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 95 "data/maps/FiveIsland_Meadow/scripts.pory"
 	call_if_eq VAR_RESULT, TRUE, FiveIsland_Meadow_EventScript_GiveTicket
-# 97 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 96 "data/maps/FiveIsland_Meadow/scripts.pory"
 	release
-# 98 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 97 "data/maps/FiveIsland_Meadow/scripts.pory"
 	end
-# 99 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 98 "data/maps/FiveIsland_Meadow/scripts.pory"
 
-# 100 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 99 "data/maps/FiveIsland_Meadow/scripts.pory"
 FiveIsland_Meadow_EventScript_GiveTicket::
-# 101 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 100 "data/maps/FiveIsland_Meadow/scripts.pory"
 	msgbox FiveIsland_Meadow_Text_Beasts2, 
-# 102 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 101 "data/maps/FiveIsland_Meadow/scripts.pory"
 	giveitem ITEM_MYSTIC_TICKET
-# 103 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 102 "data/maps/FiveIsland_Meadow/scripts.pory"
 	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
-# 104 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 103 "data/maps/FiveIsland_Meadow/scripts.pory"
 	releaseall
-# 105 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 104 "data/maps/FiveIsland_Meadow/scripts.pory"
 	end

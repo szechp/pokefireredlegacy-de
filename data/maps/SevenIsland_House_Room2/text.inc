@@ -42,14 +42,27 @@ SevenIsland_House_Room2_Text_Evern:
 	.string "Want to build some resilience?\p"
 	.string "My Pokémon will teach you to\n"
 	.string "weather any storm!$"
+
 SevenIsland_House_Room2_Text_EvernPostBattle:
 	.string "Resilient and steady! Your team\n"
 	.string "is tough as nails!$"
+
 SevenIsland_House_Room2_Text_Eve:
 	.string "DEFENSE is the best offense,\n"
 	.string "or so they say!\p"
 	.string "Let's toughen up together,\n"
 	.string "block by block.$"
+
 SevenIsland_House_Room2_Text_EvePostBattle:
 	.string "You're as solid as a rock! That\n"
 	.string "was some great training!$"
+
+SevenIsland_House_Room2_Text_BaldMan:
+    .string "This place the old woman opened\n"  
+    .string "up is great for training a\l"  
+    .string "certain Pokémon's stat.$"  
+    .string "After Brawling with the black\n"  
+    .string "belt, my Pokémon can even\l"  
+    .string "strike mountains with great\l"  
+    .string "strength!$"  
+

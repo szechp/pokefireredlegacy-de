@@ -3622,7 +3622,7 @@
       "price": 2100,
       "holdEffect": "HOLD_EFFECT_BRICK_PIECE",
       "holdEffectParam": 0,
-      "description_english": "A sturdy piece of brick from an old building",
+      "description_english": "A sturdy piece of brick \\nfrom an old building",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_ITEMS",

@@ -14,19 +14,14 @@ PokemonLeague_AgathasRoom_Text_Intro::
     .string "TRAINER battles!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_AgathasRoom_Text_RematchIntro::
-    .string "I am AGATHA of the ELITE FOUR.\p"
-    .string "You're the child that OAK's taken\n"
-    .string "under his wing, aren't you?\p"
-    .string "And I understand as I saw your\n"
-    .string "power.\p"
-    .string "But for oak, that was decades ago.\n"
-    .string "He's a shadow of his former self.\p"
-    .string "Now he just wants to fiddle with\n"
-    .string "his POKéDEX.\p"
-    .string "He's wrong.\n"
-    .string "POKéMON are for battling!\p"
-    .string "{PLAYER}! I'll show you how a real\n"
-    .string "TRAINER battles!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
+    .string "Back again, eh?\p"  
+    .string "Seen OAK lately?\p"  
+    .string "Still fond of you, I bet!\p"  
+    .string "He's softened, unlike me.\p"  
+    .string "I relish battles!\p"  
+    .string "Let's see your growth,\n"  
+    .string "young one!\p"  
+    .string "Ready, {PLAYER}?{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"  
 
 PokemonLeague_AgathasRoom_Text_Defeat::
     .string "Oh, my!\n"

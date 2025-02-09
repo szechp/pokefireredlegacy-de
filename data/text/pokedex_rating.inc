@@ -123,7 +123,13 @@ PokedexRating_Text_HaHa::
 PokedexRating_Text_ThankYouMadeDreamReality::
 	.string "Thank you, {PLAYER}!\n"
 	.string "Sincerely, thank you!\l"
-	.string "You've made my dream a reality!$"
+	.string "You've made my dream a reality!\p"
+
+PokedexRating_Text_ThankYouMadeDreamReality2::
+    .string "But This achievement spurs me on\n"  
+    .string "to uncover what remains hidden.\p"  
+    .string "There's always more to uncover.\p"  
+    .string "Research calls!$"  
 
 PokedexRating_Text_LoveSeeingYourPokedex::
 	.string "OAK: Ah, welcome!\p"

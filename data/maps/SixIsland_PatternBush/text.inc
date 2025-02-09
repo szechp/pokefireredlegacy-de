@@ -155,30 +155,45 @@ SixIsland_PatternBush_Text_LaytonPostBattle::
     .string "a phenomenon?$"
 
 SixIsland_PatternBush_Text_Bugsy::
-    .string "New Leader Bugsy Placeholder!$"
-
+    .string "Wow, I can't believe this forest\n"  
+    .string "has the same bugs as in JOHTO.\p"  
+    .string "And I can't believe the KANTO\n"  
+    .string "Champion is here with me right\l"  
+    .string "now!$"  
+    .string "I'm just starting out as a\n"  
+    .string "Gym Leader, My name is BUGSY,\l"  
+    .string "a bug type Prodigy!$"  
+    .string "Want to fight me here and now?\n"  
+    .string "It would help me with my research!$"  
 
 SixIsland_PatternBush_Text_BugsyDefeat::
-    .string "New Leader Bugsy Placeholder!$"
+    .string "This Gives me new Insight!$"
 
 SixIsland_PatternBush_Text_BugsyPostBattle::
-    .string "New Leader Bugsy Placeholder!$"
+    .string "Well that truly was Amazing!\p"
+    .string "You truly Humbled my Bugs!\p"
+    .string "Wish me luck as a GYM LEADER!\p"
+    .string "CHAMPION {PLAYER}!$"
 
 SixIsland_PatternBush_Text_NoBugsy::
-    .string "New Leader Bugsy Placeholder!$"
+    .string "Oh guess you're not interested.$"
 
 SixIsland_PatternBush_Text_YesBugsy::
-    .string "New Leader Bugsy Placeholder!$"
+    .string "Let's go Bugs!$"
 
 SixIsland_PatternBush_Text_RematchBugsy::
-    .string "New Leader Bugsy Placeholder!$"
+    .string "You still aching for a\n"
+    .string "Another Battle?$"
 
 SixIsland_PatternBush_Text_RematchBugsyDefeat::
-    .string "New Leader Bugsy Placeholder!$"
+    .string "This Gives me new Insight!$"
 
 SixIsland_PatternBush_Text_YesRematchBugsy::
-    .string "New Leader Bugsy Placeholder!$"
+    .string "Let's go Bugs!$"
 
 SixIsland_PatternBush_Text_RematchBugsyPostBattle::
-    .string "New Leader Bugsy Placeholder!$"
+    .string "Well that truly was Amazing!\p"
+    .string "You truly Humbled my Bugs!\p"
+    .string "Wish me luck as a GYM LEADER!\p"
+    .string "CHAMPION {PLAYER}!$"
 

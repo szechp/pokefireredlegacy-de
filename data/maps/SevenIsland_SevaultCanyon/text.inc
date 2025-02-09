@@ -130,29 +130,42 @@ SevenIsland_SevaultCanyon_Text_BrunoTrainedWithBrawly::
     .string "name of BRAWLY before.$"
 
 SevenIsland_SevaultCanyon_Text_Chuck::
-    .string "Chuck Placeholder!$"
+    .string "Hey Man! I'm training.\n"  
+    .string "This form of training is not\l"  
+    .string "to be disturbed.\p"  
+    .string "This place is great for Fighting\n"  
+    .string "type gym leaders like me.\p"  
+    .string "Chuck's the name.\p"  
+    .string "Say, fighting you could also\n"  
+    .string "help me train.\p"  
+    .string "Would you like to spar?$"  
 
 SevenIsland_SevaultCanyon_Text_ChuckDefeat::
-    .string "Chuck Placeholder!$"
+    .string "You are a Great Trainer!$"
 
 SevenIsland_SevaultCanyon_Text_ChuckPostBattle::
-    .string "Chuck Placeholder!$"
+    .string "Hahaha, You quit one CHAMPION!\p"
+    .string "I would like to adapt your\n"
+    .string "Training Style One Day!$"
 
 SevenIsland_SevaultCanyon_Text_NoChuck::
-    .string "Chuck Placeholder!$"
+    .string "Guess you don't like training.$"
 
 SevenIsland_SevaultCanyon_Text_YesChuck::
-    .string "Chuck Placeholder!$"
+    .string "Alright, Let's Spar!$"
 
 SevenIsland_SevaultCanyon_Text_RematchChuck::
-    .string "Chuck Rematch Placeholder!$"
+    .string "Are you back for more Training?\n"
+    .string "I am sure ready!$"
 
 SevenIsland_SevaultCanyon_Text_RematchChuckDefeat::
-    .string "Chuck Rematch Placeholder!$"
+    .string "You are a Great Trainer!$"
 
 SevenIsland_SevaultCanyon_Text_YesRematchChuck::
-    .string "Chuck Rematch Placeholder!$"
+    .string "Alright, Let's Spar!$"
 
 SevenIsland_SevaultCanyon_Text_RematchChuckPostBattle::
-    .string "Chuck Rematch Placeholder!$"
+    .string "Hahaha, You quit one CHAMPION!\p"
+    .string "I would like to adapt your\n"
+    .string "Training Style One Day!$"
 

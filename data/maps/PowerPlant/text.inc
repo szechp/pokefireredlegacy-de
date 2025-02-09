@@ -1,11 +1,17 @@
 PowerPlant_Text_CraigIntro::
-    .string "Hey! You have POKéMON!\n"
-    .string "Come on!\l"
-    .string "Let's battle 'em!$"
+    .string "I'm trying to complete my\n"  
+    .string "POKÉDEX, for a game I'm\l"  
+    .string "making based on POKÉMON.\p"  
+    .string "How about this…\p"  
+    .string "We battle, winner gets the\n"  
+    .string "bird.$"  
+
 
 PowerPlant_Text_CraigDefeat::
-    .string "No!\nCATERPIE can't hack it!$"
+    .string "This is good data!\p"  
+    .string "I can use this.$"  
 
 PowerPlant_Text_CraigPostBattle::
-    .string "Ssh! You'll scare the bugs away.\n"
-    .string "Another time, okay?$"
+    .string "Can I see the POKÉDEX entry\n"  
+    .string "once you catch it?$"  
+

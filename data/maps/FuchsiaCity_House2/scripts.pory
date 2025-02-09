@@ -6,9 +6,16 @@ FuchsiaCity_House2_FossilGuy::
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_FOSSIL_FROM_FOSSIL_GUY, FuchsiaCity_House2_AlreadyGotFossil
-	msgbox FuchsiaCity_House2_Text_HaveMonForSavingUs
+	msgbox FuchsiaCity_House2_Text_HaveMonForSavingUs, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, FuchsiaCity_House2_FossilMan
+	msgbox VermilionCity_House1_Text_OhThatsDisappointing
+	end
+
+FuchsiaCity_House2_FossilMan::
+	msgbox FuchsiaCity_House2_Text_HaveMonForSavingUs2
 	goto_if_set FLAG_GOT_DOME_FOSSIL, FuchsiaCity_House2_FossilOmanyte
 	goto_if_set FLAG_GOT_HELIX_FOSSIL, FuchsiaCity_House2_FossilKabuto
+	end
 
 FuchsiaCity_House2_FossilKabuto::
 	setvar VAR_TEMP_1, SPECIES_KABUTO

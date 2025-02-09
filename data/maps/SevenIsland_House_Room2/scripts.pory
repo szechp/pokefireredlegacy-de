@@ -64,4 +64,8 @@ SevenIsland_House_Room2_EventScript_EVCheck::
 	release
 	end
 
+SevenIsland_House_Room2_EventScript_BaldMan::
+	msgbox SevenIsland_House_Room2_Text_BaldMan, MSGBOX_NPC
+	end
+
 `

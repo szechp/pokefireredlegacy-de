@@ -2,14 +2,17 @@ CeruleanCave_B1F_Text_Mew::
     .string "Mew!$"
 
 CeruleanCave_B1F_Text_SmithIntro::
-    .string "Hey! You have POKéMON!\n"
-    .string "Come on!\l"
-    .string "Let's battle 'em!$"
+    .string "Hey, what's up?\p"  
+    .string "Show me how much zest\n"  
+    .string "you've got!$"  
 
 CeruleanCave_B1F_Text_SmithDefeat::
-    .string "No!\nCATERPIE can't hack it!$"
+    .string "Wow!You've got zest!\n"  
+    .string "I love to see that.$"  
+
 
 CeruleanCave_B1F_Text_SmithPostBattle::
-    .string "Ssh! You'll scare the bugs away.\n"
-    .string "Another time, okay?$"
+    .string "What zest!You should be able\n"  
+    .string "to handle yourself in this cave!\p"  
+    .string "Good luck, nerd!$"  
 

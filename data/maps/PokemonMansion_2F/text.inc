@@ -32,16 +32,71 @@ PokemonMansion_1F_Text_ChristenedDiscoveredMonMew::
     .string "POKéMON, MEW.$"
 
 PokemonMansion_1F_Text_Oak::
-    .string "Oak Placeholder!$"
+    .string "You've caught me in a moment\n"  
+    .string "of deep research.\p"  
+    .string "This mansion holds secrets\n"  
+    .string "of a Pokémon barely more\l"  
+    .string "than a whisper in ancient texts.$"  
+
+PokemonMansion_1F_Text_Oak2::
+    .string "Looking at the story of\n"  
+    .string "MEWTWO,\l"  
+    .string "one ponders its origins..\p"  
+    .string "I spent many years exploring\n"  
+    .string "the region to discover every\l"  
+    .string "species.\p"  
+    .string "There were a few, however.\p" 
+    .string "They were so powerful,\n"  
+    .string "so rare,\l"  
+    .string "I had to keep their capture\l"  
+    .string "hidden.\p"  
+    .string "In learning of MEWTWO's\n"  
+    .string "creation,\l"  
+    .string "it seems my fears were\l"  
+    .string "well placed.\p"  
+    .string "Not all are capable of\n"  
+    .string "wielding such power.\p"  
+
+PokemonMansion_1F_Text_Oak3::
+    .string "But let's focus on the present.\p"  
+    .string "<PLAYER>!\p"  
+    .string "You have become a Pokémon\n"  
+    .string "master above all others.\p"  
+    .string "Our battle has showed me\n"  
+    .string "back to the path of strength.\p"  
+    .string "Now, I challenge you with my\n"  
+    .string "full,\l"  
+    .string "unrestrained power.\p"  
+    .string "Might I test your might\n"  
+    .string "once more?$"
 
 PokemonMansion_1F_Text_OakDefeat::
-    .string "Oak Placeholder!$"
+    .string "This defeat teaches me more\n"  
+    .string "than any victory.\p"
 
 PokemonMansion_1F_Text_OakPostBattle::
-    .string "Mew Spawned!$"
+    .string "Our clash today stirred the\n"  
+    .string "very air itself.\p"  
+    .string "There's a certain energy in\n"  
+    .string "this place, ripe with\l"  
+    .string "possibility.\p"  
+    .string "Keep your senses sharp.\n"  
+    .string "The world is full of wonders\l"  
+    .string "waiting to reveal themselves\l"  
+    .string "to the worthy.\p"  
+    .string "Who knows what mysteries\n"  
+    .string "may unfold next?$"  
 
 PokemonMansion_1F_Text_NoOak::
-    .string "Maybe some other time.$"
+    .string "Perhaps it's best to wait\n"  
+    .string "until the time feels right.$"  
 
 PokemonMansion_1F_Text_YesOak::
-    .string "Oak Placeholder!$"
+    .string "May our battle echo through\n"  
+    .string "these halls.\p"  
+    .string "Prepare yourself!$" 
+
+PokemonMansion_1F_Text_Mew::
+    .string "Mew.....$" 
+
+

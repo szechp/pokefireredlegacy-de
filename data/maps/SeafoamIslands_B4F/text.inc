@@ -44,16 +44,20 @@ SeafoamIslands_B4F_Text_DangerFastCurrent::
     .string "Fast current!$"
 
 SeafoamIslands_B4F_Text_WeebraIntro::
-    .string "Hey! You have POKéMON!\n"
-    .string "Come on!\l"
-    .string "Let's battle 'em!$"
+    .string "You gotta be pretty strong\n"  
+    .string "to get this far, huh?\p"  
+    .string "Then I guess we don't gotta\n"  
+    .string "pull any punches.$"  
 
 SeafoamIslands_B4F_Text_WeebraDefeat::
-    .string "No!\nCATERPIE can't hack it!$"
+    .string "Nice moves!\p"  
+    .string "I almost got off my 'Essence\n"  
+    .string "of Beast Style' too!$"  
 
 SeafoamIslands_B4F_Text_WeebraPostBattle::
-    .string "Ssh! You'll scare the bugs away.\n"
-    .string "Another time, okay?$"
+    .string "Honestly I prefer my team\n"  
+    .string "fresh, never frozen,\l"  
+    .string "but you do you, bro!$"  
 
 SeafoamIslands_B4F_Text_Slowpoke::
     .string "SLOWPOKE!$"
