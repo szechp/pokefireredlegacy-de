@@ -88,7 +88,6 @@ PokemonLeague_ChampionsRoom_Text_OakPlayerComeWithMe::
     .string "The bond you share with your\n"
     .string "POKéMON is marvelous.\p"
     .string "{PLAYER}!\n"
-    .string "Come with me!\p"
-    .string "And take this CHAMPION Prize!$"
+    .string "Come with me!$"
 
 

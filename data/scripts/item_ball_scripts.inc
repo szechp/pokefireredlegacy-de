@@ -659,8 +659,7 @@ FiveIsland_RocketWarehouse_EventScript_ItemBigPearl::
 	end
 
 FiveIsland_RocketWarehouse_EventScript_ItemTM36::
-	finditem ITEM_FOCUS_BAND
-	end
+	finditem ITEM_TM27
 
 FiveIsland_RocketWarehouse_EventScript_ItemPearl::
 	finditem ITEM_PEARL

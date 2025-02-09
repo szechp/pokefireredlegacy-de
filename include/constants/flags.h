@@ -822,12 +822,12 @@
 #define FLAG_ROCK_PALLET             0x31A
 #define FLAG_ROCK_MTMOON               0x31B
 #define FLAG_ROCK_MTMOON2              0x31C
-#define FLAG_ROCK_MTMOON3               0x31D
+#define FLAG_TREE_R13              0x31D
 #define FLAG_UNBLOCK_CERULEAN     0x31E
 #define FLAG_BEAT_SS_RIVAL               0x31F
 #define FLAG_GUARD_TEA               0x320
 #define FLAG_ROCK_TUNNEL              0x321
-#define FLAG_0x322               0x322
+#define FLAG_TREE_R13_2               0x322
 #define FLAG_0x323               0x323
 #define FLAG_0x324               0x324
 #define FLAG_0x325               0x325

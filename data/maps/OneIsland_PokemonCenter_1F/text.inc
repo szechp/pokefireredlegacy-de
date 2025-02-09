@@ -242,7 +242,7 @@ OneIsland_PokemonCenter_1F_Text_PassLetYouGetToAllIslands::
     .string "{PLAYER}, please, I can't do\n"
     .string "it without your help.\p"
     .string "I think it might be on\n"
-    .string "Four or Six Island\p"
+    .string "Four or Six Island.$"
 
 OneIsland_PokemonCenter_1F_Text_HandedSapphireToCelio::
     .string "{PLAYER} handed the SAPPHIRE\n"

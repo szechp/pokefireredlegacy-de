@@ -87,9 +87,17 @@ static const struct TrainerMon sParty_FatGuy[] = {
     {
         .iv = 255,
         .lvl = 68,
+        .species = SPECIES_DODRIO,
+        .heldItem = ITEM_AGUAV_BERRY,
+        .moves = {MOVE_DRILL_PECK, MOVE_DOUBLE_EDGE, MOVE_JUMP_KICK, MOVE_PROTECT},
+        .evs = {85, 85, 85, 85, 85, 85},
+    },
+    {
+        .iv = 255,
+        .lvl = 68,
         .species = SPECIES_ARCANINE,
         .heldItem = ITEM_LEFTOVERS,
-        .moves = {MOVE_FIRE_BLAST, MOVE_EXTREME_SPEED, MOVE_CRUNCH, MOVE_TOXIC},
+        .moves = {MOVE_FIRE_BLAST, MOVE_EXTREME_SPEED, MOVE_CRUNCH, MOVE_PROTECT},
         .evs = {85, 85, 85, 85, 85, 85},
     },
     {
@@ -105,24 +113,16 @@ static const struct TrainerMon sParty_FatGuy[] = {
         .lvl = 68,
         .species = SPECIES_GYARADOS,
         .heldItem = ITEM_FOCUS_BAND,
-        .moves = {MOVE_SURF, MOVE_BOUNCE, MOVE_EARTHQUAKE, MOVE_DRAGON_DANCE},
+        .moves = {MOVE_HYDRO_PUMP, MOVE_BOUNCE, MOVE_DOUBLE_EDGE, MOVE_DRAGON_DANCE},
         .evs = {85, 85, 85, 85, 85, 85},
 
-    },
-    {
-        .iv = 255,
-        .lvl = 68,
-        .species = SPECIES_RHYDON,
-        .heldItem = ITEM_QUICK_CLAW,
-        .moves = {MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_DOUBLE_EDGE, MOVE_MEGAHORN},
-        .evs = {85, 85, 85, 85, 85, 85},
     },
     {
         .iv = 255,
         .lvl = 69,
         .species = SPECIES_KANGASKHAN,
         .heldItem = ITEM_LUM_BERRY,
-        .moves = {MOVE_FAKE_OUT, MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_CRUNCH},
+        .moves = {MOVE_FAKE_OUT, MOVE_DOUBLE_EDGE, MOVE_PROTECT, MOVE_CRUNCH},
         .evs = {85, 85, 85, 85, 85, 85},
     },
 }; //GIOVANNI 4
@@ -378,7 +378,7 @@ static const struct TrainerMon sParty_Pokedude[] = {
         .lvl = 63,
         .species = SPECIES_VILEPLUME,
         .heldItem = ITEM_LEFTOVERS,
-        .moves = {MOVE_GIGA_DRAIN, MOVE_SLEEP_POWDER, MOVE_MOONLIGHT, MOVE_SLUDGE_BOMB},
+        .moves = {MOVE_GIGA_DRAIN, MOVE_SLEEP_POWDER, MOVE_PSYCHIC, MOVE_SLUDGE_BOMB},
         .evs = {252, 128, 0, 128, 0, 0}, 
     },
     {
@@ -1214,7 +1214,7 @@ static const struct TrainerMon sParty_Erika2[] = {
         .lvl = 43,
         .species = SPECIES_VILEPLUME,
         .heldItem = ITEM_MIRACLE_SEED,
-        .moves = {MOVE_SLEEP_POWDER, MOVE_SOLAR_BEAM, MOVE_SUNNY_DAY, MOVE_SLUDGE_BOMB},
+        .moves = {MOVE_SLEEP_POWDER, MOVE_GIGA_DRAIN, MOVE_PSYCHIC, MOVE_SLUDGE_BOMB},
     },
 }; //Erika 2
 static const struct TrainerMon sParty_Erika3[] = {
@@ -1249,7 +1249,7 @@ static const struct TrainerMon sParty_Erika3[] = {
         .lvl = 50,
         .species = SPECIES_VILEPLUME,
         .heldItem = ITEM_MIRACLE_SEED,
-        .moves = {MOVE_SLEEP_POWDER, MOVE_SOLAR_BEAM, MOVE_SUNNY_DAY, MOVE_SLUDGE_BOMB},
+        .moves = {MOVE_SLEEP_POWDER, MOVE_GIGA_DRAIN, MOVE_PSYCHIC, MOVE_SLUDGE_BOMB},
     },
 }; //Erika 3
 
