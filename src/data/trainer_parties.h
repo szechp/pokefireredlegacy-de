@@ -1596,7 +1596,7 @@ static const struct TrainerMon sParty_LeaderKoga2[] = {
         .lvl = 64,
         .species = SPECIES_PARASECT,
         .heldItem = ITEM_QUICK_CLAW,
-        .moves = {MOVE_SPORE, MOVE_TWINEEDLE, MOVE_GIGA_DRAIN, MOVE_AROMATHERAPY},
+        .moves = {MOVE_SPORE, MOVE_TWINEEDLE, MOVE_GIGA_DRAIN, MOVE_PSYCHIC},
 
     },   
     {
