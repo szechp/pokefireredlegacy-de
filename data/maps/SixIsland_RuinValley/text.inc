@@ -87,17 +87,50 @@ SixIsland_RuinValley_Text_HectorPostBattle::
     .string "though.$"
 
 SixIsland_PatternBush_Text_Giovanni::
-    .string "GIOVANNI PLACEHOLDER.$"
+	.string "Oh, hello there again,\n"
+	.string "CHAMPION {PLAYER}.\p"
+	.string "It's been quite\n"
+	.string "a long time since\l"
+	.string "I disbanded Team Rocket,\l"
+	.string "however not all\l"
+	.string "got this message\l"
+	.string "and are still running\l"
+	.string "TEAM ROCKET.\$"
+	.string "I still keep thinking\n"
+	.string "about what to do\l"
+	.string "about them. I saw my\l"
+	.string "strongest admins lose\l"
+	.string "their strongest POKÉMON,\l"
+	.string "yet they are still\l"
+	.string "on for fighting.\p"
+    .string "I'm not gonna stay here\n"
+	.string "for long, I'm going\l"
+	.string "to leave soon.\p"
+	.string "However I will say,\n"
+	.string "you have definitely\l"
+	.string "made a lasting impact\l"
+	.string "on me, my goals,\l"
+	.string "and my ideals.\p"
+	.string "Before I go,\n"
+	.string "I would like one\l"
+	.string "final battle, for me\l"
+	.string "to see the strength\l"
+	.string "of a CHAMPION.$"
 
 SixIsland_PatternBush_Text_GiovanniNo::
-    .string "GIOVANNI PLACEHOLDER.$"
+    .string "I guess you aren't ready\n"
+    .string "Yet.$"
 
 SixIsland_PatternBush_Text_GiovanniPost::
-    .string "GIOVANNI PLACEHOLDER.$"
+	.string "Was that a great\n"
+	.string "battle.\p"
+	.string "Truly a CHAMPION.\p"
+	.string "Farewell.$"
 
 SixIsland_PatternBush_Text_GiovanniDefeat::
-    .string "GIOVANNI PLACEHOLDER.$"
+    .string "Just as Expected.$"
 
 SixIsland_PatternBush_Text_GiovanniYes::
-    .string "GIOVANNI PLACEHOLDER.$"
+    .string "Well Than, let's spar\n"
+    .string "One Last Time!$"
 

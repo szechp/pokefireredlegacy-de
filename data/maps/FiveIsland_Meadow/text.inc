@@ -58,8 +58,35 @@ FiveIsland_Meadow_Text_Rocket3PostBattle::
     .string "the passwords anyway.$"
 
 FiveIsland_Meadow_Text_Beasts::
-    .string "If you get all 3 Beasts\n"
-    .string "I'll give you a ticket.$"
+	.string "Hey man, I'm just playing\n"
+	.string "in this meadow.\p"
+	.string "What do you want?\p"
+	.string "I actually found something\n"
+	.string "interesting somewhere...\p"
+	.string "But I'll only give it to\n"
+	.string "someone worthy.\p"
+	.string "Someone who can catch all\n"
+	.string "three of the legendary\l"
+	.string "beasts—ENTEI, SUICUNE,\l"
+	.string "and RAIKOU.\p"
+	.string "If you can, I'll give you\n"
+	.string "the item!$"
 
 FiveIsland_Meadow_Text_Beasts2::
-    .string "Mystic Ticket PLACEHOLDER!$"
+	.string "Wait, you actually did?\p"
+	.string "Well, I guess I'll have\n"
+	.string "to give you this then!$"
+
+FiveIsland_Meadow_Text_Beasts3::
+	.string "I actually did found this\n"
+	.string "wandering about.\p"
+	.string "However, I know how\n"
+	.string "valuable and sacred\l"
+	.string "that island is!\p"
+	.string "So I only trust it to\n"
+	.string "someone who will treat\l"
+	.string "POKéMON well.\p"
+	.string "And I can see that\n"
+	.string "in you!$"
+
+

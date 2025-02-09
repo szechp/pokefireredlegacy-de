@@ -9697,7 +9697,7 @@ static const struct TrainerMon sParty_BikerGoon[] = {
         .iv = 0,
         .lvl = 47,
         .species = SPECIES_WEEZING,
-        .moves = {MOVE_HAZE, MOVE_SMOKESCREEN, MOVE_SLUDGE_BOMB, MOVE_AMNESIA},
+        .moves = {MOVE_THUNDERBOLT, MOVE_SMOKESCREEN, MOVE_SLUDGE_BOMB, MOVE_AMNESIA},
     },
     {
         .iv = 0,
@@ -9710,17 +9710,33 @@ static const struct TrainerMon sParty_BikerGoon[] = {
 static const struct TrainerMon sParty_BikerGoon2[] = {
     {
         .iv = 0,
-        .lvl = 49,
+        .lvl = 47,
         .species = SPECIES_HOUNDOOM,
         .moves = {MOVE_NONE, MOVE_CRUNCH, MOVE_FLAMETHROWER, MOVE_ROCK_SMASH},
+    },
+    {
+        .iv = 0,
+        .lvl = 47,
+        .species = SPECIES_ELECTRODE,
+        .moves = {MOVE_NONE, MOVE_EXPLOSION, MOVE_THUNDERBOLT, MOVE_VOLT_TACKLE},
     },
 };
 
 static const struct TrainerMon sParty_BikerGoon3[] = {
     {
         .iv = 0,
-        .lvl = 49,
+        .lvl = 47,
         .species = SPECIES_MURKROW,
+    },
+    {
+        .iv = 0,
+        .lvl = 47,
+        .species = SPECIES_PRIMEAPE,
+    },
+    {
+        .iv = 0,
+        .lvl = 47,
+        .species = SPECIES_SCYTHER,
     },
 };
 

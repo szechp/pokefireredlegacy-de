@@ -2648,9 +2648,22 @@ void RoamingBeasts(void)
 
 void GetDeoxys(void)
 {
-    u32 numHofClears = GetGameStat(GAME_STAT_ENTERED_HOF);
-    if (numHofClears >= 5)
+    if (FlagGet(FLAG_CAUGHT_ENTEI) &&
+        FlagGet(FLAG_CAUGHT_SUICUNE) &&
+        FlagGet(FLAG_FOUGHT_MEWTWO) &&
+        FlagGet(FLAG_FOUGHT_MOLTRES) &&
+        FlagGet(FLAG_FOUGHT_ARTICUNO) &&
+        FlagGet(FLAG_FOUGHT_ZAPDOS) &&
+        FlagGet(FLAG_FOUGHT_CELEBI) &&
+        FlagGet(FLAG_FOUGHT_LUGIA) &&
+        FlagGet(FLAG_FOUGHT_HO_OH) &&
+        FlagGet(FLAG_CAUGHT_RAIKOU))
     {
-        FlagClear(FLAG_HIDE_AURORA_GUY);
+        gSpecialVar_Result = TRUE;
+        return;
+    }
+    else
+    {
+        gSpecialVar_Result = FALSE;
     }
 }

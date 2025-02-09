@@ -139,38 +139,60 @@ Route13_Text_PleaseComeAgain::
     .string "If you want$"
 
 Route13_Text_Whitney::
-    .string "PreLeader Whitney,\n"
-    .string "Placeholder!$"
+    .string "This place is full of Cute,\n"
+    .string "Pokemon!\p"
+    .string "I'm visiting KANTO in search\n"  
+    .string "of more cute POKEMON as,\n"  
+    .string "I want to become a GYM\n"  
+    .string "LEADER one day!\p"  
+    .string "And I think that opportunity\n"  
+    .string "is gonna open up sooner\l"  
+    .string "than ever!\p"  
+    .string "I think it would be good\n"  
+    .string "if we battled\p$"   
+    .string "Although I'm warning you,\n"  
+    .string "I'm good!$"  
 
 
 Route13_Text_WhitneyDefeat::
-    .string "PreLeader Whitney,\n"
-    .string "Placeholder!$"
+    .string "Sob... ...Waaaaaaah!\p"  
+    .string "You're mean!\n"  
+    .string "You shouldn't be so\n"  
+    .string "serious!\p"  
+    .string "You...you child, you!\n"  
+    .string "Waaaaah! Waaaaah!\p"  
+    .string "...Snivel, hic...\n"  
+    .string "...You meanie!$"  
 
 Route13_Text_WhitneyPostBattle::
-    .string "PreLeader Whitney,\n"
-    .string "Placeholder!$"
+    .string "Ah, that was a good cry!\p"
+    .string "I mean, you're the CHAMPION\n"    
+    .string "After all, You're Very Strong!\p"    
+    .string "Come for a visit again!\p"  
+    .string "Bye-bye!$"  
 
 Route13_Text_NoWhitney::
-    .string "PreLeader Whitney,\n"
-    .string "Placeholder!$"
+    .string "Can't Stand this\n"
+    .string "Cute Face?$"
 
 Route13_Text_YesWhitney::
-    .string "PreLeader Whitney,\n"
-    .string "Placeholder!$"
+    .string "Prepare to lose\n"
+    .string "To my Cute Face!$"
 
 Route13_Text_RematchWhitney::
-    .string "PreLeader Whitney,\n"
-    .string "Rematch Placeholder!$"
+    .string "Oh you're back!\p"
+    .string "You could go with another\n"
+    .string "battle with this Cutie!$"
 
 Route13_Text_RematchWhitneyDefeat::
-    .string "PreLeader Whitney,\n"
-    .string "Rematch Placeholder!$"
+    .string "You really are strong!\p"  
+    .string "But I won't lose next time!$"  
 
 Route13_Text_YesRematchWhitney::
-    .string "PreLeader Whitney,\n"
-    .string "Rematch Placeholder!$"
+    .string "Prepare to lose\n"
+    .string "To my Cute Face!$"
 
 Route13_Text_RematchWhitneyPostBattle::
-    .string "PreLeader Whitney,\n"
-    .string "Rematch Placeholder!$"
+    .string "Don't look at me!\P"
+    .string "I'm not Crying this Time!$"
+

@@ -70,9 +70,28 @@ PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon::
     .string "It is thought to be a MOON STONE.$"
 
 PewterCity_Museum_1F_Text_EliteTicket::
-    .string "If you beat the ELITE FOUR.\n"
-    .string "5 Times I'll give you Something!$"
+	.string "I am looking for someone\n"
+	.string "with many great\l"
+	.string "achievements, in which\l"
+	.string "I will give that person\l"
+	.string "a great gift!\p"
 
 PewterCity_Museum_1F_Text_Ticket::
-    .string "Here's The Aurora Ticket!\p"
-    .string "PLACEHOLDER!$"
+	.string "Oh, I see it! I see\n"
+	.string "your many great\l"
+	.string "achievements!\p"
+	.string "For that, I give\n"
+	.string "you this ticket.$"
+
+
+PewterCity_Museum_1F_Text_ExplainTicket::
+	.string "This ticket will allow\n"
+	.string "you to go to a special\l"
+	.string "place that is said\l"
+	.string "to hold a special\l"
+	.string "Pokémon.\p"
+
+	.string "Something I think\n"
+	.string "will fit you and\l"
+	.string "your many achievements.$"
+

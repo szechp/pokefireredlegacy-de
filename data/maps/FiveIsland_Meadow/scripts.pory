@@ -90,6 +90,7 @@ FiveIsland_Meadow_Items::
 	end
 
 FiveIsland_Meadow_EventScript_Beast::
+	goto_if_set FLAG_ENABLE_SHIP_NAVEL_ROCK, FiveIsland_Meadow_EventScript_Beast2
 	msgbox FiveIsland_Meadow_Text_Beasts, MSGBOX_NPC
 	special RoamingBeasts
 	call_if_eq VAR_RESULT, TRUE, FiveIsland_Meadow_EventScript_GiveTicket
@@ -101,5 +102,9 @@ FiveIsland_Meadow_EventScript_GiveTicket::
 	giveitem ITEM_MYSTIC_TICKET
 	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
 	releaseall
+	end
+
+FiveIsland_Meadow_EventScript_Beast3::
+	msgbox FiveIsland_Meadow_Text_Beasts2, MSGBOX_NPC
 	end
 `
