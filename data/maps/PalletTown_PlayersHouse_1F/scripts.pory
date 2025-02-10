@@ -81,6 +81,7 @@ PalletTown_PlayersHouse_1F_EventScript_MomHeal::
 
 PalletTown_PlayersHouse_1F_EventScript_MomChampion::
 	msgbox PalletTown_PlayersHouse_1F_Text_Champion
+	closemessage
 	msgbox PalletTown_PlayersHouse_1F_Text_YouShouldTakeQuickRest
 	closemessage
 	call EventScript_OutOfCenterPartyHeal

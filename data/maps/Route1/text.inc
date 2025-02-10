@@ -30,7 +30,7 @@ Route1_Text_Oak::
     .string "OAK: Oh, my!\p"  
     .string "It seems you caught me during\n"  
     .string "my lunch hour!\p"  
-    .string "<PLAYER>, you have truly\n"  
+    .string "{PLAYER}, you have truly\n"  
     .string "come into your own!\p"  
     .string "Your POKÉMON LEAGUE challenge\n"  
     .string "has reignited a spirit that\l"  

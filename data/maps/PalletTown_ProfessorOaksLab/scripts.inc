@@ -1179,7 +1179,7 @@ PalletTown_ProfessorOaksLab_EventScript_ProfOak::
 # 590 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 8, PalletTown_ProfessorOaksLab_EventScript_MonsAroundWorldWait
 # 591 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	goto_if_set FLAG_SYS_GAME_CLEAR, PalletTown_ProfessorOaksLab_EventScript_TryStartNationalDexScene
+	goto_if_set FLAG_IS_CHAMPION, PalletTown_ProfessorOaksLab_EventScript_TryStartNationalDexScene
 # 592 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
 	goto_if_eq VAR_MAP_SCENE_CERULEAN_CITY_RIVAL, 1, PalletTown_ProfessorOaksLab_EventScript_RatePokedex
 # 593 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
