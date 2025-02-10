@@ -405,16 +405,16 @@ static const u16 sTrainerTowerEncounterMusic[] = {
     [TRAINER_ENCOUNTER_MUSIC_RICH]        = MUS_ENCOUNTER_BOY
 };
 
-// The trainer only uses two Pokemon from the encoded pool, based on the current floor
-static const u8 sSingleBattleChallengeMonIdxs[MAX_TRAINER_TOWER_FLOORS][2] = {
-    {0, 2},
-    {1, 3},
-    {2, 4},
-    {3, 5},
-    {4, 1},
-    {5, 2},
-    {0, 3},
-    {1, 4}
+// The trainer only uses three Pokemon from the encoded pool, based on the current floor
+static const u8 sSingleBattleChallengeMonIdxs[MAX_TRAINER_TOWER_FLOORS][3] = {
+    {0, 2, 1},
+    {1, 3, 5},
+    {2, 4, 1},
+    {3, 5, 2},
+    {4, 1, 2},
+    {5, 2, 1},
+    {0, 3, 1},
+    {1, 4, 5}
 };
 
 // Each trainer only uses one Pokemon from the encoded pool, based on the current floor
