@@ -417,16 +417,16 @@ static const u8 sSingleBattleChallengeMonIdxs[MAX_TRAINER_TOWER_FLOORS][3] = {
     {1, 4, 5}
 };
 
-// Each trainer only uses one Pokemon from the encoded pool, based on the current floor
-static const u8 sDoubleBattleChallengeMonIdxs[MAX_TRAINER_TOWER_FLOORS][2] = {
-    {0, 1},
-    {1, 3},
-    {2, 0},
-    {3, 4},
-    {4, 2},
-    {5, 2},
-    {0, 3},
-    {1, 5}
+// Each trainer only uses two Pokemon from the encoded pool, based on the current floor
+static const u8 sDoubleBattleChallengeMonIdxs[MAX_TRAINER_TOWER_FLOORS][4] = {
+    {0, 1, 2, 3},
+    {1, 3, 5, 2},
+    {2, 0, 5, 1},
+    {3, 4, 2, 1},
+    {4, 2, 5, 0},
+    {5, 2, 0, 3},
+    {0, 3, 5, 2},
+    {1, 5, 4, 3}
 };
 
 // Each trainer only uses one Pokemon from the encoded pool, based on the current floor
