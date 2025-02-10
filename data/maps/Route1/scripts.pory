@@ -36,6 +36,8 @@ Route1_EventScript_RouteSign::
 	end
 
 Route1_EventScript_Oak::
+	lock
+	faceplayer
 	msgbox Route1_Text_Oak, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route1_EventScript_NoOak
 	trainerbattle_single TRAINER_OAK, Route1_Text_YesOak, Route1_Text_OakDefeat, Route1_EventScript_PostOak, NO_MUSIC

@@ -159,10 +159,10 @@ SixIsland_PatternBush_Text_Bugsy::
     .string "has the same bugs as in JOHTO.\p"  
     .string "And I can't believe the KANTO\n"  
     .string "Champion is here with me right\l"  
-    .string "now!$"  
+    .string "now!\p"  
     .string "I'm just starting out as a\n"  
     .string "Gym Leader, My name is BUGSY,\l"  
-    .string "a bug type Prodigy!$"  
+    .string "a bug type Prodigy!\p"  
     .string "Want to fight me here and now?\n"  
     .string "It would help me with my research!$"  
 

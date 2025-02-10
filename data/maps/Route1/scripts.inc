@@ -75,42 +75,46 @@ Route1_EventScript_RouteSign::
 # 38 "data/maps/Route1/scripts.pory"
 Route1_EventScript_Oak::
 # 39 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_Oak, MSGBOX_YESNO
+	lock
 # 40 "data/maps/Route1/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, Route1_EventScript_NoOak
+	faceplayer
 # 41 "data/maps/Route1/scripts.pory"
-	trainerbattle_single TRAINER_OAK, Route1_Text_YesOak, Route1_Text_OakDefeat, Route1_EventScript_PostOak, NO_MUSIC
+	msgbox Route1_Text_Oak, MSGBOX_YESNO
 # 42 "data/maps/Route1/scripts.pory"
-	release
+	goto_if_eq VAR_RESULT, NO, Route1_EventScript_NoOak
 # 43 "data/maps/Route1/scripts.pory"
-	end
+	trainerbattle_single TRAINER_OAK, Route1_Text_YesOak, Route1_Text_OakDefeat, Route1_EventScript_PostOak, NO_MUSIC
 # 44 "data/maps/Route1/scripts.pory"
-
+	release
 # 45 "data/maps/Route1/scripts.pory"
-Route1_EventScript_PostOak::
-# 46 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_OakPostBattle
-# 47 "data/maps/Route1/scripts.pory"
-	setflag FLAG_OAK_DEFEATED
-# 48 "data/maps/Route1/scripts.pory"
-	removeobject 3
-# 49 "data/maps/Route1/scripts.pory"
-	setflag FLAG_HIDE_OAK
-# 50 "data/maps/Route1/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 51 "data/maps/Route1/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 52 "data/maps/Route1/scripts.pory"
-	release
-# 53 "data/maps/Route1/scripts.pory"
 	end
-# 54 "data/maps/Route1/scripts.pory"
+# 46 "data/maps/Route1/scripts.pory"
 
-# 55 "data/maps/Route1/scripts.pory"
-Route1_EventScript_NoOak::
-# 56 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_NoOak
-# 57 "data/maps/Route1/scripts.pory"
+# 47 "data/maps/Route1/scripts.pory"
+Route1_EventScript_PostOak::
+# 48 "data/maps/Route1/scripts.pory"
+	msgbox Route1_Text_OakPostBattle
+# 49 "data/maps/Route1/scripts.pory"
+	setflag FLAG_OAK_DEFEATED
+# 50 "data/maps/Route1/scripts.pory"
+	removeobject 3
+# 51 "data/maps/Route1/scripts.pory"
+	setflag FLAG_HIDE_OAK
+# 52 "data/maps/Route1/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 53 "data/maps/Route1/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 54 "data/maps/Route1/scripts.pory"
 	release
+# 55 "data/maps/Route1/scripts.pory"
+	end
+# 56 "data/maps/Route1/scripts.pory"
+
+# 57 "data/maps/Route1/scripts.pory"
+Route1_EventScript_NoOak::
 # 58 "data/maps/Route1/scripts.pory"
+	msgbox Route1_Text_NoOak
+# 59 "data/maps/Route1/scripts.pory"
+	release
+# 60 "data/maps/Route1/scripts.pory"
 	end
