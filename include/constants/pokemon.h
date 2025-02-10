@@ -91,7 +91,7 @@
 #define MON_DATA_SPEED2                   86
 #define MON_DATA_SPATK2                   87
 #define MON_DATA_SPDEF2                   88
-#define MON_DATA_DEAD                     89
+#define MON_DATA_FORME                    89
 
 #define BEST_IV_SPREAD_HIDDEN_POWER_BUG      {31, 31, 31, 30, 31, 30}
 #define BEST_IV_SPREAD_HIDDEN_POWER_DARK     {31, 31, 31, 31, 31, 31}
@@ -120,7 +120,6 @@
 #define WORST_IVS                1
 #define ABILITY_SLOT_1 3
 #define ABILITY_SLOT_2 1
-#define ABILITY_HIDDEN 2
 
 // Pokemon types
 #define TYPE_NONE           255

@@ -95,7 +95,7 @@ SixIsland_PatternBush_Text_Giovanni::
 	.string "however not all\l"
 	.string "got this message\l"
 	.string "and are still running\l"
-	.string "TEAM ROCKET.\$"
+	.string "TEAM ROCKET.\p"
 	.string "I still keep thinking\n"
 	.string "about what to do\l"
 	.string "about them. I saw my\l"

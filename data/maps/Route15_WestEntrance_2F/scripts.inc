@@ -1,7 +1,7 @@
 # 1 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 
 # 2 "data/maps/Route15_WestEntrance_2F/scripts.pory"
-.equ REQUIRED_CAUGHT_MONS, 50
+.equ REQUIRED_CAUGHT_MONS, 30
 # 3 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 
 # 4 "data/maps/Route15_WestEntrance_2F/scripts.pory"
@@ -69,9 +69,9 @@ Route15_WestEntrance_2F_EventScript_Aide::
 # 35 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 	msgbox Route15_WestEntrance_2F_Text_GreatHereYouGo
 # 36 "data/maps/Route15_WestEntrance_2F/scripts.pory"
-	setvar VAR_TEMP_1, SPECIES_SKARMORY
+	setvar VAR_TEMP_1, SPECIES_DEOXYS
 # 37 "data/maps/Route15_WestEntrance_2F/scripts.pory"
-	givemon SPECIES_SKARMORY, 40
+	givemon SPECIES_DEOXYS, 40
 # 38 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, Route15_WestEntrance_2F_ReceiveAideSkarmory
 # 39 "data/maps/Route15_WestEntrance_2F/scripts.pory"
@@ -97,7 +97,7 @@ Route15_WestEntrance_2F_ReceiveAideSkarmory::
 # 49 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 	waitfanfare
 # 50 "data/maps/Route15_WestEntrance_2F/scripts.pory"
-	bufferspeciesname STR_VAR_1, SPECIES_SKARMORY
+	bufferspeciesname STR_VAR_1, SPECIES_DEOXYS
 # 51 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
 # 52 "data/maps/Route15_WestEntrance_2F/scripts.pory"
@@ -125,7 +125,7 @@ Route15_WestEntrance_2F_ReceiveAideSkarmoryPC::
 # 63 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 	waitfanfare
 # 64 "data/maps/Route15_WestEntrance_2F/scripts.pory"
-	bufferspeciesname STR_VAR_1, SPECIES_SKARMORY
+	bufferspeciesname STR_VAR_1, SPECIES_DEOXYS
 # 65 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
 # 66 "data/maps/Route15_WestEntrance_2F/scripts.pory"
@@ -153,7 +153,7 @@ Route15_WestEntrance_2F_EventScript_GetAideRequestInfo::
 # 77 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 	buffernumberstring STR_VAR_1, REQUIRED_CAUGHT_MONS
 # 78 "data/maps/Route15_WestEntrance_2F/scripts.pory"
-	bufferitemname STR_VAR_2, SPECIES_SKARMORY
+	bufferitemname STR_VAR_2, SPECIES_DEOXYS
 # 79 "data/maps/Route15_WestEntrance_2F/scripts.pory"
 	return
 # 80 "data/maps/Route15_WestEntrance_2F/scripts.pory"

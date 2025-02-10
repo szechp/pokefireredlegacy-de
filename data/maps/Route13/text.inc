@@ -193,6 +193,6 @@ Route13_Text_YesRematchWhitney::
     .string "To my Cute Face!$"
 
 Route13_Text_RematchWhitneyPostBattle::
-    .string "Don't look at me!\P"
+    .string "Don't look at me!\p"
     .string "I'm not Crying this Time!$"
 

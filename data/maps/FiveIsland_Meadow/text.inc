@@ -67,7 +67,7 @@ FiveIsland_Meadow_Text_Beasts::
 	.string "someone worthy.\p"
 	.string "Someone who can catch all\n"
 	.string "three of the legendary\l"
-	.string "beasts—ENTEI, SUICUNE,\l"
+	.string "beasts: ENTEI, SUICUNE,\l"
 	.string "and RAIKOU.\p"
 	.string "If you can, I'll give you\n"
 	.string "the item!$"
@@ -89,4 +89,10 @@ FiveIsland_Meadow_Text_Beasts3::
 	.string "And I can see that\n"
 	.string "in you!$"
 
+FiveIsland_Meadow_Text_MayIHelpYou::
+	.string "Hey, you defeated the\n"
+	.string "SEVII CHAMPIONS!\p"
+	.string "You deserve to get\n"
+	.string "access to my list\l"
+	.string "of goods!$"
 

@@ -71,12 +71,17 @@ PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouFemale::
 	return
 
 PalletTown_PlayersHouse_1F_EventScript_MomHeal::
+	goto_if_set FLAG_IS_CHAMPION, PalletTown_PlayersHouse_1F_EventScript_MomChampion
 	msgbox PalletTown_PlayersHouse_1F_Text_YouShouldTakeQuickRest
 	closemessage
 	call EventScript_OutOfCenterPartyHeal
 	msgbox PalletTown_PlayersHouse_1F_Text_LookingGreatTakeCare
 	release
 	end
+
+PalletTown_PlayersHouse_1F_EventScript_MomChampion::
+	msgbox PalletTown_PlayersHouse_1F_Text_Champion
+	return
 
 @ Displays special text if interacted with from side or back (which are normally inaccessible)
 PalletTown_PlayersHouse_1F_EventScript_TV::

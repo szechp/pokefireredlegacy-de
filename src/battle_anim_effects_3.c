@@ -3139,9 +3139,21 @@ void AnimTask_RolePlaySilhouette(u8 taskId)
         if (gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies == SPECIES_NONE)
         {
             if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
+            {
                 species = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_SPECIES);
+                if(species == SPECIES_DEOXYS)
+                {
+                    personality = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_FORME);
+                }
+            }
             else
+            {
                 species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_SPECIES);
+                if(species == SPECIES_DEOXYS)
+                {
+                    personality = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_FORME);
+                }
+            } 
         }
         else
         {
@@ -3159,9 +3171,21 @@ void AnimTask_RolePlaySilhouette(u8 taskId)
         if (gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies == SPECIES_NONE)
         {
             if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
+            {
                 species = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_SPECIES);
+                if(species == SPECIES_DEOXYS)
+                {
+                    personality = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_FORME);
+                }
+            }
             else
+            {
                 species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_SPECIES);
+                if(species == SPECIES_DEOXYS)
+                {
+                    personality = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_FORME);
+                }
+            }
         }
         else
         {
@@ -5000,7 +5024,13 @@ void AnimTask_SnatchOpposingMonMove(u8 taskId)
                 personality = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimAttacker]], MON_DATA_PERSONALITY);
                 otId = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimAttacker]], MON_DATA_OT_ID);
                 if (gBattleSpritesDataPtr->battlerData[gBattleAnimAttacker].transformSpecies == SPECIES_NONE)
+                {
                     species = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimAttacker]], MON_DATA_SPECIES);
+                    if(species == SPECIES_DEOXYS)
+                    {
+                        personality = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimAttacker]], MON_DATA_FORME);
+                    }
+                }
                 else
                     species = gBattleSpritesDataPtr->battlerData[gBattleAnimAttacker].transformSpecies;
 
@@ -5013,7 +5043,13 @@ void AnimTask_SnatchOpposingMonMove(u8 taskId)
                 personality = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimAttacker]], MON_DATA_PERSONALITY);
                 otId = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimAttacker]], MON_DATA_OT_ID);
                 if (gBattleSpritesDataPtr->battlerData[gBattleAnimAttacker].transformSpecies == SPECIES_NONE)
+                {
                     species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimAttacker]], MON_DATA_SPECIES);
+                    if(species == SPECIES_DEOXYS)
+                    {
+                        personality = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimAttacker]], MON_DATA_FORME);
+                    }
+                }
                 else
                     species = gBattleSpritesDataPtr->battlerData[gBattleAnimAttacker].transformSpecies;
 

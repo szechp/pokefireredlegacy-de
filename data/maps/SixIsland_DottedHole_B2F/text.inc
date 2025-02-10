@@ -15,7 +15,7 @@ SixIsland_DottedHole_B2F_Text_SpeedyDefeat::
 
 SixIsland_DottedHole_B2F_Text_SpeedyPostBattle::
     .string "What an ELECTRODE!\p"
-    .string "You're The KANTO CHAMPION!\P"
+    .string "You're The KANTO CHAMPION!\p"
     .string "I guess that makes this\n"
     .string "Cave a little bit Better!$"
 

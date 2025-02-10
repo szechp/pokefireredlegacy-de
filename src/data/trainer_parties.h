@@ -1337,17 +1337,24 @@ static const struct TrainerMon sParty_Oak[] = {
 static const struct TrainerMon sParty_Oak2[] = {
     {
         .iv = 255,
-        .lvl = 78,
-        .species = SPECIES_SNORLAX,
-        .heldItem = ITEM_LEFTOVERS,
-        .moves = {MOVE_BODY_SLAM, MOVE_EARTHQUAKE, MOVE_CRUNCH, MOVE_CURSE},
-        .evs = {252, 0, 252, 0, 0, 0},
-
-
+        .lvl = 80,
+        .species = SPECIES_TAUROS,
+        .heldItem = ITEM_AGUAV_BERRY,
+        .moves = {MOVE_ROCK_TOMB, MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_IRON_TAIL},
+        .friendship = TRAINER_MON_FRIENDLY,
+        .evs = {0, 252, 0, 252, 0, 0},
     }, 
     {
         .iv = 255,
         .lvl = 79,
+        .species = SPECIES_SNORLAX,
+        .heldItem = ITEM_LEFTOVERS,
+        .moves = {MOVE_BODY_SLAM, MOVE_EARTHQUAKE, MOVE_CRUNCH, MOVE_CURSE},
+        .evs = {252, 0, 252, 0, 0, 0},
+    }, 
+    {
+        .iv = 255,
+        .lvl = 78,
         .species = SPECIES_ZAPDOS,
         .heldItem = ITEM_LEFTOVERS,
         .moves = {MOVE_SKY_ATTACK, MOVE_THUNDERBOLT, MOVE_LIGHT_SCREEN, MOVE_THUNDER_WAVE},
@@ -1355,7 +1362,7 @@ static const struct TrainerMon sParty_Oak2[] = {
     }, 
     {
         .iv = 255,
-        .lvl = 79,
+        .lvl = 78,
         .species = SPECIES_ARTICUNO,
         .heldItem = ITEM_LEFTOVERS,
         .moves = {MOVE_SKY_ATTACK, MOVE_ICE_BEAM, MOVE_TOXIC, MOVE_REFLECT},
@@ -1364,21 +1371,11 @@ static const struct TrainerMon sParty_Oak2[] = {
     }, 
     {
         .iv = 255,
-        .lvl = 79,
+        .lvl = 78,
         .species = SPECIES_MOLTRES,
         .heldItem = ITEM_FOCUS_BAND,
         .moves = {MOVE_SKY_ATTACK, MOVE_FIRE_BLAST, MOVE_AGILITY, MOVE_EXTRASENSORY},
         .evs = {0, 0, 0, 252, 252, 0},
-
-    }, 
-    {
-        .iv = 255,
-        .lvl = 80,
-        .species = SPECIES_TAUROS,
-        .heldItem = ITEM_FOCUS_BAND,
-        .moves = {MOVE_ROCK_TOMB, MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_IRON_TAIL},
-        .friendship = TRAINER_MON_FRIENDLY,
-        .evs = {0, 252, 0, 252, 0, 0},
 
     }, 
     {

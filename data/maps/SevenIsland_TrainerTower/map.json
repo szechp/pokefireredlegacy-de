@@ -16,7 +16,7 @@
   "connections": [
     {
       "map": "MAP_SEVEN_ISLAND",
-      "offset": 48,
+      "offset": 20,
       "direction": "down"
     }
   ],

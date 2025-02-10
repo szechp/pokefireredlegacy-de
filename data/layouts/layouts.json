@@ -2824,7 +2824,7 @@
     {
       "id": "LAYOUT_SEVEN_ISLAND_TRAINER_TOWER",
       "name": "SevenIsland_TrainerTower_Layout",
-      "width": 120,
+      "width": 50,
       "height": 40,
       "border_width": 2,
       "border_height": 2,

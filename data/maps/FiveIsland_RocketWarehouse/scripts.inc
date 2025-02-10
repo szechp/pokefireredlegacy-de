@@ -381,7 +381,7 @@ FiveIsland_RocketWarehouse_EventScript_Clerk::
 # 191 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	faceplayer
 # 192 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	message Text_MayIHelpYou
+	message FiveIsland_RocketWarehouse_Text_Clerk
 # 193 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	waitmessage
 # 194 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"

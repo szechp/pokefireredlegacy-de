@@ -57,32 +57,44 @@ PewterCity_Museum_2F_EventScript_SpaceShuttle::
 # 29 "data/maps/PewterCity_Museum_2F/scripts.pory"
 PewterCity_Museum_2F_EventScript_MoonStone::
 # 30 "data/maps/PewterCity_Museum_2F/scripts.pory"
-	msgbox PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon, MSGBOX_SIGN
+	callnative SetFirstDeoxysForm
 # 31 "data/maps/PewterCity_Museum_2F/scripts.pory"
-	end
+	msgbox PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon, MSGBOX_SIGN
 # 32 "data/maps/PewterCity_Museum_2F/scripts.pory"
-
-# 33 "data/maps/PewterCity_Museum_2F/scripts.pory"
-PewterCity_Museum_2F_EventScript_AuroraGuy::
-# 34 "data/maps/PewterCity_Museum_2F/scripts.pory"
-	msgbox PewterCity_Museum_1F_Text_EliteTicket, MSGBOX_NPC
-# 35 "data/maps/PewterCity_Museum_2F/scripts.pory"
-	special GetDeoxys
-# 36 "data/maps/PewterCity_Museum_2F/scripts.pory"
-	call_if_eq VAR_RESULT, TRUE, PewterCity_Museum_2F_EventScript_AuroraGuyTicket
-# 37 "data/maps/PewterCity_Museum_2F/scripts.pory"
-	release
-# 38 "data/maps/PewterCity_Museum_2F/scripts.pory"
 	end
-# 39 "data/maps/PewterCity_Museum_2F/scripts.pory"
+# 33 "data/maps/PewterCity_Museum_2F/scripts.pory"
 
+# 34 "data/maps/PewterCity_Museum_2F/scripts.pory"
+PewterCity_Museum_2F_EventScript_AuroraGuy::
+# 35 "data/maps/PewterCity_Museum_2F/scripts.pory"
+	goto_if_set FLAG_ENABLE_SHIP_BIRTH_ISLAND, PewterCity_Museum_2F_EventScript_AuroraGuyExplain
+# 36 "data/maps/PewterCity_Museum_2F/scripts.pory"
+	msgbox PewterCity_Museum_1F_Text_EliteTicket, MSGBOX_NPC
+# 37 "data/maps/PewterCity_Museum_2F/scripts.pory"
+	special GetDeoxys
+# 38 "data/maps/PewterCity_Museum_2F/scripts.pory"
+	call_if_eq VAR_RESULT, TRUE, PewterCity_Museum_2F_EventScript_AuroraGuyTicket
+# 39 "data/maps/PewterCity_Museum_2F/scripts.pory"
+	release
 # 40 "data/maps/PewterCity_Museum_2F/scripts.pory"
-PewterCity_Museum_2F_EventScript_AuroraGuyTicket::
+	end
 # 41 "data/maps/PewterCity_Museum_2F/scripts.pory"
-	msgbox PewterCity_Museum_1F_Text_Ticket, MSGBOX_NPC
+
 # 42 "data/maps/PewterCity_Museum_2F/scripts.pory"
-	giveitem ITEM_AURORA_TICKET
+PewterCity_Museum_2F_EventScript_AuroraGuyTicket::
 # 43 "data/maps/PewterCity_Museum_2F/scripts.pory"
-	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
+	msgbox PewterCity_Museum_1F_Text_Ticket, MSGBOX_NPC
 # 44 "data/maps/PewterCity_Museum_2F/scripts.pory"
+	giveitem ITEM_AURORA_TICKET
+# 45 "data/maps/PewterCity_Museum_2F/scripts.pory"
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
+# 46 "data/maps/PewterCity_Museum_2F/scripts.pory"
+	end
+# 47 "data/maps/PewterCity_Museum_2F/scripts.pory"
+
+# 48 "data/maps/PewterCity_Museum_2F/scripts.pory"
+PewterCity_Museum_2F_EventScript_AuroraGuyExplain::
+# 49 "data/maps/PewterCity_Museum_2F/scripts.pory"
+	msgbox PewterCity_Museum_1F_Text_ExplainTicket, MSGBOX_NPC
+# 50 "data/maps/PewterCity_Museum_2F/scripts.pory"
 	end

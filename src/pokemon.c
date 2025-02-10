@@ -1637,30 +1637,111 @@ static const u16 sHMMoves[] =
     MOVE_ROCK_SMASH, MOVE_WATERFALL, MOVE_DIVE, HM_MOVES_END
 };
 
-#if defined(FIRERED)
-// Attack forme
-static const u16 sDeoxysBaseStats[] = 
-{
-    [STAT_HP]    = 50,
-    [STAT_ATK]   = 180,
-    [STAT_DEF]   = 20,
-    [STAT_SPEED] = 150,
-    [STAT_SPATK] = 180,
-    [STAT_SPDEF] = 20,
+static const u16 sDeoxysBaseStats[][6] = {
+    {   //Normal Forme
+        [STAT_HP]    = 50,
+        [STAT_ATK]   = 150,
+        [STAT_DEF]   = 50,
+        [STAT_SPEED] = 150,
+        [STAT_SPATK] = 150,
+        [STAT_SPDEF] = 50
+    },
+    {   //Attack Forme
+        [STAT_HP]    = 50,
+        [STAT_ATK]   = 180,
+        [STAT_DEF]   = 20,
+        [STAT_SPEED] = 150,
+        [STAT_SPATK] = 180,
+        [STAT_SPDEF] = 20
+    },
+    {   //Defense Forme
+        [STAT_HP]    = 50,
+        [STAT_ATK]   = 70,
+        [STAT_DEF]   = 160,
+        [STAT_SPEED] = 90,
+        [STAT_SPATK] = 70,
+        [STAT_SPDEF] = 160
+    },
+    {   //Speed Forme
+        [STAT_HP]    = 50,
+        [STAT_ATK]   = 95,
+        [STAT_DEF]   = 90,
+        [STAT_SPEED] = 180,
+        [STAT_SPATK] = 95,
+        [STAT_SPDEF] = 90
+    }
 };
-#elif defined(LEAFGREEN)
-// Defense forme
-static const u16 sDeoxysBaseStats[] =
-{
-    [STAT_HP]    = 50,
-    [STAT_ATK]   = 70,
-    [STAT_DEF]   = 160,
-    [STAT_SPEED] = 90,
-    [STAT_SPATK] = 70,
-    [STAT_SPDEF] = 160,
-};
-#endif
 
+static const u16 sDeoxysLevelUpLearnsets[][15] = {
+    { //Normal Forme
+        LEVEL_UP_MOVE( 1, MOVE_LEER),
+        LEVEL_UP_MOVE( 1, MOVE_LEER),
+        LEVEL_UP_MOVE( 1, MOVE_LEER),
+        LEVEL_UP_MOVE( 1, MOVE_WRAP),
+        LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
+        LEVEL_UP_MOVE(10, MOVE_TELEPORT),
+        LEVEL_UP_MOVE(15, MOVE_KNOCK_OFF),
+        LEVEL_UP_MOVE(20, MOVE_PURSUIT),
+        LEVEL_UP_MOVE(25, MOVE_PSYCHIC),
+        LEVEL_UP_MOVE(30, MOVE_SNATCH),
+        LEVEL_UP_MOVE(35, MOVE_COSMIC_POWER),
+        LEVEL_UP_MOVE(40, MOVE_RECOVER),
+        LEVEL_UP_MOVE(45, MOVE_PSYCHO_BOOST),
+        LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+        LEVEL_UP_END
+    },
+    { //Attack Forme
+        LEVEL_UP_MOVE( 1, MOVE_LEER),
+        LEVEL_UP_MOVE( 1, MOVE_LEER),
+        LEVEL_UP_MOVE( 1, MOVE_LEER),
+        LEVEL_UP_MOVE( 1, MOVE_WRAP),
+        LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
+        LEVEL_UP_MOVE(10, MOVE_TELEPORT),
+        LEVEL_UP_MOVE(15, MOVE_TAUNT),
+        LEVEL_UP_MOVE(20, MOVE_PURSUIT),
+        LEVEL_UP_MOVE(25, MOVE_PSYCHIC),
+        LEVEL_UP_MOVE(30, MOVE_SUPERPOWER),
+        LEVEL_UP_MOVE(35, MOVE_COSMIC_POWER),
+        LEVEL_UP_MOVE(40, MOVE_ZAP_CANNON),
+        LEVEL_UP_MOVE(45, MOVE_PSYCHO_BOOST),
+        LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+        LEVEL_UP_END
+    },
+    { //Defense Forme
+        LEVEL_UP_MOVE( 1, MOVE_LEER),
+        LEVEL_UP_MOVE( 1, MOVE_WRAP),
+        LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
+        LEVEL_UP_MOVE(10, MOVE_TELEPORT),
+        LEVEL_UP_MOVE(15, MOVE_KNOCK_OFF),
+        LEVEL_UP_MOVE(20, MOVE_SPIKES),
+        LEVEL_UP_MOVE(25, MOVE_PSYCHIC),
+        LEVEL_UP_MOVE(30, MOVE_SNATCH),
+        LEVEL_UP_MOVE(35, MOVE_IRON_DEFENSE),
+        LEVEL_UP_MOVE(35, MOVE_AMNESIA),
+        LEVEL_UP_MOVE(40, MOVE_RECOVER),
+        LEVEL_UP_MOVE(45, MOVE_PSYCHO_BOOST),
+        LEVEL_UP_MOVE(50, MOVE_COUNTER),
+        LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
+        LEVEL_UP_END
+    },
+    { //Speed Forme
+        LEVEL_UP_MOVE( 1, MOVE_LEER),
+        LEVEL_UP_MOVE( 1, MOVE_LEER),
+        LEVEL_UP_MOVE( 1, MOVE_LEER),
+        LEVEL_UP_MOVE( 1, MOVE_WRAP),
+        LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
+        LEVEL_UP_MOVE(10, MOVE_DOUBLE_TEAM),
+        LEVEL_UP_MOVE(15, MOVE_KNOCK_OFF),
+        LEVEL_UP_MOVE(20, MOVE_PURSUIT),
+        LEVEL_UP_MOVE(25, MOVE_PSYCHIC),
+        LEVEL_UP_MOVE(30, MOVE_SWIFT),
+        LEVEL_UP_MOVE(35, MOVE_AGILITY),
+        LEVEL_UP_MOVE(40, MOVE_RECOVER),
+        LEVEL_UP_MOVE(45, MOVE_PSYCHO_BOOST),
+        LEVEL_UP_MOVE(50, MOVE_EXTREME_SPEED),
+        LEVEL_UP_END
+    }
+};
 // The classes used by other players in the Union Room.
 // These should correspond with the overworld graphics in sUnionRoomObjGfxIds
 const u16 gUnionRoomFacilityClasses[NUM_UNION_ROOM_CLASSES * GENDER_COUNT] = 
@@ -2302,20 +2383,42 @@ static void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon)
     s32 level = GetLevelFromBoxMonExp(boxMon);
     s32 i;
 
-    for (i = 0; gLevelUpLearnsets[species][i] != LEVEL_UP_END; i++)
+    u8 deoxysForme;
+    if(species == SPECIES_DEOXYS)
     {
-        u16 moveLevel;
-        u16 move;
+        deoxysForme = GetBoxMonData(boxMon, MON_DATA_FORME, NULL);
+        for (i = 0; sDeoxysLevelUpLearnsets[deoxysForme][i] != LEVEL_UP_END; i++)
+        {
+            u16 moveLevel;
+            u16 move;
 
-        moveLevel = (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_LV);
+            moveLevel = (sDeoxysLevelUpLearnsets[deoxysForme][i] & LEVEL_UP_MOVE_LV);
 
-        if (moveLevel > (level << 9))
-            break;
+            if (moveLevel > (level << 9))
+                break;
 
-        move = (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID);
+            move = (sDeoxysLevelUpLearnsets[deoxysForme][i] & LEVEL_UP_MOVE_ID);
+            if (GiveMoveToBoxMon(boxMon, move) == MON_HAS_MAX_MOVES)
+                DeleteFirstMoveAndGiveMoveToBoxMon(boxMon, move);
+        }
+    }
+    else
+    {
+        for (i = 0; gLevelUpLearnsets[species][i] != LEVEL_UP_END; i++)
+        {
+            u16 moveLevel;
+            u16 move;
 
-        if (GiveMoveToBoxMon(boxMon, move) == MON_HAS_MAX_MOVES)
-            DeleteFirstMoveAndGiveMoveToBoxMon(boxMon, move);
+            moveLevel = (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_LV);
+
+            if (moveLevel > (level << 9))
+                break;
+
+            move = (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID);
+
+            if (GiveMoveToBoxMon(boxMon, move) == MON_HAS_MAX_MOVES)
+                DeleteFirstMoveAndGiveMoveToBoxMon(boxMon, move);
+        }
     }
 }
 
@@ -2324,31 +2427,57 @@ u16 MonTryLearningNewMove(struct Pokemon *mon, bool8 firstMove)
     u32 retVal = MOVE_NONE;
     u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
     u8 level = GetMonData(mon, MON_DATA_LEVEL, NULL);
+    u8 deoxysForme;
 
-    // since you can learn more than one move per level
-    // the game needs to know whether you decided to
-    // learn it or keep the old set to avoid asking
-    // you to learn the same move over and over again
-    if (firstMove)
+    if(species == SPECIES_DEOXYS)
     {
-        sLearningMoveTableID = 0;
-
-        while ((gLevelUpLearnsets[species][sLearningMoveTableID] & LEVEL_UP_MOVE_LV) != (level << 9))
+        deoxysForme = GetMonData(mon, MON_DATA_FORME, NULL);
+        if (firstMove)
         {
+            sLearningMoveTableID = 0;
+
+            while ((sDeoxysLevelUpLearnsets[deoxysForme][sLearningMoveTableID] & 0xFE00) != (level << 9))
+            {
+                sLearningMoveTableID++;
+                if (sDeoxysLevelUpLearnsets[deoxysForme][sLearningMoveTableID] == LEVEL_UP_END)
+                    return 0;
+            }
+        }
+
+        if ((sDeoxysLevelUpLearnsets[deoxysForme][sLearningMoveTableID] & 0xFE00) == (level << 9))
+        {
+            gMoveToLearn = (sDeoxysLevelUpLearnsets[deoxysForme][sLearningMoveTableID] & 0x1FF);
             sLearningMoveTableID++;
-            if (gLevelUpLearnsets[species][sLearningMoveTableID] == LEVEL_UP_END)
-                return MOVE_NONE;
+            retVal = GiveMoveToMon(mon, gMoveToLearn);
         }
     }
-
-    if ((gLevelUpLearnsets[species][sLearningMoveTableID] & LEVEL_UP_MOVE_LV) == (level << 9))
+    else
     {
-        gMoveToLearn = (gLevelUpLearnsets[species][sLearningMoveTableID] & LEVEL_UP_MOVE_ID);
-        sLearningMoveTableID++;
-        retVal = GiveMoveToMon(mon, gMoveToLearn);
-    }
+        // since you can learn more than one move per level
+        // the game needs to know whether you decided to
+        // learn it or keep the old set to avoid asking
+        // you to learn the same move over and over again
+        if (firstMove)
+        {
+            sLearningMoveTableID = 0;
 
-    return retVal;
+            while ((gLevelUpLearnsets[species][sLearningMoveTableID] & LEVEL_UP_MOVE_LV) != (level << 9))
+            {
+                sLearningMoveTableID++;
+                if (gLevelUpLearnsets[species][sLearningMoveTableID] == LEVEL_UP_END)
+                    return MOVE_NONE;
+            }
+        }
+
+        if ((gLevelUpLearnsets[species][sLearningMoveTableID] & LEVEL_UP_MOVE_LV) == (level << 9))
+        {
+            gMoveToLearn = (gLevelUpLearnsets[species][sLearningMoveTableID] & LEVEL_UP_MOVE_ID);
+            sLearningMoveTableID++;
+            retVal = GiveMoveToMon(mon, gMoveToLearn);
+        }
+
+        return retVal;
+    }
 }
 
 void DeleteFirstMoveAndGiveMoveToMon(struct Pokemon *mon, u16 move)
@@ -3362,6 +3491,9 @@ u32 GetBoxMonData(struct BoxPokemon *boxMon, s32 field, u8 *data)
                 | (substruct3->worldRibbon << 26);
         }
         break;
+    case MON_DATA_FORME:
+        retVal = substruct0->forme;
+        break;
     default:
         break;
     }
@@ -3702,6 +3834,12 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         substruct3->speedIV = (ivs >> 15) & MAX_IV_MASK;
         substruct3->spAttackIV = (ivs >> 20) & MAX_IV_MASK;
         substruct3->spDefenseIV = (ivs >> 25) & MAX_IV_MASK;
+        break;
+    }
+    case MON_DATA_FORME:
+    {
+        u8 forme = *data;
+        substruct0->forme = forme;
         break;
     }
     default:
@@ -5810,37 +5948,69 @@ u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
     u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
     u8 level = GetMonData(mon, MON_DATA_LEVEL, NULL);
     int i, j, k;
+    u8 deoxysForme;
 
     for (i = 0; i < MAX_MON_MOVES; i++)
         learnedMoves[i] = GetMonData(mon, MON_DATA_MOVE1 + i, NULL);
 
-    for (i = 0; i < MAX_LEVEL_UP_MOVES; i++)
-    {
-        u16 moveLevel;
-
-        if (gLevelUpLearnsets[species][i] == LEVEL_UP_END)
-            break;
-
-        moveLevel = gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_LV;
-
-        if (moveLevel <= (level << 9))
+        if(species == SPECIES_DEOXYS)
         {
-            for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID); j++)
-                ;
-
-            if (j == MAX_MON_MOVES)
+            deoxysForme = GetMonData(mon, MON_DATA_FORME, 0);
+            for (i = 0; i < 20; i++)
             {
-                for (k = 0; k < numMoves && moves[k] != (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID); k++)
-                    ;
-
-                if (k == numMoves)
-                    moves[numMoves++] = gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID;
+                u16 moveLevel;
+    
+                if (sDeoxysLevelUpLearnsets[deoxysForme][i] == LEVEL_UP_END)
+                    break;
+    
+                moveLevel = sDeoxysLevelUpLearnsets[deoxysForme][i] & LEVEL_UP_MOVE_LV;
+    
+                if (moveLevel <= (level << 9))
+                {
+                    for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != (sDeoxysLevelUpLearnsets[deoxysForme][i] & LEVEL_UP_MOVE_ID); j++)
+                        ;
+    
+                    if (j == MAX_MON_MOVES)
+                    {
+                        for (k = 0; k < numMoves && moves[k] != (sDeoxysLevelUpLearnsets[deoxysForme][i] & LEVEL_UP_MOVE_ID); k++)
+                            ;
+    
+                        if (k == numMoves)
+                            moves[numMoves++] = sDeoxysLevelUpLearnsets[deoxysForme][i] & LEVEL_UP_MOVE_ID;
+                    }
+                }
             }
         }
+        else
+        {
+            for (i = 0; i < 20; i++)
+            {
+                u16 moveLevel;
+    
+                if (gLevelUpLearnsets[species][i] == LEVEL_UP_END)
+                    break;
+    
+                moveLevel = gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_LV;
+    
+                if (moveLevel <= (level << 9))
+                {
+                    for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID); j++)
+                        ;
+    
+                    if (j == MAX_MON_MOVES)
+                    {
+                        for (k = 0; k < numMoves && moves[k] != (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID); k++)
+                            ;
+    
+                        if (k == numMoves)
+                            moves[numMoves++] = gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID;
+                    }
+                }
+            }
+        }
+    
+        return numMoves;
     }
-
-    return numMoves;
-}
 
 u8 GetLevelUpMovesBySpecies(u16 species, u16 *moves)
 {
@@ -5861,6 +6031,7 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
     u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, NULL);
     u8 level = GetMonData(mon, MON_DATA_LEVEL, NULL);
     int i, j, k;
+    u8 deoxysForme;
 
     if (species == SPECIES_EGG)
         return 0;
@@ -5868,27 +6039,58 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
     for (i = 0; i < MAX_MON_MOVES; i++)
         learnedMoves[i] = GetMonData(mon, MON_DATA_MOVE1 + i, NULL);
 
-    for (i = 0; i < MAX_LEVEL_UP_MOVES; i++)
+    if(species == SPECIES_DEOXYS)
     {
-        u16 moveLevel;
-
-        if (gLevelUpLearnsets[species][i] == LEVEL_UP_END)
-            break;
-
-        moveLevel = gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_LV;
-
-        if (moveLevel <= (level << 9))
+        deoxysForme = GetMonData(mon, MON_DATA_FORME, 0);
+        for (i = 0; i < MAX_LEVEL_UP_MOVES; i++)
         {
-            for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID); j++)
-                ;
+            u16 moveLevel;
 
-            if (j == MAX_MON_MOVES)
+            if (sDeoxysLevelUpLearnsets[deoxysForme][i] == LEVEL_UP_END)
+                break;
+
+            moveLevel = sDeoxysLevelUpLearnsets[deoxysForme][i] & LEVEL_UP_MOVE_LV;
+
+            if (moveLevel <= (level << 9))
             {
-                for (k = 0; k < numMoves && moves[k] != (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID); k++)
+                for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != (sDeoxysLevelUpLearnsets[deoxysForme][i] & LEVEL_UP_MOVE_ID); j++)
                     ;
 
-                if (k == numMoves)
-                    moves[numMoves++] = gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID;
+                if (j == MAX_MON_MOVES)
+                {
+                    for (k = 0; k < numMoves && moves[k] != (sDeoxysLevelUpLearnsets[deoxysForme][i] & LEVEL_UP_MOVE_ID); k++)
+                        ;
+
+                    if (k == numMoves)
+                        moves[numMoves++] = sDeoxysLevelUpLearnsets[deoxysForme][i] & LEVEL_UP_MOVE_ID;
+                }
+            }
+        }
+    }
+    else
+    {
+        for (i = 0; i < MAX_LEVEL_UP_MOVES; i++)
+        {
+            u16 moveLevel;
+
+            if (gLevelUpLearnsets[species][i] == LEVEL_UP_END)
+                break;
+
+            moveLevel = gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_LV;
+
+            if (moveLevel <= (level << 9))
+            {
+                for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID); j++)
+                    ;
+
+                if (j == MAX_MON_MOVES)
+                {
+                    for (k = 0; k < numMoves && moves[k] != (gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID); k++)
+                        ;
+
+                    if (k == numMoves)
+                        moves[numMoves++] = gLevelUpLearnsets[species][i] & LEVEL_UP_MOVE_ID;
+                }
             }
         }
     }
@@ -6219,27 +6421,27 @@ bool8 ShouldIgnoreDeoxysForm(u8 caseId, u8 battlerId)
     case DEOXYS_CHECK_BATTLE_ANIM:
         if (gBattleTypeFlags & BATTLE_TYPE_LINK)
         {
-            if (!gMain.inBattle)
-                return FALSE;
-            if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
-            {
-                if (gLinkPlayers[GetMultiplayerId()].id == battlerId)
+                if (!gMain.inBattle)
                     return FALSE;
+                if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
+                {
+                    if (gLinkPlayers[GetMultiplayerId()].id == battlerId)
+                        return FALSE;
+                }
+                else
+                {
+                    if (GetBattlerSide(battlerId) == B_SIDE_PLAYER)
+                        return FALSE;
+                }
             }
             else
             {
+                if (!gMain.inBattle)
+                    return FALSE;
                 if (GetBattlerSide(battlerId) == B_SIDE_PLAYER)
                     return FALSE;
             }
-        }
-        else
-        {
-            if (!gMain.inBattle)
-                return FALSE;
-            if (GetBattlerSide(battlerId) == B_SIDE_PLAYER)
-                return FALSE;
-        }
-        break;
+            break;
     }
 
     return TRUE;
@@ -6250,15 +6452,21 @@ static u16 GetDeoxysStat(struct Pokemon *mon, s32 statId)
     s32 ivVal, evVal;
     u16 statValue = 0;
     u8 nature;
+    u8 forme;
 
     if (gBattleTypeFlags & BATTLE_TYPE_LINK_IN_BATTLE || GetMonData(mon, MON_DATA_SPECIES, NULL) != SPECIES_DEOXYS)
+    {
         return 0;
-
-    ivVal = GetMonData(mon, MON_DATA_HP_IV + statId, NULL);
-    evVal = GetMonData(mon, MON_DATA_HP_EV + statId, NULL);
-    statValue = ((sDeoxysBaseStats[statId] * 2 + ivVal + evVal / 4) * mon->level) / 100 + 5;
-    nature = GetNature(mon);
-    statValue = ModifyStatByNature(nature, statValue, (u8)statId);
+    }
+    else
+    {
+        forme = GetMonData(mon, MON_DATA_FORME, NULL);
+        ivVal = GetMonData(mon, MON_DATA_HP_IV + statId, NULL);
+        evVal = GetMonData(mon, MON_DATA_HP_EV + statId, NULL);
+        statValue = ((sDeoxysBaseStats[forme][statId] * 2 + ivVal + evVal / 4) * mon->level) / 100 + 5;
+        nature = GetNature(mon);
+        statValue = ModifyStatByNature(nature, statValue, (u8)statId);
+    }
     return statValue;
 }
 
@@ -6592,3 +6800,26 @@ u16 GetSpeedEV(void)
 	return GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPEED_EV, NULL);
 }
 
+void SetFirstDeoxysForm(void)
+{
+    #define SPECIES_DEOXYS 410
+    u32 i;
+    u8 forme;
+    for(i = 0; i < 6; i++)
+    {
+        if(GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL) == SPECIES_DEOXYS)
+        {
+            forme = GetMonData(&gPlayerParty[i], MON_DATA_FORME, NULL);
+            if(forme == 3)
+            {
+                forme = 0;
+            }
+            else
+            {
+                forme += 1;
+            }
+            SetMonData(&gPlayerParty[i], MON_DATA_FORME, &forme);
+            break;
+        }
+    }
+}

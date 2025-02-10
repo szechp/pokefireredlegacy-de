@@ -184,3 +184,10 @@ FiveIsland_RocketWarehouse_Text_CelebiQuest::
     .string "Canyon, Natu down the Cave\l"  
     .string "of Mystery, and Onix to\l"  
     .string "his own island.$"  
+
+FiveIsland_RocketWarehouse_Text_Clerk::
+	.string "Hey, you defeated the\n"
+	.string "JOHTO LEADERS!\p"
+	.string "You deserve to get\n"
+	.string "access to my list\l"
+	.string "of goods!$"

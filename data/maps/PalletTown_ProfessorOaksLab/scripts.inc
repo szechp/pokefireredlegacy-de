@@ -1643,7 +1643,7 @@ PalletTown_ProfessorOaksLab_EventScript_DexCompleted::
 # 822 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
 	setflag SHOWED_OAK_COMPLETE_DEX
 # 823 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	msgbox PokemonMansion_1F_Text_OakPostBattle
+	msgbox PokedexRating_Text_ThankYouMadeDreamReality2
 # 824 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
 	setflag FLAG_HIDE_OAK_IN_HIS_LAB
 # 825 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"

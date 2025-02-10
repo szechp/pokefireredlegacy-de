@@ -125,7 +125,7 @@ FiveIsland_Meadow_EventScript_Clerk::
 # 63 "data/maps/FiveIsland_Meadow/scripts.pory"
 	faceplayer
 # 64 "data/maps/FiveIsland_Meadow/scripts.pory"
-	message Text_MayIHelpYou
+	message FiveIsland_Meadow_Text_MayIHelpYou
 # 65 "data/maps/FiveIsland_Meadow/scripts.pory"
 	waitmessage
 # 66 "data/maps/FiveIsland_Meadow/scripts.pory"
@@ -183,26 +183,36 @@ FiveIsland_Meadow_Items::
 # 92 "data/maps/FiveIsland_Meadow/scripts.pory"
 FiveIsland_Meadow_EventScript_Beast::
 # 93 "data/maps/FiveIsland_Meadow/scripts.pory"
-	msgbox FiveIsland_Meadow_Text_Beasts, MSGBOX_NPC
+	goto_if_set FLAG_ENABLE_SHIP_NAVEL_ROCK, FiveIsland_Meadow_EventScript_Beast3
 # 94 "data/maps/FiveIsland_Meadow/scripts.pory"
-	special RoamingBeasts
+	msgbox FiveIsland_Meadow_Text_Beasts, MSGBOX_NPC
 # 95 "data/maps/FiveIsland_Meadow/scripts.pory"
-	call_if_eq VAR_RESULT, TRUE, FiveIsland_Meadow_EventScript_GiveTicket
+	special RoamingBeasts
 # 96 "data/maps/FiveIsland_Meadow/scripts.pory"
-	release
+	call_if_eq VAR_RESULT, TRUE, FiveIsland_Meadow_EventScript_GiveTicket
 # 97 "data/maps/FiveIsland_Meadow/scripts.pory"
-	end
+	release
 # 98 "data/maps/FiveIsland_Meadow/scripts.pory"
-
+	end
 # 99 "data/maps/FiveIsland_Meadow/scripts.pory"
-FiveIsland_Meadow_EventScript_GiveTicket::
+
 # 100 "data/maps/FiveIsland_Meadow/scripts.pory"
-	msgbox FiveIsland_Meadow_Text_Beasts2, 
+FiveIsland_Meadow_EventScript_GiveTicket::
 # 101 "data/maps/FiveIsland_Meadow/scripts.pory"
-	giveitem ITEM_MYSTIC_TICKET
+	msgbox FiveIsland_Meadow_Text_Beasts2, 
 # 102 "data/maps/FiveIsland_Meadow/scripts.pory"
-	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
+	giveitem ITEM_MYSTIC_TICKET
 # 103 "data/maps/FiveIsland_Meadow/scripts.pory"
-	releaseall
+	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
 # 104 "data/maps/FiveIsland_Meadow/scripts.pory"
+	releaseall
+# 105 "data/maps/FiveIsland_Meadow/scripts.pory"
+	end
+# 106 "data/maps/FiveIsland_Meadow/scripts.pory"
+
+# 107 "data/maps/FiveIsland_Meadow/scripts.pory"
+FiveIsland_Meadow_EventScript_Beast3::
+# 108 "data/maps/FiveIsland_Meadow/scripts.pory"
+	msgbox FiveIsland_Meadow_Text_Beasts2, MSGBOX_NPC
+# 109 "data/maps/FiveIsland_Meadow/scripts.pory"
 	end

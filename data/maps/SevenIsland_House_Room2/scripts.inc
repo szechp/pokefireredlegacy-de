@@ -128,3 +128,11 @@ SevenIsland_House_Room2_EventScript_EVCheck::
 	release
 # 65 "data/maps/SevenIsland_House_Room2/scripts.pory"
 	end
+# 66 "data/maps/SevenIsland_House_Room2/scripts.pory"
+
+# 67 "data/maps/SevenIsland_House_Room2/scripts.pory"
+SevenIsland_House_Room2_EventScript_BaldMan::
+# 68 "data/maps/SevenIsland_House_Room2/scripts.pory"
+	msgbox SevenIsland_House_Room2_Text_BaldMan, MSGBOX_NPC
+# 69 "data/maps/SevenIsland_House_Room2/scripts.pory"
+	end
