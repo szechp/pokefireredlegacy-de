@@ -12296,7 +12296,7 @@
               {
                 "min_level": 47,
                 "max_level": 47,
-                "species": "SPECIES_GIRAFARIG"
+                "species": "SPECIES_STANTLER"
               },
               {
                 "min_level": 47,
@@ -12306,7 +12306,7 @@
               {
                 "min_level": 47,
                 "max_level": 47,
-                "species": "SPECIES_GIRAFARIG"
+                "species": "SPECIES_STANTLER"
               }
             ]
           },
@@ -12480,7 +12480,7 @@
               {
                 "min_level": 47,
                 "max_level": 47,
-                "species": "SPECIES_GIRAFARIG"
+                "species": "SPECIES_STANTLER"
               },
               {
                 "min_level": 47,
@@ -12490,7 +12490,7 @@
               {
                 "min_level": 47,
                 "max_level": 47,
-                "species": "SPECIES_GIRAFARIG"
+                "species": "SPECIES_STANTLER"
               }
             ]
           },
@@ -13593,7 +13593,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
+                "species": "SPECIES_SMEARGLE"
               },
               {
                 "min_level": 35,
@@ -13662,7 +13662,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DUNSPARCE"
+                "species": "SPECIES_SMEARGLE"
               },
               {
                 "min_level": 35,
@@ -14075,7 +14075,7 @@
                 "species": "SPECIES_MILTANK"
               },
               {
-                "min_level": 45,
+                "min_level": 50,
                 "max_level": 50,
                 "species": "SPECIES_STANTLER"
               },
@@ -14085,14 +14085,14 @@
                 "species": "SPECIES_AIPOM"
               },
               {
-                "min_level": 47,
+                "min_level": 50,
                 "max_level": 50,
                 "species": "SPECIES_STANTLER"
               },
               {
-                "min_level": 47,
+                "min_level": 50,
                 "max_level": 50,
-                "species": "SPECIES_AIPOM"
+                "species": "SPECIES_SUDOWOODO"
               }
             ]
           },
@@ -14229,7 +14229,7 @@
                 "species": "SPECIES_MILTANK"
               },
               {
-                "min_level": 45,
+                "min_level": 50,
                 "max_level": 50,
                 "species": "SPECIES_STANTLER"
               },
@@ -14239,14 +14239,14 @@
                 "species": "SPECIES_AIPOM"
               },
               {
-                "min_level": 47,
+                "min_level": 50,
                 "max_level": 50,
                 "species": "SPECIES_STANTLER"
               },
               {
-                "min_level": 47,
+                "min_level": 50,
                 "max_level": 50,
-                "species": "SPECIES_AIPOM"
+                "species": "SPECIES_SUDOWOODO"
               }
             ]
           },
@@ -15362,7 +15362,7 @@
               {
                 "min_level": 49,
                 "max_level": 49,
-                "species": "SPECIES_SUDOWOODO"
+                "species": "SPECIES_GIRAFARIG"
               },
               {
                 "min_level": 34,
@@ -15372,7 +15372,7 @@
               {
                 "min_level": 52,
                 "max_level": 52,
-                "species": "SPECIES_SUDOWOODO"
+                "species": "SPECIES_GIRAFARIG"
               }
             ]
           },
@@ -15516,7 +15516,7 @@
               {
                 "min_level": 49,
                 "max_level": 49,
-                "species": "SPECIES_SUDOWOODO"
+                "species": "SPECIES_GIRAFARIG"
               },
               {
                 "min_level": 34,
@@ -15526,7 +15526,7 @@
               {
                 "min_level": 52,
                 "max_level": 52,
-                "species": "SPECIES_SUDOWOODO"
+                "species": "SPECIES_GIRAFARIG"
               }
             ]
           },
