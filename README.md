@@ -1,14 +1,30 @@
-# Pokémon FireRed and LeafGreen
+# Pokémon FireRed Reignited Legacy and LeafGreen Regrown Legacy
 
-This is a decompilation of English Pokémon FireRed and LeafGreen.
+This is a decompilation of English Pokémon FireRed and LeafGreen that acts as the Unoffical Legacy Game of FRLG.
 
-It builds the following ROM images:
-
-* [**pokefirered.gba**](https://datomatic.no-intro.org/?page=show_record&s=23&n=1616) `sha1: 41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc`
-* [**pokeleafgreen.gba**](https://datomatic.no-intro.org/?page=show_record&s=23&n=1617) `sha1: 574fa542ffebb14be69902d1d36f1ec0a4afd71e`
-* [**pokefirered_rev1.gba**](https://datomatic.no-intro.org/?page=show_record&s=23&n=1672) `sha1: dd5945db9b930750cb39d00c84da8571feebf417`
-* [**pokeleafgreen_rev1.gba**](https://datomatic.no-intro.org/index.php?page=show_record&s=23&n=1668) `sha1: 7862c67bdecbe21d1d69ce082ce34327e1c6ed5e`
+Features:
+- A Legacy Style Game with Both Fire Red and Leaf Green
 
 To set up the repository, see [INSTALL.md](INSTALL.md).
 
 For contacts and other pret projects, see [pret.github.io](https://pret.github.io/).
+
+Delevoper:
+SpikeCation (Sole Dev)
+
+Playtesters:
+BlazeTorrent
+BasedTuxedoMan
+
+Credits:
+Pokemon Legacy Team - (Inspiration)
+Emerald Legacy (Smith and Craig) - Battle Engine Changes and More, Brick Piece also by Isona
+Yellow Legacy - Text that was Ported
+FRLG + (Deo uhh) - Lots of the QOL Changes you see here and the Extra Overworld Sprites, Porting Emerald Stuff (Was a huge help with FRLG Documentation)
+Charles Fire Red - Priemere Ball Code (Could of taken from another source tho)
+Celia's Stupid RomHack - Repeated Medicine/Rare Candy Use 
+Pokemon FireGold - Certain Leader Sprites
+Pret Team - Help with Stuff and this Entire Project Possible
+Team Aqua Hideout - Like Above
+Numerous Pret Tutorials
+Idk yet - Team Rocket Music
