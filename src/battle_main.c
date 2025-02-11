@@ -4432,7 +4432,7 @@ static void HandleAction_ThrowBait(void)
     gBattlerAttacker = gBattlerByTurnOrder[gCurrentTurnActionNumber];
     gBattle_BG0_X = 0;
     gBattle_BG0_Y = 0;
-    gBattleStruct->safariBaitThrowCounter += Random() % 5 + 2;
+    gBattleStruct->safariBaitThrowCounter += Random() % 5 + 3;
     if (gBattleStruct->safariBaitThrowCounter > 6)
         gBattleStruct->safariBaitThrowCounter = 6;
     gBattleStruct->safariRockThrowCounter = 0;
@@ -4448,13 +4448,13 @@ static void HandleAction_ThrowRock(void)
     gBattlerAttacker = gBattlerByTurnOrder[gCurrentTurnActionNumber];
     gBattle_BG0_X = 0;
     gBattle_BG0_Y = 0;
-    gBattleStruct->safariRockThrowCounter += Random() % 5 + 2;
+    gBattleStruct->safariRockThrowCounter += Random() % 5 + 3;
     if (gBattleStruct->safariRockThrowCounter > 6)
         gBattleStruct->safariRockThrowCounter = 6;
     gBattleStruct->safariBaitThrowCounter = 0;
     gBattleStruct->safariCatchFactor <<= 1;
-    if (gBattleStruct->safariCatchFactor > 20)
-        gBattleStruct->safariCatchFactor = 20;
+    if (gBattleStruct->safariCatchFactor > 35)
+        gBattleStruct->safariCatchFactor = 35;
     gBattlescriptCurrInstr = gBattlescriptsForSafariActions[1];
     gCurrentActionFuncId = B_ACTION_EXEC_SCRIPT;
 }

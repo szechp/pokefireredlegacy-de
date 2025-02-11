@@ -63,4 +63,9 @@ ViridianForest_EventScript_Charlie::
 	trainerbattle_single TRAINER_BUG_CATCHER_CHARLIE, ViridianForest_Text_CharlieIntro, ViridianForest_Text_CharlieDefeat
 	msgbox ViridianForest_Text_CharliePostBattle, MSGBOX_AUTOCLOSE
 	end
+
+ViridianForest_EventScript_Lass::
+	trainerbattle_single TRAINER_RS_FISHERMAN, ViridianForest_Text_LassIntro, ViridianForest_Text_LassDefeat
+	msgbox ViridianForest_Text_LassPostBattle, MSGBOX_AUTOCLOSE
+	end
 `

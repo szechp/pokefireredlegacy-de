@@ -64,7 +64,6 @@ static const struct TrainerMon sParty_PokefanF[] = {DUMMY_TRAINER_MON};
 static const struct TrainerMon sParty_ExpertM[] = {DUMMY_TRAINER_MON};
 static const struct TrainerMon sParty_ExpertF[] = {DUMMY_TRAINER_MON};
 static const struct TrainerMon sParty_RSYoungster[] = {DUMMY_TRAINER_MON};
-static const struct TrainerMon sParty_RSFisherman[] = {DUMMY_TRAINER_MON};
 static const struct TrainerMon sParty_CyclingTriathleteM[] = {DUMMY_TRAINER_MON};
 static const struct TrainerMon sParty_CyclingTriathleteF[] = {DUMMY_TRAINER_MON};
 static const struct TrainerMon sParty_RunningTriathleteM[] = {DUMMY_TRAINER_MON};
@@ -74,6 +73,20 @@ static const struct TrainerMon sParty_SwimmingTriathleteF[] = {DUMMY_TRAINER_MON
 static const struct TrainerMon sParty_RSYoungCouple[] = {DUMMY_TRAINER_MON, DUMMY_TRAINER_MON};
 
 // Start of actual trainer data
+static const struct TrainerMon sParty_RSFisherman[] = {    
+    {
+        .iv = 0,
+        .lvl = 6,
+        .species = SPECIES_NIDORAN_M,
+    },
+    {
+        .iv = 0,
+        .lvl = 6,
+        .species = SPECIES_NIDORAN_F,
+    },
+};
+
+
 static const struct TrainerMon sParty_FatGuy[] = {
     {
         .iv = 255,
@@ -7911,19 +7924,19 @@ static const struct TrainerMon sParty_LeaderLtSurge[] = {
         .moves = {MOVE_THUNDER_PUNCH, MOVE_THUNDER_WAVE, MOVE_NONE, MOVE_BRICK_BREAK},
     },
     {
-        .iv = 150,
+        .iv = 250,
+        .lvl = 25,
+        .species = SPECIES_VOLTORB,
+        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SELF_DESTRUCT, MOVE_SWIFT},
+    },
+    {
+        .iv = 250,
         .lvl = 24,
-        .species = SPECIES_ELECTRODE,
-        .moves = {MOVE_THUNDER_SHOCK, MOVE_THUNDER_WAVE, MOVE_SELF_DESTRUCT, MOVE_SWIFT},
+        .species = SPECIES_PORYGON,
+        .moves = {MOVE_SHOCK_WAVE, MOVE_PSYBEAM, MOVE_ICY_WIND, MOVE_SECRET_POWER},
     },
     {
         .iv = 200,
-        .lvl = 25,
-        .species = SPECIES_MAGNEMITE,
-        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM, MOVE_METAL_SOUND},
-    },
-    {
-        .iv = 150,
         .lvl = 26,
         .species = SPECIES_RAICHU,
         .moves = {MOVE_BODY_SLAM, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_SHOCK_WAVE},
@@ -8019,9 +8032,9 @@ static const struct TrainerMon sParty_LeaderBlaine[] = {
     {
         .iv = 255,
         .lvl = 52,
-        .species = SPECIES_MAGMAR,
-        .heldItem = ITEM_MAGNET,
-        .moves = {MOVE_FIRE_BLAST, MOVE_PSYCHIC, MOVE_THUNDER_PUNCH, MOVE_CROSS_CHOP},
+        .species = SPECIES_MAGCARGO,
+        .heldItem = ITEM_QUICK_CLAW,
+        .moves = {MOVE_FIRE_BLAST, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_BODY_SLAM},
     },
     {
         .iv = 255,

@@ -128,3 +128,13 @@ ViridianForest_EventScript_Charlie::
 	msgbox ViridianForest_Text_CharliePostBattle, MSGBOX_AUTOCLOSE
 # 65 "data/maps/ViridianForest/scripts.pory"
 	end
+# 66 "data/maps/ViridianForest/scripts.pory"
+
+# 67 "data/maps/ViridianForest/scripts.pory"
+ViridianForest_EventScript_Lass::
+# 68 "data/maps/ViridianForest/scripts.pory"
+	trainerbattle_single TRAINER_RS_FISHERMAN, ViridianForest_Text_LassIntro, ViridianForest_Text_LassDefeat
+# 69 "data/maps/ViridianForest/scripts.pory"
+	msgbox ViridianForest_Text_LassPostBattle, MSGBOX_AUTOCLOSE
+# 70 "data/maps/ViridianForest/scripts.pory"
+	end

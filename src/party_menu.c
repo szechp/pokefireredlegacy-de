@@ -4468,9 +4468,7 @@ void ItemUseCB_Medicine(u8 taskId, TaskFunc func)
     }
     else
     {
-        ItemUse_SetQuestLogEvent(QL_EVENT_USED_ITEM, mon, item, 0xFFFF);
-        Task_DoUseItemAnim(taskId);
-        gItemUseCB = ItemUseCB_MedicineStep;
+        ItemUseCB_MedicineStep(taskId, func);
     }
 }
 
@@ -4483,7 +4481,9 @@ void ItemUseCB_MedicineStep(u8 taskId, TaskFunc func)
     bool8 cannotHeal;
 
     if (NotUsingHPEVItemOnShedinja(mon, item) == FALSE)
+      
         cannotHeal = TRUE;
+    
     else
     {
         canHeal = IsHPRecoveryItem(item);
@@ -4503,7 +4503,11 @@ void ItemUseCB_MedicineStep(u8 taskId, TaskFunc func)
         PlaySE(SE_SELECT);
         DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
         ScheduleBgCopyTilemapToVram(2);
-        gTasks[taskId].func = func;
+        if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD)
+            gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+        else
+            gTasks[taskId].func = func;
+        return;
     }
     else
     {
@@ -4515,8 +4519,9 @@ void ItemUseCB_MedicineStep(u8 taskId, TaskFunc func)
                 RemoveBagItem(item, 1);
         }
         else
+        
             PlaySE(SE_GLASS_FLUTE);
-
+       
         SetPartyMonAilmentGfx(mon, &sPartyMenuBoxes[gPartyMenu.slotId]);
         if (gSprites[sPartyMenuBoxes[gPartyMenu.slotId].statusSpriteId].invisible)
             DisplayPartyPokemonLevelCheck(mon, &sPartyMenuBoxes[gPartyMenu.slotId], 1);
@@ -4526,6 +4531,7 @@ void ItemUseCB_MedicineStep(u8 taskId, TaskFunc func)
                 AnimatePartySlot(gPartyMenu.slotId, 1);
             PartyMenuModifyHP(taskId, gPartyMenu.slotId, 1, GetMonData(mon, MON_DATA_HP) - hp, Task_DisplayHPRestoredMessage);
             ResetHPTaskData(taskId, 0, hp);
+            return;
         }
         else
         {
@@ -4533,19 +4539,20 @@ void ItemUseCB_MedicineStep(u8 taskId, TaskFunc func)
             GetMedicineItemEffectMessage(item);
             DisplayPartyMenuMessage(gStringVar4, TRUE);
             ScheduleBgCopyTilemapToVram(2);
-            gTasks[taskId].func = func;
+            if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(item, 1))
+                gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+            else
+                gTasks[taskId].func = func;
         }
     }
 }
 
 static void Task_DisplayHPRestoredMessage(u8 taskId)
 {
-    GetMonNickname(&gPlayerParty[gPartyMenu.slotId], gStringVar1);
-    StringExpandPlaceholders(gStringVar4, gText_PkmnHPRestoredByVar2);
-    DisplayPartyMenuMessage(gStringVar4, FALSE);
-    ScheduleBgCopyTilemapToVram(2);
-    HandleBattleLowHpMusicChange();
-    gTasks[taskId].func = Task_ClosePartyMenuAfterText;
+    if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(gSpecialVar_ItemId, 1))
+        gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+    else
+        gTasks[taskId].func = Task_ClosePartyMenuAfterText;
 }
 
 static void Task_ClosePartyMenuAfterText(u8 taskId)
@@ -5071,7 +5078,8 @@ static void ItemUseCB_RareCandyStep(u8 taskId, TaskFunc func)
     ScheduleBgCopyTilemapToVram(2);
     StringExpandPlaceholders(gStringVar4, gText_PkmnElevatedToLvVar2);
     DisplayPartyMenuMessage(gStringVar4, TRUE);
-    gTasks[taskId].func = Task_WaitRareCandyMessage; 
+    ScheduleBgCopyTilemapToVram(2);
+    gTasks[taskId].func = Task_DisplayLevelUpStatsPg1;
 }
 
 static void Task_WaitRareCandyMessage(u8 taskId)

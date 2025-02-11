@@ -35,3 +35,17 @@ CeladonCity_Restaurant_Text_ThoughtIdWinItBack::
     .string "I always thought I was going to\n"
     .string "win it back…$"
 
+CeladonCity_Restaurant_Text_29Years::
+	.string "Alright dude, I'm 29 years\n"
+	.string "old and still have yet to\l"
+	.string "figure out Restaurants.\p"
+	.string "I want Chicken Meatballs,\n"
+	.string "I saw on the wall.\p"
+	.string "All they gave me was a\n"
+	.string "MENU!\p"
+	.string "I checked Page 1, Page 2,\n"
+	.string "and Page 3…\l"
+	.string "nothing!\p"
+	.string "Stop playing with me!\p"
+	.string "Put some respect on\n"
+	.string "my name!$"

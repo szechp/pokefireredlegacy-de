@@ -80,3 +80,11 @@ CeladonCity_Restaurant_EventScript_FatMan::
 	msgbox CeladonCity_Restaurant_Text_ManLostItAllAtSlots, MSGBOX_NPC
 # 41 "data/maps/CeladonCity_Restaurant/scripts.pory"
 	end
+# 42 "data/maps/CeladonCity_Restaurant/scripts.pory"
+
+# 43 "data/maps/CeladonCity_Restaurant/scripts.pory"
+CeladonCity_Restaurant_EventScript_29Years::
+# 44 "data/maps/CeladonCity_Restaurant/scripts.pory"
+	msgbox CeladonCity_Restaurant_Text_29Years, MSGBOX_NPC
+# 45 "data/maps/CeladonCity_Restaurant/scripts.pory"
+	end

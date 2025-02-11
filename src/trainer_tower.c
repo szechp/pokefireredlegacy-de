@@ -412,7 +412,7 @@ static const u8 sSingleBattleChallengeMonIdxs[MAX_TRAINER_TOWER_FLOORS][3] = {
     {2, 4, 1},
     {3, 5, 2},
     {4, 1, 2},
-    {5, 2, 1},
+    {5, 2, 0},
     {0, 3, 1},
     {1, 4, 5}
 };
@@ -421,12 +421,12 @@ static const u8 sSingleBattleChallengeMonIdxs[MAX_TRAINER_TOWER_FLOORS][3] = {
 static const u8 sDoubleBattleChallengeMonIdxs[MAX_TRAINER_TOWER_FLOORS][4] = {
     {0, 1, 2, 3},
     {1, 3, 5, 2},
-    {2, 0, 5, 1},
-    {3, 4, 2, 1},
-    {4, 2, 5, 0},
-    {5, 2, 0, 3},
-    {0, 3, 5, 2},
-    {1, 5, 4, 3}
+    {2, 0, 4, 1},
+    {3, 4, 2, 3},
+    {4, 2, 5, 1},
+    {5, 2, 4, 0},
+    {0, 3, 5, 1},
+    {1, 5, 4, 2}
 };
 
 // Each trainer only uses one Pokemon from the encoded pool, based on the current floor
@@ -1008,7 +1008,7 @@ static void BuildEnemyParty(void)
     {
     case CHALLENGE_TYPE_SINGLE:
     default:
-        for (i = 0; i < 2; i++)
+        for (i = 0; i < 3; i++)
         {
             monIdx = sSingleBattleChallengeMonIdxs[floorIdx][i];
             CURR_FLOOR.trainers[trainerIdx].mons[monIdx].level = level;
@@ -1016,14 +1016,13 @@ static void BuildEnemyParty(void)
         }
         break;
     case CHALLENGE_TYPE_DOUBLE:
-        monIdx = sDoubleBattleChallengeMonIdxs[floorIdx][0];
-        CURR_FLOOR.trainers[0].mons[monIdx].level = level;
-        CreateBattleTowerMon(&gEnemyParty[0], &CURR_FLOOR.trainers[0].mons[monIdx]);
-
-        monIdx = sDoubleBattleChallengeMonIdxs[floorIdx][1];
-        CURR_FLOOR.trainers[1].mons[monIdx].level = level;
-        CreateBattleTowerMon(&gEnemyParty[1], &CURR_FLOOR.trainers[1].mons[monIdx]);
-        break;
+    for (i = 0; i < 4; i++) // Loop for 4 Pokémon
+    {
+        monIdx = sDoubleBattleChallengeMonIdxs[floorIdx][i];
+        CURR_FLOOR.trainers[i % 2].mons[monIdx].level = level; // Alternate between trainers 0 and 1
+        CreateBattleTowerMon(&gEnemyParty[i], &CURR_FLOOR.trainers[i % 2].mons[monIdx]);
+    }
+    break;
     case CHALLENGE_TYPE_KNOCKOUT:
         monIdx = sKnockoutChallengeMonIdxs[floorIdx][trainerIdx];
         CURR_FLOOR.trainers[trainerIdx].mons[monIdx].level = level;

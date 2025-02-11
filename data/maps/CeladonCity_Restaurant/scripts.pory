@@ -39,4 +39,8 @@ CeladonCity_Restaurant_EventScript_WorkerM::
 CeladonCity_Restaurant_EventScript_FatMan::
 	msgbox CeladonCity_Restaurant_Text_ManLostItAllAtSlots, MSGBOX_NPC
 	end
+
+CeladonCity_Restaurant_EventScript_29Years::
+	msgbox CeladonCity_Restaurant_Text_29Years, MSGBOX_NPC
+	end
 `

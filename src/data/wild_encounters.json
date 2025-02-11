@@ -1663,6 +1663,11 @@
               {
                 "min_level": 25,
                 "max_level": 35,
+                "species": "SPECIES_SHELLDER"
+              },
+              {
+                "min_level": 25,
+                "max_level": 35,
                 "species": "SPECIES_CHINCHOU"
               },
               {
@@ -1673,12 +1678,7 @@
               {
                 "min_level": 25,
                 "max_level": 35,
-                "species": "SPECIES_HORSEA"
-              },
-              {
-                "min_level": 25,
-                "max_level": 35,
-                "species": "SPECIES_PSYDUCK"
+                "species": "SPECIES_AZUMARILL"
               }
             ]
           }
@@ -1752,6 +1752,11 @@
               {
                 "min_level": 25,
                 "max_level": 35,
+                "species": "SPECIES_SHELLDER"
+              },
+              {
+                "min_level": 25,
+                "max_level": 35,
                 "species": "SPECIES_CHINCHOU"
               },
               {
@@ -1762,12 +1767,7 @@
               {
                 "min_level": 25,
                 "max_level": 35,
-                "species": "SPECIES_HORSEA"
-              },
-              {
-                "min_level": 25,
-                "max_level": 35,
-                "species": "SPECIES_PSYDUCK"
+                "species": "SPECIES_AZUMARILL"
               }
             ]
           }
@@ -22723,12 +22723,12 @@
               {
                 "min_level": 30,
                 "max_level": 40,
-                "species": "SPECIES_PSYDUCK"
+                "species": "SPECIES_GRIMER"
               },
               {
-                "min_level": 30,
-                "max_level": 40,
-                "species": "SPECIES_KOFFING"
+                "min_level": 1,
+                "max_level": 1,
+                "species": "SPECIES_GRIMER"
               }
             ]
           },
@@ -22747,13 +22747,13 @@
               },
               {
                 "min_level": 15,
-                "max_level": 20,
+                "max_level": 15,
                 "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_GRIMER"
+                "species": "SPECIES_POLIWHIRL"
               },
               {
                 "min_level": 20,
@@ -22812,12 +22812,12 @@
               {
                 "min_level": 30,
                 "max_level": 40,
-                "species": "SPECIES_SLOWPOKE"
+                "species": "SPECIES_GRIMER"
               },
               {
-                "min_level": 30,
-                "max_level": 40,
-                "species": "SPECIES_KOFFING"
+                "min_level": 1,
+                "max_level": 1,
+                "species": "SPECIES_GRIMER"
               }
             ]
           },
@@ -22836,13 +22836,13 @@
               },
               {
                 "min_level": 15,
-                "max_level": 20,
+                "max_level": 15,
                 "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_GRIMER"
+                "species": "SPECIES_POLIWHIRL"
               },
               {
                 "min_level": 20,
