@@ -890,7 +890,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("BEN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_YoungsterBen),
     },
     [TRAINER_YOUNGSTER_CALVIN] = {
@@ -900,7 +900,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("CALVIN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_YoungsterCalvin),
     },
     [TRAINER_YOUNGSTER_JOSH] = {
@@ -910,7 +910,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("JOSH"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_YoungsterJosh),
     },
     [TRAINER_YOUNGSTER_TIMMY] = {
@@ -920,7 +920,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("TIMMY"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_YoungsterTimmy),
     },
     [TRAINER_YOUNGSTER_JOEY] = {
@@ -930,7 +930,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("JOEY"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_YoungsterJoey),
     },
     [TRAINER_YOUNGSTER_DAN] = {
@@ -940,7 +940,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("DAN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_YoungsterDan),
     },
     [TRAINER_YOUNGSTER_CHAD] = {
@@ -1020,7 +1020,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("RICK"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_BugCatcherRick),
     },
     [TRAINER_BUG_CATCHER_DOUG] = {
@@ -1030,7 +1030,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("DOUG"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_BugCatcherDoug),
     },
     [TRAINER_BUG_CATCHER_SAMMY] = {
@@ -1040,7 +1040,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("SAMMY"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_BugCatcherSammy),
     },
     [TRAINER_BUG_CATCHER_COLTON] = {
@@ -1050,7 +1050,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("COLTON"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_BugCatcherColton),
     },
     [TRAINER_BUG_CATCHER_GREG] = {
@@ -1060,7 +1060,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("GREG"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_BugCatcherGreg),
     },
     [TRAINER_BUG_CATCHER_JAMES] = {
@@ -1070,7 +1070,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("JAMES"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_BugCatcherJames),
     },
     [TRAINER_BUG_CATCHER_KENT] = {
@@ -1080,7 +1080,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("KENT"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_BugCatcherKent),
     },
     [TRAINER_BUG_CATCHER_ROBBY] = {
@@ -1090,7 +1090,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("ROBBY"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_BugCatcherRobby),
     },
     [TRAINER_BUG_CATCHER_CALE] = {
@@ -1160,7 +1160,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("JANICE"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_LassJanice),
     },
     [TRAINER_LASS_SALLY] = {
@@ -1170,7 +1170,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("SALLY"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_LassSally),
     },
     [TRAINER_LASS_ROBIN] = {
@@ -1180,7 +1180,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("ROBIN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = TRAINER_MON(sParty_LassRobin),
     },
     [TRAINER_LASS_CRISSY] = {
