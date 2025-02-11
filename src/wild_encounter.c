@@ -706,8 +706,14 @@ static u8 GetFluteEncounterRateModType(void)
 
 static void ApplyCleanseTagEncounterRateMod(u32 *encounterRate)
 {
-    if (IsLeadMonHoldingCleanseTag())
-        *encounterRate = *encounterRate * 2 / 3;
+    int i;
+    for (i = 0; i < PARTY_SIZE; i++){
+        if (IsLeadMonHoldingCleanseTag())
+        {
+            *encounterRate = 0;
+            break;
+        }
+    }
 }
 
 static bool8 IsLeadMonHoldingCleanseTag(void)
