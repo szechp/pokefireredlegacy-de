@@ -22727,7 +22727,7 @@
               },
               {
                 "min_level": 1,
-                "max_level": 1,
+                "max_level": 4,
                 "species": "SPECIES_GRIMER"
               }
             ]
@@ -22816,7 +22816,7 @@
               },
               {
                 "min_level": 1,
-                "max_level": 1,
+                "max_level": 4,
                 "species": "SPECIES_GRIMER"
               }
             ]
