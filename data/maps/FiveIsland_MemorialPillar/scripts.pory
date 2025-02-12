@@ -99,6 +99,7 @@ FiveIsland_MemorialPillar_EventScript_Oman::
 FiveIsland_MemorialPillar_EventScript_PostOman::
 	msgbox FiveIsland_MemorialPillar_Text_OmanPostBattle
 	setflag FLAG_OMAN_DEFEATED
+	cleartrainerflag TRAINER_OMAN
 	release
 	end
 

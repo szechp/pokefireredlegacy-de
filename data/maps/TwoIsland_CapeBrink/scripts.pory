@@ -15,6 +15,7 @@ TwoIsland_CapeBrink_EventScript_Clair::
 TwoIsland_CapeBrink_EventScript_PostClair::
 	msgbox TwoIsland_CapeBrink_Text_ClairPostBattle
 	setflag FLAG_CLAIR_DEFEATED
+	cleartrainerflag TRAINER_CLAIR
 	release
 	end
 
@@ -54,6 +55,7 @@ TwoIsland_CapeBrink_EventScript_Caseno::
 TwoIsland_CapeBrink_EventScript_PostCaseno::
 	msgbox TwoIsland_CapeBrink_Text_CasenoPostBattle
 	setflag FLAG_CASENO_DEFEATED
+	cleartrainerflag TRAINER_CASENO
 	release
 	end
 

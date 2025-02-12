@@ -13,6 +13,7 @@ FiveIsland_LostCave_Room12_EventScript_Owl::
 FiveIsland_LostCave_Room12_EventScript_PostOwl::
 	msgbox FiveIsland_LostCave_Room12_Text_OwlPostBattle
 	setflag FLAG_OWL_DEFEATED
+	cleartrainerflag TRAINER_OWL
 	release
 	end
 

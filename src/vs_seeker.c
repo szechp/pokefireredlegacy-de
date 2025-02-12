@@ -596,8 +596,8 @@ static const u8 sFaceDirectionMovementTypeByFacingDirection[] = {
 static u8 GetVsSeekerRequiredSteps(void)
 {
     if (FlagGet(FLAG_VS_SEEKER_UPGRADE) == TRUE)
-        return 25; // 25 steps for Champion
-    return 100; // Default 100 steps for others
+        return 20; 
+    return 100; 
 }
 
 

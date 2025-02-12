@@ -19,6 +19,7 @@ SevenIsland_SevaultCanyon_EventScript_Chuck::
 SevenIsland_SevaultCanyon_EventScript_PostChuck::
 	msgbox SevenIsland_SevaultCanyon_Text_ChuckPostBattle
 	setflag FLAG_CHUCK_DEFEATED
+	cleartrainerflag TRAINER_CHUCK
 	release
 	end
 

@@ -223,4 +223,12 @@ OneIsland_EventScript_Giovanni::
 # 112 "data/maps/OneIsland/scripts.pory"
 	msgbox OneIsland_Text_Brock, MSGBOX_NPC
 # 113 "data/maps/OneIsland/scripts.pory"
+	setflag FLAG_HIDE_GIOVANNI_ONE
+# 114 "data/maps/OneIsland/scripts.pory"
+	removeobject 4
+# 115 "data/maps/OneIsland/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 116 "data/maps/OneIsland/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 117 "data/maps/OneIsland/scripts.pory"
 	end

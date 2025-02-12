@@ -47,6 +47,7 @@ Route13_EventScript_Whitney::
 Route13_EventScript_PostWhitney::
 	msgbox Route13_Text_WhitneyPostBattle
 	setflag FLAG_WHITNEY_DEFEATED
+	cleartrainerflag TRAINER_WHITNEY
 	release
 	end
 

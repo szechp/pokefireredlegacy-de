@@ -209,6 +209,7 @@ FourIsland_IcefallCave_Back_EventScript_Pryce::
 FourIsland_IcefallCave_Back_EventScript_PostPryce::
 	msgbox FourIsland_IcefallCave_Back_Text_PrycePostBattle
 	setflag FLAG_PRYCE_DEFEATED
+	cleartrainerflag TRAINER_PRYCE
 	release
 	end
 

@@ -23,6 +23,7 @@ ThreeIsland_BondBridge_EventScript_Morty::
 ThreeIsland_BondBridge_EventScript_PostMorty::
 	msgbox ThreeIsland_BondBridge_Text_MortyPostBattle
 	setflag FLAG_MORTY_DEFEATED
+	cleartrainerflag TRAINER_MORTY
 	release
 	end
 

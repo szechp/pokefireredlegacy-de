@@ -21,6 +21,7 @@ SevenIsland_TanobyRuins_MoneanChamber_EventScript_Armstrong::
 SevenIsland_TanobyRuins_MoneanChamber_EventScript_PostArmstrong::
 	msgbox SevenIsland_TanobyRuins_MoneanChamber_Text_ArmstrongPostBattle
 	setflag FLAG_ARMSTRONG_DEFEATED
+	cleartrainerflag TRAINER_ARMSTRONG
 	release
 	end
 

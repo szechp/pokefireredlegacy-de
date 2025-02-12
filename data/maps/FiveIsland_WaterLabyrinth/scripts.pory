@@ -77,6 +77,7 @@ FiveIsland_WaterLabyrinth_EventScript_Falkner::
 FiveIsland_WaterLabyrinth_EventScript_PostFalkner::
 	msgbox FiveIsland_WaterLabyrinth_Text_FalknerPostBattle
 	setflag FLAG_FALKNER_DEFEATED
+	cleartrainerflag TRAINER_FALKNER
 	release
 	end
 

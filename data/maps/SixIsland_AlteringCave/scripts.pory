@@ -21,6 +21,7 @@ SixIsland_AlteringCave_EventScript_Spike::
 SixIsland_AlteringCave_EventScript_PostSpike::
 	msgbox SixIsland_AlteringCave_Text_SpikePostBattle
 	setflag FLAG_SPIKE_DEFEATED
+	cleartrainerflag TRAINER_SPIKE
 	release
 	end
 

@@ -65,6 +65,7 @@ OneIsland_KindleRoad_EmberSpa_EventScript_Samal::
 OneIsland_KindleRoad_EmberSpa_EventScript_PostSamal::
 	msgbox OneIsland_KindleRoad_EmberSpa_Text_SamalPostBattle
 	setflag FLAG_SAMAL_DEFEATED
+	cleartrainerflag TRAINER_SAMAL
 	release
 	end
 

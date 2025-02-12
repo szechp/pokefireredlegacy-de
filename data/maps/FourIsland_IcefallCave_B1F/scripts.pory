@@ -15,6 +15,7 @@ FourIsland_IcefallCave_B1F_EventScript_KSI::
 FourIsland_IcefallCave_B1F_EventScript_PostKSI::
 	msgbox FourIsland_IcefallCave_B1F_Text_KSIPostBattle
 	setflag FLAG_KSI_DEFEATED
+	cleartrainerflag TRAINER_KSI
 	release
 	end
 

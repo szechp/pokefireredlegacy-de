@@ -137,6 +137,7 @@ ThreeIsland_BerryForest_EventScript_CruelKing::
 ThreeIsland_BerryForest_EventScript_PostCruelKing::
 	msgbox ThreeIsland_BerryForest_Text_CruelKingPostBattle
 	setflag FLAG_CRUELKING_DEFEATED
+	cleartrainerflag TRAINER_CRUEL_KING
 	release
 	end
 

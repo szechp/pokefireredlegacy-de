@@ -91,6 +91,7 @@ SixIsland_PatternBush_EventScript_Bugsy::
 SixIsland_PatternBush_EventScript_PostBugsy::
 	msgbox SixIsland_PatternBush_Text_BugsyPostBattle
 	setflag FLAG_BUGSY_DEFEATED
+	cleartrainerflag TRAINER_BUGSY
 	release
 	end
 

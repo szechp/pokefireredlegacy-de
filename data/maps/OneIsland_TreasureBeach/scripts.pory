@@ -19,6 +19,7 @@ OneIsland_TreasureBeach_EventScript_Jasmine::
 OneIsland_TreasureBeach_EventScript_PostJasmine::
 	msgbox OneIsland_TreasureBeach_Text_JasminePostBattle
 	setflag FLAG_JASMINE_DEFEATED
+	cleartrainerflag TRAINER_JASMINE
 	release
 	end
 
