@@ -5269,20 +5269,13 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
                 if (friendship >= 220)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
-            // FR/LG removed the time of day evolutions due to having no RTC.
-            case EVO_FRIENDSHIP_DAY:
-                /*
-                RtcCalcLocalTime();
-                if (gLocalTime.hours >= 12 && gLocalTime.hours < 24 && friendship >= 220)
+            case EVO_FRIENDSHIP_DAY: //changed to evolve by friendship outdoors (Towns and routes)
+                if (gMapHeader.mapType < MAP_TYPE_UNDERGROUND && friendship >= 220)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
-                */
                 break;
-            case EVO_FRIENDSHIP_NIGHT:
-                /*
-                RtcCalcLocalTime();
-                if (gLocalTime.hours >= 0 && gLocalTime.hours < 12 && friendship >= 220)
+            case EVO_FRIENDSHIP_NIGHT: //changed to evolve by friendship indoors (Caves and Indoors)
+                if (gMapHeader.mapType >= MAP_TYPE_UNDERGROUND && friendship >= 220)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
-                */
                 break;
             case EVO_LEVEL:
                 if (gEvolutionTable[species][i].param <= level)
