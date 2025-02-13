@@ -41,52 +41,54 @@ SevenIsland_SevaultCanyon_EventScript_PostChuck::
 # 21 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
 	setflag FLAG_CHUCK_DEFEATED
 # 22 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	release
-# 23 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	end
-# 24 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-
-# 25 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-SevenIsland_SevaultCanyon_EventScript_CantRematchChuck::
-# 26 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	msgbox SevenIsland_SevaultCanyon_Text_ChuckPostBattle
-# 27 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	release
-# 28 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	end
-# 29 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-
-# 30 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-SevenIsland_SevaultCanyon_EventScript_NoChuck::
-# 31 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	msgbox SevenIsland_SevaultCanyon_Text_NoChuck
-# 32 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	release
-# 33 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	end
-# 34 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-
-# 35 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-SevenIsland_SevaultCanyon_EventScript_RematchChuck::
-# 36 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	msgbox SevenIsland_SevaultCanyon_Text_RematchChuck, MSGBOX_YESNO
-# 37 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, SevenIsland_SevaultCanyon_EventScript_NoChuck
-# 38 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	trainerbattle_single TRAINER_CHUCK, SevenIsland_SevaultCanyon_Text_YesRematchChuck, SevenIsland_SevaultCanyon_Text_RematchChuckDefeat, SevenIsland_SevaultCanyon_EventScript_PostRematchChuck, NO_MUSIC
-# 39 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	release
-# 40 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	end
-# 41 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-
-# 42 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-SevenIsland_SevaultCanyon_EventScript_PostRematchChuck::
-# 43 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
-	msgbox SevenIsland_SevaultCanyon_Text_RematchChuckDefeat
-# 44 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
 	cleartrainerflag TRAINER_CHUCK
-# 45 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+# 23 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
 	release
+# 24 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	end
+# 25 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+
+# 26 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+SevenIsland_SevaultCanyon_EventScript_CantRematchChuck::
+# 27 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	msgbox SevenIsland_SevaultCanyon_Text_ChuckPostBattle
+# 28 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	release
+# 29 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	end
+# 30 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+
+# 31 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+SevenIsland_SevaultCanyon_EventScript_NoChuck::
+# 32 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	msgbox SevenIsland_SevaultCanyon_Text_NoChuck
+# 33 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	release
+# 34 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	end
+# 35 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+
+# 36 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+SevenIsland_SevaultCanyon_EventScript_RematchChuck::
+# 37 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	msgbox SevenIsland_SevaultCanyon_Text_RematchChuck, MSGBOX_YESNO
+# 38 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, SevenIsland_SevaultCanyon_EventScript_NoChuck
+# 39 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	trainerbattle_single TRAINER_CHUCK, SevenIsland_SevaultCanyon_Text_YesRematchChuck, SevenIsland_SevaultCanyon_Text_RematchChuckDefeat, SevenIsland_SevaultCanyon_EventScript_PostRematchChuck, NO_MUSIC
+# 40 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	release
+# 41 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	end
+# 42 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+
+# 43 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+SevenIsland_SevaultCanyon_EventScript_PostRematchChuck::
+# 44 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	msgbox SevenIsland_SevaultCanyon_Text_RematchChuckDefeat
+# 45 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	cleartrainerflag TRAINER_CHUCK
 # 46 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
+	release
+# 47 "data/maps/SevenIsland_SevaultCanyon/scripts.pory"
 	end

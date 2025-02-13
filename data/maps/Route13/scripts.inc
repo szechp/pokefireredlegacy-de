@@ -97,42 +97,44 @@ Route13_EventScript_PostWhitney::
 # 49 "data/maps/Route13/scripts.pory"
 	setflag FLAG_WHITNEY_DEFEATED
 # 50 "data/maps/Route13/scripts.pory"
-	release
-# 51 "data/maps/Route13/scripts.pory"
-	end
-# 52 "data/maps/Route13/scripts.pory"
-
-# 53 "data/maps/Route13/scripts.pory"
-Route13_EventScript_NoWhitney::
-# 54 "data/maps/Route13/scripts.pory"
-	msgbox Route13_Text_NoWhitney
-# 55 "data/maps/Route13/scripts.pory"
-	release
-# 56 "data/maps/Route13/scripts.pory"
-	end
-# 57 "data/maps/Route13/scripts.pory"
-
-# 58 "data/maps/Route13/scripts.pory"
-Route13_EventScript_RematchWhitney::
-# 59 "data/maps/Route13/scripts.pory"
-	msgbox Route13_Text_RematchWhitney, MSGBOX_YESNO
-# 60 "data/maps/Route13/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, Route13_EventScript_NoWhitney
-# 61 "data/maps/Route13/scripts.pory"
-	trainerbattle_single TRAINER_WHITNEY, Route13_Text_YesRematchWhitney, Route13_Text_RematchWhitneyDefeat, Route13_EventScript_PostRematchWhitney, NO_MUSIC
-# 62 "data/maps/Route13/scripts.pory"
-	release
-# 63 "data/maps/Route13/scripts.pory"
-	end
-# 64 "data/maps/Route13/scripts.pory"
-
-# 65 "data/maps/Route13/scripts.pory"
-Route13_EventScript_PostRematchWhitney::
-# 66 "data/maps/Route13/scripts.pory"
-	msgbox Route13_Text_RematchWhitneyDefeat
-# 67 "data/maps/Route13/scripts.pory"
 	cleartrainerflag TRAINER_WHITNEY
-# 68 "data/maps/Route13/scripts.pory"
+# 51 "data/maps/Route13/scripts.pory"
 	release
+# 52 "data/maps/Route13/scripts.pory"
+	end
+# 53 "data/maps/Route13/scripts.pory"
+
+# 54 "data/maps/Route13/scripts.pory"
+Route13_EventScript_NoWhitney::
+# 55 "data/maps/Route13/scripts.pory"
+	msgbox Route13_Text_NoWhitney
+# 56 "data/maps/Route13/scripts.pory"
+	release
+# 57 "data/maps/Route13/scripts.pory"
+	end
+# 58 "data/maps/Route13/scripts.pory"
+
+# 59 "data/maps/Route13/scripts.pory"
+Route13_EventScript_RematchWhitney::
+# 60 "data/maps/Route13/scripts.pory"
+	msgbox Route13_Text_RematchWhitney, MSGBOX_YESNO
+# 61 "data/maps/Route13/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, Route13_EventScript_NoWhitney
+# 62 "data/maps/Route13/scripts.pory"
+	trainerbattle_single TRAINER_WHITNEY, Route13_Text_YesRematchWhitney, Route13_Text_RematchWhitneyDefeat, Route13_EventScript_PostRematchWhitney, NO_MUSIC
+# 63 "data/maps/Route13/scripts.pory"
+	release
+# 64 "data/maps/Route13/scripts.pory"
+	end
+# 65 "data/maps/Route13/scripts.pory"
+
+# 66 "data/maps/Route13/scripts.pory"
+Route13_EventScript_PostRematchWhitney::
+# 67 "data/maps/Route13/scripts.pory"
+	msgbox Route13_Text_RematchWhitneyDefeat
+# 68 "data/maps/Route13/scripts.pory"
+	cleartrainerflag TRAINER_WHITNEY
 # 69 "data/maps/Route13/scripts.pory"
+	release
+# 70 "data/maps/Route13/scripts.pory"
 	end

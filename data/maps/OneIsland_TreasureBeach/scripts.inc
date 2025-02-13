@@ -41,52 +41,54 @@ OneIsland_TreasureBeach_EventScript_PostJasmine::
 # 21 "data/maps/OneIsland_TreasureBeach/scripts.pory"
 	setflag FLAG_JASMINE_DEFEATED
 # 22 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	release
-# 23 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	end
-# 24 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-
-# 25 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-OneIsland_TreasureBeach_EventScript_CantRematchJasmine::
-# 26 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	msgbox OneIsland_TreasureBeach_Text_JasminePostBattle
-# 27 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	release
-# 28 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	end
-# 29 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-
-# 30 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-OneIsland_TreasureBeach_EventScript_NoJasmine::
-# 31 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	msgbox OneIsland_TreasureBeach_Text_NoJasmine
-# 32 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	release
-# 33 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	end
-# 34 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-
-# 35 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-OneIsland_TreasureBeach_EventScript_RematchJasmine::
-# 36 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	msgbox OneIsland_TreasureBeach_Text_RematchJasmine, MSGBOX_YESNO
-# 37 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, OneIsland_TreasureBeach_EventScript_NoJasmine
-# 38 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	trainerbattle_single TRAINER_JASMINE, OneIsland_TreasureBeach_Text_YesRematchJasmine, OneIsland_TreasureBeach_Text_RematchJasmineDefeat, OneIsland_TreasureBeach_EventScript_PostRematchJasmine, NO_MUSIC
-# 39 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	release
-# 40 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	end
-# 41 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-
-# 42 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-OneIsland_TreasureBeach_EventScript_PostRematchJasmine::
-# 43 "data/maps/OneIsland_TreasureBeach/scripts.pory"
-	msgbox OneIsland_TreasureBeach_Text_RematchJasmineDefeat
-# 44 "data/maps/OneIsland_TreasureBeach/scripts.pory"
 	cleartrainerflag TRAINER_JASMINE
-# 45 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+# 23 "data/maps/OneIsland_TreasureBeach/scripts.pory"
 	release
+# 24 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	end
+# 25 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+
+# 26 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+OneIsland_TreasureBeach_EventScript_CantRematchJasmine::
+# 27 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	msgbox OneIsland_TreasureBeach_Text_JasminePostBattle
+# 28 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	release
+# 29 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	end
+# 30 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+
+# 31 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+OneIsland_TreasureBeach_EventScript_NoJasmine::
+# 32 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	msgbox OneIsland_TreasureBeach_Text_NoJasmine
+# 33 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	release
+# 34 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	end
+# 35 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+
+# 36 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+OneIsland_TreasureBeach_EventScript_RematchJasmine::
+# 37 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	msgbox OneIsland_TreasureBeach_Text_RematchJasmine, MSGBOX_YESNO
+# 38 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, OneIsland_TreasureBeach_EventScript_NoJasmine
+# 39 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	trainerbattle_single TRAINER_JASMINE, OneIsland_TreasureBeach_Text_YesRematchJasmine, OneIsland_TreasureBeach_Text_RematchJasmineDefeat, OneIsland_TreasureBeach_EventScript_PostRematchJasmine, NO_MUSIC
+# 40 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	release
+# 41 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	end
+# 42 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+
+# 43 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+OneIsland_TreasureBeach_EventScript_PostRematchJasmine::
+# 44 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	msgbox OneIsland_TreasureBeach_Text_RematchJasmineDefeat
+# 45 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	cleartrainerflag TRAINER_JASMINE
 # 46 "data/maps/OneIsland_TreasureBeach/scripts.pory"
+	release
+# 47 "data/maps/OneIsland_TreasureBeach/scripts.pory"
 	end

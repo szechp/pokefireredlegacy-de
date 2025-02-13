@@ -1089,6 +1089,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_PSYDUCK
 	setflag FLAG_GIOVANNI4
 	setflag FLAG_HIDE_GIOVANNI_ONE
+	setflag FLAG_R23_GUYS
 	setvar VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 500
 	end
 

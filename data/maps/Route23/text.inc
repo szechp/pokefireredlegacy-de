@@ -13,3 +13,12 @@ Route23_Text_Clerk::
     .string "You can also go right\n"
     .string "To rest at Me and My Wife's\l"
     .string "Rest House!$"
+
+Route23_Text_NotReady::
+    .string "Sorry, Our Services\n"
+    .string "Are Closed right now as\l"
+    .string "We are fixing a Leak.\p"
+    .string "Although Since the\n"
+    .string "VIRIDIAN GYM LEADER is\l"
+    .string "Back, we gotta be quick\l"
+    .string "Fixing it!$"

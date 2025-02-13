@@ -201,52 +201,54 @@ FiveIsland_MemorialPillar_EventScript_PostOman::
 # 101 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
 	setflag FLAG_OMAN_DEFEATED
 # 102 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	release
-# 103 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	end
-# 104 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-
-# 105 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-FiveIsland_MemorialPillar_EventScript_CantRematchOman::
-# 106 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	msgbox FiveIsland_MemorialPillar_Text_OmanPostBattle
-# 107 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	release
-# 108 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	end
-# 109 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-
-# 110 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-FiveIsland_MemorialPillar_EventScript_NoOman::
-# 111 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	msgbox FiveIsland_MemorialPillar_Text_NoOman
-# 112 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	release
-# 113 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	end
-# 114 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-
-# 115 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-FiveIsland_MemorialPillar_EventScript_RematchOman::
-# 116 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	msgbox FiveIsland_MemorialPillar_Text_RematchOman, MSGBOX_YESNO
-# 117 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, FiveIsland_MemorialPillar_EventScript_NoOman
-# 118 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	trainerbattle_single TRAINER_OMAN, FiveIsland_MemorialPillar_Text_YesRematchOman, FiveIsland_MemorialPillar_Text_RematchOmanDefeat, FiveIsland_MemorialPillar_EventScript_PostRematchOman, NO_MUSIC
-# 119 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	release
-# 120 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	end
-# 121 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-
-# 122 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-FiveIsland_MemorialPillar_EventScript_PostRematchOman::
-# 123 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	msgbox FiveIsland_MemorialPillar_Text_RematchOmanDefeat
-# 124 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
 	cleartrainerflag TRAINER_OMAN
-# 125 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+# 103 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
 	release
+# 104 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	end
+# 105 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+
+# 106 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+FiveIsland_MemorialPillar_EventScript_CantRematchOman::
+# 107 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	msgbox FiveIsland_MemorialPillar_Text_OmanPostBattle
+# 108 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	release
+# 109 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	end
+# 110 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+
+# 111 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+FiveIsland_MemorialPillar_EventScript_NoOman::
+# 112 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	msgbox FiveIsland_MemorialPillar_Text_NoOman
+# 113 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	release
+# 114 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	end
+# 115 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+
+# 116 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+FiveIsland_MemorialPillar_EventScript_RematchOman::
+# 117 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	msgbox FiveIsland_MemorialPillar_Text_RematchOman, MSGBOX_YESNO
+# 118 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, FiveIsland_MemorialPillar_EventScript_NoOman
+# 119 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	trainerbattle_single TRAINER_OMAN, FiveIsland_MemorialPillar_Text_YesRematchOman, FiveIsland_MemorialPillar_Text_RematchOmanDefeat, FiveIsland_MemorialPillar_EventScript_PostRematchOman, NO_MUSIC
+# 120 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	release
+# 121 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	end
+# 122 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+
+# 123 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+FiveIsland_MemorialPillar_EventScript_PostRematchOman::
+# 124 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	msgbox FiveIsland_MemorialPillar_Text_RematchOmanDefeat
+# 125 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	cleartrainerflag TRAINER_OMAN
 # 126 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	release
+# 127 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
 	end

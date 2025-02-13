@@ -133,52 +133,54 @@ OneIsland_KindleRoad_EmberSpa_EventScript_PostSamal::
 # 67 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	setflag FLAG_SAMAL_DEFEATED
 # 68 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	release
-# 69 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	end
-# 70 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-
-# 71 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-OneIsland_KindleRoad_EmberSpa_EventScript_CantRematchSamal::
-# 72 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	msgbox OneIsland_KindleRoad_EmberSpa_Text_SamalPostBattle
-# 73 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	release
-# 74 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	end
-# 75 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-
-# 76 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-OneIsland_KindleRoad_EmberSpa_EventScript_NoSamal::
-# 77 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	msgbox OneIsland_KindleRoad_EmberSpa_Text_NoSamal
-# 78 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	release
-# 79 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	end
-# 80 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-
-# 81 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-OneIsland_KindleRoad_EmberSpa_EventScript_RematchSamal::
-# 82 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	msgbox OneIsland_KindleRoad_EmberSpa_Text_RematchSamal, MSGBOX_YESNO
-# 83 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, OneIsland_KindleRoad_EmberSpa_EventScript_NoSamal
-# 84 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	trainerbattle_single TRAINER_SAMAL, OneIsland_KindleRoad_EmberSpa_Text_YesRematchSamal, OneIsland_KindleRoad_EmberSpa_Text_RematchSamalDefeat, OneIsland_KindleRoad_EmberSpa_EventScript_PostRematchSamal, NO_MUSIC
-# 85 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	release
-# 86 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	end
-# 87 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-
-# 88 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-OneIsland_KindleRoad_EmberSpa_EventScript_PostRematchSamal::
-# 89 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	msgbox OneIsland_KindleRoad_EmberSpa_Text_RematchSamalDefeat
-# 90 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	cleartrainerflag TRAINER_SAMAL
-# 91 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+# 69 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	release
+# 70 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	end
+# 71 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+
+# 72 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+OneIsland_KindleRoad_EmberSpa_EventScript_CantRematchSamal::
+# 73 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_SamalPostBattle
+# 74 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	release
+# 75 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	end
+# 76 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+
+# 77 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+OneIsland_KindleRoad_EmberSpa_EventScript_NoSamal::
+# 78 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_NoSamal
+# 79 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	release
+# 80 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	end
+# 81 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+
+# 82 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+OneIsland_KindleRoad_EmberSpa_EventScript_RematchSamal::
+# 83 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_RematchSamal, MSGBOX_YESNO
+# 84 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, OneIsland_KindleRoad_EmberSpa_EventScript_NoSamal
+# 85 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	trainerbattle_single TRAINER_SAMAL, OneIsland_KindleRoad_EmberSpa_Text_YesRematchSamal, OneIsland_KindleRoad_EmberSpa_Text_RematchSamalDefeat, OneIsland_KindleRoad_EmberSpa_EventScript_PostRematchSamal, NO_MUSIC
+# 86 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	release
+# 87 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	end
+# 88 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+
+# 89 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+OneIsland_KindleRoad_EmberSpa_EventScript_PostRematchSamal::
+# 90 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_RematchSamalDefeat
+# 91 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	cleartrainerflag TRAINER_SAMAL
 # 92 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	release
+# 93 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	end

@@ -22,6 +22,7 @@ ViridianCity_Gym_EventScript_DefeatedGiovanni::
 	setflag FLAG_DEFEATED_LEADER_GIOVANNI
 	setflag FLAG_BADGE08_GET
 	setvar VAR_MAP_SCENE_ROUTE22, 3
+	clearflag FLAG_R23_GUYS
 	set_gym_trainers 8
 	goto ViridianCity_Gym_EventScript_GiveTM26
 	end

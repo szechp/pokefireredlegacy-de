@@ -828,8 +828,8 @@
 #define FLAG_GUARD_TEA               0x320
 #define FLAG_ROCK_TUNNEL              0x321
 #define FLAG_TREE_R13_2               0x322
-#define FLAG_0x323               0x323
-#define FLAG_0x324               0x324
+#define FLAG_TREE5              0x323
+#define FLAG_R23_GUYS              0x324
 #define FLAG_0x325               0x325
 #define FLAG_0x326               0x326
 #define FLAG_0x327               0x327

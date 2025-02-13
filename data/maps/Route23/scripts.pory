@@ -134,6 +134,10 @@ Route23_EventScript_RestSign::
 	msgbox Route23_Text_RestHouse, MSGBOX_SIGN
 	end
 
+Route23_EventScript_NotReady::
+	msgbox Route23_Text_NotReady, MSGBOX_NPC
+	end
+
 Route23_EventScript_Clerk::
 	goto_if_questlog EventScript_ReleaseEnd
 	lock

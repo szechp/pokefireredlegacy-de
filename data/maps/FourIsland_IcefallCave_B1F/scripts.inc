@@ -33,52 +33,54 @@ FourIsland_IcefallCave_B1F_EventScript_PostKSI::
 # 17 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
 	setflag FLAG_KSI_DEFEATED
 # 18 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	release
-# 19 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	end
-# 20 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-
-# 21 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-FourIsland_IcefallCave_B1F_EventScript_CantRematchKSI::
-# 22 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	msgbox FourIsland_IcefallCave_B1F_Text_KSIPostBattle
-# 23 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	release
-# 24 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	end
-# 25 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-
-# 26 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-FourIsland_IcefallCave_B1F_EventScript_NoKSI::
-# 27 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	msgbox FourIsland_IcefallCave_B1F_Text_NoKSI
-# 28 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	release
-# 29 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	end
-# 30 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-
-# 31 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-FourIsland_IcefallCave_B1F_EventScript_RematchKSI::
-# 32 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	msgbox FourIsland_IcefallCave_B1F_Text_RematchKSI, MSGBOX_YESNO
-# 33 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, FourIsland_IcefallCave_B1F_EventScript_NoKSI
-# 34 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	trainerbattle_single TRAINER_KSI, FourIsland_IcefallCave_B1F_Text_YesRematchKSI, FourIsland_IcefallCave_B1F_Text_RematchKSIDefeat, FourIsland_IcefallCave_B1F_EventScript_PostRematchKSI, NO_MUSIC
-# 35 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	release
-# 36 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	end
-# 37 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-
-# 38 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-FourIsland_IcefallCave_B1F_EventScript_PostRematchKSI::
-# 39 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
-	msgbox FourIsland_IcefallCave_B1F_Text_RematchKSIDefeat
-# 40 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
 	cleartrainerflag TRAINER_KSI
-# 41 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+# 19 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
 	release
+# 20 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	end
+# 21 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+
+# 22 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+FourIsland_IcefallCave_B1F_EventScript_CantRematchKSI::
+# 23 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	msgbox FourIsland_IcefallCave_B1F_Text_KSIPostBattle
+# 24 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	release
+# 25 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	end
+# 26 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+
+# 27 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+FourIsland_IcefallCave_B1F_EventScript_NoKSI::
+# 28 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	msgbox FourIsland_IcefallCave_B1F_Text_NoKSI
+# 29 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	release
+# 30 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	end
+# 31 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+
+# 32 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+FourIsland_IcefallCave_B1F_EventScript_RematchKSI::
+# 33 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	msgbox FourIsland_IcefallCave_B1F_Text_RematchKSI, MSGBOX_YESNO
+# 34 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, FourIsland_IcefallCave_B1F_EventScript_NoKSI
+# 35 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	trainerbattle_single TRAINER_KSI, FourIsland_IcefallCave_B1F_Text_YesRematchKSI, FourIsland_IcefallCave_B1F_Text_RematchKSIDefeat, FourIsland_IcefallCave_B1F_EventScript_PostRematchKSI, NO_MUSIC
+# 36 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	release
+# 37 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	end
+# 38 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+
+# 39 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+FourIsland_IcefallCave_B1F_EventScript_PostRematchKSI::
+# 40 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	msgbox FourIsland_IcefallCave_B1F_Text_RematchKSIDefeat
+# 41 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	cleartrainerflag TRAINER_KSI
 # 42 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
+	release
+# 43 "data/maps/FourIsland_IcefallCave_B1F/scripts.pory"
 	end

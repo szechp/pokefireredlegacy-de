@@ -277,52 +277,54 @@ ThreeIsland_BerryForest_EventScript_PostCruelKing::
 # 139 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	setflag FLAG_CRUELKING_DEFEATED
 # 140 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	release
-# 141 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	end
-# 142 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-
-# 143 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-ThreeIsland_BerryForest_EventScript_CantRematchCruelKing::
-# 144 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	msgbox ThreeIsland_BerryForest_Text_CruelKingPostBattle
-# 145 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	release
-# 146 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	end
-# 147 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-
-# 148 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-ThreeIsland_BerryForest_EventScript_NoCruelKing::
-# 149 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	msgbox ThreeIsland_BerryForest_Text_NoCruelKing
-# 150 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	release
-# 151 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	end
-# 152 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-
-# 153 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-ThreeIsland_BerryForest_EventScript_RematchCruelKing::
-# 154 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	msgbox ThreeIsland_BerryForest_Text_RematchCruelKing, MSGBOX_YESNO
-# 155 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, ThreeIsland_BerryForest_EventScript_NoCruelKing
-# 156 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	trainerbattle_single TRAINER_CRUEL_KING, ThreeIsland_BerryForest_Text_YesRematchCruelKing, ThreeIsland_BerryForest_Text_RematchCruelKingDefeat, ThreeIsland_BerryForest_EventScript_PostRematchCruelKing, NO_MUSIC
-# 157 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	release
-# 158 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	end
-# 159 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-
-# 160 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-ThreeIsland_BerryForest_EventScript_PostRematchCruelKing::
-# 161 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	msgbox ThreeIsland_BerryForest_Text_RematchCruelKingDefeat
-# 162 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	cleartrainerflag TRAINER_CRUEL_KING
-# 163 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+# 141 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	release
+# 142 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	end
+# 143 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+
+# 144 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+ThreeIsland_BerryForest_EventScript_CantRematchCruelKing::
+# 145 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	msgbox ThreeIsland_BerryForest_Text_CruelKingPostBattle
+# 146 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	release
+# 147 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	end
+# 148 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+
+# 149 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+ThreeIsland_BerryForest_EventScript_NoCruelKing::
+# 150 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	msgbox ThreeIsland_BerryForest_Text_NoCruelKing
+# 151 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	release
+# 152 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	end
+# 153 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+
+# 154 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+ThreeIsland_BerryForest_EventScript_RematchCruelKing::
+# 155 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	msgbox ThreeIsland_BerryForest_Text_RematchCruelKing, MSGBOX_YESNO
+# 156 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, ThreeIsland_BerryForest_EventScript_NoCruelKing
+# 157 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	trainerbattle_single TRAINER_CRUEL_KING, ThreeIsland_BerryForest_Text_YesRematchCruelKing, ThreeIsland_BerryForest_Text_RematchCruelKingDefeat, ThreeIsland_BerryForest_EventScript_PostRematchCruelKing, NO_MUSIC
+# 158 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	release
+# 159 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	end
+# 160 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+
+# 161 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+ThreeIsland_BerryForest_EventScript_PostRematchCruelKing::
+# 162 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	msgbox ThreeIsland_BerryForest_Text_RematchCruelKingDefeat
+# 163 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	cleartrainerflag TRAINER_CRUEL_KING
 # 164 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	release
+# 165 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	end
