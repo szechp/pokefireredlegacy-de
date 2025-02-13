@@ -30,8 +30,6 @@ FuchsiaCity_Mart_Items::
 	.2byte ITEM_REVIVE
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_MAX_REPEL
-	.2byte ITEM_MOON_STONE
-	.2byte ITEM_SUN_STONE
 	.2byte ITEM_NONE
 	release
 	end
