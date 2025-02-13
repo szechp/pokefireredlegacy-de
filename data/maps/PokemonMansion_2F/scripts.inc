@@ -117,16 +117,18 @@ PokemonMansion_2F_EventScript_PostOak::
 # 59 "data/maps/PokemonMansion_2F/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 # 60 "data/maps/PokemonMansion_2F/scripts.pory"
-	release
+	msgbox PokemonMansion_1F_Text_Mew
 # 61 "data/maps/PokemonMansion_2F/scripts.pory"
-	end
-# 62 "data/maps/PokemonMansion_2F/scripts.pory"
-
-# 63 "data/maps/PokemonMansion_2F/scripts.pory"
-PokemonMansion_2F_EventScript_NoOak::
-# 64 "data/maps/PokemonMansion_2F/scripts.pory"
-	msgbox PokemonMansion_1F_Text_NoOak
-# 65 "data/maps/PokemonMansion_2F/scripts.pory"
 	release
+# 62 "data/maps/PokemonMansion_2F/scripts.pory"
+	end
+# 63 "data/maps/PokemonMansion_2F/scripts.pory"
+
+# 64 "data/maps/PokemonMansion_2F/scripts.pory"
+PokemonMansion_2F_EventScript_NoOak::
+# 65 "data/maps/PokemonMansion_2F/scripts.pory"
+	msgbox PokemonMansion_1F_Text_NoOak
 # 66 "data/maps/PokemonMansion_2F/scripts.pory"
+	release
+# 67 "data/maps/PokemonMansion_2F/scripts.pory"
 	end

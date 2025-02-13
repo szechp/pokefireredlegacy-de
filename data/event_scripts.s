@@ -1078,7 +1078,8 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_SHOPJOHTO           
 	setflag FLAG_HIDE_POSTGAME_TRAINERS      
 	setflag FLAG_HIDE_SEVIIGUYS      
-	setflag FLAG_HIDE_OAK               
+	setflag FLAG_HIDE_OAK        
+	setflag FLAG_HIDE_JOHTO_LEADERS       
 	setflag FLAG_HIDE_OAK2               
 	setflag FLAG_HIDE_MEW 
 	setflag FLAG_HIDE_ADMIN

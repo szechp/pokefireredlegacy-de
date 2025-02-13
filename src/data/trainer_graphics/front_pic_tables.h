@@ -148,6 +148,14 @@ const struct MonCoords gTrainerFrontPicCoords[] =
     {.size = 8, .y_offset = 1},
     {.size = 8, .y_offset = 1},
     {.size = 8, .y_offset = 1},
+    {.size = 8, .y_offset = 1},
+    {.size = 8, .y_offset = 1},
+    {.size = 8, .y_offset = 1},
+    {.size = 8, .y_offset = 1},
+    {.size = 8, .y_offset = 1},
+    {.size = 8, .y_offset = 1},
+    {.size = 8, .y_offset = 1},
+    {.size = 8, .y_offset = 1},
 };
 
 const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
@@ -300,14 +308,14 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
     TRAINER_SPRITE(RUIN_MANIAC, gTrainerFrontPic_RuinManiac, 0x800),
     TRAINER_SPRITE(LADY, gTrainerFrontPic_Lady, 0x800),
     TRAINER_SPRITE(PAINTER, gTrainerFrontPic_Painter, 0x800),
-    TRAINER_SPRITE(FALKNER, gTrainerFrontPic_Falkner, 0x1000),
-    TRAINER_SPRITE(BUGSY, gTrainerFrontPic_Bugsy, 0x1000),
-    TRAINER_SPRITE(WHITNEY, gTrainerFrontPic_Whitney, 0x1000),
-    TRAINER_SPRITE(MORTY, gTrainerFrontPic_Morty, 0x1000),
-    TRAINER_SPRITE(CHUCK, gTrainerFrontPic_Chuck, 0x1000),
-    TRAINER_SPRITE(JASMINE, gTrainerFrontPic_Jasmine, 0x1000),
-    TRAINER_SPRITE(PRYCE, gTrainerFrontPic_Pryce, 0x1000),
-    TRAINER_SPRITE(CLAIR, gTrainerFrontPic_Clair, 0x1000),
+    TRAINER_SPRITE(FALKNER, gTrainerFrontPic_Falkner, 0x800),
+    TRAINER_SPRITE(BUGSY, gTrainerFrontPic_Bugsy, 0x800),
+    TRAINER_SPRITE(WHITNEY, gTrainerFrontPic_Whitney, 0x800),
+    TRAINER_SPRITE(MORTY, gTrainerFrontPic_Morty, 0x800),
+    TRAINER_SPRITE(CHUCK, gTrainerFrontPic_Chuck, 0x800),
+    TRAINER_SPRITE(JASMINE, gTrainerFrontPic_Jasmine, 0x800),
+    TRAINER_SPRITE(PRYCE, gTrainerFrontPic_Pryce, 0x800),
+    TRAINER_SPRITE(CLAIR, gTrainerFrontPic_Clair, 0x800),
 };
 
 const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =

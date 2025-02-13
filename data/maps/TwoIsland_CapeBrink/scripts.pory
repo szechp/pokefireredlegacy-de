@@ -32,6 +32,7 @@ TwoIsland_CapeBrink_EventScript_NoClair::
 TwoIsland_CapeBrink_EventScript_RematchClair::
 	msgbox TwoIsland_CapeBrink_Text_RematchClair, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, TwoIsland_CapeBrink_EventScript_NoClair
+	cleartrainerflag TRAINER_CLAIR
 	trainerbattle_single TRAINER_CLAIR, TwoIsland_CapeBrink_Text_YesRematchClair, TwoIsland_CapeBrink_Text_RematchClairDefeat, TwoIsland_CapeBrink_EventScript_PostRematchClair, NO_MUSIC
 	release
 	end
