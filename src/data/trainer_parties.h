@@ -13697,10 +13697,10 @@ static const struct TrainerMon sParty_EliteFourAgatha2[] = {
     {
         .iv = 255,
         .lvl = 72,
-        .species = SPECIES_HOUNDOOM,
-        .heldItem = ITEM_SALAC_BERRY,
-        .moves = {MOVE_CRUNCH, MOVE_FIRE_BLAST, MOVE_IRON_TAIL, MOVE_REVERSAL},
-        .evs = {0, 252, 0, 252, 0, 0},
+        .species = SPECIES_DUSCLOPS,
+        .heldItem = ITEM_LEFTOVERS,
+        .moves = {MOVE_WILL_O_WISP, MOVE_PAIN_SPLIT, MOVE_SHADOW_BALL, MOVE_ICE_BEAM},
+        .evs = {252, 0, 0, 0, 252, 0},
     },
     {
         .iv = 255,
