@@ -2579,6 +2579,24 @@ void CheckGotAllItems(void)
     }
 }
 
+void CheckBeatSeviiLeaders(void)
+{
+    if (FlagGet(FLAG_OMAN_DEFEATED) &&
+        FlagGet(FLAG_KSI_DEFEATED) &&
+        FlagGet(FLAG_SAMAL_DEFEATED) &&
+        FlagGet(FLAG_CASENO_DEFEATED) &&
+        FlagGet(FLAG_CRUELKING_DEFEATED) &&
+        FlagGet(FLAG_SPEEDY_DEFEATED))
+    {
+        gSpecialVar_Result = TRUE;
+        return;
+    }
+    else
+    {
+        gSpecialVar_Result = FALSE;
+    }
+}
+
 void CheckBeatSeviiChamps(void)
 {
     if (FlagGet(FLAG_ARMSTRONG_DEFEATED) &&

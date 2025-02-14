@@ -117,8 +117,12 @@ TwoIsland_STONES::
 # 59 "data/maps/TwoIsland_House/scripts.pory"
 	.2byte ITEM_SOOTHE_BELL
 # 60 "data/maps/TwoIsland_House/scripts.pory"
-	.2byte ITEM_NONE
+	.2byte ITEM_MOON_STONE
 # 61 "data/maps/TwoIsland_House/scripts.pory"
-	release
+	.2byte ITEM_SUN_STONE
 # 62 "data/maps/TwoIsland_House/scripts.pory"
+	.2byte ITEM_NONE
+# 63 "data/maps/TwoIsland_House/scripts.pory"
+	release
+# 64 "data/maps/TwoIsland_House/scripts.pory"
 	end

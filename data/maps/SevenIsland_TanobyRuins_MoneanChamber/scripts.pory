@@ -6,7 +6,17 @@ SevenIsland_TanobyRuins_MoneanChamber_MapScripts::
 SevenIsland_TanobyRuins_MoneanChamber_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER
 	call EventScript_TryDarkenRuins
+	special CheckBeatSeviiLeaders
+	call_if_eq VAR_RESULT, TRUE, SevenIsland_TanobyRuins_MoneanChamber_YesItem
 	end
+
+SevenIsland_TanobyRuins_MoneanChamber_YesItem::
+	call_if_unset FLAG_SEVEN_SEVII, SevenIsland_TanobyRuins_MoneanChamber_EventScript_ShowCelebi
+	end
+
+SevenIsland_TanobyRuins_MoneanChamber_EventScript_ShowCelebi::
+	clearflag FLAG_SEVEN_SEVII
+	return
 
 SevenIsland_TanobyRuins_MoneanChamber_EventScript_Armstrong::
 	lock

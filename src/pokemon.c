@@ -24,6 +24,7 @@
 #include "party_menu.h"
 #include "field_specials.h"
 #include "berry.h"
+#include "constants/map_types.h"
 #include "constants/items.h"
 #include "constants/item_effects.h"
 #include "constants/hoenn_cries.h"

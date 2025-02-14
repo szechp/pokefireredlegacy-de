@@ -1289,7 +1289,7 @@
 #define FLAG_HIDE_EASTER         0x4E4
 #define FLAG_HIDDEN_AURORA       (FLAG_HIDDEN_ITEMS_START + 201)
 #define FLAG_HIDE_GIOVANNI_ONE   0x4E6
-#define FLAG_0x4E7               0x4E7
+#define FLAG_SEVEN_SEVII         0x4E7
 #define FLAG_0x4E8               0x4E8
 #define FLAG_0x4E9               0x4E9
 #define FLAG_0x4EA               0x4EA

@@ -63,12 +63,8 @@ FuchsiaCity_Mart_Items::
 # 32 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	.2byte ITEM_MAX_REPEL
 # 33 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	.2byte ITEM_MOON_STONE
-# 34 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	.2byte ITEM_SUN_STONE
-# 35 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	.2byte ITEM_NONE
-# 36 "data/maps/FuchsiaCity_Mart/scripts.pory"
+# 34 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	release
-# 37 "data/maps/FuchsiaCity_Mart/scripts.pory"
+# 35 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	end
