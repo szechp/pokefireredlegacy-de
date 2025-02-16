@@ -91,4 +91,14 @@ OneIsland_KindleRoad_EmberSpa_EventScript_PostRematchSamal::
 	cleartrainerflag TRAINER_SAMAL
 	release
 	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_Gym1::
+	trainerbattle_single TRAINER_CYCLING_TRIATHLETE_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+OneIsland_KindleRoad_EmberSpa_EventScript_Gym2::
+	trainerbattle_single TRAINER_CYCLING_TRIATHLETE_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	end
 `

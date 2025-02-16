@@ -7,11 +7,7 @@ SevenIsland_TanobyRuins_MoneanChamber_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER
 	call EventScript_TryDarkenRuins
 	special CheckBeatSeviiLeaders
-	call_if_eq VAR_RESULT, TRUE, SevenIsland_TanobyRuins_MoneanChamber_YesItem
-	end
-
-SevenIsland_TanobyRuins_MoneanChamber_YesItem::
-	call_if_unset FLAG_SEVEN_SEVII, SevenIsland_TanobyRuins_MoneanChamber_EventScript_ShowCelebi
+	call_if_eq VAR_RESULT, TRUE, SevenIsland_TanobyRuins_MoneanChamber_EventScript_ShowCelebi
 	end
 
 SevenIsland_TanobyRuins_MoneanChamber_EventScript_ShowCelebi::
@@ -32,6 +28,8 @@ SevenIsland_TanobyRuins_MoneanChamber_EventScript_PostArmstrong::
 	msgbox SevenIsland_TanobyRuins_MoneanChamber_Text_ArmstrongPostBattle
 	setflag FLAG_ARMSTRONG_DEFEATED
 	cleartrainerflag TRAINER_ARMSTRONG
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
+	giveitem ITEM_AURORA_TICKET
 	release
 	end
 

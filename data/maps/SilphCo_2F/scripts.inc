@@ -72,3 +72,81 @@ SilphCo_2F_EventScript_Grunt2::
 	msgbox SilphCo_2F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 # 37 "data/maps/SilphCo_2F/scripts.pory"
 	end
+# 38 "data/maps/SilphCo_2F/scripts.pory"
+
+# 39 "data/maps/SilphCo_2F/scripts.pory"
+SilphCo_2F_EventScript_Scientist::
+# 40 "data/maps/SilphCo_2F/scripts.pory"
+	msgbox SilphCo_2F_Text_Scientist, MSGBOX_NPC
+# 41 "data/maps/SilphCo_2F/scripts.pory"
+	end
+# 42 "data/maps/SilphCo_2F/scripts.pory"
+SilphCo_2F_Text_Scientist:
+# 43 "data/maps/SilphCo_2F/scripts.pory"
+	.string "Now that we're not working on the\n"
+# 44 "data/maps/SilphCo_2F/scripts.pory"
+	.string "MASTER BALL anymore, we're pivoting\l"
+# 45 "data/maps/SilphCo_2F/scripts.pory"
+	.string "to other projects.$"
+# 46 "data/maps/SilphCo_2F/scripts.pory"
+SilphCo_2F_EventScript_WorkerF1::
+# 47 "data/maps/SilphCo_2F/scripts.pory"
+	msgbox SilphCo_2F_Text_WorkerF1, MSGBOX_NPC
+# 48 "data/maps/SilphCo_2F/scripts.pory"
+	end
+# 49 "data/maps/SilphCo_2F/scripts.pory"
+SilphCo_2F_Text_WorkerF1:
+# 50 "data/maps/SilphCo_2F/scripts.pory"
+	.string "Maybe our next product can be a\n"
+# 51 "data/maps/SilphCo_2F/scripts.pory"
+	.string "security system to keep people\l"
+# 52 "data/maps/SilphCo_2F/scripts.pory"
+	.string "like TEAM ROCKET out!$"
+# 53 "data/maps/SilphCo_2F/scripts.pory"
+SilphCo_2F_EventScript_WorkerF2::
+# 54 "data/maps/SilphCo_2F/scripts.pory"
+	msgbox SilphCo_2F_Text_WorkerF2, MSGBOX_NPC
+# 55 "data/maps/SilphCo_2F/scripts.pory"
+	end
+# 56 "data/maps/SilphCo_2F/scripts.pory"
+SilphCo_2F_Text_WorkerF2:
+# 57 "data/maps/SilphCo_2F/scripts.pory"
+	.string "Programming is hard work!\p"
+# 58 "data/maps/SilphCo_2F/scripts.pory"
+	.string "Can you imagine how difficult\n"
+# 59 "data/maps/SilphCo_2F/scripts.pory"
+	.string "coding a PORYGON would be?\p"
+# 60 "data/maps/SilphCo_2F/scripts.pory"
+	.string "To create a POKéMON out of\n"
+# 61 "data/maps/SilphCo_2F/scripts.pory"
+	.string "code like that…\l"
+# 62 "data/maps/SilphCo_2F/scripts.pory"
+	.string "It's unbelievable!$"
+# 63 "data/maps/SilphCo_2F/scripts.pory"
+SilphCo_2F_EventScript_Woman::
+# 64 "data/maps/SilphCo_2F/scripts.pory"
+	msgbox SilphCo_2F_Text_Woman, MSGBOX_NPC
+# 65 "data/maps/SilphCo_2F/scripts.pory"
+	end
+# 66 "data/maps/SilphCo_2F/scripts.pory"
+SilphCo_2F_Text_Woman:
+# 67 "data/maps/SilphCo_2F/scripts.pory"
+	.string "We're constantly in and out of\n"
+# 68 "data/maps/SilphCo_2F/scripts.pory"
+	.string "meetings all day long.\p"
+# 69 "data/maps/SilphCo_2F/scripts.pory"
+	.string "I wish they would just let me\n"
+# 70 "data/maps/SilphCo_2F/scripts.pory"
+	.string "work in peace…$"
+# 71 "data/maps/SilphCo_2F/scripts.pory"
+SilphCo_2F_EventScript_WorkerM::
+# 72 "data/maps/SilphCo_2F/scripts.pory"
+	msgbox SilphCo_2F_Text_WorkerM, MSGBOX_NPC
+# 73 "data/maps/SilphCo_2F/scripts.pory"
+	end
+# 74 "data/maps/SilphCo_2F/scripts.pory"
+SilphCo_2F_Text_WorkerM:
+# 75 "data/maps/SilphCo_2F/scripts.pory"
+	.string "…\p"
+# 76 "data/maps/SilphCo_2F/scripts.pory"
+	.string "He's asleep on the job!$"

@@ -182,3 +182,21 @@ SilphCo_6F_EventScript_Grunt2::
 	msgbox SilphCo_6F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 # 92 "data/maps/SilphCo_6F/scripts.pory"
 	end
+# 93 "data/maps/SilphCo_6F/scripts.pory"
+
+# 94 "data/maps/SilphCo_6F/scripts.pory"
+SilphCo_6F_EventScript_SuperNerd:: 
+# 95 "data/maps/SilphCo_6F/scripts.pory"
+	msgbox SilphCo_6F_Text_SuperNerd, MSGBOX_NPC
+# 96 "data/maps/SilphCo_6F/scripts.pory"
+	end
+# 97 "data/maps/SilphCo_6F/scripts.pory"
+SilphCo_6F_Text_SuperNerd:
+# 98 "data/maps/SilphCo_6F/scripts.pory"
+	.string "I am one of the four SILPH\n"
+# 99 "data/maps/SilphCo_6F/scripts.pory"
+    .string "BROTHERS!\p"
+# 100 "data/maps/SilphCo_6F/scripts.pory"
+	.string "I make sure the company inventory\n"
+# 101 "data/maps/SilphCo_6F/scripts.pory"
+	.string "counts are correct!$"

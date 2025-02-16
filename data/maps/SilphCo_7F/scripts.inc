@@ -472,3 +472,81 @@ SilphCo_7F_EventScript_Grunt3::
 	msgbox SilphCo_7F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 # 237 "data/maps/SilphCo_7F/scripts.pory"
 	end
+# 238 "data/maps/SilphCo_7F/scripts.pory"
+
+# 239 "data/maps/SilphCo_7F/scripts.pory"
+SilphCo_7F_EventScript_WorkerBro:: 
+# 240 "data/maps/SilphCo_7F/scripts.pory"
+	msgbox SilphCo_7F_Text_WorkerBro, MSGBOX_NPC
+# 241 "data/maps/SilphCo_7F/scripts.pory"
+	end
+# 242 "data/maps/SilphCo_7F/scripts.pory"
+SilphCo_7F_Text_WorkerBro:
+# 243 "data/maps/SilphCo_7F/scripts.pory"
+	.string "I am one of the four SILPH\n"
+# 244 "data/maps/SilphCo_7F/scripts.pory"
+    .string "BROTHERS!\p"
+# 245 "data/maps/SilphCo_7F/scripts.pory"
+	.string "I make sure the company servers\n"
+# 246 "data/maps/SilphCo_7F/scripts.pory"
+	.string "are working properly!$"
+# 247 "data/maps/SilphCo_7F/scripts.pory"
+SilphCo_7F_EventScript_WorkerFPhone:: 
+# 248 "data/maps/SilphCo_7F/scripts.pory"
+	msgbox SilphCo_7F_Text_WorkerFPhone
+# 249 "data/maps/SilphCo_7F/scripts.pory"
+	release
+# 250 "data/maps/SilphCo_7F/scripts.pory"
+	msgbox SilphCo_7F_Text_WorkerFPhone2, MSGBOX_NPC
+# 251 "data/maps/SilphCo_7F/scripts.pory"
+	turnobject 13, DIR_NORTH
+# 252 "data/maps/SilphCo_7F/scripts.pory"
+	end
+# 253 "data/maps/SilphCo_7F/scripts.pory"
+SilphCo_7F_Text_WorkerFPhone:
+# 254 "data/maps/SilphCo_7F/scripts.pory"
+	.string "Have you tried doing what I\n"
+# 255 "data/maps/SilphCo_7F/scripts.pory"
+    .string "suggested earlier?\p"
+# 256 "data/maps/SilphCo_7F/scripts.pory"
+	.string "I'm telling you it'd work.\n"
+# 257 "data/maps/SilphCo_7F/scripts.pory"
+	.string "Okay, call me back.$"
+# 258 "data/maps/SilphCo_7F/scripts.pory"
+SilphCo_7F_Text_WorkerFPhone2:
+# 259 "data/maps/SilphCo_7F/scripts.pory"
+	.string "My coworker downstairs asks\n"
+# 260 "data/maps/SilphCo_7F/scripts.pory"
+	.string "me for help all the time.\p"
+# 261 "data/maps/SilphCo_7F/scripts.pory"
+	.string "I usually figure out the\n"
+# 262 "data/maps/SilphCo_7F/scripts.pory"
+	.string "solution pretty quickly…\p"
+# 263 "data/maps/SilphCo_7F/scripts.pory"
+	.string "But does he ever listen to\n"
+# 264 "data/maps/SilphCo_7F/scripts.pory"
+	.string "me the first time?\p"
+# 265 "data/maps/SilphCo_7F/scripts.pory"
+	.string "No!\n"
+# 266 "data/maps/SilphCo_7F/scripts.pory"
+	.string "Of course not!$"
+# 267 "data/maps/SilphCo_7F/scripts.pory"
+SilphCo_7F_EventScript_Painting::
+# 268 "data/maps/SilphCo_7F/scripts.pory"
+	goto_if_unset FLAG_HIDE_SAFFRON_CIVILIANS, SilphCo_7F_EventScript_NewPainting
+# 269 "data/maps/SilphCo_7F/scripts.pory"
+	msgbox SilphCo_7F_Text_NewPainting, MSGBOX_SIGN
+# 270 "data/maps/SilphCo_7F/scripts.pory"
+	end
+# 271 "data/maps/SilphCo_7F/scripts.pory"
+SilphCo_7F_EventScript_NewPainting::
+# 272 "data/maps/SilphCo_7F/scripts.pory"
+	msgbox SilphCo_7F_Text_NewPainting, MSGBOX_SIGN
+# 273 "data/maps/SilphCo_7F/scripts.pory"
+	end
+# 274 "data/maps/SilphCo_7F/scripts.pory"
+SilphCo_7F_Text_NewPainting:
+# 275 "data/maps/SilphCo_7F/scripts.pory"
+	.string "It's a gorgeous painting of a bird\n"
+# 276 "data/maps/SilphCo_7F/scripts.pory"
+	.string "POKéMON darting between the trees.$"

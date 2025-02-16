@@ -159,118 +159,140 @@ SilphCo_11F_EventScript_BattleGiovanni::
 # 80 "data/maps/SilphCo_11F/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 # 81 "data/maps/SilphCo_11F/scripts.pory"
-	setvar VAR_MAP_SCENE_SILPH_CO_11F, 1
+	playbgm MUS_PEWTER, 0
 # 82 "data/maps/SilphCo_11F/scripts.pory"
-	setflag FLAG_HIDE_SAFFRON_ROCKETS
+	setvar VAR_MAP_SCENE_SILPH_CO_11F, 1
 # 83 "data/maps/SilphCo_11F/scripts.pory"
-	clearflag FLAG_HIDE_SAFFRON_CIVILIANS
+	setflag FLAG_HIDE_SAFFRON_ROCKETS
 # 84 "data/maps/SilphCo_11F/scripts.pory"
-	releaseall
+	clearflag FLAG_HIDE_SAFFRON_CIVILIANS
 # 85 "data/maps/SilphCo_11F/scripts.pory"
-	end
+	releaseall
 # 86 "data/maps/SilphCo_11F/scripts.pory"
-
+	end
 # 87 "data/maps/SilphCo_11F/scripts.pory"
-SilphCo_11F_EventScript_GiovanniApproachLeft::
+
 # 88 "data/maps/SilphCo_11F/scripts.pory"
-	applymovement LOCALID_GIOVANNI, SilphCo_11F_Movement_GiovanniApproachLeft
+SilphCo_11F_EventScript_GiovanniApproachLeft::
 # 89 "data/maps/SilphCo_11F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SilphCo_11F_Movement_PlayerFaceGiovanni
+	applymovement LOCALID_GIOVANNI, SilphCo_11F_Movement_GiovanniApproachLeft
 # 90 "data/maps/SilphCo_11F/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, SilphCo_11F_Movement_PlayerFaceGiovanni
 # 91 "data/maps/SilphCo_11F/scripts.pory"
-	return
-# 92 "data/maps/SilphCo_11F/scripts.pory"
-
-# 93 "data/maps/SilphCo_11F/scripts.pory"
-SilphCo_11F_EventScript_GiovanniApproachRight::
-# 94 "data/maps/SilphCo_11F/scripts.pory"
-	applymovement LOCALID_GIOVANNI, SilphCo_11F_Movement_GiovanniApproachRight
-# 95 "data/maps/SilphCo_11F/scripts.pory"
 	waitmovement 0
-# 96 "data/maps/SilphCo_11F/scripts.pory"
+# 92 "data/maps/SilphCo_11F/scripts.pory"
 	return
+# 93 "data/maps/SilphCo_11F/scripts.pory"
+
+# 94 "data/maps/SilphCo_11F/scripts.pory"
+SilphCo_11F_EventScript_GiovanniApproachRight::
+# 95 "data/maps/SilphCo_11F/scripts.pory"
+	applymovement LOCALID_GIOVANNI, SilphCo_11F_Movement_GiovanniApproachRight
+# 96 "data/maps/SilphCo_11F/scripts.pory"
+	waitmovement 0
 # 97 "data/maps/SilphCo_11F/scripts.pory"
-
+	return
 # 98 "data/maps/SilphCo_11F/scripts.pory"
-SilphCo_11F_Movement_GiovanniApproachLeft::
+
 # 99 "data/maps/SilphCo_11F/scripts.pory"
-	walk_down
+SilphCo_11F_EventScript_WorkerM::
 # 100 "data/maps/SilphCo_11F/scripts.pory"
-	walk_down
+	msgbox SilphCo_11F_Text_WorkerM, MSGBOX_NPC
 # 101 "data/maps/SilphCo_11F/scripts.pory"
-	walk_down
+	end
 # 102 "data/maps/SilphCo_11F/scripts.pory"
-	walk_down
+SilphCo_11F_Text_WorkerM:
 # 103 "data/maps/SilphCo_11F/scripts.pory"
-	walk_in_place_faster_left
+	.string "Excuse me!\p"
 # 104 "data/maps/SilphCo_11F/scripts.pory"
-	step_end
+	.string "Do you have an appointment to see\n"
 # 105 "data/maps/SilphCo_11F/scripts.pory"
-
+	.string "the PRESIDENT?\p"
 # 106 "data/maps/SilphCo_11F/scripts.pory"
-SilphCo_11F_Movement_GiovanniApproachRight::
+	.string "Oh, {PLAYER}!\n"
 # 107 "data/maps/SilphCo_11F/scripts.pory"
-	walk_down
+	.string "Sorry, go on ahead.$"
 # 108 "data/maps/SilphCo_11F/scripts.pory"
-	walk_down
+
 # 109 "data/maps/SilphCo_11F/scripts.pory"
-	walk_down
+SilphCo_11F_Movement_GiovanniApproachLeft::
 # 110 "data/maps/SilphCo_11F/scripts.pory"
-	step_end
+	walk_down
 # 111 "data/maps/SilphCo_11F/scripts.pory"
-
+	walk_down
 # 112 "data/maps/SilphCo_11F/scripts.pory"
-SilphCo_11F_Movement_PlayerFaceGiovanni::
+	walk_down
 # 113 "data/maps/SilphCo_11F/scripts.pory"
-	delay_16
+	walk_down
 # 114 "data/maps/SilphCo_11F/scripts.pory"
-	delay_16
+	walk_in_place_faster_left
 # 115 "data/maps/SilphCo_11F/scripts.pory"
-	delay_16
-# 116 "data/maps/SilphCo_11F/scripts.pory"
-	delay_8
-# 117 "data/maps/SilphCo_11F/scripts.pory"
-	delay_4
-# 118 "data/maps/SilphCo_11F/scripts.pory"
-	walk_in_place_faster_right
-# 119 "data/maps/SilphCo_11F/scripts.pory"
 	step_end
+# 116 "data/maps/SilphCo_11F/scripts.pory"
+
+# 117 "data/maps/SilphCo_11F/scripts.pory"
+SilphCo_11F_Movement_GiovanniApproachRight::
+# 118 "data/maps/SilphCo_11F/scripts.pory"
+	walk_down
+# 119 "data/maps/SilphCo_11F/scripts.pory"
+	walk_down
 # 120 "data/maps/SilphCo_11F/scripts.pory"
-
+	walk_down
 # 121 "data/maps/SilphCo_11F/scripts.pory"
-@ Unused
+	step_end
 # 122 "data/maps/SilphCo_11F/scripts.pory"
-SilphCo_11F_EventScript_Monitor::
+
 # 123 "data/maps/SilphCo_11F/scripts.pory"
-	msgbox SilphCo_11F_Text_MonitorHasMonsOnIt, MSGBOX_SIGN
+SilphCo_11F_Movement_PlayerFaceGiovanni::
 # 124 "data/maps/SilphCo_11F/scripts.pory"
-	end
+	delay_16
 # 125 "data/maps/SilphCo_11F/scripts.pory"
-
+	delay_16
 # 126 "data/maps/SilphCo_11F/scripts.pory"
-SilphCo_11F_EventScript_FloorSign::
+	delay_16
 # 127 "data/maps/SilphCo_11F/scripts.pory"
-	msgbox SilphCo_11F_Text_FloorSign, MSGBOX_SIGN
+	delay_8
 # 128 "data/maps/SilphCo_11F/scripts.pory"
-	end
+	delay_4
 # 129 "data/maps/SilphCo_11F/scripts.pory"
-
+	walk_in_place_faster_right
 # 130 "data/maps/SilphCo_11F/scripts.pory"
-SilphCo_11F_EventScript_Grunt1::
+	step_end
 # 131 "data/maps/SilphCo_11F/scripts.pory"
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_40, SilphCo_11F_Text_Grunt1Intro, SilphCo_11F_Text_Grunt1Defeat
-# 132 "data/maps/SilphCo_11F/scripts.pory"
-	msgbox SilphCo_11F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
-# 133 "data/maps/SilphCo_11F/scripts.pory"
-	end
-# 134 "data/maps/SilphCo_11F/scripts.pory"
 
+# 132 "data/maps/SilphCo_11F/scripts.pory"
+@ Unused
+# 133 "data/maps/SilphCo_11F/scripts.pory"
+SilphCo_11F_EventScript_Monitor::
+# 134 "data/maps/SilphCo_11F/scripts.pory"
+	msgbox SilphCo_11F_Text_MonitorHasMonsOnIt, MSGBOX_SIGN
 # 135 "data/maps/SilphCo_11F/scripts.pory"
-SilphCo_11F_EventScript_Grunt2::
+	end
 # 136 "data/maps/SilphCo_11F/scripts.pory"
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_41, SilphCo_11F_Text_Grunt2Intro, SilphCo_11F_Text_Grunt2Defeat
+
 # 137 "data/maps/SilphCo_11F/scripts.pory"
-	msgbox SilphCo_11F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
+SilphCo_11F_EventScript_FloorSign::
 # 138 "data/maps/SilphCo_11F/scripts.pory"
+	msgbox SilphCo_11F_Text_FloorSign, MSGBOX_SIGN
+# 139 "data/maps/SilphCo_11F/scripts.pory"
+	end
+# 140 "data/maps/SilphCo_11F/scripts.pory"
+
+# 141 "data/maps/SilphCo_11F/scripts.pory"
+SilphCo_11F_EventScript_Grunt1::
+# 142 "data/maps/SilphCo_11F/scripts.pory"
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_40, SilphCo_11F_Text_Grunt1Intro, SilphCo_11F_Text_Grunt1Defeat
+# 143 "data/maps/SilphCo_11F/scripts.pory"
+	msgbox SilphCo_11F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+# 144 "data/maps/SilphCo_11F/scripts.pory"
+	end
+# 145 "data/maps/SilphCo_11F/scripts.pory"
+
+# 146 "data/maps/SilphCo_11F/scripts.pory"
+SilphCo_11F_EventScript_Grunt2::
+# 147 "data/maps/SilphCo_11F/scripts.pory"
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_41, SilphCo_11F_Text_Grunt2Intro, SilphCo_11F_Text_Grunt2Defeat
+# 148 "data/maps/SilphCo_11F/scripts.pory"
+	msgbox SilphCo_11F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
+# 149 "data/maps/SilphCo_11F/scripts.pory"
 	end

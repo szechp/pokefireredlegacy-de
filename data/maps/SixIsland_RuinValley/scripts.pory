@@ -68,4 +68,13 @@ SixIsland_RuinValley_EventScript_GiovanniNo::
 	release
 	end
 
+SixIsland_RuinValley_EventScript_Gym1::
+	trainerbattle_single TRAINER_EXPERT_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+SixIsland_RuinValley_EventScript_Gym2::
+	trainerbattle_single TRAINER_EXPERT_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	end
 `

@@ -163,4 +163,19 @@ ThreeIsland_BerryForest_EventScript_PostRematchCruelKing::
 	cleartrainerflag TRAINER_CRUEL_KING
 	release
 	end
+
+ThreeIsland_BerryForest_EventScript_Gym1::
+	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+ThreeIsland_BerryForest_EventScript_Gym2::
+	trainerbattle_single TRAINER_SR_AND_JR, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+ThreeIsland_BerryForest_EventScript_Gym3::
+	trainerbattle_single TRAINER_POKEFAN_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	end
 `

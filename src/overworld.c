@@ -992,12 +992,20 @@ static u16 GetCurrLocationDefaultMusic(void)
 {
     u16 music;
     music = GetLocationMusic(&gSaveBlock1Ptr->location);
+    if(music == MUS_SILPH && FlagGet(FLAG_HIDE_SILPH_ROCKETS))
+    {
+        music = MUS_PEWTER;
+    }
     return music;
 }
 
 static u16 GetWarpDestinationMusic(void)
 {
     u16 music = GetLocationMusic(&sWarpDestination);
+    if(music == MUS_SILPH && FlagGet(FLAG_HIDE_SILPH_ROCKETS))
+    {
+        music = MUS_PEWTER;
+    }
     return music;
 }
 

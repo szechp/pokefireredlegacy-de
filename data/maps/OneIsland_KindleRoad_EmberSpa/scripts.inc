@@ -184,3 +184,23 @@ OneIsland_KindleRoad_EmberSpa_EventScript_PostRematchSamal::
 	release
 # 93 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	end
+# 94 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+
+# 95 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+OneIsland_KindleRoad_EmberSpa_EventScript_Gym1::
+# 96 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	trainerbattle_single TRAINER_CYCLING_TRIATHLETE_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+# 97 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+# 98 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	end
+# 99 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+
+# 100 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+OneIsland_KindleRoad_EmberSpa_EventScript_Gym2::
+# 101 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	trainerbattle_single TRAINER_CYCLING_TRIATHLETE_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+# 102 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+# 103 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
+	end

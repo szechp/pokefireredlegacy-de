@@ -166,3 +166,23 @@ TwoIsland_CapeBrink_EventScript_PostRematchCaseno::
 	release
 # 84 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 	end
+# 85 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+
+# 86 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+TwoIsland_CapeBrink_EventScript_Gym1::
+# 87 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+	trainerbattle_single TRAINER_RS_YOUNG_COUPLE, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+# 88 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+# 89 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+	end
+# 90 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+
+# 91 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+TwoIsland_CapeBrink_EventScript_Gym2::
+# 92 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+# 93 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+# 94 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+	end

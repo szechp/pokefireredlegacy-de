@@ -78,6 +78,7 @@ SilphCo_11F_EventScript_BattleGiovanni::
 	removeobject LOCALID_GRUNT1
 	removeobject LOCALID_GRUNT2
 	fadescreen FADE_FROM_BLACK
+	playbgm MUS_PEWTER, 0
 	setvar VAR_MAP_SCENE_SILPH_CO_11F, 1
 	setflag FLAG_HIDE_SAFFRON_ROCKETS
 	clearflag FLAG_HIDE_SAFFRON_CIVILIANS
@@ -94,6 +95,16 @@ SilphCo_11F_EventScript_GiovanniApproachRight::
 	applymovement LOCALID_GIOVANNI, SilphCo_11F_Movement_GiovanniApproachRight
 	waitmovement 0
 	return
+
+SilphCo_11F_EventScript_WorkerM::
+	msgbox SilphCo_11F_Text_WorkerM, MSGBOX_NPC
+	end
+SilphCo_11F_Text_WorkerM:
+	.string "Excuse me!\p"
+	.string "Do you have an appointment to see\n"
+	.string "the PRESIDENT?\p"
+	.string "Oh, {PLAYER}!\n"
+	.string "Sorry, go on ahead.$"
 
 SilphCo_11F_Movement_GiovanniApproachLeft::
 	walk_down

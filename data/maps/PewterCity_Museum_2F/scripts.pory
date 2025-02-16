@@ -32,17 +32,7 @@ PewterCity_Museum_2F_EventScript_MoonStone::
 	end
 
 PewterCity_Museum_2F_EventScript_AuroraGuy::
-	goto_if_set FLAG_ENABLE_SHIP_BIRTH_ISLAND, PewterCity_Museum_2F_EventScript_AuroraGuyExplain
 	msgbox PewterCity_Museum_1F_Text_EliteTicket, MSGBOX_NPC
-	special GetDeoxys
-	call_if_eq VAR_RESULT, TRUE, PewterCity_Museum_2F_EventScript_AuroraGuyTicket
-	release
-	end
-
-PewterCity_Museum_2F_EventScript_AuroraGuyTicket::
-	msgbox PewterCity_Museum_1F_Text_Ticket, MSGBOX_NPC
-	giveitem ITEM_AURORA_TICKET
-	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
 	end
 
 PewterCity_Museum_2F_EventScript_AuroraGuyExplain::

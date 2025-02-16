@@ -43,8 +43,8 @@ ThreeIsland_BerryForest_Text_BewareWildBerryLovingMons::
 
 ThreeIsland_BerryForest_Text_CruelKing::
     .string "I am the CRUEL KING!\p"
-    .string "A Apex Trainer that uses!\n"
-    .string "Fast and strong Pokemon!p"
+    .string "An Apex Trainer that uses!\n"
+    .string "Fast and strong Pokemon!\p"
     .string "Are you ready for my Skill?$"
 
 ThreeIsland_BerryForest_Text_CruelKingDefeat::

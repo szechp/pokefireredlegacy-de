@@ -328,3 +328,33 @@ ThreeIsland_BerryForest_EventScript_PostRematchCruelKing::
 	release
 # 165 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	end
+# 166 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+
+# 167 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+ThreeIsland_BerryForest_EventScript_Gym1::
+# 168 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+# 169 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+# 170 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	end
+# 171 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+
+# 172 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+ThreeIsland_BerryForest_EventScript_Gym2::
+# 173 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	trainerbattle_single TRAINER_SR_AND_JR, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+# 174 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+# 175 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	end
+# 176 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+
+# 177 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+ThreeIsland_BerryForest_EventScript_Gym3::
+# 178 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	trainerbattle_single TRAINER_POKEFAN_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+# 179 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+# 180 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	end

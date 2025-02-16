@@ -17,6 +17,11 @@ FourIsland_IcefallCave_1F_OnFrame::
 	map_script_2 VAR_TEMP_1, 1, FourIsland_IcefallCave_1F_EventScript_FallDownHole
 	.2byte 0
 
+FourIsland_IcefallCave_1F_EventScript_Gym3::
+	trainerbattle_single TRAINER_RS_YOUNGSTER, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
 FourIsland_IcefallCave_1F_EventScript_FallDownHole::
 	lockall
 	delay 20

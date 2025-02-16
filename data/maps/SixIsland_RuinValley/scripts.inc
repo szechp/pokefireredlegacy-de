@@ -136,3 +136,23 @@ SixIsland_RuinValley_EventScript_GiovanniNo::
 	release
 # 69 "data/maps/SixIsland_RuinValley/scripts.pory"
 	end
+# 70 "data/maps/SixIsland_RuinValley/scripts.pory"
+
+# 71 "data/maps/SixIsland_RuinValley/scripts.pory"
+SixIsland_RuinValley_EventScript_Gym1::
+# 72 "data/maps/SixIsland_RuinValley/scripts.pory"
+	trainerbattle_single TRAINER_EXPERT_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+# 73 "data/maps/SixIsland_RuinValley/scripts.pory"
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+# 74 "data/maps/SixIsland_RuinValley/scripts.pory"
+	end
+# 75 "data/maps/SixIsland_RuinValley/scripts.pory"
+
+# 76 "data/maps/SixIsland_RuinValley/scripts.pory"
+SixIsland_RuinValley_EventScript_Gym2::
+# 77 "data/maps/SixIsland_RuinValley/scripts.pory"
+	trainerbattle_single TRAINER_EXPERT_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+# 78 "data/maps/SixIsland_RuinValley/scripts.pory"
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+# 79 "data/maps/SixIsland_RuinValley/scripts.pory"
+	end

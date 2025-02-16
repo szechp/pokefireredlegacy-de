@@ -82,4 +82,14 @@ TwoIsland_CapeBrink_EventScript_PostRematchCaseno::
 	cleartrainerflag TRAINER_CASENO
 	release
 	end
+
+TwoIsland_CapeBrink_EventScript_Gym1::
+	trainerbattle_single TRAINER_RS_YOUNG_COUPLE, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+TwoIsland_CapeBrink_EventScript_Gym2::
+	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	end
 `

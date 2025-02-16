@@ -37,32 +37,42 @@ FourIsland_IcefallCave_1F_OnFrame::
 # 19 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
 
 # 20 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-FourIsland_IcefallCave_1F_EventScript_FallDownHole::
+FourIsland_IcefallCave_1F_EventScript_Gym3::
 # 21 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-	lockall
+	trainerbattle_single TRAINER_RS_YOUNGSTER, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
 # 22 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-	delay 20
+	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
 # 23 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, FourIsland_IcefallCave_1F_Movement_SetInvisible
-# 24 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-	waitmovement 0
-# 25 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-	playse SE_FALL
-# 26 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-	delay 60
-# 27 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-	warphole MAP_FOUR_ISLAND_ICEFALL_CAVE_B1F
-# 28 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-	waitstate
-# 29 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-	releaseall
-# 30 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
 	end
-# 31 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+# 24 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
 
+# 25 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+FourIsland_IcefallCave_1F_EventScript_FallDownHole::
+# 26 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+	lockall
+# 27 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+	delay 20
+# 28 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, FourIsland_IcefallCave_1F_Movement_SetInvisible
+# 29 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+	waitmovement 0
+# 30 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+	playse SE_FALL
+# 31 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+	delay 60
 # 32 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-FourIsland_IcefallCave_1F_Movement_SetInvisible::
+	warphole MAP_FOUR_ISLAND_ICEFALL_CAVE_B1F
 # 33 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-	set_invisible
+	waitstate
 # 34 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+	releaseall
+# 35 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+	end
+# 36 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+
+# 37 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+FourIsland_IcefallCave_1F_Movement_SetInvisible::
+# 38 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
+	set_invisible
+# 39 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
 	step_end
