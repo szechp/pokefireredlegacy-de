@@ -105,6 +105,8 @@ FiveIsland_Meadow_Items::
 	.2byte ITEM_PP_UP
 	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_SAFARI_BALL
+	.2byte ITEM_WHITE_FLUTE
+	.2byte ITEM_BLACK_FLUTE
 	.2byte ITEM_NONE
 	release
 	end
