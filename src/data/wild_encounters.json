@@ -1616,14 +1616,14 @@
                 "species": "SPECIES_TENTACOOL"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
+                "min_level": 35,
+                "max_level": 40,
                 "species": "SPECIES_TENTACRUEL"
               },
               {
                 "min_level": 35,
                 "max_level": 40,
-                "species": "SPECIES_TENTACRUEL"
+                "species": "SPECIES_MARILL"
               }
             ]
           },
@@ -1668,17 +1668,17 @@
               {
                 "min_level": 25,
                 "max_level": 35,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 25,
+                "max_level": 35,
                 "species": "SPECIES_CHINCHOU"
               },
               {
                 "min_level": 25,
                 "max_level": 35,
                 "species": "SPECIES_MARILL"
-              },
-              {
-                "min_level": 25,
-                "max_level": 35,
-                "species": "SPECIES_AZUMARILL"
               }
             ]
           }
@@ -1705,14 +1705,14 @@
                 "species": "SPECIES_TENTACOOL"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
+                "min_level": 35,
+                "max_level": 40,
                 "species": "SPECIES_TENTACRUEL"
               },
               {
                 "min_level": 35,
                 "max_level": 40,
-                "species": "SPECIES_TENTACRUEL"
+                "species": "SPECIES_MARILL"
               }
             ]
           },
@@ -1757,17 +1757,17 @@
               {
                 "min_level": 25,
                 "max_level": 35,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 25,
+                "max_level": 35,
                 "species": "SPECIES_CHINCHOU"
               },
               {
                 "min_level": 25,
                 "max_level": 35,
                 "species": "SPECIES_MARILL"
-              },
-              {
-                "min_level": 25,
-                "max_level": 35,
-                "species": "SPECIES_AZUMARILL"
               }
             ]
           }

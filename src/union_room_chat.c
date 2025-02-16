@@ -937,11 +937,11 @@ static void ChatEntryRoutine_SaveAndExit(void)
         }
         break;
     case 3:
-        if (!RunDisplaySubtask(0))
+        /*if (!RunDisplaySubtask(0))
         {
             UnionRoomChat_StartDisplaySubtask(CHATDISPLAYROUTINE_ASKOVERWRITESAVE, 0);
             sWork->routineState = 4;
-        }
+        }*/
         break;
     case 4:
         if (!RunDisplaySubtask(0))

@@ -18,10 +18,9 @@
 #define STDMESSAGE_EXITING_CHAT 4
 #define STDMESSAGE_LEADER_LEFT 5
 #define STDMESSAGE_ASK_SAVE 6
-#define STDMESSAGE_ASK_OVERWRITE 7
-#define STDMESSAGE_SAVING_NO_OFF 8
-#define STDMESSAGE_SAVED_THE_GAME 9
-#define STDMESSAGE_WARN_LEADER_LEAVE 10
+#define STDMESSAGE_SAVING_NO_OFF 7
+#define STDMESSAGE_SAVED_THE_GAME 8
+#define STDMESSAGE_WARN_LEADER_LEAVE 9
 
 struct UnionRoomChat2Subtask
 {
@@ -86,7 +85,6 @@ static bool32 DisplaySubtask_PrintInputText(u8 *state);
 static bool32 DisplaySubtask_PrintExitingChat(u8 *state);
 static bool32 DisplaySubtask_PrintLeaderLeft(u8 *state);
 static bool32 DisplaySubtask_AskSave(u8 *state);
-static bool32 DisplaySubtask_AskOverwriteSave(u8 *state);
 static bool32 DisplaySubtask_PrintSavingDontTurnOffPower(u8 *state);
 static bool32 DisplaySubtask_PrintSavedTheGame(u8 *state);
 static bool32 DisplaySubtask_ShowConfirmLeaderLeaveDialog(u8 *state);
@@ -213,7 +211,6 @@ static const struct SubtaskInfo sSubtaskInfo[] = {
     {CHATDISPLAYROUTINE_PRINTEXITINGCHAT, DisplaySubtask_PrintExitingChat},
     {CHATDISPLAYROUTINE_PRINTLEADERLEFT, DisplaySubtask_PrintLeaderLeft},
     {CHATDISPLAYROUTINE_ASKSAVE, DisplaySubtask_AskSave},
-    {CHATDISPLAYROUTINE_ASKOVERWRITESAVE, DisplaySubtask_AskOverwriteSave},
     {CHATDISPLAYROUTINE_PRINTSAVING, DisplaySubtask_PrintSavingDontTurnOffPower},
     {CHATDISPLAYROUTINE_PRINTSAVEDTHEGAME, DisplaySubtask_PrintSavedTheGame},
     {CHATDISPLAYROUTINE_SHOWCONFIRMLEADERLEAVEDIALOG, DisplaySubtask_ShowConfirmLeaderLeaveDialog}
@@ -291,16 +288,7 @@ static const struct MessageWindowInfo sMessageWindowInfo[] = {
         .expandPlaceholders = FALSE,
         .widerBox = TRUE
     },
-    [STDMESSAGE_ASK_OVERWRITE] = {
-        .text = gText_RegisteredTextChanged_AlreadySavedFile,
-        .boxType = 2,
-        .x = 0,
-        .y = 0,
-        .letterSpacing = 1,
-        .lineSpacing = 2, 
-        .expandPlaceholders = FALSE,
-        .widerBox = TRUE
-    },
+
     [STDMESSAGE_SAVING_NO_OFF] = {
         .text = gText_RegisteredTextChanged_SavingDontTurnOff,
         .boxType = 2,
@@ -853,23 +841,6 @@ static bool32 DisplaySubtask_AskSave(u8 *state)
     {
     case 0:
         PlaceStdMessageWindow(STDMESSAGE_ASK_SAVE, 0);
-        PlaceYesNoMenuAt(23, 10, 1);
-        CopyWindowToVram(sWork->messageWindowId, COPYWIN_FULL);
-        (*state)++;
-        break;
-    case 1:
-        return IsDma3ManagerBusyWithBgCopy();
-    }
-
-    return TRUE;
-}
-
-static bool32 DisplaySubtask_AskOverwriteSave(u8 *state)
-{
-    switch (*state)
-    {
-    case 0:
-        PlaceStdMessageWindow(STDMESSAGE_ASK_OVERWRITE, 0);
         PlaceYesNoMenuAt(23, 10, 1);
         CopyWindowToVram(sWork->messageWindowId, COPYWIN_FULL);
         (*state)++;

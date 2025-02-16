@@ -1126,7 +1126,6 @@ extern const u8 gText_InputText[];
 extern const u8 gText_ExitingTheChat[];
 extern const u8 gText_LeaderHasLeftEndingChat[];
 extern const u8 gText_RegisteredTextChanged_OKtoSave[];
-extern const u8 gText_RegisteredTextChanged_AlreadySavedFile[];
 extern const u8 gText_RegisteredTextChanged_SavingDontTurnOff[];
 extern const u8 gText_RegisteredTextChanged_SavedTheGame[];
 extern const u8 gText_IfLeaderLeavesChatWillEnd[];

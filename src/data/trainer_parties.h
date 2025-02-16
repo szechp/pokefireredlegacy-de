@@ -6168,6 +6168,12 @@ static const struct TrainerMon sParty_BlackBeltTakashi[] = {
     {
         .iv = 100,
         .lvl = 51,
+        .species = SPECIES_HITMONTOP,
+        .heldItem = ITEM_BLACK_BELT,
+    },
+    {
+        .iv = 100,
+        .lvl = 51,
         .species = SPECIES_MACHOKE,
         .heldItem = ITEM_BLACK_BELT,
     },

@@ -137,78 +137,82 @@ FiveIsland_WaterLabyrinth_EventScript_ReturnForEgg::
 # 69 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 FiveIsland_WaterLabyrinth_EventScript_Falkner::
 # 70 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_set FLAG_FALKNER_DEFEATED, FiveIsland_WaterLabyrinth_EventScript_RematchFalkner
-# 71 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_Falkner, MSGBOX_YESNO
-# 72 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_NoFalkner
-# 73 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesFalkner, FiveIsland_WaterLabyrinth_Text_FalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostFalkner, NO_MUSIC
-# 74 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	release
-# 75 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 76 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 77 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_PostFalkner::
-# 78 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_FalknerPostBattle
-# 79 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	setflag FLAG_FALKNER_DEFEATED
-# 80 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	cleartrainerflag TRAINER_FALKNER
-# 81 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	release
-# 82 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 83 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 84 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_CantRematchFalkner::
-# 85 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_FalknerPostBattle
-# 86 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	release
-# 87 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 88 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 89 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_NoFalkner::
-# 90 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_NoFalkner
-# 91 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	release
-# 92 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 93 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 94 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_RematchFalkner::
-# 95 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	lock
-# 96 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 71 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	faceplayer
-# 97 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalkner, MSGBOX_YESNO
-# 98 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 72 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_set FLAG_FALKNER_DEFEATED, FiveIsland_WaterLabyrinth_EventScript_RematchFalkner
+# 73 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_Falkner, MSGBOX_YESNO
+# 74 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_NoFalkner
-# 99 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesRematchFalkner, FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner, NO_MUSIC
-# 100 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 75 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesFalkner, FiveIsland_WaterLabyrinth_Text_FalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostFalkner, NO_MUSIC
+# 76 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	release
-# 101 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 77 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	end
-# 102 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 78 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
-# 103 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner::
-# 104 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat
-# 105 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 79 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_PostFalkner::
+# 80 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_FalknerPostBattle
+# 81 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	setflag FLAG_FALKNER_DEFEATED
+# 82 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	cleartrainerflag TRAINER_FALKNER
-# 106 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 83 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	release
+# 84 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 85 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 86 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_CantRematchFalkner::
+# 87 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_FalknerPostBattle
+# 88 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	release
+# 89 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 90 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 91 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_NoFalkner::
+# 92 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_NoFalkner
+# 93 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	release
+# 94 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 95 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 96 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_RematchFalkner::
+# 97 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	lock
+# 98 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	faceplayer
+# 99 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalkner, MSGBOX_YESNO
+# 100 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_NoFalkner
+# 101 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesRematchFalkner, FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner, NO_MUSIC
+# 102 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	release
+# 103 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 104 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 105 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner::
+# 106 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat
 # 107 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	cleartrainerflag TRAINER_FALKNER
+# 108 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	release
+# 109 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	end
