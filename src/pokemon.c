@@ -37,6 +37,8 @@
 #include "constants/hold_effects.h"
 #include "constants/battle_move_effects.h"
 #include "constants/union_room.h"
+#include "constants/daycare.h"
+#include "daycare.h"
 
 #define SPECIES_TO_HOENN(name)      [SPECIES_##name - 1] = HOENN_DEX_##name
 #define SPECIES_TO_NATIONAL(name)   [SPECIES_##name - 1] = NATIONAL_DEX_##name
@@ -6021,11 +6023,20 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
 {
     u16 learnedMoves[MAX_MON_MOVES];
     u16 moves[MAX_LEVEL_UP_MOVES];
+    u16 eggMoves[EGG_MOVES_ARRAY_COUNT];
     u8 numMoves = 0;
+    u8 numEggMoves;
     u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, NULL);
     u8 level = GetMonData(mon, MON_DATA_LEVEL, NULL);
     int i, j, k;
     u8 deoxysForme;
+
+    if (FlagGet(FLAG_EGG_MOVES_TUTOR))
+    {
+        numEggMoves = GetEggMoves(mon, eggMoves);
+        if (numEggMoves == 0)
+            return 0;
+    }
 
     if (species == SPECIES_EGG)
         return 0;
@@ -6088,6 +6099,9 @@ u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
             }
         }
     }
+
+    if (numMoves == 0 && numEggMoves > 0 && FlagGet(FLAG_EGG_MOVES_TUTOR))
+        return numEggMoves;
 
     return numMoves;
 }

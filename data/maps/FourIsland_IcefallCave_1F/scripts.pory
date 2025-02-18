@@ -18,9 +18,23 @@ FourIsland_IcefallCave_1F_OnFrame::
 	.2byte 0
 
 FourIsland_IcefallCave_1F_EventScript_Gym3::
-	trainerbattle_single TRAINER_RS_YOUNGSTER, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_RS_YOUNGSTER, FourIsland_IcefallCave_1F_Text_Rocket1Intro, FourIsland_IcefallCave_1F_Text_Rocket1Defeat
+	msgbox FourIsland_IcefallCave_1F_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
 	end
+
+FourIsland_IcefallCave_1F_Text_Rocket1Intro::
+	.string "I've cracked the code!\n"
+	.string "You're trying to fight\l"
+	.string "my leader.$"
+
+FourIsland_IcefallCave_1F_Text_Rocket1Defeat::
+	.string "You broke the ice here!$"
+
+FourIsland_IcefallCave_1F_Text_Rocket1PostBattle::
+	.string "My leader is further\n"
+	.string "in the cave, I hope you\l"
+	.string "have all the might\l"
+	.string "to fight him!$"
 
 FourIsland_IcefallCave_1F_EventScript_FallDownHole::
 	lockall

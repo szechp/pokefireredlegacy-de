@@ -210,7 +210,7 @@
 #define FLAG_APART_GAME               0x0C0
 #define FLAG_MOVE_SLOWBRO2             0x0C1
 #define FLAG_GIOVANNI4               0x0C2
-#define FLAG_0x0C3               0x0C3
+#define FLAG_EGG_MOVES_TUTOR                0x0C3
 #define FLAG_0x0C4               0x0C4
 #define FLAG_0x0C5               0x0C5
 #define FLAG_0x0C6               0x0C6

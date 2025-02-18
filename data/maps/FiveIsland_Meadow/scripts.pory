@@ -54,24 +54,78 @@ FiveIsland_Meadow_EventScript_Rocket3::
 	end
 
 FiveIsland_Meadow_EventScript_Gym1::
-	trainerbattle_single TRAINER_RUNNING_TRIATHLETE_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_RUNNING_TRIATHLETE_F, FiveIsland_Meadow_Text_Gym1, FiveIsland_Meadow_Text_GymDefeat
+	msgbox FiveIsland_Meadow_Text_Gym1Post, MSGBOX_AUTOCLOSE
 	end
+
+FiveIsland_Meadow_Text_Gym1::
+	.string "You will tremble before\n"
+	.string "these mighty BUGS!$"
+
+FiveIsland_Meadow_Text_GymDefeat::
+	.string "Oh, I failed my LEADER.$"
+
+FiveIsland_Meadow_Text_Gym1Post::
+	.string "I was supposed to\n"
+	.string "look over this area\l"
+	.string "for my LEADER,\l"
+	.string "but I don't see him here.$"
 
 FiveIsland_Meadow_EventScript_Gym2::
-	trainerbattle_single TRAINER_RUNNING_TRIATHLETE_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_RUNNING_TRIATHLETE_M, FiveIsland_Meadow_Text_Gym2, FiveIsland_Meadow_Text_Gym2Defeat
+	msgbox FiveIsland_Meadow_Text_Gym2Post, MSGBOX_AUTOCLOSE
 	end
+
+FiveIsland_Meadow_Text_Gym2::
+	.string "Hey! I'll have you know\l"
+	.string "my DUNSPARCE has taken\l"
+	.string "down many great foes,\l"
+	.string "even CLAIR!$"
+
+FiveIsland_Meadow_Text_Gym2Defeat::
+	.string "I thought it could work...$"
+
+FiveIsland_Meadow_Text_Gym2Post::
+	.string "Even though my leader\n"
+	.string "doesn't approve of\l"
+	.string "DUNSPARCE, he is still\l"
+	.string "one of the best!$"
 
 FiveIsland_Meadow_EventScript_Gym3::
-	trainerbattle_single TRAINER_POKEFAN_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_POKEFAN_M, FiveIsland_Meadow_Text_Gym3, FiveIsland_Meadow_Text_Gym3Defeat
+	msgbox FiveIsland_Meadow_Text_Gym3Post, MSGBOX_AUTOCLOSE
 	end
 
+FiveIsland_Meadow_Text_Gym3::
+	.string "You shall fall to Furret!$"
+
+FiveIsland_Meadow_Text_Gym3Defeat::
+	.string "Looks Like I fell.$"
+
+FiveIsland_Meadow_Text_Gym3Post::
+	.string "I actually did see\n"
+	.string "Our LEADER Head South.\p"
+	.string "May he be Mourning the\n"
+	.string "ONIX there?$"
+
+
 FiveIsland_Meadow_EventScript_Rocket::
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_46, SixIsland_OutcastIsland_Text_RocketIntro, SixIsland_OutcastIsland_Text_RocketDefeat
-	msgbox SixIsland_OutcastIsland_Text_RocketPostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_46, FiveIsland_Meadow_Text_RocketIntro, FiveIsland_Meadow_Text_RocketDefeat
+	msgbox FiveIsland_Meadow_Text_RocketPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+FiveIsland_Meadow_Text_RocketIntro::
+	.string "Hey, I just got back\n"
+	.string "from OUTCAST ISLAND and\l"
+	.string "now there's guards!$"
+
+FiveIsland_Meadow_Text_RocketDefeat::
+	.string "Was I too late?$"
+
+FiveIsland_Meadow_Text_RocketPostBattle::
+	.string "Maybe it was a good\n"
+	.string "thing I went there...\p"
+	.string "Despite finding nothing.$"
 
 FiveIsland_Meadow_EventScript_ShowClerk::
 	clearflag FLAG_SHOPCHAMP

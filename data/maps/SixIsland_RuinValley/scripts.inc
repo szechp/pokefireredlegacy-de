@@ -141,18 +141,54 @@ SixIsland_RuinValley_EventScript_GiovanniNo::
 # 71 "data/maps/SixIsland_RuinValley/scripts.pory"
 SixIsland_RuinValley_EventScript_Gym1::
 # 72 "data/maps/SixIsland_RuinValley/scripts.pory"
-	trainerbattle_single TRAINER_EXPERT_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	trainerbattle_single TRAINER_EXPERT_M, SixIsland_RuinValley_Text_Rocket1Intro, SixIsland_RuinValley_Text_Rocket1Defeat
 # 73 "data/maps/SixIsland_RuinValley/scripts.pory"
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	msgbox SixIsland_RuinValley_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
 # 74 "data/maps/SixIsland_RuinValley/scripts.pory"
 	end
 # 75 "data/maps/SixIsland_RuinValley/scripts.pory"
-
+SixIsland_RuinValley_Text_Rocket1Intro::
 # 76 "data/maps/SixIsland_RuinValley/scripts.pory"
-SixIsland_RuinValley_EventScript_Gym2::
+	.string "Hey, have you seen our Leader\n"
 # 77 "data/maps/SixIsland_RuinValley/scripts.pory"
-	trainerbattle_single TRAINER_EXPERT_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	.string "here Somewhere$"
 # 78 "data/maps/SixIsland_RuinValley/scripts.pory"
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+SixIsland_RuinValley_Text_Rocket1Defeat::
 # 79 "data/maps/SixIsland_RuinValley/scripts.pory"
+	.string "Please Help Us!$"
+# 80 "data/maps/SixIsland_RuinValley/scripts.pory"
+SixIsland_RuinValley_Text_Rocket1PostBattle::
+# 81 "data/maps/SixIsland_RuinValley/scripts.pory"
+	.string "Our Leader went in the cave\n"
+# 82 "data/maps/SixIsland_RuinValley/scripts.pory"
+	.string "and he hasn't came out! It's\l"
+# 83 "data/maps/SixIsland_RuinValley/scripts.pory"
+	.string "been 2 hours!$"
+# 84 "data/maps/SixIsland_RuinValley/scripts.pory"
+
+# 85 "data/maps/SixIsland_RuinValley/scripts.pory"
+SixIsland_RuinValley_EventScript_Gym2::
+# 86 "data/maps/SixIsland_RuinValley/scripts.pory"
+	trainerbattle_single TRAINER_EXPERT_F, SixIsland_RuinValley_Text_Rocket2Intro, SixIsland_RuinValley_Text_Rocket2Defeat
+# 87 "data/maps/SixIsland_RuinValley/scripts.pory"
+	msgbox SixIsland_RuinValley_Text_Rocket2PostBattle, MSGBOX_AUTOCLOSE
+# 88 "data/maps/SixIsland_RuinValley/scripts.pory"
 	end
+# 89 "data/maps/SixIsland_RuinValley/scripts.pory"
+
+# 90 "data/maps/SixIsland_RuinValley/scripts.pory"
+SixIsland_RuinValley_Text_Rocket2Intro::
+# 91 "data/maps/SixIsland_RuinValley/scripts.pory"
+	.string "IVE BEEN STANDING HERE FOR\n"
+# 92 "data/maps/SixIsland_RuinValley/scripts.pory"
+	.string "2 HOURS$"
+# 93 "data/maps/SixIsland_RuinValley/scripts.pory"
+
+# 94 "data/maps/SixIsland_RuinValley/scripts.pory"
+SixIsland_RuinValley_Text_Rocket2Defeat::
+# 95 "data/maps/SixIsland_RuinValley/scripts.pory"
+	.string "WAHHH!$"
+# 96 "data/maps/SixIsland_RuinValley/scripts.pory"
+SixIsland_RuinValley_Text_Rocket2PostBattle::
+# 97 "data/maps/SixIsland_RuinValley/scripts.pory"
+	.string "I can't take this anymore...$"

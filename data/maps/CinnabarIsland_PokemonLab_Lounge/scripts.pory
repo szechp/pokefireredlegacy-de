@@ -91,6 +91,7 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_NormaAlreadyTraded::
 	end
 
 CinnabarIsland_PokemonLab_Lounge_EventScript_MoveManiac::
+	clearflag FLAG_EGG_MOVES_TUTOR
 	goto_if_questlog EventScript_ReleaseEnd
 	special QuestLog_CutRecording
 	lock

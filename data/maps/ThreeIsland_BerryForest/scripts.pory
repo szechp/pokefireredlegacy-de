@@ -165,17 +165,62 @@ ThreeIsland_BerryForest_EventScript_PostRematchCruelKing::
 	end
 
 ThreeIsland_BerryForest_EventScript_Gym1::
-	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_F, ThreeIsland_BerryForest_Text_Rocket1Intro, ThreeIsland_BerryForest_Text_Rocket1Defeat
+	msgbox ThreeIsland_BerryForest_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
 	end
+
+ThreeIsland_BerryForest_Text_Rocket1Intro::
+	.string "How dare you step into this\n"
+	.string "forest, This is the domain\l"
+	.string "of the Cruel King of the\l"
+	.string "forest!$"
+
+ThreeIsland_BerryForest_Text_Rocket1Defeat::
+	.string "You got this one.$"
+
+ThreeIsland_BerryForest_Text_Rocket1PostBattle::
+	.string "The Cruel King is not to be\n"
+	.string "messed with$"
 
 ThreeIsland_BerryForest_EventScript_Gym2::
-	trainerbattle_single TRAINER_SR_AND_JR, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_SR_AND_JR, ThreeIsland_BerryForest_Text_Rocket2Intro, ThreeIsland_BerryForest_Text_Rocket2Defeat
+	msgbox ThreeIsland_BerryForest_Text_Rocket2PostBattle, MSGBOX_AUTOCLOSE
 	end
 
+ThreeIsland_BerryForest_Text_Rocket2Intro::
+	.string "Honestly I just like playing\n"
+	.string "in the berry forest\p"
+ThreeIsland_BerryForest_Text_Rocket2Defeat::
+	.string "Oh Wow!$"
+
+ThreeIsland_BerryForest_Text_Rocket2PostBattle::
+	.string "Despite His Name The Cruel King\n"
+	.string "is actually pretty nice, he\l"
+	.string "just acts that way as an act$"
+
+
 ThreeIsland_BerryForest_EventScript_Gym3::
-	trainerbattle_single TRAINER_POKEFAN_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_POKEFAN_F, ThreeIsland_BerryForest_Text_Rocket3Intro, ThreeIsland_BerryForest_Text_Rocket3Defeat
+	msgbox ThreeIsland_BerryForest_Text_Rocket3PostBattle, MSGBOX_AUTOCLOSE
 	end
+
+ThreeIsland_BerryForest_Text_Rocket3Intro::
+	.string "Oh, you think you can take on\n"
+	.string "the Cruel King? I don't even\l"
+	.string "think you could beat me! You\l"
+	.string "see, in this forest, I had a\l"
+	.string "revelation. The most important\l"
+	.string "thing in this world is pure,\l"
+	.string "unadulterated power!\p"
+	.string "Alright {PLAYER}. WITNESS\n"
+	.string "THE POWER!$"
+
+ThreeIsland_BerryForest_Text_Rocket3Defeat::
+	.string "I admit... you've done well\n"
+	.string "to win this battle.$"
+
+ThreeIsland_BerryForest_Text_Rocket3PostBattle::
+	.string "Do... what you have to do.\l"
+	.string "Fight the Cruel King!$"
+
 `

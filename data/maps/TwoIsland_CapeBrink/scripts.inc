@@ -171,18 +171,70 @@ TwoIsland_CapeBrink_EventScript_PostRematchCaseno::
 # 86 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 TwoIsland_CapeBrink_EventScript_Gym1::
 # 87 "data/maps/TwoIsland_CapeBrink/scripts.pory"
-	trainerbattle_single TRAINER_RS_YOUNG_COUPLE, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	trainerbattle_single TRAINER_RS_YOUNG_COUPLE, TwoIsland_CapeBrink_Text_Rocket1Intro, TwoIsland_CapeBrink_Text_Rocket1Defeat
 # 88 "data/maps/TwoIsland_CapeBrink/scripts.pory"
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	msgbox TwoIsland_CapeBrink_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
 # 89 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 	end
 # 90 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 
 # 91 "data/maps/TwoIsland_CapeBrink/scripts.pory"
-TwoIsland_CapeBrink_EventScript_Gym2::
+TwoIsland_CapeBrink_Text_Rocket1Intro::
 # 92 "data/maps/TwoIsland_CapeBrink/scripts.pory"
-	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
+	.string "Just so you know,\n"
 # 93 "data/maps/TwoIsland_CapeBrink/scripts.pory"
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	.string "we do DOUBLE BATTLES here.$"
 # 94 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+
+# 95 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+TwoIsland_CapeBrink_Text_Rocket1Defeat::
+# 96 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+    .string "You're good at this.$"  
+# 97 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+
+# 98 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+TwoIsland_CapeBrink_Text_Rocket1PostBattle::
+# 99 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+    .string "I don't think you can stand to\n"  
+# 100 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+    .string "our leader yet.\p"  
+# 101 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+    .string "You should fight that AROMA LADY\n"  
+# 102 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+    .string "before you do.$"  
+# 103 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+
+# 104 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+TwoIsland_CapeBrink_EventScript_Gym2::
+# 105 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_M, TwoIsland_CapeBrink_Text_Rocket2Intro, TwoIsland_CapeBrink_Text_Rocket2Defeat
+# 106 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+	msgbox TwoIsland_CapeBrink_Text_Rocket2PostBattle, MSGBOX_AUTOCLOSE
+# 107 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 	end
+# 108 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+
+# 109 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+TwoIsland_CapeBrink_Text_Rocket2Intro::
+# 110 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+    .string "I'll show you the beauty of\n"  
+# 111 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+    .string "DOUBLE!$"  
+# 112 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+
+# 113 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+TwoIsland_CapeBrink_Text_Rocket2Defeat::
+# 114 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+    .string "That wasn't Beautiful!$"  
+# 115 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+
+# 116 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+TwoIsland_CapeBrink_Text_Rocket2PostBattle::
+# 117 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+	.string "You might of beat me, but\n"
+# 118 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+	.string "are you ready for our\l"
+# 119 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+	.string "Beautiful Leader to show\l"
+# 120 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+	.string "her expertise?$"

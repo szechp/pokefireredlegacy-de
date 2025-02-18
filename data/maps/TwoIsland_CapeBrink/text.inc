@@ -46,30 +46,31 @@ TwoIsland_CapeBrink_Text_RematchClairPostBattle::
     .string "Come back when you're WORTHY.$"
 
 TwoIsland_CapeBrink_Text_Caseno::
-    .string "Hey man I'm just trying\n"
+    .string "Hey! I'm just trying\n"
     .string "to enjoy the view!\p"
-    .string "Please do not compare me to a\n"
-    .string "SNORLAX like the others!\p"
-    .string "Leave me alone or\n"
-    .string "I'll battle you!$"
+    .string "Your Stupid Hat is\n"
+    .string "Blocking it!\p"
+    .string "Look's Like I'll\n"
+    .string "have to battle you!$"
 
 TwoIsland_CapeBrink_Text_CasenoDefeat::
-    .string "Seems like you're!\n"
-    .string "Stronger than I thought!$"
-
+    .string "I guess the hat\n"
+    .string "Gave you strength$"
 
 TwoIsland_CapeBrink_Text_CasenoPostBattle::
     .string "Huh, you're the KANTO Champion?\n"
     .string "I knew KANTO was stronger.\p"
     .string "Guess I should of read the news.\p"
-    .string "Now Please leave me alone!$"
+    .string "Now, If you beat the other\n"
+    .string "five Masters, you can fight\l"
+    .string "Supreme Master On Seven.$"
 
 TwoIsland_CapeBrink_Text_NoCaseno::
     .string "Good Choice$"
 
 TwoIsland_CapeBrink_Text_YesCaseno::
     .string "Good Luck.\p"
-    .string "I'm a Champion$"
+    .string "I'm a Master!$"
 
 TwoIsland_CapeBrink_Text_RematchCaseno::
     .string "Why are you back?\n"
@@ -83,4 +84,4 @@ TwoIsland_CapeBrink_Text_YesRematchCaseno::
     .string "Stronger than I thought!$"
 
 TwoIsland_CapeBrink_Text_RematchCasenoPostBattle::
-    .string "LEAVE ME ALONE!$"
+    .string "Ha! Good Match!$"

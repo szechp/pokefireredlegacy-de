@@ -16,6 +16,8 @@
 #include "strings.h"
 #include "constants/songs.h"
 #include "constants/moves.h"
+#include "daycare.h"
+
 
 /*
  * Move relearner state machine
@@ -752,8 +754,16 @@ static void MoveRelearnerInitListMenuBuffersEtc(void)
     s32 count;
     u8 nickname[11];
 
-    sMoveRelearner->numLearnableMoves = GetMoveRelearnerMoves(&gPlayerParty[sMoveRelearner->selectedPartyMember], sMoveRelearner->learnableMoves);
-    count = GetMoveRelearnerMoves(&gPlayerParty[sMoveRelearner->selectedPartyMember], sMoveRelearner->learnableMoves);
+    if (FlagGet(FLAG_EGG_MOVES_TUTOR))
+    {
+        sMoveRelearner->numLearnableMoves = GetEggMoves(&gPlayerParty[sMoveRelearner->selectedPartyMember], sMoveRelearner->learnableMoves);
+        count = GetEggMoves(&gPlayerParty[sMoveRelearner->selectedPartyMember], sMoveRelearner->learnableMoves);
+    }
+    else
+    {
+        sMoveRelearner->numLearnableMoves = GetMoveRelearnerMoves(&gPlayerParty[sMoveRelearner->selectedPartyMember], sMoveRelearner->learnableMoves);
+        count = GetMoveRelearnerMoves(&gPlayerParty[sMoveRelearner->selectedPartyMember], sMoveRelearner->learnableMoves);
+    }
     for (i = 0; i < sMoveRelearner->numLearnableMoves; i++)
         StringCopy(sMoveRelearner->listMenuStrbufs[i], gMoveNames[sMoveRelearner->learnableMoves[i]]);
     GetMonData(&gPlayerParty[sMoveRelearner->selectedPartyMember], MON_DATA_NICKNAME, nickname);

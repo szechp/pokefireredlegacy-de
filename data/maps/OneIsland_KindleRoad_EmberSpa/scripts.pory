@@ -93,12 +93,38 @@ OneIsland_KindleRoad_EmberSpa_EventScript_PostRematchSamal::
 	end
 
 OneIsland_KindleRoad_EmberSpa_EventScript_Gym1::
-	trainerbattle_single TRAINER_CYCLING_TRIATHLETE_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_CYCLING_TRIATHLETE_M, OneIsland_KindleRoad_EmberSpa_Text_Rocket1Intro, OneIsland_KindleRoad_EmberSpa_Text_Rocket1Defeat
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
+OneIsland_KindleRoad_EmberSpa_Text_Rocket1Intro::
+	.string "Hey, you're in SLUGMA's\n"
+	.string "domain!$"
+
+OneIsland_KindleRoad_EmberSpa_Text_Rocket1Defeat::
+	.string "I failed you, SLUGMA.$"
+
+OneIsland_KindleRoad_EmberSpa_Text_Rocket1PostBattle::
+	.string "Our leader and us are\n"
+	.string "big fans of SLUGMA.\l"
+	.string "They're as hot as\l"
+	.string "ONE ISLAND itself!$"
+
 OneIsland_KindleRoad_EmberSpa_EventScript_Gym2::
-	trainerbattle_single TRAINER_CYCLING_TRIATHLETE_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_CYCLING_TRIATHLETE_F, OneIsland_KindleRoad_EmberSpa_Text_Rocket2Intro, OneIsland_KindleRoad_EmberSpa_Text_Rocket2Defeat
+	msgbox OneIsland_KindleRoad_EmberSpa_Text_Rocket2PostBattle, MSGBOX_AUTOCLOSE
 	end
+
+OneIsland_KindleRoad_EmberSpa_Text_Rocket2Intro::
+	.string "Have you been to MT. EMBER,\n"
+	.string "and seen SLUGMA?$"
+
+OneIsland_KindleRoad_EmberSpa_Text_Rocket2Defeat::
+	.string "SLUGMA would be proud$"
+
+OneIsland_KindleRoad_EmberSpa_Text_Rocket2PostBattle::
+	.string "Our Leader should be\n"
+	.string "Left to us, He's a Certifed\l"
+	.string "SLUGMA Trainer!$"
+
 `

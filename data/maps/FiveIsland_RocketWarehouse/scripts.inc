@@ -427,30 +427,26 @@ FiveIsland_RocketWarehouse_JohtoShop::
 # 214 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	.2byte ITEM_BRICK_PIECE
 # 215 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_WHITE_FLUTE
-# 216 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_BLACK_FLUTE
-# 217 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	.2byte ITEM_CLEANSE_TAG
-# 218 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+# 216 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	.2byte ITEM_METAL_POWDER
-# 219 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+# 217 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	.2byte ITEM_SMOKE_BALL
-# 220 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+# 218 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	.2byte ITEM_STICK
-# 221 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+# 219 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	.2byte ITEM_NONE
-# 222 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+# 220 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	release
-# 223 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+# 221 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	end
+# 222 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+
+# 223 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+
 # 224 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-
-# 225 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-
-# 226 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 FiveIsland_RocketWarehouse_EventScript_CelebiQuest::
-# 227 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+# 225 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	msgbox FiveIsland_RocketWarehouse_Text_CelebiQuest, MSGBOX_NPC
-# 228 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+# 226 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	end

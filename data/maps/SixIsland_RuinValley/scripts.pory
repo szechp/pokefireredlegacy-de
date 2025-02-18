@@ -69,12 +69,31 @@ SixIsland_RuinValley_EventScript_GiovanniNo::
 	end
 
 SixIsland_RuinValley_EventScript_Gym1::
-	trainerbattle_single TRAINER_EXPERT_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_EXPERT_M, SixIsland_RuinValley_Text_Rocket1Intro, SixIsland_RuinValley_Text_Rocket1Defeat
+	msgbox SixIsland_RuinValley_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
 	end
+SixIsland_RuinValley_Text_Rocket1Intro::
+	.string "Hey, have you seen our Leader\n"
+	.string "here Somewhere$"
+SixIsland_RuinValley_Text_Rocket1Defeat::
+	.string "Please Help Us!$"
+SixIsland_RuinValley_Text_Rocket1PostBattle::
+	.string "Our Leader went in the cave\n"
+	.string "and he hasn't came out! It's\l"
+	.string "been 2 hours!$"
 
 SixIsland_RuinValley_EventScript_Gym2::
-	trainerbattle_single TRAINER_EXPERT_F, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_EXPERT_F, SixIsland_RuinValley_Text_Rocket2Intro, SixIsland_RuinValley_Text_Rocket2Defeat
+	msgbox SixIsland_RuinValley_Text_Rocket2PostBattle, MSGBOX_AUTOCLOSE
 	end
+
+SixIsland_RuinValley_Text_Rocket2Intro::
+	.string "IVE BEEN STANDING HERE FOR\n"
+	.string "2 HOURS$"
+
+SixIsland_RuinValley_Text_Rocket2Defeat::
+	.string "WAHHH!$"
+SixIsland_RuinValley_Text_Rocket2PostBattle::
+	.string "I can't take this anymore...$"
+
 `

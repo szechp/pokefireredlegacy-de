@@ -84,12 +84,38 @@ TwoIsland_CapeBrink_EventScript_PostRematchCaseno::
 	end
 
 TwoIsland_CapeBrink_EventScript_Gym1::
-	trainerbattle_single TRAINER_RS_YOUNG_COUPLE, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_RS_YOUNG_COUPLE, TwoIsland_CapeBrink_Text_Rocket1Intro, TwoIsland_CapeBrink_Text_Rocket1Defeat
+	msgbox TwoIsland_CapeBrink_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
+TwoIsland_CapeBrink_Text_Rocket1Intro::
+	.string "Just so you know,\n"
+	.string "we do DOUBLE BATTLES here.$"
+
+TwoIsland_CapeBrink_Text_Rocket1Defeat::
+    .string "You're good at this.$"  
+
+TwoIsland_CapeBrink_Text_Rocket1PostBattle::
+    .string "I don't think you can stand to\n"  
+    .string "our leader yet.\p"  
+    .string "You should fight that AROMA LADY\n"  
+    .string "before you do.$"  
+
 TwoIsland_CapeBrink_EventScript_Gym2::
-	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_M, FiveIsland_Meadow_Text_Rocket1Intro, FiveIsland_Meadow_Text_Rocket1Defeat
-	msgbox FiveIsland_Meadow_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_M, TwoIsland_CapeBrink_Text_Rocket2Intro, TwoIsland_CapeBrink_Text_Rocket2Defeat
+	msgbox TwoIsland_CapeBrink_Text_Rocket2PostBattle, MSGBOX_AUTOCLOSE
 	end
+
+TwoIsland_CapeBrink_Text_Rocket2Intro::
+    .string "I'll show you the beauty of\n"  
+    .string "DOUBLE!$"  
+
+TwoIsland_CapeBrink_Text_Rocket2Defeat::
+    .string "That wasn't Beautiful!$"  
+
+TwoIsland_CapeBrink_Text_Rocket2PostBattle::
+	.string "You might of beat me, but\n"
+	.string "are you ready for our\l"
+	.string "Beautiful Leader to show\l"
+	.string "her expertise?$"
 `
