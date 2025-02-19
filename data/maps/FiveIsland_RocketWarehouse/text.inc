@@ -164,27 +164,6 @@ FiveIsland_RocketWarehouse_Text_GiovannisKidHasRedHair::
     .string "There should be some people to\n"
     .string "talk to with interest things to do$"
 
-FiveIsland_RocketWarehouse_Text_CelebiQuest::
-    .string "There was once an Onix, and his\n"  
-    .string "six Pokémon friends:\l"  
-    .string "Charmander, Delibird, Psyduck,\l"  
-    .string "Meowth, Larvitar, and Natu.\p"  
-    .string "They all used to play in the\n"  
-    .string "Forest of Berries, having fun\l"  
-    .string "of all magnitudes, and enjoying\l"  
-    .string "Many Berries.\p"  
-    .string "After that, they returned home.\p"  
-    .string "Charmander went to the top\n"  
-    .string "of the Mountain of Embers,\l"  
-    .string "Delibird to the basement of Ice,\l"  
-    .string "Psyduck to the land beneath\l"  
-    .string "a waterfall.\p"  
-    .string "Meowth to a beach of treasures,\n"  
-    .string "Larvitar to the peaks of the\l"  
-    .string "Canyon, Natu down the Cave\l"  
-    .string "of Mystery, and Onix to\l"  
-    .string "his own island.$"  
-
 FiveIsland_RocketWarehouse_Text_Clerk::
 	.string "Hey, you defeated the\n"
 	.string "JOHTO LEADERS!\p"

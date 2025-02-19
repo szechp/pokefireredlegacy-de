@@ -125,4 +125,46 @@ FiveIsland_MemorialPillar_EventScript_PostRematchOman::
 	cleartrainerflag TRAINER_OMAN
 	release
 	end
+
+FiveIsland_MemorialPillar_EventScript_CelebiQuest::
+	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest, MSGBOX_NPC
+	special CheckGotAllItems
+	call_if_eq VAR_RESULT, TRUE, FiveIsland_MemorialPillar_EventScript_CelebiQuest2	
+	release
+	end
+
+FiveIsland_MemorialPillar_EventScript_CelebiQuest2::
+	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest2
+	setflag FLAG_SPAWN_CELEBI
+	setflag FLAG_OLD_LEAD
+	fadescreen FADE_TO_BLACK
+	fadescreen FADE_FROM_BLACK
+	releaseall
+	end
+
+FiveIsland_MemorialPillar_Text_CelebiQuest::
+    .string "There was once an Onix, and his\n"  
+    .string "six Pokémon friends:\l"  
+    .string "Charmander, Delibird, Psyduck,\l"  
+    .string "Meowth, Larvitar, and Natu.\p"  
+    .string "They all used to play in the\n"  
+    .string "Forest of Berries, having fun\l"  
+    .string "of all magnitudes, and enjoying\l"  
+    .string "Many Berries.\p"  
+    .string "After that, they returned home.\p"  
+    .string "Charmander went to the top\n"  
+    .string "of the Mountain of Embers,\l"  
+    .string "Delibird to the basement of Ice,\l"  
+    .string "Psyduck to the land beneath\l"  
+    .string "a waterfall.\p"  
+    .string "Meowth to a beach of treasures,\n"  
+    .string "Larvitar to the peaks of the\l"  
+    .string "Canyon, Natu down the Cave\l"  
+    .string "of Mystery, and Onix to\l"  
+    .string "his own island.$"  
+
+FiveIsland_MemorialPillar_Text_CelebiQuest2::
+    .string "You feel a distant AURA\n"  
+    .string "Somewhere...$"  
+
 `

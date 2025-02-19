@@ -220,9 +220,4 @@ FiveIsland_RocketWarehouse_JohtoShop::
 	release
 	end
 
-
-FiveIsland_RocketWarehouse_EventScript_CelebiQuest::
-	msgbox FiveIsland_RocketWarehouse_Text_CelebiQuest, MSGBOX_NPC
-	end
-
 `

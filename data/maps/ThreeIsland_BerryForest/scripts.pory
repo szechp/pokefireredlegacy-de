@@ -20,8 +20,7 @@ ThreeIsland_BerryForest_EventScript_TryRemoveCelebi::
 ThreeIsland_BerryForest_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_THREE_ISLAND_BERRY_FOREST
 	setescapewarp MAP_THREE_ISLAND_BOND_BRIDGE, 12, 6
-	special CheckGotAllItems
-	call_if_eq VAR_RESULT, TRUE, ThreeIsland_BerryForest_YesItem
+	goto_if_set FLAG_SPAWN_CELEBI, ThreeIsland_BerryForest_YesItem
 	end
 
 ThreeIsland_BerryForest_YesItem::

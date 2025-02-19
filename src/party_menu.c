@@ -4550,7 +4550,14 @@ void ItemUseCB_MedicineStep(u8 taskId, TaskFunc func)
 static void Task_DisplayHPRestoredMessage(u8 taskId)
 {
     if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(gSpecialVar_ItemId, 1))
+    {
+        GetMonNickname(&gPlayerParty[gPartyMenu.slotId], gStringVar1);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnHPRestoredByVar2);
+        DisplayPartyMenuMessage(gStringVar4, FALSE);
+        ScheduleBgCopyTilemapToVram(2);
+        HandleBattleLowHpMusicChange();
         gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+    }
     else
         gTasks[taskId].func = Task_ClosePartyMenuAfterText;
 }
