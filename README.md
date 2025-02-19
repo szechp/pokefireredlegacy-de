@@ -10,11 +10,16 @@ To set up the repository, see [INSTALL.md](INSTALL.md).
 For contacts and other pret projects, see [pret.github.io](https://pret.github.io/).
 
 Delevoper:
-SpikeCation (Sole Dev)
+SpikeCation (Main Dev)
+
+Helpers:
+Shiny Miner (Ported Hard mode and stuff)
 
 Playtesters:
 BlazeTorrent
 BasedTuxedoMan
+Taconator
+Kewaun
 
 Credits:
 Pokemon Legacy Team - (Inspiration)
@@ -27,4 +32,4 @@ Pokemon FireGold - Certain Leader Sprites
 Pret Team - Help with Stuff and this Entire Project Possible
 Team Aqua Hideout - Like Above
 Numerous Pret Tutorials
-Idk yet - Team Rocket Music
+Pokemon Crystal Dust - Team Rocket Battle Music
