@@ -1678,8 +1678,6 @@ static const u16 sDeoxysBaseStats[][6] = {
 static const u16 sDeoxysLevelUpLearnsets[][15] = {
     { //Normal Forme
         LEVEL_UP_MOVE( 1, MOVE_LEER),
-        LEVEL_UP_MOVE( 1, MOVE_LEER),
-        LEVEL_UP_MOVE( 1, MOVE_LEER),
         LEVEL_UP_MOVE( 1, MOVE_WRAP),
         LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
         LEVEL_UP_MOVE(10, MOVE_TELEPORT),
@@ -1694,8 +1692,6 @@ static const u16 sDeoxysLevelUpLearnsets[][15] = {
         LEVEL_UP_END
     },
     { //Attack Forme
-        LEVEL_UP_MOVE( 1, MOVE_LEER),
-        LEVEL_UP_MOVE( 1, MOVE_LEER),
         LEVEL_UP_MOVE( 1, MOVE_LEER),
         LEVEL_UP_MOVE( 1, MOVE_WRAP),
         LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
@@ -1728,8 +1724,6 @@ static const u16 sDeoxysLevelUpLearnsets[][15] = {
         LEVEL_UP_END
     },
     { //Speed Forme
-        LEVEL_UP_MOVE( 1, MOVE_LEER),
-        LEVEL_UP_MOVE( 1, MOVE_LEER),
         LEVEL_UP_MOVE( 1, MOVE_LEER),
         LEVEL_UP_MOVE( 1, MOVE_WRAP),
         LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
