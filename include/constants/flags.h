@@ -1293,7 +1293,7 @@
 #define FLAG_OLD_LEAD             0x4E8
 #define FLAG_GOT_SUDO_EGG               0x4E9
 #define FLAG_NO_ROOM_FOR_SUDO_EGG               0x4EA
-#define FLAG_0x4EB               0x4EB
+#define FLAG_JANINE              0x4EB
 #define FLAG_0x4EC               0x4EC
 #define FLAG_0x4ED               0x4ED
 #define FLAG_0x4EE               0x4EE
