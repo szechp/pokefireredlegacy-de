@@ -140,18 +140,20 @@ FiveIsland_RocketWarehouse_Text_GideonPostBattle::
     .string "But I should of come to my senses,\n"
     .string "that working with Team Rocket was\l"
     .string "probably not the best way to do it.\p"
-    .string "I have seen the good heart you have\n"
-    .string "and how you have been trying to help\l"
-    .string "this region with the SAPPHIRE\p"
-    .string "So, I leave you with this$"
+    .string "Wait? Huh? You were going to\n"  
+    .string "give this to someone to power\l"  
+    .string "a machine that will help power\l"  
+    .string "the islands?\p"  
+    .string "Guess I was wrong about you\n"  
+    .string "KANTONIAN!\p"  
+    .string "Well, I guess I'll leave you\l"  
+    .string "with this than!$" 
 
 
 FiveIsland_RocketWarehouse_Text_GetLostLeaveMeBe::
-    .string "I think now I should transform\n"
-    .string "This warehouse for the Islands.\p"
-    .string "Leaving it's Rocket Origins for a\n"
-    .string "New Purpose.\p"
-    .string "Shall you use the SAPPHIRE for Good!$"
+    .string "Don't think bad about me now!\n"  
+    .string "Guess I'll help clean up\l"  
+    .string "this place.$"  
 
 FiveIsland_RocketWarehouse_Text_GiovannisKidHasRedHair::
     .string "What, you again?\p"
@@ -159,10 +161,13 @@ FiveIsland_RocketWarehouse_Text_GiovannisKidHasRedHair::
     .string "Kid, aren't you?\p"
     .string "No, that can't be right!\n"
     .string "GIOVANNI's kid has red hair.\p"
-    .string "Oh uh anyways I'm doing good\n"
-    .string "on reconstructing this place!\p"
-    .string "There should be some people to\n"
-    .string "talk to with interest things to do$"
+    .string "By the Way, I'm currently\n"  
+    .string "being investigated for my\l"  
+    .string "involvement with TEAM ROCKET.\p"  
+    .string "I might be able to get\n"  
+    .string "off with Community Service\l"  
+    .string "with my good Behavior!$"  
+
 
 FiveIsland_RocketWarehouse_Text_Clerk::
 	.string "Hey, you defeated the\n"

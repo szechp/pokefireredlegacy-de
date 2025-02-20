@@ -249,88 +249,90 @@ FiveIsland_MemorialPillar_EventScript_PostRematchOman::
 # 125 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
 	cleartrainerflag TRAINER_OMAN
 # 126 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	release
+	message Text_6Leaders
 # 127 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	end
-# 128 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-
-# 129 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-FiveIsland_MemorialPillar_EventScript_CelebiQuest::
-# 130 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest, MSGBOX_NPC
-# 131 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	special CheckGotAllItems
-# 132 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	call_if_eq VAR_RESULT, TRUE, FiveIsland_MemorialPillar_EventScript_CelebiQuest2	
-# 133 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
 	release
+# 128 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	end
+# 129 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+
+# 130 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+FiveIsland_MemorialPillar_EventScript_CelebiQuest::
+# 131 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest, MSGBOX_NPC
+# 132 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	special CheckGotAllItems
+# 133 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	call_if_eq VAR_RESULT, TRUE, FiveIsland_MemorialPillar_EventScript_CelebiQuest2	
 # 134 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	end
+	release
 # 135 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-
-# 136 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-FiveIsland_MemorialPillar_EventScript_CelebiQuest2::
-# 137 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest2
-# 138 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	setflag FLAG_SPAWN_CELEBI
-# 139 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	setflag FLAG_OLD_LEAD
-# 140 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 141 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 142 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	releaseall
-# 143 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
 	end
+# 136 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+
+# 137 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+FiveIsland_MemorialPillar_EventScript_CelebiQuest2::
+# 138 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest2
+# 139 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	setflag FLAG_SPAWN_CELEBI
+# 140 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	setflag FLAG_OLD_LEAD
+# 141 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 142 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 143 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	releaseall
 # 144 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-
+	end
 # 145 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-FiveIsland_MemorialPillar_Text_CelebiQuest::
-# 146 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "There was once an Onix, and his\n"  
-# 147 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "six Pokémon friends:\l"  
-# 148 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "Charmander, Delibird, Psyduck,\l"  
-# 149 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "Meowth, Larvitar, and Natu.\p"  
-# 150 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "They all used to play in the\n"  
-# 151 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "Forest of Berries, having fun\l"  
-# 152 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "of all magnitudes, and enjoying\l"  
-# 153 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "Many Berries.\p"  
-# 154 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "After that, they returned home.\p"  
-# 155 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "Charmander went to the top\n"  
-# 156 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "of the Mountain of Embers,\l"  
-# 157 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "Delibird to the basement of Ice,\l"  
-# 158 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "Psyduck to the land beneath\l"  
-# 159 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "a waterfall.\p"  
-# 160 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "Meowth to a beach of treasures,\n"  
-# 161 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "Larvitar to the peaks of the\l"  
-# 162 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "Canyon, Natu down the Cave\l"  
-# 163 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "of Mystery, and Onix to\l"  
-# 164 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "his own island.$"  
-# 165 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
 
+# 146 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+FiveIsland_MemorialPillar_Text_CelebiQuest::
+# 147 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "There was once an Onix, and his\n"  
+# 148 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "six Pokémon friends:\l"  
+# 149 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "Charmander, Delibird, Psyduck,\l"  
+# 150 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "Meowth, Larvitar, and Natu.\p"  
+# 151 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "They all used to play in the\n"  
+# 152 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "Forest of Berries, having fun\l"  
+# 153 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "of all magnitudes, and enjoying\l"  
+# 154 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "Many Berries.\p"  
+# 155 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "After that, they returned home.\p"  
+# 156 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "Charmander went to the top\n"  
+# 157 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "of the Mountain of Embers,\l"  
+# 158 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "Delibird to the basement of Ice,\l"  
+# 159 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "Psyduck to the land beneath\l"  
+# 160 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "a waterfall.\p"  
+# 161 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "Meowth to a beach of treasures,\n"  
+# 162 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "Larvitar to the peaks of the\l"  
+# 163 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "Canyon, Natu down the Cave\l"  
+# 164 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "of Mystery, and Onix to\l"  
+# 165 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "his own island.$"  
 # 166 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-FiveIsland_MemorialPillar_Text_CelebiQuest2::
+
 # 167 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-    .string "You feel a distant AURA\n"  
+FiveIsland_MemorialPillar_Text_CelebiQuest2::
 # 168 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+    .string "You feel a distant AURA\n"  
+# 169 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
     .string "Somewhere...$"

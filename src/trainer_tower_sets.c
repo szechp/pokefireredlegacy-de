@@ -1814,7 +1814,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_2 = {
 	.prize = TTPRIZE_UP_GRADE,
 	.trainers = {
 	    {
-			.name = _("MIKE"),
+			.name = _("KEWAUN"),
 			.facilityClass = FACILITY_CLASS_HIKER,
 			.textColor = 5,
 			.speechBefore = {EC_WORD_MY, EC_WORD_POKEMON, EC_WORD_ARE, EC_WORD_FULL, EC_WORD_OF, EC_WORD_POWER},

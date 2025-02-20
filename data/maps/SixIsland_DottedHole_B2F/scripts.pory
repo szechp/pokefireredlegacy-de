@@ -16,6 +16,7 @@ SixIsland_DottedHole_B2F_EventScript_PostSpeedy::
 	msgbox SixIsland_DottedHole_B2F_Text_SpeedyPostBattle
 	setflag FLAG_SPEEDY_DEFEATED
 	cleartrainerflag TRAINER_SPEEDY
+	message Text_6Leaders
 	release
 	end
 

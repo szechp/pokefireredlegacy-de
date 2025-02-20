@@ -35,52 +35,54 @@ SixIsland_DottedHole_B2F_EventScript_PostSpeedy::
 # 18 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
 	cleartrainerflag TRAINER_SPEEDY
 # 19 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	release
+	message Text_6Leaders
 # 20 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	end
+	release
 # 21 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-
+	end
 # 22 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-SixIsland_DottedHole_B2F_EventScript_CantRematchSpeedy::
+
 # 23 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	msgbox SixIsland_DottedHole_B2F_Text_SpeedyPostBattle
+SixIsland_DottedHole_B2F_EventScript_CantRematchSpeedy::
 # 24 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	release
+	msgbox SixIsland_DottedHole_B2F_Text_SpeedyPostBattle
 # 25 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	end
+	release
 # 26 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-
+	end
 # 27 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-SixIsland_DottedHole_B2F_EventScript_NoSpeedy::
+
 # 28 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	msgbox SixIsland_DottedHole_B2F_Text_NoSpeedy
+SixIsland_DottedHole_B2F_EventScript_NoSpeedy::
 # 29 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	release
+	msgbox SixIsland_DottedHole_B2F_Text_NoSpeedy
 # 30 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	end
+	release
 # 31 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-
-# 32 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-SixIsland_DottedHole_B2F_EventScript_RematchSpeedy::
-# 33 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	msgbox SixIsland_DottedHole_B2F_Text_RematchSpeedy, MSGBOX_YESNO
-# 34 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, SixIsland_DottedHole_B2F_EventScript_NoSpeedy
-# 35 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	trainerbattle_single TRAINER_SPEEDY, SixIsland_DottedHole_B2F_Text_YesRematchSpeedy, SixIsland_DottedHole_B2F_Text_RematchSpeedyDefeat, SixIsland_DottedHole_B2F_EventScript_PostRematchSpeedy, NO_MUSIC
-# 36 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	release
-# 37 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
 	end
-# 38 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
+# 32 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
 
-# 39 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-SixIsland_DottedHole_B2F_EventScript_PostRematchSpeedy::
-# 40 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	msgbox SixIsland_DottedHole_B2F_Text_RematchSpeedyDefeat
-# 41 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
-	cleartrainerflag TRAINER_SPEEDY
-# 42 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
+# 33 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
+SixIsland_DottedHole_B2F_EventScript_RematchSpeedy::
+# 34 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
+	msgbox SixIsland_DottedHole_B2F_Text_RematchSpeedy, MSGBOX_YESNO
+# 35 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, SixIsland_DottedHole_B2F_EventScript_NoSpeedy
+# 36 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
+	trainerbattle_single TRAINER_SPEEDY, SixIsland_DottedHole_B2F_Text_YesRematchSpeedy, SixIsland_DottedHole_B2F_Text_RematchSpeedyDefeat, SixIsland_DottedHole_B2F_EventScript_PostRematchSpeedy, NO_MUSIC
+# 37 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
 	release
+# 38 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
+	end
+# 39 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
+
+# 40 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
+SixIsland_DottedHole_B2F_EventScript_PostRematchSpeedy::
+# 41 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
+	msgbox SixIsland_DottedHole_B2F_Text_RematchSpeedyDefeat
+# 42 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
+	cleartrainerflag TRAINER_SPEEDY
 # 43 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
+	release
+# 44 "data/maps/SixIsland_DottedHole_B2F/scripts.pory"
 	end

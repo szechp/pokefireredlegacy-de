@@ -77,5 +77,13 @@ ThreeIsland_BerryForest_Text_YesRematchCruelKing::
 ThreeIsland_BerryForest_Text_RematchCruelKingPostBattle::
     .string "Huh. Great Apex Skill\n"
     .string "you exerted, CHAMPION.\p"
-    .string "Continue to be the Apex Trainer!$"
+    .string "Continue to be an Apex Trainer!$"
+
+Text_6Leaders::
+    .string "There are 7 masters of\n"  
+    .string "the SEVII ISLANDS.\p"  
+    .string "Defeat the 6 of us to be\n"  
+    .string "able to fight the\l"  
+    .string "SUPREME LEADER on\l"  
+    .string "SEVEN ISLAND.$"  
 

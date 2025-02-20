@@ -2028,11 +2028,11 @@ static const struct TrainerMon sParty_Spike[] = {
     },
     {
         .iv = 255,
-        .lvl = 66,
-        .species = SPECIES_GENGAR,
-        .heldItem = ITEM_LUM_BERRY,
-        .moves = {MOVE_SHADOW_BALL, MOVE_THUNDERBOLT, MOVE_PSYCHIC, MOVE_HYPNOSIS},
-        .evs = {0, 0, 0, 252, 252, 0},
+        .lvl = 100,
+        .species = SPECIES_SEEDOT,
+        .heldItem = ITEM_LEFTOVERS,
+        .moves = {MOVE_BIDE, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+        .evs = {252, 252, 252, 252, 252, 252},
     },
 }; //Me
 
@@ -6689,18 +6689,18 @@ static const struct TrainerMon sParty_LeaderGiovanni[] = {
 
 static const struct TrainerMon sParty_TeamRocketGrunt[] = {
     {
-        .iv = 0,
-        .lvl = 14,
+        .iv = 200,
+        .lvl = 15,
         .species = SPECIES_KOFFING,
     },
     {
-        .iv = 0,
-        .lvl = 14,
+        .iv = 200,
+        .lvl = 15,
         .species = SPECIES_EKANS,
     },
     {
-        .iv = 0,
-        .lvl = 16,
+        .iv = 200,
+        .lvl = 17,
         .species = SPECIES_MEOWTH,
         .ability = 1
     },
@@ -8112,14 +8112,14 @@ static const struct TrainerMon sParty_LeaderBrock[] = {
         .species = SPECIES_GEODUDE,
         .heldItem = ITEM_NONE,
         .moves = {MOVE_ROCK_THROW, MOVE_DEFENSE_CURL, MOVE_ROCK_TOMB, MOVE_TACKLE},
-        .evs = {0, 0, 0, 128, 0, 128},
+        .evs = {0, 0, 0, 0, 0, 128},
     },
     {
         .iv = 150,
         .lvl = 12,
         .species = SPECIES_SLUGMA,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_ROCK_TOMB, MOVE_POUND, MOVE_ROCK_THROW, MOVE_EMBER},
+        .moves = {MOVE_ROCK_TOMB, MOVE_POUND, MOVE_NONE, MOVE_NONE},
     },
     {
         .iv = 255,

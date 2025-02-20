@@ -132,7 +132,7 @@ Route17_Text_CyclingRoadSign::
 Route17_Text_Paxton::
     .string "GRAH, Champion Now?\p"
     .string "Seems like you really,\n"
-    .string "do like protecting\n"
+    .string "do like protecting\l"
     .string "those Islands!\p"
     .string "I'm not sorry for what I did\n"
     .string "on those Islands!\p"

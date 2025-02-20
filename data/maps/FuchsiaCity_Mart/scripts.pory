@@ -30,6 +30,9 @@ FuchsiaCity_Mart_Items::
 	.2byte ITEM_REVIVE
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_BLUE_FLUTE
+	.2byte ITEM_RED_FLUTE
+	.2byte ITEM_YELLOW_FLUTE
 	.2byte ITEM_NONE
 	release
 	end

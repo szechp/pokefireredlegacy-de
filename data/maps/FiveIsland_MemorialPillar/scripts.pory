@@ -123,6 +123,7 @@ FiveIsland_MemorialPillar_EventScript_RematchOman::
 FiveIsland_MemorialPillar_EventScript_PostRematchOman::
 	msgbox FiveIsland_MemorialPillar_Text_RematchOmanDefeat
 	cleartrainerflag TRAINER_OMAN
+	message Text_6Leaders
 	release
 	end
 

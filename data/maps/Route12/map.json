@@ -302,23 +302,7 @@
       "graphics_id": "OBJ_EVENT_GFX_WHITNEY",
       "x": 9,
       "y": 120,
-      "target_local_id": 13,
-      "target_map": "MAP_ROUTE13"
-    },
-    {
-      "type": "clone",
-      "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
-      "x": 8,
-      "y": 122,
-      "target_local_id": 14,
-      "target_map": "MAP_ROUTE13"
-    },
-    {
-      "type": "clone",
-      "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
-      "x": 11,
-      "y": 122,
-      "target_local_id": 15,
+      "target_local_id": 12,
       "target_map": "MAP_ROUTE13"
     }
   ],

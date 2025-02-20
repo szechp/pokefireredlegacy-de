@@ -63,8 +63,14 @@ FuchsiaCity_Mart_Items::
 # 32 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	.2byte ITEM_MAX_REPEL
 # 33 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	.2byte ITEM_NONE
+	.2byte ITEM_BLUE_FLUTE
 # 34 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	release
+	.2byte ITEM_RED_FLUTE
 # 35 "data/maps/FuchsiaCity_Mart/scripts.pory"
+	.2byte ITEM_YELLOW_FLUTE
+# 36 "data/maps/FuchsiaCity_Mart/scripts.pory"
+	.2byte ITEM_NONE
+# 37 "data/maps/FuchsiaCity_Mart/scripts.pory"
+	release
+# 38 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	end
