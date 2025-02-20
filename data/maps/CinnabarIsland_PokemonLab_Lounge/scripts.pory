@@ -108,7 +108,7 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_MoveManiac::
 CinnabarIsland_PokemonLab_Lounge_EventScript_CheckPlayerHasMushrooms::
 	checkitem ITEM_BIG_MUSHROOM
 	call_if_eq VAR_RESULT, TRUE, CinnabarIsland_PokemonLab_Lounge_EventScript_SetHasBigMushroom
-	checkitem ITEM_TINY_MUSHROOM, 1
+	checkitem ITEM_TINY_MUSHROOM, 2
 	call_if_eq VAR_RESULT, TRUE, CinnabarIsland_PokemonLab_Lounge_EventScript_SetHasTinyMushrooms
 	goto_if_set HAS_BIG_MUSHROOM, CinnabarIsland_PokemonLab_Lounge_EventScript_CheckAlsoHasTinyMushrooms
 	goto_if_set HAS_TINY_MUSHROOMS, CinnabarIsland_PokemonLab_Lounge_EventScript_CheckAlsoHasBigMushroom
@@ -161,7 +161,7 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_GiveBigMushroom::
 	end
 
 CinnabarIsland_PokemonLab_Lounge_EventScript_GiveTinyMushrooms::
-	removeitem ITEM_TINY_MUSHROOM, 1
+	removeitem ITEM_TINY_MUSHROOM, 2
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox CinnabarIsland_PokemonLab_Lounge_Text_HandedOverTwoTinyMushrooms
 	call EventScript_RestorePrevTextColor

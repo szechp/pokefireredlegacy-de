@@ -8109,18 +8109,17 @@ static const struct TrainerMon sParty_LeaderBrock[] = {
     {
         .iv = 255,
         .lvl = 13,
-        .species = SPECIES_SANDSHREW,
-        .heldItem = ITEM_NONE,
-        .moves = {MOVE_SANDSTORM, MOVE_NONE, MOVE_ROCK_TOMB, MOVE_SAND_ATTACK},
-        .evs = {0, 0, 0, 0, 0, 48},
-    },
-    {
-        .iv = 255,
-        .lvl = 13,
         .species = SPECIES_GEODUDE,
         .heldItem = ITEM_NONE,
         .moves = {MOVE_ROCK_THROW, MOVE_DEFENSE_CURL, MOVE_ROCK_TOMB, MOVE_TACKLE},
         .evs = {0, 0, 0, 128, 0, 128},
+    },
+    {
+        .iv = 150,
+        .lvl = 12,
+        .species = SPECIES_SLUGMA,
+        .heldItem = ITEM_NONE,
+        .moves = {MOVE_ROCK_TOMB, MOVE_POUND, MOVE_ROCK_THROW, MOVE_EMBER},
     },
     {
         .iv = 255,

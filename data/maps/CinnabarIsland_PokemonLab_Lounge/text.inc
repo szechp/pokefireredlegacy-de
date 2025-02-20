@@ -9,7 +9,7 @@ CinnabarIsland_PokemonLab_Lounge_Text_TeachMonMoveForMushroom::
     .string "I know every single move that\n"
     .string "POKéMON learn growing up.\p"
     .string "I'm also a mushroom maniac.\p"
-    .string "Bring me a TINYMUSHROOM,\n"
+    .string "Bring me TWO TINYMUSHROOMs,\n"
     .string "or a BIG MUSHROOM.\p"
     .string "If you do that for me, I'll teach\n"
     .string "a move to one POKéMON.$"
@@ -32,11 +32,11 @@ CinnabarIsland_PokemonLab_Lounge_Text_NoMoveICanTeachThatMon::
     .string "move I can teach that POKéMON.$"
 
 CinnabarIsland_PokemonLab_Lounge_Text_IllNeedMushroomOrTwo::
-    .string "Then, I'll need a MUSHROOM.\n"
+    .string "Then, I'll need a MUSHROOM or two.\n"
     .string "What are you going to give me?$"
 
 CinnabarIsland_PokemonLab_Lounge_Text_HandedOverTwoTinyMushrooms::
-    .string "{PLAYER} handed over one\n"
+    .string "{PLAYER} handed over two\n"
     .string "TINYMUSHROOMS in exchange.$"
 
 CinnabarIsland_PokemonLab_Lounge_Text_HandedOverOneBigMushroom::

@@ -77,144 +77,134 @@ IndigoPlateau_PokemonCenter_1F_EventScript_SeviiIslandComplete::
 # 39 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
 IndigoPlateau_PokemonCenter_1F_EventScript_GymGuy::
 # 40 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	msgbox IndigoPlateau_PokemonCenter_1F_Text_GymGuyAdvice, MSGBOX_NPC
-# 41 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	end
-# 42 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-
-# 43 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-IndigoPlateau_PokemonCenter_1F_EventScript_Clerk::
-# 44 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	goto_if_questlog EventScript_ReleaseEnd
-# 45 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	lock
-# 46 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	faceplayer
-# 47 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	message Text_MayIHelpYou
-# 48 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	waitmessage
-# 49 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	pokemart IndigoPlateau_PokemonCenter_1F_Items
-# 50 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	msgbox Text_PleaseComeAgain
-# 51 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	release
-# 52 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	end
-# 53 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-
-# 54 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.align 2
-# 55 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-IndigoPlateau_PokemonCenter_1F_Items::
-# 56 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_ULTRA_BALL
-# 57 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_GREAT_BALL
-# 58 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_HYPER_POTION
-# 59 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_FULL_RESTORE
-# 60 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_MAX_POTION
-# 61 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_ETHER
-# 62 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_ELIXIR
-# 63 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_REVIVE
-# 64 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_FULL_HEAL
-# 65 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_MAX_REPEL
-# 66 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_NONE
-# 67 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	release
-# 68 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	end
-# 69 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-
-# 70 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-IndigoPlateau_PokemonCenter_1F_EventScript_Nurse::
-# 71 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	lock
-# 72 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	faceplayer
-# 73 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	call EventScript_PkmnCenterNurse
-# 74 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	release
-# 75 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	end
-# 76 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-
-# 77 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-IndigoPlateau_PokemonCenter_1F_EventScript_TMGUY::
-# 78 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	goto_if_questlog EventScript_ReleaseEnd
-# 79 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	lock
-# 80 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	faceplayer
-# 81 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	message IndigoPlateau_PokemonCenter_1F_Text_TmGuy
-# 82 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	waitmessage
-# 83 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	pokemart IndigoPlateau_PokemonCenter_1F_TMGUY
-# 84 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	msgbox Text_PleaseComeAgain
-# 85 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	release
-# 86 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	end
-# 87 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-
-# 88 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.align 2
-# 89 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-IndigoPlateau_PokemonCenter_1F_TMGUY::
-# 90 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_TM07
-# 91 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_TM11
-# 92 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_TM13
-# 93 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_TM18
-# 94 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_TM23
-# 95 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_TM24
-# 96 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_TM30
-# 97 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_TM35
-# 98 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_TM37
-# 99 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_TM48
-# 100 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_TM49
-# 101 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	.2byte ITEM_NONE
-# 102 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	release
-# 103 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	end
-# 104 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-
-# 105 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-IndigoPlateau_PokemonCenter_1F_EventScript_Fisherman::
-# 106 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
 	call CinnabarIsland_EventScript_FishermanCheckFishingRod
-# 107 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+# 41 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
 	call CinnabarIsland_EventScript_FishermanCheckPokeballs
-# 108 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
-	msgbox IndigoPlateau_PokemonCenter_1F_Text_Fishing, MSGBOX_NPC
-# 109 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+# 42 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_GymGuyAdvice, MSGBOX_NPC
+# 43 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	end
+# 44 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+
+# 45 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+IndigoPlateau_PokemonCenter_1F_EventScript_Clerk::
+# 46 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	goto_if_questlog EventScript_ReleaseEnd
+# 47 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	lock
+# 48 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	faceplayer
+# 49 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	message Text_MayIHelpYou
+# 50 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	waitmessage
+# 51 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	pokemart IndigoPlateau_PokemonCenter_1F_Items
+# 52 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	msgbox Text_PleaseComeAgain
+# 53 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
 	release
-# 110 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+# 54 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	end
+# 55 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+
+# 56 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.align 2
+# 57 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+IndigoPlateau_PokemonCenter_1F_Items::
+# 58 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_ULTRA_BALL
+# 59 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_GREAT_BALL
+# 60 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_HYPER_POTION
+# 61 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_FULL_RESTORE
+# 62 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_MAX_POTION
+# 63 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_ETHER
+# 64 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_ELIXIR
+# 65 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_REVIVE
+# 66 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_FULL_HEAL
+# 67 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_MAX_REPEL
+# 68 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_NONE
+# 69 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	release
+# 70 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	end
+# 71 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+
+# 72 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+IndigoPlateau_PokemonCenter_1F_EventScript_Nurse::
+# 73 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	lock
+# 74 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	faceplayer
+# 75 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	call EventScript_PkmnCenterNurse
+# 76 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	release
+# 77 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	end
+# 78 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+
+# 79 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+IndigoPlateau_PokemonCenter_1F_EventScript_TMGUY::
+# 80 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	goto_if_questlog EventScript_ReleaseEnd
+# 81 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	lock
+# 82 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	faceplayer
+# 83 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	message IndigoPlateau_PokemonCenter_1F_Text_TmGuy
+# 84 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	waitmessage
+# 85 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	pokemart IndigoPlateau_PokemonCenter_1F_TMGUY
+# 86 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	msgbox Text_PleaseComeAgain
+# 87 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	release
+# 88 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	end
+# 89 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+
+# 90 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.align 2
+# 91 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+IndigoPlateau_PokemonCenter_1F_TMGUY::
+# 92 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_TM07
+# 93 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_TM11
+# 94 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_TM13
+# 95 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_TM18
+# 96 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_TM23
+# 97 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_TM24
+# 98 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_TM30
+# 99 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_TM35
+# 100 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_TM37
+# 101 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_TM48
+# 102 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_TM49
+# 103 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	.2byte ITEM_NONE
+# 104 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
+	release
+# 105 "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.pory"
 	end

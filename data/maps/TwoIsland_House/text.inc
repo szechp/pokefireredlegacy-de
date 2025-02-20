@@ -57,3 +57,8 @@ TwoIsland_House_Text_StoneGuy::
     .string "They can evolve your\n"
     .string "ONIX and SCYTHER\p"
     .string "Pick any, but it will cost ya.$"
+
+TwoIsland_House_Text_TmGuy2::
+    .string "Hi, I sell TMs here!\p"
+    .string "I just got all of them!\p"
+    .string "Pick any, but it will cost ya.$"

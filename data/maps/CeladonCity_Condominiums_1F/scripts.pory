@@ -20,7 +20,14 @@ CeladonCity_Condominiums_1F_EventScript_TeaWomanAfterTea::
 	msgbox CeladonCity_Condominiums_1F_Text_MyDearMonsKeepMeCompany
 	goto_if_questlog EventScript_ReleaseEnd
 	waitmessage
+	goto_if_set FLAG_BADGE05_GET, CeladonCity_Condominiums_1F_EventScript_TeaShop2
 	pokemart CeladonCity_Condominiums_1F_Herbs
+	msgbox Text_PleaseComeAgain
+	release
+	end
+
+CeladonCity_Condominiums_1F_EventScript_TeaShop2::
+	pokemart CeladonCity_Condominiums_1F_Herbs2
 	msgbox Text_PleaseComeAgain
 	release
 	end
@@ -35,6 +42,17 @@ CeladonCity_Condominiums_1F_Herbs::
 	release
 	end
 
+	.align 2
+CeladonCity_Condominiums_1F_Herbs2::
+	.2byte ITEM_ENERGY_ROOT
+	.2byte ITEM_ENERGY_POWDER
+	.2byte ITEM_HEAL_POWDER
+	.2byte ITEM_REVIVAL_HERB
+	.2byte ITEM_WHITE_HERB
+	.2byte ITEM_MENTAL_HERB
+	.2byte ITEM_NONE
+	release
+	end
 
 CeladonCity_Condominiums_1F_EventScript_TeaWomanMentionDaisy::
 	famechecker FAMECHECKER_DAISY, 4

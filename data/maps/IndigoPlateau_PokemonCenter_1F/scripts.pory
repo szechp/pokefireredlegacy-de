@@ -37,6 +37,8 @@ IndigoPlateau_PokemonCenter_1F_EventScript_SeviiIslandComplete::
 	end
 
 IndigoPlateau_PokemonCenter_1F_EventScript_GymGuy::
+	call CinnabarIsland_EventScript_FishermanCheckFishingRod
+	call CinnabarIsland_EventScript_FishermanCheckPokeballs
 	msgbox IndigoPlateau_PokemonCenter_1F_Text_GymGuyAdvice, MSGBOX_NPC
 	end
 
@@ -102,11 +104,5 @@ IndigoPlateau_PokemonCenter_1F_TMGUY::
 	release
 	end
 
-IndigoPlateau_PokemonCenter_1F_EventScript_Fisherman::
-	call CinnabarIsland_EventScript_FishermanCheckFishingRod
-	call CinnabarIsland_EventScript_FishermanCheckPokeballs
-	msgbox IndigoPlateau_PokemonCenter_1F_Text_Fishing, MSGBOX_NPC
-	release
-	end
 
 `

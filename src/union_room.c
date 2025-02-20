@@ -1174,9 +1174,11 @@ static u32 IsTryingToTradeAcrossVersionTooSoon(struct WirelessLink_Group * data,
      && partner->rfu.data.compatibility.version != VERSION_FIRE_RED
      && partner->rfu.data.compatibility.version != VERSION_LEAF_GREEN)
     {
+        /* //This commented out should allow trading with RSE from the start
         if (!(gSaveBlock2Ptr->specialSaveWarpFlags & CHAMPION_SAVEWARP))
             return UR_TRADE_PLAYER_NOT_READY;
         else if (partner->rfu.data.compatibility.canLinkNationally)
+            return UR_TRADE_READY;*/
             return UR_TRADE_READY;
     }
     else

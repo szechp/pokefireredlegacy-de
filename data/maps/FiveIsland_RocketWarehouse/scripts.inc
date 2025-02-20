@@ -365,78 +365,74 @@ FiveIsland_RocketWarehouse_Movement_AdminWalkToSwitch::
 # 183 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 
 # 184 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-FiveIsland_RocketWarehouse_EventScript_ShowClerk::
+FiveIsland_RocketWarehouse_EventScript_Police::
 # 185 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	clearflag FLAG_SHOPJOHTO
+	msgbox FiveIsland_RocketWarehouse_Text_Police, MSGBOX_NPC
 # 186 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	end
 # 187 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 
 # 188 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-FiveIsland_RocketWarehouse_EventScript_Clerk::
+FiveIsland_RocketWarehouse_Text_Police::
 # 189 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	goto_if_questlog EventScript_ReleaseEnd
+    .string "We are investigating this place,\n"  
 # 190 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	lock
+    .string "we are currently holding this\l"  
 # 191 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	faceplayer
+    .string "SCIENTIST for questioning.$"
 # 192 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	message FiveIsland_RocketWarehouse_Text_Clerk
-# 193 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	waitmessage
-# 194 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	pokemart FiveIsland_RocketWarehouse_JohtoShop
-# 195 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	msgbox Text_PleaseComeAgain
-# 196 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	release
-# 197 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	end
-# 198 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 
+# 193 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+FiveIsland_RocketWarehouse_EventScript_ShowClerk::
+# 194 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	clearflag FLAG_SHOPJOHTO
+# 195 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	end
+# 196 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+
+# 197 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+FiveIsland_RocketWarehouse_EventScript_Clerk::
+# 198 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	goto_if_questlog EventScript_ReleaseEnd
 # 199 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.align 2
+	lock
 # 200 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-FiveIsland_RocketWarehouse_JohtoShop::
+	faceplayer
 # 201 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_SEA_INCENSE
+	message FiveIsland_RocketWarehouse_Text_Clerk
 # 202 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_LAX_INCENSE
+	waitmessage
 # 203 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_DEEP_SEA_SCALE
+	pokemart FiveIsland_RocketWarehouse_JohtoShop
 # 204 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_DEEP_SEA_TOOTH
+	msgbox Text_PleaseComeAgain
 # 205 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_SOOTHE_BELL
-# 206 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_MACHO_BRACE
-# 207 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_LIECHI_BERRY
-# 208 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_GANLON_BERRY
-# 209 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_SALAC_BERRY
-# 210 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_APICOT_BERRY
-# 211 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_PETAYA_BERRY
-# 212 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_LANSAT_BERRY
-# 213 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_STARF_BERRY
-# 214 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_BRICK_PIECE
-# 215 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_CLEANSE_TAG
-# 216 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_METAL_POWDER
-# 217 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_SMOKE_BALL
-# 218 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_STICK
-# 219 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-	.2byte ITEM_NONE
-# 220 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	release
-# 221 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+# 206 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	end
+# 207 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+
+# 208 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	.align 2
+# 209 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+FiveIsland_RocketWarehouse_JohtoShop::
+# 210 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	.2byte ITEM_LIECHI_BERRY
+# 211 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	.2byte ITEM_GANLON_BERRY
+# 212 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	.2byte ITEM_SALAC_BERRY
+# 213 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	.2byte ITEM_APICOT_BERRY
+# 214 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	.2byte ITEM_PETAYA_BERRY
+# 215 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	.2byte ITEM_LANSAT_BERRY
+# 216 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	.2byte ITEM_STARF_BERRY
+# 217 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	.2byte ITEM_NONE
+# 218 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
+	release
+# 219 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
 	end

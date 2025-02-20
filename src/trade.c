@@ -1963,9 +1963,6 @@ static u8 CheckValidityOfTradeMons(u8 *aliveMons, u8 playerPartyCount, u8 cursor
 
     // Partner cant trade illegitimate Deoxys or Mew
     partnerSpecies = GetMonData(&gEnemyParty[sTradeMenu->partnerCursorPosition % PARTY_SIZE], MON_DATA_SPECIES);
-    if ((partnerSpecies == SPECIES_DEOXYS || partnerSpecies == SPECIES_MEW)
-        && !GetMonData(&gEnemyParty[sTradeMenu->partnerCursorPosition % PARTY_SIZE], MON_DATA_MODERN_FATEFUL_ENCOUNTER))
-        return PARTNER_MON_INVALID;
 
     if (hasLiveMon != 0)
         hasLiveMon = BOTH_MONS_VALID;
@@ -2788,12 +2785,6 @@ static u32 CanTradeSelectedMon(struct Pokemon * playerParty, int partyCount, int
         }
     }
 
-    if (species[monIdx] == SPECIES_DEOXYS || species[monIdx] == SPECIES_MEW)
-    {
-        if (!GetMonData(&playerParty[monIdx], MON_DATA_MODERN_FATEFUL_ENCOUNTER))
-            return CANT_TRADE_INVALID_MON;
-    }
-
     // Make Eggs not count for numMonsLeft
     for (i = 0; i < partyCount; i++)
     {
@@ -2857,12 +2848,12 @@ s32 GetGameProgressForLinkTrade(void)
 
 static bool32 IsDeoxysOrMewUntradable(u16 species, bool8 isModernFatefulEncounter)
 {
-    if (species == SPECIES_DEOXYS || species == SPECIES_MEW)
+    /*if (species == SPECIES_DEOXYS || species == SPECIES_MEW)
     {
         if (!isModernFatefulEncounter)
             return TRUE;
     }
-    return FALSE;
+    return FALSE;*/
 }
 
 int GetUnionRoomTradeMessageId(struct RfuGameCompatibilityData player, struct RfuGameCompatibilityData partner, u16 playerSpecies2, u16 partnerSpecies, u8 requestedType, u16 playerSpecies, bool8 isModernFatefulEncounter)
@@ -2890,8 +2881,6 @@ int GetUnionRoomTradeMessageId(struct RfuGameCompatibilityData player, struct Rf
     }
 
     // Cannot trade illegitimate Deoxys/Mew
-    if (IsDeoxysOrMewUntradable(playerSpecies, isModernFatefulEncounter))
-        return UR_TRADE_MSG_MON_CANT_BE_TRADED_2;
 
     if (partnerSpecies == SPECIES_EGG)
     {
@@ -2936,9 +2925,6 @@ int GetUnionRoomTradeMessageId(struct RfuGameCompatibilityData player, struct Rf
 int CanRegisterMonForTradingBoard(struct RfuGameCompatibilityData player, u16 species2, u16 species, bool8 isModernFatefulEncounter)
 {
     bool8 hasNationalDex = player.hasNationalDex;
-
-    if (IsDeoxysOrMewUntradable(species, isModernFatefulEncounter))
-        return CANT_REGISTER_MON;
 
     if (hasNationalDex)
         return CAN_REGISTER_MON;

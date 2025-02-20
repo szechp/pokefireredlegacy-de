@@ -181,6 +181,15 @@ FiveIsland_RocketWarehouse_Movement_AdminWalkToSwitch::
 	walk_in_place_faster_up
 	step_end
 
+FiveIsland_RocketWarehouse_EventScript_Police::
+	msgbox FiveIsland_RocketWarehouse_Text_Police, MSGBOX_NPC
+	end
+
+FiveIsland_RocketWarehouse_Text_Police::
+    .string "We are investigating this place,\n"  
+    .string "we are currently holding this\l"  
+    .string "SCIENTIST for questioning.$"
+
 FiveIsland_RocketWarehouse_EventScript_ShowClerk::
 	clearflag FLAG_SHOPJOHTO
 	end
@@ -198,12 +207,6 @@ FiveIsland_RocketWarehouse_EventScript_Clerk::
 
 	.align 2
 FiveIsland_RocketWarehouse_JohtoShop::
-	.2byte ITEM_SEA_INCENSE
-	.2byte ITEM_LAX_INCENSE
-	.2byte ITEM_DEEP_SEA_SCALE
-	.2byte ITEM_DEEP_SEA_TOOTH
-	.2byte ITEM_SOOTHE_BELL
-	.2byte ITEM_MACHO_BRACE
 	.2byte ITEM_LIECHI_BERRY
 	.2byte ITEM_GANLON_BERRY
 	.2byte ITEM_SALAC_BERRY
@@ -211,11 +214,6 @@ FiveIsland_RocketWarehouse_JohtoShop::
 	.2byte ITEM_PETAYA_BERRY
 	.2byte ITEM_LANSAT_BERRY
 	.2byte ITEM_STARF_BERRY
-	.2byte ITEM_BRICK_PIECE
-	.2byte ITEM_CLEANSE_TAG
-	.2byte ITEM_METAL_POWDER
-	.2byte ITEM_SMOKE_BALL
-	.2byte ITEM_STICK
 	.2byte ITEM_NONE
 	release
 	end

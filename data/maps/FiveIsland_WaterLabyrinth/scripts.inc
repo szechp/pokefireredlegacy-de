@@ -1,197 +1,197 @@
 # 1 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
 # 2 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_MapScripts::
+.equ CHECKED_MUSHROOMS,  FLAG_TEMP_1
 # 3 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	map_script MAP_SCRIPT_ON_LOAD, FiveIsland_RocketWarehouse_OnLoad
+.equ HAS_BIG_MUSHROOM,   FLAG_TEMP_2
 # 4 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.byte 0
+.equ HAS_TINY_MUSHROOMS, FLAG_TEMP_3
 # 5 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+.equ HAS_BOTH_MUSHROOMS, FLAG_TEMP_4
 # 6 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_OnLoad::
+
 # 7 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	special CheckBeatJohto
+FiveIsland_WaterLabyrinth_MapScripts::
 # 8 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	call_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_ShowClerk
+	map_script MAP_SCRIPT_ON_LOAD, FiveIsland_RocketWarehouse_OnLoad
 # 9 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
+	.byte 0
 # 10 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
 # 11 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_ShowClerk::
+FiveIsland_WaterLabyrinth_OnLoad::
 # 12 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	clearflag FLAG_SHOPJOHTO
+	special CheckBeatJohto
 # 13 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
+	call_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_ShowClerk
 # 14 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+	end
 # 15 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_EggGentleman::
+
 # 16 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_questlog EventScript_ReleaseEnd
+FiveIsland_WaterLabyrinth_EventScript_ShowClerk::
 # 17 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	special QuestLog_CutRecording
+	clearflag FLAG_SHOPJOHTO
 # 18 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	lock
+	end
 # 19 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	faceplayer
+
 # 20 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_set FLAG_GOT_TOGEPI_EGG, FiveIsland_WaterLabyrinth_EventScript_PostEggComment
+FiveIsland_WaterLabyrinth_EventScript_EggGentleman::
 # 21 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_set FLAG_NO_ROOM_FOR_TOGEPI_EGG, FiveIsland_WaterLabyrinth_EventScript_ReturnForEgg
+	goto_if_questlog EventScript_ReleaseEnd
 # 22 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_LetMeTakeLookAtMons
+	special QuestLog_CutRecording
 # 23 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	specialvar VAR_RESULT, GetLeadMonFriendship
+	lock
 # 24 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_eq VAR_RESULT, 6, FiveIsland_WaterLabyrinth_EventScript_LeadMonMaxFriendship
+	faceplayer
 # 25 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_HmmISeeIsee
+	goto_if_set FLAG_GOT_TOGEPI_EGG, FiveIsland_WaterLabyrinth_EventScript_PostEggComment
 # 26 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	release
+	goto_if_set FLAG_NO_ROOM_FOR_TOGEPI_EGG, FiveIsland_WaterLabyrinth_EventScript_ReturnForEgg
 # 27 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
+	msgbox FiveIsland_WaterLabyrinth_Text_LetMeTakeLookAtMons
 # 28 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+	specialvar VAR_RESULT, GetLeadMonFriendship
 # 29 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_MonDaisyComment::
+	goto_if_eq VAR_RESULT, 6, FiveIsland_WaterLabyrinth_EventScript_LeadMonMaxFriendship
 # 30 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	famechecker FAMECHECKER_DAISY, 2
+	msgbox FiveIsland_WaterLabyrinth_Text_HmmISeeIsee
 # 31 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_CuteMonRemindsMeOfDaisy
-# 32 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	release
-# 33 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 32 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	end
-# 34 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 33 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
+# 34 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_MonDaisyComment::
 # 35 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_LeadMonMaxFriendship::
+	famechecker FAMECHECKER_DAISY, 2
 # 36 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_TreatMonRightHaveThis
+	msgbox FiveIsland_WaterLabyrinth_Text_CuteMonRemindsMeOfDaisy
 # 37 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto FiveIsland_WaterLabyrinth_EventScript_TryGiveEgg
+	release
 # 38 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	end
 # 39 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
 # 40 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_TryGiveEgg::
+FiveIsland_WaterLabyrinth_EventScript_LeadMonMaxFriendship::
 # 41 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	getpartysize
+	msgbox FiveIsland_WaterLabyrinth_Text_TreatMonRightHaveThis
 # 42 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_eq VAR_RESULT, PARTY_SIZE, FiveIsland_WaterLabyrinth_EventScript_NoRoomForEgg
-# 43 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	setflag FLAG_GOT_TOGEPI_EGG
-# 44 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	giveegg SPECIES_TOGEPI
-# 45 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-# 46 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	playfanfare MUS_LEVEL_UP
-# 47 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	message FiveIsland_WaterLabyrinth_Text_ReceivedEggFromMan
-# 48 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	waitfanfare
-# 49 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	waitmessage
-# 50 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	call EventScript_RestorePrevTextColor
-# 51 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto FiveIsland_WaterLabyrinth_EventScript_PostEggComment
-# 52 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 53 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 54 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-@ If the player has a Togepi/Togetic from this game (assumed to be the one the man gave you) then comment on it
-# 55 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-@ Otherwise make normal comment
-# 56 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_PostEggComment::
-# 57 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	bufferspeciesname STR_VAR_2, SPECIES_TOGEPI
-# 58 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	setvar VAR_0x8004, SPECIES_TOGEPI
-# 59 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	specialvar VAR_RESULT, PlayerPartyContainsSpeciesWithPlayerID
-# 60 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_MonDaisyComment
-# 61 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	bufferspeciesname STR_VAR_2, SPECIES_TOGETIC
-# 62 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	setvar VAR_0x8004, SPECIES_TOGETIC
-# 63 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	specialvar VAR_RESULT, PlayerPartyContainsSpeciesWithPlayerID
-# 64 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_MonDaisyComment
-# 65 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_GladIMetSomeoneLikeYou
-# 66 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	release
-# 67 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 68 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 69 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_NoRoomForEgg::
-# 70 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	setflag FLAG_NO_ROOM_FOR_TOGEPI_EGG
-# 71 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_DontHaveSpaceInYourParty
-# 72 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	release
-# 73 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 74 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 75 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_ReturnForEgg::
-# 76 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	goto FiveIsland_WaterLabyrinth_EventScript_TryGiveEgg
+# 43 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 44 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 45 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_TryGiveEgg::
+# 46 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	getpartysize
+# 47 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_eq VAR_RESULT, PARTY_SIZE, FiveIsland_WaterLabyrinth_EventScript_NoRoomForEgg
+# 48 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	setflag FLAG_GOT_TOGEPI_EGG
+# 49 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	giveegg SPECIES_TOGEPI
+# 50 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+# 51 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	playfanfare MUS_LEVEL_UP
+# 52 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	message FiveIsland_WaterLabyrinth_Text_ReceivedEggFromMan
+# 53 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	waitfanfare
+# 54 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	waitmessage
+# 55 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	call EventScript_RestorePrevTextColor
+# 56 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto FiveIsland_WaterLabyrinth_EventScript_PostEggComment
+# 57 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 58 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 59 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+@ If the player has a Togepi/Togetic from this game (assumed to be the one the man gave you) then comment on it
+# 60 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+@ Otherwise make normal comment
+# 61 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_PostEggComment::
+# 62 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	bufferspeciesname STR_VAR_2, SPECIES_TOGEPI
+# 63 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	setvar VAR_0x8004, SPECIES_TOGEPI
+# 64 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	specialvar VAR_RESULT, PlayerPartyContainsSpeciesWithPlayerID
+# 65 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_MonDaisyComment
+# 66 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	bufferspeciesname STR_VAR_2, SPECIES_TOGETIC
+# 67 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	setvar VAR_0x8004, SPECIES_TOGETIC
+# 68 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	specialvar VAR_RESULT, PlayerPartyContainsSpeciesWithPlayerID
+# 69 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_MonDaisyComment
+# 70 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_GladIMetSomeoneLikeYou
+# 71 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	release
+# 72 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 73 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 74 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_NoRoomForEgg::
+# 75 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	setflag FLAG_NO_ROOM_FOR_TOGEPI_EGG
+# 76 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_DontHaveSpaceInYourParty
 # 77 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
+	release
 # 78 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+	end
 # 79 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_Falkner::
+
 # 80 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	lock
+FiveIsland_WaterLabyrinth_EventScript_ReturnForEgg::
 # 81 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	faceplayer
+	goto FiveIsland_WaterLabyrinth_EventScript_TryGiveEgg
 # 82 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_set FLAG_FALKNER_DEFEATED, FiveIsland_WaterLabyrinth_EventScript_RematchFalkner
+	end
 # 83 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_Falkner, MSGBOX_YESNO
+
 # 84 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_NoFalkner
+FiveIsland_WaterLabyrinth_EventScript_Falkner::
 # 85 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesFalkner, FiveIsland_WaterLabyrinth_Text_FalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostFalkner, NO_MUSIC
+	lock
 # 86 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	release
+	faceplayer
 # 87 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
+	goto_if_set FLAG_FALKNER_DEFEATED, FiveIsland_WaterLabyrinth_EventScript_RematchFalkner
 # 88 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+	msgbox FiveIsland_WaterLabyrinth_Text_Falkner, MSGBOX_YESNO
 # 89 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_PostFalkner::
+	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_NoFalkner
 # 90 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_FalknerPostBattle
+	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesFalkner, FiveIsland_WaterLabyrinth_Text_FalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostFalkner, NO_MUSIC
 # 91 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	setflag FLAG_FALKNER_DEFEATED
-# 92 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	cleartrainerflag TRAINER_FALKNER
-# 93 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	release
-# 94 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 92 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	end
-# 95 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 93 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
-# 96 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_CantRematchFalkner::
-# 97 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 94 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_PostFalkner::
+# 95 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	msgbox FiveIsland_WaterLabyrinth_Text_FalknerPostBattle
+# 96 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	setflag FLAG_FALKNER_DEFEATED
+# 97 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	cleartrainerflag TRAINER_FALKNER
 # 98 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	release
 # 99 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
@@ -199,9 +199,9 @@ FiveIsland_WaterLabyrinth_EventScript_CantRematchFalkner::
 # 100 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
 # 101 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_NoFalkner::
+FiveIsland_WaterLabyrinth_EventScript_CantRematchFalkner::
 # 102 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_NoFalkner
+	msgbox FiveIsland_WaterLabyrinth_Text_FalknerPostBattle
 # 103 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	release
 # 104 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
@@ -209,99 +209,99 @@ FiveIsland_WaterLabyrinth_EventScript_NoFalkner::
 # 105 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
 # 106 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_RematchFalkner::
+FiveIsland_WaterLabyrinth_EventScript_NoFalkner::
 # 107 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	lock
+	msgbox FiveIsland_WaterLabyrinth_Text_NoFalkner
 # 108 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	faceplayer
+	release
 # 109 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalkner, MSGBOX_YESNO
+	end
 # 110 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_NoFalkner
+
 # 111 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesRematchFalkner, FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner, NO_MUSIC
+FiveIsland_WaterLabyrinth_EventScript_RematchFalkner::
 # 112 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	release
-# 113 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 114 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 115 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner::
-# 116 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat
-# 117 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	cleartrainerflag TRAINER_FALKNER
-# 118 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	release
-# 119 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 120 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 121 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_MoveManiac::
-# 122 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_questlog EventScript_ReleaseEnd
-# 123 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	special QuestLog_CutRecording
-# 124 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	setflag FLAG_EGG_MOVES_TUTOR
-# 125 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	lock
-# 126 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 113 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	faceplayer
+# 114 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalkner, MSGBOX_YESNO
+# 115 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_NoFalkner
+# 116 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	trainerbattle_single TRAINER_FALKNER, FiveIsland_WaterLabyrinth_Text_YesRematchFalkner, FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat, FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner, NO_MUSIC
+# 117 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	release
+# 118 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 119 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 120 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_PostRematchFalkner::
+# 121 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat
+# 122 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	cleartrainerflag TRAINER_FALKNER
+# 123 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	release
+# 124 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 125 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 126 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_MoveManiac::
 # 127 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	clearflag HAS_BIG_MUSHROOM
+	goto_if_questlog EventScript_ReleaseEnd
 # 128 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	clearflag HAS_TINY_MUSHROOMS
+	special QuestLog_CutRecording
 # 129 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	clearflag HAS_BOTH_MUSHROOMS
+	setflag FLAG_EGG_MOVES_TUTOR
 # 130 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_set CHECKED_MUSHROOMS, FiveIsland_WaterLabyrinth_EventScript_CheckPlayerHasMushrooms
+	lock
 # 131 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_TeachMonMoveForMushroom
+	faceplayer
 # 132 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	setflag CHECKED_MUSHROOMS
+	clearflag HAS_BIG_MUSHROOM
 # 133 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto FiveIsland_WaterLabyrinth_EventScript_CheckPlayerHasMushrooms
+	clearflag HAS_TINY_MUSHROOMS
 # 134 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
+	clearflag HAS_BOTH_MUSHROOMS
 # 135 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+	goto_if_set CHECKED_MUSHROOMS, FiveIsland_WaterLabyrinth_EventScript_CheckPlayerHasMushrooms
 # 136 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_CheckPlayerHasMushrooms::
+	msgbox FiveIsland_WaterLabyrinth_Text_TeachMonMoveForMushroom
 # 137 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	checkitem ITEM_BIG_MUSHROOM
+	setflag CHECKED_MUSHROOMS
 # 138 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	call_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_SetHasBigMushroom
+	goto FiveIsland_WaterLabyrinth_EventScript_CheckPlayerHasMushrooms
 # 139 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	checkitem ITEM_TINY_MUSHROOM, 1
-# 140 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	call_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_SetHasTinyMushrooms
-# 141 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_set HAS_BIG_MUSHROOM, FiveIsland_WaterLabyrinth_EventScript_CheckAlsoHasTinyMushrooms
-# 142 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_set HAS_TINY_MUSHROOMS, FiveIsland_WaterLabyrinth_EventScript_CheckAlsoHasBigMushroom
-# 143 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto FiveIsland_WaterLabyrinth_EventScript_EndTutorMove
-# 144 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	end
-# 145 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+# 140 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
+# 141 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_CheckPlayerHasMushrooms::
+# 142 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	checkitem ITEM_BIG_MUSHROOM
+# 143 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	call_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_SetHasBigMushroom
+# 144 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	checkitem ITEM_TINY_MUSHROOM, 10
+# 145 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	call_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_SetHasTinyMushrooms
 # 146 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_CheckAlsoHasTinyMushrooms::
+	goto_if_set HAS_BIG_MUSHROOM, FiveIsland_WaterLabyrinth_EventScript_CheckAlsoHasTinyMushrooms
 # 147 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	call_if_set HAS_TINY_MUSHROOMS, FiveIsland_WaterLabyrinth_EventScript_SetHasBothMushrooms
+	goto_if_set HAS_TINY_MUSHROOMS, FiveIsland_WaterLabyrinth_EventScript_CheckAlsoHasBigMushroom
 # 148 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto FiveIsland_WaterLabyrinth_EventScript_AskTutorMon
+	goto FiveIsland_WaterLabyrinth_EventScript_EndTutorMove
 # 149 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	end
 # 150 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
 # 151 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_CheckAlsoHasBigMushroom::
+FiveIsland_WaterLabyrinth_EventScript_CheckAlsoHasTinyMushrooms::
 # 152 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	call_if_set HAS_BIG_MUSHROOM, FiveIsland_WaterLabyrinth_EventScript_SetHasBothMushrooms
+	call_if_set HAS_TINY_MUSHROOMS, FiveIsland_WaterLabyrinth_EventScript_SetHasBothMushrooms
 # 153 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	goto FiveIsland_WaterLabyrinth_EventScript_AskTutorMon
 # 154 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
@@ -309,123 +309,123 @@ FiveIsland_WaterLabyrinth_EventScript_CheckAlsoHasBigMushroom::
 # 155 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
 # 156 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_AskTutorMon::
+FiveIsland_WaterLabyrinth_EventScript_CheckAlsoHasBigMushroom::
 # 157 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_WantMeToTeachMove, MSGBOX_YESNO
+	call_if_set HAS_BIG_MUSHROOM, FiveIsland_WaterLabyrinth_EventScript_SetHasBothMushrooms
 # 158 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_EndTutorMove
+	goto FiveIsland_WaterLabyrinth_EventScript_AskTutorMon
 # 159 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto FiveIsland_WaterLabyrinth_EventScript_ChooseMonToTutor
+	end
 # 160 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
+
 # 161 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+FiveIsland_WaterLabyrinth_EventScript_AskTutorMon::
 # 162 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_ChooseMonToTutor::
+	msgbox FiveIsland_WaterLabyrinth_Text_WantMeToTeachMove, MSGBOX_YESNO
 # 163 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_TutorWhichMon
+	goto_if_eq VAR_RESULT, NO, FiveIsland_WaterLabyrinth_EventScript_EndTutorMove
 # 164 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	special ChooseMonForMoveRelearner
-# 165 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	waitstate
-# 166 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_ge VAR_0x8004, PARTY_SIZE, FiveIsland_WaterLabyrinth_EventScript_EndTutorMove
-# 167 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	special IsSelectedMonEgg
-# 168 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_CantTutorEgg
-# 169 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_eq VAR_0x8005, 0, FiveIsland_WaterLabyrinth_EventScript_NoMoveToTutorMon
-# 170 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto FiveIsland_WaterLabyrinth_EventScript_ChooseMoveToTeach
-# 171 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 172 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 173 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_ChooseMoveToTeach::
-# 174 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_TeachWhichMove
-# 175 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	special TeachMoveRelearnerMove
-# 176 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	waitstate
-# 177 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_eq VAR_0x8004, 0, FiveIsland_WaterLabyrinth_EventScript_ChooseMonToTutor
-# 178 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_set HAS_BOTH_MUSHROOMS, FiveIsland_WaterLabyrinth_EventScript_ChooseMushroom
-# 179 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_set HAS_BIG_MUSHROOM, FiveIsland_WaterLabyrinth_EventScript_GiveBigMushroom
-# 180 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto_if_set HAS_TINY_MUSHROOMS, FiveIsland_WaterLabyrinth_EventScript_GiveTinyMushrooms
-# 181 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 182 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 183 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_GiveBigMushroom::
-# 184 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	removeitem ITEM_BIG_MUSHROOM
-# 185 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-# 186 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_HandedOverOneBigMushroom
-# 187 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	call EventScript_RestorePrevTextColor
-# 188 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto FiveIsland_WaterLabyrinth_EventScript_EndTutorMove
-# 189 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 190 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 191 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_GiveTinyMushrooms::
-# 192 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	removeitem ITEM_TINY_MUSHROOM, 1
-# 193 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-# 194 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_HandedOverTwoTinyMushrooms
-# 195 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	call EventScript_RestorePrevTextColor
-# 196 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	goto FiveIsland_WaterLabyrinth_EventScript_EndTutorMove
-# 197 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 198 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 199 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_ChooseMushroom::
-# 200 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	message FiveIsland_WaterLabyrinth_Text_IllNeedMushroomOrTwo
-# 201 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	waitmessage
-# 202 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	multichoice 0, 0, MULTICHOICE_MUSHROOMS, TRUE
-# 203 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	switch VAR_RESULT
-# 204 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	case 0, FiveIsland_WaterLabyrinth_EventScript_GiveTinyMushrooms
-# 205 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	case 1, FiveIsland_WaterLabyrinth_EventScript_GiveBigMushroom
-# 206 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	end
-# 207 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 208 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_NoMoveToTutorMon::
-# 209 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_NoMoveICanTeachThatMon
-# 210 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	goto FiveIsland_WaterLabyrinth_EventScript_ChooseMonToTutor
+# 165 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 166 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 167 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_ChooseMonToTutor::
+# 168 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_TutorWhichMon
+# 169 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	special ChooseMonForMoveRelearner
+# 170 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	waitstate
+# 171 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_ge VAR_0x8004, PARTY_SIZE, FiveIsland_WaterLabyrinth_EventScript_EndTutorMove
+# 172 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	special IsSelectedMonEgg
+# 173 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_eq VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_CantTutorEgg
+# 174 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_eq VAR_0x8005, 0, FiveIsland_WaterLabyrinth_EventScript_NoMoveToTutorMon
+# 175 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto FiveIsland_WaterLabyrinth_EventScript_ChooseMoveToTeach
+# 176 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 177 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 178 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_ChooseMoveToTeach::
+# 179 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_TeachWhichMove
+# 180 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	special TeachMoveRelearnerMove
+# 181 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	waitstate
+# 182 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_eq VAR_0x8004, 0, FiveIsland_WaterLabyrinth_EventScript_ChooseMonToTutor
+# 183 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_set HAS_BOTH_MUSHROOMS, FiveIsland_WaterLabyrinth_EventScript_ChooseMushroom
+# 184 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_set HAS_BIG_MUSHROOM, FiveIsland_WaterLabyrinth_EventScript_GiveBigMushroom
+# 185 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto_if_set HAS_TINY_MUSHROOMS, FiveIsland_WaterLabyrinth_EventScript_GiveTinyMushrooms
+# 186 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 187 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 188 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_GiveBigMushroom::
+# 189 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	removeitem ITEM_BIG_MUSHROOM
+# 190 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+# 191 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_HandedOverOneBigMushroom
+# 192 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	call EventScript_RestorePrevTextColor
+# 193 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto FiveIsland_WaterLabyrinth_EventScript_EndTutorMove
+# 194 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 195 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 196 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_GiveTinyMushrooms::
+# 197 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	removeitem ITEM_TINY_MUSHROOM, 10
+# 198 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+# 199 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	msgbox FiveIsland_WaterLabyrinth_Text_HandedOverTwoTinyMushrooms
+# 200 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	call EventScript_RestorePrevTextColor
+# 201 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	goto FiveIsland_WaterLabyrinth_EventScript_EndTutorMove
+# 202 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	end
+# 203 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 204 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_ChooseMushroom::
+# 205 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	message FiveIsland_WaterLabyrinth_Text_IllNeedMushroomOrTwo
+# 206 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	waitmessage
+# 207 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	multichoice 0, 0, MULTICHOICE_MUSHROOMS, TRUE
+# 208 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	switch VAR_RESULT
+# 209 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	case 0, FiveIsland_WaterLabyrinth_EventScript_GiveTinyMushrooms
+# 210 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	case 1, FiveIsland_WaterLabyrinth_EventScript_GiveBigMushroom
 # 211 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	end
 # 212 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
 # 213 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_CantTutorEgg::
+FiveIsland_WaterLabyrinth_EventScript_NoMoveToTutorMon::
 # 214 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_CantTeachAnEgg
+	msgbox FiveIsland_WaterLabyrinth_Text_NoMoveICanTeachThatMon
 # 215 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	goto FiveIsland_WaterLabyrinth_EventScript_ChooseMonToTutor
 # 216 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
@@ -433,130 +433,140 @@ FiveIsland_WaterLabyrinth_EventScript_CantTutorEgg::
 # 217 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
 # 218 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_EndTutorMove::
+FiveIsland_WaterLabyrinth_EventScript_CantTutorEgg::
 # 219 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	msgbox FiveIsland_WaterLabyrinth_Text_NeedMushroomOrTwoToLearnMove
+	msgbox FiveIsland_WaterLabyrinth_Text_CantTeachAnEgg
 # 220 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	clearflag FLAG_EGG_MOVES_TUTOR
+	goto FiveIsland_WaterLabyrinth_EventScript_ChooseMonToTutor
 # 221 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	release
-# 222 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	end
+# 222 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
 # 223 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+FiveIsland_WaterLabyrinth_EventScript_EndTutorMove::
 # 224 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_SetHasBigMushroom::
+	msgbox FiveIsland_WaterLabyrinth_Text_NeedMushroomOrTwoToLearnMove
 # 225 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	setflag HAS_BIG_MUSHROOM
+	clearflag FLAG_EGG_MOVES_TUTOR
 # 226 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	return
+	release
 # 227 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+	end
 # 228 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_SetHasTinyMushrooms::
+
 # 229 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	setflag HAS_TINY_MUSHROOMS
+FiveIsland_WaterLabyrinth_EventScript_SetHasBigMushroom::
 # 230 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	return
+	setflag HAS_BIG_MUSHROOM
 # 231 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
-# 232 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_EventScript_SetHasBothMushrooms::
-# 233 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	setflag HAS_BOTH_MUSHROOMS
-# 234 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	return
+# 232 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 233 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_EventScript_SetHasTinyMushrooms::
+# 234 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	setflag HAS_TINY_MUSHROOMS
 # 235 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+	return
 # 236 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_TeachMonMoveForMushroom::
+
 # 237 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "I'm the POKéMON MOVE MANIAC.\p"
+FiveIsland_WaterLabyrinth_EventScript_SetHasBothMushrooms::
 # 238 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "I know every single move that\n"
+	setflag HAS_BOTH_MUSHROOMS
 # 239 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "POKéMON learn growing up.\p"
+	return
 # 240 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "I'm also a mushroom maniac.\p"
+
 # 241 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "Bring me a TINYMUSHROOM,\n"
+FiveIsland_WaterLabyrinth_Text_TeachMonMoveForMushroom::
 # 242 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "or a BIG MUSHROOM.\p"
+    .string "I'm the POKéMON MOVE MANIAC.\p"
 # 243 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "If you do that for me, I'll teach\n"
+    .string "I know every single move that\n"
 # 244 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "a move to one POKéMON.$"
+    .string "POKéMON learn growing up.\p"
 # 245 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+    .string "I'm also a mushroom maniac.\p"
 # 246 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_WantMeToTeachMove::
+    .string "Bring me 10 TINYMUSHROOMs,\n"
 # 247 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "Sniff, sniff…\n"
+    .string "or a BIG MUSHROOM.\p"
 # 248 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "Hm! You smell of MUSHROOMS!\p"
+    .string "If you do that for me, I'll teach\n"
 # 249 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "Do you want me to teach a move\n"
+    .string "a move to one POKéMON.$"
 # 250 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "to a POKéMON of yours?$"
+
 # 251 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+FiveIsland_WaterLabyrinth_Text_WantMeToTeachMove::
 # 252 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_TutorWhichMon::
+    .string "Sniff, sniff…\n"
 # 253 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "Which POKéMON needs tutoring?$"
+    .string "Hm! You smell of MUSHROOMS!\p"
 # 254 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+    .string "Do you want me to teach a move\n"
 # 255 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_TeachWhichMove::
+    .string "to a POKéMON of yours?$"
 # 256 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "Which move should I teach?$"
-# 257 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
+# 257 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_Text_TutorWhichMon::
 # 258 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_NoMoveICanTeachThatMon::
+    .string "Which POKéMON needs tutoring?$"
 # 259 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "Sorry…\p"
+
 # 260 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "It doesn't appear as if I have a\n"
+FiveIsland_WaterLabyrinth_Text_TeachWhichMove::
 # 261 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "move I can teach that POKéMON.$"
+    .string "Which move should I teach?$"
 # 262 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
 # 263 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_IllNeedMushroomOrTwo::
+FiveIsland_WaterLabyrinth_Text_NoMoveICanTeachThatMon::
 # 264 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "Then, I'll need a MUSHROOM.\n"
+    .string "Sorry…\p"
 # 265 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "What are you going to give me?$"
+    .string "It doesn't appear as if I have a\n"
 # 266 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+    .string "move I can teach that POKéMON.$"
 # 267 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_HandedOverTwoTinyMushrooms::
+
 # 268 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "{PLAYER} handed over one\n"
+FiveIsland_WaterLabyrinth_Text_IllNeedMushroomOrTwo::
 # 269 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "TINYMUSHROOMS in exchange.$"
+    .string "Then, I'll need a MUSHROOM or ten.\n"
 # 270 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+    .string "What are you going to give me?$"
 # 271 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_HandedOverOneBigMushroom::
+
 # 272 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "{PLAYER} handed over one\n"
+FiveIsland_WaterLabyrinth_Text_HandedOverTwoTinyMushrooms::
 # 273 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "BIG MUSHROOM in exchange.$"
+    .string "{PLAYER} handed over ten\n"
 # 274 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+    .string "TINYMUSHROOMS in exchange.$"
 # 275 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_NeedMushroomOrTwoToLearnMove::
-# 276 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "If your POKéMON need to learn a\n"
-# 277 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "move, I need a MUSHROOM.$"
-# 278 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
+# 276 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_Text_HandedOverOneBigMushroom::
+# 277 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+    .string "{PLAYER} handed over one\n"
+# 278 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+    .string "BIG MUSHROOM in exchange.$"
 # 279 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_CantTeachAnEgg::
+
 # 280 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "Hunh? There isn't a single move\n"
+FiveIsland_WaterLabyrinth_Text_NeedMushroomOrTwoToLearnMove::
 # 281 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+    .string "If your POKéMON need to learn a\n"
+# 282 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+    .string "move, I need a MUSHROOM.$"
+# 283 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+
+# 284 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_Text_CantTeachAnEgg::
+# 285 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+    .string "Hunh? There isn't a single move\n"
+# 286 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
     .string "that I can teach an EGG.$"

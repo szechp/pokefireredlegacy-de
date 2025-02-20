@@ -1291,8 +1291,8 @@
 #define FLAG_HIDE_GIOVANNI_ONE   0x4E6
 #define FLAG_SEVEN_SEVII         0x4E7
 #define FLAG_OLD_LEAD             0x4E8
-#define FLAG_0x4E9               0x4E9
-#define FLAG_0x4EA               0x4EA
+#define FLAG_GOT_SUDO_EGG               0x4E9
+#define FLAG_NO_ROOM_FOR_SUDO_EGG               0x4EA
 #define FLAG_0x4EB               0x4EB
 #define FLAG_0x4EC               0x4EC
 #define FLAG_0x4ED               0x4ED
@@ -1374,7 +1374,7 @@
 #define FLAG_SYS_POKEDEX_GET                                        (SYS_FLAGS + 0x29)
 #define FLAG_0x82A                                                  (SYS_FLAGS + 0x2A)
 #define FLAG_0x82B                                                  (SYS_FLAGS + 0x2B)
-#define FLAG_SYS_GAME_CLEAR                                         (SYS_FLAGS + 0x2C)
+#define FLAG_SYS_GAME_CLEAR_OLD (SYS_FLAGS + 0x2C) //Needs to be set to link with XD. New FLAG_SYS_GAME_CLEAR (now used in scripts) is at the bottom.
 #define FLAG_SYS_SET_TRAINER_CARD_PROFILE                           (SYS_FLAGS + 0x2D)
 #define FLAG_0x82E                                                  (SYS_FLAGS + 0x2E)
 #define FLAG_SYS_B_DASH                                             (SYS_FLAGS + 0x2F)
@@ -1478,7 +1478,7 @@
 #define FLAG_0x8D2                                                  (SYS_FLAGS + 0xD2)
 #define FLAG_0x8D3                                                  (SYS_FLAGS + 0xD3)
 #define FLAG_0x8D4                                                  (SYS_FLAGS + 0xD4)
-#define FLAG_0x8D5                                                  (SYS_FLAGS + 0xD5)
+#define FLAG_SYS_GAME_CLEAR (SYS_FLAGS + 0xD5)
 #define FLAG_0x8D6                                                  (SYS_FLAGS + 0xD6)
 #define FLAG_0x8D7                                                  (SYS_FLAGS + 0xD7)
 #define FLAG_0x8D8                                                  (SYS_FLAGS + 0xD8)

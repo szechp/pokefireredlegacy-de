@@ -43,114 +43,150 @@ CeladonCity_Condominiums_1F_EventScript_TeaWomanAfterTea::
 # 22 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
 	waitmessage
 # 23 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	pokemart CeladonCity_Condominiums_1F_Herbs
+	goto_if_set FLAG_BADGE05_GET, CeladonCity_Condominiums_1F_EventScript_TeaShop2
 # 24 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	msgbox Text_PleaseComeAgain
+	pokemart CeladonCity_Condominiums_1F_Herbs
 # 25 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	release
+	msgbox Text_PleaseComeAgain
 # 26 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	end
+	release
 # 27 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-
+	end
 # 28 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	.align 2
+
 # 29 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-CeladonCity_Condominiums_1F_Herbs::
+CeladonCity_Condominiums_1F_EventScript_TeaShop2::
 # 30 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	.2byte ITEM_ENERGY_ROOT
+	pokemart CeladonCity_Condominiums_1F_Herbs2
 # 31 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	.2byte ITEM_ENERGY_POWDER
+	msgbox Text_PleaseComeAgain
 # 32 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	.2byte ITEM_HEAL_POWDER
+	release
 # 33 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	.2byte ITEM_REVIVAL_HERB
+	end
 # 34 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	.2byte ITEM_NONE
+
 # 35 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	release
+	.align 2
 # 36 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	end
+CeladonCity_Condominiums_1F_Herbs::
 # 37 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-
+	.2byte ITEM_ENERGY_ROOT
 # 38 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-
+	.2byte ITEM_ENERGY_POWDER
 # 39 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-CeladonCity_Condominiums_1F_EventScript_TeaWomanMentionDaisy::
+	.2byte ITEM_HEAL_POWDER
 # 40 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	famechecker FAMECHECKER_DAISY, 4
+	.2byte ITEM_REVIVAL_HERB
 # 41 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	setflag FLAG_TALKED_TO_TEA_LADY_AFTER_HOF
+	.2byte ITEM_NONE
 # 42 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	msgbox CeladonCity_Condominiums_1F_Text_DaisyComesToBuyTea
+	release
 # 43 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	release
+	end
 # 44 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	end
+
 # 45 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-
+	.align 2
 # 46 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-CeladonCity_Condominiums_1F_EventScript_Meowth::
+CeladonCity_Condominiums_1F_Herbs2::
 # 47 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	lock
+	.2byte ITEM_ENERGY_ROOT
 # 48 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	faceplayer
+	.2byte ITEM_ENERGY_POWDER
 # 49 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	waitse
+	.2byte ITEM_HEAL_POWDER
 # 50 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	playmoncry SPECIES_MEOWTH, CRY_MODE_NORMAL
+	.2byte ITEM_REVIVAL_HERB
 # 51 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	msgbox CeladonCity_Condominiums_1F_Text_Meowth
+	.2byte ITEM_WHITE_HERB
 # 52 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	waitmoncry
+	.2byte ITEM_MENTAL_HERB
 # 53 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	release
+	.2byte ITEM_NONE
 # 54 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	end
+	release
 # 55 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-
+	end
 # 56 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-CeladonCity_Condominiums_1F_EventScript_Clefairy::
+
 # 57 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	lock
+CeladonCity_Condominiums_1F_EventScript_TeaWomanMentionDaisy::
 # 58 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	faceplayer
+	famechecker FAMECHECKER_DAISY, 4
 # 59 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	waitse
+	setflag FLAG_TALKED_TO_TEA_LADY_AFTER_HOF
 # 60 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
+	msgbox CeladonCity_Condominiums_1F_Text_DaisyComesToBuyTea
 # 61 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	msgbox CeladonCity_Condominiums_1F_Text_Clefairy
+	release
 # 62 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	waitmoncry
+	end
 # 63 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	release
+
 # 64 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	end
+CeladonCity_Condominiums_1F_EventScript_Meowth::
 # 65 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-
-# 66 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-CeladonCity_Condominiums_1F_EventScript_Nidoran::
-# 67 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
 	lock
-# 68 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+# 66 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
 	faceplayer
-# 69 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+# 67 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
 	waitse
+# 68 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	playmoncry SPECIES_MEOWTH, CRY_MODE_NORMAL
+# 69 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	msgbox CeladonCity_Condominiums_1F_Text_Meowth
 # 70 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	playmoncry SPECIES_NIDORAN_F, CRY_MODE_NORMAL
-# 71 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	msgbox CeladonCity_Condominiums_1F_Text_Nidoran
-# 72 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
 	waitmoncry
-# 73 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+# 71 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
 	release
-# 74 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+# 72 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
 	end
-# 75 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+# 73 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
 
+# 74 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+CeladonCity_Condominiums_1F_EventScript_Clefairy::
+# 75 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	lock
 # 76 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-CeladonCity_Condominiums_1F_EventScript_SuiteSign::
+	faceplayer
 # 77 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
-	msgbox CeladonCity_Condominiums_1F_Text_ManagersSuite, MSGBOX_SIGN
+	waitse
 # 78 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
+# 79 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	msgbox CeladonCity_Condominiums_1F_Text_Clefairy
+# 80 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	waitmoncry
+# 81 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	release
+# 82 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	end
+# 83 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+
+# 84 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+CeladonCity_Condominiums_1F_EventScript_Nidoran::
+# 85 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	lock
+# 86 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	faceplayer
+# 87 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	waitse
+# 88 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	playmoncry SPECIES_NIDORAN_F, CRY_MODE_NORMAL
+# 89 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	msgbox CeladonCity_Condominiums_1F_Text_Nidoran
+# 90 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	waitmoncry
+# 91 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	release
+# 92 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	end
+# 93 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+
+# 94 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+CeladonCity_Condominiums_1F_EventScript_SuiteSign::
+# 95 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
+	msgbox CeladonCity_Condominiums_1F_Text_ManagersSuite, MSGBOX_SIGN
+# 96 "data/maps/CeladonCity_Condominiums_1F/scripts.pory"
 	end

@@ -2349,7 +2349,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_RAPIDASH] =
     {
         .baseHP        = 65,
-        .baseAttack    = 100,
+        .baseAttack    = 110,
         .baseDefense   = 70,
         .baseSpeed     = 115,
         .baseSpAttack  = 80,
@@ -2858,12 +2858,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_ONIX] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 70,
+        .baseHP        = 70,
+        .baseAttack    = 75,
         .baseDefense   = 160,
         .baseSpeed     = 75,
         .baseSpAttack  = 30,
-        .baseSpDefense = 60,
+        .baseSpDefense = 65,
         .types = {TYPE_ROCK, TYPE_GROUND},
         .catchRate = 45,
         .expYield = 108,
@@ -3162,7 +3162,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseAttack    = 80,
         .baseDefense   = 110,
         .baseSpeed     = 45,
-        .baseSpAttack  = 50,
+        .baseSpAttack  = 80,
         .baseSpDefense = 80,
         .types = {TYPE_GROUND, TYPE_GROUND},
         .catchRate = 75,

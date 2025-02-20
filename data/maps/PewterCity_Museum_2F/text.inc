@@ -70,11 +70,10 @@ PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon::
     .string "It is thought to be a MOON STONE.$"
 
 PewterCity_Museum_1F_Text_EliteTicket::
-	.string "I am looking for someone\n"
-	.string "with many great\l"
-	.string "achievements, in which\l"
-	.string "I will give that person\l"
-	.string "a great gift!\p"
+	.string "I heard if you interact\n"
+	.string "with the MOON STONE\l"
+	.string "a certain POKEMON\l"
+	.string "Changes Form!$"
 
 PewterCity_Museum_1F_Text_Ticket::
 	.string "Oh, I see it! I see\n"

@@ -219,7 +219,7 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_CheckPlayerHasMushrooms::
 # 110 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
 	call_if_eq VAR_RESULT, TRUE, CinnabarIsland_PokemonLab_Lounge_EventScript_SetHasBigMushroom
 # 111 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
-	checkitem ITEM_TINY_MUSHROOM, 1
+	checkitem ITEM_TINY_MUSHROOM, 2
 # 112 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
 	call_if_eq VAR_RESULT, TRUE, CinnabarIsland_PokemonLab_Lounge_EventScript_SetHasTinyMushrooms
 # 113 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
@@ -325,7 +325,7 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_GiveBigMushroom::
 # 163 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
 CinnabarIsland_PokemonLab_Lounge_EventScript_GiveTinyMushrooms::
 # 164 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
-	removeitem ITEM_TINY_MUSHROOM, 1
+	removeitem ITEM_TINY_MUSHROOM, 2
 # 165 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 # 166 "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.pory"

@@ -281,196 +281,244 @@ TwoIsland_Items_ShopExpanded1::
 # 141 "data/maps/TwoIsland/scripts.pory"
 	.2byte ITEM_FRESH_WATER
 # 142 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_NONE
+	.2byte ITEM_SOOTHE_BELL
 # 143 "data/maps/TwoIsland/scripts.pory"
-	release
+	.2byte ITEM_MOON_STONE
 # 144 "data/maps/TwoIsland/scripts.pory"
-	end
+	.2byte ITEM_SUN_STONE
 # 145 "data/maps/TwoIsland/scripts.pory"
-
+	.2byte ITEM_NONE
 # 146 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_EventScript_ShopExpanded2::
+	release
 # 147 "data/maps/TwoIsland/scripts.pory"
-	pokemart TwoIsland_Items_ShopExpanded2
+	end
 # 148 "data/maps/TwoIsland/scripts.pory"
-	msgbox Text_PleaseComeAgain
+
 # 149 "data/maps/TwoIsland/scripts.pory"
-	release
+TwoIsland_EventScript_ShopExpanded2::
 # 150 "data/maps/TwoIsland/scripts.pory"
-	end
+	pokemart TwoIsland_Items_ShopExpanded2
 # 151 "data/maps/TwoIsland/scripts.pory"
-
-# 152 "data/maps/TwoIsland/scripts.pory"
-	.align 2
-# 153 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_Items_ShopExpanded2::
-# 154 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_POKE_BALL
-# 155 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_ULTRA_BALL
-# 156 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_GREAT_BALL
-# 157 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_REPEAT_BALL
-# 158 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_TIMER_BALL
-# 159 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_WHITE_HERB
-# 160 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_MENTAL_HERB
-# 161 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_LEMONADE
-# 162 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_SODA_POP
-# 163 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_FRESH_WATER
-# 164 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_MOOMOO_MILK
-# 165 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_NONE
-# 166 "data/maps/TwoIsland/scripts.pory"
-	release
-# 167 "data/maps/TwoIsland/scripts.pory"
-	end
-# 168 "data/maps/TwoIsland/scripts.pory"
-
-# 169 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_EventScript_ShopExpanded3::
-# 170 "data/maps/TwoIsland/scripts.pory"
-	pokemart TwoIsland_Items_ShopExpanded3
-# 171 "data/maps/TwoIsland/scripts.pory"
 	msgbox Text_PleaseComeAgain
-# 172 "data/maps/TwoIsland/scripts.pory"
+# 152 "data/maps/TwoIsland/scripts.pory"
 	release
-# 173 "data/maps/TwoIsland/scripts.pory"
+# 153 "data/maps/TwoIsland/scripts.pory"
 	end
-# 174 "data/maps/TwoIsland/scripts.pory"
+# 154 "data/maps/TwoIsland/scripts.pory"
 
-# 175 "data/maps/TwoIsland/scripts.pory"
+# 155 "data/maps/TwoIsland/scripts.pory"
 	.align 2
-# 176 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_Items_ShopExpanded3::
-# 177 "data/maps/TwoIsland/scripts.pory"
+# 156 "data/maps/TwoIsland/scripts.pory"
+TwoIsland_Items_ShopExpanded2::
+# 157 "data/maps/TwoIsland/scripts.pory"
 	.2byte ITEM_POKE_BALL
-# 178 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_GREAT_BALL
-# 179 "data/maps/TwoIsland/scripts.pory"
+# 158 "data/maps/TwoIsland/scripts.pory"
 	.2byte ITEM_ULTRA_BALL
-# 180 "data/maps/TwoIsland/scripts.pory"
+# 159 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_GREAT_BALL
+# 160 "data/maps/TwoIsland/scripts.pory"
 	.2byte ITEM_REPEAT_BALL
-# 181 "data/maps/TwoIsland/scripts.pory"
+# 161 "data/maps/TwoIsland/scripts.pory"
 	.2byte ITEM_TIMER_BALL
-# 182 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_LEMONADE
-# 183 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_SODA_POP
-# 184 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_FRESH_WATER
-# 185 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_MOOMOO_MILK
-# 186 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_LAVA_COOKIE
-# 187 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_FLUFFY_TAIL
-# 188 "data/maps/TwoIsland/scripts.pory"
+# 162 "data/maps/TwoIsland/scripts.pory"
 	.2byte ITEM_WHITE_HERB
-# 189 "data/maps/TwoIsland/scripts.pory"
+# 163 "data/maps/TwoIsland/scripts.pory"
 	.2byte ITEM_MENTAL_HERB
-# 190 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_POMEG_BERRY
-# 191 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_KELPSY_BERRY
-# 192 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_QUALOT_BERRY
-# 193 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_HONDEW_BERRY
-# 194 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_GREPA_BERRY
-# 195 "data/maps/TwoIsland/scripts.pory"
-	.2byte ITEM_TAMATO_BERRY
-# 196 "data/maps/TwoIsland/scripts.pory"
+# 164 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_LEMONADE
+# 165 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_SODA_POP
+# 166 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_FRESH_WATER
+# 167 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_MOOMOO_MILK
+# 168 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_KINGS_ROCK
+# 169 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_UP_GRADE
+# 170 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_DRAGON_SCALE
+# 171 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_METAL_COAT
+# 172 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_SOOTHE_BELL
+# 173 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_MOON_STONE
+# 174 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_SUN_STONE
+# 175 "data/maps/TwoIsland/scripts.pory"
 	.2byte ITEM_NONE
+# 176 "data/maps/TwoIsland/scripts.pory"
+	release
+# 177 "data/maps/TwoIsland/scripts.pory"
+	end
+# 178 "data/maps/TwoIsland/scripts.pory"
+
+# 179 "data/maps/TwoIsland/scripts.pory"
+TwoIsland_EventScript_ShopExpanded3::
+# 180 "data/maps/TwoIsland/scripts.pory"
+	pokemart TwoIsland_Items_ShopExpanded3
+# 181 "data/maps/TwoIsland/scripts.pory"
+	msgbox Text_PleaseComeAgain
+# 182 "data/maps/TwoIsland/scripts.pory"
+	release
+# 183 "data/maps/TwoIsland/scripts.pory"
+	end
+# 184 "data/maps/TwoIsland/scripts.pory"
+
+# 185 "data/maps/TwoIsland/scripts.pory"
+	.align 2
+# 186 "data/maps/TwoIsland/scripts.pory"
+TwoIsland_Items_ShopExpanded3::
+# 187 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_POKE_BALL
+# 188 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_GREAT_BALL
+# 189 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_ULTRA_BALL
+# 190 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_REPEAT_BALL
+# 191 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_TIMER_BALL
+# 192 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_LEMONADE
+# 193 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_SODA_POP
+# 194 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_FRESH_WATER
+# 195 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_MOOMOO_MILK
+# 196 "data/maps/TwoIsland/scripts.pory"
+	.2byte ITEM_LAVA_COOKIE
 # 197 "data/maps/TwoIsland/scripts.pory"
-	release
+	.2byte ITEM_FLUFFY_TAIL
 # 198 "data/maps/TwoIsland/scripts.pory"
-	end
+	.2byte ITEM_WHITE_HERB
 # 199 "data/maps/TwoIsland/scripts.pory"
-
+	.2byte ITEM_MENTAL_HERB
 # 200 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_EventScript_Sailor::
+	.2byte ITEM_POMEG_BERRY
 # 201 "data/maps/TwoIsland/scripts.pory"
-	msgbox TwoIsland_Text_FellowMovedFromCeladonCity, MSGBOX_NPC
+	.2byte ITEM_KELPSY_BERRY
 # 202 "data/maps/TwoIsland/scripts.pory"
-	end
+	.2byte ITEM_QUALOT_BERRY
 # 203 "data/maps/TwoIsland/scripts.pory"
-
+	.2byte ITEM_HONDEW_BERRY
 # 204 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_EventScript_Woman::
+	.2byte ITEM_GREPA_BERRY
 # 205 "data/maps/TwoIsland/scripts.pory"
-	msgbox TwoIsland_Text_ShopkeepersBrotherWorksGameCorner, MSGBOX_NPC
+	.2byte ITEM_TAMATO_BERRY
 # 206 "data/maps/TwoIsland/scripts.pory"
-	end
+	.2byte ITEM_DEEP_SEA_SCALE
 # 207 "data/maps/TwoIsland/scripts.pory"
-
+	.2byte ITEM_DEEP_SEA_TOOTH
 # 208 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_EventScript_Beauty::
+	.2byte ITEM_BRICK_PIECE
 # 209 "data/maps/TwoIsland/scripts.pory"
-	lock
+	.2byte ITEM_CLEANSE_TAG
 # 210 "data/maps/TwoIsland/scripts.pory"
-	faceplayer
+	.2byte ITEM_METAL_POWDER
 # 211 "data/maps/TwoIsland/scripts.pory"
-	famechecker FAMECHECKER_BRUNO, 4
+	.2byte ITEM_SMOKE_BALL
 # 212 "data/maps/TwoIsland/scripts.pory"
-	msgbox TwoIsland_Text_BrunoCameToIslandWhileBack
+	.2byte ITEM_STICK
 # 213 "data/maps/TwoIsland/scripts.pory"
-	release
+	.2byte ITEM_KINGS_ROCK
 # 214 "data/maps/TwoIsland/scripts.pory"
-	end
+	.2byte ITEM_UP_GRADE
 # 215 "data/maps/TwoIsland/scripts.pory"
-
+	.2byte ITEM_DRAGON_SCALE
 # 216 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_EventScript_SuperNerd::
+	.2byte ITEM_METAL_COAT
 # 217 "data/maps/TwoIsland/scripts.pory"
-	msgbox TwoIsland_Text_BuyRareItemsHere, MSGBOX_NPC
+	.2byte ITEM_SOOTHE_BELL
 # 218 "data/maps/TwoIsland/scripts.pory"
-	end
+	.2byte ITEM_MOON_STONE
 # 219 "data/maps/TwoIsland/scripts.pory"
-
+	.2byte ITEM_SUN_STONE
 # 220 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_EventScript_Boy::
+	.2byte ITEM_NONE
 # 221 "data/maps/TwoIsland/scripts.pory"
-	msgbox TwoIsland_Text_OldWomanLivesOutOnCape, MSGBOX_NPC
+	release
 # 222 "data/maps/TwoIsland/scripts.pory"
 	end
 # 223 "data/maps/TwoIsland/scripts.pory"
 
 # 224 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_EventScript_LittleBoy::
+TwoIsland_EventScript_Sailor::
 # 225 "data/maps/TwoIsland/scripts.pory"
-	msgbox TwoIsland_Text_HaveYouTriedJumpingGame, MSGBOX_NPC
+	msgbox TwoIsland_Text_FellowMovedFromCeladonCity, MSGBOX_NPC
 # 226 "data/maps/TwoIsland/scripts.pory"
 	end
 # 227 "data/maps/TwoIsland/scripts.pory"
 
 # 228 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_EventScript_IslandSign::
+TwoIsland_EventScript_Woman::
 # 229 "data/maps/TwoIsland/scripts.pory"
-	msgbox TwoIsland_Text_IslandSign, MSGBOX_SIGN
+	msgbox TwoIsland_Text_ShopkeepersBrotherWorksGameCorner, MSGBOX_NPC
 # 230 "data/maps/TwoIsland/scripts.pory"
 	end
 # 231 "data/maps/TwoIsland/scripts.pory"
 
 # 232 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_EventScript_JoyfulGameCornerSign::
+TwoIsland_EventScript_Beauty::
 # 233 "data/maps/TwoIsland/scripts.pory"
-	msgbox TwoIsland_Text_JoyfulGameCornerSign, MSGBOX_SIGN
+	lock
 # 234 "data/maps/TwoIsland/scripts.pory"
-	end
+	faceplayer
 # 235 "data/maps/TwoIsland/scripts.pory"
-
+	famechecker FAMECHECKER_BRUNO, 4
 # 236 "data/maps/TwoIsland/scripts.pory"
-TwoIsland_EventScript_FastCurrentSign::
+	msgbox TwoIsland_Text_BrunoCameToIslandWhileBack
 # 237 "data/maps/TwoIsland/scripts.pory"
-	msgbox TwoIsland_Text_DangerFastCurrent, MSGBOX_SIGN
+	release
 # 238 "data/maps/TwoIsland/scripts.pory"
+	end
+# 239 "data/maps/TwoIsland/scripts.pory"
+
+# 240 "data/maps/TwoIsland/scripts.pory"
+TwoIsland_EventScript_SuperNerd::
+# 241 "data/maps/TwoIsland/scripts.pory"
+	msgbox TwoIsland_Text_BuyRareItemsHere, MSGBOX_NPC
+# 242 "data/maps/TwoIsland/scripts.pory"
+	end
+# 243 "data/maps/TwoIsland/scripts.pory"
+
+# 244 "data/maps/TwoIsland/scripts.pory"
+TwoIsland_EventScript_Boy::
+# 245 "data/maps/TwoIsland/scripts.pory"
+	msgbox TwoIsland_Text_OldWomanLivesOutOnCape, MSGBOX_NPC
+# 246 "data/maps/TwoIsland/scripts.pory"
+	end
+# 247 "data/maps/TwoIsland/scripts.pory"
+
+# 248 "data/maps/TwoIsland/scripts.pory"
+TwoIsland_EventScript_LittleBoy::
+# 249 "data/maps/TwoIsland/scripts.pory"
+	msgbox TwoIsland_Text_HaveYouTriedJumpingGame, MSGBOX_NPC
+# 250 "data/maps/TwoIsland/scripts.pory"
+	end
+# 251 "data/maps/TwoIsland/scripts.pory"
+
+# 252 "data/maps/TwoIsland/scripts.pory"
+TwoIsland_EventScript_IslandSign::
+# 253 "data/maps/TwoIsland/scripts.pory"
+	msgbox TwoIsland_Text_IslandSign, MSGBOX_SIGN
+# 254 "data/maps/TwoIsland/scripts.pory"
+	end
+# 255 "data/maps/TwoIsland/scripts.pory"
+
+# 256 "data/maps/TwoIsland/scripts.pory"
+TwoIsland_EventScript_JoyfulGameCornerSign::
+# 257 "data/maps/TwoIsland/scripts.pory"
+	msgbox TwoIsland_Text_JoyfulGameCornerSign, MSGBOX_SIGN
+# 258 "data/maps/TwoIsland/scripts.pory"
+	end
+# 259 "data/maps/TwoIsland/scripts.pory"
+
+# 260 "data/maps/TwoIsland/scripts.pory"
+TwoIsland_EventScript_FastCurrentSign::
+# 261 "data/maps/TwoIsland/scripts.pory"
+	msgbox TwoIsland_Text_DangerFastCurrent, MSGBOX_SIGN
+# 262 "data/maps/TwoIsland/scripts.pory"
 	end

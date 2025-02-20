@@ -139,6 +139,9 @@ TwoIsland_Items_ShopExpanded1::
 	.2byte ITEM_TIMER_BALL
 	.2byte ITEM_SODA_POP
 	.2byte ITEM_FRESH_WATER
+	.2byte ITEM_SOOTHE_BELL
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_SUN_STONE
 	.2byte ITEM_NONE
 	release
 	end
@@ -162,6 +165,13 @@ TwoIsland_Items_ShopExpanded2::
 	.2byte ITEM_SODA_POP
 	.2byte ITEM_FRESH_WATER
 	.2byte ITEM_MOOMOO_MILK
+	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_UP_GRADE
+	.2byte ITEM_DRAGON_SCALE
+	.2byte ITEM_METAL_COAT
+	.2byte ITEM_SOOTHE_BELL
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_SUN_STONE
 	.2byte ITEM_NONE
 	release
 	end
@@ -193,6 +203,20 @@ TwoIsland_Items_ShopExpanded3::
 	.2byte ITEM_HONDEW_BERRY
 	.2byte ITEM_GREPA_BERRY
 	.2byte ITEM_TAMATO_BERRY
+	.2byte ITEM_DEEP_SEA_SCALE
+	.2byte ITEM_DEEP_SEA_TOOTH
+	.2byte ITEM_BRICK_PIECE
+	.2byte ITEM_CLEANSE_TAG
+	.2byte ITEM_METAL_POWDER
+	.2byte ITEM_SMOKE_BALL
+	.2byte ITEM_STICK
+	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_UP_GRADE
+	.2byte ITEM_DRAGON_SCALE
+	.2byte ITEM_METAL_COAT
+	.2byte ITEM_SOOTHE_BELL
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_SUN_STONE
 	.2byte ITEM_NONE
 	release
 	end

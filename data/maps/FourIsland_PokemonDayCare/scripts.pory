@@ -2,7 +2,17 @@ raw `
 .set LOCALID_DAYCARE_WOMAN, 1
 
 FourIsland_PokemonDayCare_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, FourIsland_PokemonDayCare_OnLoad
 	.byte 0
+
+FourIsland_PokemonDayCare_OnLoad::
+	special CheckBeatJohto
+	call_if_eq VAR_RESULT, TRUE, FourIsland_PokemonDayCare_EventScript_ShowClerk
+	end
+
+FourIsland_PokemonDayCare_EventScript_ShowClerk::
+	clearflag FLAG_SHOPJOHTO
+	end
 
 FourIsland_PokemonDayCare_EventScript_DaycareWoman::
 	goto_if_questlog EventScript_ReleaseEnd
@@ -141,6 +151,102 @@ FourIsland_PokemonDayCare_NoRoomInParty::
 	msgbox DayCare_Text_YourPartyIsFull
 	release
 	end
+
+FourIsland_PokemonDayCare_EventScript_EggGentleman::
+	goto_if_questlog EventScript_ReleaseEnd
+	special QuestLog_CutRecording
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_SUDO_EGG, FourIsland_PokemonDayCare_EventScript_PostEggComment
+	goto_if_set FLAG_NO_ROOM_FOR_SUDO_EGG, FourIsland_PokemonDayCare_EventScript_ReturnForEgg
+	msgbox FourIsland_PokemonDayCare_Text_LetMeTakeLookAtMons
+	goto FourIsland_PokemonDayCare_EventScript_LeadMonMaxFriendship
+	release
+	end
+
+FourIsland_PokemonDayCare_EventScript_LeadMonMaxFriendship::
+	msgbox FourIsland_PokemonDayCare_Text_TreatMonRightHaveThis
+	goto FourIsland_PokemonDayCare_EventScript_TryGiveEgg
+	end
+
+FourIsland_PokemonDayCare_EventScript_TryGiveEgg::
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, FourIsland_PokemonDayCare_EventScript_NoRoomForEgg
+	setflag FLAG_GOT_SUDO_EGG
+	giveegg SPECIES_SUDOWOODO
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	playfanfare MUS_LEVEL_UP
+	message FourIsland_PokemonDayCare_Text_ReceivedEggFromMan
+	waitfanfare
+	waitmessage
+	call EventScript_RestorePrevTextColor
+	goto FourIsland_PokemonDayCare_EventScript_PostEggComment
+	end
+
+FourIsland_PokemonDayCare_EventScript_PostEggComment::
+	msgbox FourIsland_PokemonDayCare_Text_GladIMetSomeoneLikeYou
+	release
+	end
+
+FourIsland_PokemonDayCare_EventScript_NoRoomForEgg::
+	setflag FLAG_NO_ROOM_FOR_SUDO_EGG
+	msgbox FourIsland_PokemonDayCare_Text_DontHaveSpaceInYourParty
+	release
+	end
+
+FourIsland_PokemonDayCare_EventScript_ReturnForEgg::
+	goto FourIsland_PokemonDayCare_EventScript_TryGiveEgg
+	end
+
+FourIsland_PokemonDayCare_Text_LetMeTakeLookAtMons::
+    .string "You travel all over the place,\n"
+    .string "don't you?\p"
+    .string "You're not driving your POKéMON\n"
+    .string "too harshly, are you?\p"
+    .string "Let me take a look.\n"
+    .string "… … …   … … …$"
+
+FourIsland_PokemonDayCare_Text_HmmISeeIsee::
+    .string "Ah, hmm…\n"
+    .string "I see, I see…$"
+
+FourIsland_PokemonDayCare_Text_TreatMonRightHaveThis::
+    .string "Oh, impressive.\n"
+    .string "You treat your POKéMON right.\p"
+    .string "I think you can be entrusted with\n"
+    .string "this.\p"
+    .string "Please, I'd like you to have this.$"
+
+FourIsland_PokemonDayCare_Text_ReceivedEggFromMan::
+    .string "{PLAYER} received an EGG\n"
+    .string "from the man!$"
+
+FourIsland_PokemonDayCare_Text_DontHaveSpaceInYourParty::
+    .string "…Unfortunately, you don't have\n"
+    .string "space for this in your party.\p"
+    .string "You'd better come back for it\n"
+    .string "another time.$"
+
+@ Unused
+FourIsland_PokemonDayCare_Text_YouveComeBackForTheEgg::
+    .string "やあ\n"
+    .string "タマゴを　もらいに\l"
+    .string "きて　くれたんだね$"
+
+FourIsland_PokemonDayCare_Text_GladIMetSomeoneLikeYou::
+    .string "I received that EGG while I was\n"
+    .string "traveling.\p"
+    .string "I'm glad I met someone like you.$"
+
+FourIsland_PokemonDayCare_Text_CuteMonRemindsMeOfDaisy::
+    .string "Oh, hello.\n"
+    .string "That's a cute {STR_VAR_2}.\p"
+    .string "Seeing it reminds me of a sweet \n"
+    .string "little girl I met while traveling.\p"
+    .string "She was gently grooming POKéMON…\n"
+    .string "She was a little angel.\p"
+    .string "That little girl's name…\n"
+    .string "I think it was DAISY.$"
 
 FourIsland_PokemonDayCare_Movement_RetrieveMon::
 	delay_16
