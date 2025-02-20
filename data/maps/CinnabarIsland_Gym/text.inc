@@ -183,18 +183,18 @@ CinnabarIsland_Gym_Text_PokemonQuizRules::
     .string "Here we go!$"
 
 CinnabarIsland_Gym_Text_QuizQuestion1::
-    .string "CATERPIE evolves into METAPOD?$"
+    .string "SCYTHER evolves into SCIZOR?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion2::
-    .string "There are nine certified POKéMON\n"
-    .string "LEAGUE BADGES?$"
+    .string "There are 151 certified POKéMON\n"
+    .string "in the POKEDEX?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion3::
-    .string "POLIWAG evolves three times?$"
+    .string "EEVEE has 3 Evolutions?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion4::
-    .string "Are electric moves effective\n"
-    .string "against GROUND-type POKéMON?$"
+    .string "Are water moves effective\n"
+    .string "against MAGMA ARMOR?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion5::
     .string "POKéMON of the same kind and level\n"
