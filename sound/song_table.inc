@@ -347,6 +347,7 @@ gSongTable::
 	song mus_slow_pallet, 0, 0
 	song mus_teachy_tv_menu, 0, 0
 	song mus_vs_team_rocket, 0, 0
+	song mus_vs_team_rocket_boss, 0, 0
 	song mus_sevii_champion, 0, 0
 
 

@@ -964,6 +964,7 @@ SECTIONS {
         sound/songs/midi/mus_slow_pallet.o(.rodata);
         sound/songs/midi/mus_teachy_tv_menu.o(.rodata);
         sound/songs/midi/mus_vs_team_rocket.o(.rodata);
+        sound/songs/midi/mus_vs_team_rocket_boss.o(.rodata);
         sound/songs/midi/mus_sevii_champion.o(.rodata);
 
 
