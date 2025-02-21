@@ -97,49 +97,49 @@ FiveIsland_MemorialPillar_Text_HereLiesTectonix::
     .string "“Here lies TECTONIX” is engraved\n"
     .string "on a boulder.$"
 
-FiveIsland_MemorialPillar_Text_Oman::
-    .string "Wow, I can't believe\n"
-    .string "He would use POKEMON\l"
-    .string "Very much weak to water\l"
-    .string "In the Ocean Islands!\p"
-    .string "But sad for him.\p"
-    .string "I also had to use\p"
-    .string "Not so stellar Pokemon\p"
-    .string "But I did what I could,\n"
-    .string "and I become strong depsite.\p"
-    .string "Want to see them?$"
+FiveIsland_MemorialPillar_Text_Oman::  
+    .string "Wow, I can't believe\n"  
+    .string "he used POKÉMON\l"  
+    .string "so weak to water\l"  
+    .string "on the OCEAN ISLANDS!\p"  
+    .string "Unlucky for him.\p"  
+    .string "I also had to use\p"  
+    .string "not-so-stellar POKÉMON,\p"  
+    .string "I grew strong despite it.\p"  
+    .string "Want to see them?$"  
 
-FiveIsland_MemorialPillar_Text_OmanDefeat::
-    .string "Guess that was expected.$"
+FiveIsland_MemorialPillar_Text_OmanDefeat::  
+    .string "I guess that was expected.$"  
 
-FiveIsland_MemorialPillar_Text_OmanPostBattle::
-    .string "Seems like I've been bested.\p"
-    .string "Expected for the Pokemon I lead.\p"
-    .string "You also use them better also.\p"
-    .string "I think I can grow stronger,\n"
-    .string "Just a matter of time.$"
+FiveIsland_MemorialPillar_Text_OmanPostBattle::  
+    .string "Looks like I've been bested.\p"  
+    .string "Expected, given my POKÉMON.\p"  
+    .string "You used them even better.\p"  
+    .string "I know I can grow stronger.\n"  
+    .string "It's just a matter of time.$"  
 
-FiveIsland_MemorialPillar_Text_NoOman::
-    .string "Maybe some other time.$"
+FiveIsland_MemorialPillar_Text_NoOman::  
+    .string "Maybe some other time.$"  
 
-FiveIsland_MemorialPillar_Text_YesOman::
-    .string "Good Luck... To me.\p"
-    .string "Let's Battle!$"
+FiveIsland_MemorialPillar_Text_YesOman::  
+    .string "Good luck... to me.\p"  
+    .string "Let's battle!$"  
 
-FiveIsland_MemorialPillar_Text_RematchOman::
-    .string "You're back.\n"
-    .string "Well I got\l"
-    .string "Nothing to do so, let's battle!$"
+FiveIsland_MemorialPillar_Text_RematchOman::  
+    .string "You're back.\n"  
+    .string "Well, I've got\l"  
+    .string "nothing to do, so let's battle!$"  
 
-FiveIsland_MemorialPillar_Text_RematchOmanDefeat::
-    .string "Guess that was expected.$"
+FiveIsland_MemorialPillar_Text_RematchOmanDefeat::  
+    .string "I guess that was expected.$"  
 
-FiveIsland_MemorialPillar_Text_YesRematchOman::
-    .string "Good Luck... To me.\p"
-    .string "Let's Battle!$"
-FiveIsland_MemorialPillar_Text_RematchOmanPostBattle::
-    .string "Seems like I've been bested.\p"
-    .string "Expected for the Pokemon I lead.\p"
-    .string "You also use them better also.\p"
-    .string "I think I can grow stronger,\n"
-    .string "Just a matter of time.$"
+FiveIsland_MemorialPillar_Text_YesRematchOman::  
+    .string "Good luck... to me.\p"  
+    .string "Let's battle!$"  
+
+FiveIsland_MemorialPillar_Text_RematchOmanPostBattle::  
+    .string "Looks like I've been bested.\p"  
+    .string "Expected, given my POKÉMON.\p"  
+    .string "You used them even better.\p"  
+    .string "I know I can grow stronger.\n"  
+    .string "It's just a matter of time.$"  

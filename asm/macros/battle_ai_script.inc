@@ -553,6 +553,29 @@
 	.4byte \ptr
 	.endm
 
+	.macro if_target_is_ally param0:req
+	.byte 0x5e
+	.4byte \param0
+	.endm
+
+	.macro is_of_type battler:req, type:req
+	.byte 0x5f
+	.byte \battler
+	.byte \type
+	.endm
+
+	.macro check_ability battler:req, ability:req
+	.byte 0x60
+	.byte \battler
+	.byte \ability
+	.endm
+
+	.macro if_flash_fired battler:req, param1:req
+	.byte 0x61
+	.byte \battler
+	.4byte \param1
+	.endm
+
 @ useful script macros
 	.macro get_curr_move_type
 	get_type AI_TYPE_MOVE
@@ -580,6 +603,26 @@
 	
 	.macro if_user_faster ptr:req
 	if_would_go_first 0, \ptr
+	.endm
+
+	.macro if_ability battler:req, ability:req, ptr:req
+	check_ability \battler, \ability
+	if_equal 1, \ptr
+	.endm
+
+	.macro if_no_ability battler:req, ability:req, ptr:req
+	check_ability \battler, \ability
+	if_equal 0, \ptr
+	.endm
+
+	.macro if_type battler:req, type:req, ptr:req
+	is_of_type \battler, \type
+	if_equal 1, \ptr
+	.endm
+
+	.macro if_no_type battler:req, type:req, ptr:req
+	is_of_type \battler, \type
+	if_equal 0, \ptr
 	.endm
 
 	.macro if_double_battle ptr:req

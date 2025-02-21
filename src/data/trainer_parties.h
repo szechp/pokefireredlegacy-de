@@ -1965,12 +1965,12 @@ static const struct TrainerMon sParty_LeaderBlaine2[] = {
 static const struct TrainerMon sParty_RandomGrunt[] = {
     {
         .iv = 100,
-        .lvl = 30,
+        .lvl = 29,
         .species = SPECIES_PIDGEOTTO,
     },  
     {
         .iv = 100,
-        .lvl = 30,
+        .lvl = 29,
         .species = SPECIES_MACHOKE,
     },  
     {

@@ -19,8 +19,7 @@ PokemonMansion_B1F_EventScript_TryRemoveMew::
 	return
 
 PokemonMansion_B1F_OnTransition::
-	special CheckGotAllItems
-	call_if_eq VAR_RESULT, TRUE, PokemonMansion_B1F_YesItem
+	goto_if_set FLAG_OAK2_DEFEATED, PokemonMansion_B1F_YesItem
 	end
 
 PokemonMansion_B1F_YesItem::

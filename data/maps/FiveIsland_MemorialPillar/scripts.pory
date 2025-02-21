@@ -1,5 +1,7 @@
 raw `
 .set LOCALID_MEMORIAL_MAN, 1
+.set LOCALID_OLD_LADY, 7
+.set LOCALID_CELEBI, 8
 
 FiveIsland_MemorialPillar_MapScripts::
 	.byte 0
@@ -128,6 +130,7 @@ FiveIsland_MemorialPillar_EventScript_PostRematchOman::
 	end
 
 FiveIsland_MemorialPillar_EventScript_CelebiQuest::
+	goto_if_set FLAG_OLD_LEAD, FiveIsland_MemorialPillar_EventScript_CelebiQuest3
 	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest, MSGBOX_NPC
 	special CheckGotAllItems
 	call_if_eq VAR_RESULT, TRUE, FiveIsland_MemorialPillar_EventScript_CelebiQuest2	
@@ -135,12 +138,30 @@ FiveIsland_MemorialPillar_EventScript_CelebiQuest::
 	end
 
 FiveIsland_MemorialPillar_EventScript_CelebiQuest2::
-	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest2
 	setflag FLAG_SPAWN_CELEBI
-	setflag FLAG_OLD_LEAD
+	clearflag FLAG_CELEBI_EVENT
+	applymovement LOCALID_CELEBI, FiveIsland_MemorialPillar_Movement_Celebi
+	waitmovement 0
+	waitse
+	playse SE_PIN
+	applymovement LOCALID_OLD_LADY, Common_Movement_FaceUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	waitse
+	playmoncry SPECIES_CELEBI, CRY_MODE_NORMAL
+	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest2
+	waitmovement 0
+	setflag FLAG_CELEBI_EVENT
 	fadescreen FADE_TO_BLACK
+	removeobject 8
 	fadescreen FADE_FROM_BLACK
-	releaseall
+	setflag FLAG_OLD_LEAD
+	release
+	end
+
+FiveIsland_MemorialPillar_EventScript_CelebiQuest3::
+	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest3, MSGBOX_NPC
+	release
 	end
 
 FiveIsland_MemorialPillar_Text_CelebiQuest::
@@ -165,7 +186,18 @@ FiveIsland_MemorialPillar_Text_CelebiQuest::
     .string "his own island.$"  
 
 FiveIsland_MemorialPillar_Text_CelebiQuest2::
-    .string "You feel a distant AURA\n"  
-    .string "Somewhere...$"  
+    .string "CELEBI!$"  
+
+FiveIsland_MemorialPillar_Text_CelebiQuest3::
+    .string "What was that\n"  
+    .string "Green Thing?$"  
+
+FiveIsland_MemorialPillar_Movement_Celebi::
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
 
 `

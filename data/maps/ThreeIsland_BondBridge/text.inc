@@ -105,7 +105,7 @@ ThreeIsland_BondBridge_Text_Morty::
     .string "HO-OH would visit.\p"
     .string "I am Morty, JOHTO's\n"
     .string "Ghost Type leader!\p"
-    .string "And I want to battle you!$"
+    .string "And I want to battle you!\p"
     .string "I heard you were a\n"
     .string "Worthy Opponent.\p"
     .string "So it would be a pressure\n"
@@ -135,7 +135,6 @@ ThreeIsland_BondBridge_Text_RematchMortyDefeat::
 
 ThreeIsland_BondBridge_Text_YesRematchMorty::
     .string "Let's Battle!$"
-
 
 ThreeIsland_BondBridge_Text_RematchMortyPostBattle::
     .string "Incredible! Your strength is special!\p"

@@ -1092,6 +1092,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_GIOVANNI_ONE
 	setflag FLAG_R23_GUYS
 	setflag FLAG_SEVEN_SEVII
+	setflag FLAG_CELEBI_EVENT
 	setvar VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 500
 	end
 

@@ -1,8 +1,6 @@
 raw `
 .equ CHECKED_MUSHROOMS,  FLAG_TEMP_1
 .equ HAS_BIG_MUSHROOM,   FLAG_TEMP_2
-.equ HAS_TINY_MUSHROOMS, FLAG_TEMP_3
-.equ HAS_BOTH_MUSHROOMS, FLAG_TEMP_4
 
 FiveIsland_WaterLabyrinth_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, FiveIsland_RocketWarehouse_OnLoad
@@ -130,8 +128,6 @@ FiveIsland_WaterLabyrinth_EventScript_MoveManiac::
 	lock
 	faceplayer
 	clearflag HAS_BIG_MUSHROOM
-	clearflag HAS_TINY_MUSHROOMS
-	clearflag HAS_BOTH_MUSHROOMS
 	goto_if_set CHECKED_MUSHROOMS, FiveIsland_WaterLabyrinth_EventScript_CheckPlayerHasMushrooms
 	msgbox FiveIsland_WaterLabyrinth_Text_TeachMonMoveForMushroom
 	setflag CHECKED_MUSHROOMS
@@ -146,11 +142,6 @@ FiveIsland_WaterLabyrinth_EventScript_CheckPlayerHasMushrooms::
 	end
 
 FiveIsland_WaterLabyrinth_EventScript_CheckAlsoHasTinyMushrooms::
-	goto FiveIsland_WaterLabyrinth_EventScript_AskTutorMon
-	end
-
-FiveIsland_WaterLabyrinth_EventScript_CheckAlsoHasBigMushroom::
-	call_if_set HAS_BIG_MUSHROOM, FiveIsland_WaterLabyrinth_EventScript_SetHasBothMushrooms
 	goto FiveIsland_WaterLabyrinth_EventScript_AskTutorMon
 	end
 
@@ -195,15 +186,6 @@ FiveIsland_WaterLabyrinth_EventScript_GiveTinyMushrooms::
 	goto FiveIsland_WaterLabyrinth_EventScript_EndTutorMove
 	end
 
-FiveIsland_WaterLabyrinth_EventScript_ChooseMushroom::
-	message FiveIsland_WaterLabyrinth_Text_IllNeedMushroomOrTwo
-	waitmessage
-	multichoice 0, 0, MULTICHOICE_MUSHROOMS, TRUE
-	switch VAR_RESULT
-	case 0, FiveIsland_WaterLabyrinth_EventScript_GiveTinyMushrooms
-	case 1, FiveIsland_WaterLabyrinth_EventScript_GiveBigMushroom
-	end
-
 FiveIsland_WaterLabyrinth_EventScript_NoMoveToTutorMon::
 	msgbox FiveIsland_WaterLabyrinth_Text_NoMoveICanTeachThatMon
 	goto FiveIsland_WaterLabyrinth_EventScript_ChooseMonToTutor
@@ -222,14 +204,6 @@ FiveIsland_WaterLabyrinth_EventScript_EndTutorMove::
 
 FiveIsland_WaterLabyrinth_EventScript_SetHasBigMushroom::
 	setflag HAS_BIG_MUSHROOM
-	return
-
-FiveIsland_WaterLabyrinth_EventScript_SetHasTinyMushrooms::
-	setflag HAS_TINY_MUSHROOMS
-	return
-
-FiveIsland_WaterLabyrinth_EventScript_SetHasBothMushrooms::
-	setflag HAS_BOTH_MUSHROOMS
 	return
 
 FiveIsland_WaterLabyrinth_Text_TeachMonMoveForMushroom::

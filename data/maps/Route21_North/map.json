@@ -107,7 +107,7 @@
     {
       "type": "clone",
       "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
-      "x": 16,
+      "x": 11,
       "y": -1,
       "target_local_id": 4,
       "target_map": "MAP_PALLET_TOWN"
