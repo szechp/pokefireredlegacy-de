@@ -105,12 +105,18 @@
       "target_map": "MAP_PALLET_TOWN"
     },
     {
-      "type": "clone",
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
-      "x": 11,
-      "y": -1,
-      "target_local_id": 4,
-      "target_map": "MAP_PALLET_TOWN"
+      "x": 17,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_ROCK_PALLET"
     }
   ],
   "warp_events": [

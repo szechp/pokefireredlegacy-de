@@ -69,18 +69,12 @@
       "flag": "FLAG_HIDE_OAK_IN_PALLET_TOWN"
     },
     {
-      "type": "object",
+      "type": "clone",
       "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
-      "x": 11,
-      "y": 19,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
-      "flag": "FLAG_ROCK_PALLET"
+      "x": 17,
+      "y": 21,
+      "target_local_id": 7,
+      "target_map": "MAP_ROUTE21_NORTH"
     }
   ],
   "warp_events": [
