@@ -3,7 +3,7 @@ raw `
 .equ HAS_BIG_MUSHROOM,   FLAG_TEMP_2
 
 FiveIsland_WaterLabyrinth_MapScripts::
-	map_script MAP_SCRIPT_ON_LOAD, FiveIsland_RocketWarehouse_OnLoad
+	map_script MAP_SCRIPT_ON_LOAD, FiveIsland_WaterLabyrinth_OnLoad
 	.byte 0
 
 FiveIsland_WaterLabyrinth_OnLoad::

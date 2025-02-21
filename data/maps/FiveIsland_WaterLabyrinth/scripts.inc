@@ -9,7 +9,7 @@
 # 5 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 FiveIsland_WaterLabyrinth_MapScripts::
 # 6 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	map_script MAP_SCRIPT_ON_LOAD, FiveIsland_RocketWarehouse_OnLoad
+	map_script MAP_SCRIPT_ON_LOAD, FiveIsland_WaterLabyrinth_OnLoad
 # 7 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	.byte 0
 # 8 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
