@@ -131,9 +131,9 @@ FiveIsland_MemorialPillar_EventScript_PostRematchOman::
 
 FiveIsland_MemorialPillar_EventScript_CelebiQuest::
 	goto_if_set FLAG_OLD_LEAD, FiveIsland_MemorialPillar_EventScript_CelebiQuest3
-	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest, MSGBOX_NPC
 	special CheckGotAllItems
 	call_if_eq VAR_RESULT, TRUE, FiveIsland_MemorialPillar_EventScript_CelebiQuest2	
+	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest, MSGBOX_NPC
 	release
 	end
 

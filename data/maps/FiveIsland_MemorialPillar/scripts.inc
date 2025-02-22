@@ -265,11 +265,11 @@ FiveIsland_MemorialPillar_EventScript_CelebiQuest::
 # 133 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
 	goto_if_set FLAG_OLD_LEAD, FiveIsland_MemorialPillar_EventScript_CelebiQuest3
 # 134 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
-	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest, MSGBOX_NPC
-# 135 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
 	special CheckGotAllItems
-# 136 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+# 135 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
 	call_if_eq VAR_RESULT, TRUE, FiveIsland_MemorialPillar_EventScript_CelebiQuest2	
+# 136 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
+	msgbox FiveIsland_MemorialPillar_Text_CelebiQuest, MSGBOX_NPC
 # 137 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
 	release
 # 138 "data/maps/FiveIsland_MemorialPillar/scripts.pory"
