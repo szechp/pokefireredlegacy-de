@@ -61,6 +61,10 @@ CeruleanCave_B1F_EventScript_RanFromMewtwo::
 CeruleanCave_B1F_Smith::
 	trainerbattle_single TRAINER_SMITH, CeruleanCave_B1F_Text_SmithIntro, CeruleanCave_B1F_Text_SmithDefeat
 	msgbox CeruleanCave_B1F_Text_SmithPostBattle, MSGBOX_AUTOCLOSE
+	setflag FLAG_SMITH
+	fadescreen FADE_TO_BLACK
+	removeobject 13
+	fadescreen FADE_FROM_BLACK
 	end
 
 `

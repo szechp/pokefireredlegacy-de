@@ -1295,11 +1295,11 @@
 #define FLAG_NO_ROOM_FOR_SUDO_EGG               0x4EA
 #define FLAG_JANINE              0x4EB
 #define FLAG_CELEBI_EVENT             0x4EC
-#define FLAG_0x4ED               0x4ED
-#define FLAG_0x4EE               0x4EE
-#define FLAG_0x4EF               0x4EF
-#define FLAG_0x4F0               0x4F0
-#define FLAG_0x4F1               0x4F1
+#define FLAG_SHINY_CREATION               0x4ED
+#define FLAG_CRAIG              0x4EE
+#define FLAG_WEEBRA              0x4EF
+#define FLAG_SMITH               0x4F0
+#define FLAG_DITTO_MAN               0x4F1
 #define FLAG_0x4F2               0x4F2
 #define FLAG_0x4F3               0x4F3
 #define FLAG_0x4F4               0x4F4

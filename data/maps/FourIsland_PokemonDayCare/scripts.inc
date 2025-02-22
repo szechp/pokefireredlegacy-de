@@ -349,181 +349,181 @@ FourIsland_PokemonDayCare_EventScript_TryGiveEgg::
 # 175 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	setflag FLAG_GOT_SUDO_EGG
 # 176 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	giveegg SPECIES_SUDOWOODO
+	setflag FLAG_SHINY_CREATION
 # 177 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	textcolor NPC_TEXT_COLOR_NEUTRAL
+	giveegg SPECIES_SUDOWOODO
 # 178 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	playfanfare MUS_LEVEL_UP
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 # 179 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	message FourIsland_PokemonDayCare_Text_ReceivedEggFromMan
+	playfanfare MUS_LEVEL_UP
 # 180 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	waitfanfare
+	message FourIsland_PokemonDayCare_Text_ReceivedEggFromMan
 # 181 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	waitmessage
+	waitfanfare
 # 182 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	call EventScript_RestorePrevTextColor
+	waitmessage
 # 183 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	goto FourIsland_PokemonDayCare_EventScript_PostEggComment
+	call EventScript_RestorePrevTextColor
 # 184 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	end
+	goto FourIsland_PokemonDayCare_EventScript_PostEggComment
 # 185 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
+	end
 # 186 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_EventScript_PostEggComment::
+
 # 187 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	msgbox FourIsland_PokemonDayCare_Text_GladIMetSomeoneLikeYou
+FourIsland_PokemonDayCare_EventScript_PostEggComment::
 # 188 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	release
+	msgbox FourIsland_PokemonDayCare_Text_GladIMetSomeoneLikeYou
 # 189 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	end
-# 190 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
-# 191 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_EventScript_NoRoomForEgg::
-# 192 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	setflag FLAG_NO_ROOM_FOR_SUDO_EGG
-# 193 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	msgbox FourIsland_PokemonDayCare_Text_DontHaveSpaceInYourParty
-# 194 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	release
+# 190 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	end
+# 191 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+
+# 192 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+FourIsland_PokemonDayCare_EventScript_NoRoomForEgg::
+# 193 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	setflag FLAG_NO_ROOM_FOR_SUDO_EGG
+# 194 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	msgbox FourIsland_PokemonDayCare_Text_DontHaveSpaceInYourParty
 # 195 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	end
+	release
 # 196 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
-# 197 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_EventScript_ReturnForEgg::
-# 198 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	goto FourIsland_PokemonDayCare_EventScript_TryGiveEgg
-# 199 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	end
+# 197 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+
+# 198 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+FourIsland_PokemonDayCare_EventScript_ReturnForEgg::
+# 199 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	goto FourIsland_PokemonDayCare_EventScript_TryGiveEgg
 # 200 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
+	end
 # 201 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_Text_LetMeTakeLookAtMons::
+
 # 202 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "You travel all over the place,\n"
+FourIsland_PokemonDayCare_Text_LetMeTakeLookAtMons::
 # 203 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "don't you?\p"
+    .string "You travel all over the place,\n"
 # 204 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "You're not driving your POKéMON\n"
+    .string "don't you?\p"
 # 205 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "too harshly, are you?\p"
+    .string "You're not driving your POKéMON\n"
 # 206 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "Let me take a look.\n"
+    .string "too harshly, are you?\p"
 # 207 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "… … …   … … …$"
+    .string "Let me take a look.\n"
 # 208 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
+    .string "… … …   … … …$"
 # 209 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_Text_HmmISeeIsee::
+
 # 210 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "Ah, hmm…\n"
+FourIsland_PokemonDayCare_Text_HmmISeeIsee::
 # 211 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "I see, I see…$"
+    .string "Ah, hmm…\n"
 # 212 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
+    .string "I see, I see…$"
 # 213 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_Text_TreatMonRightHaveThis::
+
 # 214 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "Oh, impressive.\n"
+FourIsland_PokemonDayCare_Text_TreatMonRightHaveThis::
 # 215 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "You treat your POKéMON right.\p"
+    .string "Oh, impressive.\n"
 # 216 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "I think you can be entrusted with\n"
+    .string "You treat your POKéMON right.\p"
 # 217 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "this.\p"
+    .string "I think you can be entrusted with\n"
 # 218 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "Please, I'd like you to have this.$"
+    .string "this.\p"
 # 219 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
+    .string "Please, I'd like you to have this.$"
 # 220 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_Text_ReceivedEggFromMan::
+
 # 221 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "{PLAYER} received an EGG\n"
+FourIsland_PokemonDayCare_Text_ReceivedEggFromMan::
 # 222 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "from the man!$"
+    .string "{PLAYER} received an EGG\n"
 # 223 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
+    .string "from the man!$"
 # 224 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_Text_DontHaveSpaceInYourParty::
+
 # 225 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "…Unfortunately, you don't have\n"
+FourIsland_PokemonDayCare_Text_DontHaveSpaceInYourParty::
 # 226 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "space for this in your party.\p"
+    .string "…Unfortunately, you don't have\n"
 # 227 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "You'd better come back for it\n"
+    .string "space for this in your party.\p"
 # 228 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "another time.$"
+    .string "You'd better come back for it\n"
 # 229 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
+    .string "another time.$"
 # 230 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-@ Unused
+
 # 231 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_Text_YouveComeBackForTheEgg::
+@ Unused
 # 232 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "やあ\n"
+FourIsland_PokemonDayCare_Text_YouveComeBackForTheEgg::
 # 233 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "タマゴを　もらいに\l"
+    .string "やあ\n"
 # 234 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "きて　くれたんだね$"
+    .string "タマゴを　もらいに\l"
 # 235 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
+    .string "きて　くれたんだね$"
 # 236 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_Text_GladIMetSomeoneLikeYou::
+
 # 237 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "I received that EGG while I was\n"
+FourIsland_PokemonDayCare_Text_GladIMetSomeoneLikeYou::
 # 238 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "traveling.\p"
+    .string "I received that EGG while I was\n"
 # 239 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "I'm glad I met someone like you.$"
+    .string "traveling.\p"
 # 240 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
+    .string "I'm glad I met someone like you.$"
 # 241 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_Text_CuteMonRemindsMeOfDaisy::
-# 242 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "Oh, hello.\n"
-# 243 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "That's a cute {STR_VAR_2}.\p"
-# 244 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "Seeing it reminds me of a sweet \n"
-# 245 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "little girl I met while traveling.\p"
-# 246 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "She was gently grooming POKéMON…\n"
-# 247 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "She was a little angel.\p"
-# 248 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "That little girl's name…\n"
-# 249 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-    .string "I think it was DAISY.$"
-# 250 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 
+# 242 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+FourIsland_PokemonDayCare_Text_CuteMonRemindsMeOfDaisy::
+# 243 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+    .string "Oh, hello.\n"
+# 244 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+    .string "That's a cute {STR_VAR_2}.\p"
+# 245 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+    .string "Seeing it reminds me of a sweet \n"
+# 246 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+    .string "little girl I met while traveling.\p"
+# 247 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+    .string "She was gently grooming POKéMON…\n"
+# 248 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+    .string "She was a little angel.\p"
+# 249 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+    .string "That little girl's name…\n"
+# 250 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+    .string "I think it was DAISY.$"
 # 251 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_Movement_RetrieveMon::
+
 # 252 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	delay_16
+FourIsland_PokemonDayCare_Movement_RetrieveMon::
 # 253 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	delay_16
 # 254 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	face_right
-# 255 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	delay_16
+# 255 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	face_right
 # 256 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	delay_16
 # 257 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	face_left
-# 258 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	delay_16
+# 258 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	face_left
 # 259 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	delay_16
 # 260 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	face_up
-# 261 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	walk_slower_up
-# 262 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	set_invisible
-# 263 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	delay_16
+# 261 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	face_up
+# 262 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	walk_slower_up
+# 263 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	set_invisible
 # 264 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	delay_16
 # 265 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
@@ -533,66 +533,68 @@ FourIsland_PokemonDayCare_Movement_RetrieveMon::
 # 267 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	delay_16
 # 268 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	face_down
+	delay_16
 # 269 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	set_visible
+	face_down
 # 270 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	walk_slower_down
+	set_visible
 # 271 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	step_end
+	walk_slower_down
 # 272 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
+	step_end
 # 273 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-@ Unused. Possibly a commented script, or a typo end added to the above Movement script
+
 # 274 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_EventScript_UnusedEnd::
+@ Unused. Possibly a commented script, or a typo end added to the above Movement script
 # 275 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	end
+FourIsland_PokemonDayCare_EventScript_UnusedEnd::
 # 276 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-
-# 277 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_TwoMonsInDaycare::
-# 278 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	msgbox DayCare_Text_GoodToSeeYou
-# 279 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	setvar VAR_0x8004, 0
-# 280 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	call FourIsland_PokemonDayCare_DisplayLevelsGained
-# 281 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	setvar VAR_0x8004, 1
-# 282 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	call FourIsland_PokemonDayCare_DisplayLevelsGained
-# 283 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	msgbox DayCare_Text_TakeYourMonBack, MSGBOX_YESNO
-# 284 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	goto_if_eq VAR_RESULT, YES, FourIsland_PokemonDayCare_TryRetrieveMon
-# 285 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	msgbox DayCare_Text_ComeAgain
-# 286 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	release
-# 287 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	end
-# 288 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+# 277 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 
-# 289 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-@ Unused
-# 290 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-FourIsland_PokemonDayCare_EventScript_UnusedRetrieveMon::
-# 291 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	special ShowDaycareLevelMenu
-# 292 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	waitstate
-# 293 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	goto_if_eq VAR_RESULT, 2, FourIsland_PokemonDayCare_ComeAgain
-# 294 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	copyvar VAR_0x8004, VAR_RESULT
-# 295 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	specialvar VAR_RESULT, TakePokemonFromDaycare
-# 296 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
-	msgbox DayCare_Text_HeresYourMon
-# 297 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+# 278 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+FourIsland_PokemonDayCare_TwoMonsInDaycare::
+# 279 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	msgbox DayCare_Text_GoodToSeeYou
+# 280 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	setvar VAR_0x8004, 0
+# 281 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	call FourIsland_PokemonDayCare_DisplayLevelsGained
+# 282 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	setvar VAR_0x8004, 1
+# 283 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	call FourIsland_PokemonDayCare_DisplayLevelsGained
+# 284 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	msgbox DayCare_Text_TakeYourMonBack, MSGBOX_YESNO
+# 285 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	goto_if_eq VAR_RESULT, YES, FourIsland_PokemonDayCare_TryRetrieveMon
+# 286 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	msgbox DayCare_Text_ComeAgain
-# 298 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+# 287 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	release
+# 288 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	end
+# 289 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+
+# 290 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+@ Unused
+# 291 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+FourIsland_PokemonDayCare_EventScript_UnusedRetrieveMon::
+# 292 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	special ShowDaycareLevelMenu
+# 293 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	waitstate
+# 294 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	goto_if_eq VAR_RESULT, 2, FourIsland_PokemonDayCare_ComeAgain
+# 295 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	copyvar VAR_0x8004, VAR_RESULT
+# 296 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	specialvar VAR_RESULT, TakePokemonFromDaycare
+# 297 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	msgbox DayCare_Text_HeresYourMon
+# 298 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	msgbox DayCare_Text_ComeAgain
 # 299 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
+	release
+# 300 "data/maps/FourIsland_PokemonDayCare/scripts.pory"
 	end

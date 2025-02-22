@@ -173,6 +173,7 @@ FourIsland_PokemonDayCare_EventScript_TryGiveEgg::
 	getpartysize
 	goto_if_eq VAR_RESULT, PARTY_SIZE, FourIsland_PokemonDayCare_EventScript_NoRoomForEgg
 	setflag FLAG_GOT_SUDO_EGG
+	setflag FLAG_SHINY_CREATION
 	giveegg SPECIES_SUDOWOODO
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	playfanfare MUS_LEVEL_UP
@@ -199,23 +200,23 @@ FourIsland_PokemonDayCare_EventScript_ReturnForEgg::
 	end
 
 FourIsland_PokemonDayCare_Text_LetMeTakeLookAtMons::
-    .string "You travel all over the place,\n"
-    .string "don't you?\p"
-    .string "You're not driving your POKéMON\n"
-    .string "too harshly, are you?\p"
-    .string "Let me take a look.\n"
-    .string "… … …   … … …$"
+    .string "Hello there, Traveler!\p"  
+    .string "I was just going back to\n"  
+    .string "put up SUDOWOODO from here\l"  
+    .string "when I found her with lots\l"  
+    .string "of eggs.\p" 
+    .string "I don't have space for\n"  
+    .string "them, so I want to\l"  
+    .string "offload some.$"  
 
 FourIsland_PokemonDayCare_Text_HmmISeeIsee::
     .string "Ah, hmm…\n"
     .string "I see, I see…$"
 
 FourIsland_PokemonDayCare_Text_TreatMonRightHaveThis::
-    .string "Oh, impressive.\n"
-    .string "You treat your POKéMON right.\p"
-    .string "I think you can be entrusted with\n"
-    .string "this.\p"
-    .string "Please, I'd like you to have this.$"
+    .string "You're the CHAMPION of\n"  
+    .string "KANTO—I could give you\l"  
+    .string "one!\p"  
 
 FourIsland_PokemonDayCare_Text_ReceivedEggFromMan::
     .string "{PLAYER} received an EGG\n"
@@ -234,9 +235,9 @@ FourIsland_PokemonDayCare_Text_YouveComeBackForTheEgg::
     .string "きて　くれたんだね$"
 
 FourIsland_PokemonDayCare_Text_GladIMetSomeoneLikeYou::
-    .string "I received that EGG while I was\n"
-    .string "traveling.\p"
-    .string "I'm glad I met someone like you.$"
+    .string "I'm glad to give you\n"  
+    .string "this Egg, CHAMPION.\p"  
+    .string "Hope you like SUDOWOODO!$"  
 
 FourIsland_PokemonDayCare_Text_CuteMonRemindsMeOfDaisy::
     .string "Oh, hello.\n"

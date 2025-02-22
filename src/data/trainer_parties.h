@@ -10276,8 +10276,8 @@ static const struct TrainerMon sParty_TeamRocketAdmin2[] = {
     {
         .iv = 200,
         .lvl = 66,
-        .species = SPECIES_HOUNDOOM,
-        .moves = {MOVE_FLAMETHROWER, MOVE_CRUNCH, MOVE_IRON_TAIL, MOVE_ROCK_SMASH},
+        .species = SPECIES_MAGMAR,
+        .moves = {MOVE_FLAMETHROWER, MOVE_CROSS_CHOP, MOVE_PSYCHIC, MOVE_THUNDER_PUNCH},
     },
 };
 
