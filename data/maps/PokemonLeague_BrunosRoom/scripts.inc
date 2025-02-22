@@ -121,112 +121,138 @@ PokemonLeague_BrunosRoom_EventScript_Bruno::
 # 61 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
 	clearflag FLAG_TEMP_5
 # 62 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	goto PokemonLeague_BrunosRoom_EventScript_DefeatedBruno
+	call_if_unset FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_BrunosRoom_EventScript_DefeatedBruno
 # 63 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	end
+	call_if_set FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_BrunosRoom_EventScript_DefeatedBruno2
 # 64 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-
+	end
 # 65 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-PokemonLeague_BrunosRoom_EventScript_Intro::
+
 # 66 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	msgbox PokemonLeague_BrunosRoom_Text_Intro
+PokemonLeague_BrunosRoom_EventScript_Intro::
 # 67 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	return
+	msgbox PokemonLeague_BrunosRoom_Text_Intro
 # 68 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-
+	return
 # 69 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-PokemonLeague_BrunosRoom_EventScript_RematchIntro::
+
 # 70 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	msgbox PokemonLeague_BrunosRoom_Text_RematchIntro
+PokemonLeague_BrunosRoom_EventScript_RematchIntro::
 # 71 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	return
+	msgbox PokemonLeague_BrunosRoom_Text_RematchIntro
 # 72 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-
+	return
 # 73 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-PokemonLeague_BrunosRoom_EventScript_Battle::
+
 # 74 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_ELITE_FOUR_BRUNO, PokemonLeague_BrunosRoom_Text_Defeat
+PokemonLeague_BrunosRoom_EventScript_Battle::
 # 75 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	return
+	trainerbattle_no_intro TRAINER_ELITE_FOUR_BRUNO, PokemonLeague_BrunosRoom_Text_Defeat
 # 76 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-
+	return
 # 77 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-PokemonLeague_BrunosRoom_EventScript_Rematch::
+
 # 78 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_ELITE_FOUR_BRUNO_2, PokemonLeague_BrunosRoom_Text_Defeat
+PokemonLeague_BrunosRoom_EventScript_Rematch::
 # 79 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	return
+	trainerbattle_no_intro TRAINER_ELITE_FOUR_BRUNO_2, PokemonLeague_BrunosRoom_Text_Defeat2
 # 80 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-
+	return
 # 81 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-PokemonLeague_BrunosRoom_EventScript_PostBattle::
+
 # 82 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	msgbox PokemonLeague_BrunosRoom_Text_PostBattle
+PokemonLeague_BrunosRoom_EventScript_PostBattle::
 # 83 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	closemessage
-# 84 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	call_if_eq VAR_FACING, DIR_NORTH, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayRight
-# 85 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	call_if_eq VAR_FACING, DIR_SOUTH, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayLeft
-# 86 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	call_if_eq VAR_FACING, DIR_WEST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
-# 87 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	call_if_eq VAR_FACING, DIR_EAST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
-# 88 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	release
-# 89 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	end
-# 90 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-
-# 91 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-PokemonLeague_BrunosRoom_EventScript_DefeatedBruno::
-# 92 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	setflag FLAG_DEFEATED_BRUNO
-# 93 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	call PokemonLeague_EventScript_OpenDoor
-# 94 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
 	msgbox PokemonLeague_BrunosRoom_Text_PostBattle
-# 95 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+# 84 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
 	closemessage
-# 96 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+# 85 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
 	call_if_eq VAR_FACING, DIR_NORTH, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayRight
-# 97 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+# 86 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
 	call_if_eq VAR_FACING, DIR_SOUTH, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayLeft
-# 98 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+# 87 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
 	call_if_eq VAR_FACING, DIR_WEST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
-# 99 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+# 88 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
 	call_if_eq VAR_FACING, DIR_EAST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
-# 100 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+# 89 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
 	release
-# 101 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+# 90 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
 	end
+# 91 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+
+# 92 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+PokemonLeague_BrunosRoom_EventScript_DefeatedBruno::
+# 93 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	setflag FLAG_DEFEATED_BRUNO
+# 94 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	call PokemonLeague_EventScript_OpenDoor
+# 95 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	msgbox PokemonLeague_BrunosRoom_Text_PostBattle
+# 96 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	closemessage
+# 97 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	call_if_eq VAR_FACING, DIR_NORTH, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayRight
+# 98 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	call_if_eq VAR_FACING, DIR_SOUTH, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayLeft
+# 99 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	call_if_eq VAR_FACING, DIR_WEST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
+# 100 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	call_if_eq VAR_FACING, DIR_EAST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
+# 101 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	release
 # 102 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-
+	end
 # 103 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayLeft::
+
 # 104 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	applymovement LOCALID_BRUNO, Common_Movement_WalkInPlaceFasterLeft
+PokemonLeague_BrunosRoom_EventScript_DefeatedBruno2::
 # 105 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	waitmovement 0
+	setflag FLAG_DEFEATED_BRUNO
 # 106 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	return
+	call PokemonLeague_EventScript_OpenDoor
 # 107 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-
+	msgbox PokemonLeague_BrunosRoom_Text_PostBattle2
 # 108 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayRight::
+	closemessage
 # 109 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	applymovement LOCALID_BRUNO, Common_Movement_WalkInPlaceFasterRight
+	call_if_eq VAR_FACING, DIR_NORTH, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayRight
 # 110 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	waitmovement 0
+	call_if_eq VAR_FACING, DIR_SOUTH, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayLeft
 # 111 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	return
+	call_if_eq VAR_FACING, DIR_WEST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
 # 112 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-
+	call_if_eq VAR_FACING, DIR_EAST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
 # 113 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown::
+	release
 # 114 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	applymovement LOCALID_BRUNO, Common_Movement_WalkInPlaceFasterDown
+	end
 # 115 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
-	waitmovement 0
+
 # 116 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayLeft::
+# 117 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	applymovement LOCALID_BRUNO, Common_Movement_WalkInPlaceFasterLeft
+# 118 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	waitmovement 0
+# 119 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	return
+# 120 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+
+# 121 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayRight::
+# 122 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	applymovement LOCALID_BRUNO, Common_Movement_WalkInPlaceFasterRight
+# 123 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	waitmovement 0
+# 124 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	return
+# 125 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+
+# 126 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown::
+# 127 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	applymovement LOCALID_BRUNO, Common_Movement_WalkInPlaceFasterDown
+# 128 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
+	waitmovement 0
+# 129 "data/maps/PokemonLeague_BrunosRoom/scripts.pory"
 	return

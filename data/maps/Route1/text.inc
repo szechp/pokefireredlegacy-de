@@ -45,7 +45,7 @@ Route1_Text_OakDefeat::
     .string "I still have a lot to learn!$" 
 
 Route1_Text_OakPostBattle::
-    .string "Well done, <PLAYER>!\p"  
+    .string "Well done, {PLAYER}!\p"  
     .string "You've certainly proved your\n"  
     .string "mettle.\p"  
     .string "It seems I might be getting\n"  

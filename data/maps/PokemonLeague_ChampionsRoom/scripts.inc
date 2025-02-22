@@ -135,267 +135,267 @@ PokemonLeague_ChampionsRoom_EventScript_EnterRoom::
 # 68 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	setflag FLAG_TEMP_4
 # 69 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	msgbox PokemonLeague_ChampionsRoom_Text_PostBattle
+	call_if_unset FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_ChampionsRoom_EventScript_PostBattle
 # 70 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	playbgm MUS_SLOW_PALLET, 0
+	call_if_set FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_ChampionsRoom_EventScript_PostBattle2
 # 71 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	addobject LOCALID_PROF_OAK
+	playbgm MUS_SLOW_PALLET, 0
 # 72 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	msgbox PokemonLeague_ChampionsRoom_Text_OakPlayer
+	addobject LOCALID_PROF_OAK
 # 73 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	closemessage
+	msgbox PokemonLeague_ChampionsRoom_Text_OakPlayer
 # 74 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerWatchOakEnter
+	closemessage
 # 75 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_RIVAL, PokemonLeague_ChampionsRoom_Movement_RivalWatchOakEnter
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerWatchOakEnter
 # 76 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_PROF_OAK, PokemonLeague_ChampionsRoom_Movement_OakEnter
+	applymovement LOCALID_RIVAL, PokemonLeague_ChampionsRoom_Movement_RivalWatchOakEnter
 # 77 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_PROF_OAK, PokemonLeague_ChampionsRoom_Movement_OakEnter
 # 78 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay 25
+	waitmovement 0
 # 79 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	specialvar VAR_RESULT, GetStarterSpecies
+	delay 25
 # 80 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	bufferspeciesname STR_VAR_1, VAR_RESULT
+	specialvar VAR_RESULT, GetStarterSpecies
 # 81 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	msgbox PokemonLeague_ChampionsRoom_Text_OakCongratulations
+	bufferspeciesname STR_VAR_1, VAR_RESULT
 # 82 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterRight
+	call_if_unset FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_ChampionsRoom_EventScript_OakCongratulations
 # 83 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterLeft
+	call_if_set FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_ChampionsRoom_EventScript_OakCongratulations2
 # 84 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterRight
 # 85 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	msgbox PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival
+	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterLeft
 # 86 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	closemessage
+	waitmovement 0
 # 87 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterDown
+	call_if_unset FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_ChampionsRoom_EventScript_OakImDisappointedRival
 # 88 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	waitmovement 0
+	call_if_set FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_ChampionsRoom_EventScript_OakImDisappointedRival2
 # 89 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay 20
+	msgbox PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival
 # 90 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	msgbox PokemonLeague_ChampionsRoom_Text_OakPlayerComeWithMe
-# 91 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	closemessage
+# 91 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterDown
 # 92 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay 13
+	waitmovement 0
 # 93 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	applymovement LOCALID_PROF_OAK, PokemonLeague_ChampionsRoom_Movement_OakExit
+	delay 20
 # 94 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerExit
+	call_if_unset FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_ChampionsRoom_EventScript_OakPlayerComeWithMe
 # 95 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	waitmovement 0
+	call_if_set FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_ChampionsRoom_EventScript_OakPlayerComeWithMe2
 # 96 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	playse SE_EXIT
+	msgbox PokemonLeague_ChampionsRoom_Text_OakPlayerComeWithMe
 # 97 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerExit2
+	closemessage
 # 98 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	waitmovement 0
+	delay 13
 # 99 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	setvar VAR_TEMP_1, 1
+	applymovement LOCALID_PROF_OAK, PokemonLeague_ChampionsRoom_Movement_OakExit
 # 100 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	warp MAP_POKEMON_LEAGUE_HALL_OF_FAME, 5, 12
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerExit
 # 101 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	waitstate
+	waitmovement 0
 # 102 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	releaseall
+	playse SE_EXIT
 # 103 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	end
+	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerExit2
 # 104 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-
+	waitmovement 0
 # 105 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_EventScript_QuestLogEnd::
+	setvar VAR_TEMP_1, 1
 # 106 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	call PokemonLeague_ChampionsRoom_EventScript_StopSceneTrigger
+	warp MAP_POKEMON_LEAGUE_HALL_OF_FAME, 5, 12
 # 107 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	releaseall
+	waitstate
 # 108 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	end
+	releaseall
 # 109 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-
+	end
 # 110 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_EventScript_Battle::
+
 # 111 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	call_if_eq VAR_STARTER_MON, 2, PokemonLeague_ChampionsRoom_EventScript_BattleSquirtle
+PokemonLeague_ChampionsRoom_EventScript_QuestLogEnd::
 # 112 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	call_if_eq VAR_STARTER_MON, 1, PokemonLeague_ChampionsRoom_EventScript_BattleBulbasaur
+	call PokemonLeague_ChampionsRoom_EventScript_StopSceneTrigger
 # 113 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	call_if_eq VAR_STARTER_MON, 0, PokemonLeague_ChampionsRoom_EventScript_BattleCharmander
+	releaseall
 # 114 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	return
+	end
 # 115 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 
 # 116 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_EventScript_Rematch::
+PokemonLeague_ChampionsRoom_EventScript_OakPlayerComeWithMe::
 # 117 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	call_if_eq VAR_STARTER_MON, 2, PokemonLeague_ChampionsRoom_EventScript_RematchSquirtle
+	msgbox PokemonLeague_ChampionsRoom_Text_OakPlayerComeWithMe
 # 118 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	call_if_eq VAR_STARTER_MON, 1, PokemonLeague_ChampionsRoom_EventScript_RematchBulbasaur
+	return
 # 119 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	call_if_eq VAR_STARTER_MON, 0, PokemonLeague_ChampionsRoom_EventScript_RematchCharmander
+
 # 120 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	return
+PokemonLeague_ChampionsRoom_EventScript_OakPlayerComeWithMe2::
 # 121 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-
+	msgbox PokemonLeague_ChampionsRoom_Text_OakPlayerComeWithMe2
 # 122 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_EventScript_Intro::
+	return
 # 123 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	msgbox PokemonLeague_ChampionsRoom_Text_Intro
+
 # 124 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	return
+PokemonLeague_ChampionsRoom_EventScript_OakImDisappointedRival::
 # 125 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-
+	msgbox PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival
 # 126 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_EventScript_RematchIntro::
+	return
 # 127 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	msgbox PokemonLeague_ChampionsRoom_Text_RematchIntro
+
 # 128 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	return
+PokemonLeague_ChampionsRoom_EventScript_OakImDisappointedRival2::
 # 129 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-
+	msgbox PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival2
 # 130 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_EventScript_BattleSquirtle::
+	return
 # 131 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_CHAMPION_FIRST_SQUIRTLE, PokemonLeague_ChampionsRoom_Text_Defeat
+
 # 132 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	return
+PokemonLeague_ChampionsRoom_EventScript_OakCongratulations::
 # 133 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-
+	msgbox PokemonLeague_ChampionsRoom_Text_OakCongratulations
 # 134 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_EventScript_BattleBulbasaur::
+	return
 # 135 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_CHAMPION_FIRST_BULBASAUR, PokemonLeague_ChampionsRoom_Text_Defeat
+
 # 136 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	return
+PokemonLeague_ChampionsRoom_EventScript_OakCongratulations2::
 # 137 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-
+	msgbox PokemonLeague_ChampionsRoom_Text_OakCongratulations
 # 138 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_EventScript_BattleCharmander::
+	return
 # 139 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_CHAMPION_FIRST_CHARMANDER, PokemonLeague_ChampionsRoom_Text_Defeat
+
 # 140 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	return
+PokemonLeague_ChampionsRoom_EventScript_PostBattle::
 # 141 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-
+	msgbox PokemonLeague_ChampionsRoom_Text_PostBattle
 # 142 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_EventScript_RematchSquirtle::
+	return
 # 143 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_CHAMPION_REMATCH_SQUIRTLE, PokemonLeague_ChampionsRoom_Text_Defeat
+
 # 144 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	return
+PokemonLeague_ChampionsRoom_EventScript_PostBattle2::
 # 145 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-
+	msgbox PokemonLeague_ChampionsRoom_Text_PostBattle2
 # 146 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_EventScript_RematchBulbasaur::
-# 147 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_CHAMPION_REMATCH_BULBASAUR, PokemonLeague_ChampionsRoom_Text_Defeat
-# 148 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	return
-# 149 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+# 147 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 
+# 148 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+PokemonLeague_ChampionsRoom_EventScript_Battle::
+# 149 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	call_if_eq VAR_STARTER_MON, 2, PokemonLeague_ChampionsRoom_EventScript_BattleSquirtle
 # 150 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_EventScript_RematchCharmander::
+	call_if_eq VAR_STARTER_MON, 1, PokemonLeague_ChampionsRoom_EventScript_BattleBulbasaur
 # 151 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_CHAMPION_REMATCH_CHARMANDER, PokemonLeague_ChampionsRoom_Text_Defeat
+	call_if_eq VAR_STARTER_MON, 0, PokemonLeague_ChampionsRoom_EventScript_BattleCharmander
 # 152 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	return
 # 153 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 
 # 154 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_Movement_PlayerEnter::
+PokemonLeague_ChampionsRoom_EventScript_Rematch::
 # 155 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
+	call_if_eq VAR_STARTER_MON, 2, PokemonLeague_ChampionsRoom_EventScript_RematchSquirtle
 # 156 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
+	call_if_eq VAR_STARTER_MON, 1, PokemonLeague_ChampionsRoom_EventScript_RematchBulbasaur
 # 157 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
+	call_if_eq VAR_STARTER_MON, 0, PokemonLeague_ChampionsRoom_EventScript_RematchCharmander
 # 158 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
+	return
 # 159 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
-# 160 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
-# 161 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
-# 162 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
-# 163 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
-# 164 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
-# 165 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	step_end
-# 166 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 
+# 160 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+PokemonLeague_ChampionsRoom_EventScript_Intro::
+# 161 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	msgbox PokemonLeague_ChampionsRoom_Text_Intro
+# 162 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	return
+# 163 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+
+# 164 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+PokemonLeague_ChampionsRoom_EventScript_RematchIntro::
+# 165 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	msgbox PokemonLeague_ChampionsRoom_Text_RematchIntro
+# 166 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	return
 # 167 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_Movement_PlayerExit::
+
 # 168 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
+PokemonLeague_ChampionsRoom_EventScript_BattleSquirtle::
 # 169 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_left
+	trainerbattle_no_intro TRAINER_CHAMPION_FIRST_SQUIRTLE, PokemonLeague_ChampionsRoom_Text_Defeat
 # 170 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
+	return
 # 171 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
+
 # 172 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
+PokemonLeague_ChampionsRoom_EventScript_BattleBulbasaur::
 # 173 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_right
+	trainerbattle_no_intro TRAINER_CHAMPION_FIRST_BULBASAUR, PokemonLeague_ChampionsRoom_Text_Defeat
 # 174 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
+	return
 # 175 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
+
 # 176 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	step_end
+PokemonLeague_ChampionsRoom_EventScript_BattleCharmander::
 # 177 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_Movement_PlayerExit2::
+	trainerbattle_no_intro TRAINER_CHAMPION_FIRST_CHARMANDER, PokemonLeague_ChampionsRoom_Text_Defeat
 # 178 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
+	return
 # 179 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
+
 # 180 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_8
+PokemonLeague_ChampionsRoom_EventScript_RematchSquirtle::
 # 181 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	set_invisible
+	trainerbattle_no_intro TRAINER_CHAMPION_REMATCH_SQUIRTLE, PokemonLeague_ChampionsRoom_Text_Defeat2
 # 182 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	step_end
+	return
 # 183 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 
 # 184 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_Movement_PlayerWatchOakEnter::
+PokemonLeague_ChampionsRoom_EventScript_RematchBulbasaur::
 # 185 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_8
+	trainerbattle_no_intro TRAINER_CHAMPION_REMATCH_BULBASAUR, PokemonLeague_ChampionsRoom_Text_Defeat2
 # 186 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_in_place_faster_down
+	return
 # 187 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
-# 188 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
-# 189 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
-# 190 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
-# 191 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
-# 192 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
-# 193 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
-# 194 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_in_place_faster_left
-# 195 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	step_end
-# 196 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 
+# 188 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+PokemonLeague_ChampionsRoom_EventScript_RematchCharmander::
+# 189 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	trainerbattle_no_intro TRAINER_CHAMPION_REMATCH_CHARMANDER, PokemonLeague_ChampionsRoom_Text_Defeat2
+# 190 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	return
+# 191 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+
+# 192 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+PokemonLeague_ChampionsRoom_Movement_PlayerEnter::
+# 193 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 194 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 195 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 196 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
 # 197 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_Movement_OakEnter::
+	walk_up
 # 198 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
+	walk_up
 # 199 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
+	walk_up
 # 200 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	walk_up
 # 201 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
@@ -403,49 +403,49 @@ PokemonLeague_ChampionsRoom_Movement_OakEnter::
 # 202 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	walk_up
 # 203 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
-# 204 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
-# 205 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_left
-# 206 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
-# 207 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
-# 208 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_in_place_faster_down
-# 209 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
-# 210 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	step_end
-# 211 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+# 204 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 
+# 205 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+PokemonLeague_ChampionsRoom_Movement_PlayerExit::
+# 206 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 207 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_left
+# 208 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 209 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 210 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 211 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_right
 # 212 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_Movement_OakExit::
+	walk_up
 # 213 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	walk_up
 # 214 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
+	step_end
 # 215 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_right
+PokemonLeague_ChampionsRoom_Movement_PlayerExit2::
 # 216 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	walk_up
 # 217 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	walk_up
 # 218 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
-# 219 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	walk_up
-# 220 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	delay_8
-# 221 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+# 219 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	set_invisible
-# 222 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+# 220 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	step_end
-# 223 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+# 221 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 
+# 222 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+PokemonLeague_ChampionsRoom_Movement_PlayerWatchOakEnter::
+# 223 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_8
 # 224 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-PokemonLeague_ChampionsRoom_Movement_RivalWatchOakEnter::
+	walk_in_place_faster_down
 # 225 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	delay_16
 # 226 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
@@ -461,10 +461,86 @@ PokemonLeague_ChampionsRoom_Movement_RivalWatchOakEnter::
 # 231 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	delay_16
 # 232 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
-# 233 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
-	delay_16
-# 234 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	walk_in_place_faster_left
+# 233 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	step_end
+# 234 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+
 # 235 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+PokemonLeague_ChampionsRoom_Movement_OakEnter::
+# 236 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 237 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 238 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 239 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 240 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 241 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 242 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 243 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_left
+# 244 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 245 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 246 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_in_place_faster_down
+# 247 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 248 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	step_end
+# 249 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+
+# 250 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+PokemonLeague_ChampionsRoom_Movement_OakExit::
+# 251 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 252 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 253 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_right
+# 254 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 255 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 256 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 257 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_up
+# 258 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_8
+# 259 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	set_invisible
+# 260 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	step_end
+# 261 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+
+# 262 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+PokemonLeague_ChampionsRoom_Movement_RivalWatchOakEnter::
+# 263 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 264 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 265 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 266 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 267 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 268 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 269 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 270 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 271 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	delay_16
+# 272 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
+	walk_in_place_faster_left
+# 273 "data/maps/PokemonLeague_ChampionsRoom/scripts.pory"
 	step_end

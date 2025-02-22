@@ -97,24 +97,26 @@ Route1_EventScript_PostOak::
 # 49 "data/maps/Route1/scripts.pory"
 	setflag FLAG_OAK_DEFEATED
 # 50 "data/maps/Route1/scripts.pory"
-	removeobject 3
-# 51 "data/maps/Route1/scripts.pory"
 	setflag FLAG_HIDE_OAK
-# 52 "data/maps/Route1/scripts.pory"
+# 51 "data/maps/Route1/scripts.pory"
 	fadescreen FADE_TO_BLACK
+# 52 "data/maps/Route1/scripts.pory"
+	removeobject 3
 # 53 "data/maps/Route1/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 # 54 "data/maps/Route1/scripts.pory"
-	release
+	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
 # 55 "data/maps/Route1/scripts.pory"
-	end
-# 56 "data/maps/Route1/scripts.pory"
-
-# 57 "data/maps/Route1/scripts.pory"
-Route1_EventScript_NoOak::
-# 58 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_NoOak
-# 59 "data/maps/Route1/scripts.pory"
 	release
+# 56 "data/maps/Route1/scripts.pory"
+	end
+# 57 "data/maps/Route1/scripts.pory"
+
+# 58 "data/maps/Route1/scripts.pory"
+Route1_EventScript_NoOak::
+# 59 "data/maps/Route1/scripts.pory"
+	msgbox Route1_Text_NoOak
 # 60 "data/maps/Route1/scripts.pory"
+	release
+# 61 "data/maps/Route1/scripts.pory"
 	end

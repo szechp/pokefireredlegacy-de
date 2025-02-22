@@ -29,3 +29,13 @@ PokemonLeague_BrunosRoom_Text_PostBattle::
     .string "My job is done.\n"
     .string "Go face your next challenge.$"
 
+PokemonLeague_BrunosRoom_Text_Defeat2::
+    .string "Incredible!\n"  
+    .string "You've surpassed even my\l"  
+    .string "wildest expectations!$"  
+
+PokemonLeague_BrunosRoom_Text_PostBattle2::
+    .string "Truly, you are a CHAMPION\n"  
+    .string "among CHAMPIONS.\p"  
+    .string "Continue to hone your skills.\p"  
+    .string "The journey never ends!$" 

@@ -119,62 +119,78 @@ PokemonLeague_AgathasRoom_EventScript_Agatha::
 # 60 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
 	clearflag FLAG_TEMP_5
 # 61 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	goto PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha
+	call_if_unset FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha
 # 62 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	end
+	call_if_set FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha2
 # 63 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-
-# 64 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-PokemonLeague_AgathasRoom_EventScript_Intro::
-# 65 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	msgbox PokemonLeague_AgathasRoom_Text_Intro
-# 66 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	return
-# 67 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-
-# 68 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-PokemonLeague_AgathasRoom_EventScript_RematchIntro::
-# 69 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	msgbox PokemonLeague_AgathasRoom_Text_RematchIntro
-# 70 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	return
-# 71 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-
-# 72 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-PokemonLeague_AgathasRoom_EventScript_Battle::
-# 73 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_ELITE_FOUR_AGATHA, PokemonLeague_AgathasRoom_Text_Defeat
-# 74 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	return
-# 75 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-
-# 76 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-PokemonLeague_AgathasRoom_EventScript_Rematch::
-# 77 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	trainerbattle_no_intro TRAINER_ELITE_FOUR_AGATHA_2, PokemonLeague_AgathasRoom_Text_Defeat
-# 78 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	return
-# 79 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-
-# 80 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-PokemonLeague_AgathasRoom_EventScript_PostBattle::
-# 81 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	msgbox PokemonLeague_AgathasRoom_Text_PostBattle
-# 82 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	release
-# 83 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
 	end
-# 84 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+# 64 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
 
-# 85 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha::
-# 86 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	setflag FLAG_DEFEATED_AGATHA
-# 87 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	call PokemonLeague_EventScript_OpenDoor
-# 88 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+# 65 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+PokemonLeague_AgathasRoom_EventScript_Intro::
+# 66 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	msgbox PokemonLeague_AgathasRoom_Text_Intro
+# 67 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	return
+# 68 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+
+# 69 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+PokemonLeague_AgathasRoom_EventScript_RematchIntro::
+# 70 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	msgbox PokemonLeague_AgathasRoom_Text_RematchIntro
+# 71 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	return
+# 72 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+
+# 73 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+PokemonLeague_AgathasRoom_EventScript_Battle::
+# 74 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	trainerbattle_no_intro TRAINER_ELITE_FOUR_AGATHA, PokemonLeague_AgathasRoom_Text_Defeat
+# 75 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	return
+# 76 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+
+# 77 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+PokemonLeague_AgathasRoom_EventScript_Rematch::
+# 78 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	trainerbattle_no_intro TRAINER_ELITE_FOUR_AGATHA_2, PokemonLeague_AgathasRoom_Text_Defeat2
+# 79 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	return
+# 80 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+
+# 81 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+PokemonLeague_AgathasRoom_EventScript_PostBattle::
+# 82 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
 	msgbox PokemonLeague_AgathasRoom_Text_PostBattle
-# 89 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+# 83 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
 	release
+# 84 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	end
+# 85 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+
+# 86 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha::
+# 87 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	setflag FLAG_DEFEATED_AGATHA
+# 88 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	call PokemonLeague_EventScript_OpenDoor
+# 89 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	msgbox PokemonLeague_AgathasRoom_Text_PostBattle
 # 90 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	release
+# 91 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	end
+# 92 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+
+# 93 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha2::
+# 94 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	setflag FLAG_DEFEATED_AGATHA
+# 95 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	call PokemonLeague_EventScript_OpenDoor
+# 96 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	msgbox PokemonLeague_AgathasRoom_Text_PostBattle2
+# 97 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	release
+# 98 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
 	end

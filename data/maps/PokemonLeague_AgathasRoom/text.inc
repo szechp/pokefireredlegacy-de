@@ -34,3 +34,15 @@ PokemonLeague_AgathasRoom_Text_PostBattle::
     .string "I have nothing else to say.\n"
     .string "Run along now, child!$"
 
+PokemonLeague_AgathasRoom_Text_Defeat2::
+    .string "Oh, my!\p"  
+    .string "You've grown even stronger!$"  
+
+PokemonLeague_AgathasRoom_Text_PostBattle2::
+    .string "Well earned, CHAMPION!\n"  
+    .string "You've grown mighty!\p"  
+    .string "You've earned OAK's\n"  
+    .string "and my respect!\p"  
+    .string "Now, go!\p"  
+    .string "Show the world your power,\n"  
+    .string "{PLAYER}!$" 

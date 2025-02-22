@@ -34,3 +34,12 @@ PokemonLeague_LoreleisRoom_Text_PostBattle::
     .string "You only got a taste of the\n"
     .string "POKéMON LEAGUE's power.$"
 
+PokemonLeague_LoreleisRoom_Text_Defeat2::
+    .string "Defeated again?!$"  
+
+PokemonLeague_LoreleisRoom_Text_PostBattle2::
+    .string "Truly a worthy CHAMPION!\p"  
+    .string "Well done!\p"  
+    .string "But remember, the challenge\n"  
+    .string "never ends!\p"  
+    .string "Keep pushing your limits!$" 

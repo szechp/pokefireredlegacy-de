@@ -69,68 +69,88 @@ SSAnne_Exterior_ExitSSAnne::
 # 35 "data/maps/SSAnne_Exterior/scripts.pory"
 
 # 36 "data/maps/SSAnne_Exterior/scripts.pory"
-SSAnne_Exterior_WalkDown::
+SSAnne_Exterior_EventScript_Meowth::
 # 37 "data/maps/SSAnne_Exterior/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SSAnne_Exterior_Movement_WalkDown
+	msgbox SSAnne_Deck_Text_Meowth, MSGBOX_SIGN
 # 38 "data/maps/SSAnne_Exterior/scripts.pory"
-	waitmovement 0
+	end
 # 39 "data/maps/SSAnne_Exterior/scripts.pory"
-	return
-# 40 "data/maps/SSAnne_Exterior/scripts.pory"
 
+# 40 "data/maps/SSAnne_Exterior/scripts.pory"
+SSAnne_Deck_Text_Meowth::
 # 41 "data/maps/SSAnne_Exterior/scripts.pory"
-SSAnne_Exterior_WalkInPlaceDown::
+    .string "Sounds like something\n"  
 # 42 "data/maps/SSAnne_Exterior/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+    .string "is under here,\p"  
 # 43 "data/maps/SSAnne_Exterior/scripts.pory"
-	waitmovement 0
+    .string "I should take a look.\p"  
 # 44 "data/maps/SSAnne_Exterior/scripts.pory"
-	return
+    .string "Oh, it's just a MEOWTH.$"  
 # 45 "data/maps/SSAnne_Exterior/scripts.pory"
 
 # 46 "data/maps/SSAnne_Exterior/scripts.pory"
-SSAnne_Exterior_Movement_Exit::
+SSAnne_Exterior_WalkDown::
 # 47 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_up
+	applymovement OBJ_EVENT_ID_PLAYER, SSAnne_Exterior_Movement_WalkDown
 # 48 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_up
+	waitmovement 0
 # 49 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_up
+	return
 # 50 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_up
-# 51 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_up
-# 52 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_up
-# 53 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_up
-# 54 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_up
-# 55 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_up
-# 56 "data/maps/SSAnne_Exterior/scripts.pory"
-	step_end
-# 57 "data/maps/SSAnne_Exterior/scripts.pory"
 
+# 51 "data/maps/SSAnne_Exterior/scripts.pory"
+SSAnne_Exterior_WalkInPlaceDown::
+# 52 "data/maps/SSAnne_Exterior/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+# 53 "data/maps/SSAnne_Exterior/scripts.pory"
+	waitmovement 0
+# 54 "data/maps/SSAnne_Exterior/scripts.pory"
+	return
+# 55 "data/maps/SSAnne_Exterior/scripts.pory"
+
+# 56 "data/maps/SSAnne_Exterior/scripts.pory"
+SSAnne_Exterior_Movement_Exit::
+# 57 "data/maps/SSAnne_Exterior/scripts.pory"
+	walk_up
 # 58 "data/maps/SSAnne_Exterior/scripts.pory"
-SSAnne_Exterior_Movement_WalkDown::
+	walk_up
 # 59 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_down
+	walk_up
 # 60 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_down
+	walk_up
 # 61 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_down
+	walk_up
 # 62 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_down
+	walk_up
 # 63 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_down
+	walk_up
 # 64 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_down
+	walk_up
 # 65 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_down
+	walk_up
 # 66 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_down
+	step_end
 # 67 "data/maps/SSAnne_Exterior/scripts.pory"
-	walk_down
+
 # 68 "data/maps/SSAnne_Exterior/scripts.pory"
+SSAnne_Exterior_Movement_WalkDown::
+# 69 "data/maps/SSAnne_Exterior/scripts.pory"
+	walk_down
+# 70 "data/maps/SSAnne_Exterior/scripts.pory"
+	walk_down
+# 71 "data/maps/SSAnne_Exterior/scripts.pory"
+	walk_down
+# 72 "data/maps/SSAnne_Exterior/scripts.pory"
+	walk_down
+# 73 "data/maps/SSAnne_Exterior/scripts.pory"
+	walk_down
+# 74 "data/maps/SSAnne_Exterior/scripts.pory"
+	walk_down
+# 75 "data/maps/SSAnne_Exterior/scripts.pory"
+	walk_down
+# 76 "data/maps/SSAnne_Exterior/scripts.pory"
+	walk_down
+# 77 "data/maps/SSAnne_Exterior/scripts.pory"
+	walk_down
+# 78 "data/maps/SSAnne_Exterior/scripts.pory"
 	step_end

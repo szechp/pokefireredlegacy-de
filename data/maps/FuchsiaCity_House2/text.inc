@@ -27,6 +27,6 @@ FuchsiaCity_House2_Text_ExplainFossil::
     .string "On this Stuff!$"
 
 FuchsiaCity_House2_RocketBossWentToBoardroom::
-    .string "Hello there, <PLAYER>!\n"  
+    .string "Hello there, {PLAYER}!\n"  
     .string "How are the fish biting?$"  
 

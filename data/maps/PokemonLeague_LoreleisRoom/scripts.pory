@@ -62,7 +62,8 @@ PokemonLeague_LoreleisRoom_EventScript_Lorelei::
 	call_if_unset FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_LoreleisRoom_EventScript_Battle
 	call_if_set FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_LoreleisRoom_EventScript_Rematch
 	clearflag FLAG_TEMP_5
-	goto PokemonLeague_LoreleisRoom_EventScript_DefeatedLorelei
+	call_if_unset FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_LoreleisRoom_EventScript_DefeatedLorelei
+	call_if_set FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_LoreleisRoom_EventScript_DefeatedLoreleiRematch
 	end
 
 PokemonLeague_LoreleisRoom_EventScript_Intro::
@@ -78,7 +79,7 @@ PokemonLeague_LoreleisRoom_EventScript_Battle::
 	return
 
 PokemonLeague_LoreleisRoom_EventScript_Rematch::
-	trainerbattle_no_intro TRAINER_ELITE_FOUR_LORELEI_2, PokemonLeague_LoreleisRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_ELITE_FOUR_LORELEI_2, PokemonLeague_LoreleisRoom_Text_Defeat2
 	return
 
 PokemonLeague_LoreleisRoom_EventScript_PostBattle::
@@ -90,6 +91,13 @@ PokemonLeague_LoreleisRoom_EventScript_DefeatedLorelei::
 	setflag FLAG_DEFEATED_LORELEI
 	call PokemonLeague_EventScript_OpenDoor
 	msgbox PokemonLeague_LoreleisRoom_Text_PostBattle
+	release
+	end
+
+PokemonLeague_LoreleisRoom_EventScript_DefeatedLoreleiRematch::
+	setflag FLAG_DEFEATED_LORELEI
+	call PokemonLeague_EventScript_OpenDoor
+	msgbox PokemonLeague_LoreleisRoom_Text_PostBattle2
 	release
 	end
 `

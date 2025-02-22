@@ -47,10 +47,11 @@ Route1_EventScript_Oak::
 Route1_EventScript_PostOak::
 	msgbox Route1_Text_OakPostBattle
 	setflag FLAG_OAK_DEFEATED
-	removeobject 3
 	setflag FLAG_HIDE_OAK
 	fadescreen FADE_TO_BLACK
+	removeobject 3
 	fadescreen FADE_FROM_BLACK
+	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
 	release
 	end
 

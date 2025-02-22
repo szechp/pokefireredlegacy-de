@@ -59,7 +59,7 @@ PokemonMansion_1F_Text_Oak2::
 
 PokemonMansion_1F_Text_Oak3::
     .string "But let's focus on the present.\p"  
-    .string "<PLAYER>!\p"  
+    .string "{PLAYER}!\p"  
     .string "You have become a Pokémon\n"  
     .string "master above all others.\p"  
     .string "Our battle has showed me\n"  

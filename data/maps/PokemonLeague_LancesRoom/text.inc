@@ -46,3 +46,19 @@ PokemonLeague_LancesRoom_Text_PostBattle::
     .string "He is the real POKéMON LEAGUE\n"
     .string "CHAMPION.$"
 
+PokemonLeague_LancesRoom_Text_Defeat2::
+    .string "Incredible!\p"  
+
+    .string "Your strength keeps\n"  
+    .string "growing.\p"  
+
+    .string "Truly, you are a POKEMON master\n"  
+    .string "now.$"  
+
+PokemonLeague_LancesRoom_Text_PostBattle2::
+    .string "As the reigning CHAMPION,\n"  
+    .string "your legacy grows even stronger!\p"  
+    .string "But remember, the path of a\n"  
+    .string "CHAMPION never ends.\p"  
+    .string "Keep honing your skills!\p"  
+    .string "Until next time!$"  
