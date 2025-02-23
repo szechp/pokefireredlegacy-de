@@ -17801,7 +17801,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_LICKITUNG"
+                "species": "SPECIES_TANGELA"
               },
               {
                 "min_level": 23,
@@ -17816,7 +17816,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_PINSIR"
+                "species": "SPECIES_TANGELA"
               }
             ]
           }
@@ -17870,7 +17870,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_LICKITUNG"
+                "species": "SPECIES_TANGELA"
               },
               {
                 "min_level": 23,
@@ -17885,7 +17885,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SCYTHER"
+                "species": "SPECIES_TANGELA"
               }
             ]
           }
@@ -20235,63 +20235,63 @@
             "encounter_rate": 14,
             "mons": [
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 38,
+                "max_level": 38,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 23,
-                "max_level": 23,
+                "min_level": 37,
+                "max_level": 37,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 37,
+                "max_level": 37,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 21,
-                "max_level": 21,
+                "min_level": 38,
+                "max_level": 38,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 37,
+                "max_level": 37,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 38,
+                "max_level": 38,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 40,
+                "max_level": 40,
                 "species": "SPECIES_MR_MIME"
               },
               {
-                "min_level": 23,
-                "max_level": 23,
+                "min_level": 40,
+                "max_level": 40,
                 "species": "SPECIES_MR_MIME"
               },
               {
-                "min_level": 23,
-                "max_level": 23,
+                "min_level": 38,
+                "max_level": 38,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 24,
-                "max_level": 24,
+                "min_level": 38,
+                "max_level": 38,
                 "species": "SPECIES_PIDGEOT"
               },
               {
-                "min_level": 23,
-                "max_level": 23,
+                "min_level": 39,
+                "max_level": 39,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 23,
-                "max_level": 23,
+                "min_level": 41,
+                "max_level": 41,
                 "species": "SPECIES_PIDGEOT"
               }
             ]
@@ -20389,63 +20389,63 @@
             "encounter_rate": 14,
             "mons": [
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 39,
+                "max_level": 39,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 23,
-                "max_level": 23,
+                "min_level": 38,
+                "max_level": 38,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 38,
+                "max_level": 38,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 21,
-                "max_level": 21,
+                "min_level": 37,
+                "max_level": 37,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 20,
-                "max_level": 25,
+                "min_level": 39,
+                "max_level": 39,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 20,
-                "max_level": 20,
+                "min_level": 40,
+                "max_level": 40,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 20,
-                "max_level": 20,
+                "min_level": 39,
+                "max_level": 39,
                 "species": "SPECIES_MR_MIME"
               },
               {
-                "min_level": 21,
-                "max_level": 21,
+                "min_level": 40,
+                "max_level": 40,
                 "species": "SPECIES_MR_MIME"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 40,
+                "max_level": 40,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 40,
+                "max_level": 40,
                 "species": "SPECIES_PIDGEOT"
               },
               {
-                "min_level": 23,
-                "max_level": 23,
+                "min_level": 41,
+                "max_level": 41,
                 "species": "SPECIES_TANGELA"
               },
               {
-                "min_level": 23,
-                "max_level": 23,
+                "min_level": 40,
+                "max_level": 40,
                 "species": "SPECIES_PIDGEOT"
               }
             ]

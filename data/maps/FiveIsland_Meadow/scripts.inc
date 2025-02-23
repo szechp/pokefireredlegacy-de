@@ -377,28 +377,30 @@ FiveIsland_Meadow_EventScript_Beast::
 # 189 "data/maps/FiveIsland_Meadow/scripts.pory"
 	hidemonpic
 # 190 "data/maps/FiveIsland_Meadow/scripts.pory"
-	release
+	msgbox FiveIsland_Meadow_Text_Beasts22, MSGBOX_NPC
 # 191 "data/maps/FiveIsland_Meadow/scripts.pory"
-	end
+	release
 # 192 "data/maps/FiveIsland_Meadow/scripts.pory"
-
-# 193 "data/maps/FiveIsland_Meadow/scripts.pory"
-FiveIsland_Meadow_EventScript_GiveTicket::
-# 194 "data/maps/FiveIsland_Meadow/scripts.pory"
-	msgbox FiveIsland_Meadow_Text_Beasts2, 
-# 195 "data/maps/FiveIsland_Meadow/scripts.pory"
-	giveitem ITEM_MYSTIC_TICKET
-# 196 "data/maps/FiveIsland_Meadow/scripts.pory"
-	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
-# 197 "data/maps/FiveIsland_Meadow/scripts.pory"
-	releaseall
-# 198 "data/maps/FiveIsland_Meadow/scripts.pory"
 	end
-# 199 "data/maps/FiveIsland_Meadow/scripts.pory"
+# 193 "data/maps/FiveIsland_Meadow/scripts.pory"
 
+# 194 "data/maps/FiveIsland_Meadow/scripts.pory"
+FiveIsland_Meadow_EventScript_GiveTicket::
+# 195 "data/maps/FiveIsland_Meadow/scripts.pory"
+	msgbox FiveIsland_Meadow_Text_Beasts2, 
+# 196 "data/maps/FiveIsland_Meadow/scripts.pory"
+	giveitem ITEM_MYSTIC_TICKET
+# 197 "data/maps/FiveIsland_Meadow/scripts.pory"
+	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
+# 198 "data/maps/FiveIsland_Meadow/scripts.pory"
+	releaseall
+# 199 "data/maps/FiveIsland_Meadow/scripts.pory"
+	end
 # 200 "data/maps/FiveIsland_Meadow/scripts.pory"
-FiveIsland_Meadow_EventScript_Beast3::
+
 # 201 "data/maps/FiveIsland_Meadow/scripts.pory"
-	msgbox FiveIsland_Meadow_Text_Beasts2, MSGBOX_NPC
+FiveIsland_Meadow_EventScript_Beast3::
 # 202 "data/maps/FiveIsland_Meadow/scripts.pory"
+	msgbox FiveIsland_Meadow_Text_Beasts2, MSGBOX_NPC
+# 203 "data/maps/FiveIsland_Meadow/scripts.pory"
 	end

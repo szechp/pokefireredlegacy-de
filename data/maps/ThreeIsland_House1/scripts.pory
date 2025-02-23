@@ -9,7 +9,7 @@ ThreeIsland_House1_EventScript_Lostelle::
 	msgbox ThreeIsland_House1_Text_YoureAlwaysSoCool
 	goto_if_questlog EventScript_ReleaseEnd
 	waitmessage
-	call_if_unset FLAG_SHOPJOHTO, ThreeIsland_House1_Berry2
+	call_if_set FLAG_SHOPJOHTO, ThreeIsland_House1_Berry2
 	pokemart ThreeIsland_House1_MartBerries
 	msgbox Text_PleaseComeAgain
 	release

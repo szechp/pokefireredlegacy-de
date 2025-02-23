@@ -1964,26 +1964,30 @@ static const struct TrainerMon sParty_LeaderBlaine2[] = {
 };
 static const struct TrainerMon sParty_RandomGrunt[] = {
     {
-        .iv = 100,
+        .iv = 200,
         .lvl = 29,
         .species = SPECIES_PIDGEOTTO,
-    },  
-    {
-        .iv = 100,
-        .lvl = 29,
-        .species = SPECIES_MACHOKE,
-    },  
-    {
-        .iv = 100,
-        .lvl = 30,
-        .species = SPECIES_WARTORTLE,
+        .moves = {MOVE_SECRET_POWER, MOVE_WING_ATTACK, MOVE_MUD_SLAP, MOVE_NONE},
     },  
     {
         .iv = 200,
-        .lvl = 31,
-        .species = SPECIES_HOUNDOOM,
+        .lvl = 28,
+        .species = SPECIES_MACHOKE,
+        .moves = {MOVE_REVENGE, MOVE_MEGA_PUNCH, MOVE_ROCK_TOMB, MOVE_NONE},
     },  
-}; //Lorieli Cutscene
+    {
+        .iv = 200,
+        .lvl = 29,
+        .species = SPECIES_WARTORTLE,
+        .moves = {MOVE_BUBBLE_BEAM, MOVE_MEGA_PUNCH, MOVE_BITE, MOVE_NONE},
+    },  
+    {
+        .iv = 200,
+        .lvl = 30,
+        .species = SPECIES_HOUNDOOM,
+        .moves = {MOVE_FAINT_ATTACK, MOVE_FLAME_WHEEL, MOVE_ROCK_SMASH, MOVE_HOWL},
+    },  
+}; //Guard
 
 static const struct TrainerMon sParty_Spike[] = {
     {
@@ -8153,25 +8157,25 @@ static const struct TrainerMon sParty_LeaderMisty[] = {
 static const struct TrainerMon sParty_LeaderLtSurge[] = {
     {
         .iv = 200,
-        .lvl = 25,
+        .lvl = 24,
         .species = SPECIES_ELEKID,
         .moves = {MOVE_THUNDER_PUNCH, MOVE_THUNDER_WAVE, MOVE_NONE, MOVE_BRICK_BREAK},
     },
     {
         .iv = 100,
-        .lvl = 24,
+        .lvl = 23,
         .species = SPECIES_ELECTRODE,
         .moves = {MOVE_THUNDER_SHOCK, MOVE_THUNDER_WAVE, MOVE_SELF_DESTRUCT, MOVE_SWIFT},
     },
     {
         .iv = 150,
-        .lvl = 25,
+        .lvl = 24,
         .species = SPECIES_PORYGON,
         .moves = {MOVE_SHOCK_WAVE, MOVE_PSYBEAM, MOVE_ICY_WIND, MOVE_SECRET_POWER},
     },
     {
         .iv = 200,
-        .lvl = 26,
+        .lvl = 25,
         .species = SPECIES_RAICHU,
         .moves = {MOVE_BODY_SLAM, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_SHOCK_WAVE},
     },
