@@ -33,6 +33,7 @@ FuchsiaCity_Mart_Items::
 	.2byte ITEM_BLUE_FLUTE
 	.2byte ITEM_RED_FLUTE
 	.2byte ITEM_YELLOW_FLUTE
+	.2byte ITEM_BERRY_JUICE
 	.2byte ITEM_NONE
 	release
 	end

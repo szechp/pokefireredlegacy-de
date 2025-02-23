@@ -41,43 +41,44 @@ ThreeIsland_BerryForest_Text_BewareWildBerryLovingMons::
     .string "Beware of wild, BERRY-loving\n"
     .string "POKéMON!$"
 
-ThreeIsland_BerryForest_Text_CruelKing::
-    .string "I am the CRUEL KING!\p"
-    .string "An Apex Trainer that uses!\n"
-    .string "Fast and strong Pokemon!\p"
-    .string "Are you ready for my Skill?$"
+ThreeIsland_BerryForest_Text_CruelKing::  
+    .string "I am the CRUEL KING!\p"  
+    .string "An Apex Trainer that uses\n"  
+    .string "fast and strong POKEMON!\p"  
+    .string "Are you ready for my skill?$"  
 
-ThreeIsland_BerryForest_Text_CruelKingDefeat::
-    .string "I think your the APEX!\n"
-    .string "Trainer here$"
+ThreeIsland_BerryForest_Text_CruelKingDefeat::  
+    .string "I think you're the APEX\n"  
+    .string "Trainer here!$"  
 
-ThreeIsland_BerryForest_Text_CruelKingPostBattle::
-    .string "Huh. Great Apex Skill\n"
-    .string "you exerted, CHAMPION.\p"
-    .string "Continue to be the Apex Trainer!$"
+ThreeIsland_BerryForest_Text_CruelKingPostBattle::  
+    .string "Huh. Great Apex skill\n"  
+    .string "you exerted, CHAMPION.\p"  
+    .string "Continue to be the Apex Trainer!$"  
 
-ThreeIsland_BerryForest_Text_NoCruelKing::
-    .string "Seems like you are\p"
-    .string "Scared.$"
+ThreeIsland_BerryForest_Text_NoCruelKing::  
+    .string "Seems like you are\n"  
+    .string "scared.$"  
 
-ThreeIsland_BerryForest_Text_YesCruelKing::
-    .string "You don't know how\p"
-    .string "Cruel I am.$"
+ThreeIsland_BerryForest_Text_YesCruelKing::  
+    .string "You don't know how\n"  
+    .string "cruel I am.$"  
 
-ThreeIsland_BerryForest_Text_RematchCruelKing::
-    .string "Back for more Cruelness?$"
+ThreeIsland_BerryForest_Text_RematchCruelKing::  
+    .string "Back for more cruelty?$"  
 
-ThreeIsland_BerryForest_Text_RematchCruelKingDefeat::
-    .string "Seems Champion Level to me!$"
+ThreeIsland_BerryForest_Text_RematchCruelKingDefeat::  
+    .string "Seems Champion-level to me!$"  
 
-ThreeIsland_BerryForest_Text_YesRematchCruelKing::
-    .string "You will lose this!\p"
-    .string "I will win!$"
+ThreeIsland_BerryForest_Text_YesRematchCruelKing::  
+    .string "You will lose this!\p"  
+    .string "I will win!$"  
 
-ThreeIsland_BerryForest_Text_RematchCruelKingPostBattle::
-    .string "Huh. Great Apex Skill\n"
-    .string "you exerted, CHAMPION.\p"
-    .string "Continue to be an Apex Trainer!$"
+ThreeIsland_BerryForest_Text_RematchCruelKingPostBattle::  
+    .string "Huh. Great Apex skill\n"  
+    .string "you exerted, CHAMPION.\p"  
+    .string "Continue to be an Apex Trainer!$"  
+
 
 Text_6Leaders::
     .string "There are 7 masters of\n"  

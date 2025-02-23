@@ -4228,7 +4228,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SHADOW_PUNCH] =
     {
         .effect = EFFECT_ALWAYS_HIT,
-        .power = 80,
+        .power = 60,
         .type = TYPE_GHOST,
         .accuracy = 0,
         .pp = 20,
@@ -4306,7 +4306,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_BULLET_SEED] =
     {
         .effect = EFFECT_MULTI_HIT,
-        .power = 15,
+        .power = 17,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 30,

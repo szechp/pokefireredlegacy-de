@@ -15,11 +15,11 @@ TwoIsland_House_TMGUYScript::
 # 8 "data/maps/TwoIsland_House/scripts.pory"
 	faceplayer
 # 9 "data/maps/TwoIsland_House/scripts.pory"
-	message TwoIsland_House_Text_TmGuy
-# 10 "data/maps/TwoIsland_House/scripts.pory"
-	waitmessage
-# 11 "data/maps/TwoIsland_House/scripts.pory"
 	goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, TwoIsland_House_TMGUYScript2
+# 10 "data/maps/TwoIsland_House/scripts.pory"
+	message TwoIsland_House_Text_TmGuy
+# 11 "data/maps/TwoIsland_House/scripts.pory"
+	waitmessage
 # 12 "data/maps/TwoIsland_House/scripts.pory"
 	pokemart TwoIsland_TMS
 # 13 "data/maps/TwoIsland_House/scripts.pory"

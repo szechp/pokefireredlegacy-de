@@ -69,6 +69,10 @@ FiveIsland_Meadow_Text_Beasts::
 	.string "three of the legendary\l"
 	.string "beasts: ENTEI, SUICUNE,\l"
 	.string "and RAIKOU.\p"
+    .string "Here's what they\n"  
+    .string "look like!$"  
+
+FiveIsland_Meadow_Text_Beasts22::
 	.string "If you can, I'll give you\n"
 	.string "the item!$"
 

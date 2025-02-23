@@ -215,7 +215,7 @@ FourIsland_PokemonDayCare_Text_HmmISeeIsee::
 
 FourIsland_PokemonDayCare_Text_TreatMonRightHaveThis::
     .string "You're the CHAMPION of\n"  
-    .string "KANTO—I could give you\l"  
+    .string "KANTO! I could give you\l"  
     .string "one!\p"  
 
 FourIsland_PokemonDayCare_Text_ReceivedEggFromMan::

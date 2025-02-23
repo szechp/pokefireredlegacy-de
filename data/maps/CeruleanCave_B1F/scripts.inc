@@ -125,4 +125,12 @@ CeruleanCave_B1F_Smith::
 # 63 "data/maps/CeruleanCave_B1F/scripts.pory"
 	msgbox CeruleanCave_B1F_Text_SmithPostBattle, MSGBOX_AUTOCLOSE
 # 64 "data/maps/CeruleanCave_B1F/scripts.pory"
+	setflag FLAG_SMITH
+# 65 "data/maps/CeruleanCave_B1F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 66 "data/maps/CeruleanCave_B1F/scripts.pory"
+	removeobject 13
+# 67 "data/maps/CeruleanCave_B1F/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 68 "data/maps/CeruleanCave_B1F/scripts.pory"
 	end

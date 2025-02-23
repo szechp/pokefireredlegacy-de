@@ -191,7 +191,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_Porygon::
 # 96 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_1, SPECIES_PORYGON
 # 97 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
-	setvar VAR_TEMP_2, 4500
+	setvar VAR_TEMP_2, 4000
 # 98 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	.else
 # 99 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
@@ -199,7 +199,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_Porygon::
 # 100 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	setvar VAR_TEMP_1, SPECIES_PORYGON
 # 101 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
-	setvar VAR_TEMP_2, 4500
+	setvar VAR_TEMP_2, 4000
 # 102 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"
 	.endif
 # 103 "data/maps/CeladonCity_GameCorner_PrizeRoom/scripts.pory"

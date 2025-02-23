@@ -168,9 +168,26 @@ FiveIsland_Meadow_Items::
 
 FiveIsland_Meadow_EventScript_Beast::
 	goto_if_set FLAG_ENABLE_SHIP_NAVEL_ROCK, FiveIsland_Meadow_EventScript_Beast3
-	msgbox FiveIsland_Meadow_Text_Beasts, MSGBOX_NPC
 	special RoamingBeasts
 	call_if_eq VAR_RESULT, TRUE, FiveIsland_Meadow_EventScript_GiveTicket
+	msgbox FiveIsland_Meadow_Text_Beasts, MSGBOX_NPC
+	waitmessage
+	setvar VAR_0x8004, SPECIES_RAIKOU
+	special SetSeenMon
+	showmonpic SPECIES_RAIKOU, 10, 3
+	waitbuttonpress
+	hidemonpic
+	setvar VAR_0x8004, SPECIES_ENTEI
+	special SetSeenMon
+	showmonpic SPECIES_ENTEI, 10, 3
+	waitbuttonpress
+	hidemonpic
+	setvar VAR_0x8004, SPECIES_SUICUNE
+	special SetSeenMon
+	showmonpic SPECIES_SUICUNE, 10, 3
+	waitbuttonpress
+	hidemonpic
+	msgbox FiveIsland_Meadow_Text_Beasts22, MSGBOX_NPC
 	release
 	end
 

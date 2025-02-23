@@ -419,4 +419,12 @@ SeafoamIslands_B4F_Weebra::
 # 210 "data/maps/SeafoamIslands_B4F/scripts.pory"
 	msgbox SeafoamIslands_B4F_Text_WeebraPostBattle, MSGBOX_AUTOCLOSE
 # 211 "data/maps/SeafoamIslands_B4F/scripts.pory"
+	setflag FLAG_WEEBRA
+# 212 "data/maps/SeafoamIslands_B4F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 213 "data/maps/SeafoamIslands_B4F/scripts.pory"
+	removeobject 5
+# 214 "data/maps/SeafoamIslands_B4F/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 215 "data/maps/SeafoamIslands_B4F/scripts.pory"
 	end

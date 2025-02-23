@@ -52,45 +52,48 @@ OneIsland_KindleRoad_EmberSpa_Text_ExplainHM06::
     .string "That can apparent Evolve an\n"
     .string "TYROUGE to a HITMONTOP.$"
 
-OneIsland_KindleRoad_EmberSpa_Text_Samal::
-    .string "Hello there!\p"
-    .string "I am a LEGENDARY SLUGMA CHAMPION!\p"
-    .string "It's THE GREAT MON of MT EMBER.\p"
-    .string "One that also holds the Unoffical!\n"
-    .string "Title you hold offically.\p"
-    .string "Well than, Let's battle!$"
+OneIsland_KindleRoad_EmberSpa_Text_Samal::  
+    .string "Hello there!\p"  
+    .string "I am a LEGENDARY SLUGMA\n"  
+    .string "CHAMPION!\p"  
+    .string "It's THE GREAT MON of MT EMBER.\p"  
+    .string "One that also holds the\n"  
+    .string "unofficial title you hold\l"  
+    .string "officially.\p"  
+    .string "Well then, let's battle!$"  
 
-OneIsland_KindleRoad_EmberSpa_Text_SamalDefeat::
-    .string "Gosh Darn!\p"
-    .string "You are the True SLUGMA CHAMPION!$"
+OneIsland_KindleRoad_EmberSpa_Text_SamalDefeat::  
+    .string "Gosh darn!\p"  
+    .string "You are the true SLUGMA CHAMPION!$"  
 
-OneIsland_KindleRoad_EmberSpa_Text_SamalPostBattle::
-    .string "Incredible! Lord SLUGMA would\n"
-    .string "made you the SLUGMA CHAMPION.\p"
-    .string "Continue to be a CHAMPION\n"
-    .string "that is Very Strong!$"
+OneIsland_KindleRoad_EmberSpa_Text_SamalPostBattle::  
+    .string "Incredible! Lord SLUGMA would\n"  
+    .string "make you the SLUGMA CHAMPION.\p"  
+    .string "Continue to be a CHAMPION\n"  
+    .string "that is very strong!$"  
 
-OneIsland_KindleRoad_EmberSpa_Text_NoSamal::
-    .string "Not SLUGMA Enough?$"
+OneIsland_KindleRoad_EmberSpa_Text_NoSamal::  
+    .string "Not SLUGMA enough?$"  
 
-OneIsland_KindleRoad_EmberSpa_Text_YesSamal::
-    .string "Let's get fired up!\p"
-    .string "See who's the strongest!$"
+OneIsland_KindleRoad_EmberSpa_Text_YesSamal::  
+    .string "Let's get fired up!\p"  
+    .string "See who's the strongest!$"  
 
-OneIsland_KindleRoad_EmberSpa_Text_RematchSamal::
-    .string "I've only became more\n"
-    .string "SLUGMA ever since the battle!\p"
-    .string "Ready for the rematch of a lifetime!$"
+OneIsland_KindleRoad_EmberSpa_Text_RematchSamal::  
+    .string "I've only become more SLUGMA\n"  
+    .string "ever since our battle!\p"  
+    .string "Ready for the rematch\n"  
+    .string "of a lifetime?$"  
 
-OneIsland_KindleRoad_EmberSpa_Text_RematchSamalDefeat::
-    .string "Seems Champion Level to me!$"
+OneIsland_KindleRoad_EmberSpa_Text_RematchSamalDefeat::  
+    .string "Seems Champion level to me!$"  
 
-OneIsland_KindleRoad_EmberSpa_Text_YesRematchSamal::
-    .string "Gosh Darn!\p"
-    .string "You are the True SLUGMA CHAMPION!$"
+OneIsland_KindleRoad_EmberSpa_Text_YesRematchSamal::  
+    .string "Gosh darn!\p"  
+    .string "You are the true SLUGMA CHAMPION!$"  
 
-OneIsland_KindleRoad_EmberSpa_Text_RematchSamalPostBattle::
-    .string "Incredible! Lord SLUGMA would\n"
-    .string "made you the SLUGMA CHAMPION.\p"
-    .string "Continue to be a CHAMPION\n"
-    .string "that is Very Strong!$"
+OneIsland_KindleRoad_EmberSpa_Text_RematchSamalPostBattle::  
+    .string "Incredible! Lord SLUGMA would\n"  
+    .string "make you the SLUGMA CHAMPION.\p"  
+    .string "Continue to be a CHAMPION\n"  
+    .string "that is very strong!$"  

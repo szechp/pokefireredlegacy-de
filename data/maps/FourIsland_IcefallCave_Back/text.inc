@@ -71,48 +71,48 @@ FourIsland_IcefallCave_Back_Text_ThankYouThisIsAwful::
     .string "I had no idea that those horrible\n"
     .string "criminals were loose here…$"
 
-FourIsland_IcefallCave_Back_Text_Pryce::
-    .string "This back side of this cave\n"
-    .string "is really magnificent.\p"
-    .string "As the Ice Type Gym Leader\n"
-    .string "Pryce, I won't hold back\l"
-    .string "against the champion!\p"
-    .string "If you are willing!$"
+FourIsland_IcefallCave_Back_Text_Pryce::  
+    .string "This back side of this cave\n"  
+    .string "is truly magnificent.\p"  
+    .string "As the Ice Type GYM Leader,\n"  
+    .string "PRYCE, I won't hold back\l"  
+    .string "against the CHAMPION!\p"  
+    .string "If you are willing!$"  
 
-FourIsland_IcefallCave_Back_Text_PryceDefeat::
-    .string "Kid's these days!\n"
-    .string "Stronger than ever!$"
+FourIsland_IcefallCave_Back_Text_PryceDefeat::  
+    .string "Kids these days!\n"  
+    .string "Stronger than ever!$"  
 
-FourIsland_IcefallCave_Back_Text_PrycePostBattle::
-    .string "Incredible! Expected from a\n"
-    .string "CHAMPION.\p"
-    .string "I hope you can protect us\n"
-    .string "from dangers lurking ahead.\p"
-    .string "I'm running out of time.$"
+FourIsland_IcefallCave_Back_Text_PrycePostBattle::  
+    .string "Incredible! Expected from a\n"  
+    .string "CHAMPION.\p"  
+    .string "I hope you can protect us\n"  
+    .string "from dangers lurking ahead.\p"  
+    .string "I'm running out of time.$"  
 
-FourIsland_IcefallCave_Back_Text_NoPryce::
-    .string "Maybe some other time.$"
+FourIsland_IcefallCave_Back_Text_NoPryce::  
+    .string "Maybe some other time.$"  
 
-FourIsland_IcefallCave_Back_Text_YesPryce::
-    .string "Alright Alright\p"
-    .string "Let's Battle!$"
+FourIsland_IcefallCave_Back_Text_YesPryce::  
+    .string "Alright, alright.\p"  
+    .string "Let's battle!$"  
 
-FourIsland_IcefallCave_Back_Text_RematchPryce::
-    .string "A Rematch?\p"
-    .string "Guess you just want to\n"
-    .string "Battle Champion!$"
+FourIsland_IcefallCave_Back_Text_RematchPryce::  
+    .string "A rematch?\p"  
+    .string "Guess you just want to\n"  
+    .string "battle, CHAMPION!$"  
 
-FourIsland_IcefallCave_Back_Text_RematchPryceDefeat::
-    .string "Kid's these days!\n"
-    .string "Stronger than ever!$"
+FourIsland_IcefallCave_Back_Text_RematchPryceDefeat::  
+    .string "Kids these days!\n"  
+    .string "Stronger than ever!$"  
 
-FourIsland_IcefallCave_Back_Text_YesRematchPryce::
-    .string "Alright Alright\p"
-    .string "Let's Battle!$"
+FourIsland_IcefallCave_Back_Text_YesRematchPryce::  
+    .string "Alright, alright.\p"  
+    .string "Let's battle!$"  
 
-FourIsland_IcefallCave_Back_Text_RematchPrycePostBattle::
-    .string "Incredible! Expected from a\n"
-    .string "CHAMPION.\p"
-    .string "I hope you can protect us\n"
-    .string "from dangers lurking ahead.\p"
-    .string "I'm running out of time.$"
+FourIsland_IcefallCave_Back_Text_RematchPrycePostBattle::  
+    .string "Incredible! Expected from a\n"  
+    .string "CHAMPION.\p"  
+    .string "I hope you can protect us\n"  
+    .string "from dangers lurking ahead.\p"  
+    .string "I'm running out of time.$"  

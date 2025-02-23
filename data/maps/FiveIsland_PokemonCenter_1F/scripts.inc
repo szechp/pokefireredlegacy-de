@@ -35,14 +35,12 @@ FiveIsland_PokemonCenter_1F_EventScript_Chef::
 # 18 "data/maps/FiveIsland_PokemonCenter_1F/scripts.pory"
 	msgbox FiveIsland_PokemonCenter_1F_Text_OnMyWayToPrepareMeal, MSGBOX_NPC
 # 19 "data/maps/FiveIsland_PokemonCenter_1F/scripts.pory"
-	setflag FLAG_SHINY_CREATION
-# 20 "data/maps/FiveIsland_PokemonCenter_1F/scripts.pory"
 	end
-# 21 "data/maps/FiveIsland_PokemonCenter_1F/scripts.pory"
+# 20 "data/maps/FiveIsland_PokemonCenter_1F/scripts.pory"
 
-# 22 "data/maps/FiveIsland_PokemonCenter_1F/scripts.pory"
+# 21 "data/maps/FiveIsland_PokemonCenter_1F/scripts.pory"
 FiveIsland_PokemonCenter_1F_EventScript_CooltrainerF::
-# 23 "data/maps/FiveIsland_PokemonCenter_1F/scripts.pory"
+# 22 "data/maps/FiveIsland_PokemonCenter_1F/scripts.pory"
 	msgbox FiveIsland_PokemonCenter_1F_Text_YoureOnQuestToCatchEveryMon, MSGBOX_NPC
-# 24 "data/maps/FiveIsland_PokemonCenter_1F/scripts.pory"
+# 23 "data/maps/FiveIsland_PokemonCenter_1F/scripts.pory"
 	end

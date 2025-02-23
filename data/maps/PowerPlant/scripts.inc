@@ -251,4 +251,12 @@ PowerPlant_Craig::
 # 126 "data/maps/PowerPlant/scripts.pory"
 	msgbox PowerPlant_Text_CraigPostBattle, MSGBOX_AUTOCLOSE
 # 127 "data/maps/PowerPlant/scripts.pory"
+ 	setflag FLAG_CRAIG
+# 128 "data/maps/PowerPlant/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 129 "data/maps/PowerPlant/scripts.pory"
+	removeobject 9
+# 130 "data/maps/PowerPlant/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 131 "data/maps/PowerPlant/scripts.pory"
 	end

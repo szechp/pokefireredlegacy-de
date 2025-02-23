@@ -105,22 +105,20 @@ CeladonCity_DepartmentStore_4F_BerryItems::
 # 53 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
 	.2byte ITEM_ORAN_BERRY
 # 54 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
-	.2byte ITEM_BERRY_JUICE
-# 55 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
 	.2byte ITEM_CHERI_BERRY
-# 56 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
+# 55 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
 	.2byte ITEM_CHESTO_BERRY
-# 57 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
+# 56 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
 	.2byte ITEM_PECHA_BERRY
-# 58 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
+# 57 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
 	.2byte ITEM_RAWST_BERRY
-# 59 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
+# 58 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
 	.2byte ITEM_ASPEAR_BERRY
-# 60 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
+# 59 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
 	.2byte ITEM_PERSIM_BERRY
-# 61 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
+# 60 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
 	.2byte ITEM_NONE
-# 62 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
+# 61 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
 	release
-# 63 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
+# 62 "data/maps/CeladonCity_DepartmentStore_4F/scripts.pory"
 	end

@@ -13,4 +13,12 @@ CeruleanCave_2F_Ditto::
 # 7 "data/maps/CeruleanCave_2F/scripts.pory"
 	msgbox CeruleanCave_2F_Text_DittoPostBattle, MSGBOX_AUTOCLOSE
 # 8 "data/maps/CeruleanCave_2F/scripts.pory"
+ 	setflag FLAG_DITTO_MAN
+# 9 "data/maps/CeruleanCave_2F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 10 "data/maps/CeruleanCave_2F/scripts.pory"
+	removeobject 14
+# 11 "data/maps/CeruleanCave_2F/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 12 "data/maps/CeruleanCave_2F/scripts.pory"
 	end

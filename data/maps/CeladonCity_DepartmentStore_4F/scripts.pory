@@ -51,7 +51,6 @@ CeladonCity_DepartmentStore_4F_EventScript_BerryClerk::
 	.align 2
 CeladonCity_DepartmentStore_4F_BerryItems::
 	.2byte ITEM_ORAN_BERRY
-	.2byte ITEM_BERRY_JUICE
 	.2byte ITEM_CHERI_BERRY
 	.2byte ITEM_CHESTO_BERRY
 	.2byte ITEM_PECHA_BERRY

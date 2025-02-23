@@ -69,8 +69,10 @@ FuchsiaCity_Mart_Items::
 # 35 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	.2byte ITEM_YELLOW_FLUTE
 # 36 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	.2byte ITEM_NONE
+	.2byte ITEM_BERRY_JUICE
 # 37 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	release
+	.2byte ITEM_NONE
 # 38 "data/maps/FuchsiaCity_Mart/scripts.pory"
+	release
+# 39 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	end
