@@ -59,58 +59,76 @@ PokemonLeague_HallOfFame_EventScript_EnterRoom::
 # 30 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
 	delay 18
 # 31 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	msgbox PokemonLeague_HallOfFame_Text_OakCongratulations
+	call_if_unset FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_HallOfFame_EventScript_OakCongratulations
 # 32 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	closemessage
+	call_if_set FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_HallOfFame_EventScript_OakCongratulations2
 # 33 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterUp
+	closemessage
 # 34 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterUp
 # 35 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 36 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	delay 20
+	waitmovement 0
 # 37 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	dofieldeffect FLDEFF_HALL_OF_FAME_RECORD
+	delay 20
 # 38 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	waitfieldeffect FLDEFF_HALL_OF_FAME_RECORD
+	dofieldeffect FLDEFF_HALL_OF_FAME_RECORD
 # 39 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	delay 40
+	waitfieldeffect FLDEFF_HALL_OF_FAME_RECORD
 # 40 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	setvar VAR_TEMP_1, 1
+	delay 40
 # 41 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	call EventScript_SetDefeatedEliteFourFlagsVars
+	setvar VAR_TEMP_1, 1
 # 42 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	setrespawn SPAWN_PALLET_TOWN
+	call EventScript_SetDefeatedEliteFourFlagsVars
 # 43 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	fadescreenspeed FADE_TO_BLACK, 24
+	setrespawn SPAWN_PALLET_TOWN
 # 44 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	special EnterHallOfFame
+	fadescreenspeed FADE_TO_BLACK, 24
 # 45 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	waitstate
+	special EnterHallOfFame
 # 46 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	releaseall
+	waitstate
 # 47 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	end
+	releaseall
 # 48 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-
+	end
 # 49 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-PokemonLeague_HallOfFame_Movement_EnterRoom::
+
 # 50 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	walk_up
+PokemonLeague_HallOfFame_EventScript_OakCongratulations::
 # 51 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	walk_up
+	msgbox PokemonLeague_HallOfFame_Text_OakCongratulations
 # 52 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	walk_up
+	return
 # 53 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	walk_up
+
 # 54 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	walk_up
+PokemonLeague_HallOfFame_EventScript_OakCongratulations2::
 # 55 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	walk_up
+	msgbox PokemonLeague_HallOfFame_Text_OakCongratulations2
 # 56 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	walk_up
+	return
 # 57 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
-	walk_up
+
 # 58 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
+PokemonLeague_HallOfFame_Movement_EnterRoom::
+# 59 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
+	walk_up
+# 60 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
+	walk_up
+# 61 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
+	walk_up
+# 62 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
+	walk_up
+# 63 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
+	walk_up
+# 64 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
+	walk_up
+# 65 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
+	walk_up
+# 66 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
+	walk_up
+# 67 "data/maps/PokemonLeague_HallOfFame/scripts.pory"
 	step_end

@@ -21,7 +21,7 @@ ThreeIsland_House1_EventScript_Lostelle::
 # 11 "data/maps/ThreeIsland_House1/scripts.pory"
 	waitmessage
 # 12 "data/maps/ThreeIsland_House1/scripts.pory"
-	call_if_unset FLAG_SHOPJOHTO, ThreeIsland_House1_Berry2
+	call_if_set FLAG_SHOPJOHTO, ThreeIsland_House1_Berry2
 # 13 "data/maps/ThreeIsland_House1/scripts.pory"
 	pokemart ThreeIsland_House1_MartBerries
 # 14 "data/maps/ThreeIsland_House1/scripts.pory"

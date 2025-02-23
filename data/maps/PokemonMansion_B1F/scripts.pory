@@ -2,6 +2,7 @@ raw `
 PokemonMansion_B1F_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, PokemonMansion_B1F_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, PokemonMansion_B1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, PokemonMansion_B1F_OnResume
 	.byte 0
 
 PokemonMansion_B1F_OnLoad::
@@ -31,6 +32,8 @@ PokemonMansion_B1F_EventScript_ShowMew::
 	return
 
 PokemonMansion_B1F_EventScript_Mew::
+	lock
+	faceplayer
 	goto_if_questlog EventScript_ReleaseEnd
 	special QuestLog_CutRecording
 	lock
@@ -57,14 +60,14 @@ PokemonMansion_B1F_EventScript_Mew::
 	end
 
 PokemonMansion_B1F_EventScript_DefeatedMew::
+	setvar VAR_0x8004, SPECIES_MEW
 	setflag FLAG_FOUGHT_MEW
-	clearflag FLAG_SPAWN_MEW
 	goto EventScript_RemoveStaticMon
 	end
 
 PokemonMansion_B1F_EventScript_RanFromMew::
 	setvar VAR_0x8004, SPECIES_MEW
-	setflag FLAG_SPAWN_MEW
+	setflag FLAG_FOUGHT_MEW
 	goto EventScript_MonFlewAway
 	end
 

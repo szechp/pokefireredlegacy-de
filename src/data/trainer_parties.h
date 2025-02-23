@@ -1580,10 +1580,10 @@ static const struct TrainerMon sParty_Oak[] = {
 static const struct TrainerMon sParty_Oak2[] = {
     {
         .iv = 255,
-        .lvl = 80,
+        .lvl = 79,
         .species = SPECIES_TAUROS,
         .heldItem = ITEM_AGUAV_BERRY,
-        .moves = {MOVE_ROCK_TOMB, MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_IRON_TAIL},
+        .moves = {MOVE_ROCK_TOMB, MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_PURSUIT},
         .friendship = TRAINER_MON_FRIENDLY,
         .evs = {0, 252, 0, 252, 0, 0},
     }, 
@@ -1697,14 +1697,14 @@ static const struct TrainerMon sParty_LeaderMisty2[] = {
         .lvl = 64,
         .species = SPECIES_QUAGSIRE,
         .heldItem = ITEM_QUICK_CLAW,
-        .moves = {MOVE_PROTECT, MOVE_EARTHQUAKE, MOVE_SURF, MOVE_RAIN_DANCE},
+        .moves = {MOVE_ICE_BEAM, MOVE_EARTHQUAKE, MOVE_SURF, MOVE_RAIN_DANCE},
     },  
     {
         .iv = 255,
         .lvl = 65,
         .species = SPECIES_LAPRAS,
         .heldItem = ITEM_MAGNET,
-        .moves = {MOVE_THUNDERBOLT, MOVE_SURF, MOVE_ICE_BEAM, MOVE_PROTECT},
+        .moves = {MOVE_THUNDERBOLT, MOVE_SURF, MOVE_ICE_BEAM, MOVE_PSYCHIC},
     },  
     {
         .iv = 255,
@@ -1928,15 +1928,15 @@ static const struct TrainerMon sParty_LeaderBlaine2[] = {
         .iv = 255,
         .lvl = 64,
         .species = SPECIES_MAGMAR,
-        .heldItem = ITEM_MAGNET,
-        .moves = {MOVE_PROTECT, MOVE_FLAMETHROWER, MOVE_THUNDER_PUNCH, MOVE_PSYCHIC},
+        .heldItem = ITEM_WHITE_HERB,
+        .moves = {MOVE_OVERHEAT, MOVE_FLAMETHROWER, MOVE_THUNDER_PUNCH, MOVE_PSYCHIC},
     },   
     {
         .iv = 255,
         .lvl = 64,
         .species = SPECIES_CHARIZARD,
         .heldItem = ITEM_SALAC_BERRY,
-        .moves = {MOVE_PROTECT, MOVE_HEAT_WAVE, MOVE_DRAGON_CLAW, MOVE_ROCK_SLIDE},
+        .moves = {MOVE_ENDURE, MOVE_HEAT_WAVE, MOVE_DRAGON_CLAW, MOVE_ROCK_SLIDE},
     },  
     {
         .iv = 255,
@@ -1950,7 +1950,7 @@ static const struct TrainerMon sParty_LeaderBlaine2[] = {
         .lvl = 65,
         .species = SPECIES_HOUNDOOM,
         .heldItem = ITEM_MIRACLE_SEED,
-        .moves = {MOVE_PROTECT, MOVE_HEAT_WAVE, MOVE_CRUNCH, MOVE_SOLAR_BEAM},
+        .moves = {MOVE_FLAMETHROWER, MOVE_HEAT_WAVE, MOVE_CRUNCH, MOVE_SOLAR_BEAM},
 
     },  
     {
@@ -2350,7 +2350,7 @@ static const struct TrainerMon sParty_Caseno[] = {
         .lvl = 67,
         .species = SPECIES_TAUROS,
         .heldItem = ITEM_AGUAV_BERRY,
-        .moves = {MOVE_PROTECT, MOVE_ROCK_TOMB, MOVE_IRON_TAIL, MOVE_BODY_SLAM},
+        .moves = {MOVE_PURSUIT, MOVE_ROCK_TOMB, MOVE_IRON_TAIL, MOVE_BODY_SLAM},
         .evs = {0, 252, 0, 252, 0, 0},
     },
     {
@@ -2358,7 +2358,7 @@ static const struct TrainerMon sParty_Caseno[] = {
         .lvl = 67,
         .species = SPECIES_ALAKAZAM,
         .heldItem = ITEM_FOCUS_BAND,
-        .moves = {MOVE_REFLECT, MOVE_PSYCHIC, MOVE_PROTECT, MOVE_THUNDER_PUNCH},
+        .moves = {MOVE_REFLECT, MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_THUNDER_PUNCH},
         .evs = {0, 0, 0, 252, 252, 0},
 
 
@@ -2368,7 +2368,7 @@ static const struct TrainerMon sParty_Caseno[] = {
         .lvl = 67,
         .species = SPECIES_MAROWAK,
         .heldItem = ITEM_THICK_CLUB,
-        .moves = {MOVE_ROCK_SLIDE, MOVE_PROTECT, MOVE_BONEMERANG, MOVE_BRICK_BREAK},
+        .moves = {MOVE_ROCK_SLIDE, MOVE_DOUBLE_EDGE, MOVE_BONEMERANG, MOVE_BRICK_BREAK},
         .evs = {252, 252, 0, 0, 0, 0},
 
 
@@ -13819,7 +13819,7 @@ static const struct TrainerMon sParty_EliteFourLorelei2[] = {
         .lvl = 70,
         .species = SPECIES_SLOWKING,
         .heldItem = ITEM_QUICK_CLAW,
-        .moves = {MOVE_BLIZZARD, MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_PROTECT},
+        .moves = {MOVE_BLIZZARD, MOVE_PSYCHIC, MOVE_HAIL, MOVE_PROTECT},
         .evs = {252, 0, 0, 0, 252, 0},
     },
     {

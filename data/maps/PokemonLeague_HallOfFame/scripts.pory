@@ -28,7 +28,8 @@ PokemonLeague_HallOfFame_EventScript_EnterRoom::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 18
-	msgbox PokemonLeague_HallOfFame_Text_OakCongratulations
+	call_if_unset FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_HallOfFame_EventScript_OakCongratulations
+	call_if_set FLAG_SYS_CAN_LINK_WITH_RS, PokemonLeague_HallOfFame_EventScript_OakCongratulations2
 	closemessage
 	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterUp
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
@@ -45,6 +46,14 @@ PokemonLeague_HallOfFame_EventScript_EnterRoom::
 	waitstate
 	releaseall
 	end
+
+PokemonLeague_HallOfFame_EventScript_OakCongratulations::
+	msgbox PokemonLeague_HallOfFame_Text_OakCongratulations
+	return
+
+PokemonLeague_HallOfFame_EventScript_OakCongratulations2::
+	msgbox PokemonLeague_HallOfFame_Text_OakCongratulations2
+	return
 
 PokemonLeague_HallOfFame_Movement_EnterRoom::
 	walk_up

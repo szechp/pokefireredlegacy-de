@@ -13,3 +13,16 @@ PokemonLeague_HallOfFame_Text_OakCongratulations::
     .string "Congratulations, {PLAYER}, you and\n"
     .string "your POKéMON are HALL OF FAMERS!$"
 
+PokemonLeague_HallOfFame_Text_OakCongratulations2::  
+	.string "OAK: Er-hem!\p"  
+	.string "Congratulations, {PLAYER}!\p"  
+	.string "Welcome back to the\n"  
+	.string "HALL OF FAME!\p"  
+	.string "Once again, we celebrate\n"  
+	.string "your triumph as CHAMP!\p"  
+	.string "Your dedication to\n"  
+	.string "excellence is commendable!\p"  
+	.string "And your POKEMON, they shine\n"  
+	.string "brightly in this esteemed hall!\p"  
+	.string "{PLAYER}, even as CHAMPION,\n"  
+	.string "your achievements inspire us all!$"  

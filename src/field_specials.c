@@ -2664,7 +2664,7 @@ void RoamingBeasts(void)
     }
 }
 
-void GetDeoxys(void)
+void GetDeoxys(void)  //UNUSED
 {
     if (FlagGet(FLAG_CAUGHT_ENTEI) &&
         FlagGet(FLAG_CAUGHT_SUICUNE) &&

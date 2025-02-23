@@ -117,7 +117,7 @@ PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival2::
     .string "But I see you have\n"  
     .string "fallen short once more!\p"  
 
-    .string "Remember, <RIVAL>,\p"  
+    .string "Remember, {RIVAL},\p"  
 
     .string "It's not just about\n"  
     .string "strength in battle,\p"  
