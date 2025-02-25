@@ -69,7 +69,6 @@ EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom::
 EventScript_PkmnCenterNurse_Goodbye::
 	msgbox Text_WeHopeToSeeYouAgain
 	goto EventScript_PkmnCenterNurse_PlayerTurn
-
 	return
 
 Movement_Bow::
@@ -81,5 +80,4 @@ EventScript_PkmnCenterNurse_PlayerTurn::
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	waitmovement 0
-	release
-	end   
+	return

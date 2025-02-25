@@ -75,4 +75,5 @@ Route10_PokemonCenter_1F_Text_PostRematchNurse::
     .string "Continue to grow stronger,\n"
     .string "I'll always be here!$"
 
-
+Route10_PokemonCenter_1F_Text_BattleNurse::
+    .string "Wait Hold up!$"

@@ -10830,11 +10830,6 @@ static const struct TrainerMon sParty_SwimmerMaleMymo[] = {
         .lvl = 64,
         .species = SPECIES_BLASTOISE,
     },
-    {
-        .iv = 0,
-        .lvl = 64,
-        .species = SPECIES_FERALIGATR,
-    },
 };
 
 static const struct TrainerMon sParty_SwimmerFemaleNicole[] = {
@@ -10847,11 +10842,6 @@ static const struct TrainerMon sParty_SwimmerFemaleNicole[] = {
         .iv = 0,
         .lvl = 65,
         .species = SPECIES_LANTURN,
-    },
-    {
-        .iv = 0,
-        .lvl = 65,
-        .species = SPECIES_QWILFISH,
     },
 };
 
@@ -10905,11 +10895,6 @@ static const struct TrainerMon sParty_SwimmerMaleSamir[] = {
 };
 
 static const struct TrainerMon sParty_SwimmerFemaleDenise[] = {
-    {
-        .iv = 0,
-        .lvl = 62,
-        .species = SPECIES_MANTINE,
-    },
     {
         .iv = 0,
         .lvl = 62,
@@ -11097,11 +11082,6 @@ static const struct TrainerMon sParty_YoungCoupleEveJon[] = {
 };
 
 static const struct TrainerMon sParty_JugglerMason[] = {
-    {
-        .iv = 0,
-        .lvl = 63,
-        .species = SPECIES_HYPNO,
-    },
     {
         .iv = 0,
         .lvl = 63,
@@ -11606,11 +11586,6 @@ static const struct TrainerMon sParty_YoungsterCordell[] = {
         .iv = 0,
         .lvl = 65,
         .species = SPECIES_NIDOKING,
-    },
-    {
-        .iv = 0,
-        .lvl = 65,
-        .species = SPECIES_TYPHLOSION,
     },
 };
 

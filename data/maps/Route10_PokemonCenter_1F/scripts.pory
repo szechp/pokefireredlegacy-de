@@ -13,12 +13,17 @@ Route10_PokemonCenter_1F_OnTransition::
 Route10_PokemonCenter_1F_EventScript_Nurse::
 	lock
 	faceplayer
-	call_if_set FLAG_IS_CHAMPION, Route10_PokemonCenter_1F_BattleNurse
 	call EventScript_PkmnCenterNurse
+	call_if_set FLAG_IS_CHAMPION, Route10_PokemonCenter_1F_BattleNurse
 	release
 	end
 
 Route10_PokemonCenter_1F_BattleNurse::
+	waitmessage
+	msgbox Route10_PokemonCenter_1F_Text_BattleNurse
+	waitmessage
+	playse SE_PIN
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	goto_if_set FLAG_DEFEATED_NURSE_JOY, Route10_PokemonCenter_1F_EventScript_RematchNurse
 	msgbox Route10_PokemonCenter_1F_Text_Nurse, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route10_PokemonCenter_1F_EventScript_NoNurse
@@ -30,6 +35,7 @@ Route10_PokemonCenter_1F_EventScript_PostNurse::
 	msgbox Route10_PokemonCenter_1F_Text_NursePostBattle
 	setflag FLAG_DEFEATED_NURSE_JOY
 	cleartrainerflag TRAINER_NURSE_JOY
+	call EventScript_PkmnCenterNurse
 	return
 
 Route10_PokemonCenter_1F_EventScript_NoNurse::
@@ -39,12 +45,15 @@ Route10_PokemonCenter_1F_EventScript_NoNurse::
 Route10_PokemonCenter_1F_EventScript_RematchNurse::
 	msgbox Route10_PokemonCenter_1F_Text_RematchNurse, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route10_PokemonCenter_1F_EventScript_NoNurse
+	lock
+	faceplayer
 	trainerbattle_single TRAINER_NURSE_JOY, Route10_PokemonCenter_1F_Text_YesNurse, Route10_PokemonCenter_1F_Text_RematchNurseDefeat, Route10_PokemonCenter_1F_EventScript_PostRematchNurse, NO_MUSIC
 	return	
 
 Route10_PokemonCenter_1F_EventScript_PostRematchNurse::
 	msgbox Route10_PokemonCenter_1F_Text_PostRematchNurse
 	cleartrainerflag TRAINER_NURSE_JOY
+	call EventScript_PkmnCenterNurse
 	return
 
 

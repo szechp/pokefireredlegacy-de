@@ -72,7 +72,7 @@ PokemonMansion_1F_Text_Oak3::
 
 PokemonMansion_1F_Text_OakDefeat::
     .string "This defeat teaches me more\n"  
-    .string "than any victory.\p"
+    .string "than any victory.$"
 
 PokemonMansion_1F_Text_OakPostBattle::
     .string "Our clash today stirred the\n"  
