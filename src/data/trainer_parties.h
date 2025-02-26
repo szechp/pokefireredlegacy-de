@@ -13969,9 +13969,9 @@ static const struct TrainerMon sParty_EliteFourLance2[] = {
     {
         .iv = 255,
         .lvl = 73,
-        .species = SPECIES_TYRANITAR,
-        .heldItem = ITEM_QUICK_CLAW,
-        .moves = {MOVE_ROCK_SLIDE, MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB},
+        .species = SPECIES_KINGDRA,
+        .heldItem = ITEM_CHESTO_BERRY,
+        .moves = {MOVE_DRAGON_BREATH, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_REST},
         .evs = {252, 252, 0, 0, 0, 0},
     },
     {
@@ -13987,7 +13987,7 @@ static const struct TrainerMon sParty_EliteFourLance2[] = {
         .lvl = 75,
         .species = SPECIES_DRAGONITE,
         .heldItem = ITEM_PERSIM_BERRY,
-        .moves = {MOVE_EARTHQUAKE, MOVE_OUTRAGE, MOVE_THUNDERBOLT, MOVE_ICE_BEAM},
+        .moves = {MOVE_EARTHQUAKE, MOVE_OUTRAGE, MOVE_THUNDERBOLT, MOVE_EXTREME_SPEED},
         .evs = {252, 0, 0, 0, 252, 0},
     },
 };
