@@ -123,8 +123,8 @@ FiveIsland_Meadow_Text_RocketDefeat::
 	.string "Was I too late?$"
 
 FiveIsland_Meadow_Text_RocketPostBattle::
-	.string "Maybe it was a good\n"
-	.string "thing I went there...\p"
+	.string "Maybe it was a good thing\n"
+	.string "I went to OUTCAST ISLAND.\p"
 	.string "Despite finding nothing.$"
 
 FiveIsland_Meadow_EventScript_ShowClerk::
