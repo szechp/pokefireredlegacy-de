@@ -40,6 +40,9 @@ CinnabarIsland_Text_ComeWithMeToOneIsland::
     .string "south called ONE ISLAND.\p"
     .string "A friend invited me, so I'm on my\n"
     .string "way out there.\p"
+    .string "It's apart of a set\n"
+    .string "of Tourist island's\l"
+    .string "Known as the SEVII ISLANDS!\p"
     .string "How about it?\n"
     .string "Do you feel like coming with me?$"
 

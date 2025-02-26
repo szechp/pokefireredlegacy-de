@@ -190,6 +190,10 @@ FiveIsland_RocketWarehouse_Text_Police::
     .string "we are currently holding this\l"  
     .string "SCIENTIST for questioning.$"
 
+FiveIsland_RocketWarehouse_EventScript_Police2::
+	msgbox FiveIsland_RocketWarehouse_Text_Clerk, MSGBOX_NPC
+	end
+
 FiveIsland_RocketWarehouse_EventScript_ShowClerk::
 	clearflag FLAG_SHOPJOHTO
 	end

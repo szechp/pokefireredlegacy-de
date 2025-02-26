@@ -9,6 +9,7 @@ SevenIsland_TanobyRuins_MoneanChamber_Text_Armstrong::
 	.string "strongest, not only of SEVEN\l"
 	.string "ISLAND, but of the SEVII's\l"
 	.string "as a whole.\p"
+	.string "A Master they call it.\p"
 	.string "I believe strength should\n"
 	.string "be what allows us to raise\l"
 	.string "lands to their greatest,\p"
@@ -39,6 +40,19 @@ SevenIsland_TanobyRuins_MoneanChamber_Text_ArmstrongPostBattle::
 	.string "And a certain retired\n"
 	.string "TRAINER.\p"
 	.string "Good luck, {PLAYER}.$"
+	.string "And I'll like to give\n"
+	.string "You this.$"
+
+SevenIsland_TanobyRuins_MoneanChamber_Text_ArmstrongPostBattle2::
+	.string "That ticket allows you to go\n"  
+	.string "to a special area.\p"  
+	.string "It was given to me, but I just\n"  
+	.string "kept it until I found someone\n"  
+	.string "worthy, like you.\p"  
+	.string "Also, I'll let you access our\n"  
+	.string "secret merchant on Five Island.\p"  
+	.string "He's got some great stuff\n"  
+	.string "to sell!$"  
 
 SevenIsland_TanobyRuins_MoneanChamber_Text_NoArmstrong::
     .string "I guess you're not Ready.$"

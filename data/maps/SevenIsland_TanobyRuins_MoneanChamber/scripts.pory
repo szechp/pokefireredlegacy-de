@@ -30,6 +30,7 @@ SevenIsland_TanobyRuins_MoneanChamber_EventScript_PostArmstrong::
 	cleartrainerflag TRAINER_ARMSTRONG
 	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
 	giveitem ITEM_AURORA_TICKET
+	msgbox SevenIsland_TanobyRuins_MoneanChamber_Text_ArmstrongPostBattle2
 	release
 	end
 

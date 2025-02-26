@@ -1160,6 +1160,9 @@ AI_CV_AttackDown_PhysicalTypeList::
 	.byte TYPE_ROCK
 	.byte TYPE_BUG
 	.byte TYPE_STEEL
+	.byte TYPE_POISON
+	.byte TYPE_FLYING
+	.byte TYPE_DARK
 	.byte -1
 
 AI_CV_DefenseDown::
@@ -2012,52 +2015,57 @@ AI_CV_Curse_End::
 	end
 
 AI_CV_Protect::
-	get_protect_count AI_USER
-	if_more_than 1, AI_CV_Protect_ScoreDown2
-	if_status AI_USER, STATUS1_TOXIC_POISON, AI_CV_Protect3
-	if_status2 AI_USER, STATUS2_CURSED, AI_CV_Protect3
-	if_status3 AI_USER, STATUS3_PERISH_SONG, AI_CV_Protect3
-	if_status2 AI_USER, STATUS2_INFATUATION, AI_CV_Protect3
-	if_status3 AI_USER, STATUS3_LEECHSEED, AI_CV_Protect3
-	if_status3 AI_USER, STATUS3_YAWN, AI_CV_Protect3
-	if_has_move_with_effect AI_TARGET, EFFECT_RESTORE_HP, AI_CV_Protect3
-	if_has_move_with_effect AI_TARGET, EFFECT_DEFENSE_CURL, AI_CV_Protect3
-	if_status AI_TARGET, STATUS1_TOXIC_POISON, AI_CV_Protect_ScoreUp2
-	if_status2 AI_TARGET, STATUS2_CURSED, AI_CV_Protect_ScoreUp2
-	if_status3 AI_TARGET, STATUS3_PERISH_SONG, AI_CV_Protect_ScoreUp2
-	if_status2 AI_TARGET, STATUS2_INFATUATION, AI_CV_Protect_ScoreUp2
-	if_status3 AI_TARGET, STATUS3_LEECHSEED, AI_CV_Protect_ScoreUp2
-	if_status3 AI_TARGET, STATUS3_YAWN, AI_CV_Protect_ScoreUp2
-	get_last_used_move AI_TARGET
-	get_move_effect_from_result
-	if_not_equal EFFECT_LOCK_ON, AI_CV_Protect_ScoreUp2
-	goto AI_CV_Protect2
+    get_protect_count AI_USER
+    if_more_than 0, AI_CV_Protect_StrongPenalty  @ Stronger penalty if Protect was used before
+    if_status AI_USER, STATUS1_TOXIC_POISON, AI_CV_Protect3
+    if_status2 AI_USER, STATUS2_CURSED, AI_CV_Protect3
+    if_status3 AI_USER, STATUS3_PERISH_SONG, AI_CV_Protect3
+    if_status2 AI_USER, STATUS2_INFATUATION, AI_CV_Protect3
+    if_status3 AI_USER, STATUS3_LEECHSEED, AI_CV_Protect3
+    if_status3 AI_USER, STATUS3_YAWN, AI_CV_Protect3
+    if_has_move_with_effect AI_TARGET, EFFECT_RESTORE_HP, AI_CV_Protect3
+    if_has_move_with_effect AI_TARGET, EFFECT_DEFENSE_CURL, AI_CV_Protect3
+    if_status AI_TARGET, STATUS1_TOXIC_POISON, AI_CV_Protect_ScoreUp2
+    if_status2 AI_TARGET, STATUS2_CURSED, AI_CV_Protect_ScoreUp2
+    if_status3 AI_TARGET, STATUS3_PERISH_SONG, AI_CV_Protect_ScoreUp2
+    if_status2 AI_TARGET, STATUS2_INFATUATION, AI_CV_Protect_ScoreUp2
+    if_status3 AI_TARGET, STATUS3_LEECHSEED, AI_CV_Protect_ScoreUp2
+    if_status3 AI_TARGET, STATUS3_YAWN, AI_CV_Protect_ScoreUp2
+    get_last_used_move AI_TARGET
+    get_move_effect_from_result
+    if_not_equal EFFECT_LOCK_ON, AI_CV_Protect_ScoreUp2
+    goto AI_CV_Protect2
+
+AI_CV_Protect_StrongPenalty::
+    score -5  @ Stronger penalty for using Protect more than once
+    if_random_less_than 64, AI_CV_Protect_End  @ Only a 25% chance to consider Protect
+    goto AI_CV_Protect2
 
 AI_CV_Protect_ScoreUp2::
-	score +2
+    score +2
 
 AI_CV_Protect2::
-	if_random_less_than 128, AI_CV_Protect4  @ Improvement in Emerald
-	score -1
+    if_random_less_than 64, AI_CV_Protect4  @ Only 25% chance to proceed instead of 50%
+    score -2  @ Further discourage Protect use
 
 AI_CV_Protect4::
-	get_protect_count AI_USER
-	if_equal 0, AI_CV_Protect_End
-	score -1
-	if_random_less_than 128, AI_CV_Protect_End
-	score -1
-	goto AI_CV_Protect_End
+    get_protect_count AI_USER
+    if_equal 0, AI_CV_Protect_End
+    score -2
+    if_random_less_than 32, AI_CV_Protect_End  @ Only 12.5% chance to continue
+    score -2
+    goto AI_CV_Protect_End
 
 AI_CV_Protect3::
-	get_last_used_move AI_TARGET
-	get_move_effect_from_result
-	if_not_equal EFFECT_LOCK_ON, AI_CV_Protect_End
+    get_last_used_move AI_TARGET
+    get_move_effect_from_result
+    if_not_equal EFFECT_LOCK_ON, AI_CV_Protect_End
 
 AI_CV_Protect_ScoreDown2::
-	score -2
+    score -2
 
 AI_CV_Protect_End::
-	end
+    end
 
 AI_CV_Foresight::
 	get_user_type1
@@ -2334,8 +2342,8 @@ AI_CV_SemiInvulnerable2::
 	if_status2 AI_TARGET, STATUS2_CURSED, AI_CV_SemiInvulnerable_TryEncourage
 	if_status3 AI_TARGET, STATUS3_LEECHSEED, AI_CV_SemiInvulnerable_TryEncourage
 	get_weather
-	if_equal AI_WEATHER_HAIL, AI_CV_SemiInvulnerable_CheckSandstormTypes
 	if_equal AI_WEATHER_SANDSTORM, AI_CV_SemiInvulnerable_CheckIceType
+	if_equal AI_WEATHER_HAIL, AI_CV_SemiInvulnerable_CheckSandstormTypes
 	goto AI_CV_SemiInvulnerable5
 
 AI_CV_SemiInvulnerable_CheckSandstormTypes::
@@ -2404,7 +2412,7 @@ AI_CV_Hail_End::
 
 @ BUG: Facade score is increased if the target is statused, but should be if the user is. Replace AI_TARGET with AI_USER
 AI_CV_Facade::
-	if_not_status AI_TARGET, STATUS1_POISON | STATUS1_BURN | STATUS1_PARALYSIS | STATUS1_TOXIC_POISON, AI_CV_Facade_End
+	if_not_status AI_USER, STATUS1_POISON | STATUS1_BURN | STATUS1_PARALYSIS | STATUS1_TOXIC_POISON, AI_CV_Facade_End
 	score +1
 
 AI_CV_Facade_End::

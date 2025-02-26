@@ -36,9 +36,9 @@ OneIsland_PokemonCenter_1F_Text_BillBringMeUpToSpeed::
 OneIsland_PokemonCenter_1F_Text_CelioPCsCantLinkWithYours::
     .string "CELIO: It's running fine, but we're\n"
     .string "too remote out here.\p"
-    .string "These islands really need someway\n"
-    .string "to power the islands and connect it to.\n"
-    .string "the mainland.$"
+    .string "These islands really\n"
+    .string "need someway to connect \l"
+    .string "to the mainland.$"
 
 
 OneIsland_PokemonCenter_1F_Text_BillLetMeHelpYou::
@@ -170,13 +170,13 @@ OneIsland_PokemonCenter_1F_Text_CelioCaughtMoreMonMaybeICanBeUseful::
     .string "Maybe I can be useful to you.$"
 
 OneIsland_PokemonCenter_1F_Text_YoullBeTradingFromTrainersFarAway::
-    .string "I'm modifying the Network Machine\n"
-    .string "right now.\p"
-    .string "I'm Working on it to power\n"
-    .string "The SEVII islands into a New Age\p"
-    .string "When I get finished, The SEVII Islands\n"
-    .string "will rise to a new age of\l"
-    .string "Greatest!$"
+    .string "I'm modifying the NETWORK\n"  
+    .string "MACHINE right now.\p"  
+    .string "I'm working on it to power\n"  
+    .string "the SEVII ISLANDS into a new age.\p"  
+    .string "Once I'm finished, the SEVII\n"  
+    .string "ISLANDS will enter a new era\l"  
+    .string "of greatness!$"  
 
 OneIsland_PokemonCenter_1F_Text_NeedsSpecialGemstone::
     .string "But, there is a slight catch.\p"

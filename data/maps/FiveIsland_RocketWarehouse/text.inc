@@ -170,8 +170,13 @@ FiveIsland_RocketWarehouse_Text_GiovannisKidHasRedHair::
 
 
 FiveIsland_RocketWarehouse_Text_Clerk::
-	.string "Hey, you defeated the\n"
-	.string "JOHTO LEADERS!\p"
-	.string "You deserve to get\n"
-	.string "access to my list\l"
-	.string "of goods!$"
+    .string "That officer and I are the\n"  
+    .string "only ones on the SEVII ISLANDS.\p"  
+    .string "Not many people live here,\n"  
+    .string "so we don’t need a bigger\l"  
+    .string "police force.\p"  
+    .string "But we are contacting KANTO\n"  
+    .string "officers to aid us in these\l"  
+    .string "times.$"  
+
+

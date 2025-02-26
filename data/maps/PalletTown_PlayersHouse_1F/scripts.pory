@@ -52,7 +52,7 @@ PalletTown_PlayersHouse_1F_Movement_RivalExit::
 PalletTown_PlayersHouse_1F_EventScript_Mom::
 	lock
 	faceplayer
-	goto_if_set FLAG_IS_CHAMPION, PalletTown_PlayersHouse_1F_EventScript_MomChampion
+	call_if_unset FLAG_MOM_CHAMP, PalletTown_PlayersHouse_1F_EventScript_MomChampion
 	goto_if_set FLAG_BEAT_RIVAL_IN_OAKS_LAB, PalletTown_PlayersHouse_1F_EventScript_MomHeal
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouMale
@@ -82,12 +82,8 @@ PalletTown_PlayersHouse_1F_EventScript_MomHeal::
 PalletTown_PlayersHouse_1F_EventScript_MomChampion::
 	msgbox PalletTown_PlayersHouse_1F_Text_Champion
 	closemessage
-	msgbox PalletTown_PlayersHouse_1F_Text_YouShouldTakeQuickRest
-	closemessage
-	call EventScript_OutOfCenterPartyHeal
-	msgbox PalletTown_PlayersHouse_1F_Text_LookingGreatTakeCare
-	release
-	end
+	setflag FLAG_MOM_CHAMP
+	return
 
 @ Displays special text if interacted with from side or back (which are normally inaccessible)
 PalletTown_PlayersHouse_1F_EventScript_TV::

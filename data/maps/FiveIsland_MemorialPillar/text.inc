@@ -104,8 +104,8 @@ FiveIsland_MemorialPillar_Text_Oman::
     .string "on the OCEAN ISLANDS!\p"  
     .string "Unlucky for him.\p"  
     .string "I also had to use\p"  
-    .string "not-so-stellar POKÉMON,\p"  
-    .string "I grew strong despite it.\p"  
+    .string "not so stellar POKÉMON,\p"  
+    .string "but I grew strong despite it.\p"  
     .string "Want to see them?$"  
 
 FiveIsland_MemorialPillar_Text_OmanDefeat::  
@@ -113,7 +113,7 @@ FiveIsland_MemorialPillar_Text_OmanDefeat::
 
 FiveIsland_MemorialPillar_Text_OmanPostBattle::  
     .string "Looks like I've been bested.\p"  
-    .string "Expected, given my POKÉMON.\p"  
+    .string "As expected, given my POKÉMON.\p"  
     .string "You used them even better.\p"  
     .string "I know I can grow stronger.\n"  
     .string "It's just a matter of time.$"  
@@ -139,7 +139,7 @@ FiveIsland_MemorialPillar_Text_YesRematchOman::
 
 FiveIsland_MemorialPillar_Text_RematchOmanPostBattle::  
     .string "Looks like I've been bested.\p"  
-    .string "Expected, given my POKÉMON.\p"  
+    .string "As expected, given my POKÉMON.\p"  
     .string "You used them even better.\p"  
     .string "I know I can grow stronger.\n"  
     .string "It's just a matter of time.$"  

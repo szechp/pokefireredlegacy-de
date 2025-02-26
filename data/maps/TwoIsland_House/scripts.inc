@@ -33,7 +33,7 @@ TwoIsland_House_TMGUYScript::
 # 17 "data/maps/TwoIsland_House/scripts.pory"
 TwoIsland_House_TMGUYScript2::
 # 18 "data/maps/TwoIsland_House/scripts.pory"
-	message TwoIsland_House_Text_TmGuy2
+	msgbox TwoIsland_House_Text_TmGuy2
 # 19 "data/maps/TwoIsland_House/scripts.pory"
 	pokemart TwoIsland_TMS2
 # 20 "data/maps/TwoIsland_House/scripts.pory"

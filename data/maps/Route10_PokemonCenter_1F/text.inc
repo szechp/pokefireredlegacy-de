@@ -40,31 +40,48 @@ Route10_PokemonCenter_1F_Text_ExplainEverstone::
     .string "ROCK SMASH can be used to break\n"
     .string "Smashable Rocks and can even\l"
     .string "Find Encounters!\p"
-    .string "You don't need any BADGES\n"
-    .string "to use ROCK SMASH!$"
+    .string "You need LT SURGE's\n"
+    .string "BADGE to use ROCK SMASH!$"
 
 Route10_PokemonCenter_1F_Text_Nurse::
-    .string "Oh Hello Champion!\p"
-    .string "I am going to heal your pokemon\p"
-    .string "But first, I want to know if you\n"
-    .string "want a battle with me?$"
+	.string "I've always dreamed of\n"  
+	.string "becoming a POKEMON MASTER,\p"  
+	.string "but my duties here make\n"  
+	.string "it hard to travel\l"  
+	.string "and collect badges.\p"  
+	.string "It would be a great honor\n"  
+	.string "to test my skills\p"  
+	.string "against the new CHAMPION.\p"  
+	.string "Could I ask for a battle?$"  
 
 Route10_PokemonCenter_1F_Text_NurseDefeat::
-    .string "Amazing!$"
+	.string "That was amazing!$"  
 
 Route10_PokemonCenter_1F_Text_NursePostBattle::
-    .string "That's what I expect!\p"
-    .string "Continue to grow stronger,\n"
-    .string "I'll always be here!$"
+	.string "That was amazing!\p"  
+	.string "Your strength and bond\n"  
+	.string "with your POKEMON is inspiring.\p"  
+	.string "This battle has\n"  
+	.string "taught me so much.\p"  
+	.string "Thank you for this opportunity!\p"  
+	.string "I hope we can battle again\n"  
+	.string "sometime!$"  
 
 Route10_PokemonCenter_1F_Text_NoNurse::
-    .string "Oh I guess you just want to heal.$"
+	.string "I understand.\n"  
+	.string "Duty calls, and so does yours.\p"  
+	.string "Maybe another time, then.$"  
 
 Route10_PokemonCenter_1F_Text_YesNurse::
-    .string "I won't disappoint!\p"
-    .string "I am pretty strong!$"
+	.string "Thank you!\p"  
+	.string "This means a lot to me.\p"  
+	.string "Let's give it our best shot!$"  
 
 Route10_PokemonCenter_1F_Text_RematchNurse::
+	.string "It would be a great honor\n"  
+	.string "to test my skills\p"  
+	.string "against the new CHAMPION,\n" 
+	.string "again!\p"   
     .string "Do you want to have another battle.$"
 
 Route10_PokemonCenter_1F_Text_RematchNurseDefeat::
@@ -76,4 +93,6 @@ Route10_PokemonCenter_1F_Text_PostRematchNurse::
     .string "I'll always be here!$"
 
 Route10_PokemonCenter_1F_Text_BattleNurse::
-    .string "Wait Hold up!$"
+	.string "Actually...\p"  
+	.string "Before you go.$" 
+ 

@@ -15,7 +15,7 @@ TwoIsland_House_TMGUYScript::
 	end
 
 TwoIsland_House_TMGUYScript2::
-	message TwoIsland_House_Text_TmGuy2
+	msgbox TwoIsland_House_Text_TmGuy2
 	pokemart TwoIsland_TMS2
 	msgbox Text_PleaseComeAgain
 	release

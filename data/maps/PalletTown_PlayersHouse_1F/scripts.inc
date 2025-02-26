@@ -107,7 +107,7 @@ PalletTown_PlayersHouse_1F_EventScript_Mom::
 # 54 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	faceplayer
 # 55 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, PalletTown_PlayersHouse_1F_EventScript_MomChampion
+	call_if_unset FLAG_MOM_CHAMP, PalletTown_PlayersHouse_1F_EventScript_MomChampion
 # 56 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	goto_if_set FLAG_BEAT_RIVAL_IN_OAKS_LAB, PalletTown_PlayersHouse_1F_EventScript_MomHeal
 # 57 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
@@ -167,60 +167,52 @@ PalletTown_PlayersHouse_1F_EventScript_MomChampion::
 # 84 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	closemessage
 # 85 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
-	msgbox PalletTown_PlayersHouse_1F_Text_YouShouldTakeQuickRest
+	setflag FLAG_MOM_CHAMP
 # 86 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
-	closemessage
+	return
 # 87 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
-	call EventScript_OutOfCenterPartyHeal
+
 # 88 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
-	msgbox PalletTown_PlayersHouse_1F_Text_LookingGreatTakeCare
-# 89 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
-	release
-# 90 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
-	end
-# 91 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
-
-# 92 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 @ Displays special text if interacted with from side or back (which are normally inaccessible)
-# 93 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 89 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 PalletTown_PlayersHouse_1F_EventScript_TV::
-# 94 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 90 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	lockall
-# 95 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 91 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	goto_if_eq VAR_FACING, DIR_NORTH, PalletTown_PlayersHouse_1F_EventScript_TVScreen
-# 96 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 92 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	msgbox PalletTown_PlayersHouse_1F_Text_OopsWrongSide
-# 97 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 93 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	releaseall
-# 98 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 94 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	end
-# 99 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 95 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 
-# 100 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 96 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 PalletTown_PlayersHouse_1F_EventScript_TVScreen::
-# 101 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 97 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	checkplayergender
-# 102 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 98 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	call_if_eq VAR_RESULT, MALE, PalletTown_PlayersHouse_1F_EventScript_TVScreenMale
-# 103 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 99 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	call_if_eq VAR_RESULT, FEMALE, PalletTown_PlayersHouse_1F_EventScript_TVScreenFemale
-# 104 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 100 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	releaseall
-# 105 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 101 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	end
+# 102 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+
+# 103 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+PalletTown_PlayersHouse_1F_EventScript_TVScreenMale::
+# 104 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+	msgbox PalletTown_PlayersHouse_1F_Text_MovieOnTVFourBoysOnRailroad
+# 105 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+	return
 # 106 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 
 # 107 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
-PalletTown_PlayersHouse_1F_EventScript_TVScreenMale::
-# 108 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
-	msgbox PalletTown_PlayersHouse_1F_Text_MovieOnTVFourBoysOnRailroad
-# 109 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
-	return
-# 110 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
-
-# 111 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 PalletTown_PlayersHouse_1F_EventScript_TVScreenFemale::
-# 112 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 108 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	msgbox PalletTown_PlayersHouse_1F_Text_MovieOnTVGirlOnBrickRoad
-# 113 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
+# 109 "data/maps/PalletTown_PlayersHouse_1F/scripts.pory"
 	return
