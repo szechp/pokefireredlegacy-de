@@ -171,10 +171,10 @@ static const struct RenewableHiddenItemData sRenewableHiddenItems[] = {
             NO_ITEM
         },
         .uncommon = {
-            NO_ITEM,
-            NO_ITEM,
-            NO_ITEM,
-            NO_ITEM,
+            HIDDEN_ID(FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE_4),
+            HIDDEN_ID(FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE),
+            HIDDEN_ID(FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE_2),
+            HIDDEN_ID(FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE_3),
             NO_ITEM,
             NO_ITEM,
             NO_ITEM,
@@ -215,9 +215,9 @@ static const struct RenewableHiddenItemData sRenewableHiddenItems[] = {
             NO_ITEM
         },
         .common = {
-            NO_ITEM,
-            NO_ITEM,
-            NO_ITEM,
+            HIDDEN_ID(FLAG_HIDDEN_ITEM_MT_MOON_B1F_TINY_MUSHROOM),
+            HIDDEN_ID(FLAG_HIDDEN_ITEM_MT_MOON_B1F_TINY_MUSHROOM_2),
+            HIDDEN_ID(FLAG_HIDDEN_ITEM_MT_MOON_B1F_TINY_MUSHROOM_3),
             NO_ITEM,
             NO_ITEM,
             NO_ITEM,
@@ -591,7 +591,7 @@ void SetAllRenewableItemFlags(void)
 void IncrementRenewableHiddenItemStepCounter(void)
 {
     u16 var = VarGet(VAR_RENEWABLE_ITEM_STEP_COUNTER);
-    if (var < 1500)
+    if (var < 1000)
     {
         VarSet(VAR_RENEWABLE_ITEM_STEP_COUNTER, var + 1);
     }
@@ -610,7 +610,7 @@ void TryRegenerateRenewableHiddenItems(void)
 
     if (found_map == 0xFF)
         return;
-    if (VarGet(VAR_RENEWABLE_ITEM_STEP_COUNTER) >= 1500)
+    if (VarGet(VAR_RENEWABLE_ITEM_STEP_COUNTER) >= 1000)
     {
         VarSet(VAR_RENEWABLE_ITEM_STEP_COUNTER, 0);
         SetAllRenewableItemFlags();

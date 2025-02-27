@@ -1651,7 +1651,7 @@
     {
       "english": "TINYMUSHROOM",
       "itemId": "ITEM_TINY_MUSHROOM",
-      "price": 1000,
+      "price": 500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A small and rare mushroom.\\nIt is quite popular among certain\\npeople.",

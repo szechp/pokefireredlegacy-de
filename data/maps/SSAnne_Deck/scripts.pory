@@ -17,8 +17,8 @@ SSAnne_Deck_EventScript_Sailor::
 SSAnne_Deck_EventScript_Donator::
 	goto_if_set FLAG_APART_GAME, SSAnne_Deck_EventScript_Donator2
 	msgbox SSAnne_Deck_Text_ItsApartGame, MSGBOX_NPC
-	checkitem ITEM_TINY_MUSHROOM
-	giveitem ITEM_TINY_MUSHROOM
+	checkitem ITEM_PEARL
+	giveitem ITEM_PEARL
 	setflag FLAG_APART_GAME
 	end
 

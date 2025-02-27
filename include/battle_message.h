@@ -242,7 +242,10 @@ extern const u8 gText_Paralysis[];
 extern const u8 gText_Ice[];
 extern const u8 gText_Confusion[];
 extern const u8 gText_Love[];
-
+extern const u8 gText_Taunt[];
+extern const u8 gText_Encore[];
+extern const u8 gText_Disable[];
+extern const u8 gText_Torment[];
 extern const u8 gText_BattleTowerBan_Space[];
 extern const u8 gText_BattleTowerBan_Newline1[];
 extern const u8 gText_BattleTowerBan_Newline2[];

@@ -433,6 +433,10 @@ static const u8 sText_SpAtk2[] = _("SP. ATK");
 static const u8 sText_SpDef2[] = _("SP. DEF");
 static const u8 sText_Accuracy[] = _("accuracy");
 static const u8 sText_Evasiveness[] = _("evasiveness");
+const u8 gText_Taunt[] = _("taunt");
+const u8 gText_Encore[] = _("encore");
+const u8 gText_Disable[] = _("disable");
+const u8 gText_Torment[] = _("torment");
 
 const u8 *const gStatNamesTable[] = {
     sText_HP2,
