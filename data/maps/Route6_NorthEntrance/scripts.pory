@@ -54,9 +54,17 @@ Route6_NorthEntrance_EventScript_GuardTrigger::
 
 Route6_NorthEntrance_EventScript_BattleGuard::
 	msgbox Route6_NorthEntrance_Text_FightGuard MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, Route6_NorthEntrance_Text_NoFightGuard
+	goto_if_eq VAR_RESULT, NO, Route6_NorthEntrance_EventScript_NoGuard
 	trainerbattle_single TRAINER_RANDOM_GRUNT, Route6_NorthEntrance_Text_RematchYesSurge, Route6_NorthEntrance_Text_RematchSurgeDefeat, Route6_NorthEntrance_EventScript_PostGuard, NO_MUSIC
 	release
+	end
+
+Route6_NorthEntrance_EventScript_NoGuard::
+	msgbox Route6_NorthEntrance_Text_NoFightGuard
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Route6_NorthEntrance_Movement_BlockPlayerEntry
+	waitmovement 0
+	releaseall
 	end
 
 Route6_NorthEntrance_EventScript_PostGuard::

@@ -2970,6 +2970,14 @@ static void SetPartyMonSelectionActions(struct Pokemon *mons, u8 slotId, u8 acti
         for (i = 0; i < sPartyMenuInternal->numActions; ++i)
             sPartyMenuInternal->actions[i] = sPartyMenuActions[action][i];
     }
+    // This if statement causes dead pokemon to only be able to show summary, switch, and cancel. No field moves or items.
+    if (GetMonData(&mons[slotId], MON_DATA_DEAD) && FlagGet(FLAG_NUZLOCKE))
+    {
+        if (GetMonData(&mons[1], MON_DATA_SPECIES) != SPECIES_NONE)
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, ACTIONS_SWITCH);
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, SLOT_CANCEL);
+        return;
+    }
 }
 
 static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
@@ -4462,7 +4470,10 @@ void ItemUseCB_Medicine(u8 taskId, TaskFunc func)
     if (canHeal)
     {
         gPartyMenuUseExitCallback = FALSE;
-        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        if (canHeal && FlagGet(FLAG_NUZLOCKE) && GetMonData(mon, MON_DATA_DEAD))
+            DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        else
+            DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);        
         ScheduleBgCopyTilemapToVram(2);
         gTasks[taskId].func = func;
     }
@@ -4481,9 +4492,12 @@ void ItemUseCB_MedicineStep(u8 taskId, TaskFunc func)
     bool8 cannotHeal;
 
     if (NotUsingHPEVItemOnShedinja(mon, item) == FALSE)
-      
         cannotHeal = TRUE;
-    
+    else if (FlagGet(FLAG_NUZLOCKE) && GetMonData(mon, MON_DATA_DEAD)) // Don't allow healing or reviving for fainted mons on hardcore mode
+    {
+        canHeal = FALSE;
+        cannotHeal = TRUE;
+    }
     else
     {
         canHeal = IsHPRecoveryItem(item);
@@ -5048,7 +5062,9 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc func)
     u16 item = gSpecialVar_ItemId;
     bool8 noEffect;
 
-    if (GetMonData(mon, MON_DATA_LEVEL) != MAX_LEVEL)
+    if ((GetMonData(mon, MON_DATA_LEVEL) != MAX_LEVEL
+    && !levelCappedNuzlocke(GetMonData(mon, MON_DATA_LEVEL)))
+    && !(FlagGet(FLAG_NUZLOCKE) && GetMonData(mon, MON_DATA_DEAD)))
         noEffect = PokemonItemUseNoEffect(mon, item, gPartyMenu.slotId, 0);
     else
         noEffect = TRUE;
@@ -5264,6 +5280,13 @@ static void UseSacredAsh(u8 taskId)
 {
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
     u16 hp;
+
+    // Skip Pokémon that are flagged as dead in Nuzlocke mode
+    if (FlagGet(FLAG_NUZLOCKE) && GetMonData(mon, MON_DATA_DEAD))
+    {
+        gTasks[taskId].func = Task_SacredAshLoop;
+        return;
+    }
 
     if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_NONE)
     {

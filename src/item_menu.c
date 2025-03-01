@@ -35,6 +35,7 @@
 #include "constants/songs.h"
 #include "constants/quest_log.h"
 #include "constants/global.h"
+#include "event_data.h"
 
 static const u16 sItemsByType[ITEMS_COUNT];
 void BagMenu_Print(u8, u8, const u8*, u8, u8, u8, u8, u8, u8);
@@ -1401,7 +1402,8 @@ static void OpenContextMenu(u8 taskId)
             sContextMenuItemsPtr = sContextMenuItemsBuffer;
             sContextMenuNumItems = 2;
         }
-        else if (ItemId_GetBattleUsage(gSpecialVar_ItemId))
+        else if (ItemId_GetBattleUsage(gSpecialVar_ItemId) && (!FlagGet(FLAG_HARD) 
+        || ItemId_GetPocket(gSpecialVar_ItemId) == POCKET_POKE_BALLS || gBagMenuState.location != ITEMMENULOCATION_BATTLE))
         {
             sContextMenuItemsPtr = sContextMenuItems_BattleUse;
             sContextMenuNumItems = 2;
@@ -1482,7 +1484,15 @@ static void OpenContextMenu(u8 taskId)
     Menu_InitCursor(r6, FONT_NORMAL, 0, 2, GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_HEIGHT) + 2, sContextMenuNumItems, 0);
     r4 = ShowBagWindow(6, 0);
     CopyItemName(gSpecialVar_ItemId, gStringVar1);
-    StringExpandPlaceholders(gStringVar4, gText_Var1IsSelected);
+    if (ItemId_GetBattleUsage(gSpecialVar_ItemId) && FlagGet(FLAG_HARD) 
+    && gBagMenuState.location == ITEMMENULOCATION_BATTLE && ItemId_GetPocket(gSpecialVar_ItemId) != POCKET_POKE_BALLS) 
+    {   
+        StringExpandPlaceholders(gStringVar4, gText_CantUseHere);
+    }
+    else
+    {
+        StringExpandPlaceholders(gStringVar4, gText_Var1IsSelected);
+    }
     BagPrintTextOnWindow(r4, FONT_NORMAL, gStringVar4, 0, 2, 1, 0, 0, 1);
 }
 

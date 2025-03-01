@@ -164,6 +164,12 @@ static const u8 *const sBattleStyleOptions[] =
     gText_BattleStyleSet
 };
 
+static const u8 *const sBattleStyleOptions2[] =
+{
+    gText_BattleStyleSet,
+    gText_BattleStyleSet
+};
+
 static const u8 *const sSoundOptions[] =
 {
     gText_SoundMono, 
@@ -485,7 +491,10 @@ static void BufferOptionMenuString(u8 selection)
         AddTextPrinterParameterized3(1, FONT_NORMAL, x, y, dst, -1, sBattleSceneOptions[sOptionMenuPtr->option[selection]]);
         break;
     case MENUITEM_BATTLESTYLE:
-        AddTextPrinterParameterized3(1, FONT_NORMAL, x, y, dst, -1, sBattleStyleOptions[sOptionMenuPtr->option[selection]]);
+        if (FlagGet(FLAG_HARD))
+            AddTextPrinterParameterized3(1, FONT_NORMAL, x, y, dst, -1, sBattleStyleOptions2[sOptionMenuPtr->option[selection]]);
+        else
+            AddTextPrinterParameterized3(1, FONT_NORMAL, x, y, dst, -1, sBattleStyleOptions[sOptionMenuPtr->option[selection]]);
         break;
     case MENUITEM_SOUND:
         AddTextPrinterParameterized3(1, FONT_NORMAL, x, y, dst, -1, sSoundOptions[sOptionMenuPtr->option[selection]]);

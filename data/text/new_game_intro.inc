@@ -158,6 +158,21 @@ gOakSpeech_Text_AskPlayerGender::
     .string "Now tell me. Are you a boy?\n"
     .string "Or are you a girl?$"
 
+gText_Oak_Nuzlocke::
+	.string "Select difficulty.$"
+
+gText_Oak_AreYouSure_Normal::
+	.string "Are you sure?\n"
+	.string "Classic POKéMON rules.$"
+
+gText_Oak_AreYouSure_Hard::
+	.string "Are you sure? No items in battle,\n"
+	.string "Set Mode, GYM level caps.$"
+
+gText_Oak_AreYouSure_Hardcore::
+	.string "Are you sure? Hard mode,\n"
+	.string "but POKéMON can't be revived.$"
+
 gPikachuIntro_Text_Page1::
     .string "In the world which you are about to\n"
     .string "enter, you will embark on a grand\n"

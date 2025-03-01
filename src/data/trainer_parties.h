@@ -8147,10 +8147,10 @@ static const struct TrainerMon sParty_LeaderMisty[] = {
         .moves = {MOVE_HORN_ATTACK, MOVE_SUPERSONIC, MOVE_PECK, MOVE_WATERFALL},
     },
     {
-        .iv = 100,
+        .iv = 50,
         .lvl = 21,
         .species = SPECIES_STARMIE,
-        .moves = {MOVE_SWIFT, MOVE_ICY_WIND, MOVE_WATER_PULSE, MOVE_NONE},
+        .moves = {MOVE_SWIFT, MOVE_CONFUSION, MOVE_WATER_PULSE, MOVE_NONE},
     },
 };
 
@@ -8159,17 +8159,17 @@ static const struct TrainerMon sParty_LeaderLtSurge[] = {
         .iv = 200,
         .lvl = 24,
         .species = SPECIES_ELEKID,
-        .moves = {MOVE_THUNDER_PUNCH, MOVE_THUNDER_WAVE, MOVE_NONE, MOVE_BRICK_BREAK},
+        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_NONE, MOVE_BRICK_BREAK},
+    },
+    {
+        .iv = 200,
+        .lvl = 24,
+        .species = SPECIES_VOLTORB,
+        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SELF_DESTRUCT, MOVE_SWIFT},
     },
     {
         .iv = 100,
         .lvl = 23,
-        .species = SPECIES_ELECTRODE,
-        .moves = {MOVE_THUNDER_SHOCK, MOVE_THUNDER_WAVE, MOVE_SELF_DESTRUCT, MOVE_SWIFT},
-    },
-    {
-        .iv = 150,
-        .lvl = 24,
         .species = SPECIES_PORYGON,
         .moves = {MOVE_SHOCK_WAVE, MOVE_PSYBEAM, MOVE_ICY_WIND, MOVE_SECRET_POWER},
     },
@@ -8177,7 +8177,7 @@ static const struct TrainerMon sParty_LeaderLtSurge[] = {
         .iv = 200,
         .lvl = 25,
         .species = SPECIES_RAICHU,
-        .moves = {MOVE_BODY_SLAM, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_SHOCK_WAVE},
+        .moves = {MOVE_BODY_SLAM, MOVE_THUNDER_WAVE, MOVE_AGILITY, MOVE_SHOCK_WAVE},
     },
 };
 

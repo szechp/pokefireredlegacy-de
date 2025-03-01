@@ -1034,3 +1034,44 @@ static const u8 *GetTrainerCantBattleSpeech(void)
     return ReturnEmptyStringIfNull(sTrainerCannotBattleSpeech);
 }
 
+u8 getLevelCap(void){
+    u8 levelCap = 0;
+    u16 nextLeader, i;
+    const struct TrainerMon *partyData;
+    if (!FlagGet(FLAG_HARD) || FlagGet(FLAG_IS_CHAMPION))
+        return 100;
+    if (!FlagGet(FLAG_BADGE01_GET))
+        nextLeader = TRAINER_LEADER_BROCK;
+    else if (!FlagGet(FLAG_BADGE02_GET))
+        nextLeader = TRAINER_LEADER_MISTY;
+    else if (!FlagGet(FLAG_BADGE03_GET))
+        nextLeader = TRAINER_LEADER_LT_SURGE;
+    else if (!FlagGet(FLAG_BADGE04_GET))
+        nextLeader = TRAINER_LEADER_ERIKA;
+    else if (!FlagGet(FLAG_BADGE05_GET))
+        nextLeader = TRAINER_LEADER_KOGA;
+    else if (!FlagGet(FLAG_BADGE06_GET))
+        nextLeader = TRAINER_LEADER_SABRINA;
+    else if (!FlagGet(FLAG_BADGE07_GET))
+        nextLeader = TRAINER_LEADER_BLAINE;
+    else if (!FlagGet(FLAG_BADGE08_GET))
+        nextLeader = TRAINER_LEADER_GIOVANNI;
+    else if (!FlagGet(FLAG_IS_CHAMPION))
+        nextLeader = TRAINER_CHAMPION_FIRST_CHARMANDER;
+
+    partyData = gTrainers[nextLeader].party.TrainerMon;
+    for (i = 0; i < gTrainers[nextLeader].partySize; i++){
+        if (partyData[i].lvl > levelCap)
+            levelCap = partyData[i].lvl;
+    }
+    return levelCap;
+}
+
+bool8 levelCappedNuzlocke(u8 level){
+    u8 levelCap = getLevelCap();
+    if (!FlagGet(FLAG_HARD) || FlagGet(FLAG_IS_CHAMPION))
+        return FALSE;  //Redundant since getLevelCap would already return 100 for these, but better to be explicit
+    if (level >= levelCap)
+        return TRUE;
+    return FALSE;
+}

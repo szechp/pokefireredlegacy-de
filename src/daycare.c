@@ -29,6 +29,7 @@
 #include "trade.h"
 #include "constants/daycare.h"
 #include "constants/region_map_sections.h"
+#include "battle_setup.h"
 
 // Combination of RSE's Day-Care (re-used on Four Island), FRLG's Day-Care, and egg_hatch.c
 
@@ -511,17 +512,31 @@ static u16 TakeSelectedPokemonFromDaycare(struct DaycareMon *daycareMon)
 {
     u16 species;
     u32 experience;
+    u32 experienceDiff;
+    u8 levelCap;
     struct Pokemon pokemon;
 
     DayCare_GetBoxMonNickname(&daycareMon->mon, gStringVar1);
     species = GetBoxMonData(&daycareMon->mon, MON_DATA_SPECIES);
     BoxMonToMon(&daycareMon->mon, &pokemon);
 
-    if (GetMonData(&pokemon, MON_DATA_LEVEL) != MAX_LEVEL)
+    if (GetMonData(&pokemon, MON_DATA_LEVEL) != MAX_LEVEL 
+    && !levelCappedNuzlocke(GetMonData(&pokemon, MON_DATA_LEVEL)))
     {
         experience = GetMonData(&pokemon, MON_DATA_EXP) + daycareMon->steps;
-        SetMonData(&pokemon, MON_DATA_EXP, &experience);
-        ApplyDaycareExperience(&pokemon);
+        levelCap = getLevelCap();
+        if (experience <= gExperienceTables[gSpeciesInfo[species].growthRate][levelCap])
+        {
+            SetMonData(&pokemon, MON_DATA_EXP, &experience);
+            ApplyDaycareExperience(&pokemon);
+        }
+        else
+        {
+            experienceDiff = experience - gExperienceTables[gSpeciesInfo[species].growthRate][levelCap];
+            experience -= experienceDiff;
+            SetMonData(&pokemon, MON_DATA_EXP, &experience);
+            ApplyDaycareExperience(&pokemon);
+        }
     }
 
     gPlayerParty[PARTY_SIZE - 1] = pokemon;
@@ -554,8 +569,20 @@ static u8 GetLevelAfterDaycareSteps(struct BoxPokemon *mon, u32 steps)
 {
     struct BoxPokemon tempMon = *mon;
 
-    u32 experience = GetBoxMonData(mon, MON_DATA_EXP) + steps;
-    SetBoxMonData(&tempMon, MON_DATA_EXP,  &experience);
+    u8 levelCap = getLevelCap();
+    u16 species = GetBoxMonData(&tempMon, MON_DATA_SPECIES);
+    u32 experienceDiff;
+    u32 experience = GetBoxMonData(&tempMon, MON_DATA_EXP) + steps;
+    if (experience <= gExperienceTables[gSpeciesInfo[species].growthRate][levelCap])
+    {
+        SetBoxMonData(&tempMon, MON_DATA_EXP,  &experience);
+    }
+    else
+    {
+        experienceDiff = experience - gExperienceTables[gSpeciesInfo[species].growthRate][levelCap];
+        experience -= experienceDiff;
+        SetBoxMonData(&tempMon, MON_DATA_EXP,  &experience);
+    }
     return GetLevelFromBoxMonExp(&tempMon);
 }
 

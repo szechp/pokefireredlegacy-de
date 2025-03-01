@@ -854,9 +854,9 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_MON(sParty_LeaderBlaine2),
     },
     [TRAINER_RANDOM_GRUNT] = {
-        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerClass = TRAINER_CLASS_RS_COOLTRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_RS_COOLTRAINER_M,
         .trainerName = _("GUARD"),
         .items = {},
         .doubleBattle = TRUE,

@@ -10,6 +10,7 @@
 #include "pokemon_summary_screen.h"
 #include "safari_zone.h"
 #include "constants/songs.h"
+#include "battle_setup.h"
 
 #undef abs
 #define abs(a) ((a) < 0 ? -(a) : (a))
@@ -1935,7 +1936,7 @@ static void MoveBattleBarGraphically(u8 battlerId, u8 whichBar)
                             filledPixels,
                             B_EXPBAR_NUM_TILES);
         level = GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerId]], MON_DATA_LEVEL);
-        if (level == MAX_LEVEL)
+        if (level == MAX_LEVEL || levelCappedNuzlocke(level))
         {
             for (i = 0; i < B_EXPBAR_NUM_TILES; i++)
                 filledPixels[i] = 0;

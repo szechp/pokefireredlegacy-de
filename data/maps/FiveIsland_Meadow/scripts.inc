@@ -249,9 +249,9 @@ FiveIsland_Meadow_Text_RocketDefeat::
 # 125 "data/maps/FiveIsland_Meadow/scripts.pory"
 FiveIsland_Meadow_Text_RocketPostBattle::
 # 126 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "Maybe it was a good\n"
+	.string "Maybe it was a good thing\n"
 # 127 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "thing I went there...\p"
+	.string "I went to OUTCAST ISLAND.\p"
 # 128 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.string "Despite finding nothing.$"
 # 129 "data/maps/FiveIsland_Meadow/scripts.pory"

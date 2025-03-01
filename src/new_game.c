@@ -106,6 +106,8 @@ void ResetMenuAndMonGlobals(void)
 
 void NewGameInitData(void)
 {
+    bool8 nuzlockePrev = FlagGet(FLAG_NUZLOCKE);
+    bool8 hardPrev = FlagGet(FLAG_HARD);  // A function lower down here clears these, so retain it and reset it at the end
     u8 rivalName[PLAYER_NAME_LENGTH + 1];
     StringCopy(rivalName, gSaveBlock1Ptr->rivalName);
     gDifferentSaveFile = TRUE;
@@ -148,6 +150,8 @@ void NewGameInitData(void)
     RunScriptImmediately(EventScript_ResetAllMapFlags);
     StringCopy(gSaveBlock1Ptr->rivalName, rivalName);
     ResetTrainerTowerResults();
+    nuzlockePrev ? FlagSet(FLAG_NUZLOCKE) : FlagClear(FLAG_NUZLOCKE);
+    hardPrev ? FlagSet(FLAG_HARD) : FlagClear(FLAG_HARD);
 }
 
 static void ResetMiniGamesResults(void)

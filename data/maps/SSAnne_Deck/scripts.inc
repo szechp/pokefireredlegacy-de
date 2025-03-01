@@ -37,9 +37,9 @@ SSAnne_Deck_EventScript_Donator::
 # 19 "data/maps/SSAnne_Deck/scripts.pory"
 	msgbox SSAnne_Deck_Text_ItsApartGame, MSGBOX_NPC
 # 20 "data/maps/SSAnne_Deck/scripts.pory"
-	checkitem ITEM_TINY_MUSHROOM
+	checkitem ITEM_PEARL
 # 21 "data/maps/SSAnne_Deck/scripts.pory"
-	giveitem ITEM_TINY_MUSHROOM
+	giveitem ITEM_PEARL
 # 22 "data/maps/SSAnne_Deck/scripts.pory"
 	setflag FLAG_APART_GAME
 # 23 "data/maps/SSAnne_Deck/scripts.pory"

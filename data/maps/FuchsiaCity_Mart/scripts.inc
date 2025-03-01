@@ -53,26 +53,22 @@ FuchsiaCity_Mart_Items::
 # 27 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	.2byte ITEM_GREAT_BALL
 # 28 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	.2byte ITEM_NEST_BALL
+	.2byte ITEM_POKE_BALL
 # 29 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_NEST_BALL
 # 30 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	.2byte ITEM_REVIVE
+	.2byte ITEM_SUPER_POTION
 # 31 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_REVIVE
 # 32 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_FULL_HEAL
 # 33 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	.2byte ITEM_BLUE_FLUTE
+	.2byte ITEM_MAX_REPEL
 # 34 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	.2byte ITEM_RED_FLUTE
-# 35 "data/maps/FuchsiaCity_Mart/scripts.pory"
-	.2byte ITEM_YELLOW_FLUTE
-# 36 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	.2byte ITEM_BERRY_JUICE
-# 37 "data/maps/FuchsiaCity_Mart/scripts.pory"
+# 35 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	.2byte ITEM_NONE
-# 38 "data/maps/FuchsiaCity_Mart/scripts.pory"
+# 36 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	release
-# 39 "data/maps/FuchsiaCity_Mart/scripts.pory"
+# 37 "data/maps/FuchsiaCity_Mart/scripts.pory"
 	end

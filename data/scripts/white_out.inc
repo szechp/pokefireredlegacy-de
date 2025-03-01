@@ -43,6 +43,7 @@ EventScript_FieldPoison::
 	end
 
 EventScript_FieldWhiteOut::
+	goto_if_set FLAG_NUZLOCKE, EventScript_WhiteOutSoftReset
 	checkmoney 1
 	goto_if_eq VAR_RESULT, FALSE, EventScript_FieldWhiteOutNoMoney
 	goto_if_eq VAR_RESULT, TRUE, EventScript_FieldWhiteOutHasMoney
@@ -65,4 +66,8 @@ EventScript_FieldWhiteOutFade::
 	fadescreen FADE_TO_BLACK
 	special SetCB2WhiteOut
 	waitstate
+	end
+
+EventScript_WhiteOutSoftReset::
+	special DoSoftReset
 	end

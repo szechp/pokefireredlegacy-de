@@ -95,4 +95,4 @@ Route10_PokemonCenter_1F_Text_PostRematchNurse::
 Route10_PokemonCenter_1F_Text_BattleNurse::
 	.string "Actually...\p"  
 	.string "Before you go.$" 
- 
+

@@ -92,6 +92,8 @@
 #define MON_DATA_SPATK2                   87
 #define MON_DATA_SPDEF2                   88
 #define MON_DATA_FORME                    89
+#define MON_DATA_DEAD                     90
+
 
 #define BEST_IV_SPREAD_HIDDEN_POWER_BUG      {31, 31, 31, 30, 31, 30}
 #define BEST_IV_SPREAD_HIDDEN_POWER_DARK     {31, 31, 31, 31, 31, 31}

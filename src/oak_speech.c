@@ -16,6 +16,9 @@
 #include "random.h"
 #include "data.h"
 #include "constants/songs.h"
+#include "constants/flags.h"
+#include "event_data.h"
+
 
 #define INTRO_SPECIES SPECIES_NIDORAN_F
 
@@ -23,6 +26,7 @@ enum
 {
     WIN_INTRO_TEXTBOX,
     WIN_INTRO_BOYGIRL,
+    WIN_INTRO_HARDMODE,
     WIN_INTRO_YESNO,
     WIN_INTRO_NAMES,
     NUM_INTRO_WINDOWS,
@@ -70,6 +74,16 @@ static void Task_OakSpeech_AskPlayerGender(u8);
 static void Task_OakSpeech_ShowGenderOptions(u8);
 static void Task_OakSpeech_HandleGenderInput(u8);
 static void Task_OakSpeech_ClearGenderWindows(u8);
+static void Task_OakSpeech_Nuzlocke(u8);
+static void Task_OakSpeech_ChooseNuzlocke(u8);
+static void Task_OakSpeech_NormalText(u8);
+static void Task_OakSpeech_HardText(u8);
+static void Task_OakSpeech_HardcoreText(u8);
+static void Task_OakSpeech_ClearWindow(u8);
+static void Task_OakSpeech_AreYouSure(u8);
+static void Task_OakSpeech_AreYouSureSelection(u8);
+static void Task_OakSpeech_ShowNuzlockeMenu(u8);
+static void Task_OakSpeech_ClearNuzlockeWindow(u8);
 static void Task_OakSpeech_LoadPlayerPic(u8);
 static void Task_OakSpeech_YourNameWhatIsIt(u8);
 static void Task_OakSpeech_FadeOutForPlayerNamingScreen(u8);
@@ -111,6 +125,13 @@ extern const u8 gText_ABUTTONNext[];
 extern const u8 gText_ABUTTONNext_BBUTTONBack[];
 extern const u8 gText_Boy[];
 extern const u8 gText_Girl[];
+extern const u8 gText_Normal[];
+extern const u8 gText_Hard[];
+extern const u8 gText_Hardcore[];
+extern const u8 gText_Oak_Nuzlocke[];
+extern const u8 gText_Oak_AreYouSure_Normal[];
+extern const u8 gText_Oak_AreYouSure_Hard[];
+extern const u8 gText_Oak_AreYouSure_Hardcore[];
 extern const struct OamData gOamData_AffineOff_ObjBlend_32x32;
 extern const struct OamData gOamData_AffineOff_ObjNormal_32x32;
 extern const struct OamData gOamData_AffineOff_ObjNormal_32x16;
@@ -304,6 +325,16 @@ static const struct WindowTemplate sIntro_WindowTemplates[NUM_INTRO_WINDOWS + 1]
         .height = 4,
         .paletteNum = 15,
         .baseBlock = 372
+    },
+    [WIN_INTRO_HARDMODE] =
+    {
+        .bg = 0,
+        .tilemapLeft = 2,
+        .tilemapTop = 2,
+        .width = 9,
+        .height = 6,
+        .paletteNum = 15,
+        .baseBlock = 1
     },
     [WIN_INTRO_YESNO] =
     {
@@ -1337,18 +1368,7 @@ static void Task_OakSpeech_ClearGenderWindows(u8 taskId)
     gTasks[taskId].func = Task_OakSpeech_LoadPlayerPic;
 }
 
-static void Task_OakSpeech_LoadPlayerPic(u8 taskId)
-{
-    if (gSaveBlock2Ptr->playerGender == MALE)
-        LoadTrainerPic(MALE_PLAYER_PIC, 0);
-    else
-        LoadTrainerPic(FEMALE_PLAYER_PIC, 0);
-    CreateFadeOutTask(taskId, 2);
-    gTasks[taskId].tTimer = 32;
-    gTasks[taskId].func = Task_OakSpeech_YourNameWhatIsIt;
-}
-
-static void Task_OakSpeech_YourNameWhatIsIt(u8 taskId)
+static void Task_OakSpeech_Nuzlocke(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
 
@@ -1360,11 +1380,173 @@ static void Task_OakSpeech_YourNameWhatIsIt(u8 taskId)
         }
         else
         {
-            tTrainerPicPosX = 0;
-            OakSpeechPrintMessage(gOakSpeech_Text_YourNameWhatIsIt, sOakSpeechResources->textSpeed);
-            gTasks[taskId].func = Task_OakSpeech_FadeOutForPlayerNamingScreen;
+            tTrainerPicPosX = -60;
+            gTasks[taskId].tTimer = 30;
+            OakSpeechPrintMessage(gText_Oak_Nuzlocke, sOakSpeechResources->textSpeed);
+            gTasks[taskId].func = Task_OakSpeech_ShowNuzlockeMenu;
         }
     }
+}
+
+static void Task_OakSpeech_ShowNuzlockeMenu(u8 taskId)
+{
+    if (!IsTextPrinterActive(WIN_INTRO_TEXTBOX))
+    {
+        gTasks[taskId].tMenuWindowId = AddWindow(&sIntro_WindowTemplates[WIN_INTRO_HARDMODE]);
+        PutWindowTilemap(gTasks[taskId].tMenuWindowId);
+        DrawStdFrameWithCustomTileAndPalette(gTasks[taskId].tMenuWindowId, TRUE, GetStdWindowBaseTileNum(), 14);
+        FillWindowPixelBuffer(gTasks[taskId].tMenuWindowId, PIXEL_FILL(1));
+        sOakSpeechResources->textColor[0] = 1;
+        sOakSpeechResources->textColor[1] = 2;
+        sOakSpeechResources->textColor[2] = 3;
+        AddTextPrinterParameterized3(gTasks[taskId].tMenuWindowId, FONT_NORMAL, 8, 1, sOakSpeechResources->textColor, 0, gText_Normal);
+        sOakSpeechResources->textColor[0] = 1;
+        sOakSpeechResources->textColor[1] = 2;
+        sOakSpeechResources->textColor[2] = 3;
+        AddTextPrinterParameterized3(gTasks[taskId].tMenuWindowId, FONT_NORMAL, 8, 17, sOakSpeechResources->textColor, 0, gText_Hard);
+        sOakSpeechResources->textColor[0] = 1;
+        sOakSpeechResources->textColor[1] = 2;
+        sOakSpeechResources->textColor[2] = 3;
+        AddTextPrinterParameterized3(gTasks[taskId].tMenuWindowId, FONT_NORMAL, 8, 33, sOakSpeechResources->textColor, 0, gText_Hardcore);
+        Menu_InitCursor(gTasks[taskId].tMenuWindowId, FONT_NORMAL, 0, 1, GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_HEIGHT) + 3, 3, 0);
+        CopyWindowToVram(gTasks[taskId].tMenuWindowId, COPYWIN_FULL);
+        gTasks[taskId].func = Task_OakSpeech_ChooseNuzlocke;
+    }
+}
+
+static void Task_OakSpeech_ChooseNuzlocke(u8 taskId)
+{
+    s8 nuzlocke = Menu_ProcessInputNoWrapAround();
+    switch (nuzlocke)
+    {
+        case 0:
+            Task_OakSpeech_ClearWindow(0);
+            PlaySE(SE_SELECT);
+            FlagClear(FLAG_HARD);
+            FlagClear(FLAG_NUZLOCKE);
+            gTasks[taskId].func = Task_OakSpeech_NormalText;
+            break;
+        case 1:
+            Task_OakSpeech_ClearWindow(0);
+            PlaySE(SE_SELECT);
+            FlagSet(FLAG_HARD);
+            FlagClear(FLAG_NUZLOCKE);
+            gTasks[taskId].func = Task_OakSpeech_HardText;
+            break;
+        case 2:
+            Task_OakSpeech_ClearWindow(0);
+            PlaySE(SE_SELECT);
+            FlagSet(FLAG_HARD);
+            FlagSet(FLAG_NUZLOCKE);
+            gTasks[taskId].func = Task_OakSpeech_HardcoreText;
+            break;
+        case MENU_B_PRESSED:
+        case MENU_NOTHING_CHOSEN:
+            return;
+    }
+}
+
+static void Task_OakSpeech_NormalText(u8 taskId)
+{
+    FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 30, 20);
+    CopyBgTilemapBufferToVram(0);
+    CreateFadeOutTask(taskId, 2);
+    gTasks[taskId].tTimer = 30;
+    OakSpeechPrintMessage(gText_Oak_AreYouSure_Normal, sOakSpeechResources->textSpeed);
+    gTasks[taskId].func = Task_OakSpeech_AreYouSure;
+}
+
+static void Task_OakSpeech_HardText(u8 taskId)
+{
+    FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 30, 20);
+    CopyBgTilemapBufferToVram(0);
+    CreateFadeOutTask(taskId, 2);
+    gTasks[taskId].tTimer = 30;
+    OakSpeechPrintMessage(gText_Oak_AreYouSure_Hard, sOakSpeechResources->textSpeed);
+    gTasks[taskId].func = Task_OakSpeech_AreYouSure;
+}
+
+static void Task_OakSpeech_HardcoreText(u8 taskId)
+{
+    FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 30, 20);
+    CopyBgTilemapBufferToVram(0);
+    CreateFadeOutTask(taskId, 2);
+    gTasks[taskId].tTimer = 30;
+    OakSpeechPrintMessage(gText_Oak_AreYouSure_Hardcore, sOakSpeechResources->textSpeed);
+    gTasks[taskId].func = Task_OakSpeech_AreYouSure;
+}
+
+static void Task_OakSpeech_ClearWindow(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+    ClearStdWindowAndFrameToTransparent(tMenuWindowId, TRUE);
+    RemoveWindow(tMenuWindowId);
+    tMenuWindowId = WIN_INTRO_TEXTBOX;
+    ClearDialogWindowAndFrame(tMenuWindowId, TRUE);
+    FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 30, 20);
+    CopyBgTilemapBufferToVram(0);
+    CreateFadeOutTask(taskId, 2);
+    gTasks[taskId].tTimer = 32;
+    gTasks[taskId].func = Task_OakSpeech_AreYouSure;
+}
+
+static void Task_OakSpeech_AreYouSure(u8 taskId)
+{
+    CreateYesNoMenu(&sIntro_WindowTemplates[WIN_INTRO_YESNO], FONT_NORMAL, 0, 2, GetStdWindowBaseTileNum(), 14, 0);
+    gTasks[taskId].func = Task_OakSpeech_AreYouSureSelection;
+}
+
+static void Task_OakSpeech_AreYouSureSelection(u8 taskId)
+{
+    switch (Menu_ProcessInputNoWrapClearOnChoose())
+    {
+        case 0:
+            PlaySE(SE_SELECT);
+            gTasks[taskId].func = Task_OakSpeech_ClearNuzlockeWindow;
+            break;
+        case MENU_B_PRESSED:
+        case 1:
+            PlaySE(SE_SELECT);
+            gTasks[taskId].func = Task_OakSpeech_Nuzlocke;
+            break;
+    }
+}
+
+static void Task_OakSpeech_ClearNuzlockeWindowTilemap(u8 bg, u8 x, u8 y, u8 width, u8 height, u8 unused)
+{
+    FillBgTilemapBufferRect(bg, 0, x + 255, y + 255, width + 2, height + 2, 2);
+}
+
+static void Task_OakSpeech_ClearNuzlockeWindow(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+    CallWindowFunction(tMenuWindowId, Task_OakSpeech_ClearNuzlockeWindowTilemap);
+    FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 30, 20);
+    CopyBgTilemapBufferToVram(0);
+    CreateFadeOutTask(taskId, 2);
+    gTasks[taskId].tTimer = 32;
+    gTasks[taskId].func = Task_OakSpeech_YourNameWhatIsIt;
+}
+
+static void Task_OakSpeech_LoadPlayerPic(u8 taskId)
+{
+    if (gSaveBlock2Ptr->playerGender == MALE)
+        LoadTrainerPic(MALE_PLAYER_PIC, 0);
+    else
+        LoadTrainerPic(FEMALE_PLAYER_PIC, 0);
+    CreateFadeOutTask(taskId, 2);
+    gTasks[taskId].tTimer = 32;
+    gTasks[taskId].func = Task_OakSpeech_Nuzlocke;
+}
+
+static void Task_OakSpeech_YourNameWhatIsIt(u8 taskId)
+{
+    FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 30, 20);
+    CopyBgTilemapBufferToVram(0);
+    CreateFadeOutTask(taskId, 2);
+    gTasks[taskId].tTimer = 30;
+    OakSpeechPrintMessage(gOakSpeech_Text_YourNameWhatIsIt, sOakSpeechResources->textSpeed);
+    gTasks[taskId].func = Task_OakSpeech_FadeOutForPlayerNamingScreen;
 }
 
 static void Task_OakSpeech_FadeOutForPlayerNamingScreen(u8 taskId)

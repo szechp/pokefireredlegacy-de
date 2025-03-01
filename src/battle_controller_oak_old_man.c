@@ -17,6 +17,7 @@
 #include "reshow_battle_screen.h"
 #include "constants/songs.h"
 #include "constants/items.h"
+#include "battle_setup.h"
 
 static void OakOldManHandleGetMonData(void);
 static void OakOldManHandleGetRawMonData(void);
@@ -1928,7 +1929,8 @@ static void OakOldManHandleExpUpdate(void)
 {
     u8 monId = gBattleBufferA[gActiveBattler][1];
 
-    if (GetMonData(&gPlayerParty[monId], MON_DATA_LEVEL) >= MAX_LEVEL)
+    if (GetMonData(&gPlayerParty[monId], MON_DATA_LEVEL) >= MAX_LEVEL
+    || levelCappedNuzlocke(GetMonData(&gPlayerParty[monId], MON_DATA_LEVEL)))
     {
         OakOldManBufferExecCompleted();
     }
