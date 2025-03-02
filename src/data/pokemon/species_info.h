@@ -1869,7 +1869,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_POLIWRATH] =
     {
         .baseHP        = 90,
-        .baseAttack    = 85,
+        .baseAttack    = 95,
         .baseDefense   = 95,
         .baseSpeed     = 70,
         .baseSpAttack  = 70,
