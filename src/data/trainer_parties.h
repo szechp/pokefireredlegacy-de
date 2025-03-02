@@ -5191,8 +5191,8 @@ static const struct TrainerMon sParty_BeautyBridget[] = {
     },
     {
         .iv = 0,
-        .lvl = 21,
-        .species = SPECIES_BELLSPROUT,
+        .lvl = 29,
+        .species = SPECIES_IVYSAUR,
     },
 };
 
@@ -8163,13 +8163,13 @@ static const struct TrainerMon sParty_LeaderLtSurge[] = {
     },
     {
         .iv = 200,
-        .lvl = 24,
+        .lvl = 23,
         .species = SPECIES_VOLTORB,
         .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SELF_DESTRUCT, MOVE_SWIFT},
     },
     {
-        .iv = 100,
-        .lvl = 23,
+        .iv = 200,
+        .lvl = 24,
         .species = SPECIES_PORYGON,
         .moves = {MOVE_SHOCK_WAVE, MOVE_PSYBEAM, MOVE_ICY_WIND, MOVE_SECRET_POWER},
     },
