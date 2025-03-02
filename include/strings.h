@@ -396,12 +396,17 @@ extern const u8 gText_PkmnAlreadyInBattle[];
 extern const u8 gText_EggCantBattle[];
 extern const u8 gText_PkmnAlreadySelected[];
 extern const u8 gText_PkmnCantSwitchOut[];
+extern const u8 gText_EmeraldLegacy[];
+extern const u8 gText_LegacyHard[];
+extern const u8 gText_LegacyHardcore[];
 
 // credits
 extern const u8 gString_Dummy[];
 extern const u8 gString_PokemonFireRed_Staff[]; // FR
 extern const u8 gString_PokemonLeafGreen_Staff[]; // LG
 extern const u8 gCreditsString_Director[];
+extern const u8 gCreditsString_RomLead[];
+extern const u8 gCreditsString_SpikeCation[];
 extern const u8 gCreditsString_Junichi_Masuda[];
 extern const u8 gCreditsString_Art_Director_Battle_Director[];
 extern const u8 gCreditsString_Ken_Sugimori_Shigeki_Morimoto[];

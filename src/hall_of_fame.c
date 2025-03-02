@@ -25,6 +25,8 @@
 #include "graphics.h"
 #include "constants/songs.h"
 #include "constants/maps.h"
+#include "strings.h"
+
 
 #define HALL_OF_FAME_MAX_TEAMS 50
 #define HALL_OF_FAME_BG_PAL    RGB(22, 24, 29)
@@ -85,6 +87,7 @@ static void Task_HofPC_ExitOnButtonPress(u8 taskId);
 static void HallOfFame_PrintWelcomeText(u8 a0, u8 a1);
 static void HallOfFame_PrintMonInfo(struct HallofFameMon * hofMon, u8 a1, u8 a2);
 static void HallOfFame_PrintPlayerInfo(u8 a0, u8 a1);
+static void HallOfFame_PrintEmeraldLegacyBox(void);
 static void ClearVramOamPltt_LoadHofPal(void);
 static void HofInit_ResetGpuBuffersAndLoadConfettiGfx(void);
 static void Hof_InitBgs(void);
@@ -128,7 +131,7 @@ static const struct WindowTemplate sWindowTemplate = {
     .tilemapLeft = 2,
     .tilemapTop = 2,
     .width = 17,
-    .height = 6,
+    .height = 8,
     .paletteNum = 13,
     .baseBlock = 0x001
 };
@@ -1086,6 +1089,18 @@ static void HallOfFame_PrintPlayerInfo(u8 unused1, u8 unused2)
     FillWindowPixelBuffer(1, PIXEL_FILL(1));
     PutWindowTilemap(1);
     DrawStdFrameWithCustomTileAndPalette(1, FALSE, 0x21D, 13);
+    if (FlagGet(FLAG_NUZLOCKE))
+    {
+        AddTextPrinterParameterized4(1, FONT_NORMAL, 4, 47, 0, 0, sTextColors[1], 0, gText_LegacyHardcore);
+    }
+    else if (FlagGet(FLAG_HARD))
+    {
+        AddTextPrinterParameterized4(1, FONT_NORMAL, 4, 47, 0, 0, sTextColors[1], 0, gText_LegacyHard);
+    }
+    else
+    {
+        AddTextPrinterParameterized4(1, FONT_NORMAL, 4, 47, 0, 0, sTextColors[1], 0, gText_EmeraldLegacy);
+    }
     AddTextPrinterParameterized4(1, FONT_NORMAL, 4, 3, 0, 0, sTextColors[1], 0, gText_Name);
 
     AddTextPrinterParameterized3(1, FONT_NORMAL, textWidth - GetStringWidth(FONT_NORMAL, gSaveBlock2Ptr->playerName, 0), 3, sTextColors[1], 0, gSaveBlock2Ptr->playerName);
