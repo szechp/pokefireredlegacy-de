@@ -35,22 +35,20 @@ FourIsland_PokemonCenter_1F_EventScript_Man::
 # 18 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
 	msgbox FourIsland_PokemonCenter_1F_Text_RareIceMonsInCave, MSGBOX_NPC
 # 19 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
-	clearflag FLAG_HIDE_OAK
+	end
 # 20 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
-	end
+
 # 21 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
-
-# 22 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
 FourIsland_PokemonCenter_1F_EventScript_Woman::
-# 23 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
+# 22 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
 	msgbox FourIsland_PokemonCenter_1F_Text_DayCarePeopleFoundEggBefore, MSGBOX_NPC
-# 24 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
+# 23 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
 	end
-# 25 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
+# 24 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
 
-# 26 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
+# 25 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
 FourIsland_PokemonCenter_1F_EventScript_Gentleman::
-# 27 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
+# 26 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
 	msgbox FourIsland_PokemonCenter_1F_Text_NewPokemonJournalHasntArrived, MSGBOX_NPC
-# 28 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
+# 27 "data/maps/FourIsland_PokemonCenter_1F/scripts.pory"
 	end

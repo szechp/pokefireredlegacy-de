@@ -18,7 +18,7 @@ PokemonLeague_ChampionsRoom_Text_Intro::
 
 PokemonLeague_ChampionsRoom_Text_RematchIntro::
     .string "Back again?\p"  
-    .string "I've been waiting,{PLAYER}!\p"  
+    .string "I've been waiting, {PLAYER}!\p"  
     .string "This time, my team's stronger\n"  
     .string "and ready to take you down!\p"  
     .string "Ready to hand over that title?\p"  
