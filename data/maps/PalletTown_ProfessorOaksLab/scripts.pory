@@ -114,7 +114,6 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexScene::
 	waitfanfare
 	call EventScript_RestorePrevTextColor
 	special EnableNationalPokedex
-	setflag FLAG_JANINE
 	msgbox PalletTown_ProfessorOaksLab_Text_OakMustReallyWorkToFillPokedex
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex
 	closemessage
@@ -127,6 +126,11 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexScene::
 	fadedefaultbgm
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 8
 	setflag FLAG_HIDE_OAK_IN_HIS_LAB
+	setflag FLAG_IS_CHAMPION
+	clearflag FLAG_HIDE_ADMIN
+	clearflag FLAG_HIDE_ADMIN2
+	clearflag FLAG_HIDE_OAK
+	setflag FLAG_JANINE
 	releaseall
 	end
 
@@ -930,7 +934,7 @@ PalletTown_ProfessorOaksLab_Movement_VerticalPacing:
 PalletTown_ProfessorOaksLab_EventScript_TryStartNationalDexScene::
 	call PokedexRating_EventScript_RateInPerson
 	closemessage
-	goto_if_lt VAR_0x8009, 5, PalletTown_ProfessorOaksLab_EventScript_DontStartNationalDexScene
+	goto_if_lt VAR_0x8009, 1, PalletTown_ProfessorOaksLab_EventScript_DontStartNationalDexScene
 	goto_if_unset FLAG_WORLD_MAP_ONE_ISLAND, PalletTown_ProfessorOaksLab_EventScript_DontStartNationalDexScene
 	delay 30
 	msgbox PalletTown_ProfessorOaksLab_Text_OakFavorToAskYouPlayer

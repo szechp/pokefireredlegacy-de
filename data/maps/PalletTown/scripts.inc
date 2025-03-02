@@ -129,7 +129,7 @@ PalletTown_EventScript_OakRatingScene::
 # 65 "data/maps/PalletTown/scripts.pory"
 	buffernumberstring STR_VAR_2, VAR_0x8009
 # 66 "data/maps/PalletTown/scripts.pory"
-	goto_if_lt VAR_0x8009, 5, PalletTown_EventScript_NotEnoughMonsForNationalDex
+	goto_if_lt VAR_0x8009, 1, PalletTown_EventScript_NotEnoughMonsForNationalDex
 # 67 "data/maps/PalletTown/scripts.pory"
 	msgbox PalletTown_Text_CaughtXImpressiveFollowMe
 # 68 "data/maps/PalletTown/scripts.pory"

@@ -48,8 +48,8 @@ SixIsland_RuinValley_EventScript_IgnoreDottedHoleDoor::
 SixIsland_RuinValley_EventScript_Giovanni::
 	lock
 	faceplayer
-	msgbox SixIsland_PatternBush_Text_Bugsy, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, SixIsland_PatternBush_Text_Giovanni
+	msgbox SixIsland_PatternBush_Text_Giovanni, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SixIsland_RuinValley_EventScript_GiovanniNo
 	trainerbattle_single TRAINER_JACKO, SixIsland_PatternBush_Text_GiovanniYes, SixIsland_PatternBush_Text_GiovanniDefeat, SixIsland_RuinValley_EventScript_PostGiovanni, NO_MUSIC
 	release
 	end

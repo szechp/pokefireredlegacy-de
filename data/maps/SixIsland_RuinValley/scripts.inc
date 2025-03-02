@@ -99,9 +99,9 @@ SixIsland_RuinValley_EventScript_Giovanni::
 # 50 "data/maps/SixIsland_RuinValley/scripts.pory"
 	faceplayer
 # 51 "data/maps/SixIsland_RuinValley/scripts.pory"
-	msgbox SixIsland_PatternBush_Text_Bugsy, MSGBOX_YESNO
+	msgbox SixIsland_PatternBush_Text_Giovanni, MSGBOX_YESNO
 # 52 "data/maps/SixIsland_RuinValley/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, SixIsland_PatternBush_Text_Giovanni
+	goto_if_eq VAR_RESULT, NO, SixIsland_RuinValley_EventScript_GiovanniNo
 # 53 "data/maps/SixIsland_RuinValley/scripts.pory"
 	trainerbattle_single TRAINER_JACKO, SixIsland_PatternBush_Text_GiovanniYes, SixIsland_PatternBush_Text_GiovanniDefeat, SixIsland_RuinValley_EventScript_PostGiovanni, NO_MUSIC
 # 54 "data/maps/SixIsland_RuinValley/scripts.pory"
