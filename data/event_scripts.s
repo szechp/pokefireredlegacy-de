@@ -1093,6 +1093,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_R23_GUYS
 	setflag FLAG_SEVEN_SEVII
 	setflag FLAG_CELEBI_EVENT
+	setflag FLAG_MOM_CHAMP
 	setvar VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 500
 	end
 
