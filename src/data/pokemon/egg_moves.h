@@ -411,6 +411,7 @@ const u16 gEggMoves[] = {
               MOVE_DISABLE,
               MOVE_SPLASH,
               MOVE_DRAGON_RAGE,
+              MOVE_OUTRAGE,
               MOVE_DRAGON_BREATH),
 
     egg_moves(GOLDEEN,

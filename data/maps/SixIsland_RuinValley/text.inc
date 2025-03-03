@@ -92,16 +92,16 @@ SixIsland_PatternBush_Text_Giovanni::
     .string "It's been quite a long\n"  
     .string "time since I disbanded\l"  
     .string "TEAM ROCKET, but not all\l"  
-    .string "got the message. Some\l"  
-    .string "are still keeping it alive.\p"  
-    .string "I keep wondering what\n"  
-    .string "to do about them. I saw\l"  
-    .string "my strongest admins lose\l"  
-    .string "their best POKÉMON, yet\l"  
-    .string "they still want to fight.\p"  
-    .string "I won't be staying here\n"  
-    .string "for long. I plan to leave\l"  
-    .string "soon.\p"  
+    .string "of them got the message.\p"  
+    .string "Some are still keeping\n"  
+    .string "it alive. I keep wondering\l"  
+    .string "what to do about them.\p"  
+    .string "I saw my strongest admins\n"  
+    .string "lose their best POKÉMON,\l"  
+    .string "yet they still want to\l"  
+    .string "fight. I won't be staying\l"  
+    .string "here for long. I plan\l"  
+    .string "to leave soon.\p"  
     .string "But I will say, you've\n"  
     .string "made a lasting impact on\l"  
     .string "me, my goals, and ideals.\p"  
@@ -112,7 +112,7 @@ SixIsland_PatternBush_Text_Giovanni::
 
 SixIsland_PatternBush_Text_GiovanniNo::  
     .string "I guess you aren't ready\n"  
-    .string "yet.$"  
+    .string "for this yet.$"  
 
 SixIsland_PatternBush_Text_GiovanniPost::  
     .string "That was a great battle.\p"  
@@ -125,6 +125,7 @@ SixIsland_PatternBush_Text_GiovanniDefeat::
 SixIsland_PatternBush_Text_GiovanniYes::  
     .string "Well then, let's spar\n"  
     .string "one last time!$"  
+
 
 
 

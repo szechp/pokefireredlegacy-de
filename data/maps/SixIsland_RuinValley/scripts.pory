@@ -1,5 +1,7 @@
 raw `
 .set LOCALID_SCIENTIST, 1
+.set LOCALID_GIOVANNI, 18
+
 
 SixIsland_RuinValley_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, SixIsland_RuinValley_OnLoad
@@ -46,6 +48,11 @@ SixIsland_RuinValley_EventScript_IgnoreDottedHoleDoor::
 	end
 
 SixIsland_RuinValley_EventScript_Giovanni::
+	waitmovement 0
+	applymovement LOCALID_GIOVANNI, Common_Movement_FacePlayer
+	waitse
+	playse SE_PIN	
+	applymovement LOCALID_GIOVANNI, Common_Movement_ExclamationMark
 	lock
 	faceplayer
 	msgbox SixIsland_PatternBush_Text_Giovanni, MSGBOX_YESNO
