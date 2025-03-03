@@ -1395,7 +1395,7 @@ static void OpenContextMenu(u8 taskId)
     {
     case ITEMMENULOCATION_BATTLE:
     case ITEMMENULOCATION_TTVSCR_STATUS:
-        if (gSpecialVar_ItemId == ITEM_BERRY_POUCH)
+        if (gSpecialVar_ItemId == ITEM_BERRY_POUCH && !FlagGet(FLAG_HARD))
         {
             sContextMenuItemsBuffer[0] = ITEMMENUACTION_OPEN_BERRIES;
             sContextMenuItemsBuffer[1] = ITEMMENUACTION_CANCEL;
