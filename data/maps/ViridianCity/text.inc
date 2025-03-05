@@ -13,16 +13,19 @@ ViridianCity_Text_ViridiansGymLeaderReturned::
 
 ViridianCity_Text_WantToKnowAboutCaterpillarMons::
     .string "You want to know about the two\n"
-    .string "kinds of caterpillar POKéMON?$"
+    .string "kinds of POKéMON Factors?$"
 
 ViridianCity_Text_OhOkayThen::
     .string "Oh, okay then!$"
 
 ViridianCity_Text_ExplainCaterpieWeedle::
-    .string "CATERPIE has no poison,\n"
-    .string "but WEEDLE does.\p"
-    .string "Watch that your POKéMON aren't\n"
-    .string "stabbed by WEEDLE's POISON STING.$"
+    .string "IVs are stats a POKÉMON is born\n"  
+    .string "with that can boost its stats,\l"  
+    .string "while EVs are gained from\l"  
+    .string "defeating other POKÉMON.\p"  
+    .string "The top floor of the POKÉCENTER\n"  
+    .string "has people who can check both\l"  
+    .string "of them for you.$"  
 
 ViridianCity_Text_GrandpaHasntHadCoffeeYet::
     .string "Oh, Grandpa!\n"

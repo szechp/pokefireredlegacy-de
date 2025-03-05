@@ -101,4 +101,11 @@ Route3_Text_RobinPostBattle::
 Route3_Text_RouteSign::
     .string "ROUTE 3\n"
     .string "MT. MOON AHEAD$"
-
+Route3_Text_Guy::
+    .string "Ok, apparently you can find\n"  
+    .string "SLUGMA in this grass. It's\l"  
+    .string "from JOHTO.\p"  
+    .string "I heard that since KANTO is\n"  
+    .string "so close to JOHTO, we can\l"  
+    .string "expect more JOHTO POKÉMON\l"  
+    .string "to migrate here.$"  

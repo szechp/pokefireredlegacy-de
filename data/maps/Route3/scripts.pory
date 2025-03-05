@@ -9,4 +9,8 @@ Route3_EventScript_Youngster::
 Route3_EventScript_RouteSign::
 	msgbox Route3_Text_RouteSign, MSGBOX_SIGN
 	end
+
+Route3_EventScript_RouteGuy::
+	msgbox Route3_Text_Guy, MSGBOX_NPC
+	end
 `
