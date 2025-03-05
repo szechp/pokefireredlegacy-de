@@ -14006,7 +14006,7 @@ static const struct TrainerMon sParty_ChampionRematchSquirtle[] = {
         .lvl = 75,
         .species = SPECIES_HERACROSS,
         .heldItem = ITEM_SALAC_BERRY,
-        .moves = {MOVE_MEGAHORN, MOVE_ENDURE, MOVE_CROSS_CHOP, MOVE_ROCK_SLIDE},
+        .moves = {MOVE_MEGAHORN, MOVE_EARTHQUAKE, MOVE_CROSS_CHOP, MOVE_ROCK_SLIDE},
         .evs = {0, 252, 0, 252, 0, 0},
     },
     {
@@ -14057,7 +14057,7 @@ static const struct TrainerMon sParty_ChampionRematchBulbasaur[] = {
         .lvl = 75,
         .species = SPECIES_HERACROSS,
         .heldItem = ITEM_SALAC_BERRY,
-        .moves = {MOVE_MEGAHORN, MOVE_ENDURE, MOVE_CROSS_CHOP, MOVE_ROCK_SLIDE},
+        .moves = {MOVE_MEGAHORN, MOVE_EARTHQUAKE, MOVE_CROSS_CHOP, MOVE_ROCK_SLIDE},
         .evs = {0, 252, 0, 252, 0, 0},
     },
     {
@@ -14108,7 +14108,7 @@ static const struct TrainerMon sParty_ChampionRematchCharmander[] = {
         .lvl = 75,
         .species = SPECIES_HERACROSS,
         .heldItem = ITEM_SALAC_BERRY,
-        .moves = {MOVE_MEGAHORN, MOVE_ENDURE, MOVE_CROSS_CHOP, MOVE_ROCK_SLIDE},
+        .moves = {MOVE_MEGAHORN, MOVE_EARTHQUAKE, MOVE_CROSS_CHOP, MOVE_ROCK_SLIDE},
         .evs = {0, 252, 0, 252, 0, 0},
     },
     {
