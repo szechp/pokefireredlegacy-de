@@ -7,18 +7,18 @@ Route23_Text_RestHouse::
     .string "REST HOUSE$"
 
 Route23_Text_Clerk::
-    .string "Oh Hi there Challenger!\p"
+    .string "Oh hi there challenger!\p"
     .string "I've got a permit to\n"
     .string "sell PokeMart Stuff Here!\p"
     .string "You can also go right\n"
-    .string "To rest at Me and My Wife's\l"
-    .string "Rest House!$"
+    .string "to rest at me and my Wife's\l"
+    .string "REST HOUSE!$"
 
 Route23_Text_NotReady::
-    .string "Sorry, Our Services\n"
-    .string "Are Closed right now as\l"
-    .string "We are fixing a Leak.\p"
-    .string "Although Since the\n"
+    .string "Sorry, our services\n"
+    .string "are closed right now as\l"
+    .string "we are fixing a Leak.\p"
+    .string "Although since the\n"
     .string "VIRIDIAN GYM LEADER is\l"
-    .string "Back, we gotta be quick\l"
-    .string "Fixing it!$"
+    .string "back, we gotta be quick\l"
+    .string "fixing it!$"

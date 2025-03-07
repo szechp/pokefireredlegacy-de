@@ -87,44 +87,40 @@ SixIsland_RuinValley_Text_HectorPostBattle::
     .string "though.$"
 
 SixIsland_PatternBush_Text_Giovanni::  
-    .string "Oh, hello there again,\n"  
-    .string "CHAMPION {PLAYER}.\p"  
-    .string "It's been quite a long\n"  
-    .string "time since I disbanded\l"  
-    .string "TEAM ROCKET, but not all\l"  
-    .string "of them got the message.\p"  
-    .string "Some are still keeping\n"  
-    .string "it alive. I keep wondering\l"  
-    .string "what to do about them.\p"  
-    .string "I saw my strongest admins\n"  
-    .string "lose their best POKÉMON,\l"  
-    .string "yet they still want to\l"  
-    .string "fight. I won't be staying\l"  
-    .string "here for long. I plan\l"  
-    .string "to leave soon.\p"  
-    .string "But I will say, you've\n"  
-    .string "made a lasting impact on\l"  
-    .string "me, my goals, and ideals.\p"  
-    .string "Before I go, I would\n"  
-    .string "like one final battle\l"  
-    .string "to see the strength\l"  
-    .string "of a CHAMPION.$"  
+	.string "Oh, hello there again,\n"  
+	.string "CHAMPION {PLAYER}.\p"  
+	.string "It's been quite a long time\n"  
+	.string "since I disbanded TEAM ROCKET,\l"  
+	.string "but not everyone got the memo.\l"  
+	.string "Some are still keeping it alive.\p"  
+	.string "I keep wondering what to do\n"  
+	.string "about them. I saw my strongest\l"  
+	.string "admins lose their best POKÉMON,\l"  
+	.string "yet they still want to fight.\p"  
+	.string "I won't be staying here for\n"  
+	.string "long. I plan to leave soon.\p"  
+	.string "But I will say, you've made\n"  
+	.string "a lasting impact on me,\l"  
+	.string "my goals, and my ideals.\p"  
+	.string "Before I go, I would like\n"  
+	.string "one final battle to see\l"  
+	.string "the strength of a CHAMPION.$"  
 
 SixIsland_PatternBush_Text_GiovanniNo::  
-    .string "I guess you aren't ready\n"  
-    .string "for this yet.$"  
+	.string "I guess you aren't ready yet.$"  
 
 SixIsland_PatternBush_Text_GiovanniPost::  
-    .string "That was a great battle.\p"  
-    .string "Truly, you are a CHAMPION.\p"  
-    .string "Farewell.$"  
+	.string "That was a great battle.\p"  
+	.string "Truly, you are a CHAMPION.\p"  
+	.string "Farewell.$"  
 
 SixIsland_PatternBush_Text_GiovanniDefeat::  
-    .string "Just as expected.$"  
+	.string "Just as expected.$"  
 
 SixIsland_PatternBush_Text_GiovanniYes::  
-    .string "Well then, let's spar\n"  
-    .string "one last time!$"  
+	.string "Well then, let's spar\n"  
+	.string "one last time!{PLAY_BGM}{MUS_ENCOUNTER_ROCKET}$"  
+
 
 
 

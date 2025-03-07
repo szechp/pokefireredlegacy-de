@@ -245,6 +245,7 @@ static const u16 sWhiteOutMoneyLossBadgeFlagIDs[] = {
 static void DoWhiteOut(void)
 {
     RunScriptImmediately(EventScript_ResetEliteFourEnd);
+    VarSet(VAR_FORCEANIM, 0);
     if (FlagGet(FLAG_NUZLOCKE))
     {
         DoSoftReset();

@@ -20,3 +20,11 @@ Route3_EventScript_RouteSign::
 	msgbox Route3_Text_RouteSign, MSGBOX_SIGN
 # 11 "data/maps/Route3/scripts.pory"
 	end
+# 12 "data/maps/Route3/scripts.pory"
+
+# 13 "data/maps/Route3/scripts.pory"
+Route3_EventScript_RouteGuy::
+# 14 "data/maps/Route3/scripts.pory"
+	msgbox Route3_Text_Guy, MSGBOX_NPC
+# 15 "data/maps/Route3/scripts.pory"
+	end

@@ -43,11 +43,13 @@ PokemonMansion_2F_EventScript_Arnie::
 PokemonMansion_2F_EventScript_Oak::
 	msgbox PokemonMansion_1F_Text_Oak, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, PokemonMansion_2F_EventScript_NoOak
+	setvar VAR_FORCEANIM, 1
 	trainerbattle_single TRAINER_OAK2, PokemonMansion_1F_Text_YesOak, PokemonMansion_1F_Text_OakDefeat, PokemonMansion_2F_EventScript_PostOak, NO_MUSIC
 	release
 	end
 
 PokemonMansion_2F_EventScript_PostOak::
+	setvar VAR_FORCEANIM, 0
 	msgbox PokemonMansion_1F_Text_OakPostBattle
 	setflag FLAG_OAK2_DEFEATED
 	clearflag FLAG_HIDE_MEW
