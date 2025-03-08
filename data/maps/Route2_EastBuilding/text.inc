@@ -10,12 +10,6 @@ Route2_EastBuilding_Text_GiveHM05IfSeen10Mons::
     .string "Have you gathered data on at least\n"
     .string "ten kinds of POKéMON?$"
 
-Route2_EastBuilding_Text_GreatHereYouGo::
-    .string "Great! You have caught or owned\n"
-    .string "{STR_VAR_3} kinds of POKéMON!\p"
-    .string "Congratulations!\n"
-    .string "Here you go!$"
-
 Route2_EastBuilding_Text_ReceivedHM05FromAide::
     .string "{PLAYER} received HM05\n"
     .string "from the AIDE.$"
@@ -30,3 +24,33 @@ Route2_EastBuilding_Text_CanGetThroughRockTunnel::
     .string "Once a POKéMON learns FLASH, you\n"
     .string "can get through ROCK TUNNEL.$"
 
+Route2_EastBuilding_Text_GiveEverstoneIfCaught20Mons::
+    .string "Oh… {PLAYER}!\n"
+    .string "I've been looking for you!\p"
+    .string "It's me, one of the ever-present\n"
+    .string "AIDES to PROF. OAK.\p"
+    .string "If your POKéDEX has complete data\n"
+    .string "on twenty species, I'm supposed to\l"
+    .string "give you a reward from PROF. OAK.\p"
+    .string "He entrusted me with\n"
+    .string "HM06 ROCK SMASH.\p"
+    .string "So, {PLAYER}, let me ask you.\p"
+    .string "Have you gathered data on at least\n"
+    .string "twenty kinds of POKéMON?$"
+
+Route2_EastBuilding_Text_GreatHereYouGo::
+    .string "Great! You have caught or owned\n"
+    .string "{STR_VAR_3} kinds of POKéMON!\p"
+    .string "Congratulations!\n"
+    .string "Here you go!$"
+
+Route2_EastBuilding_Text_ReceivedEverstoneFromAide::
+    .string "{PLAYER} received HM06 ROCK SMASH\n"
+    .string "from the AIDE.$"
+
+Route2_EastBuilding_Text_ExplainEverstone::
+    .string "ROCK SMASH can be used to break\n"
+    .string "Smashable Rocks and can even\l"
+    .string "Find Encounters!\p"
+    .string "You need LT SURGE's\n"
+    .string "BADGE to use ROCK SMASH!$"

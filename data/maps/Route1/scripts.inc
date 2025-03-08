@@ -83,40 +83,44 @@ Route1_EventScript_Oak::
 # 42 "data/maps/Route1/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, Route1_EventScript_NoOak
 # 43 "data/maps/Route1/scripts.pory"
-	trainerbattle_single TRAINER_OAK, Route1_Text_YesOak, Route1_Text_OakDefeat, Route1_EventScript_PostOak, NO_MUSIC
+	setvar VAR_FORCEANIM, 1
 # 44 "data/maps/Route1/scripts.pory"
-	release
+	trainerbattle_single TRAINER_OAK, Route1_Text_YesOak, Route1_Text_OakDefeat, Route1_EventScript_PostOak, NO_MUSIC
 # 45 "data/maps/Route1/scripts.pory"
-	end
+	release
 # 46 "data/maps/Route1/scripts.pory"
-
-# 47 "data/maps/Route1/scripts.pory"
-Route1_EventScript_PostOak::
-# 48 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_OakPostBattle
-# 49 "data/maps/Route1/scripts.pory"
-	setflag FLAG_OAK_DEFEATED
-# 50 "data/maps/Route1/scripts.pory"
-	setflag FLAG_HIDE_OAK
-# 51 "data/maps/Route1/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 52 "data/maps/Route1/scripts.pory"
-	removeobject 3
-# 53 "data/maps/Route1/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 54 "data/maps/Route1/scripts.pory"
-	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
-# 55 "data/maps/Route1/scripts.pory"
-	release
-# 56 "data/maps/Route1/scripts.pory"
 	end
-# 57 "data/maps/Route1/scripts.pory"
+# 47 "data/maps/Route1/scripts.pory"
 
-# 58 "data/maps/Route1/scripts.pory"
-Route1_EventScript_NoOak::
-# 59 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_NoOak
-# 60 "data/maps/Route1/scripts.pory"
+# 48 "data/maps/Route1/scripts.pory"
+Route1_EventScript_PostOak::
+# 49 "data/maps/Route1/scripts.pory"
+	setvar VAR_FORCEANIM, 0
+# 50 "data/maps/Route1/scripts.pory"
+	msgbox Route1_Text_OakPostBattle
+# 51 "data/maps/Route1/scripts.pory"
+	setflag FLAG_OAK_DEFEATED
+# 52 "data/maps/Route1/scripts.pory"
+	setflag FLAG_HIDE_OAK
+# 53 "data/maps/Route1/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 54 "data/maps/Route1/scripts.pory"
+	removeobject 3
+# 55 "data/maps/Route1/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 56 "data/maps/Route1/scripts.pory"
+	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
+# 57 "data/maps/Route1/scripts.pory"
 	release
+# 58 "data/maps/Route1/scripts.pory"
+	end
+# 59 "data/maps/Route1/scripts.pory"
+
+# 60 "data/maps/Route1/scripts.pory"
+Route1_EventScript_NoOak::
 # 61 "data/maps/Route1/scripts.pory"
+	msgbox Route1_Text_NoOak
+# 62 "data/maps/Route1/scripts.pory"
+	release
+# 63 "data/maps/Route1/scripts.pory"
 	end
