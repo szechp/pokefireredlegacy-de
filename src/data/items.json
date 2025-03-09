@@ -627,7 +627,7 @@
     {
       "english": "BLUE FLUTE",
       "itemId": "ITEM_BLUE_FLUTE",
-      "price": 1000,
+      "price": 5000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A blue glass flute that awakens\\na sleeping POKéMON.",
@@ -643,7 +643,7 @@
     {
       "english": "YELLOW FLUTE",
       "itemId": "ITEM_YELLOW_FLUTE",
-      "price": 1000,
+      "price": 5000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A yellow glass flute that snaps one\\nPOKéMON out of confusion.",
@@ -659,7 +659,7 @@
     {
       "english": "RED FLUTE",
       "itemId": "ITEM_RED_FLUTE",
-      "price": 1000,
+      "price": 5000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A red glass flute that snaps one\\nPOKéMON out of infatuation.",
@@ -675,7 +675,7 @@
     {
       "english": "BLACK FLUTE",
       "itemId": "ITEM_BLACK_FLUTE",
-      "price": 2000,
+      "price": 5000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 50,
       "description_english": "A black glass flute.\\nWhen blown, it makes wild POKéMON\\nless likely to appear.",
@@ -691,7 +691,7 @@
     {
       "english": "WHITE FLUTE",
       "itemId": "ITEM_WHITE_FLUTE",
-      "price": 2000,
+      "price": 5000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 150,
       "description_english": "A white glass flute.\\nWhen blown, it makes wild POKéMON\\nmore likely to appear.",
