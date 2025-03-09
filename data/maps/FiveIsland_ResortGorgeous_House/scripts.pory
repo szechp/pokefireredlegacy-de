@@ -145,4 +145,43 @@ FiveIsland_ResortGorgeous_House_Movement_ButlerEnter::
 FiveIsland_ResortGorgeous_House_EventScript_Butler::
 	msgbox FiveIsland_ResortGorgeous_House_Text_LadySelphySmileHasBrillianceOfSun, MSGBOX_NPC
 	end
+
+FiveIsland_ResortGorgeous_House_EventScript_Medic::
+	lock
+	faceplayer
+	msgbox FiveIsland_ResortGorgeous_House_Text_Medic
+	closemessage
+	call EventScript_OutOfCenterPartyHeal
+	msgbox FiveIsland_ResortGorgeous_House_Text_Medic2
+	release
+	end
+
+FiveIsland_ResortGorgeous_House_Text_Medic::
+	.string "Hello there, I'm SELPHY's\n"  
+	.string "medic. Since you saved her,\l"  
+	.string "I'll heal your POKÉMON!$"  
+
+FiveIsland_ResortGorgeous_House_Text_Medic2::
+	.string "Thanks so much for\n"  
+	.string "saving her!$" 
+
+FiveIsland_ResortGorgeous_House_EventScript_PCMAN::
+	msgbox FiveIsland_ResortGorgeous_House_Text_PcMan, MSGBOX_NPC
+	msgbox FiveIsland_ResortGorgeous_House_Text_PcManYesNo, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, FiveIsland_ResortGorgeous_House_EventScript_PCMANNO
+	goto EventScript_PCMan
+	end
+
+FiveIsland_ResortGorgeous_House_EventScript_PCMANNO:
+	msgbox FiveIsland_ResortGorgeous_House_Text_Medic2, MSGBOX_NPC
+	end
+
+FiveIsland_ResortGorgeous_House_Text_PcMan::
+	.string "Hello, I'm SELPHY's personal\n"  
+	.string "technician. I've got a PC\l"  
+	.string "on me at all times!$"  
+
+FiveIsland_ResortGorgeous_House_Text_PcManYesNo:
+	.string "Do you want to access\n"  
+	.string "The PC?$"  
 `

@@ -45,5 +45,4 @@ FiveIsland_ResortGorgeous_Movement_SelphyEnterHome::
 FiveIsland_ResortGorgeous_EventScript_SelphysHouseSign::
 	msgbox FiveIsland_ResortGorgeous_Text_SelphysHouse, MSGBOX_SIGN
 	end
-
 `

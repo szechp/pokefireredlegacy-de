@@ -831,7 +831,7 @@
 #define FLAG_TREE5              0x323
 #define FLAG_R23_GUYS              0x324
 #define FLAG_HARD_NUGGET               0x325
-#define FLAG_0x326               0x326
+#define FLAG_SELPHY_PC           0x326
 #define FLAG_0x327               0x327
 #define FLAG_0x328               0x328
 #define FLAG_0x329               0x329

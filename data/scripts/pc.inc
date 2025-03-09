@@ -1,12 +1,26 @@
 EventScript_PC::
 	goto_if_questlog EventScript_ReleaseEnd
 	lockall
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	setvar VAR_0x8004, HELPCONTEXT_PC
 	special Script_SetHelpContext
 	setvar VAR_0x8004, 0
 	special AnimatePcTurnOn
 	playse SE_PC_ON
 	msgbox Text_BootedUpPC
+	goto EventScript_PCMainMenu
+	end
+
+EventScript_PCMan::
+	goto_if_questlog EventScript_ReleaseEnd
+	lockall
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	setvar VAR_0x8004, HELPCONTEXT_PC
+	special Script_SetHelpContext
+	setvar VAR_0x8004, 0
+	playse SE_PC_ON
+	msgbox Text_BootedUpPC
+	setflag FLAG_SELPHY_PC
 	goto EventScript_PCMainMenu
 	end
 
@@ -65,10 +79,15 @@ EventScript_AccessBillsPC::
 EventScript_TurnOffPC::
 	setvar VAR_0x8004, 0
 	playse SE_PC_OFF
-	special AnimatePcTurnOff
+	call_if_unset FLAG_SELPHY_PC, EventScript_TurnOffPC2
 	special SetHelpContextForMap
+	clearflag FLAG_SELPHY_PC
 	releaseall
 	end
+
+EventScript_TurnOffPC2::
+	special AnimatePcTurnOff
+	return
 
 EventScript_AccessHallOfFame::
 	goto_if_unset FLAG_SYS_GAME_CLEAR, EventScript_TurnOffPC

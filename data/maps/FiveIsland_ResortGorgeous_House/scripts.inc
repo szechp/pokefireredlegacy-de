@@ -292,3 +292,81 @@ FiveIsland_ResortGorgeous_House_EventScript_Butler::
 	msgbox FiveIsland_ResortGorgeous_House_Text_LadySelphySmileHasBrillianceOfSun, MSGBOX_NPC
 # 147 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
 	end
+# 148 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+
+# 149 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+FiveIsland_ResortGorgeous_House_EventScript_Medic::
+# 150 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	lock
+# 151 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	faceplayer
+# 152 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	msgbox FiveIsland_ResortGorgeous_House_Text_Medic
+# 153 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	closemessage
+# 154 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	call EventScript_OutOfCenterPartyHeal
+# 155 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	msgbox FiveIsland_ResortGorgeous_House_Text_Medic2
+# 156 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	release
+# 157 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	end
+# 158 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+
+# 159 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+FiveIsland_ResortGorgeous_House_Text_Medic::
+# 160 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	.string "Hello there, I'm SELPHY's\n"  
+# 161 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	.string "medic. Since you saved her,\l"  
+# 162 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	.string "I'll heal your POKÉMON!$"  
+# 163 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+
+# 164 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+FiveIsland_ResortGorgeous_House_Text_Medic2::
+# 165 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	.string "Thanks so much for\n"  
+# 166 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	.string "saving her!$" 
+# 167 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+
+# 168 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+FiveIsland_ResortGorgeous_House_EventScript_PCMAN::
+# 169 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	msgbox FiveIsland_ResortGorgeous_House_Text_PcMan, MSGBOX_NPC
+# 170 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	msgbox FiveIsland_ResortGorgeous_House_Text_PcManYesNo, MSGBOX_YESNO
+# 171 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, FiveIsland_ResortGorgeous_House_EventScript_PCMANNO
+# 172 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	goto EventScript_PCMan
+# 173 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	end
+# 174 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+
+# 175 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+FiveIsland_ResortGorgeous_House_EventScript_PCMANNO:
+# 176 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	msgbox FiveIsland_ResortGorgeous_House_Text_Medic2, MSGBOX_NPC
+# 177 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	end
+# 178 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+
+# 179 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+FiveIsland_ResortGorgeous_House_Text_PcMan::
+# 180 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	.string "Hello, I'm SELPHY's personal\n"  
+# 181 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	.string "technician. I've got a PC\l"  
+# 182 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	.string "on me at all times!$"  
+# 183 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+
+# 184 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+FiveIsland_ResortGorgeous_House_Text_PcManYesNo:
+# 185 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	.string "Do you want to access\n"  
+# 186 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
+	.string "The PC?$"
