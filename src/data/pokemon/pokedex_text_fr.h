@@ -1063,11 +1063,7 @@ const u8 gMewPokedexText[] = _(
 const u8 gMewPokedexTextUnused[] = _("");
 
 const u8 gChikoritaPokedexText[] = _(
-#if REVISION == 0
-    "Its pleasantly aromatic leaves have the\n"
-    #else
     "Its pleasantly aromatic leaf has the\n"
-    #endif
     "ability to check the humidity and\n"
     "temperature."
 );

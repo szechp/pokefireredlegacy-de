@@ -148,10 +148,9 @@ void AgbMain()
 #endif
 #endif
 
-#if REVISION == 1
     if (gFlashMemoryPresent != TRUE)
         SetMainCallback2(NULL);
-#endif
+
 
     gLinkTransferringData = FALSE;
 
