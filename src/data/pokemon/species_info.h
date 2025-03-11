@@ -4479,10 +4479,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_DRAGONITE] =
     {
         .baseHP        = 91,
-        .baseAttack    = 124,
+        .baseAttack    = 134,
         .baseDefense   = 95,
         .baseSpeed     = 80,
-        .baseSpAttack  = 110,
+        .baseSpAttack  = 100,
         .baseSpDefense = 100,
         .types = {TYPE_DRAGON, TYPE_FLYING},
         .catchRate = 45,
