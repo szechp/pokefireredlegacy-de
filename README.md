@@ -1,9 +1,73 @@
 # Pokémon FireRed Reignited Legacy and LeafGreen Regrown Legacy
 
 This is a decompilation of English Pokémon FireRed and LeafGreen that acts as the Unoffical Legacy Game of FRLG.
+a QOL if you will
+
+- A Legacy like Style Game with Both Fire Red and Leaf Green that tries to fix the many, many issues of FRLG.
+FRLG was one of the first games I ever played, and as I much of do like certain features a lot of decisions were dumb, such as removing cross gen evos.
+Kanto itself as a region has a lot of issues present in gen 1, that was kept in the remakes. Like in Legacy, I tried to keep the general feeling intact while making the experience much better. I would say this game is 80% legacy as I did my own things that are a bit far off (such as map changes cause mt moon looks like ass), but it still should be close. 
 
 Features:
-- A Legacy Style Game with Both Fire Red and Leaf Green
+- All Kanto and Johto Pokemon Available in both Versions
+- The Main dex has 181 Pokemon, 30 New Pokemon, 2/3 of which are Evos and Pre Evos, 1/3 are added johto pokemon to strengthen type diversity and johto connection
+(Some more may be gotten with secret means)
+- Both versions are avaible to play, You can catch all of them in both version but some pokemon are earlier in certain versions (Viridan Forest has Oddish in Fire Red, Bellsprout in Leaf Green, but both can be caught in route 24 and 25 in both versions + More)
+- Some Maps been changed to look a lot less empty, such as cinnabar island and Mt Moon
+- Added Mt Moon Square and a floor under Rock Tunnel, both accessed with rock smash
+  
+Battle Improvements:
+- Improved Pokemon Locations, stats, movesets, and moves (Bug Type Cut, Improved Movesets, Higher Stats, Better Abilities for some) (Nidorans are back on route 22)
+- Many Battle Engine and Stat Changes from Emerald Legacy (Ported Directly from EL, but I made my own changes) (50% Boost to defense for hail for instance)
+- Dark and Ghost Swapped Types
+- Better Trainer Teams (Better Curve, better movesets, mons evolved, giovanni has a rhydon now) (Also includes cross gen evos) (Champion is capped at 65)
+- Gift Pokemon are Higher Level
+- Many Emerald and Yellow Legacy Features (Fishing Rod Placement, Getting the Fossils, Oak Battles, etc)
+- Selectable Difficulty Modes from Legacy (Normal has classic pokemon rules, Hard has lvl caps, no items in battle with set mode, Hardcore has perma death)
+- I mainly tried to keep the feel of each pokemon intact and just give improvements to make them just a viable choice and not a liablity. This also allows for better trainer team building
+  
+Sevii Islands and Postgame:
+- Much more Postgame Content (Especially on The sevii islands)
+- There's kinda a Sevii League that rewards you with the Aurora Ticket
+- Gym leader rematches
+- Roamers made much easier to get (Beating the elite four spawns the other roamers assuming you caught the current roamer, they don't roar, they have good ivs, and a npc on Five Island shows you them to put them in the dex. Also this NPC has something
+- Better rewards and items given thoughout the game (Facade Onix Guy gives you a lucky egg now) (Selphy has a chance for master balls)
+- VS Seeker Postgame Upgrade (Only takes 1/5 of the steps and gets 100% of all trainers in range)
+- National Dex 60 Pokemon requirement removed
+- Eggtutor after you beat a certain set of trainers
+- A Certain set of trainers from Johto are avaible to battle
+- Catch all 180 Pokemon, and meet up with oak
+- Embark on a Treasure Hunt for celebi
+
+HMs:
+- All Cut Trees and Rocks get removed permently
+- HMs are Replaceable
+- Rock Smash added over the Everstone aid with more rocks placed (Optional) Everstone is placed in rock tunnel (Ex: Rock on route 4 that you can break to reach mt moon from cerulean) (Rock Smash can be used after beating Surge)
+- TMs got better placement (Hidden Power, Sludge Bomb, Facade are in the game, Locations got more tms like Seafoam has a ice beam tm)
+- Some New Optional Areas Accessed by Rock Smash
+- Removed Waterfall Needed use on Four Island (Is just a trophy type item, also dive added as a trophy type island in Safari Zone)
+
+QOL:
+- EV and IV checkers on the 2nd floor of pokecenters
+- EXP Share Is in place of the running shoes (Running shoes is gotten at oaks lab at the start of the game)
+- Repels Reuse
+- Price Adjustments
+- Team Rocket has their own Theme now (Theme from Crystal Dust)
+- You can get to the truck without trading (A Certain Pokemon gets Cut at a decently high level at that point) (There's no Mew, but something convenient is there)
+- Some NPCs block trees until you beat the SS ANNE Rival
+- Beating Misty and Blue also Opens up the dig house (Still Need to get SS Ticket)
+- Beat up a guard after getting Vermillion's City Badge to open the gates (Hes pretty overleveled)
+- Many QOL features such as repeated medicine use, a bike gear to increase bike speed, and running indoors
+- Ported Emerald Features such of out of battle ability effects, Preimer Balls, and EV reducing Berries
+- Improved many shops (2 Island Merchant has better Items as a example)
+- Respawnable items only need 1000 steps
+- Move Tutor Moved to cinnabar, mushrooms buyable on three island, TM seller in the two island house now (can sell all tms after the postgame quest)
+- Trainer Tower Singles and Doubles have more pokemon (With better sets and rewards)
+- More Overworld Sprites for trainers (Psychics and Such)
+- Some unused Victory road trainers are added
+- Champion and Oak turns on Battle Animations like in RBY
+- Safari Zone improvements to make rocks baits and balls better
+- Relearn Move Tutor Moves at a price
+- Some more stuff I forgot
 
 To set up the repository, see [INSTALL.md](INSTALL.md).
 
@@ -25,15 +89,15 @@ Kewaun
 Credits:
 Pokemon Legacy Team - (Inspiration)
 
-Emerald Legacy (Smith and Craig) - Battle Engine Changes and More, Brick Piece also by Isona
+Emerald Legacy (Smith and Craig) - Battle Engine Changes and More, Brick Piece also by Isona, Houndoom Sprite by ZuperZach
 
 Yellow Legacy - Text that was Ported as well as certain events
 
-FRLG + (Deo uhh) - Lots of the QOL Changes you see here and the Extra Overworld Sprites, Porting Emerald Stuff (Was a huge help with FRLG Documentation)
+FRLG + (Deokishisu) - Lots of the QOL Changes you see here and the Extra Overworld Sprites, Porting Emerald Stuff (Was a huge help with FRLG Documentation)
 
-Charles Fire Red - Priemere Ball Code 
+Charles Fire Red (Charles) - Priemere Ball Code 
 
-Celia's Stupid RomHack - Repeated Medicine/Rare Candy Use 
+Celia's Stupid RomHack (Dawn) - Repeated Medicine/Rare Candy Use 
 
 Pokemon FireGold - Certain Leader Sprites
 
