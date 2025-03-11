@@ -494,7 +494,6 @@ static const struct TrainerMon sParty_Speedy[] = {
         .heldItem = ITEM_LEFTOVERS,
         .moves = {MOVE_ICE_BEAM, MOVE_GIGA_DRAIN, MOVE_HYDRO_PUMP, MOVE_LEECH_SEED},
         .evs = {0, 0, 0, 252, 252, 0},
-
     },
     {
         .iv = 255,
@@ -2438,10 +2437,10 @@ static const struct TrainerMon sParty_Armstrong[] = {
     {
         .iv = 255,
         .lvl = 69,
-        .species = SPECIES_AERODACTYL,
+        .species = SPECIES_TYRANITAR,
         .heldItem = ITEM_CHOICE_BAND,
-        .moves = {MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_SKY_ATTACK, MOVE_DOUBLE_EDGE},
-        .evs = {0, 252, 0, 252, 0, 0},
+        .moves = {MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_CRUNCH, MOVE_AERIAL_ACE},
+        .evs = {252, 252, 0, 0, 0, 0},
 
     },
     {
@@ -2468,9 +2467,9 @@ static const struct TrainerMon sParty_Oman[] = {
     {
         .iv = 255,
         .lvl = 67,
-        .species = SPECIES_TROPIUS,
+        .species = SPECIES_MEGANIUM,
         .heldItem = ITEM_LEFTOVERS,
-        .moves = {MOVE_SUBSTITUTE, MOVE_GIGA_DRAIN, MOVE_TOXIC, MOVE_LEECH_SEED},
+        .moves = {MOVE_SUBSTITUTE, MOVE_GIGA_DRAIN, MOVE_GRASS_WHISTLE, MOVE_LEECH_SEED},
         .evs = {252, 0, 0, 0, 0, 252},
         .ability = 0,
     },
