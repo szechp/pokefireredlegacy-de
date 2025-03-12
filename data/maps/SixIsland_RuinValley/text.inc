@@ -88,15 +88,21 @@ SixIsland_RuinValley_Text_HectorPostBattle::
 
 SixIsland_PatternBush_Text_Giovanni::  
 	.string "Oh, hello there again,\n"  
-	.string "CHAMPION {PLAYER}.\p"  
+	.string "CHAMPION {PLAYER}.$"  
+
+SixIsland_PatternBush_Text_Giovanni2::  
 	.string "It's been quite a long time\n"  
 	.string "since I disbanded TEAM ROCKET,\l"  
 	.string "but not everyone got the memo.\l"  
-	.string "Some are still keeping it alive.\p"  
+	.string "Some are still keeping it alive.$"  
+
+SixIsland_PatternBush_Text_Giovanni3::  
 	.string "I keep wondering what to do\n"  
 	.string "about them. I saw my strongest\l"  
 	.string "admins lose their best POKÉMON,\l"  
-	.string "yet they still want to fight.\p"  
+	.string "yet they still want to fight.$" 
+
+SixIsland_PatternBush_Text_Giovanni4::  
 	.string "I won't be staying here for\n"  
 	.string "long. I plan to leave soon.\p"  
 	.string "But I will say, you've made\n"  

@@ -44,20 +44,16 @@ PokemonMansion_1F_Text_Oak2::
     .string "one ponders its origins..\p"  
     .string "I spent many years exploring\n"  
     .string "the region to discover every\l"  
-    .string "species.\p"  
+    .string "species.$" 
+
+PokemonMansion_1F_Text_Oak3::
     .string "There were a few, however.\p" 
     .string "They were so powerful,\n"  
     .string "so rare,\l"  
     .string "I had to keep their capture\l"  
-    .string "hidden.\p"  
-    .string "In learning of MEWTWO's\n"  
-    .string "creation,\l"  
-    .string "it seems my fears were\l"  
-    .string "well placed.\p"  
-    .string "Not all are capable of\n"  
-    .string "wielding such power.\p"  
+    .string "hidden.$"   
 
-PokemonMansion_1F_Text_Oak3::
+PokemonMansion_1F_Text_Oak4::
     .string "But let's focus on the present.\p"  
     .string "{PLAYER}!\p"  
     .string "You have become a Pokémon\n"  

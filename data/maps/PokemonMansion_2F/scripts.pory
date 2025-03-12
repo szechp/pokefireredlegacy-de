@@ -1,4 +1,6 @@
 raw `
+.equ LOCALID_OAK, 5
+
 PokemonMansion_2F_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, PokemonMansion_2F_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, PokemonMansion_2F_Transition
@@ -41,7 +43,18 @@ PokemonMansion_2F_EventScript_Arnie::
 	end
 
 PokemonMansion_2F_EventScript_Oak::
-	msgbox PokemonMansion_1F_Text_Oak, MSGBOX_YESNO
+	lock
+	faceplayer
+	msgbox PokemonMansion_1F_Text_Oak
+	waitmovement 0
+	applymovement LOCALID_OAK, Common_Movement_FaceRight
+	msgbox PokemonMansion_1F_Text_Oak2
+	waitmovement 0
+	applymovement LOCALID_OAK, Common_Movement_FaceUp
+	msgbox PokemonMansion_1F_Text_Oak3
+	waitmovement 0
+	applymovement LOCALID_OAK, Common_Movement_FacePlayer
+	msgbox PokemonMansion_1F_Text_Oak4, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, PokemonMansion_2F_EventScript_NoOak
 	setvar VAR_FORCEANIM, 1
 	trainerbattle_single TRAINER_OAK2, PokemonMansion_1F_Text_YesOak, PokemonMansion_1F_Text_OakDefeat, PokemonMansion_2F_EventScript_PostOak, NO_MUSIC

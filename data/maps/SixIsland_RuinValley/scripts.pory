@@ -48,20 +48,29 @@ SixIsland_RuinValley_EventScript_IgnoreDottedHoleDoor::
 	end
 
 SixIsland_RuinValley_EventScript_Giovanni::
-	waitmovement 0
-	applymovement LOCALID_GIOVANNI, Common_Movement_FacePlayer
+	lock
 	waitse
 	playse SE_PIN	
-	applymovement LOCALID_GIOVANNI, Common_Movement_ExclamationMark
-	lock
-	faceplayer
-	msgbox SixIsland_PatternBush_Text_Giovanni, MSGBOX_YESNO
+	applymovement LOCALID_GIOVANNI, Common_Movement_ExclamationMarkDelay
+	waitmovement 0
+	msgbox SixIsland_PatternBush_Text_Giovanni
+	waitmovement 0
+	applymovement LOCALID_GIOVANNI, Common_Movement_FacePlayer
+	msgbox SixIsland_PatternBush_Text_Giovanni2
+	waitmovement 0
+	applymovement LOCALID_GIOVANNI, Common_Movement_FaceLeft
+	msgbox SixIsland_PatternBush_Text_Giovanni3
+	waitmovement 0
+	applymovement LOCALID_GIOVANNI, Common_Movement_FacePlayer
+	msgbox SixIsland_PatternBush_Text_Giovanni4, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, SixIsland_RuinValley_EventScript_GiovanniNo
+	setvar VAR_FORCEANIM, 1
 	trainerbattle_single TRAINER_JACKO, SixIsland_PatternBush_Text_GiovanniYes, SixIsland_PatternBush_Text_GiovanniDefeat, SixIsland_RuinValley_EventScript_PostGiovanni, NO_MUSIC
 	release
 	end
 
 SixIsland_RuinValley_EventScript_PostGiovanni::
+	setvar VAR_FORCEANIM, 0
 	msgbox SixIsland_PatternBush_Text_GiovanniPost
 	setflag FLAG_GIOVANNI4
 	removeobject 18
