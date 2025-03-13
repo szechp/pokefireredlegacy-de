@@ -1307,6 +1307,7 @@ VermilionCity_PokemonCenter_1F_EventScript_UpgradeVSSeeker::
 	msgbox VermilionCity_PokemonCenter_1F_Text_Upgrade
 	setflag FLAG_VS_SEEKER_UPGRADE
 	playfanfare MUS_OBTAIN_KEY_ITEM
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	message VermilionCity_PokemonCenter_1F_Text_SeekerUpgrade
 	waitmessage
 	waitfanfare

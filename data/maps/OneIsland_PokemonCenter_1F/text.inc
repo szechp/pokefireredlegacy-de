@@ -358,7 +358,8 @@ OneIsland_PokemonCenter_1F_Text_MachineLinkedWithKantoAndHoenn::
     .string "Network Machine\n"
     .string "Link Level 2\p"
     .string "Link established with the KANTO\n"
-    .string "and HOENN regions.$"
+    .string "and HOENN regions.\p"
+    .string "Power at 100 Percent!$"
 
 OneIsland_PokemonCenter_1F_Text_ObtainedTriPass::
     .string "Obtained the TRI-PASS!$"
