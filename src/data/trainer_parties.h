@@ -483,6 +483,7 @@ static const struct TrainerMon sParty_Speedy[] = {
         .iv = 255,
         .lvl = 67,
         .species = SPECIES_NIDOQUEEN,
+        .heldItem = ITEM_LEFTOVERS,
         .moves = {MOVE_EARTHQUAKE, MOVE_SLUDGE_BOMB, MOVE_SUPERPOWER, MOVE_ICE_BEAM},
         .evs = {252, 252, 0, 0, 0, 0},
 
@@ -490,10 +491,10 @@ static const struct TrainerMon sParty_Speedy[] = {
     {
         .iv = 255,
         .lvl = 67,
-        .species = SPECIES_LUDICOLO,
-        .heldItem = ITEM_LEFTOVERS,
-        .moves = {MOVE_ICE_BEAM, MOVE_GIGA_DRAIN, MOVE_HYDRO_PUMP, MOVE_LEECH_SEED},
-        .evs = {0, 0, 0, 252, 252, 0},
+        .species = SPECIES_FERALIGATR,
+        .heldItem = ITEM_QUICK_CLAW,
+        .moves = {MOVE_BLIZZARD, MOVE_EARTHQUAKE, MOVE_HYDRO_PUMP, MOVE_CRUNCH},
+        .evs = {0, 252, 0, 0, 252, 0},
     },
     {
         .iv = 255,

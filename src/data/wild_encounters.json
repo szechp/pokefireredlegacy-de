@@ -13245,7 +13245,7 @@
               {
                 "min_level": 48,
                 "max_level": 48,
-                "species": "SPECIES_SKIPLOOM"
+                "species": "SPECIES_PARAS"
               },
               {
                 "min_level": 46,
@@ -14370,7 +14370,7 @@
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_TROPIUS"
+                "species": "SPECIES_SKIPLOOM"
               },
               {
                 "min_level": 34,
@@ -14380,12 +14380,12 @@
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_SUNKERN"
+                "species": "SPECIES_SUNFLORA"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_HOPPIP"
+                "species": "SPECIES_JUMPLUFF"
               },
               {
                 "min_level": 5,
@@ -14395,7 +14395,7 @@
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_HOPPIP"
+                "species": "SPECIES_JUMPLUFF"
               },
               {
                 "min_level": 5,
@@ -16204,17 +16204,17 @@
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_LUVDISC"
+                "species": "SPECIES_QWILFISH"
               },
               {
                 "min_level": 25,
                 "max_level": 35,
-                "species": "SPECIES_CLAMPERL"
+                "species": "SPECIES_GYARADOS"
               },
               {
                 "min_level": 25,
                 "max_level": 35,
-                "species": "SPECIES_CLAMPERL"
+                "species": "SPECIES_STARMIE"
               }
             ]
           }
@@ -16293,17 +16293,17 @@
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_LUVDISC"
+                "species": "SPECIES_QWILFISH"
               },
               {
                 "min_level": 25,
                 "max_level": 35,
-                "species": "SPECIES_CLAMPERL"
+                "species": "SPECIES_GYARADOS"
               },
               {
                 "min_level": 25,
                 "max_level": 35,
-                "species": "SPECIES_CLAMPERL"
+                "species": "SPECIES_STARMIE"
               }
             ]
           }
