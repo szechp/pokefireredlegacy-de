@@ -14,8 +14,9 @@ Features:
 - Some Maps been changed to look a lot less empty, such as cinnabar island and Mt Moon
 - Added Mt Moon Square and a floor under Rock Tunnel, both accessed with rock smash
   
-Battle Improvements:
+Battle and locationImprovements:
 - Improved Pokemon Locations, stats, movesets, and moves (Bug Type Cut, Improved Movesets, Higher Stats, Better Abilities for some) (Nidorans are back on route 22)
+- A lot of the pokemon releated locations mirrors Yellow Legacy
 - Many Battle Engine and Stat Changes from Emerald Legacy (Ported Directly from EL, but I made my own changes) (50% Boost to defense for hail for instance)
 - Dark and Ghost Swapped Types
 - Better Trainer Teams (Better Curve, better movesets, mons evolved, giovanni has a rhydon now) (Also includes cross gen evos) (Champion is capped at 65)
