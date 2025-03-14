@@ -11,7 +11,6 @@ Features:
 - All Kanto and Johto Pokemon Available in both Versions
 - The Main dex has 181 Pokemon, 30 New Pokemon, 2/3 of which are Evos and Pre Evos, 1/3 are added johto pokemon to strengthen type diversity and johto connection
 (Some more may be gotten with secret means)
-- Both versions are avaible to play, You can catch all of them in both version but some pokemon are earlier in certain versions (Viridan Forest has Oddish in Fire Red, Bellsprout in Leaf Green, but both can be caught in route 24 and 25 in both versions + More)
 - Some Maps been changed to look a lot less empty, such as cinnabar island and Mt Moon
 - Added Mt Moon Square and a floor under Rock Tunnel, both accessed with rock smash
   
@@ -27,27 +26,31 @@ Battle Improvements:
   
 Sevii Islands and Postgame:
 - Much more Postgame Content (Especially on The sevii islands)
-- There's kinda a Sevii League that rewards you with the Aurora Ticket
+- More Battles 
+- There's kinda a Sevii League (A Bunch of boss trainrs to fight) that rewards you with the Aurora Ticket
 - Gym leader rematches
-- Roamers made much easier to get (Beating the elite four spawns the other roamers assuming you caught the current roamer, they don't roar, they have good ivs, and a npc on Five Island shows you them to put them in the dex. Also this NPC has something
+- Roamers made much easier to get (Beating the elite four spawns the other roamers assuming you caught the current roamer, they don't roar, they have good ivs, and a npc on Five Island shows you them to put them in the dex. Also this NPC has something)
 - Better rewards and items given thoughout the game (Facade Onix Guy gives you a lucky egg now) (Selphy has a chance for master balls)
 - VS Seeker Postgame Upgrade (Only takes 1/5 of the steps and gets 100% of all trainers in range)
 - National Dex 60 Pokemon requirement removed
 - Eggtutor after you beat a certain set of trainers
-- A Certain set of trainers from Johto are avaible to battle
-- Catch all 180 Pokemon, and meet up with oak
-- Embark on a Treasure Hunt for celebi
+- A Certain set of trainers from Johto are available to battle
+- Catch all 180 Pokemon in the dex, and meet up with oak
+- Embark on a Treasure Hunt for Celebi
 
 HMs:
-- All Cut Trees and Rocks get removed permently
+- All Cut Trees and Rocks get removed permanently
 - HMs are Replaceable
+- Victory Road Boulders stay in place
 - Rock Smash added over the Everstone aid with more rocks placed (Optional) Everstone is placed in rock tunnel (Ex: Rock on route 4 that you can break to reach mt moon from cerulean) (Rock Smash can be used after beating Surge)
-- TMs got better placement (Hidden Power, Sludge Bomb, Facade are in the game, Locations got more tms like Seafoam has a ice beam tm)
+- TMs got better placement (Hidden Power, Sludge Bomb, Facade are in the game, Locations got more tms like Seafoam has a ice beam tm, thunderbolt in power plant, flamethrower on mt ember)
 - Some New Optional Areas Accessed by Rock Smash
 - Removed Waterfall Needed use on Four Island (Is just a trophy type item, also dive added as a trophy type island in Safari Zone)
 
 QOL:
-- EV and IV checkers on the 2nd floor of pokecenters
+- Faster Nurse Joy
+- Bag Sorting
+- EV and IV checkers on the 2nd floor of Pokecenters
 - EXP Share Is in place of the running shoes (Running shoes is gotten at oaks lab at the start of the game)
 - Repels Reuse
 - Price Adjustments
@@ -57,7 +60,7 @@ QOL:
 - Beating Misty and Blue also Opens up the dig house (Still Need to get SS Ticket)
 - Beat up a guard after getting Vermillion's City Badge to open the gates (Hes pretty overleveled)
 - Many QOL features such as repeated medicine use, a bike gear to increase bike speed, and running indoors
-- Ported Emerald Features such of out of battle ability effects, Preimer Balls, and EV reducing Berries
+- Ported Emerald Features such of out of battle ability effects, Premier Balls, and EV reducing Berries
 - Improved many shops (2 Island Merchant has better Items as a example)
 - Respawnable items only need 1000 steps
 - Move Tutor Moved to cinnabar, mushrooms buyable on three island, TM seller in the two island house now (can sell all tms after the postgame quest)
@@ -69,42 +72,48 @@ QOL:
 - Relearn Move Tutor Moves at a price
 - Some more stuff I forgot
 
+- VERSION DIFFERENCES:
+- Both versions are available to play, You can catch all of them in both version but some pokemon are earlier in certain versions (For Example Viridian Forest has Oddish in Fire Red, Bellsprout in Leaf Green, but both can be caught in route 24 and 25 in both versions + More)
+- Viridian Forest has Oddish in Fire Red, Bellsprout in Leaf Green
+- Route 9 has Pinsir in Fire Red, Scyther in Leaf Green
+- Route 16 has Murkrow in Fire Red, Sneasel in Leaf Green
+- Certain Traded mons are different
+- Most Importantly, Pontya Trade in Fire Red and Cubone Trade in Leaf Green
+
 To set up the repository, see [INSTALL.md](INSTALL.md).
 
 For contacts and other pret projects, see [pret.github.io](https://pret.github.io/).
 
 Delevoper:
-SpikeCation (Sole Dev)
+- SpikeCation (Sole Dev)
 
 Playtesters:
 
-BlazeTorrent
+- BlazeTorrent
 
-BasedTuxedoMan
+- BasedTuxedoMan
 
-Taconator
-
-Kewaun
+- Kewaun
 
 Credits:
-Pokemon Legacy Team - (Inspiration)
+- Pokemon Legacy Team - (Inspiration)
 
-Emerald Legacy (Smith and Craig) - Battle Engine Changes and More, Brick Piece also by Isona, Houndoom Sprite by ZuperZach
+- Emerald Legacy (Smith and Craig) - Battle Engine Changes and More, Brick Piece also by Isona, Houndoom Sprite by ZuperZach
 
-Yellow Legacy - Text that was Ported as well as certain events
+- Yellow Legacy - Text that was Ported as well as certain events
 
-FRLG + (Deokishisu) - Lots of the QOL Changes you see here and the Extra Overworld Sprites, Porting Emerald Stuff (Was a huge help with FRLG Documentation)
+- FRLG + (Deokishisu) - Lots of the QOL Changes you see here and the Extra Overworld Sprites, Porting Emerald Stuff (Was a huge help with FRLG Documentation)
 
-Charles Fire Red (Charles) - Priemere Ball Code 
+- Charles Fire Red (Charles) - Priemere Ball Code 
 
-Celia's Stupid RomHack (Dawn) - Repeated Medicine/Rare Candy Use 
+- Celia's Stupid RomHack (Dawn) - Repeated Medicine/Rare Candy Use 
 
-Pokemon FireGold - Certain Leader Sprites
+- Pokemon FireGold - Certain Leader Sprites
 
-Pokemon Crystal Dust - Team Rocket Battle Music
+- Pokemon Crystal Dust - Team Rocket Battle Music
 
-Pret Team - Help with Stuff and this Entire Project Possible
+- Pret Team - Help with Stuff and this Entire Project Possible
 
-Team Aqua Hideout - Like Above for help
+- Team Aqua Hideout - Like Above for help
 
-Numerous Pret Tutorials
+- Numerous Pret Tutorials

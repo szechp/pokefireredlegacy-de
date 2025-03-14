@@ -17,13 +17,13 @@ VictoryRoad_2F_MapScripts::
 # 9 "data/maps/VictoryRoad_2F/scripts.pory"
 VictoryRoad_2F_OnLoad::
 # 10 "data/maps/VictoryRoad_2F/scripts.pory"
-	call_if_eq VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER1, 100, VictoryRoad_2F_EventScript_MoveSwitch1Boulder
-# 11 "data/maps/VictoryRoad_2F/scripts.pory"
 	call_if_ne VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER1, 100, VictoryRoad_2F_EventScript_SetRockBarrier1
+# 11 "data/maps/VictoryRoad_2F/scripts.pory"
+	call_if_eq VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER1, 100, VictoryRoad_2F_EventScript_MoveSwitch1Boulder
 # 12 "data/maps/VictoryRoad_2F/scripts.pory"
-	call_if_eq VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER2, 100, VictoryRoad_2F_EventScript_MoveSwitch1Boulder
-# 13 "data/maps/VictoryRoad_2F/scripts.pory"
 	call_if_ne VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER2, 100, VictoryRoad_2F_EventScript_SetRockBarrier2
+# 13 "data/maps/VictoryRoad_2F/scripts.pory"
+	call_if_eq VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER2, 100, VictoryRoad_2F_EventScript_MoveSwitch2Boulder
 # 14 "data/maps/VictoryRoad_2F/scripts.pory"
 	end
 # 15 "data/maps/VictoryRoad_2F/scripts.pory"
