@@ -169,3 +169,14 @@ PewterCity_Text_RunningShoesLetterFromMom::
     .string "you! Don't ever give up!\p"
     .string "From Mom$"
 
+PewterCity_Text_AbilityGirl::
+	.string "Abilities are so cool!\p"
+ 	.string "POKéMON with PICKUP can find all sorts\n"
+ 	.string "of rare items, even a RARE CANDY.\p"
+ 	.string "MAGMA ARMOR is so hot, it evaporates\n"
+ 	.string "WATER attacks and reduces their\l"
+ 	.string "damage.\p"
+ 	.string "STENCH smells so bad that the opponent\n"
+ 	.string "might miss you, while ILLUMINATE makes\l"
+ 	.string "it easier to see and ignore accuracy\l"
+ 	.string "loss!$"

@@ -77,7 +77,7 @@ FiveIsland_Meadow_EventScript_Gym2::
 	end
 
 FiveIsland_Meadow_Text_Gym2::
-	.string "Hey! I'll have you know\l"
+	.string "Hey! I'll have you know\n"
 	.string "my DUNSPARCE has taken\l"
 	.string "down many great foes,\l"
 	.string "even CLAIR!$"

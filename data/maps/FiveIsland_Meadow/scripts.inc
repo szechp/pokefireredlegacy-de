@@ -157,7 +157,7 @@ FiveIsland_Meadow_EventScript_Gym2::
 # 79 "data/maps/FiveIsland_Meadow/scripts.pory"
 FiveIsland_Meadow_Text_Gym2::
 # 80 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "Hey! I'll have you know\l"
+	.string "Hey! I'll have you know\n"
 # 81 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.string "my DUNSPARCE has taken\l"
 # 82 "data/maps/FiveIsland_Meadow/scripts.pory"

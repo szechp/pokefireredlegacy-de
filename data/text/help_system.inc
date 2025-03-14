@@ -805,7 +805,7 @@ Help_Text_HowToUseHM::
 	.string "{CIRCLE_3} “OPEN” the TM CASE.\n"
 	.string "{CIRCLE_4} Select and “USE” an HM.\n"
 	.string "{CIRCLE_5} Select a POKéMON that can learn it.\n"
-	.string "HMs are hard to remove, so be careful!$"
+	.string "You can remove HMs at anytime!$"
 
 Help_Text_HowToUseMoveOutsideOfBattle::
 	.string "{CIRCLE_1} Open the MENU.\n"
@@ -1217,7 +1217,7 @@ Help_Text_DefineAttack::
 	.string "the more powerful the move.\l"
 	.string "It is applied for the following move\l"
 	.string "types: NORMAL, POISON, GROUND,\l"
-	.string "FLYING, BUG, FIGHTING, ROCK, GHOST,\l"
+	.string "FLYING, BUG, FIGHTING, ROCK, DARK,\l"
 	.string "and STEEL.$"
 
 Help_Text_DefineDefense::
@@ -1233,7 +1233,7 @@ Help_Text_DefineSpAtk::
 	.string "the special attack move.\l"
 	.string "It is applied for the following move\l"
 	.string "types: FIRE, WATER, ELECTRIC, GRASS,\l"
-	.string "ICE, PSYCHIC, DRAGON, and DARK.$"
+	.string "ICE, PSYCHIC, DRAGON, and GHOST.$"
 
 Help_Text_DefineSpDef::
 	.string "SP. DEF (Special Defense) indicates\n"
