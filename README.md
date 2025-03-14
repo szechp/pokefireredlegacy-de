@@ -112,6 +112,10 @@ Credits:
 
 - Pokemon Crystal Dust - Team Rocket Battle Music
 
+- Patching Info, best for your sha1 to have this
+pokefirered.gba sha1: 41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc
+pokeleafgreen.gba sha1: 574fa542ffebb14be69902d1d36f1ec0a4afd71e
+
 - Pret Team - Help with Stuff and this Entire Project Possible
 
 - Team Aqua Hideout - Like Above for help
