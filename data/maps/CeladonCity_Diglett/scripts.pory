@@ -16,7 +16,6 @@ CeladonCity_Diglett_EventScript_GuardHater::
 	end
 
 CeladonCity_Diglett_EventScript_GuardHaterThanks::
-	msgbox CeladonCity_Diglett_Text_GuardHaterThanks, MSGBOX_NPC
 	checkitem ITEM_NUGGET
 	giveitem ITEM_NUGGET
 	setflag FLAG_GOT_DIG_NUGGET
