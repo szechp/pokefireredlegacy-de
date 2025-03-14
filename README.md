@@ -80,6 +80,8 @@ QOL:
 - Certain Traded mons are different
 - Most Importantly, Pontya Trade in Fire Red and Cubone Trade in Leaf Green
 
+For Info on Pokemon Stat Changes, Move Changes, Trainer Teams, ETC, consult this link (for pokemon stuff check the pokemon file) [Docs](https://github.com/Bruhcation/pokefireredlegacy/tree/master/src/data).
+
 To set up the repository, see [INSTALL.md](INSTALL.md).
 
 For contacts and other pret projects, see [pret.github.io](https://pret.github.io/).
@@ -112,12 +114,12 @@ Credits:
 
 - Pokemon Crystal Dust - Team Rocket Battle Music
 
-- Patching Info, best for your sha1 to have this
-pokefirered.gba sha1: 41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc
-pokeleafgreen.gba sha1: 574fa542ffebb14be69902d1d36f1ec0a4afd71e
-
 - Pret Team - Help with Stuff and this Entire Project Possible
 
 - Team Aqua Hideout - Like Above for help
 
 - Numerous Pret Tutorials
+
+- Patching Info, best for your sha1 to have this
+pokefirered.gba sha1: 41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc
+pokeleafgreen.gba sha1: 574fa542ffebb14be69902d1d36f1ec0a4afd71e
