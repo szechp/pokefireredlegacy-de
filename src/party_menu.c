@@ -5102,7 +5102,7 @@ static void ItemUseCB_RareCandyStep(u8 taskId, TaskFunc func)
     StringExpandPlaceholders(gStringVar4, gText_PkmnElevatedToLvVar2);
     DisplayPartyMenuMessage(gStringVar4, TRUE);
     ScheduleBgCopyTilemapToVram(2);
-    gTasks[taskId].func = Task_DisplayLevelUpStatsPg1;
+    gTasks[taskId].func = Task_WaitRareCandyMessage; 
 }
 
 static void Task_WaitRareCandyMessage(u8 taskId)
@@ -5110,7 +5110,7 @@ static void Task_WaitRareCandyMessage(u8 taskId)
     if (WaitFanfare(FALSE) && IsPartyMenuTextPrinterActive() != TRUE && (JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON)))
     {
         PlaySE(SE_SELECT);
-        gTasks[taskId].func = Task_TryLearnNewMoves;
+        gTasks[taskId].func = Task_DisplayLevelUpStatsPg1;
     }
 }
 
