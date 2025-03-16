@@ -4736,7 +4736,7 @@
         },
         {
           "map": "MAP_CERULEAN_CAVE_B1F",
-          "base_label": "sCeruleanCaveB1F_LeafGreen",
+          "base_label": "sCeruleanCaveB1F0",
           "land_mons": {
             "encounter_rate": 7,
             "mons": [
@@ -18649,7 +18649,7 @@
               },
               {
                 "min_level": 15,
-                "max_level": 20,
+                "max_level": 18,
                 "species": "SPECIES_HORSEA"
               },
               {
@@ -18659,7 +18659,7 @@
               },
               {
                 "min_level": 15,
-                "max_level": 20,
+                "max_level": 18,
                 "species": "SPECIES_SLOWPOKE"
               },
               {
@@ -18833,7 +18833,7 @@
               },
               {
                 "min_level": 15,
-                "max_level": 20,
+                "max_level": 18,
                 "species": "SPECIES_HORSEA"
               },
               {
@@ -18843,7 +18843,7 @@
               },
               {
                 "min_level": 15,
-                "max_level": 20,
+                "max_level": 18,
                 "species": "SPECIES_SLOWPOKE"
               },
               {
@@ -22078,7 +22078,7 @@
         },
         {
           "map": "MAP_PALLET_TOWN",
-          "base_label": "sPalletTown_FireRed",
+          "base_label": "sPalletTown0",
           "water_mons": {
             "encounter_rate": 1,
             "mons": [

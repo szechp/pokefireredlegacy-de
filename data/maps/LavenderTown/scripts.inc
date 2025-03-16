@@ -99,66 +99,70 @@ LavenderTown_EventScript_PokemonTowerSign::
 # 50 "data/maps/LavenderTown/scripts.pory"
 LavenderTown_EventScript_Karen::
 # 51 "data/maps/LavenderTown/scripts.pory"
-	goto_if_set FLAG_DEFEATED_KAREN, LavenderTown_EventScript_RematchKaren
+	lock
 # 52 "data/maps/LavenderTown/scripts.pory"
-	msgbox LavenderTown_Text_Karen, MSGBOX_YESNO
+	faceplayer
 # 53 "data/maps/LavenderTown/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, LavenderTown_EventScript_NoKaren
+	goto_if_set FLAG_DEFEATED_KAREN, LavenderTown_EventScript_RematchKaren
 # 54 "data/maps/LavenderTown/scripts.pory"
-	trainerbattle_single TRAINER_KAREN, LavenderTown_Text_YesKaren, LavenderTown_Text_KarenDefeat, LavenderTown_EventScript_PostKaren, NO_MUSIC
+	msgbox LavenderTown_Text_Karen, MSGBOX_YESNO
 # 55 "data/maps/LavenderTown/scripts.pory"
-	release
-# 56 "data/maps/LavenderTown/scripts.pory"
-	end
-# 57 "data/maps/LavenderTown/scripts.pory"
-
-# 58 "data/maps/LavenderTown/scripts.pory"
-LavenderTown_EventScript_PostKaren::
-# 59 "data/maps/LavenderTown/scripts.pory"
-	msgbox LavenderTown_Text_KarenPostBattle
-# 60 "data/maps/LavenderTown/scripts.pory"
-	setflag FLAG_DEFEATED_KAREN
-# 61 "data/maps/LavenderTown/scripts.pory"
-	cleartrainerflag TRAINER_KAREN
-# 62 "data/maps/LavenderTown/scripts.pory"
-	giveitem ITEM_WHITE_FLUTE
-# 63 "data/maps/LavenderTown/scripts.pory"
-	release
-# 64 "data/maps/LavenderTown/scripts.pory"
-	end
-# 65 "data/maps/LavenderTown/scripts.pory"
-
-# 66 "data/maps/LavenderTown/scripts.pory"
-LavenderTown_EventScript_NoKaren::
-# 67 "data/maps/LavenderTown/scripts.pory"
-	msgbox LavenderTown_Text_NoKaren
-# 68 "data/maps/LavenderTown/scripts.pory"
-	release
-# 69 "data/maps/LavenderTown/scripts.pory"
-	end
-# 70 "data/maps/LavenderTown/scripts.pory"
-
-# 71 "data/maps/LavenderTown/scripts.pory"
-LavenderTown_EventScript_RematchKaren::
-# 72 "data/maps/LavenderTown/scripts.pory"
-	msgbox LavenderTown_Text_RematchKaren, MSGBOX_YESNO
-# 73 "data/maps/LavenderTown/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, LavenderTown_EventScript_NoKaren
-# 74 "data/maps/LavenderTown/scripts.pory"
-	trainerbattle_single TRAINER_KAREN, LavenderTown_Text_YesKaren, LavenderTown_Text_RematchKarenDefeat, LavenderTown_EventScript_PostRematchKaren, NO_MUSIC
-# 75 "data/maps/LavenderTown/scripts.pory"
+# 56 "data/maps/LavenderTown/scripts.pory"
+	trainerbattle_single TRAINER_KAREN, LavenderTown_Text_YesKaren, LavenderTown_Text_KarenDefeat, LavenderTown_EventScript_PostKaren, NO_MUSIC
+# 57 "data/maps/LavenderTown/scripts.pory"
 	release
-# 76 "data/maps/LavenderTown/scripts.pory"
+# 58 "data/maps/LavenderTown/scripts.pory"
 	end
-# 77 "data/maps/LavenderTown/scripts.pory"
+# 59 "data/maps/LavenderTown/scripts.pory"
 
-# 78 "data/maps/LavenderTown/scripts.pory"
-LavenderTown_EventScript_PostRematchKaren::
-# 79 "data/maps/LavenderTown/scripts.pory"
-	msgbox LavenderTown_Text_PostRematchKaren
-# 80 "data/maps/LavenderTown/scripts.pory"
+# 60 "data/maps/LavenderTown/scripts.pory"
+LavenderTown_EventScript_PostKaren::
+# 61 "data/maps/LavenderTown/scripts.pory"
+	msgbox LavenderTown_Text_KarenPostBattle
+# 62 "data/maps/LavenderTown/scripts.pory"
+	setflag FLAG_DEFEATED_KAREN
+# 63 "data/maps/LavenderTown/scripts.pory"
 	cleartrainerflag TRAINER_KAREN
-# 81 "data/maps/LavenderTown/scripts.pory"
+# 64 "data/maps/LavenderTown/scripts.pory"
+	giveitem ITEM_WHITE_FLUTE
+# 65 "data/maps/LavenderTown/scripts.pory"
 	release
+# 66 "data/maps/LavenderTown/scripts.pory"
+	end
+# 67 "data/maps/LavenderTown/scripts.pory"
+
+# 68 "data/maps/LavenderTown/scripts.pory"
+LavenderTown_EventScript_NoKaren::
+# 69 "data/maps/LavenderTown/scripts.pory"
+	msgbox LavenderTown_Text_NoKaren
+# 70 "data/maps/LavenderTown/scripts.pory"
+	release
+# 71 "data/maps/LavenderTown/scripts.pory"
+	end
+# 72 "data/maps/LavenderTown/scripts.pory"
+
+# 73 "data/maps/LavenderTown/scripts.pory"
+LavenderTown_EventScript_RematchKaren::
+# 74 "data/maps/LavenderTown/scripts.pory"
+	msgbox LavenderTown_Text_RematchKaren, MSGBOX_YESNO
+# 75 "data/maps/LavenderTown/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, LavenderTown_EventScript_NoKaren
+# 76 "data/maps/LavenderTown/scripts.pory"
+	trainerbattle_single TRAINER_KAREN, LavenderTown_Text_YesKaren, LavenderTown_Text_RematchKarenDefeat, LavenderTown_EventScript_PostRematchKaren, NO_MUSIC
+# 77 "data/maps/LavenderTown/scripts.pory"
+	release
+# 78 "data/maps/LavenderTown/scripts.pory"
+	end
+# 79 "data/maps/LavenderTown/scripts.pory"
+
+# 80 "data/maps/LavenderTown/scripts.pory"
+LavenderTown_EventScript_PostRematchKaren::
+# 81 "data/maps/LavenderTown/scripts.pory"
+	msgbox LavenderTown_Text_PostRematchKaren
 # 82 "data/maps/LavenderTown/scripts.pory"
+	cleartrainerflag TRAINER_KAREN
+# 83 "data/maps/LavenderTown/scripts.pory"
+	release
+# 84 "data/maps/LavenderTown/scripts.pory"
 	end
