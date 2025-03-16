@@ -149,7 +149,7 @@ Route13_Text_Whitney::
     .string "is gonna open up sooner\l"  
     .string "than ever!\p"  
     .string "I think it would be good\n"  
-    .string "if we battled\p$"   
+    .string "if we battled\p"   
     .string "Although I'm warning you,\n"  
     .string "I'm good!$"  
 
