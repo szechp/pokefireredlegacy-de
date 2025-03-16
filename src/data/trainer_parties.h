@@ -8764,13 +8764,13 @@ static const struct TrainerMon sParty_ChampionFirstSquirtle[] = {
     {
         .iv = 255,
         .lvl = 63,
-        .species = SPECIES_RHYDON,
-        .heldItem = ITEM_FOCUS_BAND,
-        .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_MEGAHORN, MOVE_ROCK_TOMB},
+        .species = SPECIES_EXEGGUTOR,
+        .heldItem = ITEM_QUICK_CLAW,
+        .moves = {MOVE_EGG_BOMB, MOVE_PSYCHIC, MOVE_SLUDGE_BOMB, MOVE_SLEEP_POWDER},
     },
     {
         .iv = 255,
-        .lvl = 63,
+        .lvl = 62,
         .species = SPECIES_SCIZOR,
         .heldItem = ITEM_LEFTOVERS,
         .moves = {MOVE_METEOR_MASH, MOVE_TWINEEDLE, MOVE_AGILITY, MOVE_BRICK_BREAK},
@@ -8784,7 +8784,7 @@ static const struct TrainerMon sParty_ChampionFirstSquirtle[] = {
     },
     {
         .iv = 255,
-        .lvl = 62,
+        .lvl = 63,
         .species = SPECIES_PIDGEOT,
         .heldItem = ITEM_FOCUS_BAND,
         .moves = {MOVE_SKY_ATTACK, MOVE_EXTREME_SPEED, MOVE_DOUBLE_EDGE, MOVE_TOXIC},
@@ -8808,14 +8808,14 @@ static const struct TrainerMon sParty_ChampionFirstBulbasaur[] = {
     },
     {
         .iv = 255,
-        .lvl = 63,
+        .lvl = 62,
         .species = SPECIES_SCIZOR,
         .heldItem = ITEM_FOCUS_BAND,
         .moves = {MOVE_METEOR_MASH, MOVE_TWINEEDLE, MOVE_AGILITY, MOVE_BRICK_BREAK},
     },
     {
         .iv = 255,
-        .lvl = 62,
+        .lvl = 63,
         .species = SPECIES_MACHAMP,
         .heldItem = ITEM_CHOICE_BAND,
         .moves = {MOVE_CROSS_CHOP, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER},
@@ -8853,10 +8853,10 @@ static const struct TrainerMon sParty_ChampionFirstCharmander[] = {
     },
     {
         .iv = 255,
-        .lvl = 62,
-        .species = SPECIES_ELECTABUZZ,
+        .lvl = 63,
+        .species = SPECIES_RHYDON,
         .heldItem = ITEM_FOCUS_BAND,
-        .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN},
+        .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_MEGAHORN, MOVE_DOUBLE_EDGE},
     },
     {
         .iv = 255,
