@@ -6596,26 +6596,26 @@ static const struct TrainerMon sParty_ScientistIvan[] = {
 static const struct TrainerMon sParty_BossGiovanni[] = {
     {
         .iv = 250,
-        .lvl = 31,
+        .lvl = 30,
         .species = SPECIES_ONIX,
         .moves = {MOVE_DIG, MOVE_ROCK_TOMB, MOVE_SCREECH, MOVE_ROCK_SMASH},
     },
     {
         .iv = 250,
-        .lvl = 33,
+        .lvl = 32,
         .species = SPECIES_PERSIAN,
         .moves = {MOVE_SLASH, MOVE_CUT, MOVE_WATER_PULSE, MOVE_THUNDERBOLT},
     },
     {
         .iv = 250,
-        .lvl = 32,
+        .lvl = 31,
         .species = SPECIES_MAROWAK,
         .moves = {MOVE_BONEMERANG, MOVE_CUT, MOVE_ROCK_SMASH, MOVE_FRUSTRATION},
         .friendship = TRAINER_MON_UNFRIENDLY
     },
     {
         .iv = 250,
-        .lvl = 33,
+        .lvl = 32,
         .species = SPECIES_KANGASKHAN,
         .moves = {MOVE_FAKE_OUT, MOVE_BITE, MOVE_ROCK_SMASH, MOVE_MEGA_PUNCH},
     },
@@ -8193,10 +8193,10 @@ static const struct TrainerMon sParty_LeaderLtSurge[] = {
         .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SELF_DESTRUCT, MOVE_SWIFT},
     },
     {
-        .iv = 250,
+        .iv = 150,
         .lvl = 24,
         .species = SPECIES_PORYGON,
-        .moves = {MOVE_SHOCK_WAVE, MOVE_PSYBEAM, MOVE_ICY_WIND, MOVE_SECRET_POWER},
+        .moves = {MOVE_SHOCK_WAVE, MOVE_NONE, MOVE_ICY_WIND, MOVE_SECRET_POWER},
     },
     {
         .iv = 200,

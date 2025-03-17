@@ -19786,8 +19786,8 @@
                 "species": "SPECIES_MURKROW"
               },
               {
-                "min_level": 39,
-                "max_level": 39,
+                "min_level": 29,
+                "max_level": 29,
                 "species": "SPECIES_FEAROW"
               },
               {
@@ -19855,8 +19855,8 @@
                 "species": "SPECIES_MURKROW"
               },
               {
-                "min_level": 39,
-                "max_level": 39,
+                "min_level": 29,
+                "max_level": 29,
                 "species": "SPECIES_FEAROW"
               },
               {

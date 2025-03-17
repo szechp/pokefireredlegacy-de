@@ -2970,14 +2970,6 @@ static void SetPartyMonSelectionActions(struct Pokemon *mons, u8 slotId, u8 acti
         for (i = 0; i < sPartyMenuInternal->numActions; ++i)
             sPartyMenuInternal->actions[i] = sPartyMenuActions[action][i];
     }
-    // This if statement causes dead pokemon to only be able to show summary, switch, and cancel. No field moves or items.
-    if (GetMonData(&mons[slotId], MON_DATA_DEAD) && FlagGet(FLAG_NUZLOCKE))
-    {
-        if (GetMonData(&mons[1], MON_DATA_SPECIES) != SPECIES_NONE)
-            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, ACTIONS_SWITCH);
-        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, SLOT_CANCEL);
-        return;
-    }
 }
 
 static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
@@ -5170,6 +5162,7 @@ static void Task_TryLearnNewMoves(u8 taskId)
 {
     u16 learnMove;
 
+    RemoveLevelUpStatsWindow();
     learnMove = MonTryLearningNewMove(&gPlayerParty[gPartyMenu.slotId], TRUE);
     gPartyMenu.learnMoveMethod = LEARN_VIA_LEVEL_UP;
     switch (learnMove)
