@@ -663,7 +663,7 @@ FiveIsland_RocketWarehouse_EventScript_ItemTM36::
 	end
 
 FiveIsland_RocketWarehouse_EventScript_ItemPearl::
-	finditem ITEM_PEARL
+	finditem ITEM_NUGGET
 	end
 
 FiveIsland_RocketWarehouse_EventScript_ItemUpGrade::
