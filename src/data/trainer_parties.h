@@ -8763,13 +8763,6 @@ static const struct TrainerMon sParty_ChampionFirstSquirtle[] = {
     },
     {
         .iv = 255,
-        .lvl = 63,
-        .species = SPECIES_EXEGGUTOR,
-        .heldItem = ITEM_QUICK_CLAW,
-        .moves = {MOVE_EGG_BOMB, MOVE_PSYCHIC, MOVE_SLUDGE_BOMB, MOVE_SLEEP_POWDER},
-    },
-    {
-        .iv = 255,
         .lvl = 62,
         .species = SPECIES_SCIZOR,
         .heldItem = ITEM_LEFTOVERS,
@@ -8778,16 +8771,23 @@ static const struct TrainerMon sParty_ChampionFirstSquirtle[] = {
     {
         .iv = 255,
         .lvl = 63,
+        .species = SPECIES_EXEGGUTOR,
+        .heldItem = ITEM_QUICK_CLAW,
+        .moves = {MOVE_EGG_BOMB, MOVE_PSYCHIC, MOVE_SLUDGE_BOMB, MOVE_SLEEP_POWDER},
+    },
+    {
+        .iv = 255,
+        .lvl = 63,
         .species = SPECIES_ARCANINE,
         .heldItem = ITEM_LEFTOVERS,
-        .moves = {MOVE_EXTREME_SPEED, MOVE_FLAMETHROWER, MOVE_IRON_TAIL, MOVE_TOXIC},
+        .moves = {MOVE_EXTREME_SPEED, MOVE_FIRE_BLAST, MOVE_IRON_TAIL, MOVE_TOXIC},
     },
     {
         .iv = 255,
         .lvl = 63,
         .species = SPECIES_PIDGEOT,
         .heldItem = ITEM_FOCUS_BAND,
-        .moves = {MOVE_SKY_ATTACK, MOVE_EXTREME_SPEED, MOVE_DOUBLE_EDGE, MOVE_TOXIC},
+        .moves = {MOVE_SKY_ATTACK, MOVE_EXTREME_SPEED, MOVE_MEGA_KICK, MOVE_TOXIC},
     },
     {
         .iv = 255,
@@ -8816,9 +8816,9 @@ static const struct TrainerMon sParty_ChampionFirstBulbasaur[] = {
     {
         .iv = 255,
         .lvl = 63,
-        .species = SPECIES_MACHAMP,
+        .species = SPECIES_RHYDON,
         .heldItem = ITEM_CHOICE_BAND,
-        .moves = {MOVE_CROSS_CHOP, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER},
+        .moves = {MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_MEGAHORN, MOVE_DOUBLE_EDGE},
     },
     {
         .iv = 255,
@@ -8854,9 +8854,9 @@ static const struct TrainerMon sParty_ChampionFirstCharmander[] = {
     {
         .iv = 255,
         .lvl = 63,
-        .species = SPECIES_RHYDON,
-        .heldItem = ITEM_FOCUS_BAND,
-        .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_MEGAHORN, MOVE_DOUBLE_EDGE},
+        .species = SPECIES_MACHAMP,
+        .heldItem = ITEM_CHOICE_BAND,  
+        .moves = {MOVE_CROSS_CHOP, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER},
     },
     {
         .iv = 255,
@@ -8875,16 +8875,16 @@ static const struct TrainerMon sParty_ChampionFirstCharmander[] = {
     {
         .iv = 255,
         .lvl = 63,
-        .species = SPECIES_KINGDRA,
-        .heldItem = ITEM_NONE,
-        .moves = {MOVE_HYDRO_PUMP, MOVE_DRAGON_BREATH, MOVE_ICE_BEAM, MOVE_AGILITY},
+        .species = SPECIES_GYARADOS,
+        .heldItem = ITEM_LEFTOVERS,
+        .moves = {MOVE_HYDRO_PUMP, MOVE_EARTHQUAKE, MOVE_BOUNCE, MOVE_DRAGON_DANCE},
     },
     {
         .iv = 255,
         .lvl = 65,
         .species = SPECIES_CHARIZARD,
         .heldItem = ITEM_SALAC_BERRY,
-        .moves = {MOVE_FIRE_BLAST, MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_SUNNY_DAY},
+        .moves = {MOVE_FIRE_BLAST, MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_ENDURE},
     },
 };
 

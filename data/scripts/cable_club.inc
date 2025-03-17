@@ -1706,6 +1706,8 @@ CableClub_Text_ExplainWirelessClubFirstTime::
 	.string "using a GBA Game Link cable.\p"
 	.string "If that is the case, you must go\n"
 	.string "to the DIRECT CORNER.\p"
+	.string "We also have POKEMON Checkers\n"
+	.string "on this floor.\p"
 	.string "I hope you enjoy the Wireless \n"
 	.string "Communication System.$"
 
