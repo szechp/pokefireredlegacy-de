@@ -8187,22 +8187,22 @@ static const struct TrainerMon sParty_LeaderLtSurge[] = {
         .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_NONE, MOVE_BRICK_BREAK},
     },
     {
-        .iv = 250,
+        .iv = 150,
         .lvl = 23,
         .species = SPECIES_VOLTORB,
         .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SELF_DESTRUCT, MOVE_SWIFT},
     },
     {
-        .iv = 150,
+        .iv = 100,
         .lvl = 24,
         .species = SPECIES_PORYGON,
         .moves = {MOVE_SHOCK_WAVE, MOVE_NONE, MOVE_ICY_WIND, MOVE_SECRET_POWER},
     },
     {
-        .iv = 200,
+        .iv = 150,
         .lvl = 25,
         .species = SPECIES_RAICHU,
-        .moves = {MOVE_BODY_SLAM, MOVE_THUNDER_WAVE, MOVE_AGILITY, MOVE_SHOCK_WAVE},
+        .moves = {MOVE_BODY_SLAM, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_SHOCK_WAVE},
     },
 };
 
@@ -8211,6 +8211,7 @@ static const struct TrainerMon sParty_LeaderErika[] = {
         .iv = 250,
         .lvl = 33,
         .species = SPECIES_BELLOSSOM,
+        .heldItem = ITEM_MIRACLE_SEED,
         .moves = {MOVE_SLEEP_POWDER, MOVE_SYNTHESIS, MOVE_SUNNY_DAY, MOVE_GIGA_DRAIN},
     },
     {
@@ -8313,6 +8314,7 @@ static const struct TrainerMon sParty_LeaderSabrina[] = {
         .iv = 255,
         .lvl = 49,
         .species = SPECIES_MR_MIME,
+        .heldItem = ITEM_FOCUS_BAND,
         .moves = {MOVE_ICE_PUNCH, MOVE_PSYCHIC, MOVE_BATON_PASS, MOVE_CALM_MIND},
     },
     {
@@ -8339,7 +8341,7 @@ static const struct TrainerMon sParty_LeaderSabrina[] = {
         .iv = 255,
         .lvl = 50,
         .species = SPECIES_ALAKAZAM,
-        .heldItem = ITEM_FOCUS_BAND,
+        .heldItem = ITEM_SALAC_BERRY,
         .moves = {MOVE_PSYCHIC, MOVE_RECOVER, MOVE_THUNDER_PUNCH, MOVE_CALM_MIND},
     },
 };

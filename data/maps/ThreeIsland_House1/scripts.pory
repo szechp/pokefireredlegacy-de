@@ -1,6 +1,16 @@
 raw `
 ThreeIsland_House1_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, ThreeIsland_House1_OnLoad
 	.byte 0
+
+ThreeIsland_House1_OnLoad::
+	special CheckBeatJohto
+	call_if_eq VAR_RESULT, TRUE, ThreeIsland_House1_EventScript_ShowClerk
+	end
+
+ThreeIsland_House1_EventScript_ShowClerk::
+	clearflag FLAG_SHOPJOHTO
+	end
 
 ThreeIsland_House1_EventScript_Lostelle::
 	lock
@@ -9,13 +19,13 @@ ThreeIsland_House1_EventScript_Lostelle::
 	msgbox ThreeIsland_House1_Text_YoureAlwaysSoCool
 	goto_if_questlog EventScript_ReleaseEnd
 	waitmessage
-	call_if_set FLAG_SHOPJOHTO, ThreeIsland_House1_Berry2
+	call_if_unset FLAG_SHOPJOHTO, ThreeIsland_House1_EventScript_Berry2
 	pokemart ThreeIsland_House1_MartBerries
 	msgbox Text_PleaseComeAgain
 	release
 	end
 
-ThreeIsland_House1_Berry2::
+ThreeIsland_House1_EventScript_Berry2::
 	pokemart ThreeIsland_House1_MartBerries2
 	msgbox Text_PleaseComeAgain
 	release
