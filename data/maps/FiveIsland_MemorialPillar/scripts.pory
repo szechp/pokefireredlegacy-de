@@ -165,32 +165,29 @@ FiveIsland_MemorialPillar_EventScript_CelebiQuest3::
 	end
 
 FiveIsland_MemorialPillar_Text_CelebiQuest::
-    .string "There was once an Onix, and his\n"  
-    .string "six Pokémon friends:\l"  
-    .string "Charmander, Delibird, Psyduck,\l"  
-    .string "Meowth, Larvitar, and Natu.\p"  
-    .string "They all used to play in the\n"  
-    .string "Forest of Berries, having fun\l"  
-    .string "of all magnitudes, and enjoying\l"  
-    .string "Many Berries.\p"  
+    .string "There was once an ONIX, and his\n"  
+    .string "six POKéMON friends:\l"  
+    .string "CHARMANDER, DELIBIRD, PSYDUCK,\l"  
+    .string "MEOWTH, LARVITAR, and NATU.\p"  
+    .string "They used to play in the forest,\n"  
+    .string "having fun and eating BERRIES.\p"  
     .string "After that, they returned home.\p"  
-    .string "Charmander went to the top\n"  
-    .string "of the Mountain of Embers,\l"  
-    .string "Delibird to the basement of Ice,\l"  
-    .string "Psyduck to the land beneath\l"  
+    .string "CHARMANDER went to the top\n"  
+    .string "of the mountain of embers,\l"  
+    .string "DELIBIRD to the basement of ice,\l"  
+    .string "PSYDUCK to the land beneath\l"  
     .string "a waterfall.\p"  
-    .string "Meowth to a beach of treasures,\n"  
-    .string "Larvitar to the peaks of the\l"  
-    .string "Canyon, Natu down the Cave\l"  
-    .string "of Mystery, and Onix to\l"  
+    .string "MEOWTH to a beach of treasures,\n"  
+    .string "LARVITAR to the peaks of the\l"  
+    .string "canyon, NATU down the cave\l"  
+    .string "of mystery, and ONIX to\l"  
     .string "his own island.$"  
 
 FiveIsland_MemorialPillar_Text_CelebiQuest2::
-    .string "CELEBI!$"  
+    .string "Lululalala!$"
 
 FiveIsland_MemorialPillar_Text_CelebiQuest3::
-    .string "What was that\n"  
-    .string "Green Thing?$"  
+    .string "What was that green thing?$"
 
 FiveIsland_MemorialPillar_Movement_Celebi::
 	walk_down

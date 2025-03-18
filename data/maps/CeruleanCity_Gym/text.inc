@@ -44,7 +44,7 @@ CeruleanCity_Gym_Text_RematchMisty::
     .string "Ready to dive in, CHAMPION?$"
 
 CeruleanCity_Gym_Text_RematchMistyDefeat::
-    .string "What a splashing Performance!$"
+    .string "What a splashing performance!$"
 
 CeruleanCity_Gym_Text_MistyPostRematchBattle::
     .string "You've bested me again!\p"

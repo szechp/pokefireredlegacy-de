@@ -41,24 +41,24 @@ ThreeIsland_BerryForest_Text_BewareWildBerryLovingMons::
     .string "Beware of wild, BERRY-loving\n"
     .string "POKéMON!$"
 
-ThreeIsland_BerryForest_Text_CruelKing::  
-    .string "I am the CRUEL KING!\p"  
-    .string "An Apex Trainer that uses\n"  
-    .string "fast and strong POKEMON!\p"  
-    .string "Are you ready for my skill?$"  
+ThreeIsland_BerryForest_Text_CruelKing::
+	.string "Kneel before me, and know that I\n"
+	.string "am the CRUEL KING of this forest!\p"
+    .string "An Apex TRAINER that only uses\n"  
+    .string "the fastest and strongest POKéMON!\p"  
+    .string "Are you prepared to challenge me?$"  
 
 ThreeIsland_BerryForest_Text_CruelKingDefeat::  
-    .string "I think you're the APEX\n"  
-    .string "Trainer here!$"  
+    .string "I think you're the Apex\n"  
+    .string "TRAINER here!$"  
 
 ThreeIsland_BerryForest_Text_CruelKingPostBattle::  
     .string "Huh. Great Apex skill\n"  
     .string "you exerted, CHAMPION.\p"  
-    .string "Continue to be the Apex Trainer!$"  
+    .string "Continue to be the Apex TRAINER!$"  
 
 ThreeIsland_BerryForest_Text_NoCruelKing::  
-    .string "Seems like you are\n"  
-    .string "scared.$"  
+    .string "Seems like you are scared.$"  
 
 ThreeIsland_BerryForest_Text_YesCruelKing::  
     .string "You don't know how\n"  
@@ -68,7 +68,7 @@ ThreeIsland_BerryForest_Text_RematchCruelKing::
     .string "Back for more cruelty?$"  
 
 ThreeIsland_BerryForest_Text_RematchCruelKingDefeat::  
-    .string "Seems Champion-level to me!$"  
+    .string "Seems CHAMPION-level to me!$"  
 
 ThreeIsland_BerryForest_Text_YesRematchCruelKing::  
     .string "You will lose this!\p"  
@@ -77,14 +77,12 @@ ThreeIsland_BerryForest_Text_YesRematchCruelKing::
 ThreeIsland_BerryForest_Text_RematchCruelKingPostBattle::  
     .string "Huh. Great Apex skill\n"  
     .string "you exerted, CHAMPION.\p"  
-    .string "Continue to be an Apex Trainer!$"  
-
+    .string "Continue to be an Apex TRAINER!$"  
 
 Text_6Leaders::
-    .string "There are 7 masters of\n"  
+    .string "There are seven masters of\n"  
     .string "the SEVII ISLANDS.\p"  
-    .string "Defeat the 6 of us to be\n"  
-    .string "able to fight the\l"  
-    .string "SUPREME LEADER on\l"  
+    .string "Defeat six, then challenge\n"  
+    .string "the SUPREME LEADER on\l"  
     .string "SEVEN ISLAND.$"  
 

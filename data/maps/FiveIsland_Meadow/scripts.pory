@@ -83,10 +83,10 @@ FiveIsland_Meadow_Text_Gym2::
 	.string "even CLAIR!$"
 
 FiveIsland_Meadow_Text_Gym2Defeat::
-	.string "I thought it could work...$"
+	.string "I thought it could work…$"
 
 FiveIsland_Meadow_Text_Gym2Post::
-	.string "Even though my leader\n"
+	.string "Even though my LEADER\n"
 	.string "doesn't approve of\l"
 	.string "DUNSPARCE, he is still\l"
 	.string "one of the best!$"
@@ -97,16 +97,15 @@ FiveIsland_Meadow_EventScript_Gym3::
 	end
 
 FiveIsland_Meadow_Text_Gym3::
-	.string "You shall fall to Furret!$"
+	.string "You shall fall to FURRET!$"
 
 FiveIsland_Meadow_Text_Gym3Defeat::
-	.string "Looks Like I fell.$"
+	.string "Looks like I fell.$"
 
 FiveIsland_Meadow_Text_Gym3Post::
 	.string "I actually did see\n"
-	.string "Our LEADER Head South.\p"
-	.string "May he be Mourning the\n"
-	.string "ONIX there?$"
+	.string "our LEADER head south.\p"
+	.string "Could he be at the PILLAR?$"
 
 
 FiveIsland_Meadow_EventScript_Rocket::
@@ -124,8 +123,8 @@ FiveIsland_Meadow_Text_RocketDefeat::
 
 FiveIsland_Meadow_Text_RocketPostBattle::
 	.string "Maybe it was a good thing\n"
-	.string "I went to OUTCAST ISLAND.\p"
-	.string "Despite finding nothing.$"
+	.string "I went to OUTCAST ISLAND,\p"
+	.string "even though I found nothing.$"
 
 FiveIsland_Meadow_EventScript_ShowClerk::
 	clearflag FLAG_SHOPCHAMP

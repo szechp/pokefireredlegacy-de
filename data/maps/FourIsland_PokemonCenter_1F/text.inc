@@ -27,7 +27,7 @@ Text_BodySlamReteach::
     .string "is stronger.\p"
     .string "Hmm… And we'd still squash you\n"
     .string "if you tried to join in.\p"
-    .string "How about I teach POKéMON\n"
+    .string "How about I teach a POKéMON\n"
     .string "BODY SLAM instead for ¥5000?$"
 Text_BodySlamReteach2::
     .string "Do you want me to teach your\n"

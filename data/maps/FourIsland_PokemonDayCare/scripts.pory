@@ -200,13 +200,13 @@ FourIsland_PokemonDayCare_EventScript_ReturnForEgg::
 	end
 
 FourIsland_PokemonDayCare_Text_LetMeTakeLookAtMons::
-    .string "Hello there, Traveler!\p"  
-    .string "I was just going back to\n"  
-    .string "put up SUDOWOODO from here\l"  
-    .string "when I found her with lots\l"  
-    .string "of eggs.\p" 
-    .string "I don't have space for\n"  
-    .string "them, so I want to\l"  
+    .string "Hello there, CHAMP!\p"  
+    .string "I was just coming here to pick\n"  
+    .string "up my SUDOWOODO,\l"  
+    .string "but to my surprise, she's laid\l"  
+    .string "a whole bunch of EGGS!\p" 
+    .string "I don't have space for all\n"  
+    .string "of them, so I want to\l"  
     .string "offload some.$"  
 
 FourIsland_PokemonDayCare_Text_HmmISeeIsee::
@@ -214,9 +214,9 @@ FourIsland_PokemonDayCare_Text_HmmISeeIsee::
     .string "I see, I see…$"
 
 FourIsland_PokemonDayCare_Text_TreatMonRightHaveThis::
-    .string "You're the CHAMPION of\n"  
-    .string "KANTO! I could give you\l"  
-    .string "one!\p"  
+    .string "I'm sure the CHAMPION of\n"  
+    .string "KANTO will have no problem\l"  
+    .string "raising this EGG!\p"  
 
 FourIsland_PokemonDayCare_Text_ReceivedEggFromMan::
     .string "{PLAYER} received an EGG\n"
@@ -236,7 +236,7 @@ FourIsland_PokemonDayCare_Text_YouveComeBackForTheEgg::
 
 FourIsland_PokemonDayCare_Text_GladIMetSomeoneLikeYou::
     .string "I'm glad to give you\n"  
-    .string "this Egg, CHAMPION.\p"  
+    .string "this EGG, CHAMPION.\p"  
     .string "Hope you like SUDOWOODO!$"  
 
 FourIsland_PokemonDayCare_Text_CuteMonRemindsMeOfDaisy::

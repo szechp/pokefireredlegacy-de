@@ -6,7 +6,7 @@ SevenIsland_House_Room1_Text_OnlyEnjoymentWatchingBattles::
     .string "Now, my only source of enjoyment\n"
     .string "is reminiscing about the past while\l"
     .string "watching battles and strengthening\n"
-    .string "their pokemon in my Trainer Basement.$"
+    .string "POKéMON in my Trainer Basement.$"
 
 SevenIsland_House_Room1_Text_SlightBreezeAroundBox::
     .string "There is a slight breeze blowing\n"

@@ -105,4 +105,4 @@ Route9_Text_RouteSign::
     .string "CERULEAN CITY - ROCK TUNNEL$"
 
 Route9_Text_Psyduck::
-    .string "Psy Psy!$"
+    .string "Gwappa!$"

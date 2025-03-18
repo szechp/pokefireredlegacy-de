@@ -45,7 +45,7 @@ PalletTown_PlayersHouse_1F_Text_MomShoes::
 
 PalletTown_PlayersHouse_1F_Text_ReceivedRunningShoesFromAide::
     .string "{PLAYER} received the\n"
-    .string "RUNNING SHOES from the MOM.$"
+    .string "RUNNING SHOES from PROF. OAK.$"
 
 PalletTown_PlayersHouse_1F_Text_ReceivedRunningShoesFromAide2::
     .string "{PLAYER} put on the\n"
@@ -55,13 +55,13 @@ PalletTown_PlayersHouse_1F_Text_Champion::
 	.string "MOM: {PLAYER}!\p"
 	.string "I'm so proud of you\n"
 	.string "for becoming the\l"
-	.string "POKEMON LEAGUE CHAMPION!\p"
-	.string "You and your POKEMON\n"
+	.string "POKéMON LEAGUE CHAMPION!\p"
+	.string "You and your POKéMON\n"
 	.string "worked so hard for this.\p"
 	.string "Congratulations!\p"
 	.string "Take some time to\n"
 	.string "celebrate with your\l"
-	.string "POKEMON and friends.\p"
+	.string "POKéMON and friends.\p"
 	.string "You've earned it!\p"
 	.string "I know you'll continue\n"
 	.string "to be a great trainer\l"

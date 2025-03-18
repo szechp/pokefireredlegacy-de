@@ -49,13 +49,13 @@ VermilionCity_Gym_Text_RematchSurgeDefeat::
     .string "You really shocked me!$"
 
 VermilionCity_Gym_Text_SurgePostRematchBattle::
-    .string "Your team's electrifying strength...\p"
+    .string "Your team's electrifying strength…\p"
     .string "You're the real deal!\p"
     .string "You've proven yourself again, CHAMPION.\p"
     .string "Until next time, stay charged!$"
 
 VermilionCity_Gym_Text_SurgeNoRematchBattle::
-    .string "Not Charged Yet?$"
+    .string "Not charged yet?$"
 
 VermilionCity_Gym_Text_RematchYesSurge::
     .string "That's the spirit!\p"

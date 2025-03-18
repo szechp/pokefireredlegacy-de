@@ -83,14 +83,13 @@ MtMoon_B2F_Text_ObtainedDomeFossil::
     .string "Obtained the DOME FOSSIL!$"
 
 MtMoon_B2F_Text_PetrolIntro::
-    .string "Yes it's me GIOVANNI!\n"
-    .string "I'm still out here CHAMPION!\l"
-    .string "Lets fight one last time!$"
+    .string "Yes, it's really me… GIOVANNI!\n"
+    .string "Come and get me, CHAMPION!\l"
+    .string "Let's fight one last time!$"
 
 MtMoon_B2F_Text_PetrolDefeat::
-    .string "Seems you saw though my\n"
-    .string "Disguise!$"
+    .string "You saw through my disguise?!\n"
 
 MtMoon_B2F_Text_PetrolPostBattle::
-    .string "Look's like I got to leave!$"
+    .string "Uh… I gotta leave!$"
 

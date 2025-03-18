@@ -128,71 +128,67 @@ Route13_Text_RouteSign::
 
 Route13_Text_MayIHelpYou::
     .string "Birds sing to the tune\n"
-    .string "of Flutes.\p"
+    .string "of FLUTES.\p"
     .string "Some of which can heal them.\p"
-    .string "Want to buy some flutes?$"
+    .string "Want to buy some FLUTES?$"
 
 
 
 Route13_Text_PleaseComeAgain::
-    .string "Feel Free to come back\n"
-    .string "If you want$"
+    .string "Feel free to come back\n"
+    .string "if you want.$"
 
 Route13_Text_Whitney::
-    .string "This place is full of Cute,\n"
-    .string "Pokemon!\p"
+    .string "This place is full of cute\n"
+    .string "POKéMON!\p"
     .string "I'm visiting KANTO in search\n"  
-    .string "of more cute POKEMON as,\n"  
-    .string "I want to become a GYM\n"  
+    .string "of more cute POKéMON, as\l"  
+    .string "I want to become a GYM\l"  
     .string "LEADER one day!\p"  
     .string "And I think that opportunity\n"  
     .string "is gonna open up sooner\l"  
-    .string "than ever!\p"  
-    .string "I think it would be good\n"  
-    .string "if we battled\p"   
-    .string "Although I'm warning you,\n"  
-    .string "I'm good!$"  
+    .string "rather than later!\p"  
+    .string "I'd quite like to battle.\n"   
+    .string "Although I'm warning you,\l"  
+    .string "I'm quite good!$"  
 
 
 Route13_Text_WhitneyDefeat::
-    .string "Sob... ...Waaaaaaah!\p"  
+    .string "Sob… …Waaaaaaah!\p"  
     .string "You're mean!\n"  
     .string "You shouldn't be so\n"  
     .string "serious!\p"  
-    .string "You...you child, you!\n"  
+    .string "You…you child, you!\n"  
     .string "Waaaaah! Waaaaah!\p"  
-    .string "...Snivel, hic...\n"  
-    .string "...You meanie!$"  
+    .string "…Snivel, hic…\n"  
+    .string "…You meanie!$"  
 
 Route13_Text_WhitneyPostBattle::
     .string "Ah, that was a good cry!\p"
     .string "I mean, you're the CHAMPION\n"    
-    .string "After all, You're Very Strong!\p"    
-    .string "Come for a visit again!\p"  
+    .string "after all! You're very strong!\p"    
+    .string "I hope to see you again soon!\p"  
     .string "Bye-bye!$"  
 
 Route13_Text_NoWhitney::
-    .string "Can't Stand this\n"
-    .string "Cute Face?$"
+    .string "What's wrong? Scared you'll\n"
+    .string "lose to a cutie like me?$"
 
 Route13_Text_YesWhitney::
-    .string "Prepare to lose\n"
-    .string "To my Cute Face!$"
+    .string "Prepare to lose!$"
 
 Route13_Text_RematchWhitney::
-    .string "Oh you're back!\p"
-    .string "You could go with another\n"
-    .string "battle with this Cutie!$"
+    .string "Oh, you're back!\p"
+    .string "I could go for another battle!$"
 
 Route13_Text_RematchWhitneyDefeat::
     .string "You really are strong!\p"  
     .string "But I won't lose next time!$"  
 
 Route13_Text_YesRematchWhitney::
-    .string "Prepare to lose\n"
-    .string "To my Cute Face!$"
+    .string "Prepare to lose!$"
 
 Route13_Text_RematchWhitneyPostBattle::
     .string "Don't look at me!\p"
-    .string "I'm not Crying this Time!$"
+    .string "I'm not crying this time!$"
 

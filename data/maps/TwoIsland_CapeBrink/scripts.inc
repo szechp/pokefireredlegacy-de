@@ -194,15 +194,10 @@ TwoIsland_CapeBrink_Text_Rocket1Defeat::
 
 # 98 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 TwoIsland_CapeBrink_Text_Rocket1PostBattle::
-# 99 "data/maps/TwoIsland_CapeBrink/scripts.pory"
-    .string "I don't think you can stand to\n"  
-# 100 "data/maps/TwoIsland_CapeBrink/scripts.pory"
-    .string "our leader yet.\p"  
-# 101 "data/maps/TwoIsland_CapeBrink/scripts.pory"
+    .string "I don't think you can stand up\n"  
+    .string "to our LEADER just yet.\p"  
     .string "You should fight that AROMA LADY\n"  
-# 102 "data/maps/TwoIsland_CapeBrink/scripts.pory"
     .string "before you do.$"  
-# 103 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 
 # 104 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 TwoIsland_CapeBrink_EventScript_Gym2::
@@ -219,22 +214,22 @@ TwoIsland_CapeBrink_Text_Rocket2Intro::
 # 110 "data/maps/TwoIsland_CapeBrink/scripts.pory"
     .string "I'll show you the beauty of\n"  
 # 111 "data/maps/TwoIsland_CapeBrink/scripts.pory"
-    .string "DOUBLE!$"  
+    .string "a DOUBLE BATTLE!$"  
 # 112 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 
 # 113 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 TwoIsland_CapeBrink_Text_Rocket2Defeat::
 # 114 "data/maps/TwoIsland_CapeBrink/scripts.pory"
-    .string "That wasn't Beautiful!$"  
+    .string "That wasn't beautiful!$"  
 # 115 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 
 # 116 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 TwoIsland_CapeBrink_Text_Rocket2PostBattle::
 # 117 "data/maps/TwoIsland_CapeBrink/scripts.pory"
-	.string "You might of beat me, but\n"
+	.string "You might have beat me, but\n"
 # 118 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 	.string "are you ready for our\l"
 # 119 "data/maps/TwoIsland_CapeBrink/scripts.pory"
-	.string "Beautiful Leader to show\l"
+	.string "beautiful LEADER to show\l"
 # 120 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 	.string "her expertise?$"

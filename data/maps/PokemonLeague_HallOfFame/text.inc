@@ -22,7 +22,7 @@ PokemonLeague_HallOfFame_Text_OakCongratulations2::
 	.string "your triumph as CHAMP!\p"  
 	.string "Your dedication to\n"  
 	.string "excellence is commendable!\p"  
-	.string "And your POKEMON, they shine\n"  
+	.string "And your POKéMON, they shine\n"  
 	.string "brightly in this esteemed hall!\p"  
 	.string "{PLAYER}, even as CHAMPION,\n"  
 	.string "your achievements inspire us all!$"  

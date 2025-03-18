@@ -1,8 +1,8 @@
 CeruleanCave_2F_Text_DittoIntro::
-    .string "...$"
+    .string "…$"
 
 CeruleanCave_2F_Text_DittoDefeat::
-    .string "...$"
+    .string "…$"
 
 CeruleanCave_2F_Text_DittoPostBattle::
-    .string "...$"
+    .string "…$"

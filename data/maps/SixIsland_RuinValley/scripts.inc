@@ -223,4 +223,4 @@ SixIsland_RuinValley_Text_Rocket2Defeat::
 # 112 "data/maps/SixIsland_RuinValley/scripts.pory"
 SixIsland_RuinValley_Text_Rocket2PostBattle::
 # 113 "data/maps/SixIsland_RuinValley/scripts.pory"
-	.string "I can't take this anymore...$"
+	.string "I can't take this anymore…$"

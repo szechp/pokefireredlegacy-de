@@ -34,5 +34,5 @@ SSAnne_Deck_Text_TrevorPostBattle::
     .string "POKéMON. I think there are more.$"
 
 SSAnne_Deck_Text_ItsApartGame::
-    .string "It's Apart of the Game!$"
+    .string "It's a part of the game!$"
 

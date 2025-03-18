@@ -12,17 +12,18 @@ ViridianCity_Text_ViridiansGymLeaderReturned::
     .string "VIRIDIAN GYM's LEADER returned!$"
 
 ViridianCity_Text_WantToKnowAboutCaterpillarMons::
-    .string "You want to know about the two\n"
-    .string "kinds of POKéMON Factors?$"
+    .string "You want to know about a\n"
+    .string "POKéMON's IVs and EVs?$"
 
 ViridianCity_Text_OhOkayThen::
     .string "Oh, okay then!$"
 
 ViridianCity_Text_ExplainCaterpieWeedle::
-    .string "IVs are stats a POKÉMON is born\n"  
-    .string "with that can boost its stats,\l"  
-    .string "while EVs are gained from\l"  
-    .string "defeating other POKÉMON.\p"  
+    .string "As a POKéMON grows, its stats are\n"
+    .string "affected by its IVs and EVs.\p"
+    .string "POKéMON are born with a set of\n"  
+    .string "IVs, while EVs are gained from\l"  
+    .string "defeating other POKéMON.\p"  
     .string "The top floor of the POKÉCENTER\n"  
     .string "has people who can check both\l"  
     .string "of them for you.$"  
@@ -65,8 +66,8 @@ ViridianCity_Text_DontKnow::
     .string "then!$"
 
 ViridianCity_Text_DoKnow::
-    .string "Seems like you do know how to\n"
-    .string "catch a POKéMON?\p"
+    .string "Oh, you already know how to\n"
+    .string "catch a POKéMON.\p"
     .string "But I think you should still have this!$"
 
 ViridianCity_Text_ThatWasEducationalTakeThis::
@@ -135,52 +136,48 @@ ViridianCity_Text_GymDoorsAreLocked::
     .string "VIRIDIAN GYM's doors are locked…$"
 
 ViridianCity_Text_Pokedude::
-    .string "Yo What's Up Champion!\p"
+    .string "What's up, CHAMPION!\p"
     .string "I'm just visiting my hometown\n"
     .string "after what happened earlier.\p"
-    .string "Very Unfortunate that it happened.\p"
-    .string "But that's in the past!\p"
-    .string "We will found a new leader someday!\p"
-    .string "I also heard you talked with my\n"
-    .string "Grandpa also, he really helped you\l"
-    .string "into the Champion you are Today!\p"
-    .string "Anyways since we are here,\n"
-    .string "I was wondering if we could\l"
-    .string "have a battle$"
+    .string "It's unfortunate, but we'll find\n"
+    .string "a new LEADER someday!\p"
+    .string "Anyways, since we're here,\n"
+    .string "do you want to battle?$"
 
 ViridianCity_Text_PokedudeDefeat::
-    .string "Wow, you really are the Champion!$"
+    .string "Wow, you really are the CHAMPION!$"
 
 ViridianCity_Text_PokedudePostBattle::
-    .string "That some good Champion Level\n"
-    .string "Strength I see!\p"
-    .string "I also wonder if the TEACHY TV\n"
-    .string "helped you in this Journey!\p"
-    .string "I would also like to give you this.\p"
-    .string "It helped strengthen my pokemon to\n"
-    .string "NEW LEVELS!$"
+    .string "That some good CHAMPION-level\n"
+    .string "strength!\p"
+    .string "Did the TEACHY TV help you\n"
+    .string "on your journey?\p"
+    .string "I'd like to give you this.\p"
+    .string "It helped me strengthen my POKéMON\n"
+    .string "to new levels!$"
 
 ViridianCity_Text_PokedudePostGift::
-    .string "Continue to Grow Further!$"
+    .string "I wish you the best!$"
 
 ViridianCity_Text_NoPokedude::
     .string "Maybe some other time.$"
 
 ViridianCity_Text_YesPokedude::
-    .string "Ok, my Pokemon are Ready!\p"
-    .string "Get ready Champion!\p"
-    .string "Let's Battle!$"
+    .string "Ok, my POKéMON are Ready!\p"
+    .string "Get ready, CHAMPION!\p"
+    .string "Let's battle!$"
 
 ViridianCity_Text_RematchPokedude::
     .string "Want to rematch?$"
 
 ViridianCity_Text_RematchPokedudeDefeat::
-    .string "Wow, you really are the Champion!$"
+    .string "Wow, you really are the CHAMPION!$"
 
 ViridianCity_Text_PostRematchPokedude::
-    .string "That some good Champion Level\n"
-    .string "Strength I see!\p"
-    .string "I also wonder if the TEACHY TV\n"
-    .string "helped you in this Journey!\p"
-    .string "Continue to Grow Further!$"
+    .string "That some good CHAMPION-level\n"
+    .string "strength!\p"
+    .string "Did the TEACHY TV help you\n"
+    .string "on your journey?\p"
+    .string "I wish you the best!$"
+
 

@@ -187,7 +187,7 @@ FiveIsland_RocketWarehouse_EventScript_Police::
 
 FiveIsland_RocketWarehouse_Text_Police::
     .string "We are investigating this place,\n"  
-    .string "we are currently holding this\l"  
+    .string "and are currently holding this\l"  
     .string "SCIENTIST for questioning.$"
 
 FiveIsland_RocketWarehouse_EventScript_Police2::

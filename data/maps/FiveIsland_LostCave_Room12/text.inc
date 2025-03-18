@@ -1,30 +1,30 @@
 FiveIsland_LostCave_Room12_Text_Owl::
-    .string "...?$"
+    .string "…?$"
 
 FiveIsland_LostCave_Room12_Text_OwlDefeat::
-    .string "...!$"
+    .string "…!$"
 
 FiveIsland_LostCave_Room12_Text_OwlPostBattle::
-    .string "...!$"
+    .string "…!$"
 
 
 FiveIsland_LostCave_Room12_Text_NoOwl::
-    .string "...$"
+    .string "…$"
 
 FiveIsland_LostCave_Room12_Text_YesOwl::
-    .string "...!$"
+    .string "…!$"
 
 FiveIsland_LostCave_Room12_Text_RematchOwl::
-    .string "...$"
+    .string "…$"
 
 
 FiveIsland_LostCave_Room12_Text_RematchOwlDefeat::
-    .string "...$"
+    .string "…$"
 
 FiveIsland_LostCave_Room12_Text_YesRematchOwl::
-    .string "...!$"
+    .string "…!$"
 
 FiveIsland_LostCave_Room12_Text_RematchOwlPostBattle::
-    .string "...!$"
+    .string "…!$"
 
 

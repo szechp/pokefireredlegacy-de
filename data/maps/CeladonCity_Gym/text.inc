@@ -49,26 +49,26 @@ CeladonCity_Gym_Text_ShouldMakeRoomForThis::
     .string "You should make room for this.$"
 
 CeladonCity_Gym_Text_RematchErika::
-    .string "You've grown much stronger.\p"
-    .string "It's inspiring!\p"
-    .string "How about a rematch for old times'sake?$"
+    .string "I hear you've grown much stronger.\n"
+    .string "It's truly inspiring!\p"
+    .string "Would you care for a rematch?$"
 
 CeladonCity_Gym_Text_RematchErikaDefeat::
-    .string "Your POKEMON Blooms like no other!$"
+    .string "Your POKéMON are in full bloom!$"
 
 CeladonCity_Gym_Text_ErikaPostRematchBattle::
-    .string "Incredible! Your strength\n"
-    .string "surpasses even the beauty of\l"
-    .string "full bloom\p"
+    .string "Incredible! The way you battle\n"
+    .string "is beautiful beyond comparison!\p"
     .string "Your victory is well earned.\p"
-    .string "Well done!$" 
+    .string "Congratulations!$" 
 
 CeladonCity_Gym_Text_ErikaNoRematchBattle::
-    .string "Need some more sunlight?$"
+    .string "…Oh, that's unfortunate…$"
 
 CeladonCity_Gym_Text_RematchYesErika::
-    .string "Prepare yourself!\p"
-    .string "My POKEMON have reached full bloom!$"
+    .string "Very well.\p"
+    .string "I wish you the best of luck,\n"
+    .string "but I will not be holding back!$"
 
 CeladonCity_Gym_Text_KayIntro::
     .string "I should tell you about this GYM.\p"

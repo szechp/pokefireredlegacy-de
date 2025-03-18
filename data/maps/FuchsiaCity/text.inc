@@ -107,8 +107,8 @@ Text_SubstituteTaught::
 Text_SubstituteReteach::
     .string "I bet a KANGASKHAN's belly pouch\n"
     .string "is so comfy and warm…\p"
-    .string "If only I could sub in for the\n"
-    .string "baby, we could take shifts!\p"
+    .string "If only I could substitute for\n"
+    .string "the baby, we could take shifts!\p"
     .string "I can teach SUBSTITUTE to one\n"
     .string "of your POKéMON again for ¥15000!$"
 Text_SubstituteReteach2::
@@ -122,10 +122,10 @@ Text_SubstituteNotEnoughMoney::
     .string "for less than ¥15000 anymore!$"
 
 FuchsiaCity_Text_MyFatherIsGymLeader::
+    .string "My father is the GYM LEADER of\n"
+    .string "this town.\p"
     .string "I'm training to use POISON POKéMON\n"
-    .string "as well as my father,\l"
-    .string "CHAMPION {PLAYER}.\p"
-    .string "He's also training to become\n"
-    .string "A ELITE FOUR Member!$"
+    .string "as well as him.\p"
+    .string "He hopes to join the ELITE FOUR!$"
 
 

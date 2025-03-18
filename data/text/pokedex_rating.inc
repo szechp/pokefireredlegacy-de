@@ -126,10 +126,9 @@ PokedexRating_Text_ThankYouMadeDreamReality::
 	.string "You've made my dream a reality!\p"
 
 PokedexRating_Text_ThankYouMadeDreamReality2::
-    .string "But This achievement spurs me on\n"  
+    .string "But this achievement spurs me on\n"  
     .string "to uncover what remains hidden.\p"  
-    .string "There's always more to uncover.\p"  
-    .string "Research calls!$"  
+    .string "There's always more to uncover!$"  
 
 PokedexRating_Text_LoveSeeingYourPokedex::
 	.string "OAK: Ah, welcome!\p"

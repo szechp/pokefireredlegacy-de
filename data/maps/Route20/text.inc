@@ -120,5 +120,5 @@ Route20_Text_MistyTrainsHere::
     .string "CERULEAN GYM trains here.$"
 
 Route20_Text_Slowbro::
-    .string "Snooze............$"
+    .string "Snooze…………$"
 

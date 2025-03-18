@@ -99,7 +99,7 @@ SixIsland_PatternBush_Text_Giovanni2::
 SixIsland_PatternBush_Text_Giovanni3::  
 	.string "I keep wondering what to do\n"  
 	.string "about them. I saw my strongest\l"  
-	.string "admins lose their best POKÉMON,\l"  
+	.string "admins lose their best POKéMON,\l"  
 	.string "yet they still want to fight.$" 
 
 SixIsland_PatternBush_Text_Giovanni4::  

@@ -61,51 +61,44 @@ FiveIsland_WaterLabyrinth_Text_AlizePostBattle::
     .string "talent to be a good BREEDER.$"
 
 FiveIsland_WaterLabyrinth_Text_Falkner::
-    .string "Oh hello there, Trainer.\p"  
-    .string "Have you seen the soaring\n"  
-    .string "skies today?\p"  
-    .string "Soaring above the endless\n"  
+    .string "Have you seen the skies today?\n"  
+    .string "They soar above the endless\l"  
     .string "waters of the ocean.\p"  
     .string "Oh, wait, you're the\n"  
-    .string "KANTO Champion?\p"  
-    .string "Well, I guess my birds\n"  
-    .string "would want a fight then,\l"  
-    .string "see if you are as you\l"  
-    .string "are presented!$"  
+    .string "KANTO CHAMPION?\p"  
+    .string "I'm a GYM LEADER from JOHTO who\n"
+    .string "specializes in the FLYING type.\p"  
+    .string "I'd like to test your mettle!$"  
 
 FiveIsland_WaterLabyrinth_Text_FalknerDefeat::
-    .string "Not in the Sky Let?$"
+    .string "You are a soaring TRAINER!$"  
 
 FiveIsland_WaterLabyrinth_Text_FalknerPostBattle::
-    .string "Ah, as I should have expected.\p"  
-    .string "You are a soaring Trainer!\p"  
-    .string "I'm not gonna be a Gym Leader\n"  
-    .string "for long though, as I'll have\l"  
-    .string "my son take over for me.\p"  
-    .string "May he rise to the same\n"  
-    .string "levels as me, or even you!$"  
+    .string "I'm hoping to retire from being\n"  
+    .string "a GYM LEADER soon so I can\l"  
+    .string "travel the world.\p"  
+    .string "My son is eager to take the mantle.\n"  
+    .string "You might challenge him one day!$"  
 
 FiveIsland_WaterLabyrinth_Text_NoFalkner::
-    .string "Not in the Sky Let?$"
+    .string "Oh? Then perhaps another time?$"
 
 FiveIsland_WaterLabyrinth_Text_YesFalkner::
-    .string "Let's get Soaring!$"
+    .string "Let me see your POKéMON soar!$"
 
 FiveIsland_WaterLabyrinth_Text_RematchFalkner::
-    .string "Oh you want to Soar Again?\p"
-    .string "I'll be ready to fight anytime!$"
+    .string "You wish to battle again?\p"
+    .string "Very well, I accept.$"
 
 FiveIsland_WaterLabyrinth_Text_RematchFalknerDefeat::
-    .string "Not in the Sky Let?$"
+    .string "You are a soaring TRAINER!$" 
 
 FiveIsland_WaterLabyrinth_Text_YesRematchFalkner::
-    .string "Let's get Soaring!$"
+    .string "Let me see your POKéMON soar!$"
 
 FiveIsland_WaterLabyrinth_Text_RematchFalknerPostBattle::
-    .string "Ah, as I should have expected.\p"  
-    .string "Still a soaring Trainer!\p"  
-    .string "I'm not gonna be a Gym Leader\n"  
-    .string "for long though, as I'll have\l"  
-    .string "my son take over for me.\p"  
-    .string "May he rise to the same\n"  
-    .string "levels as me, or even you!$"  
+    .string "I'm hoping to retire from being\n"  
+    .string "a GYM LEADER soon so I can\l"  
+    .string "travel the world.\p"  
+    .string "My son is eager to take the mantle.\n"  
+    .string "You might challenge him one day!$"  

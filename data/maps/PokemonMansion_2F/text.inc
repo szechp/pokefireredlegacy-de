@@ -35,13 +35,13 @@ PokemonMansion_1F_Text_Oak::
     .string "You've caught me in a moment\n"  
     .string "of deep research.\p"  
     .string "This mansion holds secrets\n"  
-    .string "of a Pokémon barely more\l"  
+    .string "of a POKéMON barely more\l"  
     .string "than a whisper in ancient texts.$"  
 
 PokemonMansion_1F_Text_Oak2::
     .string "Looking at the story of\n"  
     .string "MEWTWO,\l"  
-    .string "one ponders its origins..\p"  
+    .string "one ponders its origins.\p"  
     .string "I spent many years exploring\n"  
     .string "the region to discover every\l"  
     .string "species.$" 
@@ -56,7 +56,7 @@ PokemonMansion_1F_Text_Oak3::
 PokemonMansion_1F_Text_Oak4::
     .string "But let's focus on the present.\p"  
     .string "{PLAYER}!\p"  
-    .string "You have become a Pokémon\n"  
+    .string "You have become a POKéMON\n"  
     .string "master above all others.\p"  
     .string "Our battle has showed me\n"  
     .string "back to the path of strength.\p"  
@@ -93,6 +93,6 @@ PokemonMansion_1F_Text_YesOak::
     .string "Prepare yourself!$" 
 
 PokemonMansion_1F_Text_Mew::
-    .string "Mew.....$" 
+    .string "Mew……$" 
 
 

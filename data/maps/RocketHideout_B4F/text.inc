@@ -55,13 +55,16 @@ RocketHideout_B4F_Text_Grunt1PostBattle::
     .string "I dropped the LIFT KEY!$"
 
 RocketHideout_B4F_Text_ProtonIntro::
-    .string "Hey! You shouldn't be here!\n"
+    .string "Hey! What are you doing?\n"
     .string "GIOVANNI isn't even here!\p"
-    .string "I guess you lose than!$"
+    .string "Prepare to battle!$"
 
 RocketHideout_B4F_Text_ProtonDefeat::
-    .string "No!\nYou beat GIOVANNI!$"
+    .string "This can't be!\p"
+    .string "You must be the one who\n"
+    .string "beat GIOVANNI…$"
 
 RocketHideout_B4F_Text_ProtonPostBattle::
-    .string "Grrrr, Guess you win.\p"
-    .string "Hope to see you never!$"
+    .string "Grrrr… Guess you win.\p"
+    .string "I hope our paths never$"
+    .string "cross again!$"

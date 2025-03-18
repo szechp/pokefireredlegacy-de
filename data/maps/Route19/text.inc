@@ -155,23 +155,23 @@ Route19_Text_LucNotEnoughMons::
 
 
 Route19_Text_CongratsYouveWon::
-    .string "Grahh! This HM is Useless!\p"
-    .string "There are no DIVE spots anywhere\n"
-    .string "here and the ISLANDS!\p"
+    .string "This HM is useless!\p"
+    .string "There aren't any DIVE spots\n"
+    .string "around KANTO, nor are there\l"
+    .string "any in the SEVII ISLANDS!\p"
     .string "I don't even battle!\p"
-    .string "So have this!$"
+    .string "So take it!$"
 
 Route19_Text_ReceivedHM08FromDiveGuy::
-    .string "{PLAYER} received HM08\n"
-    .string "from the bald guy!$"
+    .string "{PLAYER} received HM08!$"
 
 Route19_Text_ExplainDive::
     .string "HM08 is DIVE.\p"
-    .string "It can have your pokemon\n"
-    .string "hide in water one turn and\l"
-    .string "Pop out in the next.\p"
+    .string "Your POKéMON hide in water one\n"
+    .string "turn, before emerging and dealing\l"
+    .string "damage on the next.\p"
     .string "Hopefully you can find a use\n"
-    .string "for this HM as a battle move.$"
+    .string "for this HM as a battle move!$"
 
 Route19_Text_DontHaveRoomForPrize::
     .string "You don't have room for this\n"

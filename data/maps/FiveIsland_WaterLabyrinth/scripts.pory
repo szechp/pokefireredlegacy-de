@@ -208,19 +208,17 @@ FiveIsland_WaterLabyrinth_EventScript_SetHasBigMushroom::
 
 FiveIsland_WaterLabyrinth_Text_TeachMonMoveForMushroom::
 	.string "I'm the EGG MOVE ARTIST.\p"
-	.string "I study moves with an artist's eye,\n"
-	.string "and I sketch them like SMEARGLE.\l"
-	.string "I teach moves meant for newborns.\p"
+	.string "I study moves with an artist's eye, and\n"
+	.string "sketch them as skilfully as a SMEARGLE.\p"
 	.string "I can gift an EGG move to your POKéMON\n"
 	.string "if you'd like.\p"
-	.string "All for one HEART SCALE.\n"
-	.string "I'm crafting my next masterpiece.$"
+	.string "I'll craft you a masterpiece\n"
+	.string "for just one HEART SCALE!$"
 
 FiveIsland_WaterLabyrinth_Text_WantMeToTeachMove::
-	.string "Oh! That's it! A true HEART SCALE\n"
-	.string "of passion, no less!\p"
-	.string "Let me guess, you want me to\n"
-	.string "sketch a move?$"
+	.string "Oh! That's it!\n"
+	.string "A genuine HEART SCALE!\p"
+	.string "Shall I sketch a move?$"
 
 FiveIsland_WaterLabyrinth_Text_TutorWhichMon::
 	.string "Which POKéMON needs an EGG move?$"
@@ -229,8 +227,7 @@ FiveIsland_WaterLabyrinth_Text_TeachWhichMove::
     .string "Which move should I teach?$"
 
 FiveIsland_WaterLabyrinth_Text_NoMoveICanTeachThatMon::
-	.string "Sorry…\p"
-	.string "I haven't mastered that move's art\n"
+	.string "Sorry… I have nothing to sketch\n"
 	.string "for that POKéMON.$"
 
 FiveIsland_WaterLabyrinth_Text_IllNeedMushroomOrTwo::
@@ -251,6 +248,6 @@ FiveIsland_WaterLabyrinth_Text_NeedMushroomOrTwoToLearnMove::
 
 FiveIsland_WaterLabyrinth_Text_CantTeachAnEgg::
 	.string "Hunh? No move in my sketchbook\n"
-	.string "fits an EGG.$"
+	.string "fits an EGG!$"
 
 `

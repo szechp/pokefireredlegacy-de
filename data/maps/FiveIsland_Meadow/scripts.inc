@@ -169,13 +169,13 @@ FiveIsland_Meadow_Text_Gym2::
 # 85 "data/maps/FiveIsland_Meadow/scripts.pory"
 FiveIsland_Meadow_Text_Gym2Defeat::
 # 86 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "I thought it could work...$"
+	.string "I thought it could work…$"
 # 87 "data/maps/FiveIsland_Meadow/scripts.pory"
 
 # 88 "data/maps/FiveIsland_Meadow/scripts.pory"
 FiveIsland_Meadow_Text_Gym2Post::
 # 89 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "Even though my leader\n"
+	.string "Even though my LEADER\n"
 # 90 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.string "doesn't approve of\l"
 # 91 "data/maps/FiveIsland_Meadow/scripts.pory"
@@ -197,13 +197,13 @@ FiveIsland_Meadow_EventScript_Gym3::
 # 99 "data/maps/FiveIsland_Meadow/scripts.pory"
 FiveIsland_Meadow_Text_Gym3::
 # 100 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "You shall fall to Furret!$"
+	.string "You shall fall to FURRET!$"
 # 101 "data/maps/FiveIsland_Meadow/scripts.pory"
 
 # 102 "data/maps/FiveIsland_Meadow/scripts.pory"
 FiveIsland_Meadow_Text_Gym3Defeat::
 # 103 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "Looks Like I fell.$"
+	.string "Looks like I fell.$"
 # 104 "data/maps/FiveIsland_Meadow/scripts.pory"
 
 # 105 "data/maps/FiveIsland_Meadow/scripts.pory"
@@ -211,11 +211,11 @@ FiveIsland_Meadow_Text_Gym3Post::
 # 106 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.string "I actually did see\n"
 # 107 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "Our LEADER Head South.\p"
+	.string "our LEADER head south.\p"
 # 108 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "May he be Mourning the\n"
+	.string "Could he be at the PILLAR?$"
 # 109 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "ONIX there?$"
+
 # 110 "data/maps/FiveIsland_Meadow/scripts.pory"
 
 # 111 "data/maps/FiveIsland_Meadow/scripts.pory"
@@ -253,7 +253,7 @@ FiveIsland_Meadow_Text_RocketPostBattle::
 # 127 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.string "I went to OUTCAST ISLAND.\p"
 # 128 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "Despite finding nothing.$"
+	.string "even though I found nothing.$"
 # 129 "data/maps/FiveIsland_Meadow/scripts.pory"
 
 # 130 "data/maps/FiveIsland_Meadow/scripts.pory"

@@ -1,15 +1,14 @@
 FourIsland_IcefallCave_B1F_Text_KSI::  
-    .string "Ow... Woah, what\n"  
-    .string "are you doing here!\p"  
+    .string "Ow… Woah, what\n"  
+    .string "are you doing here?!\p"  
     .string "I'll have you know I'm\n"  
-    .string "the FOUR ISLAND Champion!\p"  
+    .string "the CHAMP of FOUR ISLAND!\p"  
     .string "From the cave to the grass,\n"  
     .string "to the gym, to the league,\l"  
-    .string "I will beat you here\l"  
-    .string "and there!$"  
+    .string "I'll beat you anywhere!$"  
 
 FourIsland_IcefallCave_B1F_Text_KSIDefeat::  
-    .string "...$"  
+    .string "…$"  
 
 FourIsland_IcefallCave_B1F_Text_KSIPostBattle::  
     .string "Welp! Guess I lost.\p"  
@@ -17,7 +16,7 @@ FourIsland_IcefallCave_B1F_Text_KSIPostBattle::
     .string "performance, right?$"  
 
 FourIsland_IcefallCave_B1F_Text_NoKSI::  
-    .string "Not ready for my might...$"  
+    .string "Not ready for my might…$"  
 
 FourIsland_IcefallCave_B1F_Text_YesKSI::  
     .string "You're about to faint!\p"  
@@ -28,7 +27,7 @@ FourIsland_IcefallCave_B1F_Text_RematchKSI::
     .string "lose again? Be my guest!$"  
 
 FourIsland_IcefallCave_B1F_Text_RematchKSIDefeat::  
-    .string "...$"  
+    .string "…$"  
 
 FourIsland_IcefallCave_B1F_Text_YesRematchKSI::  
     .string "You're about to faint!\p"  

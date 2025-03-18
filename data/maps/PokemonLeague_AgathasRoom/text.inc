@@ -15,13 +15,12 @@ PokemonLeague_AgathasRoom_Text_Intro::
 
 PokemonLeague_AgathasRoom_Text_RematchIntro::
     .string "Back again, eh?\p"  
-    .string "Seen OAK lately?\p"  
+    .string "Seen OAK lately?\n"  
     .string "Still fond of you, I bet!\p"  
     .string "He's softened, unlike me.\p"  
-    .string "I relish battles!\p"  
-    .string "Let's see your growth,\n"  
-    .string "young one!\p"  
-    .string "Ready, {PLAYER}?{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"  
+    .string "I relish the thrill of battle!\p"  
+    .string "Let's see if you've grown!\n"  
+    .string "Are you ready, {PLAYER}?{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"  
 
 PokemonLeague_AgathasRoom_Text_Defeat::
     .string "Oh, my!\n"
@@ -41,8 +40,8 @@ PokemonLeague_AgathasRoom_Text_Defeat2::
 PokemonLeague_AgathasRoom_Text_PostBattle2::
     .string "Well earned, CHAMPION!\n"  
     .string "You've grown mighty!\p"  
-    .string "You've earned OAK's\n"  
-    .string "and my respect!\p"  
+    .string "You've earned OAK's respect\n"  
+    .string "as well of mine.\p"  
     .string "Now, go!\p"  
-    .string "Show the world your power,\n"  
-    .string "{PLAYER}!$" 
+    .string "Show the others what you're\n"  
+    .string "made of, {PLAYER}!$" 

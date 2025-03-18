@@ -36,7 +36,7 @@ PokemonLeague_ChampionsRoom_Text_Defeat::
 
 PokemonLeague_ChampionsRoom_Text_Defeat2::
     .string "Even with my strongest team,\n"  
-    .string "your skills as CHAMPION...\p"  
+    .string "your skills as CHAMPION…\p"  
     .string "They're real.$"  
 
 PokemonLeague_ChampionsRoom_Text_Victory::
@@ -88,7 +88,7 @@ PokemonLeague_ChampionsRoom_Text_OakCongratulations2::
     .string "proving your strength\l"  
     .string "once again!\p"  
 
-    .string "Your bond with your POKEMON\n"  
+    .string "Your bond with your POKéMON\n"  
     .string "is truly inspiring!\p"  
 
     .string "{PLAYER}, you're\n"  
@@ -109,7 +109,7 @@ PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival::
     .string "become a CHAMP again!$"
 
 PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival2::
-    .string "OAK: Ah, {RIVAL}...\p"  
+    .string "OAK: Ah, {RIVAL}…\p"  
 
     .string "I had hoped for a\n"  
     .string "better outcome.\p"  
@@ -124,7 +124,7 @@ PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival2::
 
     .string "but also about the\n"  
     .string "bond you share with\l"  
-    .string "your POKEMON.\p"  
+    .string "your POKéMON.\p"  
 
     .string "Reflect on this,\n"  
     .string "and grow stronger!$"  
@@ -144,7 +144,7 @@ PokemonLeague_ChampionsRoom_Text_OakPlayerComeWithMe2::
     .string "Your triumph is\n"  
     .string "not yours alone!\p"  
 
-    .string "Your bond with your POKEMON\n"  
+    .string "Your bond with your POKéMON\n"  
     .string "is a lesson for us all!\p"  
 
     .string "{PLAYER}, let's\n"  

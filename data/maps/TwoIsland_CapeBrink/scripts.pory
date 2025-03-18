@@ -96,8 +96,8 @@ TwoIsland_CapeBrink_Text_Rocket1Defeat::
     .string "You're good at this.$"  
 
 TwoIsland_CapeBrink_Text_Rocket1PostBattle::
-    .string "I don't think you can stand to\n"  
-    .string "our leader yet.\p"  
+    .string "I don't think you can stand up\n"  
+    .string "to our LEADER just yet.\p"  
     .string "You should fight that AROMA LADY\n"  
     .string "before you do.$"  
 
@@ -108,14 +108,14 @@ TwoIsland_CapeBrink_EventScript_Gym2::
 
 TwoIsland_CapeBrink_Text_Rocket2Intro::
     .string "I'll show you the beauty of\n"  
-    .string "DOUBLE!$"  
+    .string "a DOUBLE BATTLE!$"  
 
 TwoIsland_CapeBrink_Text_Rocket2Defeat::
-    .string "That wasn't Beautiful!$"  
+    .string "That wasn't beautiful!$"  
 
 TwoIsland_CapeBrink_Text_Rocket2PostBattle::
-	.string "You might of beat me, but\n"
+	.string "You might have beat me, but\n"
 	.string "are you ready for our\l"
-	.string "Beautiful Leader to show\l"
+	.string "beautiful LEADER to show\l"
 	.string "her expertise?$"
 `

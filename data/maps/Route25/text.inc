@@ -118,38 +118,38 @@ Route25_Text_AreYouHereAlone::
     .string "Well, it should be as a couple.$"
 
 Route25_Text_Will::
-    .string "Oh my, The CHAMPION?\p"
-    .string "I am just visiting this place.\p"
+    .string "Oh my, it's the CHAMPION!\p"
+    .string "I'm just visiting this place.\n"
     .string "The sea here is magnificent!\p"
-    .string "Good place for Training\p"
-    .string "Training to become a ELITE FOUR\n"
-    .string "Member under you guise!\p"
-    .string "Want to partake in a battle!\n"
-    .string "Good Sir?$"
+    .string "I'm training to become a member\n"
+    .string "of the ELITE FOUR, and I can\l"
+    .string "practice by battling you!\p"
+    .string "Right?$"
 
 Route25_Text_WillDefeat::
-    .string "Seems Champion Level to me!$"
+    .string "A shame, but I'd expect no less\n"
+    .string "from the CHAMPION!$"
 
 Route25_Text_WillPostBattle::
     .string "Incredible! Your strength is unmatched!\p"
     .string "I can't wait to battle with you\n"
-    .string "as my CHAMPION.\p"
+    .string "as part of the ELITE FOUR.\p"
     .string "I want you to have this gift!\p"
-    .string "A Flute that can repel Pokemon!$"
+    .string "A FLUTE that can repel POKéMON!$"
 
 Route25_Text_NoWill::
-    .string "Maybe some other time sir.$"
+    .string "Maybe some other time?$"
 
 Route25_Text_YesWill::
-    .string "Let's dance at the sea!$"
+    .string "Let's dance!$"
 
 Route25_Text_RematchWill::
-    .string "You want a Rematch?$"
+    .string "You want a rematch, CHAMPION?$"
 
 Route25_Text_RematchWillDefeat::
-    .string "Magnificent Performance Champion!$"
+    .string "A magnificent performance!$"
 
 Route25_Text_PostRematchWill::
     .string "Incredible! Your strength is unmatched!\p"
     .string "I can't wait to battle with you\n"
-    .string "as my CHAMPION.$"
+    .string "as part of the ELITE FOUR.\p"

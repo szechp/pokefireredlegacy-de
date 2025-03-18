@@ -159,7 +159,7 @@ FiveIsland_ResortGorgeous_House_EventScript_Medic::
 FiveIsland_ResortGorgeous_House_Text_Medic::
 	.string "Hello there, I'm SELPHY's\n"  
 	.string "medic. Since you saved her,\l"  
-	.string "I'll heal your POKÉMON!$"  
+	.string "I'll heal your POKéMON!$"  
 
 FiveIsland_ResortGorgeous_House_Text_Medic2::
 	.string "Thanks so much for\n"  
@@ -183,5 +183,5 @@ FiveIsland_ResortGorgeous_House_Text_PcMan::
 
 FiveIsland_ResortGorgeous_House_Text_PcManYesNo:
 	.string "Do you want to access\n"  
-	.string "The PC?$"  
+	.string "the PC?$"  
 `

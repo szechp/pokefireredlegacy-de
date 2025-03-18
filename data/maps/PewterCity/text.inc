@@ -148,12 +148,12 @@ PewterCity_Text_ReceivedRunningShoesFromAide::
 
 PewterCity_Text_SwitchedShoesWithRunningShoes::
     .string "{PLAYER} put the EXP SHARE\n"
-    .string "In the bag.$"
+    .string "in the BAG.$"
 
 PewterCity_Text_ExplainRunningShoes::
-    .string "Use it to Give EXP.\n"
-    .string "To a weaker Pokemon\p"
-    .string "from a stronger one!$"
+    .string "When held by a weaker POKéMON,\n"
+    .string "it will recieve experience\p"
+    .string "as though it were in battle.$"
 
 PewterCity_Text_MustBeGoingBackToLab::
     .string "Well, I must be going back to\n"
@@ -170,12 +170,12 @@ PewterCity_Text_RunningShoesLetterFromMom::
     .string "From Mom$"
 
 PewterCity_Text_AbilityGirl::
-	.string "Abilities are so cool!\p"
+	.string "ABILITIES are so cool!\p"
  	.string "POKéMON with PICKUP can find all sorts\n"
- 	.string "of rare items, even a RARE CANDY.\p"
+ 	.string "of rare items, even RARE CANDY.\p"
  	.string "MAGMA ARMOR is so hot, it evaporates\n"
  	.string "WATER attacks and reduces their\l"
- 	.string "damage.\p"
+ 	.string "damage!\p"
  	.string "STENCH smells so bad that the opponent\n"
  	.string "might miss you, while ILLUMINATE makes\l"
  	.string "it easier to see and ignore accuracy\l"

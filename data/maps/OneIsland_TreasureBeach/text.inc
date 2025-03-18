@@ -17,31 +17,30 @@ OneIsland_TreasureBeach_Text_GoodThingsWashUpOnBeach::
     .string "some beachcombing.$"
 
 OneIsland_TreasureBeach_Text_Jasmine::  
-    .string "Oh, I think you're the\n"  
-    .string "KANTO CHAMPION now, huh?\p"  
-    .string "I'm just enjoying finding\n"  
-    .string "treasure around this beach.\p"  
-    .string "I am JASMINE, the OLIVINE\n"  
-    .string "CITY GYM LEADER!\p"  
+    .string "Oh, you're the new\n"  
+    .string "KANTO CHAMPION, aren't you?\p"  
+    .string "I'm just looking for\n"  
+    .string "treasure on this beach.\p"  
+    .string "I am JASMINE, LEADER of the\n"  
+    .string "OLIVINE CITY GYM in JOHTO!\p"  
     .string "I specialize in STEEL-type\n"  
     .string "POKéMON!\p"  
-    .string "And I could go for a battle\n"  
-    .string "right now!$"  
+    .string "I'd love to train with you!$"  
 
 OneIsland_TreasureBeach_Text_JasmineDefeat::  
     .string "Wow, I was stumped!$"  
 
 OneIsland_TreasureBeach_Text_JasminePostBattle::  
-    .string "Ah, I see why you are CHAMPION.\p"  
-    .string "Talented indeed!\p"  
-    .string "Continue to treat POKéMON well\n"  
-    .string "with care!$"  
+    .string "Ah, I see why you're the CHAMPION.\p"  
+    .string "You're talented indeed!\p"  
+    .string "Continue to treat POKéMON\n"  
+    .string "with love and care!$"  
 
 OneIsland_TreasureBeach_Text_NoJasmine::  
     .string "Maybe some other time.$"  
 
 OneIsland_TreasureBeach_Text_YesJasmine::  
-    .string "Sounds like it!$"  
+    .string "OK, I'm ready!$"  
 
 OneIsland_TreasureBeach_Text_RematchJasmine::  
     .string "You want a rematch?$"  
@@ -50,10 +49,10 @@ OneIsland_TreasureBeach_Text_RematchJasmineDefeat::
     .string "Wow, I was stumped!$"  
 
 OneIsland_TreasureBeach_Text_YesRematchJasmine::  
-    .string "Sounds like it!$"  
+    .string "OK, I'm ready!$"  
 
 OneIsland_TreasureBeach_Text_RematchJasminePostBattle::  
-    .string "Ah, I see why you are CHAMPION.\p"  
-    .string "Talented indeed!\p"  
-    .string "Continue to treat POKéMON well\n"  
-    .string "with care!$"  
+    .string "Ah, I see why you're the CHAMPION.\p"  
+    .string "You're talented indeed!\p"  
+    .string "Continue to treat POKéMON\n"  
+    .string "with love and care!$"  
