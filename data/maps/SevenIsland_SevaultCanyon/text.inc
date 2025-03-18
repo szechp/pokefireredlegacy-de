@@ -130,42 +130,43 @@ SevenIsland_SevaultCanyon_Text_BrunoTrainedWithBrawly::
     .string "name of BRAWLY before.$"
 
 SevenIsland_SevaultCanyon_Text_Chuck::
-    .string "Hey Man! I'm training.\n"  
+    .string "Hey, man! I'm training.\n"  
     .string "This form of training is not\l"  
     .string "to be disturbed.\p"  
-    .string "This place is great for Fighting\n"  
-    .string "type gym leaders like me.\p"  
-    .string "Chuck's the name.\p"  
+    .string "This place is great for FIGHTING\n"  
+    .string "type GYM LEADERS like me.\p"  
+    .string "CHUCK's the name.\p"  
     .string "Say, fighting you could also\n"  
     .string "help me train.\p"  
     .string "Would you like to spar?$"  
 
 SevenIsland_SevaultCanyon_Text_ChuckDefeat::
-    .string "You are a Great Trainer!$"
+    .string "You're a mighty TRAINER!$"
 
 SevenIsland_SevaultCanyon_Text_ChuckPostBattle::
-    .string "Hahaha, You quit one CHAMPION!\p"
-    .string "I would like to adapt your\n"
-    .string "Training Style One Day!$"
+    .string "Hahaha, you're quite a CHAMPION!\p"
+    .string "I'd like to adapt your\n"
+    .string "training style one day!$"
 
 SevenIsland_SevaultCanyon_Text_NoChuck::
     .string "Guess you don't like training.$"
 
 SevenIsland_SevaultCanyon_Text_YesChuck::
-    .string "Alright, Let's Spar!$"
+    .string "Alright, let's spar!$"
 
 SevenIsland_SevaultCanyon_Text_RematchChuck::
-    .string "Are you back for more Training?\n"
-    .string "I am sure ready!$"
+    .string "Are you back for more training?\n"
+    .string "I'm ready for it!$"
 
 SevenIsland_SevaultCanyon_Text_RematchChuckDefeat::
-    .string "You are a Great Trainer!$"
+    .string "You're a mighty TRAINER!$"
 
 SevenIsland_SevaultCanyon_Text_YesRematchChuck::
-    .string "Alright, Let's Spar!$"
+    .string "Alright, let's spar!$"
 
 SevenIsland_SevaultCanyon_Text_RematchChuckPostBattle::
-    .string "Hahaha, You quit one CHAMPION!\p"
-    .string "I would like to adapt your\n"
-    .string "Training Style One Day!$"
+    .string "Hahaha, you're quite a CHAMPION!\p"
+    .string "I'd like to adapt your\n"
+    .string "training style one day!$"
+
 

@@ -71,26 +71,25 @@ PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon::
 
 PewterCity_Museum_1F_Text_EliteTicket::
 	.string "I heard if you interact\n"
-	.string "with the MOON STONE\l"
-	.string "a certain POKEMON\l"
-	.string "Changes Form!$"
+	.string "with the MOON STONE,\l"
+	.string "a certain POKéMON\l"
+	.string "changes form!$"
 
 PewterCity_Museum_1F_Text_Ticket::
 	.string "Oh, I see it! I see\n"
 	.string "your many great\l"
 	.string "achievements!\p"
-	.string "For that, I give\n"
+	.string "For that, I will give\n"
 	.string "you this ticket.$"
-
 
 PewterCity_Museum_1F_Text_ExplainTicket::
 	.string "This ticket will allow\n"
-	.string "you to go to a special\l"
+	.string "you to go to a sacred\l"
 	.string "place that is said\l"
 	.string "to hold a special\l"
 	.string "Pokémon.\p"
 
-	.string "Something I think\n"
-	.string "will fit you and\l"
-	.string "your many achievements.$"
+	.string "Somewhere perfect for\n"
+	.string "someone with your many\l"
+	.string "many achievements.$"
 

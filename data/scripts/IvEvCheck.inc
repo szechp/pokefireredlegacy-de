@@ -21,7 +21,7 @@ EventScript_IVChecker::
 	end
 
 Text_IVChecker_1:
-	.string "Your {STR_VAR_1}...$"
+	.string "Your {STR_VAR_1}…$"
 
 Text_IVChecker_2:
 	.string "Its HP IV is {STR_VAR_1}.\p"
@@ -57,7 +57,7 @@ EventScript_EVChecker::
 	end
 
 Text_EVChecker_1:
-	.string "Your {STR_VAR_1}...$"
+	.string "Your {STR_VAR_1}…$"
 
 Text_EVChecker_2:
 	.string "Its HP EV is {STR_VAR_1}.\p"

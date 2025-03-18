@@ -15,8 +15,8 @@ PokemonLeague_LancesRoom_Text_Intro::
     .string "me, {PLAYER}!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_LancesRoom_Text_RematchIntro::
-    .string "Back so soon,\n"  
-    .string "{PLAYER}?\p"  
+    .string "Ah!\n"
+    .string "So, you've returned, {PLAYER}!\p"
     .string "As CHAMPION, you seek more\n"  
     .string "battles?\p"  
     .string "My dragons await your\n"  
@@ -52,7 +52,7 @@ PokemonLeague_LancesRoom_Text_Defeat2::
     .string "Your strength keeps\n"  
     .string "growing.\p"  
 
-    .string "Truly, you are a POKEMON master\n"  
+    .string "Truly, you are a POKéMON master\n"  
     .string "now.$"  
 
 PokemonLeague_LancesRoom_Text_PostBattle2::

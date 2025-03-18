@@ -98,13 +98,12 @@ FiveIsland_MemorialPillar_Text_HereLiesTectonix::
     .string "on a boulder.$"
 
 FiveIsland_MemorialPillar_Text_Oman::  
-    .string "Wow, I can't believe\n"  
-    .string "he used POKÉMON\l"  
-    .string "so weak to water\l"  
+    .string "Wow, I can't believe he'd\n"  
+    .string "use a POKéMON weak to water\l"  
     .string "on the OCEAN ISLANDS!\p"  
     .string "Unlucky for him.\p"  
-    .string "I also had to use\p"  
-    .string "not so stellar POKÉMON,\p"  
+    .string "I've also had to put up with\p"  
+    .string "less than stellar POKéMON,\p"  
     .string "but I grew strong despite it.\p"  
     .string "Want to see them?$"  
 
@@ -113,8 +112,10 @@ FiveIsland_MemorialPillar_Text_OmanDefeat::
 
 FiveIsland_MemorialPillar_Text_OmanPostBattle::  
     .string "Looks like I've been bested.\p"  
-    .string "As expected, given my POKÉMON.\p"  
-    .string "You used them even better.\p"  
+    .string "That's to be expected,\n"
+    .string "given my POKéMON.\p"  
+    .string "You made better use of them\n"
+    .string "than I possibly could've.\p"
     .string "I know I can grow stronger.\n"  
     .string "It's just a matter of time.$"  
 
@@ -122,7 +123,7 @@ FiveIsland_MemorialPillar_Text_NoOman::
     .string "Maybe some other time.$"  
 
 FiveIsland_MemorialPillar_Text_YesOman::  
-    .string "Good luck... to me.\p"  
+    .string "Good luck… to me.\p"  
     .string "Let's battle!$"  
 
 FiveIsland_MemorialPillar_Text_RematchOman::  
@@ -134,12 +135,14 @@ FiveIsland_MemorialPillar_Text_RematchOmanDefeat::
     .string "I guess that was expected.$"  
 
 FiveIsland_MemorialPillar_Text_YesRematchOman::  
-    .string "Good luck... to me.\p"  
+    .string "Good luck… to me.\p"  
     .string "Let's battle!$"  
 
 FiveIsland_MemorialPillar_Text_RematchOmanPostBattle::  
     .string "Looks like I've been bested.\p"  
-    .string "As expected, given my POKÉMON.\p"  
-    .string "You used them even better.\p"  
+    .string "That's to be expected,\n"
+    .string "given my POKéMON.\p"  
+    .string "You made better use of them\n"
+    .string "than I possibly could've.\p"
     .string "I know I can grow stronger.\n"  
     .string "It's just a matter of time.$"  

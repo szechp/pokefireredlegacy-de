@@ -20,8 +20,8 @@ CeruleanCity_BikeShop_Text_ExchangedVoucherForBicycle::
 
 CeruleanCity_BikeShop_Text_ThankYouComeAgain::
     .string "This BICYCLE has two gears.\n"
-    .string "Press the B Button to switch them\l"
-    .string "for more control of your speed!\p"
+    .string "Press the B Button to switch\l"
+    .string "between the different speeds!\p"
     .string "Thank you!\n"
     .string "Come back again sometime!$"
 
@@ -30,8 +30,8 @@ CeruleanCity_BikeShop_Text_HowDoYouLikeNewBicycle::
     .string "Do you like how it rides?\p"
     .string "You can take it out on CYCLING\n"
     .string "ROAD and even into caves!\p"
-    .string "You can switch gears for more\n"
-    .string "speed too with the B Button!$"
+    .string "You can also switch gears with\n"
+    .string "the B Button for more speed!$"
 
 CeruleanCity_BikeShop_Text_MakeRoomForBicycle::
     .string "You better make room for your\n"

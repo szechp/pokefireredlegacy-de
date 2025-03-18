@@ -156,44 +156,43 @@ SixIsland_PatternBush_Text_LaytonPostBattle::
 
 SixIsland_PatternBush_Text_Bugsy::
     .string "Wow, I can't believe this forest\n"  
-    .string "has the same bugs as in JOHTO.\p"  
+    .string "has the same BUG POKéMON as JOHTO.\p"  
     .string "And I can't believe the KANTO\n"  
-    .string "Champion is here with me right\l"  
-    .string "now!\p"  
+    .string "CHAMP is here with me right now!\p"  
     .string "I'm just starting out as a\n"  
-    .string "Gym Leader, My name is BUGSY,\l"  
-    .string "a bug type Prodigy!\p"  
+    .string "GYM LEADER. My name is BUGSY,\l"  
+    .string "a BUG type prodigy!\p"  
     .string "Want to fight me here and now?\n"  
     .string "It would help me with my research!$"  
 
 SixIsland_PatternBush_Text_BugsyDefeat::
-    .string "This Gives me new Insight!$"
+    .string "This gives me new insight!$"
 
 SixIsland_PatternBush_Text_BugsyPostBattle::
-    .string "Well that truly was Amazing!\p"
-    .string "You truly Humbled my Bugs!\p"
-    .string "Wish me luck as a GYM LEADER!\p"
+    .string "Well, that truly was amazing!\p"
+    .string "You've humbled my BUG POKéMON!\p"
+    .string "Wish me luck as a GYM LEADER,\n"
     .string "CHAMPION {PLAYER}!$"
 
 SixIsland_PatternBush_Text_NoBugsy::
-    .string "Oh guess you're not interested.$"
+    .string "Oh, guess you're not interested.$"
 
 SixIsland_PatternBush_Text_YesBugsy::
-    .string "Let's go Bugs!$"
+    .string "Let's go, BUG POKéMON!$"
 
 SixIsland_PatternBush_Text_RematchBugsy::
-    .string "You still aching for a\n"
-    .string "Another Battle?$"
+    .string "You still aching for\n"
+    .string "another battle?$"
 
 SixIsland_PatternBush_Text_RematchBugsyDefeat::
-    .string "This Gives me new Insight!$"
+    .string "This gives me new insight!$"
 
 SixIsland_PatternBush_Text_YesRematchBugsy::
-    .string "Let's go Bugs!$"
+    .string "Let's go, BUG POKéMON!$"
 
 SixIsland_PatternBush_Text_RematchBugsyPostBattle::
-    .string "Well that truly was Amazing!\p"
-    .string "You truly Humbled my Bugs!\p"
-    .string "Wish me luck as a GYM LEADER!\p"
+    .string "Well, that truly was amazing!\p"
+    .string "You've humbled my BUG POKéMON!\p"
+    .string "Wish me luck as a GYM LEADER,\n"
     .string "CHAMPION {PLAYER}!$"
 

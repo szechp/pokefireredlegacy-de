@@ -36,7 +36,7 @@ SixIsland_WaterPath_House1_Text_ThisWontDo::
     .string "and cool, and has a lovely horn!$"
 
 SixIsland_WaterPath_House1_Text_TakeThisAlso::
-    .string "Take this Also!$"
+    .string "Take this as well!$"
 
 
 SixIsland_WaterPath_House1_Text_YourBagIsFull::

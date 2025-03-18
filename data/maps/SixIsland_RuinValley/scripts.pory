@@ -110,6 +110,6 @@ SixIsland_RuinValley_Text_Rocket2Intro::
 SixIsland_RuinValley_Text_Rocket2Defeat::
 	.string "WAHHH!$"
 SixIsland_RuinValley_Text_Rocket2PostBattle::
-	.string "I can't take this anymore...$"
+	.string "I can't take this anymore…$"
 
 `

@@ -45,17 +45,17 @@ SaffronCity_Gym_Text_BagFullOfOtherItems::
 SaffronCity_Gym_Text_RematchSabrina::
     .string "My psychic power feels your might.\n"
     .string "Since our last battle,\l"
-    .string "I've grown Stronger!\p"
+    .string "I've grown stronger!\p"
     .string "Ready for a true challenge?\p"
-    .string "Rematch Me$"
+    .string "Rematch me!$"
 
 SaffronCity_Gym_Text_RematchSabrinaDefeat::
-    .string "You really are a strong one.$"
+    .string "You really are a strong one!$"
 
 SaffronCity_Gym_Text_SabrinaPostRematchBattle::
     .string "Incredible! Your strength is\n" 
     .string "the real deal!\p"
-    .string "This lost sharpens\n"
+    .string "This loss will sharpen\n"
     .string "my psychic senses!$"
 
 SaffronCity_Gym_Text_SabrinaNoRematchBattle::

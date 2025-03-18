@@ -101,11 +101,11 @@ SixIsland_WaterPath_Text_RouteSign::
     .string "Leads to RUIN VALLEY$"
 
 SixIsland_WaterPath_Text_MayIHelpYou::
-    .string "Hahahahaaha\l"
-    .string "I've got the best TM's\n"
-    .string "Out there!\p"
-    .string "I have made a lot of money'\n"
-    .string "selling these Hit Singles!'\p"
-    .string "You may want these bad boy's\n"
-    .string "Themselves I guess!$"
+    .string "Hahahahaha!\p"
+    .string "I've got the best TMs in\n"
+    .string "the whole SEVII ISLANDS!\p"
+    .string "I've made a lot of money\n"
+    .string "selling these discs!\p"
+    .string "I suppose you want to have\n"
+    .string "a look at these bad boys?$"
 

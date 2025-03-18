@@ -32,16 +32,16 @@ Route1_Text_Oak::
     .string "my lunch hour!\p"  
     .string "{PLAYER}, you have truly\n"  
     .string "come into your own!\p"  
-    .string "Your POKÉMON LEAGUE challenge\n"  
+    .string "Your POKéMON LEAGUE challenge\n"  
     .string "has reignited a spirit that\l"  
-    .string "left me a long time ago...\p"  
+    .string "left me a long time ago…\p"  
     .string "Back in my day, I was a\n"  
     .string "serious TRAINER!\p"  
     .string "How about we spar a bit?\n"  
     .string "What say you?$"
 
 Route1_Text_OakDefeat::
-    .string "Hmm...\p"  
+    .string "Hmm…\p"  
     .string "I still have a lot to learn!$" 
 
 Route1_Text_OakPostBattle::

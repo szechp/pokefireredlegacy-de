@@ -50,23 +50,23 @@ FuchsiaCity_Gym_Text_RematchKoga::
     .string "I commend your strength.\p"
     .string "But as a ninja master, I've\n"
     .string "grown stronger.\p"
-    .string "Dare face me again, with all\n"
-    .string "my power?$"
+    .string "Dare to face me again,\n"
+    .string "despite all my power?$"
 
 FuchsiaCity_Gym_Text_RematchKogaDefeat::
-    .string "Seems Champion Level to me!$"
+    .string "Seems CHAMPION level to me!$"
 
 FuchsiaCity_Gym_Text_KogaPostRematchBattle::
     .string "Continue to hone your skills, for\n"
     .string "the path of a ninja never ends.$"
 
 FuchsiaCity_Gym_Text_KogaNoRematchBattle::
-    .string "Your not ready?$"
+    .string "You're not ready?$"
 
 FuchsiaCity_Gym_Text_RematchYesKoga::
     .string "Let us see if the CHAMPION\n"
     .string "can survive the ultimate poison\l"
-    .string "TECHINQUE!$"
+    .string "technique!$"
 
 FuchsiaCity_Gym_Text_KaydenIntro::
     .string "Strength isn't the key for POKéMON.\n"
@@ -99,16 +99,16 @@ FuchsiaCity_Gym_Text_KirkPostBattle::
     .string "of KOGA, my ninja master.$"
 
 FuchsiaCity_Gym_Text_NateIntro::
-    .string "I'm the GYM LEADER's Daughter!\p"
-    .string "I'm training to become the!\n"
-    .string "GYM Leader after my father!$"
+    .string "I'm Master KOGA's daughter.\p"
+    .string "I hope to succeed him as\n"
+    .string "LEADER one day!$"
 
 FuchsiaCity_Gym_Text_NateDefeat::
-    .string "Too Strong!$"
+    .string "Think I still need some practice…$"
 
 FuchsiaCity_Gym_Text_NatePostBattle::
-    .string "You may of beat me,\n"
-    .string "But I don't think you can beat DAD!$"
+    .string "I'm warning you,\n"
+    .string "my DAD doesn't hold back!$"
 
 FuchsiaCity_Gym_Text_PhilIntro::
     .string "Stop right there!\p"

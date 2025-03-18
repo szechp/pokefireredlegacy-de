@@ -167,7 +167,7 @@ gText_Oak_AreYouSure_Normal::
 
 gText_Oak_AreYouSure_Hard::
 	.string "Are you sure? No items in battle,\n"
-	.string "Set Mode, GYM level caps.$"
+	.string "SET mode, GYM level caps.$"
 
 gText_Oak_AreYouSure_Hardcore::
 	.string "Are you sure? Hard mode,\n"

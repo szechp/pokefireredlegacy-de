@@ -50,7 +50,8 @@ Route2_EastBuilding_Text_ReceivedEverstoneFromAide::
 
 Route2_EastBuilding_Text_ExplainEverstone::
     .string "ROCK SMASH can be used to break\n"
-    .string "Smashable Rocks and can even\l"
-    .string "Find Encounters!\p"
-    .string "You need LT SURGE's\n"
-    .string "BADGE to use ROCK SMASH!$"
+    .string "smashable rocks, and you can\l"
+    .string "sometimes encounter wild\l"
+    .string "POKéMON in the rubble.\p" 
+    .string "You'll need LT SURGE's\n"
+    .string "BADGE to use ROCK SMASH.$"

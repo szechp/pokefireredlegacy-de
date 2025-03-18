@@ -60,4 +60,4 @@ SeafoamIslands_B4F_Text_WeebraPostBattle::
     .string "but you do you, bro!$"  
 
 SeafoamIslands_B4F_Text_Slowpoke::
-    .string "SLOWPOKE!$"
+    .string "Yawn?$"

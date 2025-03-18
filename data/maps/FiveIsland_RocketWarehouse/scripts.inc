@@ -377,7 +377,7 @@ FiveIsland_RocketWarehouse_Text_Police::
 # 189 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
     .string "We are investigating this place,\n"  
 # 190 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
-    .string "we are currently holding this\l"  
+    .string "and are currently holding this\l"  
 # 191 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"
     .string "SCIENTIST for questioning.$"
 # 192 "data/maps/FiveIsland_RocketWarehouse/scripts.pory"

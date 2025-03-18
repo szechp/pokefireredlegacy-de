@@ -42,10 +42,9 @@ Text_ExplosionTaughtJP::
     .string "す　すごい　スリル！$"
 
 Text_ExplosionReteach::
-    .string "This volcano is still active\n"
-    .string "but you came back?\p"
-    .string "So, you like the thrill of\n"
-    .string "risking a volcanic explosion too?$"
+    .string "So, you're back?\n"
+    .string "Still enticed by the terror and\l"
+    .string "thrill of a volcanic explosion?$"
 Text_ExplosionReteach2::
     .string "If you want more thrills, I can\n"
     .string "teach you EXPLOSION for ¥20000.$"

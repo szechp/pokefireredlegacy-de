@@ -71,7 +71,7 @@ Text_CounterTaught::
 
 Text_CounterReteach::
     .string "Still working away at POKéMON?\n"
-    .string "I've moved onto the next big thing.\p"
+    .string "I'm saving for the next big thing.\p"
     .string "If you want, I can teach you\n"
     .string "COUNTER again for ¥10000.$"
 Text_CounterReteach2::

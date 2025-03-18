@@ -32,14 +32,15 @@ Route10_PokemonCenter_1F_Text_ReceivedEverstoneFromAide::
 
 Route10_PokemonCenter_1F_Text_ExplainEverstone::
     .string "ROCK SMASH can be used to break\n"
-    .string "Smashable Rocks and can even\l"
-    .string "Find Encounters!\p"
-    .string "You need LT SURGE's\n"
-    .string "BADGE to use ROCK SMASH!$"
+    .string "smashable rocks, and you can\l"
+    .string "sometimes encounter wild\l"
+    .string "POKéMON in the rubble.\p" 
+    .string "You'll need LT SURGE's\n"
+    .string "BADGE to use ROCK SMASH.$"
 
 Route10_PokemonCenter_1F_Text_Nurse::
 	.string "I've always dreamed of\n"  
-	.string "becoming a POKEMON MASTER,\p"  
+	.string "becoming a POKéMON MASTER,\p"  
 	.string "but my duties here make\n"  
 	.string "it hard to travel\l"  
 	.string "and collect badges.\p"  
@@ -54,7 +55,7 @@ Route10_PokemonCenter_1F_Text_NurseDefeat::
 Route10_PokemonCenter_1F_Text_NursePostBattle::
 	.string "That was amazing!\p"  
 	.string "Your strength and bond\n"  
-	.string "with your POKEMON is inspiring.\p"  
+	.string "with your POKéMON is inspiring.\p"  
 	.string "This battle has\n"  
 	.string "taught me so much.\p"  
 	.string "Thank you for this opportunity!\p"  
@@ -73,21 +74,19 @@ Route10_PokemonCenter_1F_Text_YesNurse::
 
 Route10_PokemonCenter_1F_Text_RematchNurse::
 	.string "It would be a great honor\n"  
-	.string "to test my skills\p"  
-	.string "against the new CHAMPION,\n" 
-	.string "again!\p"   
-    .string "Do you want to have another battle.$"
+	.string "to test my skills against\p"  
+	.string "the new CHAMPION again!\p"   
+    .string "Do you want to have another battle?$"
 
 Route10_PokemonCenter_1F_Text_RematchNurseDefeat::
     .string "Amazing!$"
 
 Route10_PokemonCenter_1F_Text_PostRematchNurse::
-    .string "That's what I expect!\p"
     .string "Continue to grow stronger,\n"
     .string "I'll always be here!$"
 
 Route10_PokemonCenter_1F_Text_BattleNurse::
-	.string "Actually...\p"  
+	.string "Actually…\p"  
 	.string "Before you go.$" 
 
 Route10_PokemonCenter_1F_Text_GiveHM05IfSeen10Mons::

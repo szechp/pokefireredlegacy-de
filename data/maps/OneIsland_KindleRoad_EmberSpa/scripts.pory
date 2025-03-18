@@ -103,10 +103,10 @@ OneIsland_KindleRoad_EmberSpa_Text_Rocket1Intro::
 	.string "domain!$"
 
 OneIsland_KindleRoad_EmberSpa_Text_Rocket1Defeat::
-	.string "I failed you, SLUGMA.$"
+	.string "I failed you, SLUGMA…$"
 
 OneIsland_KindleRoad_EmberSpa_Text_Rocket1PostBattle::
-	.string "Our leader and us are\n"
+	.string "Our LEADER and us are\n"
 	.string "big fans of SLUGMA.\l"
 	.string "They're as hot as\l"
 	.string "ONE ISLAND itself!$"
@@ -121,11 +121,10 @@ OneIsland_KindleRoad_EmberSpa_Text_Rocket2Intro::
 	.string "and seen SLUGMA?$"
 
 OneIsland_KindleRoad_EmberSpa_Text_Rocket2Defeat::
-	.string "SLUGMA would be proud$"
+	.string "SLUGMA would be proud!$"
 
 OneIsland_KindleRoad_EmberSpa_Text_Rocket2PostBattle::
-	.string "Our Leader should be\n"
-	.string "Left to us, He's a Certifed\l"
-	.string "SLUGMA Trainer!$"
+	.string "Our LEADER is a certifed\n"
+	.string "SLUGMA expert!$"
 
 `

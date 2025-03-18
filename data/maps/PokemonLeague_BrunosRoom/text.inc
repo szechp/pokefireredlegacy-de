@@ -15,10 +15,10 @@ PokemonLeague_BrunosRoom_Text_RematchIntro::
     .string "Your strength is legendary now.\p"  
     .string "But so is mine!\p"  
     .string "We've both grown stronger\n"  
-    .string "with our Pokémon.\p"  
+    .string "with our POKéMON.\p"  
     .string "Let's test our limits again!\p"  
-    .string "Prepare yourself!\n"  
-    .string "For an intense battle!\p"  
+    .string "Prepare yourself for an\n"  
+    .string "intense battle!\p"  
     .string "Hoo hah!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_BrunosRoom_Text_Defeat::

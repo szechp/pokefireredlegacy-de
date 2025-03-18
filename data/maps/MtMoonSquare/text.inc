@@ -1,3 +1,3 @@
 MtMoonSquare_Text_Clefairy::
-    .string "Clefairy!$"
+    .string "Pippippi!$"
 

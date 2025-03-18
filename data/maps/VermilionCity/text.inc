@@ -130,6 +130,6 @@ VermilionCity_Text_Route2AideHasPackageForYou::
     .string "please look for him.$"
 
 VermilionCity_Text_Challenger::
-    .string "Why is this Tree Here?\p"
-    .string "I'm trying to Challenge.\n"
-    .string "The Gym!$"
+    .string "Why is this tree here?\p"
+    .string "I'm trying to challenge\n"
+    .string "the GYM!$"

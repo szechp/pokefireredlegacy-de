@@ -53,7 +53,7 @@ FourIsland_IcefallCave_1F_Text_Rocket1Intro::
 # 27 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
 	.string "You're trying to fight\l"
 # 28 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-	.string "my leader.$"
+	.string "my LEADER.$"
 # 29 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
 
 # 30 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
@@ -65,7 +65,7 @@ FourIsland_IcefallCave_1F_Text_Rocket1Defeat::
 # 33 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
 FourIsland_IcefallCave_1F_Text_Rocket1PostBattle::
 # 34 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
-	.string "My leader is further\n"
+	.string "My LEADER is further\n"
 # 35 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"
 	.string "in the cave, I hope you\l"
 # 36 "data/maps/FourIsland_IcefallCave_1F/scripts.pory"

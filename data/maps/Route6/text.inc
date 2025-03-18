@@ -72,11 +72,11 @@ Route6_Text_UndergroundPathSign::
     .string "CERULEAN CITY - VERMILION CITY$"
 
 Route6_Text_Fisher::
-    .string "The Gate Guards are pretty?\n"
-    .string "strong Trainers, but they might\l"
-    .string "the only way to open the gates\l"
-    .string "I think if you could\l"
-    .string "you beat someone like SURGE\l"
-    .string "You could stand up to them!$"
+    .string "The guards here are pretty\n"
+    .string "strong TRAINERS, but they might\l"
+    .string "be the only way to open the gates.\p"
+    .string "But if you're strong enough\n"
+    .string "to beat someone like SURGE,\l"
+    .string "you could stand up to them!$"
 
 

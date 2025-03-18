@@ -321,7 +321,7 @@ FiveIsland_ResortGorgeous_House_Text_Medic::
 # 161 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
 	.string "medic. Since you saved her,\l"  
 # 162 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
-	.string "I'll heal your POKÉMON!$"  
+	.string "I'll heal your POKéMON!$"  
 # 163 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
 
 # 164 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
@@ -369,4 +369,4 @@ FiveIsland_ResortGorgeous_House_Text_PcManYesNo:
 # 185 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
 	.string "Do you want to access\n"  
 # 186 "data/maps/FiveIsland_ResortGorgeous_House/scripts.pory"
-	.string "The PC?$"
+	.string "the PC?$"

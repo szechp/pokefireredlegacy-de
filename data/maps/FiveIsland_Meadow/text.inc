@@ -62,7 +62,7 @@ FiveIsland_Meadow_Text_Beasts::
 	.string "in this meadow.\p"
 	.string "What do you want?\p"
 	.string "I actually found something\n"
-	.string "interesting somewhere...\p"
+	.string "interesting somewhere…\p"
 	.string "But I'll only give it to\n"
 	.string "someone worthy.\p"
 	.string "Someone who can catch all\n"
@@ -82,8 +82,8 @@ FiveIsland_Meadow_Text_Beasts2::
 	.string "to give you this then!$"
 
 FiveIsland_Meadow_Text_Beasts3::
-	.string "I actually did found this\n"
-	.string "wandering about.\p"
+	.string "I actually found this when I\n"
+	.string "was just wandering about.\p"
 	.string "However, I know how\n"
 	.string "valuable and sacred\l"
 	.string "that island is!\p"

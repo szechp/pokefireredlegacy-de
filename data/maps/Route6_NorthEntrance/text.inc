@@ -25,25 +25,23 @@ Route6_NorthEntrance_Text_HiHowsItGoing::
     .string "Hi, how's it going?$"
 
 Route6_NorthEntrance_Text_FightGuard::
-    .string "I said the road is closed\n"
-    .string "Please stop comming.\p"
-    .string "But actually,\n"
-    .string "If you keep comming,\l"
-    .string "I might of well just fight you!\p"
-    .string "If you want to enter.$"
+    .string "This road is closed!\n"
+    .string "You'd better turn back.\p"
+    .string "Unless you're looking to battle?$"
 
 Route6_NorthEntrance_Text_NoFightGuard::
-    .string "Good$"
+    .string "Good. Now scram!$"
 
 Route6_NorthEntrance_Text_RematchYesSurge::
-    .string "This isn't YOUR ROAD!$"
+    .string "Alright then!$"
 
 Route6_NorthEntrance_Text_RematchSurgeDefeat::
-    .string "I thought you were weaker!$"
+    .string "I thought you'd be weaker!$"
 
 Route6_NorthEntrance_Text_PostGuard::
-    .string "Alright Sorry.\p"
-    .string "I admit I was just,\n"
-    .string "Very Thirsty, and I should of\l"
-    .string "Let you guys in.\p"
-    .string "I'll tell the others to open.$"
+    .string "Alright… Sorry about that.\p"
+    .string "I admit that I get a little\n"
+    .string "cranky when I'm thirsty.\p"
+    .string "You don't look like you'll cause\n"
+    .string "much trouble, so I'll tell the\l"
+    .string "others to let you through, OK?$"

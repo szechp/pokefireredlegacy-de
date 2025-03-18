@@ -1,7 +1,7 @@
 FuchsiaCity_House2_Text_HaveMonForSavingUs::
     .string "I'm the FISHING\n"  
     .string "GURU's brother!\p"  
-    .string "I simply Looove fishing!\p"  
+    .string "I simply looove fishing!\p"  
     .string "Do you like to fish?$"  
 
 FuchsiaCity_House2_Text_HaveMonForSavingUs2::
@@ -21,10 +21,10 @@ FuchsiaCity_House2_Text_ObtainedOmanyteFromEmployee::
     .string "the FISHERMAN!$"
 
 FuchsiaCity_House2_Text_ExplainFossil::
-    .string "I think this POKEMON may be!\n"
-    .string "A rare Find!\p"
+    .string "I think this POKéMON may be\n"
+    .string "a rare find!\p"
     .string "Although I'm not too knowledgeable\n"
-    .string "On this Stuff!$"
+    .string "on this stuff…$"
 
 FuchsiaCity_House2_RocketBossWentToBoardroom::
     .string "Hello there, {PLAYER}!\n"  

@@ -48,14 +48,14 @@ TwoIsland_House_Text_CantTeachAnEgg::
 
 TwoIsland_House_Text_TmGuy::
     .string "Hi, I sell TMs here!\p"
-    .string "Their not the greatest ones,\n"
+    .string "They're not the greatest ones,\n"
     .string "but people have come to like them!\p"
     .string "Pick any, but it will cost ya.$"
 
 TwoIsland_House_Text_StoneGuy::
-    .string "Hi, I sell Goods here!\p"
+    .string "Hi, I sell GOODS here!\p"
     .string "They can evolve your\n"
-    .string "ONIX and SCYTHER\p"
+    .string "ONIX or SCYTHER.\p"
     .string "Pick any, but it will cost ya.$"
 
 TwoIsland_House_Text_TmGuy2::

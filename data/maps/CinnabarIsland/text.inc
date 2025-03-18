@@ -40,9 +40,8 @@ CinnabarIsland_Text_ComeWithMeToOneIsland::
     .string "south called ONE ISLAND.\p"
     .string "A friend invited me, so I'm on my\n"
     .string "way out there.\p"
-    .string "It's apart of a set\n"
-    .string "of Tourist island's\l"
-    .string "Known as the SEVII ISLANDS!\p"
+    .string "It's one of the SEVII ISLANDS, which\n"
+    .string "are all popular tourist destinations!\p"
     .string "How about it?\n"
     .string "Do you feel like coming with me?$"
 
@@ -77,23 +76,22 @@ CinnabarIsland_Text_IfYouHaveTriPassYouCanGoAgain::
     .string "All right, thanks for your company!$"
 
 CinnabarIsland_Text_Fishing::
-    .string "This Island is the best\n"
-    .string "For Fishing!$"
+    .string "This island is the best for fishing!$"
 
 CinnabarIsland_Text_NoFishingRod:
 	.string "Hold on there, you don't even have a\n"
-	.string "FISHING ROD? How did you even make it\l"
-	.string "all the way here?\p"
+	.string "FISHING ROD?\p"
+	.string "How did you even make it this far?\p"
 	.string "Here, take one of mine.$"
 
 CinnabarIsland_Text_NoPokeballs:
-	.string "Wait a second… Do you have any POKé\n"
-	.string "BALLS on you?\p"
+	.string "Wait a second… Do you have any\n"
+	.string "POKé BALLS on you?\p"
 	.string "You'll want some before you head any\n"
 	.string "further. Take a few of mine.$"
 
 CinnabarIsland_Text_ScientistVolcano::
-	.string "The Volcano near CINNABAR is\n"
-	.string "Picking up Activity\p"
-	.string "I still invesgating this Matter\n"
-	.string "but CINNABAR might be affected$"
+	.string "This island was formed by a volcano.\n"
+	.string "I'm monitoring it's activity.\p"
+	.string "It seems to still be active, but\n"
+	.string "it's nothing to worry about for now.$"

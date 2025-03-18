@@ -74,21 +74,22 @@ FourIsland_IcefallCave_Back_Text_ThankYouThisIsAwful::
 FourIsland_IcefallCave_Back_Text_Pryce::  
     .string "This back side of this cave\n"  
     .string "is truly magnificent.\p"  
-    .string "As the Ice Type GYM Leader,\n"  
-    .string "PRYCE, I won't hold back\l"  
-    .string "against the CHAMPION!\p"  
-    .string "If you are willing!$"  
+    .string "As the ICE type LEADER of\n"  
+    .string "JOHTO, I won't hold back\l"  
+    .string "against the KANTO CHAMP!\p"  
+    .string "If you are willing, that is!$"  
 
 FourIsland_IcefallCave_Back_Text_PryceDefeat::  
-    .string "Kids these days!\n"  
+    .string "You kids these days…\n"  
     .string "Stronger than ever!$"  
 
 FourIsland_IcefallCave_Back_Text_PrycePostBattle::  
-    .string "Incredible! Expected from a\n"  
-    .string "CHAMPION.\p"  
-    .string "I hope you can protect us\n"  
-    .string "from dangers lurking ahead.\p"  
-    .string "I'm running out of time.$"  
+    .string "Incredible! I expected\n"  
+    .string "no less from a CHAMPION.\p"  
+    .string "I hope you'll use your skills\n"  
+    .string "to protect others from danger.\p"  
+    .string "I would, but there's only so\n"
+    .string "much these old bones can take!$"  
 
 FourIsland_IcefallCave_Back_Text_NoPryce::  
     .string "Maybe some other time.$"  
@@ -99,20 +100,21 @@ FourIsland_IcefallCave_Back_Text_YesPryce::
 
 FourIsland_IcefallCave_Back_Text_RematchPryce::  
     .string "A rematch?\p"  
-    .string "Guess you just want to\n"  
-    .string "battle, CHAMPION!$"  
+    .string "Well, I don't see any harm\n"  
+    .string "in another battle, CHAMPION!$"  
 
 FourIsland_IcefallCave_Back_Text_RematchPryceDefeat::  
-    .string "Kids these days!\n"  
-    .string "Stronger than ever!$"  
+    .string "You kids these days…\n"  
+    .string "Stronger than ever!$"
 
 FourIsland_IcefallCave_Back_Text_YesRematchPryce::  
     .string "Alright, alright.\p"  
     .string "Let's battle!$"  
 
 FourIsland_IcefallCave_Back_Text_RematchPrycePostBattle::  
-    .string "Incredible! Expected from a\n"  
-    .string "CHAMPION.\p"  
-    .string "I hope you can protect us\n"  
-    .string "from dangers lurking ahead.\p"  
-    .string "I'm running out of time.$"  
+    .string "Incredible! I expected\n"  
+    .string "no less from a CHAMPION.\p"  
+    .string "I hope you'll use your skills\n"  
+    .string "to protect others from danger.\p"  
+    .string "I would, but there's only so\n"
+    .string "much these old bones can take!$"  

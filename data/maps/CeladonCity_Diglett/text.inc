@@ -1,30 +1,28 @@
 CeladonCity_Diglett_Text_Hiker::
-    .string "Those Guards have\n"
-    .string "closed the entrances for a\l"
-    .string "while.\p"
+    .string "Those guards have been blocking\n"
+    .string "the way for a while now.\p"
     .string "I have no idea why.\p"
-    .string "My Friend isn't liking.\n"
-    .string "it either.\p"
-    .string "It's why I built.\n"
-    .string "That Underground Tunnel.$"
+    .string "Me and my friend are pretty\n"
+    .string "ticked off about it.\p"
+    .string "Times like this are why we\n"
+    .string "built the UNDERGROUND PATH!$"
 
 
 CeladonCity_Diglett_Text_GuardHater::
-    .string "Darn Guards,\n"
-    .string "they just want to close\l"
-    .string "everything huh?\p"
-    .string "Well I'll show them!\p"
-    .string "Those guards will go.\n"
-    .string "Down!$"
+    .string "I've had it with those guards!\n"
+    .string "They're always in the way.\p"
+    .string "If they don't move soon, I'll\n"
+    .string "have to show them a thing or two!$"
 
 CeladonCity_Diglett_Text_GuardHaterThanks::
-    .string "You Opened The Gates?\n"
-    .string "Thank You! Now I don't\l"
-    .string "have to fight the Guards!\l"
+    .string "You opened the gates?\n"
+    .string "Finally! Now I don't have to\l"
+    .string "deal with the guards!\l"
     .string "You can have this as a thanks!\p"
 
 CeladonCity_Diglett_Text_GuardHaterThanks2::
-    .string "We got that while digging\n"
-    .string "The Tunnel.\p"
-    .string "A Big Rock also fall and Blocked\n"
-    .string "So Good thing the gates opened!$"
+    .string "We found that while digging\n"
+    .string "the UNDERGROUND PATH.\p"
+    .string "A huge rock also fell and\n"
+    .string "blocked the way.\p"
+    .string "Good thing the gates are open!$"

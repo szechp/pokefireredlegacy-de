@@ -49,15 +49,15 @@ CinnabarIsland_Gym_Text_RematchBlaineDefeat::
     .string "Guess you put me out!$"
 
 CinnabarIsland_Gym_Text_BlainePostRematchBattle::
-    .string "Incredible! Your strength exceeds\n"
-    .string "even the wildest flame!\p"
+    .string "Incredible! Your strength burns\n"
+    .string "brighter than the wildest flame!\p"
     .string "Truly, you are a worthy Champion!$"
 
 CinnabarIsland_Gym_Text_BlaineNoRematchBattle::
-    .string "Not fired up Yet!$"
+    .string "Hah, not fired up yet?\n"
+    .string "I'll be waiting!$"
 
 CinnabarIsland_Gym_Text_RematchYesBlaine::
-    .string "Ha, Fired Up!\n"
     .string "This battle will be scorching!$"
 
 CinnabarIsland_Gym_Text_ErikIntro::
