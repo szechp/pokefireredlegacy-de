@@ -6,16 +6,17 @@ TwoIsland_House_TMGUYScript::
 	goto_if_questlog EventScript_ReleaseEnd
 	lock
 	faceplayer
-	goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, TwoIsland_House_TMGUYScript2
-	message TwoIsland_House_Text_TmGuy
+	goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, TwoIsland_House_Event_Script_TMGUYScript2
+	msgbox TwoIsland_House_Text_TmGuy
 	waitmessage
 	pokemart TwoIsland_TMS
 	msgbox Text_PleaseComeAgain
 	release
 	end
 
-TwoIsland_House_TMGUYScript2::
+TwoIsland_House_Event_Script_TMGUYScript2::
 	msgbox TwoIsland_House_Text_TmGuy2
+	waitmessage
 	pokemart TwoIsland_TMS2
 	msgbox Text_PleaseComeAgain
 	release
@@ -25,7 +26,6 @@ TwoIsland_House_TMGUYScript2::
 TwoIsland_TMS::	
 	.2byte ITEM_TM03
 	.2byte ITEM_TM05
-	.2byte ITEM_TM03
 	.2byte ITEM_TM09
 	.2byte ITEM_TM12
 	.2byte ITEM_TM15
@@ -53,6 +53,7 @@ TwoIsland_TMS2::
 	.2byte ITEM_TM01
 	.2byte ITEM_TM02
 	.2byte ITEM_TM03
+	.2byte ITEM_TM04
 	.2byte ITEM_TM05
 	.2byte ITEM_TM06
 	.2byte ITEM_TM07
