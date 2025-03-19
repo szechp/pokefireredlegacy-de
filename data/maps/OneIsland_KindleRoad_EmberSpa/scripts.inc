@@ -209,13 +209,13 @@ OneIsland_KindleRoad_EmberSpa_Text_Rocket1Intro::
 # 105 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 OneIsland_KindleRoad_EmberSpa_Text_Rocket1Defeat::
 # 106 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	.string "I failed you, SLUGMA.$"
+	.string "I failed you, SLUGMA…$"
 # 107 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 
 # 108 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 OneIsland_KindleRoad_EmberSpa_Text_Rocket1PostBattle::
 # 109 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	.string "Our leader and us are\n"
+	.string "Our LEADER and us are\n"
 # 110 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	.string "big fans of SLUGMA.\l"
 # 111 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
@@ -245,14 +245,12 @@ OneIsland_KindleRoad_EmberSpa_Text_Rocket2Intro::
 # 123 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 OneIsland_KindleRoad_EmberSpa_Text_Rocket2Defeat::
 # 124 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	.string "SLUGMA would be proud$"
+	.string "SLUGMA would be proud!$"
 # 125 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 
 # 126 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 OneIsland_KindleRoad_EmberSpa_Text_Rocket2PostBattle::
 # 127 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	.string "Our Leader should be\n"
+	.string "Our LEADER is a certifed\n"
 # 128 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	.string "Left to us, He's a Certifed\l"
-# 129 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	.string "SLUGMA Trainer!$"
+	.string "SLUGMA expert!$"

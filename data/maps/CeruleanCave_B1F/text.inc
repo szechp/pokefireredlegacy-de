@@ -10,7 +10,10 @@ CeruleanCave_B1F_Text_SmithDefeat::
     .string "Wow! You've got zest!$"  
 
 CeruleanCave_B1F_Text_SmithPostBattle::
-    .string "You should have no problem\n"  
-    .string "getting through this cave.\p"  
-    .string "Good luck, nerd!$"  
+    .string "What zest! You should be able\n"  
+    .string "to handle yourself in this cave!\p"  
+    .string "Good luck, nerd!\p"  
+    .string "And I hope you're not using\n"  
+    .string "GYARADOS, I'm starting to \l"  
+    .string "Hate that POKEMON.$"  
 
