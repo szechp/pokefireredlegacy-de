@@ -8143,14 +8143,14 @@ static const struct TrainerMon sParty_LeaderBrock[] = {
         .evs = {0, 0, 0, 0, 0, 128},
     },
     {
-        .iv = 250,
+        .iv = 150,
         .lvl = 12,
         .species = SPECIES_SLUGMA,
         .heldItem = ITEM_NONE,
         .moves = {MOVE_ROCK_TOMB, MOVE_POUND, MOVE_NONE, MOVE_NONE},
     },
     {
-        .iv = 255,
+        .iv = 150,
         .lvl = 14,
         .species = SPECIES_ONIX,
         .heldItem = ITEM_ORAN_BERRY,
@@ -8163,7 +8163,7 @@ static const struct TrainerMon sParty_LeaderMisty[] = {
         .iv = 250,
         .lvl = 19,
         .species = SPECIES_POLIWHIRL,
-        .moves = {MOVE_WATER_PULSE, MOVE_DOUBLE_SLAP, MOVE_HYPNOSIS, MOVE_MIND_READER},
+        .moves = {MOVE_WATER_PULSE, MOVE_DOUBLE_SLAP, MOVE_HYPNOSIS, MOVE_NONE},
     },
     {
         .iv = 250,
