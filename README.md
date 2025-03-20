@@ -90,6 +90,9 @@ For contacts and other pret projects, see [pret.github.io](https://pret.github.i
 Delevoper:
 - SpikeCation (Sole Dev)
 
+Helper:
+- The Real Team Player (Did lots of text fixes)
+
 Playtesters:
 
 - BlazeTorrent
