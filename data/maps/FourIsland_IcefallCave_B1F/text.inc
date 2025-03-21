@@ -2,7 +2,7 @@ FourIsland_IcefallCave_B1F_Text_KSI::
     .string "Ow… Woah, what\n"  
     .string "are you doing here?!\p"  
     .string "I'll have you know I'm\n"  
-    .string "the CHAMP of FOUR ISLAND!\p"  
+    .string "the MASTER of FOUR ISLAND!\p"  
     .string "From the cave to the grass,\n"  
     .string "to the gym, to the league,\l"  
     .string "I'll beat you anywhere!$"  

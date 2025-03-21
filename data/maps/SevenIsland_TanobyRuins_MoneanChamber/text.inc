@@ -1,13 +1,13 @@
 SevenIsland_TanobyRuins_MoneanChamber_Text_Armstrong::
-	.string "Hmmm, how powerful do you think\n"
+	.string "Hmmm… How powerful do you think\n"
 	.string "the POKéMON here must be?\p"
 	.string "Would they be strong enough\n"
 	.string "to take down a whole island?\l"
 	.string "Who's to say.\p"
 	.string "All I know is that I'm the\n"
 	.string "strongest, not only of SEVEN\l"
-	.string "ISLAND, but of all the SEVII\l"
-	.string "ISLANDS as a whole.\p"
+	.string "ISLAND, but of all the\l"
+	.string "SEVII ISLANDS together.\p"
 	.string "A MASTER, they call it.\p"
 	.string "I believe strength should\n"
 	.string "be what allows us to raise\l"
@@ -27,7 +27,7 @@ SevenIsland_TanobyRuins_MoneanChamber_Text_ArmstrongDefeat::
 
 SevenIsland_TanobyRuins_MoneanChamber_Text_ArmstrongPostBattle::
 	.string "Seems like you've shown me\n"
-	.string "what true strength really is\p"
+	.string "what true strength really is.\p"
 	.string "You are one of the greatest\n"
 	.string "trainers I've ever seen.\p"
 	.string "But you still have more to\n"

@@ -63,12 +63,12 @@ FiveIsland_Meadow_Text_Gym1::
 	.string "these mighty BUGS!$"
 
 FiveIsland_Meadow_Text_GymDefeat::
-	.string "Oh, I failed my LEADER.$"
+	.string "Oh, I failed the MASTER.$"
 
 FiveIsland_Meadow_Text_Gym1Post::
 	.string "I was supposed to\n"
 	.string "look over this area\l"
-	.string "for my LEADER,\l"
+	.string "for the MASTER,\l"
 	.string "but I don't see him here.$"
 
 FiveIsland_Meadow_EventScript_Gym2::
@@ -86,7 +86,7 @@ FiveIsland_Meadow_Text_Gym2Defeat::
 	.string "I thought it could work…$"
 
 FiveIsland_Meadow_Text_Gym2Post::
-	.string "Even though my LEADER\n"
+	.string "Even though the MASTER\n"
 	.string "doesn't approve of\l"
 	.string "DUNSPARCE, he is still\l"
 	.string "one of the best!$"
@@ -103,9 +103,10 @@ FiveIsland_Meadow_Text_Gym3Defeat::
 	.string "Looks like I fell.$"
 
 FiveIsland_Meadow_Text_Gym3Post::
-	.string "I actually did see\n"
-	.string "our LEADER head south.\p"
-	.string "Could he be at the PILLAR?$"
+	.string "I actually saw\n"
+	.string "the MASTER head south.\p"
+	.string "Could he be at the\n"
+	.string "MEMORIAL PILLAR?$"
 
 
 FiveIsland_Meadow_EventScript_Rocket::
@@ -123,8 +124,8 @@ FiveIsland_Meadow_Text_RocketDefeat::
 
 FiveIsland_Meadow_Text_RocketPostBattle::
 	.string "Maybe it was a good thing\n"
-	.string "I went to OUTCAST ISLAND,\p"
-	.string "even though I found nothing.$"
+	.string "I went to OUTCAST ISLAND.\p"
+	.string "Even though I found nothing…$"
 
 FiveIsland_Meadow_EventScript_ShowClerk::
 	clearflag FLAG_SHOPCHAMP

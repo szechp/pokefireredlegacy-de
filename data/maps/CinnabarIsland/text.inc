@@ -92,6 +92,6 @@ CinnabarIsland_Text_NoPokeballs:
 
 CinnabarIsland_Text_ScientistVolcano::
 	.string "This island was formed by a volcano.\n"
-	.string "I'm monitoring it's activity.\p"
+	.string "I'm monitoring its activity.\p"
 	.string "It seems to still be active, but\n"
 	.string "it's nothing to worry about for now.$"

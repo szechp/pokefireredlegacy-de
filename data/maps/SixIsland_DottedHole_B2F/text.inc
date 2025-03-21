@@ -5,7 +5,7 @@ SixIsland_DottedHole_B2F_Text_Speedy::
     .string "an hour…\p"  
     .string "There must be something like\n"
     .string "500 floors!\p"
-    .string "Well, I'm sort of the CHAMPION\n"  
+    .string "Well, I'm sort of the MASTER\n"  
     .string "of this place.\p"  
     .string "The strongest of this ISLAND!\p"  
     .string "If you want, We could go for\n"  

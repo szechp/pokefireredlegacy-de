@@ -75,7 +75,7 @@ Route6_Text_Fisher::
     .string "The guards here are pretty\n"
     .string "strong TRAINERS, but they might\l"
     .string "be the only way to open the gates.\p"
-    .string "But if you're strong enough\n"
+    .string "If you're strong enough\n"
     .string "to beat someone like SURGE,\l"
     .string "you could stand up to them!$"
 

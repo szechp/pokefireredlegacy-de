@@ -129,7 +129,7 @@ FiveIsland_Meadow_Text_Gym1::
 # 65 "data/maps/FiveIsland_Meadow/scripts.pory"
 FiveIsland_Meadow_Text_GymDefeat::
 # 66 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "Oh, I failed my LEADER.$"
+	.string "Oh, I failed the MASTER.$"
 # 67 "data/maps/FiveIsland_Meadow/scripts.pory"
 
 # 68 "data/maps/FiveIsland_Meadow/scripts.pory"
@@ -139,7 +139,7 @@ FiveIsland_Meadow_Text_Gym1Post::
 # 70 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.string "look over this area\l"
 # 71 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "for my LEADER,\l"
+	.string "for the MASTER,\l"
 # 72 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.string "but I don't see him here.$"
 # 73 "data/maps/FiveIsland_Meadow/scripts.pory"
@@ -175,7 +175,7 @@ FiveIsland_Meadow_Text_Gym2Defeat::
 # 88 "data/maps/FiveIsland_Meadow/scripts.pory"
 FiveIsland_Meadow_Text_Gym2Post::
 # 89 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "Even though my LEADER\n"
+	.string "Even though the MASTER\n"
 # 90 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.string "doesn't approve of\l"
 # 91 "data/maps/FiveIsland_Meadow/scripts.pory"
@@ -209,12 +209,12 @@ FiveIsland_Meadow_Text_Gym3Defeat::
 # 105 "data/maps/FiveIsland_Meadow/scripts.pory"
 FiveIsland_Meadow_Text_Gym3Post::
 # 106 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "I actually did see\n"
+	.string "I actually saw\n"
 # 107 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "our LEADER head south.\p"
+	.string "the MASTER head south.\p"
 # 108 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "Could he be at the PILLAR?$"
-# 109 "data/maps/FiveIsland_Meadow/scripts.pory"
+	.string "Could he be at the\n"
+	.string "MEMORIAL PILLAR?$"
 
 # 110 "data/maps/FiveIsland_Meadow/scripts.pory"
 
@@ -253,7 +253,7 @@ FiveIsland_Meadow_Text_RocketPostBattle::
 # 127 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.string "I went to OUTCAST ISLAND.\p"
 # 128 "data/maps/FiveIsland_Meadow/scripts.pory"
-	.string "even though I found nothing.$"
+	.string "Even though I found nothing…$"
 # 129 "data/maps/FiveIsland_Meadow/scripts.pory"
 
 # 130 "data/maps/FiveIsland_Meadow/scripts.pory"
