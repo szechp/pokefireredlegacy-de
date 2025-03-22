@@ -54,7 +54,7 @@ FuchsiaCity_Gym_Text_RematchKoga::
     .string "despite all my power?$"
 
 FuchsiaCity_Gym_Text_RematchKogaDefeat::
-    .string "Seems CHAMPION level to me!$"
+    .string "Seems CHAMPION-level to me!$"
 
 FuchsiaCity_Gym_Text_KogaPostRematchBattle::
     .string "Continue to hone your skills, for\n"

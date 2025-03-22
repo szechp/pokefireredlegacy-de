@@ -260,7 +260,8 @@ OneIsland_PokemonCenter_1F_Text_OkayThisIsGood::
     .string "Okay, this is good…$"
 
 OneIsland_PokemonCenter_1F_Text_LinkedUpWithLanette::
-    .string "I did it!$"
+    .string "I did it!\n"
+    .string "The Network Machine's working!$"
 
 OneIsland_PokemonCenter_1F_Text_ManagedToLinkWithHoennThankYou::
     .string "{PLAYER}…\n"

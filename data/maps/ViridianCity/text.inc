@@ -148,7 +148,7 @@ ViridianCity_Text_PokedudeDefeat::
     .string "Wow, you really are the CHAMPION!$"
 
 ViridianCity_Text_PokedudePostBattle::
-    .string "That some good CHAMPION-level\n"
+    .string "That's some good CHAMPION-level\n"
     .string "strength!\p"
     .string "Did the TEACHY TV help you\n"
     .string "on your journey?\p"
@@ -174,7 +174,7 @@ ViridianCity_Text_RematchPokedudeDefeat::
     .string "Wow, you really are the CHAMPION!$"
 
 ViridianCity_Text_PostRematchPokedude::
-    .string "That some good CHAMPION-level\n"
+    .string "That's some good CHAMPION-level\n"
     .string "strength!\p"
     .string "Did the TEACHY TV help you\n"
     .string "on your journey?\p"

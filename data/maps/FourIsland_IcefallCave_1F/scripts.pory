@@ -25,14 +25,14 @@ FourIsland_IcefallCave_1F_EventScript_Gym3::
 FourIsland_IcefallCave_1F_Text_Rocket1Intro::
 	.string "I've cracked the code!\n"
 	.string "You're trying to fight\l"
-	.string "my LEADER.$"
+	.string "the MASTER.$"
 
 FourIsland_IcefallCave_1F_Text_Rocket1Defeat::
 	.string "You broke the ice here!$"
 
 FourIsland_IcefallCave_1F_Text_Rocket1PostBattle::
-	.string "My LEADER is further\n"
-	.string "in the cave, I hope you\l"
+	.string "The MASTER is further\n"
+	.string "into the cave, I hope you\l"
 	.string "have all the might\l"
 	.string "to fight him!$"
 

@@ -44,16 +44,16 @@ VermilionCity_PokemonCenter_1F_Text_ExplainVSSeeker::
     .string "while you're on a road.$"
 
 VermilionCity_PokemonCenter_1F_Text_Upgrade::
-    .string "Oh hi CHAMPION!\p"
+    .string "Hi, CHAMPION!\p"
     .string "Did you succeed using the\n"
     .string "VS SEEKER?\p"
-    .string "If so I've got a upgrade!$"
+    .string "If so, I've got a upgrade!$"
 
 VermilionCity_PokemonCenter_1F_Text_ExplainUpgrade::
     .string "This upgrade makes the\n"
     .string "VS SEEKER charge faster!\p"
     .string "And also gets more people\n"
-    .string "Battling!$"
+    .string "battling!$"
 
 VermilionCity_PokemonCenter_1F_Text_SeekerUpgrade::
     .string "VS SEEKER Upgrade!$"

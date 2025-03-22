@@ -15,7 +15,7 @@ PokemonLeague_AgathasRoom_Text_Intro::
 
 PokemonLeague_AgathasRoom_Text_RematchIntro::
     .string "Back again, eh?\p"  
-    .string "Seen OAK lately?\n"  
+    .string "Seen PROF. OAK lately?\n"  
     .string "Still fond of you, I bet!\p"  
     .string "He's softened, unlike me.\p"  
     .string "I relish the thrill of battle!\p"  
@@ -41,7 +41,7 @@ PokemonLeague_AgathasRoom_Text_PostBattle2::
     .string "Well earned, CHAMPION!\n"  
     .string "You've grown mighty!\p"  
     .string "You've earned OAK's respect\n"  
-    .string "as well of mine.\p"  
+    .string "as well as mine.\p"  
     .string "Now, go!\p"  
     .string "Show the others what you're\n"  
     .string "made of, {PLAYER}!$" 

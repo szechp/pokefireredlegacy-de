@@ -94,9 +94,9 @@ FiveIsland_Meadow_Text_Beasts3::
 	.string "in you!$"
 
 FiveIsland_Meadow_Text_MayIHelpYou::
-	.string "Hey, you defeated the\n"
+	.string "Hey! You defeated the\n"
 	.string "SEVII MASTERS!\p"
-	.string "So you deserve to get\n"
+	.string "You deserve to get\n"
 	.string "access to my list\l"
 	.string "of goods!$"
 

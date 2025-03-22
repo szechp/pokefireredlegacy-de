@@ -181,21 +181,21 @@ SixIsland_RuinValley_EventScript_Gym1::
 # 91 "data/maps/SixIsland_RuinValley/scripts.pory"
 SixIsland_RuinValley_Text_Rocket1Intro::
 # 92 "data/maps/SixIsland_RuinValley/scripts.pory"
-	.string "Hey, have you seen our Leader\n"
+	.string "Hey, have you seen our MASTER\n"
 # 93 "data/maps/SixIsland_RuinValley/scripts.pory"
-	.string "here Somewhere$"
+	.string "here somewhere?$"
 # 94 "data/maps/SixIsland_RuinValley/scripts.pory"
 SixIsland_RuinValley_Text_Rocket1Defeat::
 # 95 "data/maps/SixIsland_RuinValley/scripts.pory"
-	.string "Please Help Us!$"
+	.string "Please help us!$"
 # 96 "data/maps/SixIsland_RuinValley/scripts.pory"
 SixIsland_RuinValley_Text_Rocket1PostBattle::
 # 97 "data/maps/SixIsland_RuinValley/scripts.pory"
-	.string "Our Leader went in the cave\n"
+	.string "Our MASTER went into the\n"
 # 98 "data/maps/SixIsland_RuinValley/scripts.pory"
-	.string "and he hasn't came out! It's\l"
+	.string "cave and he hasn't come out!\l"
 # 99 "data/maps/SixIsland_RuinValley/scripts.pory"
-	.string "been 2 hours!$"
+	.string "It's been two hours!$"
 # 100 "data/maps/SixIsland_RuinValley/scripts.pory"
 
 # 101 "data/maps/SixIsland_RuinValley/scripts.pory"
@@ -211,9 +211,9 @@ SixIsland_RuinValley_EventScript_Gym2::
 # 106 "data/maps/SixIsland_RuinValley/scripts.pory"
 SixIsland_RuinValley_Text_Rocket2Intro::
 # 107 "data/maps/SixIsland_RuinValley/scripts.pory"
-	.string "IVE BEEN STANDING HERE FOR\n"
+	.string "I've been standing here\n"
 # 108 "data/maps/SixIsland_RuinValley/scripts.pory"
-	.string "2 HOURS$"
+	.string "for two entire hours!$"
 # 109 "data/maps/SixIsland_RuinValley/scripts.pory"
 
 # 110 "data/maps/SixIsland_RuinValley/scripts.pory"

@@ -90,7 +90,7 @@ PalletTown_ProfessorOaksLab_Text_OakBePatientRival::
     .string "You can have one, too!\p"
     .string "Hmm…\p"
     .string "Oh, before I forget…\n"
-    .string "{PLAYER}, your mom\l"
+    .string "{PLAYER}, your mother\l"
     .string "wanted me to give you these!$"
 
 PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose::

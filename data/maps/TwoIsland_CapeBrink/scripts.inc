@@ -195,7 +195,7 @@ TwoIsland_CapeBrink_Text_Rocket1Defeat::
 # 98 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 TwoIsland_CapeBrink_Text_Rocket1PostBattle::
     .string "I don't think you can stand up\n"  
-    .string "to our LEADER just yet.\p"  
+    .string "to our MASTER just yet.\p"  
     .string "You should fight that AROMA LADY\n"  
     .string "before you do.$"  
 
@@ -230,6 +230,6 @@ TwoIsland_CapeBrink_Text_Rocket2PostBattle::
 # 118 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 	.string "are you ready for our\l"
 # 119 "data/maps/TwoIsland_CapeBrink/scripts.pory"
-	.string "beautiful LEADER to show\l"
+	.string "beautiful MASTER to show\l"
 # 120 "data/maps/TwoIsland_CapeBrink/scripts.pory"
 	.string "her expertise?$"

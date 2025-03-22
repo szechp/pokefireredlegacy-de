@@ -89,14 +89,14 @@ SixIsland_RuinValley_EventScript_Gym1::
 	msgbox SixIsland_RuinValley_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
 	end
 SixIsland_RuinValley_Text_Rocket1Intro::
-	.string "Hey, have you seen our Leader\n"
-	.string "here Somewhere$"
+	.string "Hey, have you seen our MASTER\n"
+	.string "here somewhere?$"
 SixIsland_RuinValley_Text_Rocket1Defeat::
-	.string "Please Help Us!$"
+	.string "Please help us!$"
 SixIsland_RuinValley_Text_Rocket1PostBattle::
-	.string "Our Leader went in the cave\n"
-	.string "and he hasn't came out! It's\l"
-	.string "been 2 hours!$"
+	.string "Our MASTER went into the\n"
+	.string "cave and he hasn't come out!\l"
+	.string "It's been two hours!$"
 
 SixIsland_RuinValley_EventScript_Gym2::
 	trainerbattle_single TRAINER_EXPERT_F, SixIsland_RuinValley_Text_Rocket2Intro, SixIsland_RuinValley_Text_Rocket2Defeat
@@ -104,8 +104,8 @@ SixIsland_RuinValley_EventScript_Gym2::
 	end
 
 SixIsland_RuinValley_Text_Rocket2Intro::
-	.string "IVE BEEN STANDING HERE FOR\n"
-	.string "2 HOURS$"
+	.string "I've been standing here\n"
+	.string "for two entire hours!$"
 
 SixIsland_RuinValley_Text_Rocket2Defeat::
 	.string "WAHHH!$"

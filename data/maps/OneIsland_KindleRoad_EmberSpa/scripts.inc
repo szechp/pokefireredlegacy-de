@@ -215,7 +215,7 @@ OneIsland_KindleRoad_EmberSpa_Text_Rocket1Defeat::
 # 108 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 OneIsland_KindleRoad_EmberSpa_Text_Rocket1PostBattle::
 # 109 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	.string "Our LEADER and us are\n"
+	.string "The MASTER and us are\n"
 # 110 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	.string "big fans of SLUGMA.\l"
 # 111 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
@@ -251,6 +251,6 @@ OneIsland_KindleRoad_EmberSpa_Text_Rocket2Defeat::
 # 126 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 OneIsland_KindleRoad_EmberSpa_Text_Rocket2PostBattle::
 # 127 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
-	.string "Our LEADER is a certifed\n"
+	.string "Our MASTER is a certifed\n"
 # 128 "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.pory"
 	.string "SLUGMA expert!$"

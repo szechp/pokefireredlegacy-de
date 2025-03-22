@@ -72,10 +72,11 @@ PewterCity_Gym_Text_RematchBrock::
     .string "Ready for the rematch of a lifetime?$"
 
 PewterCity_Gym_Text_RematchBrockDefeat::
-    .string "Seems CHAMPION-level to me!$"
+    .string "That was truly once in a lifetime!$"
 
 PewterCity_Gym_Text_BrockPostRematchBattle::
-    .string "Incredible! Your strength is unmatched!\p"
+    .string "Incredible!\n"
+    .string "Your strength is unmatched!\p"
     .string "True to your title of CHAMPION!\p"
     .string "Continue to lead POKéMON with honor\n"
     .string "and courage!$"

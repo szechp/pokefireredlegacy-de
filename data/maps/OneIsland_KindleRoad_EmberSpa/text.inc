@@ -56,11 +56,12 @@ OneIsland_KindleRoad_EmberSpa_Text_ExplainHM06::
     .string "but you'll get more use out of it!$"
 
 OneIsland_KindleRoad_EmberSpa_Text_Samal::  
-    .string "Hello there!\p"  
-    .string "I'm the legendary SLUGMA\n"  
+    .string "Hello there!\p"
+    .string "I'm the MASTER of ONE ISLAND,\n"  
+    .string "and the legendary SLUGMA\l"  
     .string "CHAMPION!\p"  
-    .string "It's the prized POKéMON\n"
-    .string "of MT EMBER.\p"
+    .string "SLUGMA is the prized\n"
+    .string "POKéMON of MT EMBER.\p"
     .string "You may be a regular CHAMPION,\n"  
     .string "but are you a match for a\l"  
     .string "SLUGMA CHAMPION?\p"  

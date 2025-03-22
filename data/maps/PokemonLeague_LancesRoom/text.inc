@@ -17,10 +17,10 @@ PokemonLeague_LancesRoom_Text_Intro::
 PokemonLeague_LancesRoom_Text_RematchIntro::
     .string "Ah!\n"
     .string "So, you've returned, {PLAYER}!\p"
-    .string "As CHAMPION, you seek more\n"  
-    .string "battles?\p"  
+    .string "As CHAMPION, you seek to\n"  
+    .string "further your battle prowess?\p"  
     .string "My dragons await your\n"  
-    .string "challenge.\p"  
+    .string "challenge once more.\p"  
     .string "Their might is unyielding,\n"  
     .string "a true force of nature!\p"  
     .string "Ready for round two?\p"  

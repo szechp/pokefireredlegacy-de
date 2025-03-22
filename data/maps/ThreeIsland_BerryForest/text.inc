@@ -67,8 +67,9 @@ ThreeIsland_BerryForest_Text_YesCruelKing::
 ThreeIsland_BerryForest_Text_RematchCruelKing::  
     .string "Back for more cruelty?$"  
 
-ThreeIsland_BerryForest_Text_RematchCruelKingDefeat::  
-    .string "Seems CHAMPION-level to me!$"  
+ThreeIsland_BerryForest_Text_RematchCruelKingDefeat::
+    .string "Only a CHAMPION could best\n" 
+    .string "the CRUEL KING twice!$"  
 
 ThreeIsland_BerryForest_Text_YesRematchCruelKing::  
     .string "You will lose this!\p"  
@@ -80,9 +81,9 @@ ThreeIsland_BerryForest_Text_RematchCruelKingPostBattle::
     .string "Continue to be an Apex TRAINER!$"  
 
 Text_6Leaders::
-    .string "There are seven masters of\n"  
+    .string "There are seven MASTERS of\n"  
     .string "the SEVII ISLANDS.\p"  
     .string "Defeat six, then challenge\n"  
-    .string "the SUPREME LEADER on\l"  
+    .string "the supreme MASTER on\l"  
     .string "SEVEN ISLAND.$"  
 
