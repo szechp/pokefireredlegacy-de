@@ -62,3 +62,11 @@ TwoIsland_House_Text_TmGuy2::
     .string "Hi, I sell TMs here!\p"
     .string "I just got all of them!\p"
     .string "Pick any, but it will cost ya.$"
+
+TwoIsland_House_Text_Wife::
+	.string "It was nice of my husband's\n"  
+	.string "brother to lend us his house.\p"  
+	.string "I think he wanted to go to\n"  
+	.string "CINNABAR ISLAND to get more\l"  
+	.string "mushrooms for his move\l"  
+	.string "relearning services.$"  

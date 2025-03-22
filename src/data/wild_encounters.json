@@ -20062,9 +20062,9 @@
                 "species": "SPECIES_TENTACOOL"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 30,
+                "max_level": 45,
+                "species": "SPECIES_SLOWPOKE"
               },
               {
                 "min_level": 30,
@@ -20151,9 +20151,9 @@
                 "species": "SPECIES_TENTACOOL"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 35,
+                "max_level": 45,
+                "species": "SPECIES_SLOWPOKE"
               },
               {
                 "min_level": 30,
