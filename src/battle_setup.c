@@ -1056,6 +1056,14 @@ u8 getLevelCap(void){
         nextLeader = TRAINER_LEADER_BLAINE;
     else if (!FlagGet(FLAG_BADGE08_GET))
         nextLeader = TRAINER_LEADER_GIOVANNI;
+    else if (!FlagGet(FLAG_LORCAP))
+        nextLeader = TRAINER_ELITE_FOUR_LORELEI;
+    else if (!FlagGet(FLAG_BRUNOCAP))
+        nextLeader = TRAINER_ELITE_FOUR_BRUNO;
+    else if (!FlagGet(FLAG_AGATHACAP))
+        nextLeader = TRAINER_ELITE_FOUR_AGATHA;
+    else if (!FlagGet(FLAG_MAXCAP))
+        nextLeader = TRAINER_ELITE_FOUR_LANCE;
     else if (!FlagGet(FLAG_IS_CHAMPION))
         nextLeader = TRAINER_CHAMPION_FIRST_CHARMANDER;
 

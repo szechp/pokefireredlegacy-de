@@ -181,24 +181,26 @@ PokemonLeague_LoreleisRoom_EventScript_DefeatedLorelei::
 # 91 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
 	setflag FLAG_DEFEATED_LORELEI
 # 92 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
-	call PokemonLeague_EventScript_OpenDoor
+	setflag FLAG_LORCAP
 # 93 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
-	msgbox PokemonLeague_LoreleisRoom_Text_PostBattle
-# 94 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
-	release
-# 95 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
-	end
-# 96 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
-
-# 97 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
-PokemonLeague_LoreleisRoom_EventScript_DefeatedLoreleiRematch::
-# 98 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
-	setflag FLAG_DEFEATED_LORELEI
-# 99 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
 	call PokemonLeague_EventScript_OpenDoor
-# 100 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
-	msgbox PokemonLeague_LoreleisRoom_Text_PostBattle2
-# 101 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
+# 94 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
+	msgbox PokemonLeague_LoreleisRoom_Text_PostBattle
+# 95 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
 	release
+# 96 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
+	end
+# 97 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
+
+# 98 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
+PokemonLeague_LoreleisRoom_EventScript_DefeatedLoreleiRematch::
+# 99 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
+	setflag FLAG_DEFEATED_LORELEI
+# 100 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
+	call PokemonLeague_EventScript_OpenDoor
+# 101 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
+	msgbox PokemonLeague_LoreleisRoom_Text_PostBattle2
 # 102 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
+	release
+# 103 "data/maps/PokemonLeague_LoreleisRoom/scripts.pory"
 	end

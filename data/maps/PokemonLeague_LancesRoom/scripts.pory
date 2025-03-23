@@ -153,7 +153,6 @@ PokemonLeague_LancesRoom_EventScript_DefeatedLance2::
 	setvar VAR_0x8004, 0
 	special Script_TryGainNewFanFromCounter
 	setflag FLAG_DEFEATED_LANCE
-	setflag FLAG_MAXCAP
 	call PokemonLeague_EventScript_OpenDoorLance
 	msgbox PokemonLeague_LancesRoom_Text_PostBattle2
 	closemessage

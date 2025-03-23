@@ -173,24 +173,26 @@ PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha::
 # 87 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
 	setflag FLAG_DEFEATED_AGATHA
 # 88 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	call PokemonLeague_EventScript_OpenDoor
+	setflag FLAG_AGATHACAP
 # 89 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	msgbox PokemonLeague_AgathasRoom_Text_PostBattle
-# 90 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	release
-# 91 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	end
-# 92 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-
-# 93 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha2::
-# 94 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	setflag FLAG_DEFEATED_AGATHA
-# 95 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
 	call PokemonLeague_EventScript_OpenDoor
-# 96 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
-	msgbox PokemonLeague_AgathasRoom_Text_PostBattle2
-# 97 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+# 90 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	msgbox PokemonLeague_AgathasRoom_Text_PostBattle
+# 91 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
 	release
+# 92 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	end
+# 93 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+
+# 94 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha2::
+# 95 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	setflag FLAG_DEFEATED_AGATHA
+# 96 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	call PokemonLeague_EventScript_OpenDoor
+# 97 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	msgbox PokemonLeague_AgathasRoom_Text_PostBattle2
 # 98 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
+	release
+# 99 "data/maps/PokemonLeague_AgathasRoom/scripts.pory"
 	end

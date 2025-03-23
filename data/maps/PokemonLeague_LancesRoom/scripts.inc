@@ -309,54 +309,52 @@ PokemonLeague_LancesRoom_EventScript_DefeatedLance2::
 # 155 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	setflag FLAG_DEFEATED_LANCE
 # 156 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
-	setflag FLAG_MAXCAP
-# 157 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	call PokemonLeague_EventScript_OpenDoorLance
-# 158 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 157 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	msgbox PokemonLeague_LancesRoom_Text_PostBattle2
-# 159 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 158 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	closemessage
-# 160 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 159 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	release
-# 161 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 160 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	end
+# 161 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+
 # 162 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
-
-# 163 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 PokemonLeague_LancesRoom_EventScript_LanceMoveOutOfWayLeft::
-# 164 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 163 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	applymovement LOCALID_LANCE, PokemonLeague_LancesRoom_Movement_LanceMoveOutOfWayLeft
+# 164 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+	waitmovement 0
 # 165 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
-	waitmovement 0
+	return
 # 166 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
-	return
+
 # 167 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
-
-# 168 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 PokemonLeague_LancesRoom_EventScript_LanceMoveOutOfWayRight::
-# 169 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 168 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	applymovement LOCALID_LANCE, PokemonLeague_LancesRoom_Movement_LanceMoveOutOfWayRight
-# 170 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 169 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	waitmovement 0
-# 171 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 170 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	return
+# 171 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+
 # 172 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
-
-# 173 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 PokemonLeague_LancesRoom_Movement_LanceMoveOutOfWayLeft::
-# 174 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 173 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	walk_left
-# 175 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 174 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	walk_in_place_faster_right
-# 176 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 175 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	step_end
-# 177 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 176 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 
-# 178 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 177 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 PokemonLeague_LancesRoom_Movement_LanceMoveOutOfWayRight::
-# 179 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 178 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	walk_right
-# 180 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 179 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	walk_in_place_faster_left
-# 181 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
+# 180 "data/maps/PokemonLeague_LancesRoom/scripts.pory"
 	step_end

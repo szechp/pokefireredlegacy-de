@@ -17,7 +17,7 @@ static const struct InGameTrade sInGameTrades[] = {
     }, 
     [INGAME_TRADE_JYNX] = 
     {
-        .nickname = _("ZMOOCHUM"),
+        .nickname = _("LOLA"),
         .species = SPECIES_SMOOCHUM,
         .ivs = {18, 17, 18, 22, 25, 21},
         .abilityNum = 0,
@@ -186,7 +186,7 @@ static const u16 sInGameTradeMailMessages[][10] = {
         EC_WORD_THAT_S,
         EC_WORD_A,
         EC_WORD_HEALTHY,
-        EC_POKEMON(JYNX),
+        EC_POKEMON(SMOOCHUM),
         EC_WORD_EXCL,
         EC_WORD_BE,
         EC_WORD_KIND,

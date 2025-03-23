@@ -212,9 +212,9 @@
 #define FLAG_GIOVANNI4               0x0C2
 #define FLAG_EGG_MOVES_TUTOR                0x0C3
 #define FLAG_MOM_CHAMP              0x0C4
-#define FLAG_0x0C5               0x0C5
-#define FLAG_0x0C6               0x0C6
-#define FLAG_0x0C7               0x0C7
+#define FLAG_AGATHACAP              0x0C5
+#define FLAG_BRUNOCAP               0x0C6
+#define FLAG_LORCAP             0x0C7
 #define FLAG_0x0C8               0x0C8
 #define FLAG_0x0C9               0x0C9
 #define FLAG_0x0CA               0x0CA
