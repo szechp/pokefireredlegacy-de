@@ -287,7 +287,7 @@ SilphCo_10F_EventScript_ItemCarbos::
 	end
 
 SilphCo_10F_EventScript_ItemUltraBall::
-	finditem ITEM_ULTRA_BALL
+	finditem ITEM_TM35
 	end
 
 SilphCo_10F_EventScript_ItemRareCandy::
@@ -327,7 +327,7 @@ PokemonMansion_2F_EventScript_ItemCalcium::
 	end
 
 PokemonMansion_3F_EventScript_ItemMaxPotion::
-	finditem ITEM_MAX_POTION
+	finditem ITEM_TM30
 	end
 
 PokemonMansion_3F_EventScript_ItemIron::
@@ -631,7 +631,7 @@ MtEmber_Exterior_EventScript_ItemUltraBall::
 	end
 
 MtEmber_Exterior_EventScript_ItemFireStone::
-	finditem ITEM_TM30
+	finditem ITEM_TM02
 	end
 
 MtEmber_Exterior_EventScript_ItemDireHit::

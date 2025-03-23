@@ -6191,11 +6191,19 @@ const u32 *GetMonFrontSpritePal(struct Pokemon *mon)
 const u32 *GetMonSpritePalFromSpeciesAndPersonality(u16 species, u32 otId, u32 personality)
 {
     u32 shinyValue;
+    shinyValue = GET_SHINY_VALUE(otId, personality);
+
+    if (species >= 65530 && species <= 65533) //Deoxys
+    {
+        if(shinyValue < SHINY_ODDS)
+            return gMonShinyPaletteTable[SPECIES_DEOXYS].data;
+        else
+            return gMonPaletteTable[SPECIES_DEOXYS].data;
+    }
 
     if (species > SPECIES_EGG)
         return gMonPaletteTable[0].data;
 
-    shinyValue = GET_SHINY_VALUE(otId, personality);
     if (shinyValue < SHINY_ODDS)
         return gMonShinyPaletteTable[species].data;
     else
@@ -6215,6 +6223,13 @@ const struct CompressedSpritePalette *GetMonSpritePalStructFromOtIdPersonality(u
     u32 shinyValue;
 
     shinyValue = GET_SHINY_VALUE(otId, personality);
+    if (species >= 65530 && species <= 65533) //Deoxys
+    {
+        if(shinyValue < SHINY_ODDS)
+            return &gMonShinyPaletteTable[SPECIES_DEOXYS];
+        else
+            return &gMonPaletteTable[SPECIES_DEOXYS];
+    }
     if (shinyValue < SHINY_ODDS)
         return &gMonShinyPaletteTable[species];
     else

@@ -4296,6 +4296,24 @@ static void PokeSum_CreateMonIconSprite(void)
 
     species = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPECIES_OR_EGG);
     personality = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_PERSONALITY);
+    if(species == SPECIES_DEOXYS)
+     {
+         switch(GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_FORME))
+         {
+             case 1: //Attack Forme
+                 species = 65531;
+                 break;
+             case 2:
+                 species = 65532;
+                 break;
+             case 3:
+                 species = 65533;
+                 break;
+             default:
+                 species = 65530;
+                 break;
+         }
+     }
 
     SafeLoadMonIconPalette(species);
 
