@@ -250,6 +250,8 @@ extern const u8 gText_BattleTowerBan_Space[];
 extern const u8 gText_BattleTowerBan_Newline1[];
 extern const u8 gText_BattleTowerBan_Newline2[];
 extern const u8 gText_BattleTowerBan_Is1[];
+extern const u8 gText_NewLine[];
+extern const u8 gText_NewLine2[];
 extern const u8 gText_BattleTowerBan_Is2[];
 
 extern const u8 gText_SafariBalls[];
