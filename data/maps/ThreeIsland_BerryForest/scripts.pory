@@ -165,7 +165,7 @@ ThreeIsland_BerryForest_EventScript_PostRematchCruelKing::
 	end
 
 ThreeIsland_BerryForest_EventScript_Gym1::
-	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_F, ThreeIsland_BerryForest_Text_Rocket1Intro, ThreeIsland_BerryForest_Text_Rocket1Defeat
+	trainerbattle_single TRAINER_SR_AND_JR, ThreeIsland_BerryForest_Text_Rocket1Intro, ThreeIsland_BerryForest_Text_Rocket1Defeat
 	msgbox ThreeIsland_BerryForest_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -181,7 +181,7 @@ ThreeIsland_BerryForest_Text_Rocket1PostBattle::
 	.string "messed with!$"
 
 ThreeIsland_BerryForest_EventScript_Gym2::
-	trainerbattle_single TRAINER_SR_AND_JR, ThreeIsland_BerryForest_Text_Rocket2Intro, ThreeIsland_BerryForest_Text_Rocket2Defeat
+	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_F, ThreeIsland_BerryForest_Text_Rocket2Intro, ThreeIsland_BerryForest_Text_Rocket2Defeat
 	msgbox ThreeIsland_BerryForest_Text_Rocket2PostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -209,10 +209,10 @@ ThreeIsland_BerryForest_Text_Rocket3Intro::
 	.string "I had a revelation.\p"
 	.string "The most important thing in this\n"
 	.string "world is pure, unadulterated power!\p"
-	.string "Witness my might!$"
+	.string "Witness the Power!$"
 
 ThreeIsland_BerryForest_Text_Rocket3Defeat::
-	.string "It seems your might is greater…$"
+	.string "…$"
 
 ThreeIsland_BerryForest_Text_Rocket3PostBattle::
 	.string "Do what you have to do...\l"
