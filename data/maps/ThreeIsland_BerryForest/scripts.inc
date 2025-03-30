@@ -333,7 +333,7 @@ ThreeIsland_BerryForest_EventScript_PostRematchCruelKing::
 # 167 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_EventScript_Gym1::
 # 168 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_F, ThreeIsland_BerryForest_Text_Rocket1Intro, ThreeIsland_BerryForest_Text_Rocket1Defeat
+	trainerbattle_single TRAINER_SR_AND_JR, ThreeIsland_BerryForest_Text_Rocket1Intro, ThreeIsland_BerryForest_Text_Rocket1Defeat
 # 169 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	msgbox ThreeIsland_BerryForest_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
 # 170 "data/maps/ThreeIsland_BerryForest/scripts.pory"
@@ -365,7 +365,7 @@ ThreeIsland_BerryForest_Text_Rocket1PostBattle::
 # 183 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_EventScript_Gym2::
 # 184 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	trainerbattle_single TRAINER_SR_AND_JR, ThreeIsland_BerryForest_Text_Rocket2Intro, ThreeIsland_BerryForest_Text_Rocket2Defeat
+	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_F, ThreeIsland_BerryForest_Text_Rocket2Intro, ThreeIsland_BerryForest_Text_Rocket2Defeat
 # 185 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	msgbox ThreeIsland_BerryForest_Text_Rocket2PostBattle, MSGBOX_AUTOCLOSE
 # 186 "data/maps/ThreeIsland_BerryForest/scripts.pory"
@@ -421,13 +421,13 @@ ThreeIsland_BerryForest_Text_Rocket3Intro::
 # 211 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "world is pure, unadulterated power!\p"
 # 212 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	.string "Witness my might!$"
+	.string "Witness the Power!$"
 # 213 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 
 # 214 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_Text_Rocket3Defeat::
 # 215 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	.string "It seems your might is greater…$"
+	.string "…$"
 # 216 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 
 # 217 "data/maps/ThreeIsland_BerryForest/scripts.pory"

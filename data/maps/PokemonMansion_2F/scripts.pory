@@ -43,17 +43,22 @@ PokemonMansion_2F_EventScript_Arnie::
 	end
 
 PokemonMansion_2F_EventScript_Oak::
-	lock
-	faceplayer
-	msgbox PokemonMansion_1F_Text_Oak
-	waitmovement 0
-	applymovement LOCALID_OAK, Common_Movement_FaceRight
-	msgbox PokemonMansion_1F_Text_Oak2
-	waitmovement 0
-	applymovement LOCALID_OAK, Common_Movement_FaceUp
-	msgbox PokemonMansion_1F_Text_Oak3
-	waitmovement 0
+	applymovement LOCALID_OAK, Common_Movement_ExclamationMarkDelay
+	playse SE_PIN
 	applymovement LOCALID_OAK, Common_Movement_FacePlayer
+	waitmovement 0
+	msgbox PokemonMansion_1F_Text_Oak
+	waitmessage 
+	applymovement LOCALID_OAK, Common_Movement_FaceRight
+	waitmovement 0
+	msgbox PokemonMansion_1F_Text_Oak2
+	waitmessage 
+	applymovement LOCALID_OAK, Common_Movement_FaceUp
+	waitmovement 0
+	msgbox PokemonMansion_1F_Text_Oak3
+	waitmessage 
+	applymovement LOCALID_OAK, Common_Movement_FacePlayer
+	waitmovement 0
 	msgbox PokemonMansion_1F_Text_Oak4, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, PokemonMansion_2F_EventScript_NoOak
 	setvar VAR_FORCEANIM, 1
@@ -74,6 +79,8 @@ PokemonMansion_2F_EventScript_PostOak::
 	fadescreen FADE_FROM_BLACK
 	waitmessage 
 	msgbox PokemonMansion_1F_Text_Mew
+	playmoncry SPECIES_MEW, CRY_MODE_NORMAL
+	waitmessage
 	release
 	end
 
