@@ -33,7 +33,9 @@ PokemonMansion_1F_Text_ChristenedDiscoveredMonMew::
 
 PokemonMansion_1F_Text_Oak::
     .string "You've caught me in a moment\n"  
-    .string "of deep research.\p"  
+    .string "of deep research.$"  
+
+PokemonMansion_1F_Text_Oak22::
     .string "This mansion holds secrets\n"  
     .string "of a POKéMON barely more\l"  
     .string "than a whisper in ancient texts.$"  

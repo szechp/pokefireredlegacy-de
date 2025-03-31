@@ -89,92 +89,94 @@ PokemonMansion_2F_EventScript_Arnie::
 # 45 "data/maps/PokemonMansion_2F/scripts.pory"
 PokemonMansion_2F_EventScript_Oak::
 # 46 "data/maps/PokemonMansion_2F/scripts.pory"
-	applymovement LOCALID_OAK, Common_Movement_ExclamationMarkDelay
+	lock
 # 47 "data/maps/PokemonMansion_2F/scripts.pory"
-	playse SE_PIN
+	applymovement LOCALID_OAK, Common_Movement_ExclamationMarkDelay
 # 48 "data/maps/PokemonMansion_2F/scripts.pory"
-	applymovement LOCALID_OAK, Common_Movement_FacePlayer
+	playse SE_PIN
 # 49 "data/maps/PokemonMansion_2F/scripts.pory"
-	waitmovement 0
-# 50 "data/maps/PokemonMansion_2F/scripts.pory"
 	msgbox PokemonMansion_1F_Text_Oak
+# 50 "data/maps/PokemonMansion_2F/scripts.pory"
+	waitmovement 0
 # 51 "data/maps/PokemonMansion_2F/scripts.pory"
-	waitmessage 
-# 52 "data/maps/PokemonMansion_2F/scripts.pory"
-	applymovement LOCALID_OAK, Common_Movement_FaceRight
-# 53 "data/maps/PokemonMansion_2F/scripts.pory"
-	waitmovement 0
-# 54 "data/maps/PokemonMansion_2F/scripts.pory"
-	msgbox PokemonMansion_1F_Text_Oak2
-# 55 "data/maps/PokemonMansion_2F/scripts.pory"
-	waitmessage 
-# 56 "data/maps/PokemonMansion_2F/scripts.pory"
-	applymovement LOCALID_OAK, Common_Movement_FaceUp
-# 57 "data/maps/PokemonMansion_2F/scripts.pory"
-	waitmovement 0
-# 58 "data/maps/PokemonMansion_2F/scripts.pory"
-	msgbox PokemonMansion_1F_Text_Oak3
-# 59 "data/maps/PokemonMansion_2F/scripts.pory"
-	waitmessage 
-# 60 "data/maps/PokemonMansion_2F/scripts.pory"
 	applymovement LOCALID_OAK, Common_Movement_FacePlayer
-# 61 "data/maps/PokemonMansion_2F/scripts.pory"
-	waitmovement 0
-# 62 "data/maps/PokemonMansion_2F/scripts.pory"
-	msgbox PokemonMansion_1F_Text_Oak4, MSGBOX_YESNO
-# 63 "data/maps/PokemonMansion_2F/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, PokemonMansion_2F_EventScript_NoOak
-# 64 "data/maps/PokemonMansion_2F/scripts.pory"
-	setvar VAR_FORCEANIM, 1
-# 65 "data/maps/PokemonMansion_2F/scripts.pory"
-	trainerbattle_single TRAINER_OAK2, PokemonMansion_1F_Text_YesOak, PokemonMansion_1F_Text_OakDefeat, PokemonMansion_2F_EventScript_PostOak, NO_MUSIC
-# 66 "data/maps/PokemonMansion_2F/scripts.pory"
-	release
-# 67 "data/maps/PokemonMansion_2F/scripts.pory"
-	end
-# 68 "data/maps/PokemonMansion_2F/scripts.pory"
-
-# 69 "data/maps/PokemonMansion_2F/scripts.pory"
-PokemonMansion_2F_EventScript_PostOak::
-# 70 "data/maps/PokemonMansion_2F/scripts.pory"
-	setvar VAR_FORCEANIM, 0
-# 71 "data/maps/PokemonMansion_2F/scripts.pory"
-	msgbox PokemonMansion_1F_Text_OakPostBattle
-# 72 "data/maps/PokemonMansion_2F/scripts.pory"
-	setflag FLAG_OAK2_DEFEATED
-# 73 "data/maps/PokemonMansion_2F/scripts.pory"
-	clearflag FLAG_HIDE_MEW
-# 74 "data/maps/PokemonMansion_2F/scripts.pory"
-	clearflag FLAG_HIDE_EASTER
-# 75 "data/maps/PokemonMansion_2F/scripts.pory"
-	setflag FLAG_HIDE_OAK2
-# 76 "data/maps/PokemonMansion_2F/scripts.pory"
-	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
-# 77 "data/maps/PokemonMansion_2F/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 78 "data/maps/PokemonMansion_2F/scripts.pory"
-	removeobject 5
-# 79 "data/maps/PokemonMansion_2F/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 80 "data/maps/PokemonMansion_2F/scripts.pory"
+# 52 "data/maps/PokemonMansion_2F/scripts.pory"
+	msgbox PokemonMansion_1F_Text_Oak22
+# 53 "data/maps/PokemonMansion_2F/scripts.pory"
 	waitmessage 
+# 54 "data/maps/PokemonMansion_2F/scripts.pory"
+	applymovement LOCALID_OAK, Common_Movement_FaceRight
+# 55 "data/maps/PokemonMansion_2F/scripts.pory"
+	waitmovement 0
+# 56 "data/maps/PokemonMansion_2F/scripts.pory"
+	msgbox PokemonMansion_1F_Text_Oak2
+# 57 "data/maps/PokemonMansion_2F/scripts.pory"
+	waitmessage 
+# 58 "data/maps/PokemonMansion_2F/scripts.pory"
+	applymovement LOCALID_OAK, Common_Movement_FaceUp
+# 59 "data/maps/PokemonMansion_2F/scripts.pory"
+	waitmovement 0
+# 60 "data/maps/PokemonMansion_2F/scripts.pory"
+	msgbox PokemonMansion_1F_Text_Oak3
+# 61 "data/maps/PokemonMansion_2F/scripts.pory"
+	waitmessage 
+# 62 "data/maps/PokemonMansion_2F/scripts.pory"
+	applymovement LOCALID_OAK, Common_Movement_FacePlayer
+# 63 "data/maps/PokemonMansion_2F/scripts.pory"
+	waitmovement 0
+# 64 "data/maps/PokemonMansion_2F/scripts.pory"
+	msgbox PokemonMansion_1F_Text_Oak4, MSGBOX_YESNO
+# 65 "data/maps/PokemonMansion_2F/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, PokemonMansion_2F_EventScript_NoOak
+# 66 "data/maps/PokemonMansion_2F/scripts.pory"
+	setvar VAR_FORCEANIM, 1
+# 67 "data/maps/PokemonMansion_2F/scripts.pory"
+	trainerbattle_single TRAINER_OAK2, PokemonMansion_1F_Text_YesOak, PokemonMansion_1F_Text_OakDefeat, PokemonMansion_2F_EventScript_PostOak, NO_MUSIC
+# 68 "data/maps/PokemonMansion_2F/scripts.pory"
+	release
+# 69 "data/maps/PokemonMansion_2F/scripts.pory"
+	end
+# 70 "data/maps/PokemonMansion_2F/scripts.pory"
+
+# 71 "data/maps/PokemonMansion_2F/scripts.pory"
+PokemonMansion_2F_EventScript_PostOak::
+# 72 "data/maps/PokemonMansion_2F/scripts.pory"
+	setvar VAR_FORCEANIM, 0
+# 73 "data/maps/PokemonMansion_2F/scripts.pory"
+	msgbox PokemonMansion_1F_Text_OakPostBattle
+# 74 "data/maps/PokemonMansion_2F/scripts.pory"
+	setflag FLAG_OAK2_DEFEATED
+# 75 "data/maps/PokemonMansion_2F/scripts.pory"
+	clearflag FLAG_HIDE_MEW
+# 76 "data/maps/PokemonMansion_2F/scripts.pory"
+	clearflag FLAG_HIDE_EASTER
+# 77 "data/maps/PokemonMansion_2F/scripts.pory"
+	setflag FLAG_HIDE_OAK2
+# 78 "data/maps/PokemonMansion_2F/scripts.pory"
+	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
+# 79 "data/maps/PokemonMansion_2F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 80 "data/maps/PokemonMansion_2F/scripts.pory"
+	removeobject 5
 # 81 "data/maps/PokemonMansion_2F/scripts.pory"
-	msgbox PokemonMansion_1F_Text_Mew
+	fadescreen FADE_FROM_BLACK
 # 82 "data/maps/PokemonMansion_2F/scripts.pory"
 	playmoncry SPECIES_MEW, CRY_MODE_NORMAL
 # 83 "data/maps/PokemonMansion_2F/scripts.pory"
-	waitmessage
+	waitmessage 
 # 84 "data/maps/PokemonMansion_2F/scripts.pory"
-	release
+	msgbox PokemonMansion_1F_Text_Mew
 # 85 "data/maps/PokemonMansion_2F/scripts.pory"
-	end
-# 86 "data/maps/PokemonMansion_2F/scripts.pory"
-
-# 87 "data/maps/PokemonMansion_2F/scripts.pory"
-PokemonMansion_2F_EventScript_NoOak::
-# 88 "data/maps/PokemonMansion_2F/scripts.pory"
-	msgbox PokemonMansion_1F_Text_NoOak
-# 89 "data/maps/PokemonMansion_2F/scripts.pory"
 	release
+# 86 "data/maps/PokemonMansion_2F/scripts.pory"
+	end
+# 87 "data/maps/PokemonMansion_2F/scripts.pory"
+
+# 88 "data/maps/PokemonMansion_2F/scripts.pory"
+PokemonMansion_2F_EventScript_NoOak::
+# 89 "data/maps/PokemonMansion_2F/scripts.pory"
+	msgbox PokemonMansion_1F_Text_NoOak
 # 90 "data/maps/PokemonMansion_2F/scripts.pory"
+	release
+# 91 "data/maps/PokemonMansion_2F/scripts.pory"
 	end

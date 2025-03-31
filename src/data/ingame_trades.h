@@ -133,7 +133,7 @@ static const struct InGameTrade sInGameTrades[] = {
     }, 
     [INGAME_TRADE_ELECTRODE] = 
     {
-        .nickname = _("MR.DON"),
+        .nickname = _("TRODE"),
         .species = SPECIES_ELECTRODE,
         .ivs = {31, 31, 31, 30, 31, 31},
         .abilityNum = 1,
@@ -145,7 +145,7 @@ static const struct InGameTrade sInGameTrades[] = {
         .otName = _("CLIFTON"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_KOFFING
+        .requestedSpecies = SPECIES_GRIMER
     }, 
     [INGAME_TRADE_TANGELA] = 
     {
@@ -161,7 +161,7 @@ static const struct InGameTrade sInGameTrades[] = {
         .otName = _("NORMA"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_GRIMER
+        .requestedSpecies = SPECIES_KOFFING
     },
     [INGAME_TRADE_SEEL] = 
     {
