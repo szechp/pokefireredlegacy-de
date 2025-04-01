@@ -3705,7 +3705,8 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(HM05_FLASH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_MEGANIUM]    = TMHM_LEARNSET(TMHM(TM06_TOXIC)
+    [SPECIES_MEGANIUM]    = TMHM_LEARNSET(TMHM(TM04_CALM_MIND)
+                                        | TMHM(TM06_TOXIC)
                                         | TMHM(TM09_BULLET_SEED)
                                         | TMHM(TM10_HIDDEN_POWER)
                                         | TMHM(TM11_SUNNY_DAY)
