@@ -1118,6 +1118,7 @@ static const u16 sTutorLearnsets[] =
                        | TUTOR(MOVE_DOUBLE_EDGE)
                        | TUTOR(MOVE_COUNTER)
                        | TUTOR(MOVE_MIMIC)
+                       | TUTOR(MOVE_ROCK_SLIDE)
                        | TUTOR(MOVE_SUBSTITUTE),
 
     [SPECIES_CYNDAQUIL] = TUTOR(MOVE_BODY_SLAM)
