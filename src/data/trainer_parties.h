@@ -8150,11 +8150,11 @@ static const struct TrainerMon sParty_LeaderBrock[] = {
         .moves = {MOVE_ROCK_TOMB, MOVE_POUND, MOVE_NONE, MOVE_NONE},
     },
     {
-        .iv = 150,
+        .iv = 120,
         .lvl = 14,
         .species = SPECIES_ONIX,
         .heldItem = ITEM_ORAN_BERRY,
-        .moves = {MOVE_SCREECH, MOVE_BIND, MOVE_ROCK_TOMB, MOVE_TACKLE},
+        .moves = {MOVE_NONE, MOVE_BIND, MOVE_ROCK_TOMB, MOVE_TACKLE},
     },
 }; //I hate Brock
 
@@ -8163,7 +8163,7 @@ static const struct TrainerMon sParty_LeaderMisty[] = {
         .iv = 250,
         .lvl = 19,
         .species = SPECIES_POLIWHIRL,
-        .moves = {MOVE_WATER_PULSE, MOVE_DOUBLE_SLAP, MOVE_HYPNOSIS, MOVE_NONE},
+        .moves = {MOVE_WATER_PULSE, MOVE_MEGA_PUNCH, MOVE_NONE, MOVE_NONE},
     },
     {
         .iv = 250,
@@ -8172,7 +8172,7 @@ static const struct TrainerMon sParty_LeaderMisty[] = {
         .moves = {MOVE_HORN_ATTACK, MOVE_SUPERSONIC, MOVE_PECK, MOVE_WATERFALL},
     },
     {
-        .iv = 100,
+        .iv = 50,
         .lvl = 21,
         .species = SPECIES_STARMIE,
         .moves = {MOVE_SWIFT, MOVE_CONFUSION, MOVE_WATER_PULSE, MOVE_NONE},
@@ -8190,7 +8190,7 @@ static const struct TrainerMon sParty_LeaderLtSurge[] = {
         .iv = 150,
         .lvl = 23,
         .species = SPECIES_VOLTORB,
-        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SELF_DESTRUCT, MOVE_SWIFT},
+        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_NONE, MOVE_SWIFT},
     },
     {
         .iv = 100,
