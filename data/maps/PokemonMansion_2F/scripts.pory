@@ -82,6 +82,8 @@ PokemonMansion_2F_EventScript_PostOak::
 	playmoncry SPECIES_MEW, CRY_MODE_NORMAL
 	waitmessage 
 	msgbox PokemonMansion_1F_Text_Mew
+	setflag FLAG_AMONGUS
+	clearflag FLAG_AHHH
 	release
 	end
 

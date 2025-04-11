@@ -2928,6 +2928,11 @@ static const struct TrainerMon sParty_LassRobin[] = {
         .lvl = 14,
         .species = SPECIES_JIGGLYPUFF,
     },
+    {
+        .iv = 0,
+        .lvl = 11,
+        .species = SPECIES_IGGLYBUFF,
+    },
 };
 
 static const struct TrainerMon sParty_LassCrissy[] = {
@@ -2966,6 +2971,11 @@ static const struct TrainerMon sParty_LassIris[] = {
         .iv = 0,
         .lvl = 14,
         .species = SPECIES_CLEFAIRY,
+    },
+    {
+        .iv = 0,
+        .lvl = 11,
+        .species = SPECIES_CLEFFA,
     },
 };
 
@@ -3250,7 +3260,7 @@ static const struct TrainerMon sParty_SailorDwayne[] = {
     {
         .iv = 0,
         .lvl = 21,
-        .species = SPECIES_PIKACHU,
+        .species = SPECIES_ELEKID,
     },
     {
         .iv = 0,
@@ -6076,8 +6086,9 @@ static const struct TrainerMon sParty_BlackBeltMike[] = {
     {
         .iv = 100,
         .lvl = 27,
-        .species = SPECIES_MANKEY,
+        .species = SPECIES_TYROGUE,
         .heldItem = ITEM_BLACK_BELT,
+        .moves = {MOVE_TACKLE, MOVE_BRICK_BREAK, MOVE_NONE, MOVE_NONE},
     },
     {
         .iv = 100,
@@ -8376,7 +8387,12 @@ static const struct TrainerMon sParty_GentlemanTucker[] = {
     {
         .iv = 0,
         .lvl = 23,
-        .species = SPECIES_ELEKID,
+        .species = SPECIES_PIKACHU,
+    },
+    {
+        .iv = 0,
+        .lvl = 23,
+        .species = SPECIES_PICHU,
     },
 };
 

@@ -215,9 +215,9 @@
 #define FLAG_AGATHACAP              0x0C5
 #define FLAG_BRUNOCAP               0x0C6
 #define FLAG_LORCAP             0x0C7
-#define FLAG_0x0C8               0x0C8
-#define FLAG_0x0C9               0x0C9
-#define FLAG_0x0CA               0x0CA
+#define FLAG_OAK_DEXING              0x0C8
+#define FLAG_AMONGUS               0x0C9
+#define FLAG_AHHH               0x0CA
 #define FLAG_0x0CB               0x0CB
 #define FLAG_0x0CC               0x0CC
 #define FLAG_0x0CD               0x0CD
