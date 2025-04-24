@@ -1575,15 +1575,15 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
 
             if (gTrainers[trainerNum].doubleBattle == TRUE)
                 personalityValue = 0x80;
-            else if (gTrainers[trainerNum].encounterMusic_gender & 0x80)
+            else if (gTrainers[trainerNum].encounterMusic_gender & F_TRAINER_FEMALE)
             {
                 personalityValue = 0x78;
-                gender = MON_MALE;
+                gender = MON_FEMALE;
             }
             else
             {
                  personalityValue = 0x88;
-                 gender = MON_FEMALE;
+                 gender = MON_MALE;
             }
 
             if (partyData[i].gender == TRAINER_MON_MALE)
