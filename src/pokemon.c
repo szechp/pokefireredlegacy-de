@@ -1892,19 +1892,6 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
                     personality = ((((Random() % SHINY_ODDS) ^ (HIHALF(value) ^ LOHALF(value))) ^ LOHALF(personality)) << 16) | LOHALF(personality);
                 } while (nature != GetNatureFromPersonality(personality));
             }
-#ifdef ITEM_SHINY_CHARM
-            if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
-            {
-                u32 shinyValue;
-                u32 rolls = 0;
-                do
-                {
-                    personality = Random32();
-                    shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
-                    rolls++;
-                } while (shinyValue >= SHINY_ODDS && rolls < I_SHINY_CHARM_REROLLS);
-            }
-#endif
         }
         SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
         FlagClear(FLAG_SHINY_CREATION);

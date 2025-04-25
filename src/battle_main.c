@@ -1561,8 +1561,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
             fixedIV = partyData[i].iv;
 // Comment out the following line if you have changed .iv to go 0-31, instead of 0-255 as in vanilla.
             fixedIV = fixedIV * MAX_PER_STAT_IVS / 255;
+
             fixedIV = fixedIV + TRAINER_IV_MODIFIER;
+
             gender = MON_MALE; // defaults to 0
+
             if (gTrainers[trainerNum].doubleBattle == TRUE)
                 personalityValue = 0x80;
             else if (gTrainers[trainerNum].encounterMusic_gender & 0x80)
@@ -1575,15 +1578,15 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
 
             if (gTrainers[trainerNum].doubleBattle == TRUE)
                 personalityValue = 0x80;
-            else if (gTrainers[trainerNum].encounterMusic_gender & F_TRAINER_FEMALE)
+            else if (gTrainers[trainerNum].encounterMusic_gender & 0x80)
             {
                 personalityValue = 0x78;
-                gender = MON_FEMALE;
+                gender = MON_MALE;
             }
             else
             {
                  personalityValue = 0x88;
-                 gender = MON_MALE;
+                 gender = MON_FEMALE;
             }
 
             if (partyData[i].gender == TRAINER_MON_MALE)
@@ -1619,10 +1622,13 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
 
                 SetMonData(&party[i], MON_DATA_ABILITY_NUM, &ability);
             }
+
             if (partyData[i].ball > 0)
                 SetMonData(&party[i], MON_DATA_POKEBALL, &partyData[i].ball);
+
             if (partyData[i].heldItem > 0)
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
+
             if (partyData[i].moves[0] != '\0')
             {
                 for (j = 0; j < MAX_MON_MOVES; j++)
@@ -1633,6 +1639,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
                     SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
                 }
             }
+
             if (partyData[i].iv > 0)
             {
                 for (j = 0; j < NUM_STATS; j++)
@@ -1643,6 +1650,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
             else if (partyData[i].iv == WORST_IVS)
             {
                 fixedIV = 0;
+
                 for (j = 0; j < NUM_STATS; j++)
                 {
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &fixedIV);
@@ -1655,13 +1663,15 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &partyData[i].ivs[j]);
                 }
             }
+
             for (j = 0; j < NUM_STATS; j++)
             {
                 SetMonData(&party[i], MON_DATA_HP_EV + j, &partyData[i].evs[j]);
             }
+
             StringCopy(trainerName, gTrainers[trainerNum].trainerName);
             SetMonData(&party[i], MON_DATA_OT_NAME, trainerName);
-            CalculateMonStats(&party[i]);    
+            CalculateMonStats(&party[i]);
         }
 
         gBattleTypeFlags |= gTrainers[trainerNum].doubleBattle;
