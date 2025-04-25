@@ -155,21 +155,21 @@ Route12_FishingHouse_EventScript_NewRecordMagikarp::
 # 78 "data/maps/Route12_FishingHouse/scripts.pory"
 	msgbox Route12_FishingHouse_Text_WhoaXInchesTakeThis
 # 79 "data/maps/Route12_FishingHouse/scripts.pory"
-	giveitem ITEM_NEST_BALL
+	giveitem ITEM_SHELL_BELL
 # 80 "data/maps/Route12_FishingHouse/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route12_FishingHouse_EventScript_NoRoomForNetBall
 # 81 "data/maps/Route12_FishingHouse/scripts.pory"
-	goto_if_set FLAG_GOT_RECORD_SETTING_MAGIKARP, Route12_FishingHouse_EventScript_TakeThisAlso
-# 82 "data/maps/Route12_FishingHouse/scripts.pory"
 	setflag FLAG_GOT_RECORD_SETTING_MAGIKARP
-# 83 "data/maps/Route12_FishingHouse/scripts.pory"
+# 82 "data/maps/Route12_FishingHouse/scripts.pory"
 	msgbox Route12_FishingHouse_Text_LookForwardToGreaterRecords
-# 84 "data/maps/Route12_FishingHouse/scripts.pory"
+# 83 "data/maps/Route12_FishingHouse/scripts.pory"
 	release
-# 85 "data/maps/Route12_FishingHouse/scripts.pory"
+# 84 "data/maps/Route12_FishingHouse/scripts.pory"
 	end
-# 86 "data/maps/Route12_FishingHouse/scripts.pory"
+# 85 "data/maps/Route12_FishingHouse/scripts.pory"
 
+# 86 "data/maps/Route12_FishingHouse/scripts.pory"
+//Unused
 # 87 "data/maps/Route12_FishingHouse/scripts.pory"
 Route12_FishingHouse_EventScript_TakeThisAlso::
 # 88 "data/maps/Route12_FishingHouse/scripts.pory"

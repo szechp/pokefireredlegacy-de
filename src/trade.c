@@ -2765,7 +2765,7 @@ static u32 CanTradeSelectedMon(struct Pokemon * playerParty, int partyCount, int
         // only check this if the National Dex is missing. SPECIES_EGG will accidentally
         // be handled instead by the conditional above. Both of these problems are fixed in Emerald.
     #ifndef BUGFIX
-        if (species2[monIdx] == SPECIES_NONE)
+        if (species2[monIdx] == SPECIES_EGG)
             return CANT_TRADE_EGG_YET;
     #endif
     }

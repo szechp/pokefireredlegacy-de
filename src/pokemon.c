@@ -1892,19 +1892,6 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
                     personality = ((((Random() % SHINY_ODDS) ^ (HIHALF(value) ^ LOHALF(value))) ^ LOHALF(personality)) << 16) | LOHALF(personality);
                 } while (nature != GetNatureFromPersonality(personality));
             }
-#ifdef ITEM_SHINY_CHARM
-            if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
-            {
-                u32 shinyValue;
-                u32 rolls = 0;
-                do
-                {
-                    personality = Random32();
-                    shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
-                    rolls++;
-                } while (shinyValue >= SHINY_ODDS && rolls < I_SHINY_CHARM_REROLLS);
-            }
-#endif
         }
         SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
         FlagClear(FLAG_SHINY_CREATION);
@@ -2277,10 +2264,8 @@ void CalculateMonStats(struct Pokemon *mon)
             if(currentHP > newMaxHP)
                 currentHP = newMaxHP;
         }
-            #ifdef BUGFIX
             if (currentHP <= 0)
                 currentHP = 1;
-            #endif
         }
         else
             return;
@@ -5621,11 +5606,8 @@ static u16 ModifyStatByNature(u8 nature, u16 stat, u8 statIndex)
 // Neither occur in the base game, but this can happen if
 // any Nature-affected base stat is increased to a value
 // above 248. The closest by default is Shuckle at 230.
-#ifdef BUGFIX
     u32 retVal;
-#else
-    u16 retVal;
-#endif
+
 
     // Don't modify HP, Accuracy, or Evasion by nature
     if (statIndex <= STAT_HP || statIndex > NUM_NATURE_STATS)
@@ -6196,11 +6178,19 @@ const u32 *GetMonFrontSpritePal(struct Pokemon *mon)
 const u32 *GetMonSpritePalFromSpeciesAndPersonality(u16 species, u32 otId, u32 personality)
 {
     u32 shinyValue;
+    shinyValue = GET_SHINY_VALUE(otId, personality);
+
+    if (species >= 65530 && species <= 65533) //Deoxys
+    {
+        if(shinyValue < SHINY_ODDS)
+            return gMonShinyPaletteTable[SPECIES_DEOXYS].data;
+        else
+            return gMonPaletteTable[SPECIES_DEOXYS].data;
+    }
 
     if (species > SPECIES_EGG)
         return gMonPaletteTable[0].data;
 
-    shinyValue = GET_SHINY_VALUE(otId, personality);
     if (shinyValue < SHINY_ODDS)
         return gMonShinyPaletteTable[species].data;
     else
@@ -6220,6 +6210,13 @@ const struct CompressedSpritePalette *GetMonSpritePalStructFromOtIdPersonality(u
     u32 shinyValue;
 
     shinyValue = GET_SHINY_VALUE(otId, personality);
+    if (species >= 65530 && species <= 65533) //Deoxys
+    {
+        if(shinyValue < SHINY_ODDS)
+            return &gMonShinyPaletteTable[SPECIES_DEOXYS];
+        else
+            return &gMonPaletteTable[SPECIES_DEOXYS];
+    }
     if (shinyValue < SHINY_ODDS)
         return &gMonShinyPaletteTable[species];
     else
@@ -6335,6 +6332,7 @@ void SetWildMonHeldItem(void)
             chanceNoItem = 20;
             chanceNotRare = 80;
         }
+        // Set default Magneton to equal chance of either Common or Rare item for evolution items.
         if (gSpeciesInfo[species].itemCommon == gSpeciesInfo[species].itemRare)
         {
             SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &gSpeciesInfo[species].itemCommon);

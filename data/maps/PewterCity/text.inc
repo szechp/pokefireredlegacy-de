@@ -89,8 +89,9 @@ PewterCity_Text_GoTakeOnBrock::
 
 PewterCity_Text_TrainerTipsEarningEXP::
     .string "TRAINER TIPS\p"
-    .string "All POKéMON that appear in battle,\n"
-    .string "however briefly, earn EXP Points.$"
+ 	.string "Any POKéMON that appears even once\n"
+	.string "in a battle is awarded\n"
+    .string "EXP Points and EVs.$"
 
 PewterCity_Text_CallPoliceIfInfoOnThieves::
     .string "NOTICE!\p"

@@ -437,6 +437,9 @@ const u8 gText_Taunt[] = _("taunt");
 const u8 gText_Encore[] = _("encore");
 const u8 gText_Disable[] = _("disable");
 const u8 gText_Torment[] = _("torment");
+const u8 gText_NewLine[] = _("\n");
+const u8 gText_NewLine2[] = _("-");
+
 
 const u8 *const gStatNamesTable[] = {
     sText_HP2,
@@ -2710,6 +2713,18 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] = {
         .fgColor = 2,
         .bgColor = 1,
         .shadowColor = 3,
+    },
+    [B_WIN_MOVE_DESCRIPTION] = {
+        .fillValue = PIXEL_FILL(0xE),
+        .fontId = FONT_NORMAL,
+        .x = 0,
+        .y = 1,
+        .letterSpacing = 0,
+        .lineSpacing = 0,
+        .speed = 0,
+        .fgColor = TEXT_DYNAMIC_COLOR_4,
+        .bgColor = TEXT_DYNAMIC_COLOR_5,
+        .shadowColor = TEXT_DYNAMIC_COLOR_6,
     }
 };
 

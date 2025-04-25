@@ -61,11 +61,12 @@ CeladonCity_Text_DeptStoreSign::
 
 CeladonCity_Text_GuardSpecProtectsFromStatus::
     .string "TRAINER TIPS\p"
-    .string "GUARD SPEC. protects POKéMON\n"
-    .string "from status-reduction moves during\l"
-    .string "battle.\p"
-    .string "Get your items at the\n"
-    .string "CELADON DEPT. STORE!$"
+	.string "Some POKéMON find better cover in\n"
+ 	.string "certain weather.\p"
+ 	.string "A SANDSTORM increases the SP. DEF of a\n"
+ 	.string "ROCK-type POKéMON and those with SAND\l"
+ 	.string "VEIL, while HAIL gives extra DEFENSE to\l"
+ 	.string "ICE types.$"
 
 CeladonCity_Text_PrizeExchangeSign::
     .string "COINS exchanged for prizes!\n"

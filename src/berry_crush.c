@@ -1750,7 +1750,7 @@ static void HandlePlayerInput(struct BerryCrushGame * game)
 #ifdef BUGFIX
 #define field sparkleAmount
 #else
-#define field sparkleCounter
+#define field sparkleAmount
 #endif
         if (game->sparkleCounter < sSparkleThresholds[game->playerCount - 2][0])
             game->sparkleAmount = 0;

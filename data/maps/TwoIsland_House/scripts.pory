@@ -106,9 +106,9 @@ TwoIsland_TMS2::
 
 
 
-
-
-
+TwoIsland_House_Event_Script_Wife::
+	msgbox TwoIsland_House_Text_Wife, MSGBOX_NPC
+	end
 
 
 `	

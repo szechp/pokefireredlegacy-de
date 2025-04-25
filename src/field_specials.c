@@ -2638,7 +2638,7 @@ void CheckBeatJohto(void)
 void MewStuff(void)
 {
     if (FlagGet(FLAG_OAK_DEFEATED) &&
-        FlagGet(FLAG_OAK_SAW_DEX_COMPLETION))
+        FlagGet(FLAG_AHHH))
     {
         gSpecialVar_Result = TRUE;
         return;

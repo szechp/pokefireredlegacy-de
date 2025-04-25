@@ -208,10 +208,11 @@ FiveIsland_WaterLabyrinth_EventScript_SetHasBigMushroom::
 
 FiveIsland_WaterLabyrinth_Text_TeachMonMoveForMushroom::
 	.string "I'm the EGG MOVE ARTIST.\p"
-	.string "I study moves with an artist's eye, and\n"
-	.string "sketch them as skilfully as a SMEARGLE.\p"
-	.string "I can gift an EGG move to your POKéMON\n"
-	.string "if you'd like.\p"
+	.string "I study moves with an artist's eye,\n"
+	.string "and sketch them as skilfully\l"
+	.string "as a SMEARGLE.\p"
+	.string "I can gift an EGG move\n"
+	.string "to your POKéMON if you'd like.\p"
 	.string "I'll craft you a masterpiece\n"
 	.string "for just one HEART SCALE!$"
 

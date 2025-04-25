@@ -1425,3 +1425,6 @@ Text_TestMsg::
 
 	.include "data/maps/MtMoonSquare/scripts.inc"
 	.include "data/maps/MtMoonSquare/text.inc"
+
+	.include "data/maps/FishermansHouse/scripts.inc"
+	.include "data/maps/FishermansHouse/text.inc"

@@ -419,84 +419,86 @@ FiveIsland_WaterLabyrinth_Text_TeachMonMoveForMushroom::
 # 210 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	.string "I'm the EGG MOVE ARTIST.\p"
 # 211 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "I study moves with an artist's eye, and\n"
+	.string "I study moves with an artist's eye,\n"
 # 212 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "sketch them as skilfully as a SMEARGLE.\p"
+	.string "and sketch them as skilfully\l"
 # 213 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "I can gift an EGG move to your POKéMON\n"
+	.string "as a SMEARGLE.\p"
 # 214 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "if you'd like.\p"
+	.string "I can gift an EGG move\n"
 # 215 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "I'll craft you a masterpiece\n"
+	.string "to your POKéMON if you'd like.\p"
 # 216 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "for just one HEART SCALE!$"
+	.string "I'll craft you a masterpiece\n"
 # 217 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+	.string "for just one HEART SCALE!$"
 # 218 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_WantMeToTeachMove::
+
 # 219 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "Oh! That's it!\n"
+FiveIsland_WaterLabyrinth_Text_WantMeToTeachMove::
 # 220 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "A genuine HEART SCALE!\p"
+	.string "Oh! That's it!\n"
 # 221 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "Shall I sketch a move?$"
+	.string "A genuine HEART SCALE!\p"
 # 222 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+	.string "Shall I sketch a move?$"
 # 223 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_TutorWhichMon::
+
 # 224 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "Which POKéMON needs an EGG move?$"
+FiveIsland_WaterLabyrinth_Text_TutorWhichMon::
 # 225 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+	.string "Which POKéMON needs an EGG move?$"
 # 226 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_TeachWhichMove::
+
 # 227 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "Which move should I teach?$"
+FiveIsland_WaterLabyrinth_Text_TeachWhichMove::
 # 228 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+    .string "Which move should I teach?$"
 # 229 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_NoMoveICanTeachThatMon::
+
 # 230 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "Sorry… I have nothing to sketch\n"
+FiveIsland_WaterLabyrinth_Text_NoMoveICanTeachThatMon::
 # 231 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "for that POKéMON.$"
+	.string "Sorry… I have nothing to sketch\n"
 # 232 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+	.string "for that POKéMON.$"
 # 233 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_IllNeedMushroomOrTwo::
+
 # 234 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "Then, I'll need a MUSHROOM or ten.\n"
+FiveIsland_WaterLabyrinth_Text_IllNeedMushroomOrTwo::
 # 235 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "What are you going to give me?$"
+    .string "Then, I'll need a MUSHROOM or ten.\n"
 # 236 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+    .string "What are you going to give me?$"
 # 237 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_HandedOverTwoTinyMushrooms::
+
 # 238 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "{PLAYER} handed over ten\n"
+FiveIsland_WaterLabyrinth_Text_HandedOverTwoTinyMushrooms::
 # 239 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-    .string "TINYMUSHROOMS in exchange.$"
+    .string "{PLAYER} handed over ten\n"
 # 240 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+    .string "TINYMUSHROOMS in exchange.$"
 # 241 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_HandedOverOneBigMushroom::
+
 # 242 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "{PLAYER} handed over one HEART SCALE\n"
+FiveIsland_WaterLabyrinth_Text_HandedOverOneBigMushroom::
 # 243 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "in exchange.$"
+	.string "{PLAYER} handed over one HEART SCALE\n"
 # 244 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-
+	.string "in exchange.$"
 # 245 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_NeedMushroomOrTwoToLearnMove::
-# 246 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "If your POKéMON need to learn an EGG\n"
-# 247 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "move, come back with a HEART SCALE.$"
-# 248 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 
+# 246 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+FiveIsland_WaterLabyrinth_Text_NeedMushroomOrTwoToLearnMove::
+# 247 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	.string "If your POKéMON need to learn an EGG\n"
+# 248 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	.string "move, come back with a HEART SCALE.$"
 # 249 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-FiveIsland_WaterLabyrinth_Text_CantTeachAnEgg::
+
 # 250 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
-	.string "Hunh? No move in my sketchbook\n"
+FiveIsland_WaterLabyrinth_Text_CantTeachAnEgg::
 # 251 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
+	.string "Hunh? No move in my sketchbook\n"
+# 252 "data/maps/FiveIsland_WaterLabyrinth/scripts.pory"
 	.string "fits an EGG!$"

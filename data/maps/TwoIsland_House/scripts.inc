@@ -208,3 +208,15 @@ TwoIsland_TMS2::
 	release
 # 105 "data/maps/TwoIsland_House/scripts.pory"
 	end
+# 106 "data/maps/TwoIsland_House/scripts.pory"
+
+# 107 "data/maps/TwoIsland_House/scripts.pory"
+
+# 108 "data/maps/TwoIsland_House/scripts.pory"
+
+# 109 "data/maps/TwoIsland_House/scripts.pory"
+TwoIsland_House_Event_Script_Wife::
+# 110 "data/maps/TwoIsland_House/scripts.pory"
+	msgbox TwoIsland_House_Text_Wife, MSGBOX_NPC
+# 111 "data/maps/TwoIsland_House/scripts.pory"
+	end

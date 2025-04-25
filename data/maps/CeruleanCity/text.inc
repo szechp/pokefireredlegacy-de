@@ -170,6 +170,10 @@ CeruleanCity_Text_TrainerTipsHeldItems::
     .string "an item.\p"
     .string "Some items can even be used by\n"
     .string "the holding POKéMON in battle.$"
+	.string "Some trainers used to trade\n"
+ 	.string "POKéMON to evolve them, but nowadays\l"
+ 	.string "using an item or leveling\l"
+ 	.string "them up is all they need.$"
 
 CeruleanCity_Text_BikeShopSign::
     .string "Grass and caves handled easily!\n"

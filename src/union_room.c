@@ -351,7 +351,7 @@ static void GetAwaitingCommunicationText(u8 *dst, u8 caseId)
         // BUG: argument *dst isn't used, instead it always prints to gStringVar4
         // not an issue in practice since Gamefreak never used any other arguments here besides gStringVar4
     #ifndef BUGFIX
-        StringExpandPlaceholders(gStringVar4, gText_UR_AwaitingCommunication);
+        StringExpandPlaceholders(dst, gText_UR_AwaitingCommunication);
     #else
         StringExpandPlaceholders(dst, gText_UR_AwaitingCommunication);
     #endif

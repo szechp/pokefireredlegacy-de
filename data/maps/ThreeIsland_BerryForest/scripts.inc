@@ -333,68 +333,106 @@ ThreeIsland_BerryForest_EventScript_PostRematchCruelKing::
 # 167 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_EventScript_Gym1::
 # 168 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_F, ThreeIsland_BerryForest_Text_Rocket1Intro, ThreeIsland_BerryForest_Text_Rocket1Defeat
+	trainerbattle_single TRAINER_SR_AND_JR, ThreeIsland_BerryForest_Text_Rocket1Intro, ThreeIsland_BerryForest_Text_Rocket1Defeat
 # 169 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	msgbox ThreeIsland_BerryForest_Text_Rocket1PostBattle, MSGBOX_AUTOCLOSE
 # 170 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	end
 # 171 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 
+# 172 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_Text_Rocket1Intro::
+# 173 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "How dare you trespass on the\n"
+# 174 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "domain of the CRUEL KING?!$"
+# 175 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 
+# 176 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_Text_Rocket1Defeat::
+# 177 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "You got this one.$"
+# 178 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 
+# 179 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_Text_Rocket1PostBattle::
+# 180 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "The CRUEL KING is not to be\n"
+# 181 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "messed with!$"
+# 182 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 
-# 185 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+# 183 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_EventScript_Gym2::
-# 186 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	trainerbattle_single TRAINER_SR_AND_JR, ThreeIsland_BerryForest_Text_Rocket2Intro, ThreeIsland_BerryForest_Text_Rocket2Defeat
-# 187 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+# 184 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	trainerbattle_single TRAINER_SWIMMING_TRIATHLETE_F, ThreeIsland_BerryForest_Text_Rocket2Intro, ThreeIsland_BerryForest_Text_Rocket2Defeat
+# 185 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	msgbox ThreeIsland_BerryForest_Text_Rocket2PostBattle, MSGBOX_AUTOCLOSE
+# 186 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	end
+# 187 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+
 # 188 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	end
-# 189 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-
 ThreeIsland_BerryForest_Text_Rocket2Intro::
+# 189 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "Honestly, I just like playing\n"
+# 190 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "in the berry forest.\p"
+# 191 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_Text_Rocket2Defeat::
+# 192 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "Oh, wow!$"
+# 193 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 
+# 194 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_Text_Rocket2PostBattle::
+# 195 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "Despite his name, the CRUEL KING\n"
+# 196 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "is actually pretty nice.\l"
+# 197 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "He's just into his theatrics.$"
+# 198 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 
-# 201 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-
-# 202 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+# 199 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_EventScript_Gym3::
-# 203 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+# 200 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	trainerbattle_single TRAINER_POKEFAN_F, ThreeIsland_BerryForest_Text_Rocket3Intro, ThreeIsland_BerryForest_Text_Rocket3Defeat
-# 204 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+# 201 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	msgbox ThreeIsland_BerryForest_Text_Rocket3PostBattle, MSGBOX_AUTOCLOSE
-# 205 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+# 202 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	end
-# 206 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+# 203 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 
+# 204 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_Text_Rocket3Intro::
+# 205 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "If you dare to challenge the\n"
+# 206 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "CRUEL KING, take heed of what\l"
+# 207 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "the forest has revealed to me…\p"
+# 208 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	.string "You see, in this forest,\n"
+# 209 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	.string "I had a revelation.\p"
+# 210 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "The most important thing in this\n"
+# 211 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "world is pure, unadulterated power!\p"
-	.string "Witness my might!$"
+# 212 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	.string "Witness the Power!$"
+# 213 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 
+# 214 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_Text_Rocket3Defeat::
-	.string "It seems your might is greater…$"
+# 215 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	.string "…$"
+# 216 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 
+# 217 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_Text_Rocket3PostBattle::
-	.string "Do what you have to do.\l"
+# 218 "data/maps/ThreeIsland_BerryForest/scripts.pory"
+	.string "Do what you have to do...\l"
+# 219 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "Fight the CRUEL KING!$"

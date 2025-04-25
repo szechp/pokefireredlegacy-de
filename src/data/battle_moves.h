@@ -198,7 +198,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_CUT] =
     {
         .effect = EFFECT_HIGH_CRITICAL,
-        .power = 55,
+        .power = 60,
         .type = TYPE_BUG,
         .accuracy = 95,
         .pp = 30,
@@ -978,7 +978,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_RAZOR_LEAF] =
     {
         .effect = EFFECT_HIGH_CRITICAL,
-        .power = 55,
+        .power = 60,
         .type = TYPE_GRASS,
         .accuracy = 95,
         .pp = 25,
