@@ -439,9 +439,9 @@ static const struct TrainerMon sParty_Freddy[] = {
     {
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .lvl = 83,
-        .species = SPECIES_GOREBYSS,
+        .species = SPECIES_JOLTEON,
         .heldItem = ITEM_LEFTOVERS,
-        .moves = {MOVE_SURF, MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_AGILITY},
+        .moves = {MOVE_THUNDERBOLT, MOVE_SHADOW_BALL, MOVE_THUNDER_WAVE, MOVE_AGILITY},
         .ev = TRAINER_PARTY_EVS(85, 85, 85, 85, 85, 85),
     }, 
     {
@@ -535,7 +535,7 @@ static const struct TrainerMon sParty_NurseJoy[] = {
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .lvl = 62,
         .species = SPECIES_KANGASKHAN,
-        .moves = {MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_DOUBLE_TEAM, MOVE_REST},
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_DOUBLE_TEAM, MOVE_REST},
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 0),
         .friendship = TRAINER_MON_FRIENDLY 
     },
@@ -601,7 +601,7 @@ static const struct TrainerMon sParty_Pokedude[] = {
         .lvl = 65,
         .species = SPECIES_RATICATE,
         .heldItem = ITEM_FOCUS_BAND,
-        .moves = {MOVE_RETURN, MOVE_CRUNCH, MOVE_REVERSAL, MOVE_SUPER_FANG},
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_CRUNCH, MOVE_REVERSAL, MOVE_SUPER_FANG},
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0), 
         .abilityNum = 1,
         .friendship = TRAINER_MON_FRIENDLY,
@@ -657,7 +657,7 @@ static const struct TrainerMon sParty_Proton[] = {
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .lvl = 64,
         .species = SPECIES_PUPITAR,
-        .moves = {MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_DRAGON_DANCE, MOVE_FRUSTRATION},
+        .moves = {MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_DRAGON_DANCE, MOVE_DOUBLE_EDGE},
         .friendship = TRAINER_MON_UNFRIENDLY
     },
     {
@@ -665,7 +665,7 @@ static const struct TrainerMon sParty_Proton[] = {
         .lvl = 65,
         .species = SPECIES_STANTLER,
         .heldItem = ITEM_LEFTOVERS,
-        .moves = {MOVE_FRUSTRATION, MOVE_HYPNOSIS, MOVE_EARTHQUAKE, MOVE_SHADOW_BALL},
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_HYPNOSIS, MOVE_EARTHQUAKE, MOVE_SHADOW_BALL},
         .friendship = TRAINER_MON_UNFRIENDLY
     },
 
@@ -708,7 +708,7 @@ static const struct TrainerMon sParty_Petrol[] = {
         .lvl = 65,
         .species = SPECIES_GRANBULL,
         .heldItem = ITEM_CHOICE_BAND,
-        .moves = {MOVE_FRUSTRATION, MOVE_EARTHQUAKE, MOVE_CRUNCH, MOVE_ROCK_SLIDE},
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_CRUNCH, MOVE_ROCK_SLIDE},
         .friendship = TRAINER_MON_UNFRIENDLY
     },    
 }; //RocketAdminPetrol
@@ -1181,7 +1181,6 @@ static const struct TrainerMon sParty_Craig[] = {
         .ev = TRAINER_PARTY_EVS(85, 85, 85, 85, 85, 85),
     }, 
     {
-        .nickname = _("FURBALL"),
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .lvl = 55,
         .species = SPECIES_ARCANINE,
@@ -1229,8 +1228,7 @@ static const struct TrainerMon sParty_Weebra[] = {
         .ev = TRAINER_PARTY_EVS(85, 85, 85, 85, 85, 85),
     }, 
     {
-        .nickname = _("CINDERELLA"),
-        .iv = BEST_IV_SPREAD,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .lvl = 55,
         .species = SPECIES_HITMONTOP,
         .heldItem = ITEM_KINGS_ROCK,
@@ -1535,7 +1533,7 @@ static const struct TrainerMon sParty_Oak[] = {
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .lvl = 70,
         .species = SPECIES_TAUROS,
-        .moves = {MOVE_ROCK_TOMB, MOVE_IRON_TAIL, MOVE_EARTHQUAKE, MOVE_RETURN},
+        .moves = {MOVE_ROCK_TOMB, MOVE_IRON_TAIL, MOVE_EARTHQUAKE, MOVE_DOUBLE_EDGE},
         .friendship = TRAINER_MON_FRIENDLY,
     }, 
     {
@@ -1579,7 +1577,7 @@ static const struct TrainerMon sParty_Oak2[] = {
         .lvl = 79,
         .species = SPECIES_TAUROS,
         .heldItem = ITEM_AGUAV_BERRY,
-        .moves = {MOVE_ROCK_TOMB, MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_PURSUIT},
+        .moves = {MOVE_ROCK_TOMB, MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_PURSUIT},
         .friendship = TRAINER_MON_FRIENDLY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
     }, 
@@ -2040,7 +2038,6 @@ static const struct TrainerMon sParty_Spike[] = {
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
     },
     {
-        .nickname = _("BIDE BLAST"),
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .lvl = 100,
         .species = SPECIES_SEEDOT,
@@ -6614,7 +6611,7 @@ static const struct TrainerMon sParty_BossGiovanni[] = {
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
         .lvl = 31,
         .species = SPECIES_MAROWAK,
-        .moves = {MOVE_BONEMERANG, MOVE_CUT, MOVE_ROCK_SMASH, MOVE_FRUSTRATION},
+        .moves = {MOVE_BONEMERANG, MOVE_CUT, MOVE_ROCK_SMASH, MOVE_TAKE_DOWN},
         .friendship = TRAINER_MON_UNFRIENDLY
     },
     {
@@ -6659,7 +6656,7 @@ static const struct TrainerMon sParty_BossGiovanni2[] = {
         .lvl = 47,
         .heldItem = ITEM_SHELL_BELL,
         .species = SPECIES_KANGASKHAN,
-        .moves = {MOVE_FRUSTRATION, MOVE_FAKE_OUT, MOVE_BRICK_BREAK, MOVE_CRUNCH},
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_FAKE_OUT, MOVE_BRICK_BREAK, MOVE_CRUNCH},
         .friendship = TRAINER_MON_UNFRIENDLY,
     },
 };
@@ -10338,12 +10335,14 @@ static const struct TrainerMon sParty_ScientistGideon[] = {
         .iv = TRAINER_PARTY_IVS(28, 28, 28, 28, 28, 28),
         .lvl = 65,
         .species = SPECIES_MAGNETON,
+        .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
         .moves = {MOVE_TRI_ATTACK, MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_REFLECT},
     },
     {
         .iv = TRAINER_PARTY_IVS(28, 28, 28, 28, 28, 28),
         .lvl = 65,
         .species = SPECIES_AERODACTYL,
+        .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
         .moves = {MOVE_EARTHQUAKE, MOVE_SKY_ATTACK, MOVE_ROCK_SLIDE, MOVE_DOUBLE_EDGE},
     },
     {

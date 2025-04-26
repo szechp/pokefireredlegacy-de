@@ -323,7 +323,7 @@ void StartMarowakBattle(void)
     if (CheckBagHasItem(ITEM_SILPH_SCOPE, 1))
     {
         gBattleTypeFlags = BATTLE_TYPE_GHOST | BATTLE_TYPE_GHOST_UNVEILED;
-        CreateMonWithGenderNatureLetter(gEnemyParty, SPECIES_MAROWAK, 35, 31, MON_FEMALE, NATURE_SERIOUS, 0, 0);
+        CreateMonWithGenderNatureLetter(gEnemyParty, SPECIES_MAROWAK, 35, 31, MON_FEMALE, NATURE_SERIOUS, 0);
     }
     else
     {
@@ -1035,7 +1035,7 @@ static const u8 *GetTrainerCantBattleSpeech(void)
 u8 getLevelCap(void){
     u8 levelCap = 0;
     u16 nextLeader, i;
-    const struct TrainerTypeTrainer *partyData;
+    const struct TrainerMon *partyData;    
     if (!FlagGet(FLAG_HARD) || FlagGet(FLAG_IS_CHAMPION))
         return 100;
     if (!FlagGet(FLAG_BADGE01_GET))
@@ -1065,7 +1065,7 @@ u8 getLevelCap(void){
     else if (!FlagGet(FLAG_IS_CHAMPION))
         nextLeader = TRAINER_CHAMPION_FIRST_CHARMANDER;
 
-    partyData = gTrainers[nextLeader].party.TrainerMon;
+    partyData = gTrainers[nextLeader].party;
     for (i = 0; i < gTrainers[nextLeader].partySize; i++){
         if (partyData[i].lvl > levelCap)
             levelCap = partyData[i].lvl;

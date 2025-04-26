@@ -3,7 +3,7 @@
  #include "battle_main.h"
  #include "data.h"
  #include "pokemon.h"
- #include "constants/item.h"
+ #include "item.h"
  #include "constants/items.h"
  #include "constants/abilities.h"
  #include "constants/trainers.h"
@@ -78,7 +78,4 @@
          SetMonData(party, MON_DATA_POKEBALL, &pokeball);
      }
 
-     if (partyData->nickname[0] != '\0')
-        u32 nickname = partyData->nickname;
-        SetMonData(&party[i], MON_DATA_NICKNAME, &partyData[i].nickname);
  }
