@@ -2,6 +2,9 @@
 #define GUARD_CONSTANTS_TRAINERS_H
 
 #include "constants/opponents.h"
+#include "util.h"
+#include "battle.h"
+#include "trainer_control.h"
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music
@@ -463,10 +466,7 @@
 
 // Set to buff up all trained pokemon that use .iv instead of .ivs
 #define TRAINER_IV_MODIFIER       0
-// Unused.
-#define F_TRAINER_PARTY_CUSTOM_MOVESET (1 << 0)
-#define F_TRAINER_PARTY_HELD_ITEM      (1 << 1)
-#define F_TRAINER_PARTY_CUSTOM_MON     (1 << 2)
+
 // Use for trainer parties.
 #define TRAINER_MON_FEMALE     1
 #define TRAINER_MON_MALE       2

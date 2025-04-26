@@ -11,6 +11,7 @@
 #include "constants/pokedex.h"
 #include "constants/easy_chat.h"
 #include "constants/rgb.h"
+#include "trainer_control.h"
 
 // Prevent cross-jump optimization.
 #define BLOCK_CROSS_JUMP asm("");
@@ -119,6 +120,9 @@
 #define JOY_HELD(button)     TEST_BUTTON(gMain.heldKeys, button)
 #define JOY_HELD_RAW(button) TEST_BUTTON(gMain.heldKeysRaw, button)
 #define JOY_REPT(button)     TEST_BUTTON(gMain.newAndRepeatedKeys, button)
+
+// Converts a string to a compound literal, essentially making it a pointer to const u8
+#define COMPOUND_STRING(str) (const u8[]) _(str)
 
 extern u8 gStringVar1[];
 extern u8 gStringVar2[];
