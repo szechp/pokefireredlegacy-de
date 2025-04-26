@@ -559,18 +559,16 @@ static u16 GetSumOfPlayerPartyLevel(u8 numMons)
 
 static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
 {
-    const struct TrainerMon *party;
     u8 i;
     u8 sum;
     u32 count = numMons;
+    const struct Trainer *opponent = &gTrainers[opponentId];
 
-    party = gTrainers[opponentId].party.TrainerMon;
-
-    if (gTrainers[opponentId].partySize < count)
-        count = gTrainers[opponentId].partySize;
+    if (opponent->partySize < count)
+         count = opponent->partySize;
     sum = 0;
     for (i = 0; i < count; i++)
-        sum += party[i].lvl;
+        sum += opponent->party[i].lvl;
     return sum;
 }
 
@@ -1037,7 +1035,7 @@ static const u8 *GetTrainerCantBattleSpeech(void)
 u8 getLevelCap(void){
     u8 levelCap = 0;
     u16 nextLeader, i;
-    const struct TrainerMon *partyData;
+    const struct TrainerTypeTrainer *partyData;
     if (!FlagGet(FLAG_HARD) || FlagGet(FLAG_IS_CHAMPION))
         return 100;
     if (!FlagGet(FLAG_BADGE01_GET))
