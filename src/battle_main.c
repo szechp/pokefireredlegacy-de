@@ -1553,13 +1553,12 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
         monsCount = trainer->partySize;
         for (i = 0; i < gTrainers[trainerNum].partySize; i++)
         {
-        
-            if (trainer.doubleBattle == TRUE)
+            if (trainer->doubleBattle == TRUE)
                 personalityValue = 0x80;
-            else if (trainer->encounterMusic_gender & F_TRAINER_FEMALE)    
-                personalityValue = 0x78;
+            else if (trainer->encounterMusic_gender & F_TRAINER_FEMALE)
+                personalityValue = 0x78; // Use personality more likely to result in a female Pokémon
             else
-                personalityValue = 0x88;
+                personalityValue = 0x88; // Use personality more likely to result in a male Pokémon
 
             personalityValue += CalcCRC32((const u8 *)&trainer->party[i], sizeof(*trainer->party)) << 8;
             CreateTrainerMon(&party[i], trainer, i, personalityValue, 0);

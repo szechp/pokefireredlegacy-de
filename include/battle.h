@@ -83,11 +83,10 @@ struct TrainerMon
     u16 moves[MAX_MON_MOVES];
     u16 nature:11;
     u16 pokeball:5;
-    u8 nickname[POKEMON_NAME_LENGTH + 1];
     const u8 *ev;
 };
 
-#define TRAINER_MON(party) { .TrainerMon = party }, .partySize = ARRAY_COUNT(party)
+#define TRAINER_PARTY(party) party, .partySize = ARRAY_COUNT(party)
 
 struct TrainerTypeTrainer
  {

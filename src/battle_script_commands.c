@@ -5342,8 +5342,8 @@ static void Cmd_getmoneyreward(void)
         else
         {
             // Get the lastMonLevel from the opponent's party
-            party4 = gTrainers[gTrainerBattleOpponent_A].party.TrainerTypeTrainer;
-            lastMonLevel = party4[gTrainers[gTrainerBattleOpponent_A].partySize - 1].lvl;
+            const struct TrainerMon *party = gTrainers[gTrainerBattleOpponent_A].party;
+            lastMonLevel = party[gTrainers[gTrainerBattleOpponent_A].partySize - 1].lvl;
 
             // Find the appropriate money reward based on the trainer class
             for (; gTrainerMoneyTable[i].classId != 0xFF; i++)
