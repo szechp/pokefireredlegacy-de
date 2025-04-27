@@ -3376,7 +3376,6 @@ static const u16 sWobbuffetLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MIRROR_COAT),
     LEVEL_UP_MOVE( 1, MOVE_SAFEGUARD),
     LEVEL_UP_MOVE( 1, MOVE_DESTINY_BOND),
-    LEVEL_UP_MOVE(65, MOVE_ENCORE),
     LEVEL_UP_END
 };
 
