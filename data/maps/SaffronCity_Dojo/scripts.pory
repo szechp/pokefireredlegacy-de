@@ -59,12 +59,17 @@ SaffronCity_Dojo_EventScript_HitmonchanBall::
 
 SaffronCity_Dojo_EventScript_GiveHitmon::
 	hidemonpic
+	goto_if_set FLAG_KOICHI_REMATCH, SaffronCity_Dojo_EventScript_Shiny
 	givemon VAR_TEMP_1, 25
 	goto_if_eq VAR_RESULT, 0, SaffronCity_Dojo_EventScript_ReceivedHitmonParty
 	goto_if_eq VAR_RESULT, 1, SaffronCity_Dojo_EventScript_ReceivedHitmonPC
 	goto_if_eq VAR_RESULT, 2, EventScript_NoMoreRoomForPokemon
 	release
 	end
+
+SaffronCity_Dojo_EventScript_Shiny::
+	setflag FLAG_SHINY_CREATION
+	return
 
 SaffronCity_Dojo_EventScript_ReceivedHitmonParty::
 	removeobject VAR_LAST_TALKED
@@ -142,7 +147,38 @@ SaffronCity_Dojo_EventScript_MasterKoichi::
 	msgbox SaffronCity_Dojo_Text_ChoosePrizedFightingMon, MSGBOX_AUTOCLOSE
 	end
 
+SaffronCity_Dojo_EventScript_MasterKoichiRematch::
+	goto_if_set FLAG_KOICHI_REMATCH, SaffronCity_Dojo_EventScript_RematchWhitney
+	msgbox SaffronCity_Dojo_Text_Whitney, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SaffronCity_Dojo_EventScript_NoWhitney
+	trainerbattle_single TRAINER_RS_CAMPER, SaffronCity_Dojo_Text_YesWhitney, SaffronCity_Dojo_Text_WhitneyDefeat, SaffronCity_Dojo_EventScript_PostWhitney, NO_MUSIC
+	release
+	end
+SaffronCity_Dojo_EventScript_PostWhitney::
+	msgbox SaffronCity_Dojo_Text_WhitneyPostBattle
+	setflag FLAG_KOICHI_REMATCH
+	cleartrainerflag TRAINER_RS_CAMPER
+	clearflag FLAG_GOT_HITMON_FROM_DOJO
+	release
+	end
+SaffronCity_Dojo_EventScript_NoWhitney::
+	msgbox SaffronCity_Dojo_Text_NoWhitney
+	release
+	end
+SaffronCity_Dojo_EventScript_RematchWhitney::
+	msgbox SaffronCity_Dojo_Text_RematchWhitney, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SaffronCity_Dojo_EventScript_NoWhitney
+	trainerbattle_single TRAINER_RS_CAMPER, SaffronCity_Dojo_Text_YesRematchWhitney, SaffronCity_Dojo_Text_RematchWhitneyDefeat, SaffronCity_Dojo_EventScript_PostRematchWhitney, NO_MUSIC
+	release
+	end
+SaffronCity_Dojo_EventScript_PostRematchWhitney::
+	msgbox SaffronCity_Dojo_Text_RematchWhitneyDefeat
+	cleartrainerflag FLAG_KOICHI_REMATCH
+	release
+	end
+	
 SaffronCity_Dojo_EventScript_MasterKoichiAlreadyGotHitmon::
+	goto_if_set FLAG_IS_CHAMPION, SaffronCity_Dojo_EventScript_MasterKoichiRematch
 	msgbox SaffronCity_Dojo_Text_StayAndTrainWithUs
 	release
 	end
@@ -151,4 +187,41 @@ SaffronCity_Dojo_EventScript_DefeatedMasterKoichi::
 	setvar VAR_MAP_SCENE_SAFFRON_CITY_DOJO, 1
 	release
 	end
+
+SaffronCity_Dojo_Text_Whitney::
+    .string "Ah, the CHAMPION. I see you\n"
+    .string "defeated Master BRUNO.\p"
+    .string "If so, I would like to face\n"
+    .string "you again. You can have one\l"
+    .string "more of our prized POKÉMON.\p"
+    .string "But expect no mercy! This\n"
+    .string "is me at my strongest!$"
+
+
+SaffronCity_Dojo_Text_WhitneyDefeat::
+    .string "Humbled again.$"
+
+SaffronCity_Dojo_Text_WhitneyPostBattle::
+    .string "You truly are a master at\n"
+    .string "battles.$"
+
+SaffronCity_Dojo_Text_NoWhitney::
+    .string "Not ready, huh?$"
+
+SaffronCity_Dojo_Text_YesWhitney::
+    .string "Prepare for the match you\n"
+    .string "won't forget!$"
+
+SaffronCity_Dojo_Text_RematchWhitney::
+    .string "Back for another battle?$"
+
+SaffronCity_Dojo_Text_RematchWhitneyDefeat::
+    .string "Humbled once again.\p"
+
+SaffronCity_Dojo_Text_YesRematchWhitney::
+    .string "Fight once again!$"
+
+SaffronCity_Dojo_Text_RematchWhitneyPostBattle::
+    .string "I've got nothing else to\n"
+    .string "say.$"
 `

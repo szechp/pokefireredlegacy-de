@@ -74,12 +74,12 @@ struct TrainerMon
 {
     u32 iv;
     u8 lvl;
+    u8 nickname[POKEMON_NAME_LENGTH + 1];
     bool8 gender:2;
     bool8 isShiny:1;
     bool8 abilityNum:1;
     u16 species;
     u16 heldItem;
-    u16 friendship:2;
     u16 moves[MAX_MON_MOVES];
     u16 nature:11;
     u16 pokeball:5;

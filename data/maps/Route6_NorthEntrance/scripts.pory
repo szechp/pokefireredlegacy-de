@@ -5,7 +5,51 @@ Route6_NorthEntrance_MapScripts::
 Route6_NorthEntrance_EventScript_Guard::
 	msgbox Route6_NorthEntrance_Text_HiHowsItGoing, MSGBOX_NPC
 	goto_if_set FLAG_GUARD_TEA, Route6_NorthEntrance_EventScript_GiveTeaFight
+	goto_if_set FLAG_IS_CHAMPION, Route6_NorthEntrance_EventScript_Rematch
 	end
+
+Route6_NorthEntrance_EventScript_Rematch::
+	lock
+	faceplayer
+	msgbox Route6_NorthEntrance_Text_Whitney, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route6_NorthEntrance_EventScript_NoWhitney
+	trainerbattle_single TRAINER_KINDLER, Route6_NorthEntrance_Text_YesWhitney, Route6_NorthEntrance_Text_WhitneyDefeat, Route6_NorthEntrance_EventScript_PostWhitney, NO_MUSIC
+	release
+	end
+
+Route6_NorthEntrance_EventScript_PostWhitney::
+	msgbox Route6_NorthEntrance_Text_WhitneyPostBattle
+	cleartrainerflag TRAINER_KINDLER
+	release
+	end
+
+Route6_NorthEntrance_EventScript_NoWhitney::
+	msgbox Route6_NorthEntrance_Text_NoWhitney
+	release
+	end
+
+Route6_NorthEntrance_Text_Whitney::
+    .string "Oh hi there, CHAMPION!\n"
+    .string "You must have had a hard\l"
+    .string "time in the LEAGUE!\p"
+    .string "Probably tough with us\n"
+    .string "being so thirsty too...\p"
+    .string "Anyways, I was wondering\n"
+    .string "if I could battle you.\l"
+    .string "It's boring standing here.$"
+
+Route6_NorthEntrance_Text_WhitneyDefeat::
+    .string "Ah, that was a good fight.$"
+
+Route6_NorthEntrance_Text_WhitneyPostBattle::
+    .string "Thanks!$"
+
+Route6_NorthEntrance_Text_NoWhitney::
+    .string "Alright then...$"
+
+Route6_NorthEntrance_Text_YesWhitney::
+    .string "Thanks, CHAMPION!\n"
+    .string "I won't hold back!$"
 
 Route6_NorthEntrance_EventScript_GiveTeaFight::
 	removeitem ITEM_TEA

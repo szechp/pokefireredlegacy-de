@@ -1042,15 +1042,15 @@ u8 getLevelCap(void){
         nextLeader = TRAINER_LEADER_BROCK;
     else if (!FlagGet(FLAG_BADGE02_GET))
         nextLeader = TRAINER_LEADER_MISTY;
-    else if (!FlagGet(FLAG_BADGE03_GET))
+    else if (!FlagGet(FLAG_GYM3CAP))
         nextLeader = TRAINER_LEADER_LT_SURGE;
-    else if (!FlagGet(FLAG_BADGE04_GET))
+    else if (!FlagGet(FLAG_GYM4CAP))
         nextLeader = TRAINER_LEADER_ERIKA;
-    else if (!FlagGet(FLAG_BADGE05_GET))
+    else if (!FlagGet(FLAG_GYM5CAP))
         nextLeader = TRAINER_LEADER_KOGA;
-    else if (!FlagGet(FLAG_BADGE06_GET))
+    else if (!FlagGet(FLAG_GYM6CAP))
         nextLeader = TRAINER_LEADER_SABRINA;
-    else if (!FlagGet(FLAG_BADGE07_GET))
+    else if (!(FlagGet(FLAG_DEFEATED_BLAINE) || FlagGet(FLAG_DEFEATED_SABRINA) || FlagGet(FLAG_DEFEATED_ERIKA) || FlagGet(FLAG_DEFEATED_LT_SURGE) || FlagGet(FLAG_DEFEATED_KOGA)))
         nextLeader = TRAINER_LEADER_BLAINE;
     else if (!FlagGet(FLAG_BADGE08_GET))
         nextLeader = TRAINER_LEADER_GIOVANNI;

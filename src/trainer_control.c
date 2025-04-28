@@ -10,8 +10,6 @@
  #include "constants/battle.h"
  #include "constants/moves.h"
  #include "trainer_control.h"
-
-
  
  void CreateTrainerMon(struct Pokemon *party, const struct Trainer *trainer, u32 partySlot, u32 personalityValue, u32 fixedOtId)
  {
@@ -52,15 +50,22 @@
      if (partyData->heldItem != ITEM_NONE)
          SetMonData(party, MON_DATA_HELD_ITEM, &partyData->heldItem);
  
-     if (partyData[i].friendship > 0)
+     
+     if (partyData->moves[0] != MOVE_NONE)
      {
          u32 friendship = 0;
-         if (partyData[i].friendship == TRAINER_MON_UNFRIENDLY)
-             friendship = 0;
-         else if (partyData[i].friendship == TRAINER_MON_FRIENDLY)
-             friendship = MAX_FRIENDSHIP;
-         SetMonData(&party[i], MON_DATA_FRIENDSHIP, &friendship);
+         for (i = 0; i < MAX_MON_MOVES; i++)
+         {
+             u32 move = partyData->moves[i];
+             SetMonMoveSlot(party, move, i);
+             if (move == MOVE_RETURN)
+                 friendship = MAX_FRIENDSHIP;  // Return is more powerful the higher the pokemon's friendship is.
+             if (move == MOVE_FRUSTRATION)
+                 friendship = 0;  // Frustration is more powerful the lower the pokemon's friendship is.
+         }
+         SetMonData(party, MON_DATA_FRIENDSHIP, &friendship);
      }
+        
      SetMonData(party, MON_DATA_IVS, &partyData->iv);
      if (partyData->ev != NULL)
      {
@@ -77,5 +82,6 @@
          u32 pokeball = partyData->pokeball;
          SetMonData(party, MON_DATA_POKEBALL, &pokeball);
      }
-
+     if (partyData->nickname != 0)
+         SetMonData(party, MON_DATA_NICKNAME, &partyData->nickname);
  }
