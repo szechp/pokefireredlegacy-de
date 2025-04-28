@@ -1883,12 +1883,11 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
             do {
                 personality = Random32();
                 personality = ((((Random() % SHINY_ODDS) ^ (HIHALF(value) ^ LOHALF(value))) ^ LOHALF(personality)) << 16) | LOHALF(personality);
-            } while (nature != GetNatureFromPersonality(personality));
-            
+            } while (nature != GetNatureFromPersonality(personality));  
         }
-        SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
-        FlagClear(FLAG_SHINY_CREATION);
     }
+    SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
+    FlagClear(FLAG_SHINY_CREATION);
 
     SetBoxMonData(boxMon, MON_DATA_OT_ID, &value);
 
