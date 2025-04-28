@@ -74,7 +74,6 @@ struct TrainerMon
 {
     u32 iv;
     u8 lvl;
-    u8 nickname[POKEMON_NAME_LENGTH + 1];
     bool8 gender:2;
     bool8 isShiny:1;
     bool8 abilityNum:1;

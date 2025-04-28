@@ -82,6 +82,4 @@
          u32 pokeball = partyData->pokeball;
          SetMonData(party, MON_DATA_POKEBALL, &pokeball);
      }
-     if (partyData->nickname != 0)
-         SetMonData(party, MON_DATA_NICKNAME, &partyData->nickname);
  }
