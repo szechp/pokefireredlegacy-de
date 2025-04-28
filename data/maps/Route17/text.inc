@@ -136,4 +136,23 @@ Route17_Text_Paxton::
     .string "those ISLANDS!\p"
     .string "I'm not sorry for what I did\n"
     .string "on those ISLANDS.\p"
-    .string "But I'll stand no chance!$"
+    .string "I have been training too!\n"
+    .string "I'm way above your level!\p"
+    .string "Want to faint!?$"
+
+Route17_Text_WhitneyDefeat::
+    .string "...$"
+
+Route17_Text_WhitneyPostBattle::
+    .string "Guess you really are\n"
+    .string "that strong.\p"
+    .string "I feel embarrassed.$"
+
+Route17_Text_NoWhitney::
+    .string "Aww, looks like the\n"
+    .string "CHAMPION isn't as strong\l"
+    .string "as he seems.$"
+
+Route17_Text_YesWhitney::
+    .string "PREPARE TO LOSE!$"
+
