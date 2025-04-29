@@ -842,9 +842,10 @@ static const struct TrainerMon sParty_Freddy[] = {
     {
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .lvl = 83,
-        .species = SPECIES_JOLTEON,
+        .species = SPECIES_GOREBYSS,
         .heldItem = ITEM_LEFTOVERS,
-        .moves = {MOVE_THUNDERBOLT, MOVE_SHADOW_BALL, MOVE_THUNDER_WAVE, MOVE_AGILITY},
+        .isShiny = TRUE,
+        .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_HYDRO_PUMP, MOVE_AGILITY},
         .ev = TRAINER_PARTY_EVS(85, 85, 85, 85, 85, 85),
     }, 
     {

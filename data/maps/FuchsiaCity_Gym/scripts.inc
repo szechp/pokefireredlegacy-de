@@ -13,9 +13,9 @@ FuchsiaCity_Gym_EventScript_Koga::
 # 7 "data/maps/FuchsiaCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_KOGA, FuchsiaCity_Gym_EventScript_ContinueKoga
 # 8 "data/maps/FuchsiaCity_Gym/scripts.pory"
-	goto_if_set FLAG_DEFEATED_SABRINA, FuchsiaCity_Gym_EventScript_BeatSabrina
-# 9 "data/maps/FuchsiaCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_BLAINE, FuchsiaCity_Gym_EventScript_BeatBlaine
+# 9 "data/maps/FuchsiaCity_Gym/scripts.pory"
+	goto_if_set FLAG_DEFEATED_SABRINA, FuchsiaCity_Gym_EventScript_BeatSabrina
 # 10 "data/maps/FuchsiaCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_LEADER_KOGA, FuchsiaCity_Gym_Text_KogaIntro, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
 # 11 "data/maps/FuchsiaCity_Gym/scripts.pory"
