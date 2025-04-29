@@ -148,32 +148,32 @@ SaffronCity_Dojo_EventScript_MasterKoichi::
 	end
 
 SaffronCity_Dojo_EventScript_MasterKoichiRematch::
-	goto_if_set FLAG_KOICHI_REMATCH, SaffronCity_Dojo_EventScript_RematchWhitney
-	msgbox SaffronCity_Dojo_Text_Whitney, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, SaffronCity_Dojo_EventScript_NoWhitney
-	trainerbattle_single TRAINER_RS_CAMPER, SaffronCity_Dojo_Text_YesWhitney, SaffronCity_Dojo_Text_WhitneyDefeat, SaffronCity_Dojo_EventScript_PostWhitney, NO_MUSIC
+	goto_if_set FLAG_KOICHI_REMATCH, SaffronCity_Dojo_EventScript_RematchKarate
+	msgbox SaffronCity_Dojo_Text_Karate, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SaffronCity_Dojo_EventScript_NoKarate
+	trainerbattle_single TRAINER_RS_CAMPER, SaffronCity_Dojo_Text_YesKarate, SaffronCity_Dojo_Text_KarateDefeat, SaffronCity_Dojo_EventScript_PostKarate, NO_MUSIC
 	release
 	end
-SaffronCity_Dojo_EventScript_PostWhitney::
-	msgbox SaffronCity_Dojo_Text_WhitneyPostBattle
+SaffronCity_Dojo_EventScript_PostKarate::
+	msgbox SaffronCity_Dojo_Text_KaratePostBattle
 	setflag FLAG_KOICHI_REMATCH
 	cleartrainerflag TRAINER_RS_CAMPER
 	clearflag FLAG_GOT_HITMON_FROM_DOJO
 	release
 	end
-SaffronCity_Dojo_EventScript_NoWhitney::
-	msgbox SaffronCity_Dojo_Text_NoWhitney
+SaffronCity_Dojo_EventScript_NoKarate::
+	msgbox SaffronCity_Dojo_Text_NoKarate
 	release
 	end
-SaffronCity_Dojo_EventScript_RematchWhitney::
-	msgbox SaffronCity_Dojo_Text_RematchWhitney, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, SaffronCity_Dojo_EventScript_NoWhitney
-	trainerbattle_single TRAINER_RS_CAMPER, SaffronCity_Dojo_Text_YesRematchWhitney, SaffronCity_Dojo_Text_RematchWhitneyDefeat, SaffronCity_Dojo_EventScript_PostRematchWhitney, NO_MUSIC
+SaffronCity_Dojo_EventScript_RematchKarate::
+	msgbox SaffronCity_Dojo_Text_RematchKarate, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SaffronCity_Dojo_EventScript_NoKarate
+	trainerbattle_single TRAINER_RS_CAMPER, SaffronCity_Dojo_Text_YesRematchKarate, SaffronCity_Dojo_Text_RematchKarateDefeat, SaffronCity_Dojo_EventScript_PostRematchKarate, NO_MUSIC
 	release
 	end
-SaffronCity_Dojo_EventScript_PostRematchWhitney::
-	msgbox SaffronCity_Dojo_Text_RematchWhitneyDefeat
-	cleartrainerflag FLAG_KOICHI_REMATCH
+SaffronCity_Dojo_EventScript_PostRematchKarate::
+	msgbox SaffronCity_Dojo_Text_RematchKarateDefeat
+	cleartrainerflag TRAINER_RS_CAMPER
 	release
 	end
 	
@@ -188,7 +188,7 @@ SaffronCity_Dojo_EventScript_DefeatedMasterKoichi::
 	release
 	end
 
-SaffronCity_Dojo_Text_Whitney::
+SaffronCity_Dojo_Text_Karate::
     .string "Ah, the CHAMPION. I see you\n"
     .string "defeated Master BRUNO.\p"
     .string "If so, I would like to face\n"
@@ -198,30 +198,30 @@ SaffronCity_Dojo_Text_Whitney::
     .string "is me at my strongest!$"
 
 
-SaffronCity_Dojo_Text_WhitneyDefeat::
+SaffronCity_Dojo_Text_KarateDefeat::
     .string "Humbled again.$"
 
-SaffronCity_Dojo_Text_WhitneyPostBattle::
+SaffronCity_Dojo_Text_KaratePostBattle::
     .string "You truly are a master at\n"
     .string "battles.$"
 
-SaffronCity_Dojo_Text_NoWhitney::
+SaffronCity_Dojo_Text_NoKarate::
     .string "Not ready, huh?$"
 
-SaffronCity_Dojo_Text_YesWhitney::
+SaffronCity_Dojo_Text_YesKarate::
     .string "Prepare for the match you\n"
     .string "won't forget!$"
 
-SaffronCity_Dojo_Text_RematchWhitney::
+SaffronCity_Dojo_Text_RematchKarate::
     .string "Back for another battle?$"
 
-SaffronCity_Dojo_Text_RematchWhitneyDefeat::
+SaffronCity_Dojo_Text_RematchKarateDefeat::
     .string "Humbled once again.\p"
 
-SaffronCity_Dojo_Text_YesRematchWhitney::
+SaffronCity_Dojo_Text_YesRematchKarate::
     .string "Fight once again!$"
 
-SaffronCity_Dojo_Text_RematchWhitneyPostBattle::
+SaffronCity_Dojo_Text_RematchKaratePostBattle::
     .string "I've got nothing else to\n"
     .string "say.$"
 `
