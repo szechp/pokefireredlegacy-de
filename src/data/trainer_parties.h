@@ -1596,6 +1596,7 @@ static const struct TrainerMon sParty_Craig[] = {
         .lvl = 55,
         .species = SPECIES_ARCANINE,
         .heldItem = ITEM_WHITE_HERB,
+        .nickname = COMPOUND_STRING("FURBALL"),
         .moves = {MOVE_OVERHEAT, MOVE_EXTREME_SPEED, MOVE_FIRE_BLAST, MOVE_HELPING_HAND},
         .ev = TRAINER_PARTY_EVS(85, 85, 85, 85, 85, 85),
     },
@@ -1643,6 +1644,7 @@ static const struct TrainerMon sParty_Weebra[] = {
         .lvl = 55,
         .species = SPECIES_HITMONTOP,
         .heldItem = ITEM_KINGS_ROCK,
+        .nickname = COMPOUND_STRING("CINDERALLA"),
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
         .moves = {MOVE_FAKE_OUT, MOVE_TRIPLE_KICK, MOVE_BULK_UP, MOVE_ROCK_SLIDE}
     },
@@ -2469,6 +2471,7 @@ static const struct TrainerMon sParty_Spike[] = {
         .lvl = 100,
         .species = SPECIES_SEEDOT,
         .heldItem = ITEM_LEFTOVERS,
+        .nickname = COMPOUND_STRING("BIDE BLAST"),
         .nature = TRAINER_PARTY_NATURE(NATURE_BOLD),
         .moves = {MOVE_BIDE, MOVE_SYNTHESIS, MOVE_REFRESH, MOVE_NONE},
         .ev = TRAINER_PARTY_EVS(252, 252, 252, 252, 252, 252),
