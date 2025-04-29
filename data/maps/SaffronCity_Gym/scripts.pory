@@ -4,7 +4,7 @@ SaffronCity_Gym_MapScripts::
 
 SaffronCity_Gym_EventScript_Sabrina::
 	famechecker FAMECHECKER_SABRINA, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	goto_if_set FLAG_IS_CHAMPION, SaffronCity_Gym_EventScript_RematchSabrina
+	goto_if_set FLAG_DEFEATED_SABRINA, SaffronCity_Gym_EventScript_SabrinaContinue
 	goto_if_set FLAG_DEFEATED_BLAINE, SaffronCity_Gym_EventScript_Blaine
 	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Gym_Text_SabrinaIntro, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, NO_MUSIC
 	goto SaffronCity_Gym_EventScript_SabrinaContinue
@@ -13,6 +13,7 @@ SaffronCity_Gym_EventScript_Blaine::
 	goto SaffronCity_Gym_EventScript_SabrinaContinue
 SaffronCity_Gym_EventScript_SabrinaContinue::
 	goto_if_unset FLAG_GOT_TM04_FROM_SABRINA, SaffronCity_Gym_EventScript_GiveTM04
+	goto_if_set FLAG_IS_CHAMPION, SaffronCity_Gym_EventScript_RematchSabrina
 	msgbox SaffronCity_Gym_Text_ExplainTM04
 	release
 	end

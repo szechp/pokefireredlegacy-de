@@ -59,7 +59,7 @@ SaffronCity_Dojo_EventScript_HitmonchanBall::
 
 SaffronCity_Dojo_EventScript_GiveHitmon::
 	hidemonpic
-	goto_if_set FLAG_KOICHI_REMATCH, SaffronCity_Dojo_EventScript_Shiny
+	call_if_set FLAG_KOICHI_REMATCH, SaffronCity_Dojo_EventScript_Shiny
 	givemon VAR_TEMP_1, 25
 	goto_if_eq VAR_RESULT, 0, SaffronCity_Dojo_EventScript_ReceivedHitmonParty
 	goto_if_eq VAR_RESULT, 1, SaffronCity_Dojo_EventScript_ReceivedHitmonPC
