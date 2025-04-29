@@ -2935,7 +2935,7 @@ static const struct TrainerMon sParty_Oman[] = {
         .lvl = 68,
         .species = SPECIES_FLAREON,
         .heldItem = ITEM_QUICK_CLAW,
-        .moves = {MOVE_FIRE_BLAST, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE MOVE_SUPERPOWER},
+        .moves = {MOVE_FIRE_BLAST, MOVE_SHADOW_BALL, MOVE_DOUBLE_EDGE, MOVE_SUPERPOWER},
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 252, 0),
     },
     {
