@@ -405,13 +405,13 @@ VermilionCity_Gym_EventScript_LtSurge::
 # 203 "data/maps/VermilionCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_LT_SURGE, VermilionCity_Gym_EventScript_ContinueSurge
 # 204 "data/maps/VermilionCity_Gym/scripts.pory"
-	goto_if_set FLAG_DEFEATED_ERIKA, VermilionCity_Gym_EventScript_BeatErika
-# 205 "data/maps/VermilionCity_Gym/scripts.pory"
-	goto_if_set FLAG_DEFEATED_KOGA, VermilionCity_Gym_EventScript_BeatKoga
-# 206 "data/maps/VermilionCity_Gym/scripts.pory"
-	goto_if_set FLAG_DEFEATED_SABRINA, VermilionCity_Gym_EventScript_BeatSabrina
-# 207 "data/maps/VermilionCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_BLAINE, VermilionCity_Gym_EventScript_BeatBlaine
+# 205 "data/maps/VermilionCity_Gym/scripts.pory"
+	goto_if_set FLAG_DEFEATED_ERIKA, VermilionCity_Gym_EventScript_BeatErika
+# 206 "data/maps/VermilionCity_Gym/scripts.pory"
+	goto_if_set FLAG_DEFEATED_KOGA, VermilionCity_Gym_EventScript_BeatKoga
+# 207 "data/maps/VermilionCity_Gym/scripts.pory"
+	goto_if_set FLAG_DEFEATED_SABRINA, VermilionCity_Gym_EventScript_BeatSabrina
 # 208 "data/maps/VermilionCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_LEADER_LT_SURGE, VermilionCity_Gym_Text_LtSurgeIntro, VermilionCity_Gym_Text_LtSurgeDefeat, VermilionCity_Gym_EventScript_DefeatedLtSurge, NO_MUSIC
 # 209 "data/maps/VermilionCity_Gym/scripts.pory"

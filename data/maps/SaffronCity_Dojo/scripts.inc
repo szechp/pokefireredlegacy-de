@@ -299,21 +299,21 @@ SaffronCity_Dojo_EventScript_MasterKoichi::
 # 150 "data/maps/SaffronCity_Dojo/scripts.pory"
 SaffronCity_Dojo_EventScript_MasterKoichiRematch::
 # 151 "data/maps/SaffronCity_Dojo/scripts.pory"
-	goto_if_set FLAG_KOICHI_REMATCH, SaffronCity_Dojo_EventScript_RematchWhitney
+	goto_if_set FLAG_KOICHI_REMATCH, SaffronCity_Dojo_EventScript_RematchKarate
 # 152 "data/maps/SaffronCity_Dojo/scripts.pory"
-	msgbox SaffronCity_Dojo_Text_Whitney, MSGBOX_YESNO
+	msgbox SaffronCity_Dojo_Text_Karate, MSGBOX_YESNO
 # 153 "data/maps/SaffronCity_Dojo/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, SaffronCity_Dojo_EventScript_NoWhitney
+	goto_if_eq VAR_RESULT, NO, SaffronCity_Dojo_EventScript_NoKarate
 # 154 "data/maps/SaffronCity_Dojo/scripts.pory"
-	trainerbattle_single TRAINER_RS_CAMPER, SaffronCity_Dojo_Text_YesWhitney, SaffronCity_Dojo_Text_WhitneyDefeat, SaffronCity_Dojo_EventScript_PostWhitney, NO_MUSIC
+	trainerbattle_single TRAINER_RS_CAMPER, SaffronCity_Dojo_Text_YesKarate, SaffronCity_Dojo_Text_KarateDefeat, SaffronCity_Dojo_EventScript_PostKarate, NO_MUSIC
 # 155 "data/maps/SaffronCity_Dojo/scripts.pory"
 	release
 # 156 "data/maps/SaffronCity_Dojo/scripts.pory"
 	end
 # 157 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_EventScript_PostWhitney::
+SaffronCity_Dojo_EventScript_PostKarate::
 # 158 "data/maps/SaffronCity_Dojo/scripts.pory"
-	msgbox SaffronCity_Dojo_Text_WhitneyPostBattle
+	msgbox SaffronCity_Dojo_Text_KaratePostBattle
 # 159 "data/maps/SaffronCity_Dojo/scripts.pory"
 	setflag FLAG_KOICHI_REMATCH
 # 160 "data/maps/SaffronCity_Dojo/scripts.pory"
@@ -325,31 +325,31 @@ SaffronCity_Dojo_EventScript_PostWhitney::
 # 163 "data/maps/SaffronCity_Dojo/scripts.pory"
 	end
 # 164 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_EventScript_NoWhitney::
+SaffronCity_Dojo_EventScript_NoKarate::
 # 165 "data/maps/SaffronCity_Dojo/scripts.pory"
-	msgbox SaffronCity_Dojo_Text_NoWhitney
+	msgbox SaffronCity_Dojo_Text_NoKarate
 # 166 "data/maps/SaffronCity_Dojo/scripts.pory"
 	release
 # 167 "data/maps/SaffronCity_Dojo/scripts.pory"
 	end
 # 168 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_EventScript_RematchWhitney::
+SaffronCity_Dojo_EventScript_RematchKarate::
 # 169 "data/maps/SaffronCity_Dojo/scripts.pory"
-	msgbox SaffronCity_Dojo_Text_RematchWhitney, MSGBOX_YESNO
+	msgbox SaffronCity_Dojo_Text_RematchKarate, MSGBOX_YESNO
 # 170 "data/maps/SaffronCity_Dojo/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, SaffronCity_Dojo_EventScript_NoWhitney
+	goto_if_eq VAR_RESULT, NO, SaffronCity_Dojo_EventScript_NoKarate
 # 171 "data/maps/SaffronCity_Dojo/scripts.pory"
-	trainerbattle_single TRAINER_RS_CAMPER, SaffronCity_Dojo_Text_YesRematchWhitney, SaffronCity_Dojo_Text_RematchWhitneyDefeat, SaffronCity_Dojo_EventScript_PostRematchWhitney, NO_MUSIC
+	trainerbattle_single TRAINER_RS_CAMPER, SaffronCity_Dojo_Text_YesRematchKarate, SaffronCity_Dojo_Text_RematchKarateDefeat, SaffronCity_Dojo_EventScript_PostRematchKarate, NO_MUSIC
 # 172 "data/maps/SaffronCity_Dojo/scripts.pory"
 	release
 # 173 "data/maps/SaffronCity_Dojo/scripts.pory"
 	end
 # 174 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_EventScript_PostRematchWhitney::
+SaffronCity_Dojo_EventScript_PostRematchKarate::
 # 175 "data/maps/SaffronCity_Dojo/scripts.pory"
-	msgbox SaffronCity_Dojo_Text_RematchWhitneyDefeat
+	msgbox SaffronCity_Dojo_Text_RematchKarateDefeat
 # 176 "data/maps/SaffronCity_Dojo/scripts.pory"
-	cleartrainerflag FLAG_KOICHI_REMATCH
+	cleartrainerflag TRAINER_RS_CAMPER
 # 177 "data/maps/SaffronCity_Dojo/scripts.pory"
 	release
 # 178 "data/maps/SaffronCity_Dojo/scripts.pory"
@@ -379,7 +379,7 @@ SaffronCity_Dojo_EventScript_DefeatedMasterKoichi::
 # 190 "data/maps/SaffronCity_Dojo/scripts.pory"
 
 # 191 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_Text_Whitney::
+SaffronCity_Dojo_Text_Karate::
 # 192 "data/maps/SaffronCity_Dojo/scripts.pory"
     .string "Ah, the CHAMPION. I see you\n"
 # 193 "data/maps/SaffronCity_Dojo/scripts.pory"
@@ -399,13 +399,13 @@ SaffronCity_Dojo_Text_Whitney::
 # 200 "data/maps/SaffronCity_Dojo/scripts.pory"
 
 # 201 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_Text_WhitneyDefeat::
+SaffronCity_Dojo_Text_KarateDefeat::
 # 202 "data/maps/SaffronCity_Dojo/scripts.pory"
     .string "Humbled again.$"
 # 203 "data/maps/SaffronCity_Dojo/scripts.pory"
 
 # 204 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_Text_WhitneyPostBattle::
+SaffronCity_Dojo_Text_KaratePostBattle::
 # 205 "data/maps/SaffronCity_Dojo/scripts.pory"
     .string "You truly are a master at\n"
 # 206 "data/maps/SaffronCity_Dojo/scripts.pory"
@@ -413,13 +413,13 @@ SaffronCity_Dojo_Text_WhitneyPostBattle::
 # 207 "data/maps/SaffronCity_Dojo/scripts.pory"
 
 # 208 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_Text_NoWhitney::
+SaffronCity_Dojo_Text_NoKarate::
 # 209 "data/maps/SaffronCity_Dojo/scripts.pory"
     .string "Not ready, huh?$"
 # 210 "data/maps/SaffronCity_Dojo/scripts.pory"
 
 # 211 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_Text_YesWhitney::
+SaffronCity_Dojo_Text_YesKarate::
 # 212 "data/maps/SaffronCity_Dojo/scripts.pory"
     .string "Prepare for the match you\n"
 # 213 "data/maps/SaffronCity_Dojo/scripts.pory"
@@ -427,25 +427,25 @@ SaffronCity_Dojo_Text_YesWhitney::
 # 214 "data/maps/SaffronCity_Dojo/scripts.pory"
 
 # 215 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_Text_RematchWhitney::
+SaffronCity_Dojo_Text_RematchKarate::
 # 216 "data/maps/SaffronCity_Dojo/scripts.pory"
     .string "Back for another battle?$"
 # 217 "data/maps/SaffronCity_Dojo/scripts.pory"
 
 # 218 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_Text_RematchWhitneyDefeat::
+SaffronCity_Dojo_Text_RematchKarateDefeat::
 # 219 "data/maps/SaffronCity_Dojo/scripts.pory"
     .string "Humbled once again.\p"
 # 220 "data/maps/SaffronCity_Dojo/scripts.pory"
 
 # 221 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_Text_YesRematchWhitney::
+SaffronCity_Dojo_Text_YesRematchKarate::
 # 222 "data/maps/SaffronCity_Dojo/scripts.pory"
     .string "Fight once again!$"
 # 223 "data/maps/SaffronCity_Dojo/scripts.pory"
 
 # 224 "data/maps/SaffronCity_Dojo/scripts.pory"
-SaffronCity_Dojo_Text_RematchWhitneyPostBattle::
+SaffronCity_Dojo_Text_RematchKaratePostBattle::
 # 225 "data/maps/SaffronCity_Dojo/scripts.pory"
     .string "I've got nothing else to\n"
 # 226 "data/maps/SaffronCity_Dojo/scripts.pory"

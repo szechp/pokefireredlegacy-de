@@ -13,11 +13,11 @@ CeladonCity_Gym_EventScript_Erika::
 # 7 "data/maps/CeladonCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_ERIKA, CeladonCity_Gym_EventScript_ContinueErika
 # 8 "data/maps/CeladonCity_Gym/scripts.pory"
-	goto_if_set FLAG_DEFEATED_KOGA, CeladonCity_Gym_EventScript_BeatKoga
-# 9 "data/maps/CeladonCity_Gym/scripts.pory"
-	goto_if_set FLAG_DEFEATED_SABRINA, CeladonCity_Gym_EventScript_BeatSabrina
-# 10 "data/maps/CeladonCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_BLAINE, CeladonCity_Gym_EventScript_BeatBlaine
+# 9 "data/maps/CeladonCity_Gym/scripts.pory"
+	goto_if_set FLAG_DEFEATED_KOGA, CeladonCity_Gym_EventScript_BeatKoga
+# 10 "data/maps/CeladonCity_Gym/scripts.pory"
+	goto_if_set FLAG_DEFEATED_SABRINA, CeladonCity_Gym_EventScript_BeatSabrina
 # 11 "data/maps/CeladonCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_LEADER_ERIKA, CeladonCity_Gym_Text_ErikaIntro, CeladonCity_Gym_Text_ErikaDefeat, CeladonCity_Gym_EventScript_DefeatedErika, NO_MUSIC
 # 12 "data/maps/CeladonCity_Gym/scripts.pory"
