@@ -165,13 +165,27 @@ Route19_Text_CongratsYouveWon::
 Route19_Text_ReceivedHM08FromDiveGuy::
     .string "{PLAYER} received HM08!$"
 
+Route19_Text_ReceivedHM07FromDiveGuy::
+    .string "{PLAYER} received HM07!$"
+
 Route19_Text_ExplainDive::
     .string "HM08 is DIVE.\p"
     .string "Your POKéMON hide in water one\n"
     .string "turn, before emerging and dealing\l"
     .string "damage on the next.\p"
     .string "Hopefully you can find a use\n"
-    .string "for this HM as a battle move!$"
+    .string "for these HM for battle!$"
+
+Route19_Text_ExplainWaterfall::
+    .string "Oh also\n"
+    .string "WATERFALL is barely useful!\p"
+    .string "Take this!$"
+
+Route19_Text_ExplainWaterfall2::
+    .string "HM07 is WATERFALL.\p"
+    .string "Your POKéMON rides up the\n"
+    .string "water, dealing damage and may\l"
+    .string "flinch the opponent!$"
 
 Route19_Text_DontHaveRoomForPrize::
     .string "You don't have room for this\n"
