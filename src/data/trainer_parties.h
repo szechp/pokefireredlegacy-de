@@ -4861,7 +4861,7 @@ static const struct TrainerMon sParty_BurglarQuinn[] = {
     {
         .iv = 0,
         .lvl = 48,
-        .species = SPECIES_CHARMANDER,
+        .species = SPECIES_CHARMELEON,
     },
     {
         .iv = 0,
