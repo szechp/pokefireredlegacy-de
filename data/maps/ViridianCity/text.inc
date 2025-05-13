@@ -57,7 +57,7 @@ ViridianCity_Text_ShowYouHowToCatchMons::
     .string "Whenever you catch a POKéMON,\n"
     .string "the POKéDEX automatically updates\l"
     .string "its data.\p"
-    .string "Do you know how to catch pokemon?$"
+    .string "Do you know how to catch POKéMON?$"
 
 ViridianCity_Text_DontKnow::
     .string "…You don't know how to catch\n"

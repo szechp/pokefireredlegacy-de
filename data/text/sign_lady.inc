@@ -16,7 +16,7 @@ PalletTown_Text_PressStartToOpenMenu::
 	.string "TRAINER TIPS\p"
 	.string "Press START to open the MENU!\p"
 	.string "Press START in the MENU again\n"
-	.string "to Sort it!$"
+	.string "to SORT it!$"
 
 PalletTown_Text_SignsAreUsefulArentThey::
 	.string "Signs are useful, aren't they?$"
@@ -31,5 +31,5 @@ PalletTown_Text_PressStartToOpenMenuCopy::
 	.string "TRAINER TIPS!\p"
 	.string "Press START to open the MENU!\p"
 	.string "Press START in the MENU again\n"
-	.string "to Sort it!$"
+	.string "to SORT it!$"
 
