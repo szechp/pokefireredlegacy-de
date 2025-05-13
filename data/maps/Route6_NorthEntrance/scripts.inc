@@ -61,7 +61,7 @@ Route6_NorthEntrance_EventScript_NoWhitney::
 # 31 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_Text_Whitney::
 # 32 "data/maps/Route6_NorthEntrance/scripts.pory"
-    .string "Oh hi there, CHAMPION!\n"
+    .string "Oh, hi there, CHAMPION!\n"
 # 33 "data/maps/Route6_NorthEntrance/scripts.pory"
     .string "You must have had a hard\l"
 # 34 "data/maps/Route6_NorthEntrance/scripts.pory"

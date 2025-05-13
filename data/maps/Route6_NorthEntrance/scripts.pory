@@ -29,7 +29,7 @@ Route6_NorthEntrance_EventScript_NoWhitney::
 	end
 
 Route6_NorthEntrance_Text_Whitney::
-    .string "Oh hi there, CHAMPION!\n"
+    .string "Oh, hi there, CHAMPION!\n"
     .string "You must have had a hard\l"
     .string "time in the LEAGUE!\p"
     .string "Probably tough with us\n"

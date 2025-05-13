@@ -174,18 +174,18 @@ Route19_Text_ExplainDive::
     .string "turn, before emerging and dealing\l"
     .string "damage on the next.\p"
     .string "Hopefully you can find a use\n"
-    .string "for these HM for battle!$"
+    .string "for this HM in battle!$"
 
 Route19_Text_ExplainWaterfall::
-    .string "Oh also\n"
-    .string "WATERFALL is barely useful!\p"
-    .string "Take this!$"
+    .string "Oh, also…\n"
+    .string "I have yet another utterly\p"
+    .string "worthless HM to give you!$"
 
 Route19_Text_ExplainWaterfall2::
     .string "HM07 is WATERFALL.\p"
     .string "Your POKéMON rides up the\n"
-    .string "water, dealing damage and may\l"
-    .string "flinch the opponent!$"
+    .string "water, dealing damage with a\l"
+    .string "chance to flinch the opponent!$"
 
 Route19_Text_DontHaveRoomForPrize::
     .string "You don't have room for this\n"
