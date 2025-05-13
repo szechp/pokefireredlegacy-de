@@ -33,7 +33,7 @@ Route6_NorthEntrance_Text_Whitney::
     .string "You must have had a hard\l"
     .string "time in the LEAGUE!\p"
     .string "Probably tough with us\n"
-    .string "being so thirsty too...\p"
+    .string "being so thirsty too…\p"
     .string "Anyways, I was wondering\n"
     .string "if I could battle you.\l"
     .string "It's boring standing here.$"
@@ -45,7 +45,7 @@ Route6_NorthEntrance_Text_WhitneyPostBattle::
     .string "Thanks!$"
 
 Route6_NorthEntrance_Text_NoWhitney::
-    .string "Alright then...$"
+    .string "Alright then…$"
 
 Route6_NorthEntrance_Text_YesWhitney::
     .string "Thanks, CHAMPION!\n"

@@ -69,7 +69,7 @@ Route6_NorthEntrance_Text_Whitney::
 # 35 "data/maps/Route6_NorthEntrance/scripts.pory"
     .string "Probably tough with us\n"
 # 36 "data/maps/Route6_NorthEntrance/scripts.pory"
-    .string "being so thirsty too...\p"
+    .string "being so thirsty too…\p"
 # 37 "data/maps/Route6_NorthEntrance/scripts.pory"
     .string "Anyways, I was wondering\n"
 # 38 "data/maps/Route6_NorthEntrance/scripts.pory"
@@ -93,7 +93,7 @@ Route6_NorthEntrance_Text_WhitneyPostBattle::
 # 47 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_Text_NoWhitney::
 # 48 "data/maps/Route6_NorthEntrance/scripts.pory"
-    .string "Alright then...$"
+    .string "Alright then…$"
 # 49 "data/maps/Route6_NorthEntrance/scripts.pory"
 
 # 50 "data/maps/Route6_NorthEntrance/scripts.pory"
