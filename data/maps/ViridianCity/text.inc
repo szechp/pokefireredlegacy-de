@@ -67,8 +67,9 @@ ViridianCity_Text_DontKnow::
 
 ViridianCity_Text_DoKnow::
     .string "Oh, you already know how to\n"
-    .string "catch a POKéMON.\p"
-    .string "But I think you should still have this!$"
+    .string "catch a POKéMON…\p"
+    .string "But I think you should still have\n"
+    .string "this!$"
 
 ViridianCity_Text_ThatWasEducationalTakeThis::
     .string "There! Now tell me, that was\n"
