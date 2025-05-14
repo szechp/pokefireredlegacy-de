@@ -177,8 +177,8 @@ Route19_Text_ExplainDive::
     .string "for this HM in battle!$"
 
 Route19_Text_ExplainWaterfall::
-    .string "Oh, also…\n"
-    .string "I have yet another utterly\p"
+    .string "Oh, also…\p"
+    .string "I have yet another utterly\n"
     .string "worthless HM to give you!$"
 
 Route19_Text_ExplainWaterfall2::
