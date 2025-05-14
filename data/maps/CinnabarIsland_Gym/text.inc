@@ -51,7 +51,7 @@ CinnabarIsland_Gym_Text_RematchBlaineDefeat::
 CinnabarIsland_Gym_Text_BlainePostRematchBattle::
     .string "Incredible! Your strength burns\n"
     .string "brighter than the wildest flame!\p"
-    .string "Truly, you are a worthy Champion!$"
+    .string "Truly, you are a worthy CHAMPION!$"
 
 CinnabarIsland_Gym_Text_BlaineNoRematchBattle::
     .string "Hah, not fired up yet?\n"
