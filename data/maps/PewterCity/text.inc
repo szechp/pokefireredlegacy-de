@@ -165,7 +165,7 @@ PewterCity_Text_RunningShoesLetterFromMom::
     .string "There's a letter attached…\p"
     .string "Dear {PLAYER},\p"
     .string "Here is an EXP. SHARE for\n"
-    .string "for my beloved challenger.\p"
+    .string "my beloved challenger.\p"
     .string "Remember, I'll always cheer for\n"
     .string "you! Don't ever give up!\p"
     .string "From Mom$"
