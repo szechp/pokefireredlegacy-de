@@ -145,10 +145,10 @@ PewterCity_Text_AskedToDeliverThis::
 
 PewterCity_Text_ReceivedRunningShoesFromAide::
     .string "{PLAYER} received the\n"
-    .string "EXP SHARE from the AIDE.$"
+    .string "EXP. SHARE from the AIDE.$"
 
 PewterCity_Text_SwitchedShoesWithRunningShoes::
-    .string "{PLAYER} put the EXP SHARE\n"
+    .string "{PLAYER} put the EXP. SHARE\n"
     .string "in the BAG.$"
 
 PewterCity_Text_ExplainRunningShoes::
@@ -164,7 +164,7 @@ PewterCity_Text_MustBeGoingBackToLab::
 PewterCity_Text_RunningShoesLetterFromMom::
     .string "There's a letter attached…\p"
     .string "Dear {PLAYER},\p"
-    .string "Here is an EXP SHARE for\n"
+    .string "Here is an EXP. SHARE for\n"
     .string "for my beloved challenger.\p"
     .string "Remember, I'll always cheer for\n"
     .string "you! Don't ever give up!\p"
