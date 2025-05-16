@@ -172,12 +172,12 @@ PewterCity_Text_RunningShoesLetterFromMom::
 
 PewterCity_Text_AbilityGirl::
 	.string "ABILITIES are so cool!\p"
- 	.string "POKéMON with PICKUP can find all sorts\n"
- 	.string "of rare items, even RARE CANDY.\p"
+ 	.string "POKéMON with PICKUP can find all\n"
+ 	.string "sorts of items, even RARE CANDY.\p"
  	.string "MAGMA ARMOR is so hot, it evaporates\n"
  	.string "WATER attacks and reduces their\l"
  	.string "damage!\p"
- 	.string "STENCH smells so bad that the opponent\n"
- 	.string "might miss you, while ILLUMINATE makes\l"
- 	.string "it easier to see and ignore accuracy\l"
- 	.string "loss!$"
+ 	.string "STENCH smells so bad that the\n"
+ 	.string "opponent might miss you, while\l"
+ 	.string "ILLUMINATE makes it easier to see\l"
+ 	.string "and ignores accuracy loss!$"
