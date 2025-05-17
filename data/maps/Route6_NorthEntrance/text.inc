@@ -1,15 +1,17 @@
 Route6_NorthEntrance_Text_ThirstyOnGuardDuty::
-    .string "I'm on guard duty.\n"
-    .string "Gee, I'm thirsty, though!\p"
-    .string "Oh, wait there, the road's closed.$"
+    .string "Grumble, grumble…\n"
+    .string "I'm parched… Need a drink…\p"
+    .string "Huh? Hey, kid! Can't you see the\n"
+    .string "road's closed? Get out of here!$"
 
 Route6_NorthEntrance_Text_ThatTeaLooksTasty::
-    .string "Oh, that TEA…\n"
+    .string "Grumble, grumble… Huh?\n"
+    .string "Is that TEA you've got there?\l"
     .string "It looks awfully tasty…$"
 
 Route6_NorthEntrance_Text_ThanksIllShareTeaWithGuards::
     .string "Huh? I can have this drink?\n"
-    .string "Gee, thanks!\l"
+    .string "Finally, I can quench my thirst!\l"
     .string "… …\l"
     .string "Glug, glug…\l"
     .string "… …\l"
@@ -22,18 +24,20 @@ Route6_NorthEntrance_Text_ThanksIllShareTeaWithGuards::
     .string "guards!$"
 
 Route6_NorthEntrance_Text_HiHowsItGoing::
-    .string "Hi, how's it going?$"
+    .string "Hey, kid, how's it going?$"
 
 Route6_NorthEntrance_Text_FightGuard::
-    .string "This road is closed!\n"
-    .string "You'd better turn back.\p"
-    .string "Unless you're looking to battle?$"
+    .string "Grumble, grumble…\n"
+    .string "I'm so darn thirsty…\p"
+    .string "Hey, kid! The road's closed!\n"
+    .string "You'd better turn back, unless\l"
+    .string "you're looking for a battle!$"
 
 Route6_NorthEntrance_Text_NoFightGuard::
     .string "Good. Now scram!$"
 
 Route6_NorthEntrance_Text_RematchYesSurge::
-    .string "Alright then!$"
+    .string "Alright, then!$"
 
 Route6_NorthEntrance_Text_RematchSurgeDefeat::
     .string "I thought you'd be weaker!$"

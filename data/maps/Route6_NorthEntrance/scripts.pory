@@ -29,17 +29,15 @@ Route6_NorthEntrance_EventScript_NoWhitney::
 	end
 
 Route6_NorthEntrance_Text_Whitney::
-    .string "Oh, hi there, CHAMPION!\n"
-    .string "You must have had a hard\l"
-    .string "time in the LEAGUE!\p"
-    .string "Probably tough with us\n"
-    .string "being so thirsty too…\p"
-    .string "Anyways, I was wondering\n"
-    .string "if I could battle you.\l"
+    .string "Bwahaha! Hey, kid!\n"
+    .string "I hear you're the new CHAMP!\p"
+    .string "Listen… Sorry if us thirsty guards\n"
+    .string "gave you any trouble before.\p"
+    .string "How about a quick battle?\n"
     .string "It's boring standing here.$"
 
 Route6_NorthEntrance_Text_WhitneyDefeat::
-    .string "Ah, that was a good fight.$"
+    .string "Ah, that was refreshing.$"
 
 Route6_NorthEntrance_Text_WhitneyPostBattle::
     .string "Thanks!$"
