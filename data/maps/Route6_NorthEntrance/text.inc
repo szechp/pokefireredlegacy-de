@@ -30,14 +30,14 @@ Route6_NorthEntrance_Text_FightGuard::
     .string "Grumble, grumble…\n"
     .string "I'm so darn thirsty…\p"
     .string "Hey, kid! The road's closed!\n"
-    .string "You'd better turn back, unless\l"
-    .string "you're looking for a battle!$"
+    .string "You'd better turn back.\p"
+    .string "Unless you want to battle me?$"
 
 Route6_NorthEntrance_Text_NoFightGuard::
     .string "Good. Now scram!$"
 
 Route6_NorthEntrance_Text_RematchYesSurge::
-    .string "Alright, then!$"
+    .string "Bwahaha! Prepare to lose!$"
 
 Route6_NorthEntrance_Text_RematchSurgeDefeat::
     .string "I thought you'd be weaker!$"
@@ -46,6 +46,7 @@ Route6_NorthEntrance_Text_PostGuard::
     .string "Alright… Sorry about that.\p"
     .string "I admit that I get a little\n"
     .string "cranky when I'm thirsty.\p"
-    .string "You don't look like you'll cause\n"
-    .string "much trouble, so I'll tell the\l"
-    .string "others to let you through, OK?$"
+    .string "Actually, you don't look like\n"
+    .string "you'll cause too much trouble,\l"
+    .string "so I'll tell the others to let\l"
+    .string "you through, OK?$"
