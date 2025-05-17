@@ -174,6 +174,7 @@
 #define TRAINER_PIC_JASMINE               153
 #define TRAINER_PIC_PRYCE                 154
 #define TRAINER_PIC_CLAIR                 155
+#define TRAINER_PIC_OFFICER               156
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_RED                    0
@@ -297,6 +298,7 @@
 #define TRAINER_CLASS_PAINTER             106
 #define TRAINER_CLASS_SEVII_CHAMPION      107
 #define TRAINER_CLASS_JOHTO_LEADER        108
+#define TRAINER_CLASS_GUARD               109
 
 #define FACILITY_CLASS_AQUA_LEADER_ARCHIE     0
 #define FACILITY_CLASS_AQUA_GRUNT_M           1

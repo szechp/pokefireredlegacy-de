@@ -91,7 +91,7 @@ Delevoper:
 - SpikeCation (Sole Dev)
 
 Helper:
-- The Real Team Player (Did lots of text fixes)
+- therealteamplayer (Did lots of text fixes)
 
 Playtesters:
 
@@ -121,6 +121,8 @@ Credits:
 - Pret Team - Help with Stuff and this Entire Project Possible
 
 - Team Aqua Hideout - Like Above for help
+
+- Rubire4 - Rescaled HGSS Officer sprite (edited by therealteamplayer)
 
 - Numerous Pret Tutorials
 
