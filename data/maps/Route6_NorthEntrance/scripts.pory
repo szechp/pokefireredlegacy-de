@@ -29,23 +29,21 @@ Route6_NorthEntrance_EventScript_NoWhitney::
 	end
 
 Route6_NorthEntrance_Text_Whitney::
-    .string "Oh hi there, CHAMPION!\n"
-    .string "You must have had a hard\l"
-    .string "time in the LEAGUE!\p"
-    .string "Probably tough with us\n"
-    .string "being so thirsty too...\p"
-    .string "Anyways, I was wondering\n"
-    .string "if I could battle you.\l"
+    .string "Bwahaha! Hey, kid!\n"
+    .string "I hear you're the new CHAMP!\p"
+    .string "Listen… Sorry if us thirsty guards\n"
+    .string "gave you any trouble before.\p"
+    .string "How about a quick battle?\n"
     .string "It's boring standing here.$"
 
 Route6_NorthEntrance_Text_WhitneyDefeat::
-    .string "Ah, that was a good fight.$"
+    .string "Ah, that was refreshing.$"
 
 Route6_NorthEntrance_Text_WhitneyPostBattle::
     .string "Thanks!$"
 
 Route6_NorthEntrance_Text_NoWhitney::
-    .string "Alright then...$"
+    .string "Alright then…$"
 
 Route6_NorthEntrance_Text_YesWhitney::
     .string "Thanks, CHAMPION!\n"
@@ -87,8 +85,8 @@ Route6_NorthEntrance_EventScript_GuardTrigger::
 	textcolor NPC_TEXT_COLOR_MALE
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	goto_if_set FLAG_DEFEATED_LT_SURGE Route6_NorthEntrance_EventScript_BattleGuard
 	goto_if_set FLAG_GOT_TEA, Route6_NorthEntrance_EventScript_GiveTea
+	goto_if_set FLAG_DEFEATED_LT_SURGE Route6_NorthEntrance_EventScript_BattleGuard
 	msgbox Route6_NorthEntrance_Text_ThirstyOnGuardDuty
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Route6_NorthEntrance_Movement_BlockPlayerEntry

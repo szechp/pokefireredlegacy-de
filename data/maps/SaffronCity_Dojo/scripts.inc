@@ -421,7 +421,7 @@ SaffronCity_Dojo_Text_NoKarate::
 # 211 "data/maps/SaffronCity_Dojo/scripts.pory"
 SaffronCity_Dojo_Text_YesKarate::
 # 212 "data/maps/SaffronCity_Dojo/scripts.pory"
-    .string "Prepare for the match you\n"
+    .string "Prepare for a match you\n"
 # 213 "data/maps/SaffronCity_Dojo/scripts.pory"
     .string "won't forget!$"
 # 214 "data/maps/SaffronCity_Dojo/scripts.pory"

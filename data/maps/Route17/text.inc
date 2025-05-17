@@ -141,7 +141,7 @@ Route17_Text_Paxton::
     .string "Want to faint!?$"
 
 Route17_Text_WhitneyDefeat::
-    .string "...$"
+    .string "…$"
 
 Route17_Text_WhitneyPostBattle::
     .string "Guess you really are\n"
@@ -154,5 +154,5 @@ Route17_Text_NoWhitney::
     .string "as he seems.$"
 
 Route17_Text_YesWhitney::
-    .string "PREPARE TO LOSE!$"
+    .string "Prepare to lose!$"
 

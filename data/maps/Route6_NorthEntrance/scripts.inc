@@ -61,274 +61,270 @@ Route6_NorthEntrance_EventScript_NoWhitney::
 # 31 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_Text_Whitney::
 # 32 "data/maps/Route6_NorthEntrance/scripts.pory"
-    .string "Oh hi there, CHAMPION!\n"
+    .string "Bwahaha! Hey, kid!\n"
 # 33 "data/maps/Route6_NorthEntrance/scripts.pory"
-    .string "You must have had a hard\l"
+    .string "I hear you're the new CHAMP!\p"
 # 34 "data/maps/Route6_NorthEntrance/scripts.pory"
-    .string "time in the LEAGUE!\p"
+    .string "Listen… Sorry if us thirsty guards\n"
 # 35 "data/maps/Route6_NorthEntrance/scripts.pory"
-    .string "Probably tough with us\n"
+    .string "gave you any trouble before.\p"
 # 36 "data/maps/Route6_NorthEntrance/scripts.pory"
-    .string "being so thirsty too...\p"
+    .string "How about a quick battle?\n"
 # 37 "data/maps/Route6_NorthEntrance/scripts.pory"
-    .string "Anyways, I was wondering\n"
-# 38 "data/maps/Route6_NorthEntrance/scripts.pory"
-    .string "if I could battle you.\l"
-# 39 "data/maps/Route6_NorthEntrance/scripts.pory"
     .string "It's boring standing here.$"
-# 40 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 38 "data/maps/Route6_NorthEntrance/scripts.pory"
 
-# 41 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 39 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_Text_WhitneyDefeat::
+# 40 "data/maps/Route6_NorthEntrance/scripts.pory"
+    .string "Ah, that was refreshing.$"
+# 41 "data/maps/Route6_NorthEntrance/scripts.pory"
+
 # 42 "data/maps/Route6_NorthEntrance/scripts.pory"
-    .string "Ah, that was a good fight.$"
-# 43 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 44 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_Text_WhitneyPostBattle::
-# 45 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 43 "data/maps/Route6_NorthEntrance/scripts.pory"
     .string "Thanks!$"
-# 46 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 44 "data/maps/Route6_NorthEntrance/scripts.pory"
 
-# 47 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 45 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_Text_NoWhitney::
+# 46 "data/maps/Route6_NorthEntrance/scripts.pory"
+    .string "Alright then…$"
+# 47 "data/maps/Route6_NorthEntrance/scripts.pory"
+
 # 48 "data/maps/Route6_NorthEntrance/scripts.pory"
-    .string "Alright then...$"
-# 49 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 50 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_Text_YesWhitney::
-# 51 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 49 "data/maps/Route6_NorthEntrance/scripts.pory"
     .string "Thanks, CHAMPION!\n"
-# 52 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 50 "data/maps/Route6_NorthEntrance/scripts.pory"
     .string "I won't hold back!$"
-# 53 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 51 "data/maps/Route6_NorthEntrance/scripts.pory"
 
-# 54 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 52 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_GiveTeaFight::
-# 55 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 53 "data/maps/Route6_NorthEntrance/scripts.pory"
 	removeitem ITEM_TEA
-# 56 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 54 "data/maps/Route6_NorthEntrance/scripts.pory"
 	goto Route6_NorthEntrance_EventScript_GuardDrinkFightTea
+# 55 "data/maps/Route6_NorthEntrance/scripts.pory"
+	end
+# 56 "data/maps/Route6_NorthEntrance/scripts.pory"
+
 # 57 "data/maps/Route6_NorthEntrance/scripts.pory"
-	end
-# 58 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 59 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_GuardDrinkFightTea::
-# 60 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 58 "data/maps/Route6_NorthEntrance/scripts.pory"
 	msgbox Route5_SouthEntrance_Text_ThatFightTeaLooksTasty
-# 61 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 59 "data/maps/Route6_NorthEntrance/scripts.pory"
 	closemessage
-# 62 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 60 "data/maps/Route6_NorthEntrance/scripts.pory"
 	msgbox Route5_SouthEntrance_Text_ThanksIllShareFightTeaWithGuards
-# 63 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 61 "data/maps/Route6_NorthEntrance/scripts.pory"
 	giveitem ITEM_NUGGET
-# 64 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 62 "data/maps/Route6_NorthEntrance/scripts.pory"
 	clearflag FLAG_GUARD_TEA
+# 63 "data/maps/Route6_NorthEntrance/scripts.pory"
+	releaseall
+# 64 "data/maps/Route6_NorthEntrance/scripts.pory"
+	end
 # 65 "data/maps/Route6_NorthEntrance/scripts.pory"
-	releaseall
+
 # 66 "data/maps/Route6_NorthEntrance/scripts.pory"
-	end
-# 67 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 68 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_GuardTriggerLeft::
-# 69 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 67 "data/maps/Route6_NorthEntrance/scripts.pory"
 	lockall
-# 70 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 68 "data/maps/Route6_NorthEntrance/scripts.pory"
 	setvar VAR_TEMP_1, 0
+# 69 "data/maps/Route6_NorthEntrance/scripts.pory"
+	goto Route6_NorthEntrance_EventScript_GuardTrigger
+# 70 "data/maps/Route6_NorthEntrance/scripts.pory"
+	end
 # 71 "data/maps/Route6_NorthEntrance/scripts.pory"
-	goto Route6_NorthEntrance_EventScript_GuardTrigger
+
 # 72 "data/maps/Route6_NorthEntrance/scripts.pory"
-	end
-# 73 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 74 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_GuardTriggerMid::
-# 75 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 73 "data/maps/Route6_NorthEntrance/scripts.pory"
 	lockall
-# 76 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 74 "data/maps/Route6_NorthEntrance/scripts.pory"
 	setvar VAR_TEMP_1, 1
+# 75 "data/maps/Route6_NorthEntrance/scripts.pory"
+	goto Route6_NorthEntrance_EventScript_GuardTrigger
+# 76 "data/maps/Route6_NorthEntrance/scripts.pory"
+	end
 # 77 "data/maps/Route6_NorthEntrance/scripts.pory"
-	goto Route6_NorthEntrance_EventScript_GuardTrigger
+
 # 78 "data/maps/Route6_NorthEntrance/scripts.pory"
-	end
-# 79 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 80 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_GuardTriggerRight::
-# 81 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 79 "data/maps/Route6_NorthEntrance/scripts.pory"
 	lockall
-# 82 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 80 "data/maps/Route6_NorthEntrance/scripts.pory"
 	setvar VAR_TEMP_1, 2
-# 83 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 81 "data/maps/Route6_NorthEntrance/scripts.pory"
 	goto Route6_NorthEntrance_EventScript_GuardTrigger
+# 82 "data/maps/Route6_NorthEntrance/scripts.pory"
+	end
+# 83 "data/maps/Route6_NorthEntrance/scripts.pory"
+
 # 84 "data/maps/Route6_NorthEntrance/scripts.pory"
-	end
-# 85 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 86 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_GuardTrigger::
-# 87 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 85 "data/maps/Route6_NorthEntrance/scripts.pory"
 	textcolor NPC_TEXT_COLOR_MALE
-# 88 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 86 "data/maps/Route6_NorthEntrance/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
-# 89 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 87 "data/maps/Route6_NorthEntrance/scripts.pory"
 	waitmovement 0
-# 90 "data/maps/Route6_NorthEntrance/scripts.pory"
-	goto_if_set FLAG_DEFEATED_LT_SURGE Route6_NorthEntrance_EventScript_BattleGuard
-# 91 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 88 "data/maps/Route6_NorthEntrance/scripts.pory"
 	goto_if_set FLAG_GOT_TEA, Route6_NorthEntrance_EventScript_GiveTea
-# 92 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 89 "data/maps/Route6_NorthEntrance/scripts.pory"
+	goto_if_set FLAG_DEFEATED_LT_SURGE Route6_NorthEntrance_EventScript_BattleGuard
+# 90 "data/maps/Route6_NorthEntrance/scripts.pory"
 	msgbox Route6_NorthEntrance_Text_ThirstyOnGuardDuty
+# 91 "data/maps/Route6_NorthEntrance/scripts.pory"
+	closemessage
+# 92 "data/maps/Route6_NorthEntrance/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route6_NorthEntrance_Movement_BlockPlayerEntry
 # 93 "data/maps/Route6_NorthEntrance/scripts.pory"
-	closemessage
+	waitmovement 0
 # 94 "data/maps/Route6_NorthEntrance/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route6_NorthEntrance_Movement_BlockPlayerEntry
+	releaseall
 # 95 "data/maps/Route6_NorthEntrance/scripts.pory"
-	waitmovement 0
+	end
 # 96 "data/maps/Route6_NorthEntrance/scripts.pory"
-	releaseall
+
 # 97 "data/maps/Route6_NorthEntrance/scripts.pory"
-	end
-# 98 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 99 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_BattleGuard::
-# 100 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 98 "data/maps/Route6_NorthEntrance/scripts.pory"
 	msgbox Route6_NorthEntrance_Text_FightGuard MSGBOX_YESNO
-# 101 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 99 "data/maps/Route6_NorthEntrance/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, Route6_NorthEntrance_EventScript_NoGuard
-# 102 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 100 "data/maps/Route6_NorthEntrance/scripts.pory"
 	trainerbattle_single TRAINER_RANDOM_GRUNT, Route6_NorthEntrance_Text_RematchYesSurge, Route6_NorthEntrance_Text_RematchSurgeDefeat, Route6_NorthEntrance_EventScript_PostGuard, NO_MUSIC
+# 101 "data/maps/Route6_NorthEntrance/scripts.pory"
+	release
+# 102 "data/maps/Route6_NorthEntrance/scripts.pory"
+	end
 # 103 "data/maps/Route6_NorthEntrance/scripts.pory"
-	release
+
 # 104 "data/maps/Route6_NorthEntrance/scripts.pory"
-	end
-# 105 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 106 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_NoGuard::
-# 107 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 105 "data/maps/Route6_NorthEntrance/scripts.pory"
 	msgbox Route6_NorthEntrance_Text_NoFightGuard
-# 108 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 106 "data/maps/Route6_NorthEntrance/scripts.pory"
 	closemessage
-# 109 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 107 "data/maps/Route6_NorthEntrance/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route6_NorthEntrance_Movement_BlockPlayerEntry
+# 108 "data/maps/Route6_NorthEntrance/scripts.pory"
+	waitmovement 0
+# 109 "data/maps/Route6_NorthEntrance/scripts.pory"
+	releaseall
 # 110 "data/maps/Route6_NorthEntrance/scripts.pory"
-	waitmovement 0
+	end
 # 111 "data/maps/Route6_NorthEntrance/scripts.pory"
-	releaseall
+
 # 112 "data/maps/Route6_NorthEntrance/scripts.pory"
-	end
-# 113 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 114 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_PostGuard::
-# 115 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 113 "data/maps/Route6_NorthEntrance/scripts.pory"
 	msgbox Route6_NorthEntrance_Text_PostGuard 
-# 116 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 114 "data/maps/Route6_NorthEntrance/scripts.pory"
 	setvar VAR_MAP_SCENE_ROUTE5_ROUTE6_ROUTE7_ROUTE8_GATES, 1
-# 117 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 115 "data/maps/Route6_NorthEntrance/scripts.pory"
 	setflag FLAG_GUARD_TEA
-# 118 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 116 "data/maps/Route6_NorthEntrance/scripts.pory"
 	release
+# 117 "data/maps/Route6_NorthEntrance/scripts.pory"
+	end
+# 118 "data/maps/Route6_NorthEntrance/scripts.pory"
+
 # 119 "data/maps/Route6_NorthEntrance/scripts.pory"
-	end
-# 120 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 121 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_GiveTea::
-# 122 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 120 "data/maps/Route6_NorthEntrance/scripts.pory"
 	removeitem ITEM_TEA
-# 123 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 121 "data/maps/Route6_NorthEntrance/scripts.pory"
 	goto Route6_NorthEntrance_EventScript_GuardDrinkTea
+# 122 "data/maps/Route6_NorthEntrance/scripts.pory"
+	end
+# 123 "data/maps/Route6_NorthEntrance/scripts.pory"
+
 # 124 "data/maps/Route6_NorthEntrance/scripts.pory"
-	end
-# 125 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 126 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_GuardDrinkTea::
-# 127 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 125 "data/maps/Route6_NorthEntrance/scripts.pory"
 	msgbox Route6_NorthEntrance_Text_ThatTeaLooksTasty
-# 128 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 126 "data/maps/Route6_NorthEntrance/scripts.pory"
 	closemessage
-# 129 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 127 "data/maps/Route6_NorthEntrance/scripts.pory"
 	call_if_eq VAR_TEMP_1, 0, Route6_NorthEntrance_EventScript_WalkToGuardLeft
-# 130 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 128 "data/maps/Route6_NorthEntrance/scripts.pory"
 	call_if_eq VAR_TEMP_1, 1, Route6_NorthEntrance_EventScript_WalkToGuardMid
-# 131 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 129 "data/maps/Route6_NorthEntrance/scripts.pory"
 	call_if_eq VAR_TEMP_1, 2, Route6_NorthEntrance_EventScript_WalkToGuardRight
-# 132 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 130 "data/maps/Route6_NorthEntrance/scripts.pory"
 	msgbox Route6_NorthEntrance_Text_ThanksIllShareTeaWithGuards
-# 133 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 131 "data/maps/Route6_NorthEntrance/scripts.pory"
 	setvar VAR_MAP_SCENE_ROUTE5_ROUTE6_ROUTE7_ROUTE8_GATES, 1
-# 134 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 132 "data/maps/Route6_NorthEntrance/scripts.pory"
 	releaseall
-# 135 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 133 "data/maps/Route6_NorthEntrance/scripts.pory"
 	end
-# 136 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 134 "data/maps/Route6_NorthEntrance/scripts.pory"
 
-# 137 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 135 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_WalkToGuardLeft::
-# 138 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 136 "data/maps/Route6_NorthEntrance/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route6_NorthEntrance_Movement_WalkToGuardLeft
+# 137 "data/maps/Route6_NorthEntrance/scripts.pory"
+	waitmovement 0
+# 138 "data/maps/Route6_NorthEntrance/scripts.pory"
+	return
 # 139 "data/maps/Route6_NorthEntrance/scripts.pory"
-	waitmovement 0
+
 # 140 "data/maps/Route6_NorthEntrance/scripts.pory"
-	return
-# 141 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 142 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_WalkToGuardMid::
-# 143 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 141 "data/maps/Route6_NorthEntrance/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route6_NorthEntrance_Movement_WalkToGuardMid
+# 142 "data/maps/Route6_NorthEntrance/scripts.pory"
+	waitmovement 0
+# 143 "data/maps/Route6_NorthEntrance/scripts.pory"
+	return
 # 144 "data/maps/Route6_NorthEntrance/scripts.pory"
-	waitmovement 0
+
 # 145 "data/maps/Route6_NorthEntrance/scripts.pory"
-	return
-# 146 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 147 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_EventScript_WalkToGuardRight::
-# 148 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 146 "data/maps/Route6_NorthEntrance/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route6_NorthEntrance_Movement_WalkToGuardRight
-# 149 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 147 "data/maps/Route6_NorthEntrance/scripts.pory"
 	waitmovement 0
-# 150 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 148 "data/maps/Route6_NorthEntrance/scripts.pory"
 	return
-# 151 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 149 "data/maps/Route6_NorthEntrance/scripts.pory"
 
-# 152 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 150 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_Movement_WalkToGuardLeft::
+# 151 "data/maps/Route6_NorthEntrance/scripts.pory"
+	walk_right
+# 152 "data/maps/Route6_NorthEntrance/scripts.pory"
+	walk_right
 # 153 "data/maps/Route6_NorthEntrance/scripts.pory"
-	walk_right
+	step_end
 # 154 "data/maps/Route6_NorthEntrance/scripts.pory"
-	walk_right
+
 # 155 "data/maps/Route6_NorthEntrance/scripts.pory"
-	step_end
-# 156 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 157 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_Movement_WalkToGuardMid::
-# 158 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 156 "data/maps/Route6_NorthEntrance/scripts.pory"
 	walk_right
+# 157 "data/maps/Route6_NorthEntrance/scripts.pory"
+	step_end
+# 158 "data/maps/Route6_NorthEntrance/scripts.pory"
+
 # 159 "data/maps/Route6_NorthEntrance/scripts.pory"
-	step_end
-# 160 "data/maps/Route6_NorthEntrance/scripts.pory"
-
-# 161 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_Movement_WalkToGuardRight::
-# 162 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 160 "data/maps/Route6_NorthEntrance/scripts.pory"
 	walk_in_place_right
-# 163 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 161 "data/maps/Route6_NorthEntrance/scripts.pory"
 	step_end
-# 164 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 162 "data/maps/Route6_NorthEntrance/scripts.pory"
 
-# 165 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 163 "data/maps/Route6_NorthEntrance/scripts.pory"
 Route6_NorthEntrance_Movement_BlockPlayerEntry::
-# 166 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 164 "data/maps/Route6_NorthEntrance/scripts.pory"
 	walk_down
-# 167 "data/maps/Route6_NorthEntrance/scripts.pory"
+# 165 "data/maps/Route6_NorthEntrance/scripts.pory"
 	step_end

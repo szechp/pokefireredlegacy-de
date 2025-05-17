@@ -433,6 +433,6 @@ ThreeIsland_BerryForest_Text_Rocket3Defeat::
 # 217 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 ThreeIsland_BerryForest_Text_Rocket3PostBattle::
 # 218 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	.string "Do what you have to do...\l"
+	.string "Do what you have to do…\l"
 # 219 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "Fight the CRUEL KING!$"

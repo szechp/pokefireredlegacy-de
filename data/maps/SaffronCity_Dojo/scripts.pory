@@ -209,7 +209,7 @@ SaffronCity_Dojo_Text_NoKarate::
     .string "Not ready, huh?$"
 
 SaffronCity_Dojo_Text_YesKarate::
-    .string "Prepare for the match you\n"
+    .string "Prepare for a match you\n"
     .string "won't forget!$"
 
 SaffronCity_Dojo_Text_RematchKarate::
