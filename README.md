@@ -122,7 +122,7 @@ Credits:
 
 - Team Aqua Hideout - Like Above for help
 
-- Rubire4 - Rescaled HGSS Officer sprite (edited by therealteamplayer)
+- Project Palladium Team - Male Guard Sprite
 
 - Numerous Pret Tutorials
 
