@@ -421,7 +421,7 @@ ThreeIsland_BerryForest_Text_Rocket3Intro::
 # 211 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	.string "world is pure, unadulterated power!\p"
 # 212 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	.string "Witness the Power!$"
+	.string "WITNESS THE POWER!$"
 # 213 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 
 # 214 "data/maps/ThreeIsland_BerryForest/scripts.pory"

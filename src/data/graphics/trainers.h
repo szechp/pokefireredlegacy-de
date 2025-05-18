@@ -61,6 +61,9 @@ const u32 gTrainerPalette_RSCamper[] = INCBIN_U32("graphics/trainers/palettes/rs
 const u32 gTrainerFrontPic_BugManiac[] = INCBIN_U32("graphics/trainers/front_pics/bug_maniac_front_pic.4bpp.lz");
 const u32 gTrainerPalette_BugManiac[] = INCBIN_U32("graphics/trainers/palettes/bug_maniac.gbapal.lz");
 
+const u32 gTrainerFrontPic_NurseJoy[] = INCBIN_U32("graphics/trainers/front_pics/nursejoy.4bpp.lz");
+const u32 gTrainerPalette_NurseJoy[] = INCBIN_U32("graphics/trainers/palettes/nursejoy.gbapal.lz");
+
 const u32 gTrainerFrontPic_RSPsychicM[] = INCBIN_U32("graphics/trainers/front_pics/rs_psychic_m_front_pic.4bpp.lz");
 const u32 gTrainerPalette_RSPsychicM[] = INCBIN_U32("graphics/trainers/palettes/rs_psychic_m.gbapal.lz");
 

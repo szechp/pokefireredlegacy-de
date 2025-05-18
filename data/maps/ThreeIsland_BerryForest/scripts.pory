@@ -209,7 +209,7 @@ ThreeIsland_BerryForest_Text_Rocket3Intro::
 	.string "I had a revelation.\p"
 	.string "The most important thing in this\n"
 	.string "world is pure, unadulterated power!\p"
-	.string "Witness the Power!$"
+	.string "WITNESS THE POWER!$"
 
 ThreeIsland_BerryForest_Text_Rocket3Defeat::
 	.string "…$"

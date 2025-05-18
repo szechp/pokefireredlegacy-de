@@ -124,6 +124,8 @@ Credits:
 
 - Project Palladium Team - Male Guard Sprite
 
+- Invis (HMA Discord) - Nurse Joy Sprite
+
 - Numerous Pret Tutorials
 
 - Patching Info, best for your sha1 to have this
