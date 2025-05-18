@@ -31,10 +31,11 @@ Route6_NorthEntrance_Text_FightGuard::
     .string "I'm so darn thirsty…\p"
     .string "Huh? Hey, kid! The road's closed!\n"
     .string "You'd better get out of here,\l"
-    .string "or else you'll have to battle me!$"
+    .string "or else you'll have to battle me!\l"
+    .string "Be a good kid and clear off!$"
 
 Route6_NorthEntrance_Text_NoFightGuard::
-    .string "Good. Now scram!$"
+    .string "That's right. Now scram!$"
 
 Route6_NorthEntrance_Text_RematchYesSurge::
     .string "Bwahaha! Prepare to lose!$"

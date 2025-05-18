@@ -195,7 +195,7 @@ Route6_NorthEntrance_EventScript_BattleGuard::
 # 98 "data/maps/Route6_NorthEntrance/scripts.pory"
 	msgbox Route6_NorthEntrance_Text_FightGuard MSGBOX_YESNO
 # 99 "data/maps/Route6_NorthEntrance/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, Route6_NorthEntrance_EventScript_NoGuard
+	goto_if_eq VAR_RESULT, YES, Route6_NorthEntrance_EventScript_NoGuard
 # 100 "data/maps/Route6_NorthEntrance/scripts.pory"
 	trainerbattle_single TRAINER_RANDOM_GRUNT, Route6_NorthEntrance_Text_RematchYesSurge, Route6_NorthEntrance_Text_RematchSurgeDefeat, Route6_NorthEntrance_EventScript_PostGuard, NO_MUSIC
 # 101 "data/maps/Route6_NorthEntrance/scripts.pory"
