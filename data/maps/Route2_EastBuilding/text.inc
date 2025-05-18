@@ -34,7 +34,7 @@ Route2_EastBuilding_Text_GiveEverstoneIfCaught20Mons::
     .string "give you a reward from PROF. OAK.\p"
     .string "He entrusted me with\n"
     .string "HM06 ROCK SMASH,\l"
-	.string "and if you're looking for the aide\l"  
+	.string "and if you're looking for the AIDE\l"  
 	.string "with FLASH, he's on ROUTE 10.\p"  
     .string "So, {PLAYER}, let me ask you.\p"
     .string "Have you gathered data on at least\n"

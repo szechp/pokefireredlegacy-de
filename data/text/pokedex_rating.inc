@@ -42,8 +42,8 @@ PokedexRating_Text_LessThan50::
 PokedexRating_Text_LessThan60::
 	.string "Ah, you've finally topped 50\n"
 	.string "species!\p"
-	.string "I've given one of my AIDES an EXP.\n"
-	.string "SHARE. Be sure to go get it!$"
+	.string "I've given one of my AIDES a rare\n"
+	.string "POKéMON. Be sure to go get it!$"
 
 PokedexRating_Text_LessThan70::
 	.string "Hoho! This is turning into quite the\n"
