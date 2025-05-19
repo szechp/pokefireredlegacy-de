@@ -679,9 +679,9 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_Karen),
     },
     [TRAINER_CRAIG] = {
-        .trainerClass = TRAINER_CLASS_SUPER_NERD,
+        .trainerClass = TRAINER_CLASS_SCIENTIST,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_SUPER_NERD,
+        .trainerPic = TRAINER_PIC_SCIENTIST,
         .trainerName = COMPOUND_STRING("CRAIG"),
         .doubleBattle = TRUE,
         .trainerType = TRAINER(.items = {}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY | AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_PREFER_BATON_PASS | AI_SCRIPT_DOUBLE_BATTLE | AI_SCRIPT_HP_AWARE,),
