@@ -73,8 +73,10 @@ Route6_Text_UndergroundPathSign::
 
 Route6_Text_Fisher::
     .string "The guard blocking the gate north\n"
-    .string "of here is a strong TRAINER.\l"
-    .string "I wouldn't mess with him.\p"
+    .string "of here is a very strong TRAINER.\p"
+    .string "I hear he's extra cranky right now\n"
+    .string "because he's thirsty, so I wouldn't\l"
+    .string "mess with him.\p"
     .string "Unless you were strong enough to\n"
     .string "beat someone like LT. SURGE…\l"
     .string "Then you could stand up to him!$"
