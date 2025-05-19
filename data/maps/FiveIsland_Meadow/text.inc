@@ -58,7 +58,7 @@ FiveIsland_Meadow_Text_Rocket3PostBattle::
     .string "the passwords anyway.$"
 
 FiveIsland_Meadow_Text_Beasts::
-	.string "Hey man, I'm just playing\n"
+	.string "Hey kid, I'm just playing\n"
 	.string "in this meadow.\p"
 	.string "What do you want?\p"
 	.string "I actually found something\n"
