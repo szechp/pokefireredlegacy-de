@@ -1,6 +1,6 @@
 Route6_NorthEntrance_Text_ThirstyOnGuardDuty::
     .string "Grumble, grumble…\n"
-    .string "I'm parched… Need a drink…\p"
+    .string "I'm so darn thirsty…\p"
     .string "Huh? Hey, kid! Can't you see the\n"
     .string "road's closed? Get out of here!$"
 
@@ -29,12 +29,13 @@ Route6_NorthEntrance_Text_HiHowsItGoing::
 Route6_NorthEntrance_Text_FightGuard::
     .string "Grumble, grumble…\n"
     .string "I'm so darn thirsty…\p"
-    .string "Hey, kid! The road's closed!\n"
-    .string "You'd better turn back.\p"
-    .string "Unless you want to battle me?$"
+    .string "Huh? Hey, kid! The road's closed!\n"
+    .string "You'd better get out of here,\l"
+    .string "or else you'll have to battle me!\l"
+    .string "Be a good kid and clear off!$"
 
 Route6_NorthEntrance_Text_NoFightGuard::
-    .string "Good. Now scram!$"
+    .string "That's right. Now scram!$"
 
 Route6_NorthEntrance_Text_RematchYesSurge::
     .string "Bwahaha! Prepare to lose!$"

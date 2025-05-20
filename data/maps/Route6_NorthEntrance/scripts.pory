@@ -96,7 +96,7 @@ Route6_NorthEntrance_EventScript_GuardTrigger::
 
 Route6_NorthEntrance_EventScript_BattleGuard::
 	msgbox Route6_NorthEntrance_Text_FightGuard MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, Route6_NorthEntrance_EventScript_NoGuard
+	goto_if_eq VAR_RESULT, YES, Route6_NorthEntrance_EventScript_NoGuard
 	trainerbattle_single TRAINER_RANDOM_GRUNT, Route6_NorthEntrance_Text_RematchYesSurge, Route6_NorthEntrance_Text_RematchSurgeDefeat, Route6_NorthEntrance_EventScript_PostGuard, NO_MUSIC
 	release
 	end
