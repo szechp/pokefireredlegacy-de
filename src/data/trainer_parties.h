@@ -2675,6 +2675,7 @@ static const struct TrainerMon sParty_SpAtk[] = {
         .iv = 0,
         .lvl = 5,
         .species = SPECIES_ESPEON,
+        .isShiny = TRUE,
     },
 }; //SPATK
 
