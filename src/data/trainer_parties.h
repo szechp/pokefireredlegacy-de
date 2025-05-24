@@ -7182,6 +7182,7 @@ static const struct TrainerMon sParty_TeamRocketGrunt[] = {
         .lvl = 17,
         .species = SPECIES_MEOWTH,
         .abilityNum = 1
+        .moves = {MOVE_FURY_SWIPES, MOVE_BITE, MOVE_NONE, MOVE_NONE},
     },
 };
 
