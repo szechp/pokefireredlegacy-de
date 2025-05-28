@@ -494,3 +494,4 @@ $(OBJEVENTGFXDIR)/pokemon/Espeon.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 $(OBJEVENTGFXDIR)/pokemon/Umbreon.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
+

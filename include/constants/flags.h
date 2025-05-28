@@ -225,10 +225,10 @@
 #define FLAG_GYM7CAP               0x0CF
 #define FLAG_KOICHI_REMATCH               0x0D0
 #define FLAG_GUARD_REMATCH               0x0D1
-#define FLAG_0x0D2               0x0D2
-#define FLAG_0x0D3               0x0D3
-#define FLAG_0x0D4               0x0D4
-#define FLAG_0x0D5               0x0D5
+#define FLAG_CHARIZARD              0x0D2
+#define FLAG_BLASTOISE               0x0D3
+#define FLAG_VENUSAUR               0x0D4
+#define FLAG_FREDDY             0x0D5
 #define FLAG_0x0D6               0x0D6
 #define FLAG_0x0D7               0x0D7
 #define FLAG_0x0D8               0x0D8

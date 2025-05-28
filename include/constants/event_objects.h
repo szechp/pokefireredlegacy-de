@@ -188,7 +188,10 @@
 #define OBJ_EVENT_GFX_VAPOREON 183
 #define OBJ_EVENT_GFX_ESPEON 184
 #define OBJ_EVENT_GFX_UMBREON 185
-#define NUM_OBJ_EVENT_GFX 186
+#define OBJ_EVENT_GFX_CHARIZARD 186
+#define OBJ_EVENT_GFX_BLASTOISE 187
+#define OBJ_EVENT_GFX_VENUSAUR 188
+#define NUM_OBJ_EVENT_GFX 189
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.

@@ -129,20 +129,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
-      "x": 0,
-      "y": 5,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "SevenIsland_House_Room2_EventScript_BaldMan",
-      "flag": "0"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VAPOREON",
       "x": 4,
       "y": 3,
