@@ -37,14 +37,14 @@ Route14_Text_HealWoman1::
 # 19 "data/maps/Route14/scripts.pory"
 	.string "I'm just enjoying the flowers,\n"
 # 20 "data/maps/Route14/scripts.pory"
-	.string "but I do know how far the\l"
+	.string "but I know how far the next city\l"
 # 21 "data/maps/Route14/scripts.pory"
-	.string "next city is, so I also\l"
+	.string "is from here - so I also provide\l"
 # 22 "data/maps/Route14/scripts.pory"
-	.string "provide healing to trainers!$"
+	.string "healing to TRAINERS!$"
 # 23 "data/maps/Route14/scripts.pory"
 
 # 24 "data/maps/Route14/scripts.pory"
 Route14_Text_HealWoman2::
 # 25 "data/maps/Route14/scripts.pory"
-	.string "Stay strong trainer!$"
+	.string "Stay strong, TRAINER!$"
