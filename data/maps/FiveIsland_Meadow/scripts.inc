@@ -214,8 +214,8 @@ FiveIsland_Meadow_Text_Gym3Post::
 	.string "the MASTER head south.\p"
 # 108 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.string "Could he be at the\n"
+# 109 "data/maps/FiveIsland_Meadow/scripts.pory"
 	.string "MEMORIAL PILLAR?$"
-
 # 110 "data/maps/FiveIsland_Meadow/scripts.pory"
 
 # 111 "data/maps/FiveIsland_Meadow/scripts.pory"
