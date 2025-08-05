@@ -8943,6 +8943,7 @@ static const struct TrainerMon sParty_RivalPokemonTowerSquirtle[] = {
         .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
         .lvl = 34,
         .species = SPECIES_FEAROW,
+        .moves = {MOVE_DRILL_PECK, MOVE_FURY_ATTACK, MOVE_NONE, MOVE_NONE}
     },
     {
         .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
@@ -8971,6 +8972,7 @@ static const struct TrainerMon sParty_RivalPokemonTowerBulbasaur[] = {
         .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
         .lvl = 34,
         .species = SPECIES_FEAROW,
+        .moves = {MOVE_DRILL_PECK, MOVE_FURY_ATTACK, MOVE_NONE, MOVE_NONE}
     },
     {
         .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
@@ -8999,6 +9001,7 @@ static const struct TrainerMon sParty_RivalPokemonTowerCharmander[] = {
         .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
         .lvl = 34,
         .species = SPECIES_FEAROW,
+        .moves = {MOVE_DRILL_PECK, MOVE_FURY_ATTACK, MOVE_NONE, MOVE_NONE}
     },
     {
         .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),

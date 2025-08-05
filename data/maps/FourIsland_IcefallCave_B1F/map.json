@@ -87,7 +87,7 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 10,
+      "x": 8,
       "y": 9,
       "elevation": 0,
       "item": "ITEM_BLUE_SCARF",
