@@ -949,8 +949,15 @@ PalletTown_ProfessorOaksLab_EventScript_TryStartNationalDexScene::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_DontStartNationalDexScene::
+	msgbox PalletTown_ProfessorOaksLab_Text_BillNeeds
 	release
 	end
+
+PalletTown_ProfessorOaksLab_Text_BillNeeds::
+	.string "Oh and Bill still wants you\n"
+	.string "to help him in the sevii islands!\p"
+	.string "He's in the Cinnabar Island\n"
+	.string "POKECENTER waiting for you!$"
 
 PalletTown_ProfessorOaksLab_EventScript_CheckIfPlayerNeedsBalls::
 	goto_if_questlog EventScript_ReleaseEnd
