@@ -115,7 +115,7 @@
       "type": "hidden_item",
       "x": 12,
       "y": 36,
-      "elevation": 0,
+      "elevation": 3,
       "item": "ITEM_GREEN_SCARF",
       "flag": "FLAG_GOTFANG",
       "quantity": 1,

@@ -1097,7 +1097,7 @@
 #define FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE_2           (FLAG_HIDDEN_ITEMS_START +  66)
 #define FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE_3           (FLAG_HIDDEN_ITEMS_START +  67)
 #define FLAG_HIDDEN_ITEM_FIVE_ISLAND_ROCKET_WAREHOUSE_NEST_BALL            (FLAG_HIDDEN_ITEMS_START +  68)
-#define FLAG_HIDDEN_ITEM_FIVE_ISLAND_ROCKET_WAREHOUSE_NET_BALL             (FLAG_HIDDEN_ITEMS_START +  69)
+#define FLAG_GOTGREEN                                                      (FLAG_HIDDEN_ITEMS_START +  69)
 #define FLAG_HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_POTION        (FLAG_HIDDEN_ITEMS_START +  70)
 #define FLAG_HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_ANTIDOTE      (FLAG_HIDDEN_ITEMS_START +  71)
 #define FLAG_HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_PARALYZE_HEAL (FLAG_HIDDEN_ITEMS_START +  72)
@@ -1223,13 +1223,13 @@
 // Unused hidden item flags
 #define FLAG_HIDDEN_ITEM_ROUTE10_LIGHTBALL                                 (FLAG_HIDDEN_ITEMS_START + 191)
 #define FLAG_HIDDEN_ITEM_THICK_CLUB                                        (FLAG_HIDDEN_ITEMS_START + 192) 
-#define FLAG_HIDE_SOUL_DEW                                                 (FLAG_HIDDEN_ITEMS_START + 193)
+#define FLAG_GOTPINK                                                       (FLAG_HIDDEN_ITEMS_START + 193)
 #define FLAG_HIDE_CHOICE_BAND                                              (FLAG_HIDDEN_ITEMS_START + 194)
 #define FLAG_HIDDEN_MOON_STONE_RESPAWN                                     (FLAG_HIDDEN_ITEMS_START + 195)
-#define FLAG_UNUSED_0x4AC               0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD               0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE               0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF               0x4AF // Unused Flag
+#define FLAG_GOTFANG             (FLAG_HIDDEN_ITEMS_START + 196)
+#define FLAG_GOTYELLOW           (FLAG_HIDDEN_ITEMS_START + 197)
+#define FLAG_GOTBLUE             (FLAG_HIDDEN_ITEMS_START + 198)
+#define FLAG_GOTRED              (FLAG_HIDDEN_ITEMS_START + 199)
 
 // Boss clear flags, 1200
 #define FLAG_DEFEATED_BROCK           0x4B0
@@ -1252,12 +1252,12 @@
 #define FLAG_SEVIIJOHTO          0x4BF
 #define FLAG_ARMSTRONG_DEFEATED  0x4C0
 #define FLAG_SEVIIMATCH          0x4C1
-#define FLAG_GOTFANG             (FLAG_HIDDEN_ITEMS_START + 196)
-#define FLAG_GOTYELLOW           (FLAG_HIDDEN_ITEMS_START + 197)
-#define FLAG_GOTBLUE             (FLAG_HIDDEN_ITEMS_START + 198)
-#define FLAG_GOTRED              (FLAG_HIDDEN_ITEMS_START + 199)
-#define FLAG_GOTPINK             (FLAG_HIDDEN_ITEMS_START + 200)
-#define FLAG_GOTGREEN            (FLAG_HIDDEN_ITEMS_START + 201)
+#define FLAG_UNUSED1             0x4C2
+#define FLAG_UNUSED2             0x4C3
+#define FLAG_UNUSED3             0x4C4
+#define FLAG_UNUSED4             0x4C5
+#define FLAG_UNUSED5             0x4C6
+#define FLAG_UNUSED6             0x4C7
 #define FLAG_DEFEATED_NURSE_JOY  0x4C8
 #define FLAG_FOUGHT_CELEBI       0x4C9
 #define FLAG_DEFEATED_DUDE       0x4CA
@@ -1287,7 +1287,7 @@
 #define FLAG_SHOW_HIDDEN_POWER   0x4E2
 #define FLAG_OWL_DEFEATED        0x4E3
 #define FLAG_HIDE_EASTER         0x4E4
-#define FLAG_HIDDEN_AURORA       (FLAG_HIDDEN_ITEMS_START + 201)
+#define FLAG_HIDDEN_AURORA       0x4E5
 #define FLAG_HIDE_GIOVANNI_ONE   0x4E6
 #define FLAG_SEVEN_SEVII         0x4E7
 #define FLAG_OLD_LEAD             0x4E8
