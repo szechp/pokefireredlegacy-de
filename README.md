@@ -1,5 +1,9 @@
 # Pokémon FireRed Reignited Legacy and LeafGreen Regrown Legacy
 
+<img width="1471" height="1472" alt="regrown" src="https://github.com/user-attachments/assets/60b338ca-77f4-4316-9120-d3f6eb4f235a" />
+<img width="1000" height="1000" alt="reignited" src="https://github.com/user-attachments/assets/87bab07f-7d39-4edb-a7d3-a92381935c6d" />
+
+
 This is a decompilation of English Pokémon FireRed and LeafGreen that acts as the Unoffical Legacy Game of FRLG.
 a QOL if you will
 
@@ -127,6 +131,9 @@ Credits:
 - Invis (HMA Discord) - Nurse Joy Sprite
 
 - Numerous Pret Tutorials
+
+- Some Fanmade tutorials for the hack:
+https://www.youtube.com/playlist?list=PLaXfMWm8D14lc8qGFEe9OCIpMUyKkWoqw
 
 - Patching Info, best for your sha1 to have this
 pokefirered.gba sha1: 41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc
