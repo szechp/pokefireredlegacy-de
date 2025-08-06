@@ -131,21 +131,19 @@ Route17_Text_CyclingRoadSign::
 
 Route17_Text_Paxton::
     .string "You're CHAMPION now?\p"
-    .string "Seems like you really\n"
-    .string "do like protecting\l"
-    .string "those ISLANDS!\p"
+    .string "Seems like you really do like\n"
+    .string "protecting the SEVII ISLANDS!\p"
     .string "I'm not sorry for what I did\n"
-    .string "on those ISLANDS.\p"
+    .string "on those islands.\p"
     .string "I have been training too!\n"
     .string "I'm way above your level!\p"
-    .string "Want to faint!?$"
+    .string "Do you feel like losing?$"
 
 Route17_Text_WhitneyDefeat::
     .string "…$"
 
 Route17_Text_WhitneyPostBattle::
-    .string "Guess you really are\n"
-    .string "that strong.\p"
+    .string "Guess you really are that strong.\n"
     .string "I feel embarrassed.$"
 
 Route17_Text_NoWhitney::

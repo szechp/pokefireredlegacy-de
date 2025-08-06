@@ -16,12 +16,10 @@ Route14_EventScript_HealWoman::
 	end
 
 Route14_Text_HealWoman1::
-	.string "I'm just enjoying the flowers,\n"
-	.string "but I do know how far the\l"
-	.string "next city is, so I also\l"
-	.string "provide healing to trainers!$"
+	.string "Oh, I'm just tending to the flowers.\n"
+	.string "But I know how far the next city\l"
+	.string "is from here, so I provide free\l"
+	.string "healing to TRAINERS!$"
 
 Route14_Text_HealWoman2::
-	.string "Stay strong trainer!$"
-
-`
+	.string "Stay strong, TRAINER!$"

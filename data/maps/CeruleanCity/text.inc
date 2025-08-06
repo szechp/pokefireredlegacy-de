@@ -78,7 +78,11 @@ CeruleanCity_Text_MakeRoomForThisCantRun::
 CeruleanCity_Text_TrainerLifeIsToughIsntIt::
     .string "You're a TRAINER, too?\p"
     .string "Collecting, battling…\n"
-    .string "It's a tough life, isn't it?$"
+    .string "It's a tough life, isn't it?\p"
+    .string "The LEADER here, MISTY, was too\n"
+    .string "strong for me to handle…\p"
+    .string "Maybe I should head north to\n"
+    .string "NUGGET BRIDGE to train some more.$"
 
 CeruleanCity_Text_YouCanCutDownSmallTrees::
     .string "Did you know that you can CUT down\n"
