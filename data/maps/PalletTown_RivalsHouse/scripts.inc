@@ -95,7 +95,7 @@ PalletTown_RivalsHouse_EventScript_GroomMon::
 # 48 "data/maps/PalletTown_RivalsHouse/scripts.pory"
 	special QuestLog_CutRecording
 # 49 "data/maps/PalletTown_RivalsHouse/scripts.pory"
-	goto_if_lt VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 500, PalletTown_RivalsHouse_EventScript_RateMonFriendship
+	goto_if_lt VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 350, PalletTown_RivalsHouse_EventScript_RateMonFriendship
 # 50 "data/maps/PalletTown_RivalsHouse/scripts.pory"
 	msgbox PalletTown_RivalsHouse_Text_LikeMeToGroomMon, MSGBOX_YESNO
 # 51 "data/maps/PalletTown_RivalsHouse/scripts.pory"

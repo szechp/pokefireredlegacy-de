@@ -293,7 +293,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_Orb::
 	call_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_Orbing
 	return
 
-SaffronCity_PokemonTrainerFanClub_EventScript_Orbing
+SaffronCity_PokemonTrainerFanClub_EventScript_Orbing::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_Orb
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	playfanfare MUS_OBTAIN_KEY_ITEM
