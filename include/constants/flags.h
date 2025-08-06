@@ -229,7 +229,7 @@
 #define FLAG_BLASTOISE               0x0D3
 #define FLAG_VENUSAUR               0x0D4
 #define FLAG_FREDDY             0x0D5
-#define FLAG_0x0D6               0x0D6
+#define FLAG_ORBING               0x0D6
 #define FLAG_0x0D7               0x0D7
 #define FLAG_0x0D8               0x0D8
 #define FLAG_0x0D9               0x0D9

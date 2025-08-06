@@ -68,8 +68,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 3,
-      "y": 5,
+      "x": 2,
+      "y": 3,
       "elevation": 3,
       "item": "ITEM_PINK_SCARF",
       "flag": "FLAG_GOTPINK",

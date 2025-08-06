@@ -4433,12 +4433,12 @@
       "secondaryId": 0
     },
     {
-      "english": "BLUE ORB",
+      "english": "BATTLE ORB",
       "itemId": "ITEM_BLUE_ORB",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An orb that glows blue.\\nIt is said to contain an incredible\\npower from ancient times.",
+      "description_english": "An orb that glows blue.\\nA Trophy For the greatest battlers.",
       "importance": 2,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",

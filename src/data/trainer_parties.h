@@ -2675,7 +2675,6 @@ static const struct TrainerMon sParty_SpAtk[] = {
         .iv = 0,
         .lvl = 5,
         .species = SPECIES_ESPEON,
-        .isShiny = TRUE,
     },
 }; //SPATK
 
@@ -3769,7 +3768,7 @@ static const struct TrainerMon sParty_KSI[] = {
     },
     {
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .lvl = 60,
+        .lvl = 68,
         .species = SPECIES_PORYGON2,
         .heldItem = ITEM_LEFTOVERS,
         .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
