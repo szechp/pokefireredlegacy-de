@@ -1,8 +1,6 @@
 # Pokémon FireRed Reignited Legacy and LeafGreen Regrown Legacy
 
-<img width="1471" height="1472" alt="regrown" src="https://github.com/user-attachments/assets/60b338ca-77f4-4316-9120-d3f6eb4f235a" />
-<img width="1000" height="1000" alt="reignited" src="https://github.com/user-attachments/assets/87bab07f-7d39-4edb-a7d3-a92381935c6d" />
-
+<img width="1471" height="1472" alt="regrown" src="https://github.com/user-attachments/assets/60b338ca-77f4-4316-9120-d3f6eb4f235a" /> <img width="1000" height="1000" alt="reignited" src="https://github.com/user-attachments/assets/87bab07f-7d39-4edb-a7d3-a92381935c6d" />
 
 This is a decompilation of English Pokémon FireRed and LeafGreen that acts as the Unoffical Legacy Game of FRLG.
 a QOL if you will
@@ -131,6 +129,31 @@ Credits:
 - Invis (HMA Discord) - Nurse Joy Sprite
 
 - Numerous Pret Tutorials
+
+Item Locations:
+
+Sludge Bomb	Sliph Co		
+Facade	Mt Moon (Rock Smash)		
+Hidden Power	Celadon		
+Metal Coat	Thief/2Island (Onix)		
+Ugrade	Game Cornor		
+King's Rock	Thief/2Island (Slowpoke/Poliwhirl)		
+Dragon Scale	Seaform/2 Island/Thief (Horsea)		
+Sun Stone	Celadon/Thief (Oddish)		
+Moon Stone	Fuscia Store		
+Flutes	Celadon		
+Ice Beam	Seafoam		
+Hail	Seafoam		
+Rock Smash 	Route 2 (Aid)		
+Flash	Route 10 (Aid)		
+Sandstorm	Rock Tunnel		
+Everstone	Rock Tunnel		
+Flamethrower	Mt Ember		
+Shadow Ball	Mt Ember		
+Iron Tail	Rock Tunnel (Rock Smash)		
+Thunderbolt	Power Plant		
+Eggtutor	Beat the 7 Johto Leaders		
+			
 
 - Some Fanmade tutorials for the hack:
 https://www.youtube.com/playlist?list=PLaXfMWm8D14lc8qGFEe9OCIpMUyKkWoqw
