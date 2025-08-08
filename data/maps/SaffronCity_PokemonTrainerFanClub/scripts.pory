@@ -314,6 +314,10 @@ SaffronCity_PokemonTrainerFanClub_Text_Orb::
 	.string "battles and whatnot!$"
 
 SaffronCity_PokemonTrainerFanClub_Text_Orb2::
+	.string "That orb may lead to\n"
+	.string "other places, maybe where\l"
+	.string "such artifacts would lie.\p"
+	.string "But for now,\n"
 	.string "Continue to Grow!$"
 
 SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanPlayersFan::

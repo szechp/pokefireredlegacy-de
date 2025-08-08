@@ -74,7 +74,7 @@
       "item": "ITEM_PINK_SCARF",
       "flag": "FLAG_GOTPINK",
       "quantity": 1,
-      "underfoot": false
+      "underfoot": true
     }
   ]
 }

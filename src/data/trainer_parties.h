@@ -34,7 +34,39 @@ static const struct TrainerMon sParty_RSCooltrainerF[] = {DUMMY_TRAINER_MON_IV};
 static const struct TrainerMon sParty_HexManiac[] = {DUMMY_TRAINER_MON};
 static const struct TrainerMon sParty_RSPokemaniac[] = {DUMMY_TRAINER_MON};
 static const struct TrainerMon sParty_RSSwimmerM[] = {DUMMY_TRAINER_MON};
-static const struct TrainerMon sParty_RSBlackBelt[] = {DUMMY_TRAINER_MON_IV};
+static const struct TrainerMon sParty_RSBlackBelt[] = 
+{
+    {
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .lvl = 100,
+        .species = SPECIES_VENUSAUR,
+        .heldItem = ITEM_LEFTOVERS,
+        .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
+        .moves = {MOVE_LEECH_SEED, MOVE_TOXIC, MOVE_GIGA_DRAIN, MOVE_TOXIC},
+        .ev = TRAINER_PARTY_EVS(255, 255, 255, 255, 255, 255),
+        .isShiny = TRUE,
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .lvl = 100,
+        .species = SPECIES_CHARIZARD,
+        .heldItem = ITEM_CHARCOAL,
+        .nature = TRAINER_PARTY_NATURE(NATURE_SERIOUS),
+        .moves = {MOVE_FIRE_BLAST, MOVE_OUTRAGE, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE},
+        .ev = TRAINER_PARTY_EVS(255, 255, 255, 255, 255, 255),
+        .isShiny = TRUE,
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .lvl = 100,
+        .species = SPECIES_BLASTOISE,
+        .heldItem = ITEM_LEFTOVERS,
+        .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
+        .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_MIRROR_COAT, MOVE_IRON_DEFENSE},
+        .ev = TRAINER_PARTY_EVS(255, 255, 255, 255, 255, 255),
+        .isShiny = TRUE,
+    },
+};
 static const struct TrainerMon sParty_Guitarist[] = {
     {
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),

@@ -2716,8 +2716,7 @@ void BattleTrophy(void)
         FlagGet(TRAINER_JACKO) &&
         FlagGet(TRAINER_KINDLER) &&
         FlagGet(TRAINER_GUITARIST) &&
-        FlagGet(TRAINER_OAK2) &&
-    
+        FlagGet(FLAG_BLUE_REMATCH_DEFEAT) &&
         FlagGet(TRAINER_CASENO))
     {
         gSpecialVar_Result = TRUE;

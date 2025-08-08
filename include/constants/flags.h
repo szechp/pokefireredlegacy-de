@@ -230,8 +230,8 @@
 #define FLAG_VENUSAUR               0x0D4
 #define FLAG_FREDDY             0x0D5
 #define FLAG_ORBING               0x0D6
-#define FLAG_0x0D7               0x0D7
-#define FLAG_0x0D8               0x0D8
+#define FLAG_RE_DEFEATED               0x0D7
+#define FLAG_BLUE_REMATCH_DEFEAT            0x0D8
 #define FLAG_0x0D9               0x0D9
 #define FLAG_0x0DA               0x0DA
 #define FLAG_0x0DB               0x0DB

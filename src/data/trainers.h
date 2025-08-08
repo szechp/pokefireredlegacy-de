@@ -161,13 +161,12 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_RSSwimmerM),
     },
     [TRAINER_RS_BLACK_BELT] = {
-        .trainerClass = TRAINER_CLASS_RS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_RS_BLACK_BELT,
-        .trainerName = gExpandedPlaceholder_Empty,
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerName = COMPOUND_STRING("REN"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {},
-                               .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY),
+        .trainerType = TRAINER(.items = {}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY | AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_PREFER_BATON_PASS | AI_SCRIPT_HP_AWARE,),
         .party = TRAINER_PARTY(sParty_RSBlackBelt),
     },
     [TRAINER_GUITARIST] = {

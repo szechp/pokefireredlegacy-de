@@ -631,288 +631,296 @@ SaffronCity_PokemonTrainerFanClub_Text_Orb::
 # 316 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
 SaffronCity_PokemonTrainerFanClub_Text_Orb2::
 # 317 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	.string "Continue to Grow!$"
+	.string "That orb may lead to\n"
 # 318 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+	.string "other places, maybe where\l"
 # 319 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanPlayersFan::
+	.string "such artifacts would lie.\p"
 # 320 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
+	.string "But for now,\n"
 # 321 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanOnlyFan
+	.string "Continue to Grow!$"
 # 322 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_HadPleasureOfWatchingYouBattle
+
 # 323 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanPlayersFan::
 # 324 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
 # 325 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+	goto_if_eq VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanOnlyFan
 # 326 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanOnlyFan::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_HadPleasureOfWatchingYouBattle
 # 327 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_NeverSeenTrainerOfYourMagnificence
+	release
 # 328 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+	end
 # 329 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+
 # 330 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanOnlyFan::
 # 331 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanOnlyNonFan::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_NeverSeenTrainerOfYourMagnificence
 # 332 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_YouveStillAWaysToGo
+	release
 # 333 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+	end
 # 334 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+
 # 335 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanOnlyNonFan::
 # 336 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanPlayerNotChampion::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_YouveStillAWaysToGo
 # 337 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_YoullBeTalkedAboutIfYouKeepWinning
+	release
 # 338 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+	end
 # 339 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+
 # 340 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanPlayerNotChampion::
 # 341 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_Woman::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_YoullBeTalkedAboutIfYouKeepWinning
 # 342 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	lock
+	release
 # 343 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	faceplayer
+	end
 # 344 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	setvar VAR_0x8004, FANCLUB_MEMBER6
+
 # 345 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	special Script_BufferFanClubTrainerName
+SaffronCity_PokemonTrainerFanClub_EventScript_Woman::
 # 346 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
+	lock
 # 347 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_WomanPlayersFan
+	faceplayer
 # 348 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
+	setvar VAR_0x8004, FANCLUB_MEMBER6
 # 349 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyNonFan
+	special Script_BufferFanClubTrainerName
 # 350 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_TrainerHasBeenOnFire
+	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
 # 351 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_WomanPlayersFan
 # 352 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
 # 353 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyNonFan
 # 354 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_WomanPlayersFan::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_TrainerHasBeenOnFire
 # 355 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
+	release
 # 356 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyFan
+	end
 # 357 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_AdoreWayYouBattle
+
 # 358 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+SaffronCity_PokemonTrainerFanClub_EventScript_WomanPlayersFan::
 # 359 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
 # 360 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+	goto_if_eq VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyFan
 # 361 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyFan::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_AdoreWayYouBattle
 # 362 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_ImYourNumberOneFan
+	release
 # 363 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+	end
 # 364 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+
 # 365 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyFan::
 # 366 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyNonFan::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_ImYourNumberOneFan
 # 367 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_EveryoneTalksAboutYou
+	release
 # 368 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+	end
 # 369 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+
 # 370 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyNonFan::
 # 371 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_Rocker::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_EveryoneTalksAboutYou
 # 372 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	lock
+	release
 # 373 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	faceplayer
+	end
 # 374 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	setvar VAR_0x8004, FANCLUB_MEMBER5
+
 # 375 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	special Script_BufferFanClubTrainerName
+SaffronCity_PokemonTrainerFanClub_EventScript_Rocker::
 # 376 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
+	lock
 # 377 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_RockerPlayersFan
+	faceplayer
 # 378 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
+	setvar VAR_0x8004, FANCLUB_MEMBER5
 # 379 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyNonFan
+	special Script_BufferFanClubTrainerName
 # 380 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_LoveWayTrainerTalks
+	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
 # 381 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_RockerPlayersFan
 # 382 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
 # 383 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyNonFan
 # 384 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_RockerPlayersFan::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_LoveWayTrainerTalks
 # 385 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
+	release
 # 386 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyFan
+	end
 # 387 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_TheWayYouBattleIsCool
+
 # 388 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+SaffronCity_PokemonTrainerFanClub_EventScript_RockerPlayersFan::
 # 389 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
 # 390 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+	goto_if_eq VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyFan
 # 391 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyFan::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_TheWayYouBattleIsCool
 # 392 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_ImOnlyOneLeftOfYourFans
+	release
 # 393 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+	end
 # 394 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+
 # 395 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyFan::
 # 396 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyNonFan::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_ImOnlyOneLeftOfYourFans
 # 397 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_ImLoneTrainerFan
+	release
 # 398 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+	end
 # 399 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+
 # 400 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyNonFan::
 # 401 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_Beauty::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_ImLoneTrainerFan
 # 402 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	lock
+	release
 # 403 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	faceplayer
+	end
 # 404 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	setvar VAR_0x8004, FANCLUB_MEMBER7
+
 # 405 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	special Script_BufferFanClubTrainerName
+SaffronCity_PokemonTrainerFanClub_EventScript_Beauty::
 # 406 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
-# 407 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_BeautyPlayersFan
-# 408 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
-# 409 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyNonFan
-# 410 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_WhyCantOthersSeeMastersDignity
-# 411 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
-# 412 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
-# 413 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
-# 414 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_BeautyPlayersFan::
-# 415 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
-# 416 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyFan
-# 417 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_YouReallyAreAmazing
-# 418 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
-# 419 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
-# 420 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
-# 421 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyFan::
-# 422 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_ImYourOnlyFan
-# 423 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
-# 424 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
-# 425 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
-# 426 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyNonFan::
-# 427 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_BelieveInMasterWithAllMyHeart
-# 428 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
-# 429 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
-# 430 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
-# 431 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_BlackBelt::
-# 432 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
 	lock
-# 433 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+# 407 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
 	faceplayer
-# 434 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	setvar VAR_0x8004, FANCLUB_MEMBER8
-# 435 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+# 408 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	setvar VAR_0x8004, FANCLUB_MEMBER7
+# 409 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
 	special Script_BufferFanClubTrainerName
-# 436 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+# 410 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
 	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
+# 411 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_BeautyPlayersFan
+# 412 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
+# 413 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyNonFan
+# 414 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_WhyCantOthersSeeMastersDignity
+# 415 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	release
+# 416 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	end
+# 417 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+
+# 418 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+SaffronCity_PokemonTrainerFanClub_EventScript_BeautyPlayersFan::
+# 419 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
+# 420 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	goto_if_eq VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyFan
+# 421 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_YouReallyAreAmazing
+# 422 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	release
+# 423 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	end
+# 424 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+
+# 425 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyFan::
+# 426 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_ImYourOnlyFan
+# 427 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	release
+# 428 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	end
+# 429 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+
+# 430 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyNonFan::
+# 431 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_BelieveInMasterWithAllMyHeart
+# 432 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	release
+# 433 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	end
+# 434 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+
+# 435 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+SaffronCity_PokemonTrainerFanClub_EventScript_BlackBelt::
+# 436 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	lock
 # 437 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltPlayersFan
+	faceplayer
 # 438 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
+	setvar VAR_0x8004, FANCLUB_MEMBER8
 # 439 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyNonFan
+	special Script_BufferFanClubTrainerName
 # 440 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_OnlyMasterHasMyRespect
+	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
 # 441 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltPlayersFan
 # 442 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
-# 443 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
-# 444 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltPlayersFan::
-# 445 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
 	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
+# 443 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyNonFan
+# 444 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_OnlyMasterHasMyRespect
+# 445 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	release
 # 446 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	goto_if_eq VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyFan
+	end
 # 447 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_YourBattleStyleIsEducational
+
 # 448 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
+SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltPlayersFan::
 # 449 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	end
+	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
 # 450 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-
+	goto_if_eq VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyFan
 # 451 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyFan::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_YourBattleStyleIsEducational
 # 452 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_WontStopBeingYourFan
+	release
 # 453 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	release
-# 454 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
 	end
-# 455 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+# 454 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
 
+# 455 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyFan::
 # 456 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyNonFan::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_WontStopBeingYourFan
 # 457 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
-	msgbox SaffronCity_PokemonTrainerFanClub_Text_NeverBeFanOfAnyoneButMaster
-# 458 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
 	release
+# 458 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	end
 # 459 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+
+# 460 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyNonFan::
+# 461 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_NeverBeFanOfAnyoneButMaster
+# 462 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
+	release
+# 463 "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.pory"
 	end
