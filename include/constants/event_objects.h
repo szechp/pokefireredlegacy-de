@@ -191,7 +191,8 @@
 #define OBJ_EVENT_GFX_CHARIZARD 186
 #define OBJ_EVENT_GFX_BLASTOISE 187
 #define OBJ_EVENT_GFX_VENUSAUR 188
-#define NUM_OBJ_EVENT_GFX 189
+#define OBJ_EVENT_GFX_SUDOWOODO 189
+#define NUM_OBJ_EVENT_GFX 190
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.

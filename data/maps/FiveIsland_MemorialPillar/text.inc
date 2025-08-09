@@ -22,7 +22,10 @@ FiveIsland_MemorialPillar_Text_ChazDefeat::
 
 FiveIsland_MemorialPillar_Text_ChazPostBattle::
     .string "There was a really somber guy\n"
-    .string "over that way.$"
+    .string "over that way, and\l"
+    .string "there's also a weird TREE here.\p"
+    .string "I wonder if the weird TREE\n"
+    .string "reacts to tears?$"
 
 FiveIsland_MemorialPillar_Text_HaroldIntro::
     .string "I'm the youngest of the BIRD\n"

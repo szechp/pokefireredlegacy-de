@@ -232,9 +232,9 @@
 #define FLAG_ORBING               0x0D6
 #define FLAG_RE_DEFEATED               0x0D7
 #define FLAG_BLUE_REMATCH_DEFEAT            0x0D8
-#define FLAG_0x0D9               0x0D9
-#define FLAG_0x0DA               0x0DA
-#define FLAG_0x0DB               0x0DB
+#define FLAG_CAUGHT_SUDOWOODO                                0x0D9
+#define FLAG_DEFEATED_SUDOWOODO                              0x0DA
+#define FLAG_HIDE_BATTLE_FRONTIER_SUDOWOODO                  0x0DB
 #define FLAG_0x0DC               0x0DC
 #define FLAG_0x0DD               0x0DD
 #define FLAG_0x0DE               0x0DE
@@ -832,10 +832,10 @@
 #define FLAG_R23_GUYS              0x324
 #define FLAG_HARD_NUGGET               0x325
 #define FLAG_SELPHY_PC           0x326
-#define FLAG_0x327               0x327
-#define FLAG_0x328               0x328
-#define FLAG_0x329               0x329
-#define FLAG_0x32A               0x32A
+#define FLAG_DID_TOTO_TRADE               0x327
+#define FLAG_DID_QUILER_TRADE               0x328
+#define FLAG_DID_CHIK_TRADE               0x329
+#define FLAG_POSTGAME_TRADES              0x32A
 #define FLAG_0x32B               0x32B
 #define FLAG_0x32C               0x32C
 #define FLAG_0x32D               0x32D
@@ -1372,7 +1372,7 @@
 
 #define FLAG_SYS_POKEMON_GET                                        (SYS_FLAGS + 0x28)
 #define FLAG_SYS_POKEDEX_GET                                        (SYS_FLAGS + 0x29)
-#define FLAG_0x82A                                                  (SYS_FLAGS + 0x2A)
+#define FLAG_SYS_CTRL_OBJ_DELETE                                    (SYS_FLAGS + 0x2A)
 #define FLAG_0x82B                                                  (SYS_FLAGS + 0x2B)
 #define FLAG_SYS_GAME_CLEAR_OLD (SYS_FLAGS + 0x2C) //Needs to be set to link with XD. New FLAG_SYS_GAME_CLEAR (now used in scripts) is at the bottom.
 #define FLAG_SYS_SET_TRAINER_CARD_PROFILE                           (SYS_FLAGS + 0x2D)

@@ -107,6 +107,8 @@ FiveIsland_WaterLabyrinth_EventScript_NoFalkner::
 	end
 
 FiveIsland_WaterLabyrinth_EventScript_HeartScale::
+	lock
+	faceplayer
 	goto_if_set FLAG_SHOPJOHTO, FiveIsland_WaterLabyrinth_EventScript_HeartScale2
 	msgbox FiveIsland_WaterLabyrinth_Text_Heartscale
 	release

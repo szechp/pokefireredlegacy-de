@@ -189,6 +189,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Umbreon;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Charizard;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blastoise;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Venusaur;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sudowoodo;
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_RED_NORMAL]               = &gObjectEventGraphicsInfo_RedNormal,
     [OBJ_EVENT_GFX_RED_BIKE]                 = &gObjectEventGraphicsInfo_RedBike,
@@ -379,4 +380,5 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CHARIZARD] = &gObjectEventGraphicsInfo_Charizard,
     [OBJ_EVENT_GFX_BLASTOISE] = &gObjectEventGraphicsInfo_Blastoise,
     [OBJ_EVENT_GFX_VENUSAUR] = &gObjectEventGraphicsInfo_Venusaur,
+    [OBJ_EVENT_GFX_SUDOWOODO] = &gObjectEventGraphicsInfo_Sudowoodo,
 };

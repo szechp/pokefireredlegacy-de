@@ -2154,3 +2154,14 @@ const struct SpriteFrameImage gObjectEventPicTable_Venusaur[] = {
     overworld_frame(gObjectEventPic_Venusaur, 4, 4, 4),
     overworld_frame(gObjectEventPic_Venusaur, 4, 4, 5),
 };
+const struct SpriteFrameImage gObjectEventPicTable_Sudowoodo[] = {
+    overworld_frame(gObjectEventPic_Sudowoodo, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Sudowoodo, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Sudowoodo, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Sudowoodo, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Sudowoodo, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Sudowoodo, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Sudowoodo, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Sudowoodo, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Sudowoodo, 2, 4, 2),
+};
