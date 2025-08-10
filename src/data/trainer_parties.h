@@ -6547,28 +6547,28 @@ static const struct TrainerMon sParty_BirdKeeperMarlon[] = {
 static const struct TrainerMon sParty_BlackBeltKoichi[] = {
     {
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-        .lvl = 29,
+        .lvl = 30,
         .species = SPECIES_MACHOKE,
         .heldItem = ITEM_BLACK_BELT,
         .moves = {MOVE_REVENGE, MOVE_BRICK_BREAK, MOVE_FORESIGHT, MOVE_STRENGTH},
     },
     {
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-        .lvl = 30,
+        .lvl = 29,
         .species = SPECIES_HITMONLEE,
         .heldItem = ITEM_BLACK_BELT,
         .moves = {MOVE_MACH_PUNCH, MOVE_ICE_PUNCH, MOVE_FIRE_PUNCH, MOVE_THUNDER_PUNCH},
     },
     {
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-        .lvl = 30,
+        .lvl = 29,
         .species = SPECIES_HITMONCHAN,
         .heldItem = ITEM_BLACK_BELT,
         .moves = {MOVE_NONE, MOVE_JUMP_KICK, MOVE_MEGA_KICK, MOVE_NONE},
     },
     {
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-        .lvl = 30,
+        .lvl = 29,
         .species = SPECIES_HITMONTOP,
         .heldItem = ITEM_BLACK_BELT,
         .moves = {MOVE_FAKE_OUT, MOVE_ROLLING_KICK, MOVE_ROCK_SLIDE, MOVE_STRENGTH},
@@ -6636,7 +6636,7 @@ static const struct TrainerMon sParty_BlackBeltHitoshi[] = {
     },
     {
         .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
-        .lvl = 31,
+        .lvl = 28,
         .species = SPECIES_PRIMEAPE,
         .heldItem = ITEM_BLACK_BELT,
     },

@@ -151,9 +151,9 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_RSPokemaniac),
     },
     [TRAINER_RS_SWIMMER_M] = {
-        .trainerClass = TRAINER_CLASS_TAMER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_TAMER,
+        .trainerClass = TRAINER_CLASS_CAMPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_CAMPER,
         .trainerName = COMPOUND_STRING("POIS"),
         .doubleBattle = FALSE,
         .trainerType = TRAINER(.items = {},
