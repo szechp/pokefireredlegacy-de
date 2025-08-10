@@ -33,7 +33,16 @@ static const struct TrainerMon sParty_RSCooltrainerM[] = {DUMMY_TRAINER_MON_IV};
 static const struct TrainerMon sParty_RSCooltrainerF[] = {DUMMY_TRAINER_MON_IV};
 static const struct TrainerMon sParty_HexManiac[] = {DUMMY_TRAINER_MON};
 static const struct TrainerMon sParty_RSPokemaniac[] = {DUMMY_TRAINER_MON};
-static const struct TrainerMon sParty_RSSwimmerM[] = {DUMMY_TRAINER_MON};
+static const struct TrainerMon sParty_RSSwimmerM[] = {
+    {
+        .iv = TRAINER_PARTY_IVS(0, 0, 0, 31, 0, 0),
+        .lvl = 30,
+        .species = SPECIES_DROWZEE,
+        .nature = TRAINER_PARTY_NATURE(NATURE_TIMID),
+        .moves = {MOVE_POISON_GAS, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+        .ev = TRAINER_PARTY_EVS(0, 0, 0, 255, 0, 0),
+    },
+};
 static const struct TrainerMon sParty_RSBlackBelt[] = 
 {
     {
