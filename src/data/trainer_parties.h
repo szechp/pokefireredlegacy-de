@@ -3196,8 +3196,8 @@ static const struct TrainerMon sParty_BugCatcherDoug[] = {
 
 static const struct TrainerMon sParty_BugCatcherSammy[] = {
     {
-        .iv = 0,
-        .lvl = 10,
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        .lvl = 9,
         .species = SPECIES_BEEDRILL,
         .moves = {MOVE_POISON_STING, MOVE_STRING_SHOT, MOVE_RAGE, MOVE_NONE},
     },
