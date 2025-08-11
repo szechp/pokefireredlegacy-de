@@ -75,7 +75,8 @@ FiveIsland_Meadow_Text_Beasts::
 FiveIsland_Meadow_Text_Beasts22::
 	.string "I heard one of them roams\n"
 	.string "KANTO at a single time\l"
-	.string "following a Great achievement.\p"
+	.string "following a Great achievement, \l"
+	.string "as long as you caught one of them.\p"
 	.string "If you can, I'll give you\n"
 	.string "the item!$"
 
