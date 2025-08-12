@@ -2655,88 +2655,92 @@ PalletTown_ProfessorOaksLab_EventScript_PcAide::
 # 1328 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
 	waitmessage
 # 1329 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	msgbox FiveIsland_ResortGorgeous_House_Text_PcManYesNo, MSGBOX_YESNO
-# 1330 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, PalletTown_ProfessorOaksLab_EventScript_PCMANNO
-# 1331 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	goto EventScript_PCMan
-# 1332 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-
-# 1333 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-PalletTown_ProfessorOaksLab_EventScript_PCMANNO:
-# 1334 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	msgbox PalletTown_ProfessorOaksLab_Text_Medic2, MSGBOX_NPC
-# 1335 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	end
-# 1336 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-
-# 1337 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-PalletTown_ProfessorOaksLab_Text_PcMan::
-# 1338 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	.string "Hello, Professor Oak\n"
-# 1339 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	.string "is gonna be trying to\l"
-# 1340 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	.string "get a POKEMON PC here soon,\l"
-# 1341 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	.string "but for now has hired me\l"
-# 1342 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	.string "for my portable PC Services.\p"
-# 1343 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	.string "I can also offer my services\n"
-# 1344 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	.string "to you if you want also.$"
-# 1345 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-PalletTown_ProfessorOaksLab_Text_Medic2::
-# 1346 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	.string "Alright, you can use\n"
-# 1347 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	.string "my PC anytime you like!$"
-# 1348 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-
-# 1349 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-PalletTown_ProfessorOaksLab_EventScript_Pokedex::
-# 1350 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	msgbox PalletTown_ProfessorOaksLab_Text_BlankEncyclopedia, MSGBOX_NPC
-# 1351 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	end
-# 1352 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-
-# 1353 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-PalletTown_ProfessorOaksLab_EventScript_Computer::
-# 1354 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	msgbox PalletTown_ProfessorOaksLab_Text_EmailMessage, MSGBOX_SIGN
-# 1355 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	end
-# 1356 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-
-# 1357 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-PalletTown_ProfessorOaksLab_EventScript_LeftSign::
-# 1358 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	msgbox PalletTown_ProfessorOaksLab_Text_PressStartToOpenMenu, MSGBOX_SIGN
-# 1359 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	end
-# 1360 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-
-# 1361 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-PalletTown_ProfessorOaksLab_EventScript_RightSign::
-# 1362 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
 	lockall
-# 1363 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 6, PalletTown_ProfessorOaksLab_EventScript_RightSignAlt
-# 1364 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	msgbox PalletTown_ProfessorOaksLab_Text_SaveOptionInMenu
-# 1365 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	releaseall
-# 1366 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	end
-# 1367 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+# 1330 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	faceplayer
+# 1331 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	msgbox FiveIsland_ResortGorgeous_House_Text_PcManYesNo, MSGBOX_YESNO
+# 1332 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, PalletTown_ProfessorOaksLab_EventScript_PCMANNO
+# 1333 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	goto EventScript_PCMan
+# 1334 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
 
-# 1368 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-PalletTown_ProfessorOaksLab_EventScript_RightSignAlt::
-# 1369 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
-	msgbox PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints
-# 1370 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+# 1335 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+PalletTown_ProfessorOaksLab_EventScript_PCMANNO:
+# 1336 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	msgbox PalletTown_ProfessorOaksLab_Text_Medic2, MSGBOX_NPC
+# 1337 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	end
+# 1338 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+
+# 1339 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+PalletTown_ProfessorOaksLab_Text_PcMan::
+# 1340 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	.string "Hello, Professor Oak\n"
+# 1341 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	.string "is gonna be trying to\l"
+# 1342 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	.string "get a POKEMON PC here soon,\l"
+# 1343 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	.string "but for now has hired me\l"
+# 1344 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	.string "for my portable PC Services.\p"
+# 1345 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	.string "I can also offer my services\n"
+# 1346 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	.string "to you if you want also.$"
+# 1347 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+PalletTown_ProfessorOaksLab_Text_Medic2::
+# 1348 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	.string "Alright, you can use\n"
+# 1349 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	.string "my PC anytime you like!$"
+# 1350 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+
+# 1351 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+PalletTown_ProfessorOaksLab_EventScript_Pokedex::
+# 1352 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	msgbox PalletTown_ProfessorOaksLab_Text_BlankEncyclopedia, MSGBOX_NPC
+# 1353 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	end
+# 1354 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+
+# 1355 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+PalletTown_ProfessorOaksLab_EventScript_Computer::
+# 1356 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	msgbox PalletTown_ProfessorOaksLab_Text_EmailMessage, MSGBOX_SIGN
+# 1357 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	end
+# 1358 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+
+# 1359 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+PalletTown_ProfessorOaksLab_EventScript_LeftSign::
+# 1360 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	msgbox PalletTown_ProfessorOaksLab_Text_PressStartToOpenMenu, MSGBOX_SIGN
+# 1361 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	end
+# 1362 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+
+# 1363 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+PalletTown_ProfessorOaksLab_EventScript_RightSign::
+# 1364 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	lockall
+# 1365 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 6, PalletTown_ProfessorOaksLab_EventScript_RightSignAlt
+# 1366 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	msgbox PalletTown_ProfessorOaksLab_Text_SaveOptionInMenu
+# 1367 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
 	releaseall
+# 1368 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	end
+# 1369 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+
+# 1370 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+PalletTown_ProfessorOaksLab_EventScript_RightSignAlt::
 # 1371 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	msgbox PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints
+# 1372 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
+	releaseall
+# 1373 "data/maps/PalletTown_ProfessorOaksLab/scripts.pory"
 	end

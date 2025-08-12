@@ -339,13 +339,13 @@ FiveIsland_Meadow_EventScript_Beast::
 # 170 "data/maps/FiveIsland_Meadow/scripts.pory"
 	goto_if_set FLAG_ENABLE_SHIP_NAVEL_ROCK, FiveIsland_Meadow_EventScript_Beast3
 # 171 "data/maps/FiveIsland_Meadow/scripts.pory"
-	goto_if_unset FLAG_0x024, FiveIsland_Meadow_EventScript_BeastShow
+	call_if_unset FLAG_0x024, FiveIsland_Meadow_EventScript_BeastShow
 # 172 "data/maps/FiveIsland_Meadow/scripts.pory"
-	goto_if_unset FLAG_0x025, FiveIsland_Meadow_EventScript_Entei
+	call_if_unset FLAG_0x025, FiveIsland_Meadow_EventScript_Entei
 # 173 "data/maps/FiveIsland_Meadow/scripts.pory"
-	goto_if_unset FLAG_0x022, FiveIsland_Meadow_EventScript_Raikou
+	call_if_unset FLAG_0x022, FiveIsland_Meadow_EventScript_Raikou
 # 174 "data/maps/FiveIsland_Meadow/scripts.pory"
-	goto_if_unset FLAG_0x026, FiveIsland_Meadow_EventScript_Suicune
+	call_if_unset FLAG_0x026, FiveIsland_Meadow_EventScript_Suicune
 # 175 "data/maps/FiveIsland_Meadow/scripts.pory"
 	special RoamingBeasts
 # 176 "data/maps/FiveIsland_Meadow/scripts.pory"
@@ -527,4 +527,6 @@ FiveIsland_Meadow_EventScript_Beast3::
 # 264 "data/maps/FiveIsland_Meadow/scripts.pory"
 	msgbox FiveIsland_Meadow_Text_Beasts2, MSGBOX_NPC
 # 265 "data/maps/FiveIsland_Meadow/scripts.pory"
+	releaseall
+# 266 "data/maps/FiveIsland_Meadow/scripts.pory"
 	end

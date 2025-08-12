@@ -168,10 +168,10 @@ FiveIsland_Meadow_Items::
 
 FiveIsland_Meadow_EventScript_Beast::
 	goto_if_set FLAG_ENABLE_SHIP_NAVEL_ROCK, FiveIsland_Meadow_EventScript_Beast3
-	goto_if_unset FLAG_0x024, FiveIsland_Meadow_EventScript_BeastShow
-	goto_if_unset FLAG_0x025, FiveIsland_Meadow_EventScript_Entei
-	goto_if_unset FLAG_0x022, FiveIsland_Meadow_EventScript_Raikou
-	goto_if_unset FLAG_0x026, FiveIsland_Meadow_EventScript_Suicune
+	call_if_unset FLAG_0x024, FiveIsland_Meadow_EventScript_BeastShow
+	call_if_unset FLAG_0x025, FiveIsland_Meadow_EventScript_Entei
+	call_if_unset FLAG_0x022, FiveIsland_Meadow_EventScript_Raikou
+	call_if_unset FLAG_0x026, FiveIsland_Meadow_EventScript_Suicune
 	special RoamingBeasts
 	call_if_eq VAR_RESULT, TRUE, FiveIsland_Meadow_EventScript_GiveTicket
 	msgbox FiveIsland_Meadow_Text_Beasts22, MSGBOX_NPC
@@ -262,5 +262,6 @@ FiveIsland_Meadow_EventScript_GiveTicket::
 
 FiveIsland_Meadow_EventScript_Beast3::
 	msgbox FiveIsland_Meadow_Text_Beasts2, MSGBOX_NPC
+	releaseall
 	end
 `

@@ -169,7 +169,7 @@ ThreeIsland_BerryForest_EventScript_Lostelle::
 # 85 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	waitmoncry
 # 86 "data/maps/ThreeIsland_BerryForest/scripts.pory"
-	setwildbattle SPECIES_HYPNO, 50
+	setwildbattle SPECIES_HYPNO, 55
 # 87 "data/maps/ThreeIsland_BerryForest/scripts.pory"
 	dowildbattle
 # 88 "data/maps/ThreeIsland_BerryForest/scripts.pory"

@@ -262,11 +262,13 @@ SixIsland_DottedHole_SapphireRoom_EventScript_Orbing::
 	closemessage
 	delay 40
 	goto_if_eq VAR_RESULT, NO, SixIsland_DottedHole_SapphireRoom_EventScript_NoWhitney
+	setvar VAR_FORCEANIM, 1
 	trainerbattle_single TRAINER_RS_BLACK_BELT, SixIsland_DottedHole_SapphireRoom_Text_YesWhitney, SixIsland_DottedHole_SapphireRoom_Text_PostWhitney, SixIsland_DottedHole_SapphireRoom_EventScript_PostWhitney, NO_MUSIC
 	release
 	end
 
 SixIsland_DottedHole_SapphireRoom_EventScript_PostWhitney::
+	setvar VAR_FORCEANIM, 0
 	msgbox SixIsland_DottedHole_SapphireRoom_Text_WhitneyPostBattle
 	setflag FLAG_RE_DEFEATED
 	textcolor NPC_TEXT_COLOR_NEUTRAL

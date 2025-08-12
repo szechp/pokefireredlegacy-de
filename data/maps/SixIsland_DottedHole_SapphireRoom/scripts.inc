@@ -527,166 +527,170 @@ SixIsland_DottedHole_SapphireRoom_EventScript_Orbing::
 # 264 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, SixIsland_DottedHole_SapphireRoom_EventScript_NoWhitney
 # 265 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	trainerbattle_single TRAINER_RS_BLACK_BELT, SixIsland_DottedHole_SapphireRoom_Text_YesWhitney, SixIsland_DottedHole_SapphireRoom_Text_PostWhitney, SixIsland_DottedHole_SapphireRoom_EventScript_PostWhitney, NO_MUSIC
+	setvar VAR_FORCEANIM, 1
 # 266 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	release
+	trainerbattle_single TRAINER_RS_BLACK_BELT, SixIsland_DottedHole_SapphireRoom_Text_YesWhitney, SixIsland_DottedHole_SapphireRoom_Text_PostWhitney, SixIsland_DottedHole_SapphireRoom_EventScript_PostWhitney, NO_MUSIC
 # 267 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	end
+	release
 # 268 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-
+	end
 # 269 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-SixIsland_DottedHole_SapphireRoom_EventScript_PostWhitney::
+
 # 270 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	msgbox SixIsland_DottedHole_SapphireRoom_Text_WhitneyPostBattle
+SixIsland_DottedHole_SapphireRoom_EventScript_PostWhitney::
 # 271 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	setflag FLAG_RE_DEFEATED
+	setvar VAR_FORCEANIM, 0
 # 272 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	textcolor NPC_TEXT_COLOR_NEUTRAL
+	msgbox SixIsland_DottedHole_SapphireRoom_Text_WhitneyPostBattle
 # 273 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	playfanfare MUS_OBTAIN_KEY_ITEM
+	setflag FLAG_RE_DEFEATED
 # 274 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	giveitem ITEM_RED_ORB
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 # 275 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	setflag FLAG_0x020
+	playfanfare MUS_OBTAIN_KEY_ITEM
 # 276 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	waitmessage
+	giveitem ITEM_RED_ORB
 # 277 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	waitfanfare 
+	setflag FLAG_0x020
 # 278 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	msgbox SixIsland_DottedHole_SapphireRoom_Text_Orbing
+	waitmessage
 # 279 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	delay_16
+	waitfanfare 
 # 280 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	msgbox SixIsland_DottedHole_SapphireRoom_Text_Goodbye
+	msgbox SixIsland_DottedHole_SapphireRoom_Text_Orbing
 # 281 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	release
+	delay_16
 # 282 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	end
+	msgbox SixIsland_DottedHole_SapphireRoom_Text_Goodbye
 # 283 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-
-# 284 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-SixIsland_DottedHole_SapphireRoom_EventScript_NoWhitney::
-# 285 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	msgbox SixIsland_DottedHole_SapphireRoom_Text_NoWhitney
-# 286 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
 	release
-# 287 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
+# 284 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
 	end
+# 285 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
+
+# 286 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
+SixIsland_DottedHole_SapphireRoom_EventScript_NoWhitney::
+# 287 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
+	msgbox SixIsland_DottedHole_SapphireRoom_Text_NoWhitney
 # 288 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-
+	release
 # 289 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-SixIsland_DottedHole_SapphireRoom_Text_Ren::
+	end
 # 290 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "Hello {PLAYER}, I notice you\n"
+
 # 291 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "have the Blue Orb.\p"
+SixIsland_DottedHole_SapphireRoom_Text_Ren::
 # 292 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "That means you must be\n"
+	.string "Hello {PLAYER}, I notice you\n"
 # 293 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "a great battler huh?\p"
+	.string "have the Blue Orb.\p"
 # 294 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "Call me surpised that\n"
+	.string "That means you must be\n"
 # 295 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "you got this face and managed\l"
+	.string "a great battler huh?\p"
 # 296 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "to find this orb's purpose!\p"
+	.string "Call me surpised that\n"
 # 297 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "In terms of what I am,\n"
+	.string "you got this face and managed\l"
 # 298 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "don't worry.\p"
+	.string "to find this orb's purpose!\p"
 # 299 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "All I know is that I want\n"
+	.string "In terms of what I am,\n"
 # 300 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "a battle with you, if you want.$"
+	.string "don't worry.\p"
 # 301 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-
+	.string "All I know is that I want\n"
 # 302 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-SixIsland_DottedHole_SapphireRoom_Text_Notice::
+	.string "a battle with you, if you want.$"
 # 303 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "(You noticed a voice in the air.)$"
+
 # 304 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-
+SixIsland_DottedHole_SapphireRoom_Text_Notice::
 # 305 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-SixIsland_DottedHole_SapphireRoom_Text_Whitney::
+	.string "(You noticed a voice in the air.)$"
 # 306 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "Do you wish to battle.\n"
+
 # 307 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "My team will the must\l"
+SixIsland_DottedHole_SapphireRoom_Text_Whitney::
 # 308 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "stronger than the rest.$"
+	.string "Do you wish to battle.\n"
 # 309 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-
+	.string "My team will the must\l"
 # 310 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-SixIsland_DottedHole_SapphireRoom_Text_NoWhitney::
+	.string "stronger than the rest.$"
 # 311 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "Guess you need more\n"
+
 # 312 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "time to train than,\l"
+SixIsland_DottedHole_SapphireRoom_Text_NoWhitney::
 # 313 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "take your time!$"
+	.string "Guess you need more\n"
 # 314 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-
+	.string "time to train than,\l"
 # 315 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-SixIsland_DottedHole_SapphireRoom_Text_PostWhitney::
+	.string "take your time!$"
 # 316 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "Wow! What a amazing battle!\n"
+
 # 317 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "From Red to Blue, this\l"
+SixIsland_DottedHole_SapphireRoom_Text_PostWhitney::
 # 318 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "battle is Green all around!$"
+	.string "Wow! What a amazing battle!\n"
 # 319 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-
+	.string "From Red to Blue, this\l"
 # 320 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-SixIsland_DottedHole_SapphireRoom_Text_Orbing::
+	.string "battle is Green all around!$"
 # 321 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "This orb if exposed\n"
+
 # 322 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "to the right place,\l"
+SixIsland_DottedHole_SapphireRoom_Text_Orbing::
 # 323 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "say, a place where you\l"
+	.string "This orb if exposed\n"
 # 324 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "found a red gem,\l"
+	.string "to the right place,\l"
 # 325 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "will let you encounter\l"
+	.string "say, a place where you\l"
 # 326 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "something shiny!\p"
+	.string "found a red gem,\l"
 # 327 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "Better not let it waste.$"
+	.string "will let you encounter\l"
 # 328 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-
+	.string "something shiny!\p"
 # 329 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-SixIsland_DottedHole_SapphireRoom_Text_YesWhitney::
+	.string "Better not let it waste.$"
 # 330 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "Alright.\n"
+
 # 331 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "May this battle not be blue,\l"
+SixIsland_DottedHole_SapphireRoom_Text_YesWhitney::
 # 332 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "May this battle be red in hype,\l"
+	.string "Alright.\n"
 # 333 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "and green in success!$"
+	.string "May this battle not be blue,\l"
 # 334 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-
+	.string "May this battle be red in hype,\l"
 # 335 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-SixIsland_DottedHole_SapphireRoom_Text_WhitneyPostBattle::
+	.string "and green in success!$"
 # 336 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "Ok, guess I gotta give\n"
-# 337 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "you this reward.$"
-# 338 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
 
+# 337 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
+SixIsland_DottedHole_SapphireRoom_Text_WhitneyPostBattle::
+# 338 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
+	.string "Ok, guess I gotta give\n"
 # 339 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-SixIsland_DottedHole_SapphireRoom_Text_Goodbye::
+	.string "you this reward.$"
 # 340 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "Alright than, I better\n"
+
 # 341 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "get going now.\p"
+SixIsland_DottedHole_SapphireRoom_Text_Goodbye::
 # 342 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "And as for me and what I am,\n"
+	.string "Alright than, I better\n"
 # 343 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "you should be able to read\l"
+	.string "get going now.\p"
 # 344 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "the connections from this battle.\p"
+	.string "And as for me and what I am,\n"
 # 345 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
-	.string "...\n"
+	.string "you should be able to read\l"
 # 346 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
+	.string "the connections from this battle.\p"
+# 347 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
+	.string "...\n"
+# 348 "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.pory"
 	.string "Goodbye {PLAYER}$"

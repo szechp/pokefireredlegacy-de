@@ -1418,7 +1418,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_PARASECT] =
     {
-        .baseHP        = 60,
+        .baseHP        = 70,
         .baseAttack    = 95,
         .baseDefense   = 80,
         .baseSpeed     = 30,
@@ -3249,7 +3249,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_LICKITUNG] =
     {
         .baseHP        = 95,
-        .baseAttack    = 70,
+        .baseAttack    = 75,
         .baseDefense   = 85,
         .baseSpeed     = 30,
         .baseSpAttack  = 75,
@@ -3270,7 +3270,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_MONSTER, EGG_GROUP_MONSTER},
-        .abilities = {ABILITY_OWN_TEMPO, ABILITY_OBLIVIOUS},
+        .abilities = {ABILITY_OWN_TEMPO, ABILITY_THICK_FAT},
         .safariZoneFleeRate = 50,
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = FALSE,
@@ -3428,12 +3428,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_TANGELA] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 85,
+        .baseHP        = 80,
+        .baseAttack    = 80,
         .baseDefense   = 115,
         .baseSpeed     = 60,
         .baseSpAttack  = 100,
-        .baseSpDefense = 40,
+        .baseSpDefense = 50,
         .types = {TYPE_GRASS, TYPE_GRASS},
         .catchRate = 45,
         .expYield = 166,
@@ -3450,7 +3450,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = {EGG_GROUP_GRASS, EGG_GROUP_GRASS},
-        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE},
+        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_THICK_FAT},
         .safariZoneFleeRate = 50,
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
@@ -3578,11 +3578,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_SEAKING] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 100,
-        .baseDefense   = 65,
+        .baseHP        = 90,
+        .baseAttack    = 102,
+        .baseDefense   = 70,
         .baseSpeed     = 68,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 70,
         .baseSpDefense = 80,
         .types = {TYPE_WATER, TYPE_WATER},
         .catchRate = 60,
