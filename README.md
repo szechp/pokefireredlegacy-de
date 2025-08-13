@@ -74,6 +74,19 @@ QOL:
 - Champion and Oak turns on Battle Animations like in RBY
 - Safari Zone improvements to make rocks baits and balls better
 - Relearn Move Tutor Moves at a price
+- Daisy grooming is avaible earlier and gives more friendship
+- All Rev1 Changes besides Ttars pokedex change (which is here)
+"
+Normal:
+"Its body can't be harmed by any sort of\n"
+    "attack, so it is very eager to make\n"
+    "challenges against enemies."
+Rev1:
+"It has an impudent nature. Having great\n"
+    "strength, it can even change surrounding\n"
+    "landforms."
+"
+);
 - Some more stuff I forgot
 
 - VERSION DIFFERENCES:
@@ -94,7 +107,7 @@ Delevoper:
 - SpikeCation (Sole Dev)
 
 Helper:
-- therealteamplayer (Did lots of text fixes)
+- therealteamplayer (Did lots of text fixes and edits)
 
 Playtesters:
 
@@ -153,11 +166,17 @@ Flamethrower	Mt Ember
 Shadow Ball	Mt Ember		
 Iron Tail	Rock Tunnel (Rock Smash)		
 Thunderbolt	Power Plant		
-Eggtutor	Beat the 7 Johto Leaders		
-			
+Eggtutor	Beat the 7 Johto Leaders
+
+Tutorials:
+
+locations guide (og by a guy on reddit)
+https://docs.google.com/spreadsheets/d/100n-2riTFc4Smetj2cQECD3f45pw_zIaaYIpKeJ-Luk/edit?gid=0#gid=0
 
 - Some Fanmade tutorials for the hack:
 https://www.youtube.com/playlist?list=PLaXfMWm8D14lc8qGFEe9OCIpMUyKkWoqw
+
+Stats and movepools in src/data
 
 - Patching Info, best for your sha1 to have this
 pokefirered.gba sha1: 41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc
