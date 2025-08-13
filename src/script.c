@@ -60,11 +60,6 @@ void InitScriptContext(struct ScriptContext *ctx, void *cmdTable, void *cmdTable
         ctx->stack[i] = 0;
 }
 
-void GetObjectEventTrainerRangeFromTemplate(void)
-{
-    gSpecialVar_Result = gMapHeader.events->objectEvents[gSpecialVar_LastTalked - 1].trainerRange_berryTreeId;
-}
-
 u8 SetupBytecodeScript(struct ScriptContext *ctx, const u8 *ptr)
 {
     ctx->scriptPtr = ptr;

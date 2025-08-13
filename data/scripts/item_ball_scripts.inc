@@ -702,8 +702,3 @@ SilphCo_4F_EventScript_ItemTM41::
 	finditem ITEM_TM41
 	end
 
-Common_EventScript_FindItem::
-	callnative GetObjectEventTrainerRangeFromTemplate
-	finditem VAR_RESULT
-	end
-
