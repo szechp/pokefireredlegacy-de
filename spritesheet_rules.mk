@@ -497,3 +497,5 @@ $(OBJEVENTGFXDIR)/pokemon/Umbreon.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/Sudowoodo.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
+$(OBJEVENTGFXDIR)/pokemon/Hex_Maniac.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4

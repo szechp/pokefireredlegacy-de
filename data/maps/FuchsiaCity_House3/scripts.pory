@@ -62,13 +62,12 @@ FuchsiaCity_House3_Poison::
 	end
 
 FuchsiaCity_House3_Text_Eva::
-	.string "Fighting while poison may\n"
-	.string "buff your POKEMON\l"
-	.string "in the long run!\p"
-	.string "And my DROWZEE can\n"
-	.string "do that in one move!$"
+	.string "Fighting while poison may buff\n"
+	.string "your POKEMON in the long run!\p"
+	.string "And my DROWZEE can do that\n"
+	.string "in one move!$"
 
 FuchsiaCity_House3_Text_EvaPostBattle::
-	.string "You can come back for more.$"
+	.string "You can come back for more!$"
 
 `

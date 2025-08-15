@@ -534,7 +534,7 @@
 #define FLAG_HIDE_CELADON_CITY_SUN_STONE               0x1FF
 #define FLAG_HIDE_ROUTE12_SILK             0x200
 #define FLAG_BIKE_GEAR           0x201
-#define FLAG_0x202               0x202
+#define FLAG_BINARY_GUY              0x202
 #define FLAG_0x203               0x203
 #define FLAG_0x204               0x204
 #define FLAG_0x205               0x205

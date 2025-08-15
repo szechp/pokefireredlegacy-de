@@ -284,3 +284,4 @@ const u32 gObjectEventPic_Charizard[] = INCBIN_U32("graphics/object_events/pics/
 const u32 gObjectEventPic_Blastoise[] = INCBIN_U32("graphics/object_events/pics/pokemon/Blastoise.4bpp");
 const u32 gObjectEventPic_Venusaur[] = INCBIN_U32("graphics/object_events/pics/pokemon/Venusaur.4bpp");
 const u32 gObjectEventPic_Sudowoodo[] = INCBIN_U32("graphics/object_events/pics/pokemon/Sudowoodo.4bpp");
+const u32 gObjectEventPic_Hex_Maniac[] = INCBIN_U32("graphics/object_events/pics/pokemon/hex_maniac.4bpp");
