@@ -5948,7 +5948,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_MURKROW] =
     {
-        .baseHP        = 70,
+        .baseHP        = 80,
         .baseAttack    = 105,
         .baseDefense   = 52,
         .baseSpeed     = 95,

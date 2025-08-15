@@ -21,7 +21,7 @@ EventScript_IVChecker::
 	end
 
 Text_IVChecker_1:
-	.string "I can check you'r pokemon's\n"
+	.string "I can check your pokemon's\n"
 	.string "hidden potential!\p"
 	.string "Also Known as IVs!\p"
 	.string "So, your {STR_VAR_1}…$"
@@ -60,7 +60,7 @@ EventScript_EVChecker::
 	end
 
 Text_EVChecker_1:
-	.string "I can check you'r pokemon's\n"
+	.string "I can check your pokemon's\n"
 	.string "gained effort potential!\p"
 	.string "Also Known as EVs!\p"
 	.string "So, your {STR_VAR_1}…$"
