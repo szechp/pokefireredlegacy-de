@@ -63,11 +63,11 @@ PokedexRating_EventScript_Rate::
 
 PokedexRating_EventScript_OkAnd::
 	call_if_set FLAG_OAK_DEXING, PokedexRating_EventScript_Amongus
-	end
+	return
 
 PokedexRating_EventScript_Amongus::
 	call_if_unset FLAG_AMONGUS, PalletTown_ProfessorOaksLab_EventScript_Mew
-	end
+	return
 
 PokedexRating_EventScript_SetTextColor::
 	textcolor NPC_TEXT_COLOR_MALE
