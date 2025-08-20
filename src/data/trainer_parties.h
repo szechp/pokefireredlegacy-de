@@ -8706,10 +8706,10 @@ static const struct TrainerMon sParty_LeaderBrock[] = {
         .lvl = 11,
         .species = SPECIES_SLUGMA,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_ROCK_TOMB, MOVE_POUND, MOVE_NONE, MOVE_NONE},
+        .moves = {MOVE_NONE, MOVE_POUND, MOVE_NONE, MOVE_NONE},
     },
     {
-        .iv = TRAINER_PARTY_IVS(20, 0, 20, 0, 20, 20),
+        .iv = TRAINER_PARTY_IVS(20, 10, 20, 0, 20, 20),
         .lvl = 14,
         .species = SPECIES_ONIX,
         .heldItem = ITEM_ORAN_BERRY,
@@ -8728,7 +8728,7 @@ static const struct TrainerMon sParty_LeaderMisty[] = {
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
         .lvl = 20,
         .species = SPECIES_GOLDEEN,
-        .moves = {MOVE_HORN_ATTACK, MOVE_SUPERSONIC, MOVE_PECK, MOVE_WATERFALL},
+        .moves = {MOVE_HORN_ATTACK, MOVE_NONE, MOVE_PECK, MOVE_WATERFALL},
     },
     {
         .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
