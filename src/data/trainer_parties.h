@@ -29,12 +29,12 @@ static const struct TrainerMon sParty_RSRuinManiac[] = {DUMMY_TRAINER_MON};
 static const struct TrainerMon sParty_Interviewer[] = {
     {
         .iv = 0,
-        .lvl = 8,
+        .lvl = 9,
         .species = SPECIES_RATTATA,
     },
     {
         .iv = 0,
-        .lvl = 8,
+        .lvl = 9,
         .species = SPECIES_PIDGEY,
     },    
 
