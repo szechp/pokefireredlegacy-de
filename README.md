@@ -9,6 +9,8 @@ a QOL if you will
 FRLG was one of the first games I ever played, and as I much of do like certain features a lot of decisions were dumb, such as removing cross gen evos.
 Kanto itself as a region has a lot of issues present in gen 1, that was kept in the remakes. Like in Legacy, I tried to keep the general feeling intact while making the experience much better. I would say this game is 80% legacy as I did my own things that are a bit far off (such as map changes cause mt moon looks like ass), but it still should be close. 
 
+Documentation: https://docs.google.com/spreadsheets/d/1_Mfvqn7awV_FzNYLhpQIl1AKRlfHUGq4F_q_IeZ7K2c/edit?pli=1&gid=1004306526#gid=1004306526
+
 Features:
 - All Kanto and Johto Pokemon Available in both Versions
 - The Main dex has 181 Pokemon, 30 New Pokemon, 2/3 of which are Evos and Pre Evos, 1/3 are added johto pokemon to strengthen type diversity and johto connection
