@@ -6995,9 +6995,10 @@ static const struct TrainerMon sParty_ScientistJerry[] = {
         .species = SPECIES_ELECTRODE,
     },
     {
-        .iv = 0,
+        .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
         .lvl = 38,
-        .species = SPECIES_MAGNETON,
+        .species = SPECIES_DITTO,
+        .ev = TRAINER_PARTY_EVS(255, 0, 0, 0, 0, 0)
     },
 };
 
