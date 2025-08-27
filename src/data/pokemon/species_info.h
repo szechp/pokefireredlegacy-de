@@ -2858,12 +2858,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_ONIX] =
     {
-        .baseHP        = 70,
+        .baseHP        = 65,
         .baseAttack    = 70,
         .baseDefense   = 160,
         .baseSpeed     = 75,
         .baseSpAttack  = 30,
-        .baseSpDefense = 65,
+        .baseSpDefense = 60,
         .types = {TYPE_ROCK, TYPE_GROUND},
         .catchRate = 45,
         .expYield = 108,

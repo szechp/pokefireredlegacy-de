@@ -8749,10 +8749,10 @@ static const struct TrainerMon sParty_LeaderMisty[] = {
         .moves = {MOVE_HORN_ATTACK, MOVE_NONE, MOVE_PECK, MOVE_WATERFALL},
     },
     {
-        .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
+        .iv = TRAINER_PARTY_IVS(8, 31, 8, 8, 8, 8),
         .lvl = 21,
         .species = SPECIES_STARMIE,
-        .moves = {MOVE_SWIFT, MOVE_CONFUSION, MOVE_WATER_PULSE, MOVE_NONE},
+        .moves = {MOVE_SWIFT, MOVE_CONFUSION, MOVE_WATER_PULSE, MOVE_CAMOUFLAGE},
     },
 };
 
@@ -8761,7 +8761,7 @@ static const struct TrainerMon sParty_LeaderLtSurge[] = {
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
         .lvl = 24,
         .species = SPECIES_ELEKID,
-        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_NONE, MOVE_BRICK_BREAK},
+        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SWIFT, MOVE_BRICK_BREAK},
     },
     {
         .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
@@ -8776,7 +8776,7 @@ static const struct TrainerMon sParty_LeaderLtSurge[] = {
         .moves = {MOVE_SHOCK_WAVE, MOVE_NONE, MOVE_ICY_WIND, MOVE_SWIFT},
     },
     {
-        .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
+        .iv = TRAINER_PARTY_IVS(20, 20, 20, 20, 20, 20),
         .lvl = 25,
         .species = SPECIES_RAICHU,
         .moves = {MOVE_MEGA_PUNCH, MOVE_NONE, MOVE_DOUBLE_TEAM, MOVE_SHOCK_WAVE},
