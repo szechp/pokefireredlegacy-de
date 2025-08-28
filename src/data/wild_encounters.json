@@ -8425,9 +8425,9 @@
                 "species": "SPECIES_SLUGMA"
               },
               {
-                "min_level": 56,
-                "max_level": 56,
-                "species": "SPECIES_SLUGMA"
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CYNDAQUIL"
               },
               {
                 "min_level": 68,
@@ -8435,9 +8435,9 @@
                 "species": "SPECIES_MAGCARGO"
               },
               {
-                "min_level": 56,
-                "max_level": 56,
-                "species": "SPECIES_SLUGMA"
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CYNDAQUIL"
               },
               {
                 "min_level": 56,

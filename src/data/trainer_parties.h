@@ -7992,7 +7992,7 @@ static const struct TrainerMon sParty_TeamRocketGrunt41[] = {
         .species = SPECIES_SCIZOR,
         .moves = {MOVE_NONE, MOVE_TWINEEDLE, MOVE_METAL_CLAW, MOVE_ROCK_SMASH},
     },
-};
+}; //NEW ADMIN
 
 static const struct TrainerMon sParty_CooltrainerSamuel[] = {
     {
