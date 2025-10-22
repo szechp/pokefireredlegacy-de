@@ -46,6 +46,10 @@ jobs:
           ./install.sh ../
         working-directory: ./agbcc
 
+      - name: Fix permissions for all tools
+        run: |
+          find tools -type f -iname "*" -exec chmod +x {} \;
+
       - name: Compare FireRed
         run: |
           make -j${nproc} all syms
