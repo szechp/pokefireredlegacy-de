@@ -27,10 +27,12 @@ jobs:
 
       - name: Checkout symbols
         if: ${{ github.event_name == 'push' }}
-        uses: actions/checkout@master
-        with:
-          path: 'symbols'
-          ref: 'symbols'
+        run: |
+          git clone "${{ github.server_url }}/${{ github.repository }}" symbols
+          cd symbols
+          git remote add upstream https://github.com/pret/pokefirered.git
+          git fetch upstream symbols
+          git checkout -B symbols upstream/symbols
 
       - name: Install binutils
         run: sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
