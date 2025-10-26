@@ -45,12 +45,7 @@ jobs:
           ./build.sh
           ./install.sh ../
         working-directory: ./agbcc
-
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-
+        
       - name: Pull LFS files
         run: git lfs pull || echo "No LFS files to pull"
 
