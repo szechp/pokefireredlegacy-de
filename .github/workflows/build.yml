@@ -18,10 +18,10 @@ jobs:
     steps:
 
       - name: Checkout
-          uses: actions/checkout@v4
-          with:
-            lfs: true
-            fetch-depth: 0
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
 
       - name: Checkout agbcc
         uses: actions/checkout@master
