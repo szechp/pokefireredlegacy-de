@@ -39,9 +39,14 @@ jobs:
 
       - name: Checkout symbols
         if: ${{ github.event_name == 'push' }}
+        uses: actions/checkout@v4
+        with:
+          path: 'symbols'
+
+      - name: Reset symbols branch to pret baseline
+        if: ${{ github.event_name == 'push' }}
+        working-directory: ./symbols
         run: |
-          git clone "${{ github.server_url }}/${{ github.repository }}" symbols
-          cd symbols
           git remote add upstream https://github.com/pret/pokefirered.git
           git fetch upstream symbols
           git checkout -B symbols upstream/symbols
@@ -124,3 +129,4 @@ jobs:
           cwd: "./symbols"
           add: "*.sym"
           message: ${{ env.SYMBOLS_COMMIT_MSG }}
+          push: --force origin symbols
