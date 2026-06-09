@@ -1360,7 +1360,7 @@ static const struct SpindaSpot sSpindaSpotGraphics[] =
 
 #include "data/pokemon/item_effects.h"
 
-static const s8 sNatureStatTable[NUM_NATURES][NUM_NATURE_STATS] =
+const s8 gNatureStatTable[NUM_NATURES][NUM_NATURE_STATS] =
 {                      // Attack  Defense  Speed  Sp.Atk  Sp.Def
     [NATURE_HARDY]   = {    0,      0,      0,      0,      0   },
     [NATURE_LONELY]  = {   +1,     -1,      0,      0,      0   },
@@ -1630,6 +1630,7 @@ static const s8 sFriendshipEventDeltas[][3] =
     [FRIENDSHIP_EVENT_FAINT_SMALL]          = {-1, -1, -1 },
     [FRIENDSHIP_EVENT_FAINT_OUTSIDE_BATTLE] = {-5, -5, -10 },
     [FRIENDSHIP_EVENT_FAINT_LARGE]          = {-5, -5, -10 },
+    [FRIENDSHIP_EVENT_MAX_MASSAGE]          = {150, 100, 50}
 };
 
 #define HM_MOVES_END 0xFFFF
@@ -2627,6 +2628,8 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         spDefense *= 8;
     }
     if (attackerHoldEffect == HOLD_EFFECT_THICK_CLUB && (attacker->species == SPECIES_CUBONE || attacker->species == SPECIES_MAROWAK))
+        attack *= 2;
+    if (attackerHoldEffect == HOLD_EFFECT_LUCKY_PUNCH && (attacker->species == SPECIES_CHANSEY))
         attack *= 2;
     // Are effects of weather negated with cloud nine or air lock
     if (WEATHER_HAS_EFFECT2)
@@ -5306,6 +5309,10 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
                 if (gEvolutionTable[species][i].param <= beauty)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
+            case EVO_FRIENDSHIP_BABY:
+                if (friendship >= 170)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
             }
         }
         break;
@@ -5606,7 +5613,7 @@ static u16 ModifyStatByNature(u8 nature, u16 stat, u8 statIndex)
     if (statIndex <= STAT_HP || statIndex > NUM_NATURE_STATS)
         return stat;
 
-    switch (sNatureStatTable[nature][statIndex - 1])
+    switch (gNatureStatTable[nature][statIndex - 1])
     {
     case 1:
         retVal = stat * 110;
@@ -6130,6 +6137,8 @@ static u16 GetBattleBGM(void)
         case TRAINER_CLASS_JOHTO_LEADER:
         case TRAINER_CLASS_SEVII_CHAMPION:
             return MUS_VS_GYM_LEADER;
+        case TRAINER_CLASS_MIRAGE_TRAINER:
+            return MUS_RS_VS_GYM_LEADER;
         case TRAINER_CLASS_BOSS:
         case TRAINER_CLASS_TEAM_ROCKET:
             return MUS_VS_TEAM_ROCKET;

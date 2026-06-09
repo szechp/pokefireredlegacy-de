@@ -221,7 +221,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectSecretPower            @ EFFECT_SECRET_POWER
 	.4byte BattleScript_EffectDoubleEdge             @ EFFECT_DOUBLE_EDGE
 	.4byte BattleScript_EffectTeeterDance            @ EFFECT_TEETER_DANCE
-	.4byte BattleScript_EffectBurnHit                @ EFFECT_BLAZE_KICK
+	.4byte BattleScript_EffectBlazeKick              @ EFFECT_BLAZE_KICK
 	.4byte BattleScript_EffectMudSport               @ EFFECT_MUD_SPORT
 	.4byte BattleScript_EffectPoisonFang             @ EFFECT_POISON_FANG
 	.4byte BattleScript_EffectWeatherBall            @ EFFECT_WEATHER_BALL
@@ -941,6 +941,11 @@ BattleScript_EffectLeafBlade2::
 	ppreduce
 	goto BattleScript_MoveEnd
 
+
+BattleScript_EffectBlazeKick::
+	setmoveeffect MOVE_EFFECT_BURN_FLINCH
+	goto BattleScript_EffectHit
+
 BattleScript_EffectRecoil::
 	setmoveeffect MOVE_EFFECT_RECOIL_25 | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
 	jumpifnotmove MOVE_STRUGGLE, BattleScript_EffectHit
@@ -1110,8 +1115,15 @@ BattleScript_EffectAccuracyDownHit::
 	goto BattleScript_EffectHit
 
 BattleScript_EffectSkyAttack::
+	attackcanceler
 	ppreduce
-	goto BattleScript_TwoTurnMovesSecondTurn
+	setmoveeffect MOVE_EFFECT_CHARGING
+	setbyte sB_ANIM_TURN, 1
+	clearstatusfromeffect BS_ATTACKER
+	orword gHitMarker, HITMARKER_NO_PPDEDUCT
+	setmoveeffect MOVE_EFFECT_FLINCH
+	goto BattleScript_HitFromAccCheck
+	@goto BattleScript_TwoTurnMovesSecondTurn
 	@jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_TwoTurnMovesSecondTurn
 	@jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_TwoTurnMovesSecondTurn
 	@setbyte sTWOTURN_STRINGID, B_MSG_TURN1_SKY_ATTACK
@@ -2986,7 +2998,7 @@ BattleScript_LocalTrainerBattleWon::
 	getmoneyreward BattleScript_LocalTrainerBattleWonGotMoney
 BattleScript_LocalTrainerBattleWonGotMoney::
 	printstring STRINGID_PLAYERGOTMONEY
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 BattleScript_PayDayMoneyAndPickUpItems::
 	givepaydaymoney
 	pickup
@@ -3000,30 +3012,30 @@ BattleScript_LocalBattleLost::
 BattleScript_LocalBattleLostPrintWhiteOut::
 	jumpifbattletype BATTLE_TYPE_TRAINER, BattleScript_LocalBattleLostEnd
 	printstring STRINGID_PLAYERWHITEOUT
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	getmoneyreward BattleScript_LocalBattleLostPrintTrainersWinText
 	printstring STRINGID_PLAYERWHITEOUT2
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	goto BattleScript_EReaderOrSecretBaseTrainerEnd
 
 BattleScript_LocalBattleLostEnd::
 	printstring STRINGID_PLAYERLOSTAGAINSTENEMYTRAINER
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	getmoneyreward BattleScript_LocalBattleLostPrintTrainersWinText
 	printstring STRINGID_PLAYERPAIDPRIZEMONEY
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 BattleScript_EReaderOrSecretBaseTrainerEnd::
 	end2
 
 BattleScript_LocalBattleLostPrintTrainersWinText::
 	printstring STRINGID_PLAYERWHITEDOUT
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	end2
 
 BattleScript_RivalBattleLost::
 	jumpifhasnohp BS_ATTACKER, BattleScript_RivalBattleLostSkipMonRecall
 	printstring STRINGID_TRAINER1MON1COMEBACK
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	returnatktoball
 	waitstate
 BattleScript_RivalBattleLostSkipMonRecall::
@@ -3037,7 +3049,7 @@ BattleScript_BattleTowerLost::
 	getbattlersforrecall
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0, BattleScript_BattleTowerLostLostSkipMonRecall
 	printfromtable gDoubleBattleRecallStrings
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	returnopponentmon1toball
 	waitstate
 	returnopponentmon2toball
@@ -3053,9 +3065,9 @@ BattleScript_BattleTowerLostLostSkipDouble::
 
 BattleScript_LinkBattleWonOrLost::
 	printstring STRINGID_BATTLEEND
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	endlinkbattle
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	end2
 
 BattleScript_BattleTowerTrainerBattleWon::
@@ -3073,22 +3085,22 @@ BattleScript_BattleTowerEtcTrainerBattleWonSkipText::
 BattleScript_SmokeBallEscape::
 	playanimation BS_ATTACKER, B_ANIM_SMOKEBALL_ESCAPE
 	printstring STRINGID_PKMNFLEDUSINGITS
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	end2
 
 BattleScript_RanAwayUsingMonAbility::
 	printstring STRINGID_PKMNFLEDUSING
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	end2
 
 BattleScript_GotAwaySafely::
 	printstring STRINGID_GOTAWAYSAFELY
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	end2
 
 BattleScript_WildMonFled::
 	printstring STRINGID_WILDPKMNFLED
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	end2
 
 BattleScript_PrintCantRunFromTrainer::
@@ -3102,7 +3114,7 @@ BattleScript_LeftoverBirchString::
 
 BattleScript_PrintFailedToRunString::
 	printfromtable gNoEscapeStringIds
-	waitmessage B_WAIT_TIME_LONG
+	waitmessage B_WAIT_TIME_SHORT
 	end2
 
 BattleScript_PrintCantEscapeFromBattle::
@@ -3833,6 +3845,16 @@ BattleScript_MoveUsedIsConfusedNoMore::
 
 BattleScript_PrintPayDayMoneyString::
 	printstring STRINGID_PLAYERPICKEDUPMONEY
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_AttackBoostedByAbility::
+	printstring STRINGID_ATTACKBOOSTEDBYABILITY
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_MagmaArmorActivated::
+	printstring STRINGID_MAGMAARMORACTIVATED
 	waitmessage B_WAIT_TIME_LONG
 	return
 

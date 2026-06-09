@@ -13,7 +13,7 @@ MtEmber_RubyPath_B5F_EventScript_BrailleMessage::
 # 7 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	setvar VAR_0x8005, 130
 # 8 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
-	goto_if_set FLAG_0x020, MtEmber_RubyPath_B5F_EventScript_Pokemon
+	goto_if_set FLAG_SHINY_STARTER, MtEmber_RubyPath_B5F_EventScript_Pokemon
 # 9 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	braillemessage_wait Braille_Text_Everything
 # 10 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
@@ -95,7 +95,7 @@ MtEmber_RubyPath_B5F_EventScript_NoWhitney::
 # 48 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	setflag FLAG_SHINY_CREATION
 # 49 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
-	setwildbattle SPECIES_BLASTOISE, 75
+	setwildbattle SPECIES_BLASTOISE, 70
 # 50 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	dowildbattle
 # 51 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
@@ -107,7 +107,7 @@ MtEmber_RubyPath_B5F_EventScript_NoWhitney::
 # 54 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 MtEmber_RubyPath_B5F_Text_Mon::
 # 55 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
-	.string "There's a Pokemon sealed\n"
+	.string "There's a Pokemon sealed in this\n"
 # 56 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	.string "in this room.$"
 # 57 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
@@ -159,7 +159,7 @@ MtEmber_RubyPath_B5F_EventScript_Pokemon2::
 # 80 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	setflag FLAG_SHINY_CREATION
 # 81 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
-	setwildbattle SPECIES_CHARIZARD, 75
+	setwildbattle SPECIES_CHARIZARD, 70
 # 82 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	.else
 # 83 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
@@ -171,7 +171,7 @@ MtEmber_RubyPath_B5F_EventScript_Pokemon2::
 # 86 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	setflag FLAG_SHINY_CREATION
 # 87 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
-	setwildbattle SPECIES_VENUSAUR, 75
+	setwildbattle SPECIES_VENUSAUR, 70
 # 88 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	.endif
 # 89 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
@@ -189,7 +189,7 @@ MtEmber_RubyPath_B5F_EventScript_Pokemon3::
 # 95 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	msgbox MtEmber_RubyPath_B5F_Text_SummonMon2
 # 96 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
-	clearflag FLAG_0x020
+	clearflag FLAG_SHINY_STARTER
 # 97 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	release
 # 98 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
