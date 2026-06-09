@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, german-translation ]
   pull_request:
   workflow_dispatch:
 
@@ -14,7 +14,7 @@ jobs:
       GAME_LANGUAGE: ENGLISH
       GAME_REVISION: 0
       MODERN: 0
-      COMPARE: 1
+      COMPARE: 0
     steps:
 
       - name: Checkout
@@ -62,23 +62,23 @@ jobs:
         run: |
           find tools -type f -iname "*" -exec chmod +x {} \;
 
-      - name: Compare FireRed
+      - name: Build FireRed
         run: |
           make -j${nproc} all syms
 
-      - name: Compare FireRed rev1
+      - name: Build FireRed rev1
         env:
           GAME_REVISION: 1
         run: |
           make -j${nproc} all syms
 
-      - name: Compare LeafGreen
+      - name: Build LeafGreen
         env:
           GAME_VERSION: LEAFGREEN
         run: |
           make -j${nproc} all syms
 
-      - name: Compare LeafGreen rev1
+      - name: Build LeafGreen rev1
         env:
           GAME_VERSION: LEAFGREEN
           GAME_REVISION: 1
