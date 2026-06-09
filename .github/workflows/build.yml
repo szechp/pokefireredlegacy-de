@@ -92,6 +92,21 @@ jobs:
         run: |
           make -j${nproc} all
 
+      - name: Build German FireRed
+        env:
+          GAME_LANGUAGE: GERMAN
+          COMPARE: 0
+        run: |
+          make -j${nproc} all
+
+      - name: Build German LeafGreen
+        env:
+          GAME_VERSION: LEAFGREEN
+          GAME_LANGUAGE: GERMAN
+          COMPARE: 0
+        run: |
+          make -j${nproc} all
+
       - name: Move symfiles
         if: ${{ github.event_name == 'push' }}
         run: |

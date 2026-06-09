@@ -30,6 +30,10 @@
 #define GAME_LANGUAGE (LANGUAGE_ENGLISH)
 #endif
 
+#ifdef GERMAN
+#define GAME_LANGUAGE (LANGUAGE_GERMAN)
+#endif
+
 // capacities of various saveblock objects
 #define DAYCARE_MON_COUNT   2
 #define PC_ITEMS_COUNT      30

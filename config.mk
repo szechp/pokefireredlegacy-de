@@ -38,6 +38,18 @@ else
 endif
 endif
 
+# Language
+ifeq ($(GAME_LANGUAGE),ENGLISH)
+  GAME_CODE  := $(GAME_CODE)E
+else
+ifeq ($(GAME_LANGUAGE),GERMAN)
+  GAME_CODE  := $(GAME_CODE)D
+  BUILD_NAME := $(BUILD_NAME)_de
+else
+  $(error unknown language $(GAME_LANGUAGE))
+endif
+endif
+
 # Revision
 ifeq ($(GAME_REVISION),1)
   BUILD_NAME  := $(BUILD_NAME)_rev1
@@ -46,9 +58,4 @@ endif
 # Modern GCC
 ifeq ($(MODERN),1)
   BUILD_NAME := $(BUILD_NAME)_modern
-endif
-
-# Language
-ifeq ($(GAME_LANGUAGE),ENGLISH)
-  GAME_CODE  := $(GAME_CODE)E
 endif
