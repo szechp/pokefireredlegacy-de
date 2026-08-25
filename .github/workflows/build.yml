@@ -150,8 +150,8 @@ jobs:
         with:
           name: german-roms-${{ github.sha }}
           path: |
-            pokefirered_de*.gba
-            pokeleafgreen_de*.gba
+            pokerefirered_de*.gba
+            pokereleafgreen_de*.gba
           if-no-files-found: warn
           retention-days: 14
 
