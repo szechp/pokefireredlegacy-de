@@ -93,6 +93,8 @@
 #define MON_DATA_SPDEF2                   88
 #define MON_DATA_FORME                    89
 #define MON_DATA_DEAD                     90
+#define MON_DATA_NATURE                   91
+#define MON_DATA_HIDDEN_NATURE            92
 
 
 #define BEST_IV_SPREAD_HIDDEN_POWER_BUG      {31, 31, 31, 30, 31, 30}
@@ -263,7 +265,7 @@
 #define MAX_PER_STAT_IVS 31
 #define MAX_IV_MASK 31
 #define USE_RANDOM_IVS (MAX_PER_STAT_IVS + 1)
-#define MAX_PER_STAT_EVS 255
+#define MAX_PER_STAT_EVS 252
 #define MAX_TOTAL_EVS 510
 #define EV_ITEM_RAISE_LIMIT 100
 
@@ -311,7 +313,7 @@
 #define EVO_LEVEL_NINJASK    13 // Pokémon reaches the specified level (special value for Ninjask)
 #define EVO_LEVEL_SHEDINJA   14 // Pokémon reaches the specified level (special value for Shedinja)
 #define EVO_BEAUTY           15 // Pokémon levels up with beauty ≥ specified value
-#define EVO_FRIENDSHIP_BABY  16 // Pokémon levels up with friendship ≥ 150
+#define EVO_FRIENDSHIP_BABY  16 // Pokémon levels up with friendship ≥ 170
 
 #define EVOS_PER_MON 5
 

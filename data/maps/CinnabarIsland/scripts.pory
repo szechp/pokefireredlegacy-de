@@ -105,7 +105,14 @@ CinnabarIsland_EventScript_BillScene::
 	call_if_unset FLAG_TEMP_2, CinnabarIsland_EventScript_BillApproachPlayer1
 	call_if_set FLAG_TEMP_2, CinnabarIsland_EventScript_BillApproachPlayer2
 	msgbox CinnabarIsland_Text_HeyIfItIsntPlayer
+	goto_if_set FLAG_NUZLOCKE, CinnabarIsland_EventScript_YouWillGo
 	msgbox CinnabarIsland_Text_ComeWithMeToOneIsland, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, CinnabarIsland_EventScript_AreYouSureSailToOneIsland
+	goto_if_eq VAR_RESULT, NO, CinnabarIsland_EventScript_DeclineSailToOneIsland
+	end
+
+CinnabarIsland_EventScript_AreYouSureSailToOneIsland::
+	msgbox CinnabarIsland_Text_AreYouSureSailToOneIsland, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, CinnabarIsland_EventScript_AgreeSailToOneIsland
 	goto_if_eq VAR_RESULT, NO, CinnabarIsland_EventScript_DeclineSailToOneIsland
 	end
@@ -134,6 +141,13 @@ CinnabarIsland_EventScript_BillApproachPlayer2::
 
 CinnabarIsland_EventScript_AgreeSailToOneIsland::
 	msgbox CinnabarIsland_Text_AllRightLetsGo
+	closemessage
+	call CinnabarIsland_EventScript_SailToOneIsland
+	releaseall
+	end
+
+CinnabarIsland_EventScript_YouWillGo::
+	msgbox CinnabarIsland_Text_YouWillGo
 	closemessage
 	call CinnabarIsland_EventScript_SailToOneIsland
 	releaseall
@@ -408,5 +422,14 @@ CinnabarIsland_EventScript_GymSign::
 	famechecker FAMECHECKER_BLAINE, 0
 	msgbox CinnabarIsland_Text_GymSign
 	releaseall
+	end
+
+CinnabarIsland_EventScript_ScientistsExperimentInMansionStaryu::
+	lock
+	faceplayer
+	playmoncry SPECIES_STARYU, 0
+	msgbox CinnabarIsland_Text_ScientistsExperimentInMansionStaryu
+	waitmoncry
+	release
 	end
 `

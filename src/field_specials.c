@@ -41,6 +41,7 @@
 #include "constants/menu.h"
 #include "constants/event_objects.h"
 #include "constants/metatile_labels.h"
+#include "item.h"
 
 static EWRAM_DATA u8 sElevatorCurrentFloorWindowId = 0;
 static EWRAM_DATA u16 sElevatorScroll = 0;
@@ -1558,7 +1559,7 @@ void ResetContextNpcTextColor(void)
 
 u8 ContextNpcGetTextColor(void)
 {
-    u8 gfxId;
+    u16 gfxId;
     if (gSpecialVar_TextColor != NPC_TEXT_COLOR_DEFAULT)
     {
         // A text color has been specified, use that
@@ -2800,20 +2801,20 @@ void BattleTrophy(void)
         FlagGet(TRAINER_OMAN) &&
         FlagGet(TRAINER_SPIKE) &&
         FlagGet(TRAINER_NURSE_JOY) &&
-        FlagGet(TRAINER_BROCK2) &&
-        FlagGet(TRAINER_LEADER_SABRINA2) &&
-        FlagGet(TRAINER_LEADER_KOGA2) &&
-        FlagGet(TRAINER_LEADER_ERIKA2) &&
-        FlagGet(TRAINER_MISTY2) &&
-        FlagGet(TRAINER_SURGE2) &&
-        FlagGet(TRAINER_LEADER_BLAINE2) &&
+        FlagGet(TRAINER_BROCK_REMATCH) &&
+        FlagGet(TRAINER_LEADER_SABRINA_REMATCH) &&
+        FlagGet(TRAINER_LEADER_KOGA_REMATCH) &&
+        FlagGet(TRAINER_LEADER_ERIKA_REMATCH) &&
+        FlagGet(TRAINER_MISTY_REMATCH) &&
+        FlagGet(TRAINER_SURGE_REMATCH) &&
+        FlagGet(TRAINER_LEADER_BLAINE_REMATCH) &&
         FlagGet(TRAINER_KAREN) &&
         FlagGet(TRAINER_WILL) &&
-        FlagGet(TRAINER_JACKO) &&
-        FlagGet(TRAINER_KINDLER) &&
-        FlagGet(TRAINER_GUITARIST) &&
+        FlagGet(TRAINER_GIOVANNI4) &&
+        FlagGet(TRAINER_GUARD_COLIN_2) &&
+        FlagGet(TRAINER_PAXTON_UNUSED) &&
         FlagGet(FLAG_BLUE_REMATCH_DEFEAT) &&
-        FlagGet(TRAINER_CASENO))
+        FlagGet(TRAINER_CASEY))
     {
         gSpecialVar_Result = TRUE;
         return;
@@ -2822,4 +2823,15 @@ void BattleTrophy(void)
     {
         gSpecialVar_Result = FALSE;
     }
+}
+
+void CheckGotMoreThan10RareCandies(void)
+{
+    if (CheckBagHasItem(ITEM_RARE_CANDY, 11))
+    {
+        gSpecialVar_Result = TRUE;
+        return;
+    }
+
+    gSpecialVar_Result = FALSE;
 }

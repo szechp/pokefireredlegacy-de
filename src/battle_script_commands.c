@@ -301,6 +301,7 @@ static void Cmd_settypetoterrain(void);
 static void Cmd_pursuitdoubles(void);
 static void Cmd_snatchsetbattlers(void);
 static void Cmd_removelightscreenreflect(void);
+static bool8 CheckCaughtAllUnown(void);
 static void Cmd_handleballthrow(void);
 static void Cmd_givecaughtmon(void);
 static void Cmd_trysetcaughtmondexflags(void);
@@ -779,7 +780,7 @@ static const struct PickupItem sPickupItems[] =
 {
     { ITEM_POTION, 15 },
     { ITEM_SUPER_POTION, 25 },
-    { ITEM_SUPER_POTION, 35 },
+    { ITEM_ESCAPE_ROPE, 35 },
     { ITEM_GREAT_BALL, 45 },
     { ITEM_SUPER_REPEL, 55 },
     { ITEM_ETHER, 65 },
@@ -1201,7 +1202,7 @@ static void Cmd_critcalc(void)
                 + (gBattleMoves[gCurrentMove].effect == EFFECT_POISON_TAIL)
                 + (holdEffect == HOLD_EFFECT_SCOPE_LENS)
                 + 4 * (holdEffect == HOLD_EFFECT_LUCKY_PUNCH && gBattleMons[gBattlerAttacker].species == SPECIES_CHANSEY)
-                + 3 * (holdEffect == HOLD_EFFECT_STICK && gBattleMons[gBattlerAttacker].species == SPECIES_FARFETCHD);
+                + 2 * (holdEffect == HOLD_EFFECT_STICK && gBattleMons[gBattlerAttacker].species == SPECIES_FARFETCHD);
 
     if (critChance >= ARRAY_COUNT(sCriticalHitChance))
         critChance = ARRAY_COUNT(sCriticalHitChance) - 1;
@@ -1284,6 +1285,68 @@ static void ModulateDmgByType(u8 multiplier)
     }
 }
 
+s32 GetTypeEffectiveness(struct Pokemon *mon, u8 moveType) {
+    u16 species = GetMonData(mon, MON_DATA_SPECIES);
+    u8 type1 = gSpeciesInfo[species].types[0];
+    u8 type2 = gSpeciesInfo[species].types[1];
+    s32 i = 0;
+    u8 multiplier;
+    s32 flags = 0;
+    if (GetMonAbility(mon) == ABILITY_LEVITATE && moveType == TYPE_GROUND)
+    {
+        return MOVE_RESULT_NOT_VERY_EFFECTIVE;
+    }
+    if (GetMonAbility(mon) == ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
+    {
+        return MOVE_RESULT_NOT_VERY_EFFECTIVE;
+    }
+    while (TYPE_EFFECT_ATK_TYPE(i) != TYPE_ENDTABLE) {
+        if (TYPE_EFFECT_ATK_TYPE(i) == TYPE_FORESIGHT) {
+            i += 3;
+            continue;
+        }
+        else if (TYPE_EFFECT_ATK_TYPE(i) == moveType) {
+            // check type1
+            if (TYPE_EFFECT_DEF_TYPE(i) == type1)
+                multiplier = TYPE_EFFECT_MULTIPLIER(i);
+            else if (TYPE_EFFECT_DEF_TYPE(i) == type2 && type1 != type2)
+                multiplier = TYPE_EFFECT_MULTIPLIER(i);
+            else {
+                i += 3;
+                continue;
+            }
+            switch (multiplier)
+            {
+            case TYPE_MUL_NO_EFFECT:
+                flags |= MOVE_RESULT_DOESNT_AFFECT_FOE;
+                flags &= ~MOVE_RESULT_NOT_VERY_EFFECTIVE;
+                flags &= ~MOVE_RESULT_SUPER_EFFECTIVE;
+                break;
+            case TYPE_MUL_NOT_EFFECTIVE:
+                if (!(flags & MOVE_RESULT_NO_EFFECT))
+                {
+                    if (flags & MOVE_RESULT_SUPER_EFFECTIVE)
+                        flags &= ~MOVE_RESULT_SUPER_EFFECTIVE;
+                    else
+                        flags |= MOVE_RESULT_NOT_VERY_EFFECTIVE;
+                }
+                break;
+            case TYPE_MUL_SUPER_EFFECTIVE:
+                if (!(flags & MOVE_RESULT_NO_EFFECT))
+                {
+                    if (flags & MOVE_RESULT_NOT_VERY_EFFECTIVE)
+                        flags &= ~MOVE_RESULT_NOT_VERY_EFFECTIVE;
+                    else
+                        flags |= MOVE_RESULT_SUPER_EFFECTIVE;
+                }
+                break;
+            }
+        }
+        i += 3;
+    }
+    return flags;
+}
+
 static void Cmd_typecalc(void)
 {
     s32 i = 0;
@@ -1311,6 +1374,15 @@ static void Cmd_typecalc(void)
         gLastLandedMoves[gBattlerTarget] = 0;
         gLastHitByType[gBattlerTarget] = 0;
         gBattleCommunication[MISS_TYPE] = B_MSG_GROUND_MISS;
+        RecordAbilityBattle(gBattlerTarget, gLastUsedAbility);
+    }
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
+    {
+        gLastUsedAbility = gBattleMons[gBattlerTarget].ability;
+        gMoveResultFlags |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);
+        gLastLandedMoves[gBattlerTarget] = 0;
+        gLastHitByType[gBattlerTarget] = 0;
+        gBattleCommunication[MISS_TYPE] = B_MSG_ELECTRIC_MISS;
         RecordAbilityBattle(gBattlerTarget, gLastUsedAbility);
     }
     else
@@ -1371,6 +1443,13 @@ static void CheckWonderGuardAndLevitate(void)
         gLastUsedAbility = ABILITY_LEVITATE;
         gBattleCommunication[MISS_TYPE] = B_MSG_GROUND_MISS;
         RecordAbilityBattle(gBattlerTarget, ABILITY_LEVITATE);
+        return;
+    }
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
+    {
+        gLastUsedAbility = TYPE_ELECTRIC;
+        gBattleCommunication[MISS_TYPE] = B_MSG_ELECTRIC_MISS;
+        RecordAbilityBattle(gBattlerTarget, ABILITY_LIGHTNING_ROD);
         return;
     }
 
@@ -1487,6 +1566,10 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
     {
         flags |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);
     }
+    if (gBattleMons[defender].ability == ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
+    {
+        flags |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);
+    }
     else
     {
         while (TYPE_EFFECT_ATK_TYPE(i) != TYPE_ENDTABLE)
@@ -1536,6 +1619,10 @@ u8 AI_TypeCalc(u16 move, u16 targetSpecies, u8 targetAbility)
     moveType = gBattleMoves[move].type;
 
     if (targetAbility == ABILITY_LEVITATE && moveType == TYPE_GROUND)
+    {
+        flags = MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE;
+    }
+    if (targetAbility == ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
     {
         flags = MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE;
     }
@@ -4442,6 +4529,14 @@ static void Cmd_typecalc2(void)
         gBattleCommunication[MISS_TYPE] = B_MSG_GROUND_MISS;
         RecordAbilityBattle(gBattlerTarget, gLastUsedAbility);
     }
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
+    {
+        gLastUsedAbility = gBattleMons[gBattlerTarget].ability;
+        gMoveResultFlags |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);
+        gLastLandedMoves[gBattlerTarget] = 0;
+        gBattleCommunication[MISS_TYPE] = B_MSG_ELECTRIC_MISS;
+        RecordAbilityBattle(gBattlerTarget, gLastUsedAbility);
+    }
     else
     {
         while (TYPE_EFFECT_ATK_TYPE(i) != TYPE_ENDTABLE)
@@ -7258,7 +7353,7 @@ static void Cmd_setsandstorm(void)
     {
         gBattleWeather = B_WEATHER_SANDSTORM_TEMPORARY;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_SANDSTORM;
-        gWishFutureKnock.weatherDuration = 10;
+        gWishFutureKnock.weatherDuration = 8;
     }
     gBattlescriptCurrInstr++;
 }
@@ -8733,7 +8828,7 @@ static void Cmd_sethail(void)
     {
         gBattleWeather = B_WEATHER_HAIL_TEMPORARY;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_HAIL;
-        gWishFutureKnock.weatherDuration = 10;
+        gWishFutureKnock.weatherDuration = 8;
     }
 
     gBattlescriptCurrInstr++;
@@ -9718,6 +9813,48 @@ static void Cmd_trysetcaughtmondexflags(void)
         HandleSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_SET_CAUGHT, personality);
         gBattlescriptCurrInstr += 5;
     }
+
+    if (species == SPECIES_UNOWN) // Check unown forms
+    {
+        u16 letter = GetUnownLetterByPersonality(personality);
+        if (letter == 0)
+        {
+            letter = SPECIES_UNOWN;
+            FlagSet(FLAG_CAUGHT_UNOWN_A); // Check unown A separately since there's no dex flag for it
+        }
+        else
+        {
+            letter += (SPECIES_UNOWN_B - 1);
+            species = letter;
+            if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
+            {
+                HandleSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_SET_CAUGHT, personality);
+            }
+        }
+        if (CheckCaughtAllUnown())
+        {
+            FlagSet(FLAG_SHOW_HIDDEN_POWER); // Unlock hidden power type in the party menu
+        }
+    }
+}
+
+static bool8 CheckCaughtAllUnown(void)
+{
+    u32 startUnown = SPECIES_UNOWN_B;
+    u32 endUnown = SPECIES_UNOWN_QMARK;
+    u16 species;
+    if (!FlagGet(FLAG_CAUGHT_UNOWN_A)) // Check unown A separately since there's no dex flag for it
+    {
+        return FALSE;
+    }
+    for (species = startUnown; species <= endUnown; species++)
+    {
+        if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT)) // Loop through all unown forms
+        {
+            return FALSE;
+        }
+    }
+    return TRUE; // All Unown are caught
 }
 
 static void Cmd_displaydexinfo(void)

@@ -27,7 +27,7 @@
       "registrability": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 0,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "FieldUseFunc_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 0
@@ -43,7 +43,7 @@
       "registrability": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 1,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "FieldUseFunc_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 1
@@ -59,7 +59,7 @@
       "registrability": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 2,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "FieldUseFunc_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 2
@@ -75,7 +75,7 @@
       "registrability": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 3,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "FieldUseFunc_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 3
@@ -91,7 +91,7 @@
       "registrability": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 4,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "FieldUseFunc_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 4
@@ -107,7 +107,7 @@
       "registrability": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 5,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "FieldUseFunc_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 5
@@ -123,7 +123,7 @@
       "registrability": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 6,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "FieldUseFunc_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 6
@@ -139,7 +139,7 @@
       "registrability": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 7,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "FieldUseFunc_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 7
@@ -155,7 +155,7 @@
       "registrability": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 8,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "FieldUseFunc_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 8
@@ -171,7 +171,7 @@
       "registrability": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 9,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "FieldUseFunc_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 9
@@ -187,7 +187,7 @@
       "registrability": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 10,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "FieldUseFunc_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 10
@@ -203,7 +203,7 @@
       "registrability": 0,
       "pocket": "POCKET_POKE_BALLS",
       "type": 11,
-      "fieldUseFunc": "NULL",
+      "fieldUseFunc": "FieldUseFunc_PokeBall",
       "battleUsage": 2,
       "battleUseFunc": "BattleUseFunc_PokeBallEtc",
       "secondaryId": 11
@@ -2371,7 +2371,7 @@
     {
       "english": "RAZZ BERRY",
       "itemId": "ITEM_RAZZ_BERRY",
-      "price": 20,
+      "price": 500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2387,7 +2387,7 @@
     {
       "english": "BLUK BERRY",
       "itemId": "ITEM_BLUK_BERRY",
-      "price": 20,
+      "price": 500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2403,7 +2403,7 @@
     {
       "english": "NANAB BERRY",
       "itemId": "ITEM_NANAB_BERRY",
-      "price": 20,
+      "price": 500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2419,7 +2419,7 @@
     {
       "english": "WEPEAR BERRY",
       "itemId": "ITEM_WEPEAR_BERRY",
-      "price": 20,
+      "price": 500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2435,7 +2435,7 @@
     {
       "english": "PINAP BERRY",
       "itemId": "ITEM_PINAP_BERRY",
-      "price": 20,
+      "price": 500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2531,7 +2531,7 @@
     {
       "english": "TAMATO BERRY",
       "itemId": "ITEM_TAMATO_BERRY",
-      "price": 300,
+      "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Makes a POKéMON friendly but\\nlowers base SPEED.",
@@ -2547,7 +2547,7 @@
     {
       "english": "CORNN BERRY",
       "itemId": "ITEM_CORNN_BERRY",
-      "price": 10000,
+      "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2563,7 +2563,7 @@
     {
       "english": "MAGOST BERRY",
       "itemId": "ITEM_MAGOST_BERRY",
-      "price": 10000,
+      "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2579,7 +2579,7 @@
     {
       "english": "RABUTA BERRY",
       "itemId": "ITEM_RABUTA_BERRY",
-      "price": 10000,
+      "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2595,7 +2595,7 @@
     {
       "english": "NOMEL BERRY",
       "itemId": "ITEM_NOMEL_BERRY",
-      "price": 10000,
+      "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2611,7 +2611,7 @@
     {
       "english": "SPELON BERRY",
       "itemId": "ITEM_SPELON_BERRY",
-      "price": 10000,
+      "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2627,7 +2627,7 @@
     {
       "english": "PAMTRE BERRY",
       "itemId": "ITEM_PAMTRE_BERRY",
-      "price": 10000,
+      "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2643,7 +2643,7 @@
     {
       "english": "WATMEL BERRY",
       "itemId": "ITEM_WATMEL_BERRY",
-      "price": 10000,
+      "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2659,7 +2659,7 @@
     {
       "english": "DURIN BERRY",
       "itemId": "ITEM_DURIN_BERRY",
-      "price": 10000,
+      "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2675,7 +2675,7 @@
     {
       "english": "BELUE BERRY",
       "itemId": "ITEM_BELUE_BERRY",
-      "price": 10000,
+      "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -2803,7 +2803,7 @@
     {
       "english": "ENIGMA BERRY",
       "itemId": "ITEM_ENIGMA_BERRY",
-      "price": 10000,
+      "price": 9800,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",

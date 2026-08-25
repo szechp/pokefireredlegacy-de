@@ -105,4 +105,62 @@ IndigoPlateau_PokemonCenter_1F_TMGUY::
 	end
 
 
+IndigoPlateau_PokemonCenter_1F_EventScript_TrainMore::
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_TrainMore, MSGBOX_NPC
+	end
+
+IndigoPlateau_PokemonCenter_1F_EventScript_TrainMoreGengar::
+	lock
+	faceplayer
+	playmoncry SPECIES_GENGAR, 0
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_TrainMoreGengar
+	waitmoncry
+	release
+	end
+
+IndigoPlateau_PokemonCenter_1F_EventScript_AlmostReady::
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_AlmostReady, MSGBOX_NPC
+	end
+
+IndigoPlateau_PokemonCenter_1F_EventScript_AlmostReadyAlakazam::
+	lock
+	faceplayer
+	playmoncry SPECIES_ALAKAZAM, 0
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_AlmostReadyAlakazam
+	waitmoncry
+	release
+	
+	
+IndigoPlateau_PokemonCenter_1F_EventScript_HardcoreCandyCheck::
+	goto_if_unset FLAG_HARD, IndigoPlateau_PokemonCenter_1F_EventScript_NotHard
+    lock
+    special CheckGotMoreThan10RareCandies
+    compare VAR_RESULT, TRUE
+    goto_if_eq IndigoPlateau_PokemonCenter_1F_EventScript_HardcoreCandyCheckNo
+    release
+    end
+
+IndigoPlateau_PokemonCenter_1F_EventScript_HardcoreCandyCheckNo::
+	lock
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_DOOR_GUARD, Common_Movement_FaceLeft
+	waitmovement 0
+	delay 20
+	textcolor NPC_TEXT_COLOR_FEMALE
+    msgbox IndigoPlateau_PokemonCenter_1F_Text_No, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, CinnabarIsland_Movement_ForcePlayerFromDoor
+	waitmovement 0
+	release
+	end
+
+IndigoPlateau_PokemonCenter_1F_Text_No::
+	.string "Hey, I detect that you have more\n"
+	.string "than 10 rare candies!\l"
+	.string "Please put them away before\l"
+	.string "entering the league!$"
+
+IndigoPlateau_PokemonCenter_1F_EventScript_NotHard::
+	release
+	end
 `

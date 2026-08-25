@@ -59,7 +59,7 @@ MtEmber_RubyPath_B5F_EventScript_Pokemon::
 # 30 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	delay 40
 # 31 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, MtEmber_RubyPath_B5F_EventScript_NoWhitney
+	goto_if_eq VAR_RESULT, NO, MtEmber_RubyPath_B5F_EventScript_NoMirage
 # 32 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	goto MtEmber_RubyPath_B5F_EventScript_Pokemon2
 # 33 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
@@ -67,7 +67,7 @@ MtEmber_RubyPath_B5F_EventScript_Pokemon::
 # 34 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 
 # 35 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
-MtEmber_RubyPath_B5F_EventScript_NoWhitney::
+MtEmber_RubyPath_B5F_EventScript_NoMirage::
 # 36 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	lock
 # 37 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
@@ -95,7 +95,7 @@ MtEmber_RubyPath_B5F_EventScript_NoWhitney::
 # 48 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	setflag FLAG_SHINY_CREATION
 # 49 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
-	setwildbattle SPECIES_BLASTOISE, 70
+	setwildbattle SPECIES_BLASTOISE, 65
 # 50 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	dowildbattle
 # 51 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
@@ -159,7 +159,7 @@ MtEmber_RubyPath_B5F_EventScript_Pokemon2::
 # 80 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	setflag FLAG_SHINY_CREATION
 # 81 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
-	setwildbattle SPECIES_CHARIZARD, 70
+	setwildbattle SPECIES_CHARIZARD, 65
 # 82 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	.else
 # 83 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
@@ -171,7 +171,7 @@ MtEmber_RubyPath_B5F_EventScript_Pokemon2::
 # 86 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	setflag FLAG_SHINY_CREATION
 # 87 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
-	setwildbattle SPECIES_VENUSAUR, 70
+	setwildbattle SPECIES_VENUSAUR, 65
 # 88 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"
 	.endif
 # 89 "data/maps/MtEmber_RubyPath_B5F/scripts.pory"

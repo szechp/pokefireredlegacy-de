@@ -49,6 +49,11 @@ CinnabarIsland_Text_AllRightLetsGo::
     .string "All right, then.\n"
     .string "Let's go!$"
 
+CinnabarIsland_Text_YouWillGo::
+	.string "Well it seems like you\n"
+	.string "have some free time already.\l"
+	.string "So let's go!$"
+
 CinnabarIsland_Text_IllBeWaitingInPokeCenter::
     .string "What, are you too busy?\p"
     .string "Well, all right.\n"
@@ -95,3 +100,13 @@ CinnabarIsland_Text_ScientistVolcano::
 	.string "I'm monitoring its activity.\p"
 	.string "It seems to still be active, but\n"
 	.string "it's nothing to worry about for now.$"
+
+CinnabarIsland_Text_ScientistsExperimentInMansionStaryu::
+	.string "STARYU: Yuuu...$"
+
+CinnabarIsland_Text_AreYouSureSailToOneIsland::
+    .string "Are you sure you want to go to\n"
+    .string "the SEVII ISLANDS?\p"
+    .string "You won't be able to come back\n"
+    .string "until the job is done.$"
+

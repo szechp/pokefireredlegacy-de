@@ -217,7 +217,7 @@ gSpecials::
 	def_special EnterSafariMode
 	def_special ExitSafariMode
 	def_special NullFieldSpecial  @ Misc Hoenn specials
-	def_special NullFieldSpecial
+	def_special EnterSafariModePoor
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial
@@ -333,7 +333,7 @@ gSpecials::
 	def_special NullFieldSpecial
 	def_special SetEReaderTrainerGfxId
 	def_special StartSouthernIslandBattle
-	def_special NullFieldSpecial
+	def_special CheckGotMoreThan10RareCandies
 	def_special IsWailordInParty
 	def_special BattleTrophy
 	def_special GetPartyMonSpecies

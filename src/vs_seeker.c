@@ -69,7 +69,7 @@ struct VsSeekerTrainerInfo
     u8 objectEventId;
     s16 xCoord;
     s16 yCoord;
-    u8 graphicsId;
+    u16 graphicsId;
 };
 
 struct VsSeekerStruct
@@ -103,7 +103,7 @@ static u8 ShouldTryRematchBattleInternal(const struct RematchData * vsSeekerData
 static u8 HasRematchTrainerAlreadyBeenFought(const struct RematchData * vsSeekerData, u16 trainerBattleOpponent);
 static int LookupVsSeekerOpponentInArray(const struct RematchData * array, u16 trainerId);
 static bool8 IsTrainerReadyForRematchInternal(const struct RematchData * array, u16 trainerIdx);
-static u8 GetRunningBehaviorFromGraphicsId(u8 graphicsId);
+static u8 GetRunningBehaviorFromGraphicsId(u16 graphicsId);
 static u16 GetTrainerFlagFromScript(const u8 * script);
 static int GetRematchIdx(const struct RematchData * vsSeekerData, u16 trainerFlagIdx);
 static bool32 IsThisTrainerRematchable(u32 localId);
@@ -118,7 +118,7 @@ static bool8 ObjectEventIdIsSane(u8 objectEventId);
 static u8 GetRandomFaceDirectionMovementType();
 
 static const struct RematchData sRematches[] = {
-   { {TRAINER_INTERVIEWER, TRAINER_INTERVIEWER}, MAP(ROUTE2) },
+   { {TRAINER_ZOE_MAO, TRAINER_ZOE_MAO}, MAP(ROUTE2) },
    { {TRAINER_YOUNGSTER_BEN, TRAINER_YOUNGSTER_BEN_2, SKIP, TRAINER_YOUNGSTER_BEN_3, TRAINER_YOUNGSTER_BEN_4}, MAP(ROUTE3) },
    { {TRAINER_YOUNGSTER_CALVIN, TRAINER_YOUNGSTER_CALVIN}, MAP(ROUTE3) },
    { {TRAINER_BUG_CATCHER_COLTON, TRAINER_BUG_CATCHER_COLTON_2, SKIP, TRAINER_BUG_CATCHER_COLTON_3, SKIP, TRAINER_BUG_CATCHER_COLTON_4},
@@ -1159,7 +1159,7 @@ static u8 GetRandomFaceDirectionMovementType()
     }
 }
 
-static u8 GetRunningBehaviorFromGraphicsId(u8 graphicsId)
+static u8 GetRunningBehaviorFromGraphicsId(u16 graphicsId)
 {
     switch (graphicsId)
     {

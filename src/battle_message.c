@@ -62,11 +62,12 @@ static const u8 sText_PkmnForgotMove[] = _("{B_BUFF1} forgot\n{B_BUFF2}.\p");
 static const u8 sText_StopLearningMove[] = _("{PAUSE 32}Stop learning\n{B_BUFF2}?");
 static const u8 sText_DidNotLearnMove[] = _("{B_BUFF1} did not learn\n{B_BUFF2}.\p");
 static const u8 sText_UseNextPkmn[] = _("Use next POKéMON?");
-static const u8 sText_AttackMissed[] = _("{B_ATK_NAME_WITH_PREFIX}'s\nattack missed!");
+static const u8 sText_AttackMissed[] = _("{B_DEF_NAME_WITH_PREFIX} evaded\nthe attack!");
 static const u8 sText_PkmnProtectedItself[] = _("{B_DEF_NAME_WITH_PREFIX}\nprotected itself!");
 static const u8 sText_AvoidedDamage[] = _("{B_DEF_NAME_WITH_PREFIX} avoided\ndamage with {B_DEF_ABILITY}!");
 static const u8 sText_PkmnMakesGroundMiss[] = _("{B_DEF_NAME_WITH_PREFIX} makes GROUND\nmoves miss with {B_DEF_ABILITY}!");
-static const u8 sText_PkmnAvoidedAttack[] = _("{B_DEF_NAME_WITH_PREFIX} avoided\nthe attack!");
+static const u8 sText_PkmnMakesElectricMiss[] = _("{B_DEF_NAME_WITH_PREFIX} absorbed ELECTRIC\nmoves with {B_DEF_ABILITY}!");
+static const u8 sText_PkmnAvoidedAttack[] = _("{B_DEF_NAME_WITH_PREFIX} evaded\nthe attack!");
 static const u8 sText_ItDoesntAffect[] = _("It doesn't affect\n{B_DEF_NAME_WITH_PREFIX}…");
 static const u8 sText_AttackerFainted[] = _("{B_ATK_NAME_WITH_PREFIX}\nfainted!\p");
 static const u8 sText_TargetFainted[] = _("{B_DEF_NAME_WITH_PREFIX}\nfainted!\p");
@@ -900,6 +901,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_ST
     [STRINGID_TRAINER1MON1AND2COMEBACK - BATTLESTRINGS_TABLE_START]      = sText_Trainer1RecallBoth,
     [STRINGID_ATTACKBOOSTEDBYABILITY - BATTLESTRINGS_TABLE_START]        = sText_AttackBoostedByAbility,
     [STRINGID_MAGMAARMORACTIVATED - BATTLESTRINGS_TABLE_START]           = sText_MagmaArmorActivated,
+    [STRINGID_PKMNMAKESELECTRICMISS - BATTLESTRINGS_TABLE_START]           = sText_PkmnMakesElectricMiss,
 };
 
 const u16 gMissStringIds[] =
@@ -908,7 +910,8 @@ const u16 gMissStringIds[] =
     [B_MSG_PROTECTED]   = STRINGID_PKMNPROTECTEDITSELF,
     [B_MSG_AVOIDED_ATK] = STRINGID_PKMNAVOIDEDATTACK,
     [B_MSG_AVOIDED_DMG] = STRINGID_AVOIDEDDAMAGE,
-    [B_MSG_GROUND_MISS] = STRINGID_PKMNMAKESGROUNDMISS
+    [B_MSG_GROUND_MISS] = STRINGID_PKMNMAKESGROUNDMISS,
+    [B_MSG_ELECTRIC_MISS] = STRINGID_PKMNMAKESELECTRICMISS
 };
 
 const u16 gNoEscapeStringIds[] =
@@ -2526,8 +2529,8 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] = {
     },
     [B_WIN_PP_REMAINING] = {
         .fillValue = PIXEL_FILL(0xe),
-        .fontId = FONT_NORMAL_COPY_1,
-        .x = 10,
+        .fontId = FONT_NORMAL_COPY_1,   // was FONT_NORMAL_COPY_1
+        .x = 10,                 // was 10
         .y = 2,
         .letterSpacing = 0,
         .lineSpacing = 2,

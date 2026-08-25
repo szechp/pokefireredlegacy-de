@@ -964,7 +964,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_GROWTH] =
     {
-        .effect = EFFECT_SPECIAL_ATTACK_UP,
+        .effect = EFFECT_GROWTH,
         .power = 0,
         .type = TYPE_NORMAL,
         .accuracy = 0,
@@ -2408,7 +2408,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_FAINT_ATTACK] =
     {
         .effect = EFFECT_ALWAYS_HIT,
-        .power = 70,
+        .power = 80,
         .type = TYPE_DARK,
         .accuracy = 0,
         .pp = 20,

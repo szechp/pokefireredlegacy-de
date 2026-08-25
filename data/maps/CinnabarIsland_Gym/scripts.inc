@@ -217,9 +217,9 @@ CinnabarIsland_Gym_Text_BlaineNoNoRematchBattle::
 # 109 "data/maps/CinnabarIsland_Gym/scripts.pory"
 	.string "been set let, so give me some time.\p"
 # 110 "data/maps/CinnabarIsland_Gym/scripts.pory"
-	.string "In the mean time fill in my entry\p"
+	.string "In the mean time fill in my entry\n"
 # 111 "data/maps/CinnabarIsland_Gym/scripts.pory"
-	.string "in the FAMECHECKER to know\p"
+	.string "in the FAMECHECKER to know\l"
 # 112 "data/maps/CinnabarIsland_Gym/scripts.pory"
 	.string "more trivia about my Inferno!$"
 # 113 "data/maps/CinnabarIsland_Gym/scripts.pory"
@@ -231,7 +231,7 @@ CinnabarIsland_Gym_EventScript_RematchBlaine2::
 # 116 "data/maps/CinnabarIsland_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, CinnabarIsland_Gym_EventScript_NoRematchBlaine
 # 117 "data/maps/CinnabarIsland_Gym/scripts.pory"
-	trainerbattle_single TRAINER_LEADER_BLAINE2, CinnabarIsland_Gym_Text_RematchYesBlaine, CinnabarIsland_Gym_Text_RematchBlaineDefeat, CinnabarIsland_Gym_EventScript_PostRematchBlaine, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_BLAINE_REMATCH, CinnabarIsland_Gym_Text_RematchYesBlaine, CinnabarIsland_Gym_Text_RematchBlaineDefeat, CinnabarIsland_Gym_EventScript_PostRematchBlaine, NO_MUSIC
 # 118 "data/maps/CinnabarIsland_Gym/scripts.pory"
 	release
 # 119 "data/maps/CinnabarIsland_Gym/scripts.pory"
@@ -243,7 +243,7 @@ CinnabarIsland_Gym_EventScript_PostRematchBlaine::
 # 122 "data/maps/CinnabarIsland_Gym/scripts.pory"
 	msgbox CinnabarIsland_Gym_Text_BlainePostRematchBattle
 # 123 "data/maps/CinnabarIsland_Gym/scripts.pory"
-	cleartrainerflag TRAINER_LEADER_BLAINE2
+	cleartrainerflag TRAINER_LEADER_BLAINE_REMATCH
 # 124 "data/maps/CinnabarIsland_Gym/scripts.pory"
 	release
 # 125 "data/maps/CinnabarIsland_Gym/scripts.pory"

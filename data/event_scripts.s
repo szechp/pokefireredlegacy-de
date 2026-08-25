@@ -897,6 +897,10 @@ gText_PkmnFainted3::
 	.string "{STR_VAR_1} fainted…\p"
 	.string "$"
 
+gText_PkmnSurvivedPoison::
+	.string "{STR_VAR_1} survived the poison.\p"
+	.string "The poison has faded away!$"
+
 Text_WelcomeWantToHealPkmn::
 	.string "Welcome to our POKéMON CENTER!\p"
 	.string "Would you like me to heal your\n"
@@ -1106,6 +1110,11 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_SIS_TRAINER            
 	setflag FLAG_ROCK_TRAINER              
 	setflag FLAG_DRAGON_TRAINER  
+	setflag FLAG_SECOND_SOUL_DEW
+	setflag FLAG_BLASTOISE
+	setflag FLAG_CHARIZARD
+	setflag FLAG_VENUSAUR
+	setflag FLAG_ADMIN_PETROL
 	setvar VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 250
 	end
 
@@ -1433,6 +1442,7 @@ Text_TestMsg::
 	.include "data/scripts/move_tutors.inc"
 	.include "data/scripts/trainer_tower.inc"
 	.include "data/scripts/test.inc"
+	.include "data/scripts/follower.inc"
 	.include "data/text/save.inc"
 	.include "data/text/new_game_intro.inc"
 	.include "data/text/pokedude.inc"

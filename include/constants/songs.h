@@ -281,6 +281,7 @@
 #define MUS_GAME_CORNER           273 // MUS_SLOT
 #define MUS_ROCKET_HIDEOUT        274 // MUS_AJITO
 #define MUS_GYM                   275 // MUS_GYM
+#define MUS_RG_GYM                MUS_GYM
 #define MUS_JIGGLYPUFF            276 // MUS_PURIN
 #define MUS_INTRO_FIGHT           277 // MUS_DEMO
 #define MUS_TITLE                 278 // MUS_TITLE
@@ -353,9 +354,11 @@
 #define MUS_SLOW_PALLET           345 // MUS_SLOWMASARA
 #define MUS_TEACHY_TV_MENU        346 // MUS_TVNOIZE
 #define MUS_VS_TEAM_ROCKET        347 // MUS_TEAMROCKET
-#define MUS_SEVII_CHAMPION        348 // MUS_TVNOIZE
+#define MUS_SEVII_CHAMPION        348 // MUS_TVNOIZE UNSED
 #define MUS_VS_TEAM_ROCKET_BOSS   349 // MUS_TEAMROCKETBOSS
 #define MUS_VS_REGI               350 // MUS_VS_REGI
+#define MUS_GSC_ROUTE38           351 // MUS_VS_REGI
+#define MUS_GSC_PEWTER            352 // MUS_VS_REGI
 
 #define MUS_NONE                    0xFFFF
 
