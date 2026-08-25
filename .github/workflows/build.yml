@@ -7,11 +7,17 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
       GAME_VERSION: FIRERED
       GAME_LANGUAGE: ENGLISH
@@ -32,7 +38,7 @@ jobs:
           git lfs pull
 
       - name: Checkout agbcc
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
         with:
           path: 'agbcc'
           repository: 'pret/agbcc'
@@ -48,7 +54,7 @@ jobs:
         working-directory: ./symbols
         run: |
           git remote add upstream https://github.com/pret/pokefirered.git
-          git fetch upstream symbols
+          git fetch upstream symbols || { echo "fetch upstream/symbols failed"; exit 1; }
           git checkout -B symbols upstream/symbols
 
       - name: Install binutils
@@ -62,13 +68,10 @@ jobs:
           ./build.sh
           ./install.sh ../
         working-directory: ./agbcc
-        
-      - name: Pull LFS files
-        run: git lfs pull || echo "No LFS files to pull"
 
       - name: Fix permissions for all tools
         run: |
-          find tools -type f -iname "*" -exec chmod +x {} \;
+          find tools -type f \( -name '*.sh' -o -name '*.py' -o -perm -u+x \) -exec chmod +x {} \;
 
       - name: Build FireRed
         run: |
@@ -105,7 +108,15 @@ jobs:
           GAME_LANGUAGE: GERMAN
           COMPARE: 0
         run: |
-          make -j${nproc} all
+          make -j$(nproc) all
+
+      - name: Build German FireRed rev1
+        env:
+          GAME_LANGUAGE: GERMAN
+          GAME_REVISION: 1
+          COMPARE: 0
+        run: |
+          make -j$(nproc) all
 
       - name: Build German LeafGreen
         env:
@@ -113,16 +124,52 @@ jobs:
           GAME_LANGUAGE: GERMAN
           COMPARE: 0
         run: |
-          make -j${nproc} all
+          make -j$(nproc) all
+
+      - name: Build German LeafGreen rev1
+        env:
+          GAME_VERSION: LEAFGREEN
+          GAME_LANGUAGE: GERMAN
+          GAME_REVISION: 1
+          COMPARE: 0
+        run: |
+          make -j$(nproc) all
+
+      - name: Build German Modern
+        env:
+          GAME_LANGUAGE: GERMAN
+          MODERN: 1
+          COMPARE: 0
+        run: |
+          make -j$(nproc) all
+
+      - name: Upload German ROM artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: german-roms-${{ github.sha }}
+          path: |
+            pokefirered_de*.gba
+            pokeleafgreen_de*.gba
+          if-no-files-found: warn
+          retention-days: 14
 
       - name: Move symfiles
         if: ${{ github.event_name == 'push' }}
         run: |
-          cp *.sym symbols/
-          echo "SYMBOLS_COMMIT_MSG=$( git log -1 --format=%s ${GITHUB_SHA} )" >> $GITHUB_ENV
+          shopt -s nullglob
+          syms=(*.sym)
+          if [ ${#syms[@]} -eq 0 ]; then
+            echo "No .sym files produced; skipping symfile publish."
+            echo "SYMBOLS_PUBLISH=false" >> "$GITHUB_ENV"
+            exit 0
+          fi
+          cp "${syms[@]}" symbols/
+          MSG="$(git log -1 --format=%s "${GITHUB_SHA}" || true)"
+          echo "SYMBOLS_COMMIT_MSG=${MSG:-update symbols}" >> "$GITHUB_ENV"
+          echo "SYMBOLS_PUBLISH=true" >> "$GITHUB_ENV"
 
       - name: Update symfiles
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name == 'push' && env.SYMBOLS_PUBLISH == 'true' }}
         uses: EndBug/add-and-commit@v7
         with:
           branch: symbols
