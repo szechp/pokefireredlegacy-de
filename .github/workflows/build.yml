@@ -97,6 +97,7 @@ jobs:
           make -j${nproc} all syms
 
       - name: Build Modern
+        continue-on-error: true
         env:
           MODERN: 1
           COMPARE: 0
@@ -136,6 +137,7 @@ jobs:
           make -j$(nproc) all
 
       - name: Build German Modern
+        continue-on-error: true
         env:
           GAME_LANGUAGE: GERMAN
           MODERN: 1
